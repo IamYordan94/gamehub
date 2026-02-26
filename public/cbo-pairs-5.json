@@ -1,0 +1,402 @@
+[
+  {
+    "start_word": "marli",
+    "end_word": "penni",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "rhomb",
+    "end_word": "plump",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "mambo",
+    "end_word": "livor",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "maney",
+    "end_word": "macao",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "peril",
+    "end_word": "marty",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "maniu",
+    "end_word": "udder",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "phoby",
+    "end_word": "slimy",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "phene",
+    "end_word": "blest",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "marty",
+    "end_word": "couch",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "scuta",
+    "end_word": "haine",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "pombo",
+    "end_word": "gumby",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "mardy",
+    "end_word": "latah",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "maleo",
+    "end_word": "lobed",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "maize",
+    "end_word": "crick",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "pipil",
+    "end_word": "cetyl",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "chuck",
+    "end_word": "adorn",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "sadie",
+    "end_word": "cumin",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "huave",
+    "end_word": "massa",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "clart",
+    "end_word": "renne",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "penni",
+    "end_word": "corke",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "brett",
+    "end_word": "urban",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "helen",
+    "end_word": "ravin",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "runer",
+    "end_word": "lindo",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "mande",
+    "end_word": "brent",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "strix",
+    "end_word": "cetyl",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "lamba",
+    "end_word": "haine",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "haine",
+    "end_word": "marty",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "blair",
+    "end_word": "aface",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "laine",
+    "end_word": "marty",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "bruno",
+    "end_word": "boxty",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "linen",
+    "end_word": "ginny",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "brant",
+    "end_word": "layne",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "inkle",
+    "end_word": "twixt",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "skirp",
+    "end_word": "spent",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "haven",
+    "end_word": "hathi",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "stite",
+    "end_word": "glaga",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "adati",
+    "end_word": "agena",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "macaw",
+    "end_word": "manto",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "stimy",
+    "end_word": "haine",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "spann",
+    "end_word": "stell",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "spumy",
+    "end_word": "smoos",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "macan",
+    "end_word": "remus",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "slape",
+    "end_word": "massa",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "couch",
+    "end_word": "arose",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "stout",
+    "end_word": "luite",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "pewit",
+    "end_word": "korin",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "stead",
+    "end_word": "siege",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "layne",
+    "end_word": "rally",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "mahra",
+    "end_word": "della",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "stile",
+    "end_word": "unark",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "levis",
+    "end_word": "pulex",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "snaky",
+    "end_word": "kerri",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "demal",
+    "end_word": "hairy",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "meshy",
+    "end_word": "perty",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "pungi",
+    "end_word": "mashy",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "snoop",
+    "end_word": "blest",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "suave",
+    "end_word": "poind",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "linja",
+    "end_word": "rowet",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "argid",
+    "end_word": "chuck",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "simar",
+    "end_word": "marty",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "layer",
+    "end_word": "ravin",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "macer",
+    "end_word": "meshy",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "sodic",
+    "end_word": "lanas",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "hairy",
+    "end_word": "manto",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "cetic",
+    "end_word": "barse",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "scald",
+    "end_word": "bogie",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "slant",
+    "end_word": "mardy",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "poind",
+    "end_word": "bozze",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "latin",
+    "end_word": "carob",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "agent",
+    "end_word": "glazy",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "cumin",
+    "end_word": "levir",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "radix",
+    "end_word": "marty",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "mashy",
+    "end_word": "karel",
+    "optimal_steps": 8
+  },
+  {
+    "start_word": "linda",
+    "end_word": "parle",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "lover",
+    "end_word": "remus",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "palea",
+    "end_word": "vimen",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "loper",
+    "end_word": "surge",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "vuggy",
+    "end_word": "perty",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "rutic",
+    "end_word": "lurid",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "arzan",
+    "end_word": "uller",
+    "optimal_steps": 7
+  }
+]

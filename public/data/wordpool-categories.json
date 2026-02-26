@@ -1,0 +1,76 @@
+{
+  "categories": [
+    {
+      "id": "animals",
+      "name": "Animals",
+      "levels": [
+        { "level": 1, "name": "Animals", "words": ["dog", "cat", "bird", "fish", "lion", "bear", "wolf", "deer", "fox", "horse", "cow", "pig", "sheep", "goat", "duck", "mouse", "rat", "tiger", "elephant", "monkey"] },
+        { "level": 2, "name": "Wild Animals", "words": ["lion", "bear", "wolf", "deer", "fox", "tiger", "elephant", "monkey", "zebra", "giraffe", "hippo", "rhino", "leopard", "cheetah", "hyena", "camel", "gorilla", "panda", "koala"] },
+        { "level": 3, "name": "African Animals", "words": ["lion", "elephant", "giraffe", "zebra", "hippo", "rhino", "leopard", "cheetah", "hyena", "gorilla", "camel", "antelope", "wildebeest"] },
+        { "level": 4, "name": "Large African Animals", "words": ["elephant", "giraffe", "hippo", "rhino", "lion", "leopard"] },
+        { "level": 5, "name": "Large African Carnivores", "words": ["lion", "leopard", "cheetah", "hyena"] },
+        { "level": 6, "name": "Large African Cats", "words": ["lion", "leopard", "cheetah"] }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Cooking",
+      "levels": [
+        { "level": 1, "name": "Food", "words": ["apple", "bread", "milk", "egg", "rice", "pasta", "cheese", "butter", "sugar", "salt", "meat", "fish", "soup", "salad", "pizza", "burger", "fruit", "vegetable", "coffee", "tea"] },
+        { "level": 2, "name": "Dairy & Eggs", "words": ["milk", "cheese", "butter", "yogurt", "cream", "egg"] },
+        { "level": 3, "name": "Baked Goods", "words": ["bread", "roll", "bun", "cake", "cookie", "pie", "muffin", "croissant", "bagel"] },
+        { "level": 4, "name": "Breakfast Foods", "words": ["egg", "bacon", "toast", "cereal", "pancake", "waffle", "oatmeal", "bagel", "muffin"] },
+        { "level": 5, "name": "French Pastries", "words": ["croissant", "eclair", "macaron", "crepe", "tart", "souffle"] },
+        { "level": 6, "name": "Types of Pasta", "words": ["spaghetti", "penne", "lasagna", "ravioli", "fettuccine", "macaroni"] }
+      ]
+    },
+    {
+      "id": "transport",
+      "name": "Transportation",
+      "levels": [
+        { "level": 1, "name": "Transportation", "words": ["car", "bus", "train", "plane", "boat", "bike", "truck", "ship", "taxi", "van", "subway", "helicopter"] },
+        { "level": 2, "name": "Ground Vehicles", "words": ["car", "bus", "train", "truck", "van", "taxi", "bike", "motorcycle"] },
+        { "level": 3, "name": "Water Vehicles", "words": ["boat", "ship", "yacht", "canoe", "kayak", "ferry"] },
+        { "level": 4, "name": "Air Vehicles", "words": ["plane", "helicopter", "jet", "airship", "glider"] },
+        { "level": 5, "name": "Public Transport", "words": ["bus", "train", "subway", "taxi", "ferry", "tram"] },
+        { "level": 6, "name": "Two-Wheeled Vehicles", "words": ["bike", "motorcycle", "scooter", "moped"] }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Plants",
+      "levels": [
+        { "level": 1, "name": "Plants", "words": ["tree", "flower", "grass", "bush", "fern", "moss", "vine", "rose", "tulip", "daisy", "oak", "pine", "maple", "palm", "cactus", "lily", "orchid", "sunflower", "daffodil"] },
+        { "level": 2, "name": "Trees", "words": ["oak", "pine", "maple", "palm", "birch", "willow", "cedar", "fir", "elm", "ash", "chestnut", "walnut", "cherry"] },
+        { "level": 3, "name": "Flowers", "words": ["rose", "tulip", "daisy", "lily", "orchid", "sunflower", "daffodil", "violet", "poppy", "iris", "carnation", "dahlia", "peony", "marigold", "jasmine"] },
+        { "level": 4, "name": "Garden Plants", "words": ["rose", "tulip", "daisy", "lily", "orchid", "sunflower", "marigold", "lavender", "mint", "basil", "tomato", "carrot", "lettuce"] },
+        { "level": 5, "name": "Coniferous Trees", "words": ["pine", "cedar", "fir", "spruce", "hemlock", "larch", "redwood", "sequoia"] },
+        { "level": 6, "name": "Rose Types", "words": ["tea", "floribunda", "grandiflora", "climbing", "shrub", "miniature"] }
+      ]
+    },
+    {
+      "id": "occupations",
+      "name": "Occupations",
+      "levels": [
+        { "level": 1, "name": "Jobs", "words": ["doctor", "teacher", "nurse", "lawyer", "engineer", "artist", "chef", "driver", "writer", "singer", "actor", "pilot", "farmer", "builder", "soldier"] },
+        { "level": 2, "name": "Healthcare", "words": ["doctor", "nurse", "surgeon", "dentist", "vet", "therapist", "paramedic", "pharmacist", "radiologist"] },
+        { "level": 3, "name": "Education", "words": ["teacher", "professor", "tutor", "principal", "librarian", "counselor", "instructor"] },
+        { "level": 4, "name": "Creative", "words": ["artist", "writer", "singer", "actor", "musician", "painter", "designer", "photographer", "sculptor"] },
+        { "level": 5, "name": "Science", "words": ["scientist", "researcher", "chemist", "physicist", "biologist", "astronomer", "geologist"] },
+        { "level": 6, "name": "Medical Specialists", "words": ["cardiologist", "neurologist", "dermatologist", "oncologist", "pediatrician", "psychiatrist"] }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports & Activities",
+      "levels": [
+        { "level": 1, "name": "Sports", "words": ["soccer", "tennis", "basketball", "baseball", "swimming", "running", "golf", "hockey", "volleyball", "boxing", "skiing", "cycling", "surfing", "yoga", "dancing"] },
+        { "level": 2, "name": "Ball Sports", "words": ["soccer", "tennis", "basketball", "baseball", "volleyball", "golf", "cricket", "rugby", "bowling", "pool"] },
+        { "level": 3, "name": "Water Sports", "words": ["swimming", "surfing", "diving", "rowing", "sailing", "kayaking", "canoeing"] },
+        { "level": 4, "name": "Winter Sports", "words": ["skiing", "snowboarding", "hockey", "curling", "skating", "bobsled"] },
+        { "level": 5, "name": "Combat Sports", "words": ["boxing", "wrestling", "judo", "karate", "taekwondo", "fencing", "mma"] },
+        { "level": 6, "name": "Racket Sports", "words": ["tennis", "badminton", "squash", "table tennis", "racquetball"] }
+      ]
+    }
+  ]
+}

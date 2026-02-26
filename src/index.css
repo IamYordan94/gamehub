@@ -1,0 +1,325 @@
+@import "tailwindcss";
+
+@theme {
+  /* CONTEXTO/CONEXO-inspired dark theme */
+  --color-bg-dark: #0f0f1a;
+  --color-bg-surface: #16162a;
+  --color-bg-card: #252538;
+  --color-accent: #3b82f6;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-text: #f5f5f5;
+  --color-text-muted: #a1a1aa;
+  --color-border: #3f3f5a;
+}
+
+:root {
+  --hub-bg: #0b1020;
+  --hub-stroke: rgba(255, 255, 255, 0.10);
+  --hub-text: rgba(255, 255, 255, 0.92);
+  --hub-muted: rgba(255, 255, 255, 0.70);
+  --hub-accent: #2fd1ff;
+  --hub-accent-glow: rgba(47, 209, 255, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--hub-bg);
+  color: var(--hub-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Hub-specific styles */
+.hub-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  border: 1px solid var(--hub-stroke);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hub-card::before {
+  content: "";
+  position: absolute;
+  inset: -60px;
+  background: radial-gradient(260px 140px at 24% 10%, rgba(47, 209, 255, 0.10), transparent 70%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.hub-icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  border: 1px solid rgba(47, 209, 255, 0.20);
+  background: radial-gradient(120px 60px at 40% 30%, rgba(47, 209, 255, 0.14), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 0 22px rgba(47, 209, 255, 0.10);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.hub-tag {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.hub-btn {
+  appearance: none;
+  border: 1px solid rgba(47, 209, 255, 0.25);
+  background: linear-gradient(180deg, rgba(47, 209, 255, 0.20), rgba(47, 209, 255, 0.12));
+  color: var(--hub-text);
+  font-weight: 850;
+  letter-spacing: 0.02em;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hub-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(47, 209, 255, 0.45);
+  background: linear-gradient(180deg, rgba(47, 209, 255, 0.26), rgba(47, 209, 255, 0.14));
+}
+
+.hub-btn:active {
+  transform: translateY(0px);
+}
+
+.hub-btn-ghost {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--hub-text);
+  font-weight: 850;
+  letter-spacing: 0.02em;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hub-btn-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1023px) {
+  .hub-card {
+    grid-column: span 12 !important;
+  }
+}
+
+/* LetterMix (Clear the String) styles */
+.lettermix-bg-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--bg-cols), var(--bg-cell));
+  grid-template-rows: repeat(var(--bg-rows), var(--bg-cell));
+  padding: 18px;
+  gap: 6px;
+  align-content: start;
+}
+
+.lettermix-bg-cell {
+  width: var(--bg-cell);
+  height: var(--bg-cell);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.012);
+  border: 1px solid rgba(255, 255, 255, 0.025);
+  overflow: hidden;
+}
+
+.lettermix-bg-ch {
+  font: 800 11px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.055);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(0.5px);
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lettermix-bg-ch {
+    transition: none;
+  }
+}
+
+.lettermix-string-stage {
+  width: 480px;
+  max-width: 100%;
+  height: 108px;
+  border-radius: 18px;
+  border: 1px solid rgba(47, 209, 255, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.lettermix-string-stage::before {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(300px 140px at 50% 50%, rgba(47, 209, 255, 0.12), transparent 65%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.lettermix-glyph {
+  position: absolute;
+  font: 800 12px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  color: rgba(47, 209, 255, 0.82);
+  text-shadow: 0 0 16px rgba(47, 209, 255, 0.35);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 250ms ease;
+  user-select: none;
+  pointer-events: none;
+}
+
+.lettermix-glyph-on {
+  opacity: 1;
+}
+
+.lettermix-card {
+  width: min(520px, 92%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  margin-top: 6px;
+}
+
+.lettermix-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+.lettermix-dot-on {
+  background: #2fd1ff;
+  box-shadow: 0 0 16px rgba(47, 209, 255, 0.35);
+}
+
+.lettermix-btn {
+  appearance: none;
+  border: 1px solid rgba(47, 209, 255, 0.25);
+  background: linear-gradient(180deg, rgba(47, 209, 255, 0.20), rgba(47, 209, 255, 0.12));
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lettermix-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(47, 209, 255, 0.45);
+  background: linear-gradient(180deg, rgba(47, 209, 255, 0.26), rgba(47, 209, 255, 0.14));
+}
+
+.lettermix-btn:active {
+  transform: translateY(0px);
+}
+
+.lettermix-divider {
+  width: 140px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+  margin: 12px 0 2px 0;
+}
+
+.lettermix-menu-item {
+  width: min(260px, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  background: transparent;
+  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
+  font-weight: 750;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.lettermix-menu-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.lettermix-menu-icon {
+  width: 18px;
+  height: 18px;
+  color: rgba(255, 255, 255, 0.70);
+  flex: 0 0 auto;
+}

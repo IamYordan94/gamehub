@@ -1,0 +1,402 @@
+[
+  {
+    "start_word": "clad",
+    "end_word": "kwan",
+    "optimal_steps": 3
+  },
+  {
+    "start_word": "kala",
+    "end_word": "jinx",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "hohe",
+    "end_word": "sugi",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "baft",
+    "end_word": "huff",
+    "optimal_steps": 3
+  },
+  {
+    "start_word": "knop",
+    "end_word": "dear",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "hopi",
+    "end_word": "miry",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "calf",
+    "end_word": "inde",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "holl",
+    "end_word": "tiny",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "dirk",
+    "end_word": "frat",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "knot",
+    "end_word": "peai",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "inga",
+    "end_word": "hant",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "hayz",
+    "end_word": "haze",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "homy",
+    "end_word": "beau",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "hell",
+    "end_word": "kivu",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "alea",
+    "end_word": "indy",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "kore",
+    "end_word": "chun",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "daza",
+    "end_word": "fowk",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "awat",
+    "end_word": "aula",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "kivu",
+    "end_word": "duke",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "kish",
+    "end_word": "hern",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "koft",
+    "end_word": "ante",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "kran",
+    "end_word": "siam",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "inde",
+    "end_word": "gara",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "jobo",
+    "end_word": "loss",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "dale",
+    "end_word": "keek",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "axis",
+    "end_word": "deal",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "algy",
+    "end_word": "kwan",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "girr",
+    "end_word": "loot",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "hobo",
+    "end_word": "oast",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "hilt",
+    "end_word": "daut",
+    "optimal_steps": 3
+  },
+  {
+    "start_word": "admi",
+    "end_word": "chia",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "ammi",
+    "end_word": "pill",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "deme",
+    "end_word": "jodo",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "abir",
+    "end_word": "oven",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "baba",
+    "end_word": "oime",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "glee",
+    "end_word": "frab",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "laur",
+    "end_word": "mein",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "gona",
+    "end_word": "kome",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "home",
+    "end_word": "ball",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "crib",
+    "end_word": "narr",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "ante",
+    "end_word": "knot",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "asor",
+    "end_word": "pool",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "hope",
+    "end_word": "dint",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "cana",
+    "end_word": "homo",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "push",
+    "end_word": "alme",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "anus",
+    "end_word": "kyat",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "lain",
+    "end_word": "towy",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "ibis",
+    "end_word": "borh",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "ipil",
+    "end_word": "odin",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "lave",
+    "end_word": "blot",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "aiel",
+    "end_word": "toag",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "koae",
+    "end_word": "lane",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "digs",
+    "end_word": "each",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "hunh",
+    "end_word": "goad",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "harp",
+    "end_word": "poil",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "haje",
+    "end_word": "baba",
+    "optimal_steps": 3
+  },
+  {
+    "start_word": "atik",
+    "end_word": "poil",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "guti",
+    "end_word": "lave",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "hory",
+    "end_word": "tasu",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "chia",
+    "end_word": "aunt",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "honk",
+    "end_word": "fosh",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "coon",
+    "end_word": "shot",
+    "optimal_steps": 3
+  },
+  {
+    "start_word": "hora",
+    "end_word": "paip",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "atip",
+    "end_word": "leet",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "heap",
+    "end_word": "orad",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "abed",
+    "end_word": "mang",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "kiby",
+    "end_word": "bony",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "goll",
+    "end_word": "egad",
+    "optimal_steps": 6
+  },
+  {
+    "start_word": "give",
+    "end_word": "hure",
+    "optimal_steps": 3
+  },
+  {
+    "start_word": "kopi",
+    "end_word": "bald",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "gogo",
+    "end_word": "lake",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "bego",
+    "end_word": "deal",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "hunt",
+    "end_word": "seem",
+    "optimal_steps": 5
+  },
+  {
+    "start_word": "bald",
+    "end_word": "kirk",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "grig",
+    "end_word": "life",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "daut",
+    "end_word": "lane",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "cere",
+    "end_word": "rudy",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "hive",
+    "end_word": "brag",
+    "optimal_steps": 7
+  },
+  {
+    "start_word": "kalo",
+    "end_word": "joll",
+    "optimal_steps": 4
+  },
+  {
+    "start_word": "coak",
+    "end_word": "jinx",
+    "optimal_steps": 5
+  }
+]
