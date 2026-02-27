@@ -18,15 +18,15 @@ export default function LetterMixLayout() {
   }, [menuOpen]);
 
   return (
-    <div className="min-h-screen bg-[#0a1628] text-[#e2e8f0]">
-      {/* Clear the String-specific header - deeper blue, teal accent */}
-      <header className="border-b border-[#1e3a5f] px-4 py-4 flex items-center justify-between sticky top-0 bg-[#0a1628]/95 backdrop-blur">
+    <div className="min-h-screen bg-[#121218] text-[#e8e9ed]">
+      {/* Clear the String-specific header - grey + blue accent */}
+      <header className="border-b border-[#2a2a38] px-4 py-4 flex items-center justify-between sticky top-0 bg-[#121218]/95 backdrop-blur">
         <div className="flex items-center gap-3">
-          <Link to="/" className="text-[#94a3b8] hover:text-white transition-colors text-sm">
+          <Link to="/" className="text-[#9ca3af] hover:text-[#e8e9ed] transition-colors text-sm">
             ← Hub
           </Link>
-          <span className="text-[#64748b]">|</span>
-          <h1 className="text-xl font-bold text-[#22d3ee]">Clear the String</h1>
+          <span className="text-[#52525b]">|</span>
+          <h1 className="text-xl font-bold text-[#60a5fa]">Clear the String</h1>
         </div>
         <div ref={menuRef} className="relative">
           <button
@@ -44,11 +44,11 @@ export default function LetterMixLayout() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                className="absolute top-full right-0 mt-2 z-50 w-56 rounded-xl border border-[#1e3a5f] bg-[#0f172a] shadow-xl overflow-hidden"
+                className="absolute top-full right-0 mt-2 z-50 w-56 rounded-xl border border-[#2a2a38] bg-[#1a1a24] shadow-xl overflow-hidden"
                 aria-label="Clear the String menu"
               >
-                <div className="px-4 py-2 border-b border-[#1e3a5f]">
-                  <span className="text-xs font-medium uppercase tracking-wider text-[#64748b]">Game</span>
+                <div className="px-4 py-2 border-b border-[#2a2a38]">
+                  <span className="text-xs font-medium uppercase tracking-wider text-[#6b7280]">Game</span>
                 </div>
                 <div className="p-2">
                 <button 
@@ -56,19 +56,19 @@ export default function LetterMixLayout() {
                     if (resetHandler) resetHandler(); 
                     setMenuOpen(false); 
                   }} 
-                  className="w-full text-left block px-2 py-2 rounded-lg text-[#94a3b8] hover:bg-[#1e3a5f] hover:text-[#22d3ee]"
+                  className="w-full text-left block px-2 py-2 rounded-lg text-[#9ca3af] hover:bg-[#2a2a38] hover:text-[#60a5fa]"
                 >
                   Reset puzzle
                 </button>
-                <Link to="/lettermix/calendar" onClick={() => setMenuOpen(false)} className="block px-2 py-2 rounded-lg text-[#94a3b8] hover:bg-[#1e3a5f] hover:text-[#22d3ee]">
+                <Link to="/lettermix/calendar" onClick={() => setMenuOpen(false)} className="block px-2 py-2 rounded-lg text-[#9ca3af] hover:bg-[#2a2a38] hover:text-[#60a5fa]">
                   Calendar
                 </Link>
                 </div>
-                <div className="px-4 py-2 border-b border-t border-[#1e3a5f]">
-                  <span className="text-xs font-medium uppercase tracking-wider text-[#64748b]">App</span>
+                <div className="px-4 py-2 border-b border-t border-[#2a2a38]">
+                  <span className="text-xs font-medium uppercase tracking-wider text-[#6b7280]">App</span>
                 </div>
                 <div className="p-2">
-                <Link to="/lettermix/about" onClick={() => setMenuOpen(false)} className="block px-2 py-2 rounded-lg text-[#94a3b8] hover:bg-[#1e3a5f] hover:text-[#22d3ee]">
+                <Link to="/lettermix/about" onClick={() => setMenuOpen(false)} className="block px-2 py-2 rounded-lg text-[#9ca3af] hover:bg-[#2a2a38] hover:text-[#60a5fa]">
                   About
                 </Link>
                 </div>

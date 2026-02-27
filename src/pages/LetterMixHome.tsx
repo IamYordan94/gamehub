@@ -140,23 +140,23 @@ export default function LetterMixHome() {
             </div>
             <ol className="flex flex-col gap-[10px] text-[rgba(255,255,255,0.72)] text-sm font-[600] leading-[1.5] list-none m-0 p-0">
               <li className="flex gap-3">
-                <span className="text-[rgba(47,209,255,0.9)] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">1</span>
+                <span className="text-[#60a5fa] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">1</span>
                 <span>You're given a scrambled string of letters. Hidden inside are solution words.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-[rgba(47,209,255,0.9)] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">2</span>
+                <span className="text-[#60a5fa] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">2</span>
                 <span>Click letters to select them and form a word, then press <strong className="text-[rgba(255,255,255,0.86)]">Submit</strong>.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-[rgba(47,209,255,0.9)] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">3</span>
+                <span className="text-[#60a5fa] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">3</span>
                 <span>Any valid English word using those exact letters is accepted — not just the solution words.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-[rgba(47,209,255,0.9)] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">4</span>
+                <span className="text-[#60a5fa] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">4</span>
                 <span>Find all hidden solution words to win. Use the <strong className="text-[rgba(255,255,255,0.86)]">Hint</strong> button if you're stuck.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-[rgba(47,209,255,0.9)] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">5</span>
+                <span className="text-[#60a5fa] font-[800] text-[13px] w-5 flex-shrink-0 mt-[1px]">5</span>
                 <span>Three difficulty levels daily: <strong className="text-[rgba(255,255,255,0.86)]">easy</strong>, <strong className="text-[rgba(255,255,255,0.86)]">medium</strong>, <strong className="text-[rgba(255,255,255,0.86)]">hard</strong>. New puzzles every day.</span>
               </li>
             </ol>

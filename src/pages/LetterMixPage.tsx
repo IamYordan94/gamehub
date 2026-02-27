@@ -1,9 +1,13 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, Link, useOutletContext } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Haptics, ImpactStyle } from '@capacitor/haptics';
+import { Capacitor } from '@capacitor/core';
 import { useWordDatabase } from '../hooks/useWordDatabase';
 import { getTodayDateStr } from '../utils/dailySeed';
-import { setLetterMixCompleted, getLetterMixCompletedFor } from '../utils/storage';
+import { setLetterMixCompleted, getLetterMixCompletedFor, getHintTargetAsync, setHintTargetAsync, clearHintTargetAsync } from '../utils/storage';
+import { shouldShowAdForHint, showRewardedAd } from '../utils/ads';
+import { recordHintEvent } from '../utils/database';
 // Helper to check if a word can be formed from available letters (any order)
 function canFormFromLetters(availableLetters: string, word: string): boolean {
   const letterCounts: Record<string, number> = {};
@@ -89,6 +93,9 @@ export default function LetterMixPage() {
     .toLowerCase();
 
   const handleLetterClick = (index: number) => {
+    if (Capacitor.isNativePlatform()) {
+      Haptics.impact({ style: ImpactStyle.Light }).catch(() => {});
+    }
     setSelectedIndices((prev) =>
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
@@ -131,12 +138,25 @@ export default function LetterMixPage() {
       setMessage(null);
       setHint(null);
       setShared(false);
+      clearHintTargetAsync('lettermix', `${puzzle.date}_${puzzle.level}`);
     }
   }, [puzzle]);
 
   // NEW: Win = found all solution words (not just cleared all letters)
   const foundSolutionWords = puzzle ? foundWords.filter(w => puzzle.solutionWords.includes(w)) : [];
   const isWon = puzzle && foundSolutionWords.length === puzzle.solutionWords.length;
+
+  // Clear hint target when user finds the word we were hinting for
+  useEffect(() => {
+    if (!puzzle || foundWords.length === 0) return;
+    (async () => {
+      const puzzleId = `${puzzle.date}_${puzzle.level}`;
+      const target = await getHintTargetAsync('lettermix', puzzleId);
+      if (target && foundWords.includes(target.targetWord)) {
+        await clearHintTargetAsync('lettermix', puzzleId);
+      }
+    })();
+  }, [puzzle, foundWords]);
 
   // Check if stuck: can't form any more 2+ letter words from remaining letters
   const checkIfStuck = (): boolean => {
@@ -174,23 +194,65 @@ export default function LetterMixPage() {
     return () => setResetHandler(null);
   }, [setResetHandler, handleReset]);
 
-  const getHint = () => {
+  const getHint = async () => {
     if (!puzzle || puzzle.solutionWords.length === 0) return;
+
+    const puzzleId = `${puzzle.date}_${puzzle.level}`;
     const remainingLetters = letters.join('');
-    // Only hint solution words (not any valid word)
     const unseenSolution = puzzle.solutionWords.filter(w => !foundWords.includes(w));
+
     if (unseenSolution.length === 0) {
       setHint('You found all solution words!');
       return;
     }
-    for (const word of unseenSolution) {
-      if (canFormFromLetters(remainingLetters, word)) {
-        // Non-direct hint: length + first letter
-        setHint(`Try a ${word.length}-letter word starting with "${word[0].toUpperCase()}"...`);
+
+    // Pick target: use stored hint target if still valid, else first formable or shortest unfound
+    let targetWord: string;
+    const stored = await getHintTargetAsync('lettermix', puzzleId);
+    if (stored && unseenSolution.includes(stored.targetWord)) {
+      targetWord = stored.targetWord;
+    } else {
+      let hintWord: string | null = null;
+      for (const word of unseenSolution) {
+        if (canFormFromLetters(remainingLetters, word)) {
+          hintWord = word;
+          break;
+        }
+      }
+      targetWord = hintWord ?? unseenSolution.slice().sort((a, b) => a.length - b.length)[0];
+    }
+
+    let hintLevel = stored?.targetWord === targetWord ? stored.hintLevel : 1;
+    const maxLevel = 4; // 1=length, 2=1st letter, 3=2nd, 4=3rd
+
+    // Build hint text: cumulative progressive reveal (length → +1st letter → +2nd → +3rd)
+    let hintText: string;
+    if (hintLevel === 1) {
+      hintText = `Look for a ${targetWord.length}-letter word.`;
+    } else if (hintLevel === 2) {
+      hintText = `Look for a ${targetWord.length}-letter word starting with "${targetWord[0].toUpperCase()}".`;
+    } else if (hintLevel === 3) {
+      hintText = `Look for a ${targetWord.length}-letter word starting with "${targetWord.slice(0, 2).toUpperCase()}".`;
+    } else {
+      hintText = `Look for a ${targetWord.length}-letter word starting with "${targetWord.slice(0, 3).toUpperCase()}".`;
+    }
+
+    const showAd = await shouldShowAdForHint('lettermix');
+
+    if (showAd) {
+      setHint('Loading ad...');
+      const result = await showRewardedAd();
+
+      if (!result.rewarded) {
+        setHint('Watch the full ad to get a hint!');
         return;
       }
     }
-    setHint('No solution words formable from remaining letters.');
+
+    setHint(hintText);
+    const nextLevel = Math.min(hintLevel + 1, maxLevel);
+    await setHintTargetAsync('lettermix', puzzleId, targetWord, nextLevel);
+    await recordHintEvent('lettermix', puzzleId, `hint-level-${hintLevel}`, showAd);
   };
 
   const switchLevel = (newLevel: (typeof LEVELS)[number]) => {
@@ -219,11 +281,11 @@ export default function LetterMixPage() {
     return (
       <div className="flex flex-col items-center justify-center py-12 space-y-4">
         <p className="text-[#94a3b8] text-center">
-          Could not load puzzles. Check that <code className="text-[#22d3ee]">/data/lettermix-puzzles.json</code> is available.
+          Could not load puzzles. Check that <code className="text-[#60a5fa]">/data/lettermix-puzzles.json</code> is available.
         </p>
         <Link
           to="/lettermix"
-          className="px-4 py-2 rounded-lg bg-[#22d3ee] text-[#0a1628] font-medium hover:bg-[#2dd4bf]"
+          className="px-4 py-2 rounded-lg bg-[#60a5fa] text-[#0f0f1a] font-medium hover:bg-[#3b82f6]"
         >
           Try again
         </Link>
@@ -256,9 +318,9 @@ export default function LetterMixPage() {
               transition={{ duration: 0.22, ease: 'easeOut' }}
               className="fixed z-50 bottom-0 left-0 right-0 sm:inset-0 sm:flex sm:items-center sm:justify-center sm:p-4"
             >
-              <div className="w-full sm:max-w-md bg-[#0a1628] border border-[#1e3a5f] rounded-t-2xl sm:rounded-2xl p-6 max-h-[85dvh] overflow-y-auto">
+              <div className="w-full sm:max-w-md bg-[#1a1a24] border border-[#2a2a38] rounded-t-2xl sm:rounded-2xl p-6 max-h-[85dvh] overflow-y-auto">
                 <div className="flex items-center justify-between mb-5">
-                  <h2 className="text-lg font-bold text-[#22d3ee]">How to play</h2>
+                  <h2 className="text-lg font-bold text-[#60a5fa]">How to play</h2>
                   <button
                     onClick={() => setRulesOpen(false)}
                     className="w-8 h-8 flex items-center justify-center rounded-full border border-[#1e3a5f] text-[#64748b] hover:text-[#e2e8f0] hover:border-[#334155] transition-colors text-lg leading-none"
@@ -269,25 +331,25 @@ export default function LetterMixPage() {
                 </div>
                 <ol className="space-y-4 list-none m-0 p-0">
                   <li className="flex gap-3 text-sm">
-                    <span className="text-[#22d3ee] font-bold w-5 flex-shrink-0 mt-0.5">1</span>
-                    <span className="text-[#94a3b8] leading-relaxed">A string of scrambled letters hides several solution words. Your goal is to <strong className="text-[#e2e8f0]">find all of them</strong> to clear the string.</span>
+                    <span className="text-[#60a5fa] font-bold w-5 flex-shrink-0 mt-0.5">1</span>
+                    <span className="text-[#9ca3af] leading-relaxed">A string of scrambled letters hides several solution words. Your goal is to <strong className="text-[#e8e9ed]">find all of them</strong> to clear the string.</span>
                   </li>
                   <li className="flex gap-3 text-sm">
-                    <span className="text-[#22d3ee] font-bold w-5 flex-shrink-0 mt-0.5">2</span>
-                    <span className="text-[#94a3b8] leading-relaxed">Tap letters to select them in any order, then press <strong className="text-[#e2e8f0]">Submit</strong>. Any valid English word using those letters is accepted — not just solution words.</span>
+                    <span className="text-[#60a5fa] font-bold w-5 flex-shrink-0 mt-0.5">2</span>
+                    <span className="text-[#9ca3af] leading-relaxed">Tap letters to select them in any order, then press <strong className="text-[#e8e9ed]">Submit</strong>. Any valid English word using those letters is accepted — not just solution words.</span>
                   </li>
                   <li className="flex gap-3 text-sm">
-                    <span className="text-[#22d3ee] font-bold w-5 flex-shrink-0 mt-0.5">3</span>
-                    <span className="text-[#94a3b8] leading-relaxed">Matched letters disappear. The order you remove words matters — some letters are shared between solution words.</span>
+                    <span className="text-[#60a5fa] font-bold w-5 flex-shrink-0 mt-0.5">3</span>
+                    <span className="text-[#9ca3af] leading-relaxed">Matched letters disappear. The order you remove words matters — some letters are shared between solution words.</span>
                   </li>
                   <li className="flex gap-3 text-sm">
-                    <span className="text-[#22d3ee] font-bold w-5 flex-shrink-0 mt-0.5">4</span>
-                    <span className="text-[#94a3b8] leading-relaxed">Stuck? Press <strong className="text-[#e2e8f0]">Hint</strong> to get a clue about a remaining solution word.</span>
+                    <span className="text-[#60a5fa] font-bold w-5 flex-shrink-0 mt-0.5">4</span>
+                    <span className="text-[#9ca3af] leading-relaxed">Stuck? Press <strong className="text-[#e8e9ed]">Hint</strong> to get a clue about a remaining solution word.</span>
                   </li>
                 </ol>
                 <button
                   onClick={() => setRulesOpen(false)}
-                  className="mt-6 w-full py-3 rounded-xl bg-[#22d3ee] text-[#0a1628] font-semibold text-sm hover:bg-[#2dd4bf] transition-colors"
+                  className="mt-6 w-full py-3 rounded-xl bg-[#60a5fa] text-[#0f0f1a] font-semibold text-sm hover:bg-[#3b82f6] transition-colors"
                 >
                   Got it — let's play
                 </button>
@@ -308,7 +370,7 @@ export default function LetterMixPage() {
                 {Array.from({ length: puzzle.solutionWords.length }).map((_, i) => (
                   <span
                     key={i}
-                    className={`text-lg ${i < foundSolutionWords.length ? 'text-[#22d3ee]' : 'text-[#64748b]'}`}
+                    className={`text-lg ${i < foundSolutionWords.length ? 'text-[#60a5fa]' : 'text-[#52525b]'}`}
                   >
                     {i < foundSolutionWords.length ? '●' : '○'}
                   </span>
@@ -329,7 +391,7 @@ export default function LetterMixPage() {
             </button>
             <button
               onClick={getHint}
-              className="px-2 py-1 rounded text-xs bg-[#1e3a5f] text-[#22d3ee] hover:bg-[#334155]"
+              className="px-2 py-1 rounded text-xs bg-[#2a2a38] text-[#60a5fa] hover:bg-[#333342]"
             >
               Hint
             </button>
@@ -342,15 +404,15 @@ export default function LetterMixPage() {
               onClick={() => switchLevel(l)}
               className={`px-3 py-1.5 rounded-lg text-sm font-medium capitalize ${
                 l === puzzle.level
-                  ? 'bg-[#22d3ee] text-[#0a1628]'
-                  : 'border border-[#334155] text-[#94a3b8] hover:border-[#22d3ee]/50'
+                  ? 'bg-[#60a5fa] text-[#0f0f1a]'
+                  : 'border border-[#3a3a48] text-[#9ca3af] hover:border-[#60a5fa]/50'
               }`}
             >
               {l}
             </button>
           ))}
         </div>
-        {hint && <p className="text-sm text-[#22d3ee] mb-2">{hint}</p>}
+        {hint && <p className="text-sm text-[#60a5fa] mb-2">{hint}</p>}
 
         <AnimatePresence mode="wait">
           {isWon ? (
@@ -369,7 +431,7 @@ export default function LetterMixPage() {
                   navigator.clipboard.writeText(text);
                   setShared(true);
                 }}
-                className="px-4 py-2 rounded-lg bg-[#22d3ee] text-[#0a1628] font-medium hover:bg-[#2dd4bf]"
+                className="px-4 py-2 rounded-lg bg-[#60a5fa] text-[#0f0f1a] font-medium hover:bg-[#3b82f6]"
               >
                 {shared ? 'Copied!' : 'Share'}
               </button>
@@ -405,8 +467,8 @@ export default function LetterMixPage() {
                       onClick={() => handleLetterClick(i)}
                       className={`w-12 h-12 rounded-lg border font-mono text-lg font-medium transition-all ${
                         selectedIndices.includes(i)
-                          ? 'bg-[#22d3ee] border-[#22d3ee] text-[#0a1628]'
-                          : 'bg-[#1e3a5f] border-[#334155] text-[#e2e8f0] hover:border-[#22d3ee]/50'
+                          ? 'bg-[#60a5fa] border-[#60a5fa] text-[#0f0f1a]'
+                          : 'bg-[#2a2a38] border-[#3a3a48] text-[#e8e9ed] hover:border-[#60a5fa]/50'
                       }`}
                     >
                       {letter.toUpperCase()}
@@ -421,7 +483,7 @@ export default function LetterMixPage() {
                 </div>
                 <button
                   onClick={handleSubmit}
-                  className="px-4 py-2 rounded-lg bg-[#22d3ee] text-[#0a1628] font-medium hover:bg-[#2dd4bf]"
+                  className="px-4 py-2 rounded-lg bg-[#60a5fa] text-[#0f0f1a] font-medium hover:bg-[#3b82f6]"
                 >
                   Submit
                 </button>

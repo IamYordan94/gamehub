@@ -17,19 +17,19 @@ export default function ChangeByOneLayout() {
   }, [menuOpen]);
 
   return (
-    <div className="min-h-screen bg-[#0d1117] text-[#e2e8f0]">
-      <header className="border-b border-[#30363d] px-4 py-4 flex items-center justify-between sticky top-0 bg-[#0d1117]/95 backdrop-blur z-30">
+    <div className="min-h-screen bg-[#121218] text-[#e8e9ed]">
+      <header className="border-b border-[#2a2a38] px-4 py-4 flex items-center justify-between sticky top-0 bg-[#121218]/95 backdrop-blur z-30">
         <div className="flex items-center gap-3">
-          <Link to="/" className="text-[#8b949e] hover:text-white transition-colors text-sm">
+          <Link to="/" className="text-[#9ca3af] hover:text-[#e8e9ed] transition-colors text-sm">
             ← Hub
           </Link>
-          <span className="text-[#30363d]">|</span>
-          <h1 className="text-xl font-bold text-[#a371f7]">Change by One</h1>
+          <span className="text-[#52525b]">|</span>
+          <h1 className="text-xl font-bold text-[#fbbf24]">Change by One</h1>
         </div>
         <div ref={menuRef} className="relative">
           <button
             onClick={(e) => { e.stopPropagation(); setMenuOpen(!menuOpen); }}
-            className="p-2 rounded-lg hover:bg-[#21262d] text-[#8b949e]"
+            className="p-2 rounded-lg hover:bg-[#2a2a38] text-[#9ca3af]"
             aria-label="Menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,21 +42,21 @@ export default function ChangeByOneLayout() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                className="absolute top-full right-0 mt-2 z-50 w-52 rounded-xl border border-[#30363d] bg-[#161b22] shadow-xl overflow-hidden"
+                className="absolute top-full right-0 mt-2 z-50 w-52 rounded-xl border border-[#2a2a38] bg-[#1a1a24] shadow-xl overflow-hidden"
                 aria-label="Change by One menu"
               >
                 <div className="p-2">
                   <Link
                     to="/changebyone/about"
                     onClick={() => setMenuOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-[#8b949e] hover:bg-[#21262d] hover:text-[#a371f7] text-sm"
+                    className="block px-3 py-2 rounded-lg text-[#9ca3af] hover:bg-[#2a2a38] hover:text-[#fbbf24] text-sm"
                   >
                     About
                   </Link>
                   <Link
                     to="/"
                     onClick={() => setMenuOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-[#8b949e] hover:bg-[#21262d] hover:text-[#a371f7] text-sm"
+                    className="block px-3 py-2 rounded-lg text-[#9ca3af] hover:bg-[#2a2a38] hover:text-[#fbbf24] text-sm"
                   >
                     Back to Hub
                   </Link>

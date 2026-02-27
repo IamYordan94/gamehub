@@ -77,10 +77,10 @@ export default function LetterMixCalendar() {
             to={`/lettermix/play/${dateStr}/easy`}
             className={`w-full h-full flex items-center justify-center rounded-lg border transition-colors ${
               isToday
-                ? 'border-[#22d3ee] bg-[#22d3ee]/20 text-[#22d3ee] font-bold'
+                ? 'border-[#60a5fa] bg-[#60a5fa]/20 text-[#60a5fa] font-bold'
                 : completed
-                ? 'border-[#10b981] bg-[#10b981]/10 text-[#10b981] hover:bg-[#10b981]/20'
-                : 'border-[#1e3a5f] bg-[#0f172a] text-[#e2e8f0] hover:bg-[#1e3a5f]'
+                ? 'border-[#34d399] bg-[#34d399]/10 text-[#34d399] hover:bg-[#34d399]/20'
+                : 'border-[#2a2a38] bg-[#1a1a24] text-[#e8e9ed] hover:bg-[#2a2a38]'
             }`}
           >
             {day}
@@ -113,7 +113,7 @@ export default function LetterMixCalendar() {
           </span>
           <button
             onClick={goToNextMonth}
-            className="p-2 rounded-lg border border-[#1e3a5f] text-[#94a3b8] hover:bg-[#1e3a5f]"
+            className="p-2 rounded-lg border border-[#2a2a38] text-[#9ca3af] hover:bg-[#2a2a38]"
             aria-label="Next month"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +127,7 @@ export default function LetterMixCalendar() {
         <p>Click a date to play that day's puzzle.</p>
         <div className="flex items-center gap-4 flex-wrap">
           <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border border-[#22d3ee] bg-[#22d3ee]/20"></div>
+            <div className="w-4 h-4 rounded border border-[#60a5fa] bg-[#60a5fa]/20"></div>
             <span>Today</span>
           </div>
           <div className="flex items-center gap-2">
@@ -135,14 +135,14 @@ export default function LetterMixCalendar() {
             <span>Completed</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border border-[#1e3a5f] bg-[#0f172a]"></div>
+            <div className="w-4 h-4 rounded border border-[#2a2a38] bg-[#1a1a24]"></div>
             <span>Available</span>
           </div>
         </div>
       </div>
 
       {/* Calendar grid */}
-      <div className="rounded-xl border border-[#1e3a5f] bg-[#0f172a]/50 p-4">
+      <div className="rounded-xl border border-[#2a2a38] bg-[#1a1a24]/50 p-4">
         {/* Day names */}
         <div className="grid grid-cols-7 gap-2 mb-2">
           {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (

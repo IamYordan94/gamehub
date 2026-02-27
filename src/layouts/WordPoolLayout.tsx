@@ -17,20 +17,20 @@ export default function WordPoolLayout() {
   }, [menuOpen]);
 
   return (
-    <div className="min-h-screen bg-[#1a1410] text-[#fef3c7]">
-      {/* WordPool-specific header - warm amber/brown tones */}
-      <header className="border-b border-[#422006] px-4 py-4 flex items-center justify-between sticky top-0 bg-[#1a1410]/95 backdrop-blur">
+    <div className="min-h-screen bg-[#121218] text-[#e8e9ed]">
+      {/* WordPool-specific header - grey + green accent */}
+      <header className="border-b border-[#2a2a38] px-4 py-4 flex items-center justify-between sticky top-0 bg-[#121218]/95 backdrop-blur">
         <div className="flex items-center gap-3">
-          <Link to="/" className="text-[#a78b71] hover:text-white transition-colors text-sm">
+          <Link to="/" className="text-[#9ca3af] hover:text-[#e8e9ed] transition-colors text-sm">
             ← Hub
           </Link>
-          <span className="text-[#78350f]">|</span>
-          <h1 className="text-xl font-bold text-[#f59e0b]">WordPool</h1>
+          <span className="text-[#52525b]">|</span>
+          <h1 className="text-xl font-bold text-[#34d399]">WordPool</h1>
         </div>
         <div ref={menuRef} className="relative">
           <button
             onClick={(e) => { e.stopPropagation(); setMenuOpen(!menuOpen); }}
-            className="p-2 rounded-lg hover:bg-[#422006] text-[#a78b71]"
+            className="p-2 rounded-lg hover:bg-[#2a2a38] text-[#9ca3af]"
             aria-label="Menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -43,18 +43,18 @@ export default function WordPoolLayout() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                className="absolute top-full right-0 mt-2 z-50 w-56 rounded-xl border border-[#422006] bg-[#292524] p-4 shadow-xl"
+                className="absolute top-full right-0 mt-2 z-50 w-56 rounded-xl border border-[#2a2a38] bg-[#1a1a24] p-4 shadow-xl"
               >
-<Link to="/wordpool" onClick={() => setMenuOpen(false)} className="block py-2 text-[#a78b71] hover:text-[#f59e0b]">
+<Link to="/wordpool" onClick={() => setMenuOpen(false)} className="block py-2 text-[#9ca3af] hover:text-[#34d399]">
               Play
             </Link>
-            <Link to="/wordpool/previous" onClick={() => setMenuOpen(false)} className="block py-2 text-[#a78b71] hover:text-[#f59e0b]">
+            <Link to="/wordpool/previous" onClick={() => setMenuOpen(false)} className="block py-2 text-[#9ca3af] hover:text-[#34d399]">
               Previous games
             </Link>
-            <Link to="/wordpool/settings" onClick={() => setMenuOpen(false)} className="block py-2 text-[#a78b71] hover:text-[#f59e0b]">
+            <Link to="/wordpool/settings" onClick={() => setMenuOpen(false)} className="block py-2 text-[#9ca3af] hover:text-[#34d399]">
               Settings
             </Link>
-            <Link to="/wordpool/about" onClick={() => setMenuOpen(false)} className="block py-2 text-[#a78b71] hover:text-[#f59e0b]">
+            <Link to="/wordpool/about" onClick={() => setMenuOpen(false)} className="block py-2 text-[#9ca3af] hover:text-[#34d399]">
               About
             </Link>
               </motion.nav>

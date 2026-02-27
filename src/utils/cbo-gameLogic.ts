@@ -58,6 +58,30 @@ export function suggestNextStep(
   return best;
 }
 
+/** Returns any valid one-letter-change neighbor, excluding used words. Fallback when suggestNextStep finds nothing. */
+export function getAnyValidNeighbor(
+  currentWord: string,
+  allWords: string[],
+  usedWords: string[] = []
+): string | null {
+  const usedSet = new Set(usedWords.map((w) => w.toLowerCase()));
+  for (const w of allWords) {
+    if (w === currentWord) continue;
+    if (usedSet.has(w)) continue;
+    if (hasOneLetterDifference(currentWord, w)) return w;
+  }
+  return null;
+}
+
+/** Returns the index of a letter that differs from the target, for a "try changing letter N" hint. */
+export function getDifferingLetterIndex(currentWord: string, targetWord: string): number | null {
+  if (currentWord.length !== targetWord.length) return null;
+  for (let i = 0; i < currentWord.length; i++) {
+    if (currentWord[i] !== targetWord[i]) return i;
+  }
+  return null;
+}
+
 function letterSimilarity(a: string, b: string): number {
   if (a.length !== b.length) return 0;
   let matches = 0;

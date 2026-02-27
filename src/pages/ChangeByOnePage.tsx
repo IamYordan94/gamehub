@@ -10,7 +10,10 @@ import {
   loadCboState,
 } from '../utils/cbo-gameState';
 import type { CboDailyState, CboPuzzleState } from '../utils/cbo-gameState';
-import { suggestNextStep } from '../utils/cbo-gameLogic';
+import { suggestNextStep, getAnyValidNeighbor, getDifferingLetterIndex, hasOneLetterDifference } from '../utils/cbo-gameLogic';
+import { shouldShowAdForHint, showRewardedAd } from '../utils/ads';
+import { recordHintEvent } from '../utils/database';
+import { getHintTargetAsync, setHintTargetAsync, clearHintTargetAsync } from '../utils/storage';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -18,7 +21,7 @@ function highlightDiff(prev: string, current: string): React.ReactElement[] {
   return current.split('').map((ch, i) => (
     <span
       key={i}
-      className={prev[i] !== ch ? 'text-[#a371f7] font-bold' : ''}
+      className={prev[i] !== ch ? 'text-[#fbbf24] font-bold' : ''}
     >
       {ch.toUpperCase()}
     </span>
@@ -38,7 +41,7 @@ function WordChain({ chain }: { chain: string[] }) {
               {i > 0 ? highlightDiff(chain[i - 1], word) : word.toUpperCase()}
             </div>
             {i < chain.length - 1 && (
-              <span className="text-[#a371f7] text-sm font-bold">→</span>
+              <span className="text-[#fbbf24] text-sm font-bold">→</span>
             )}
           </div>
         ))}
@@ -62,10 +65,10 @@ function PuzzleTab({
       onClick={onClick}
       className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
         active
-          ? 'bg-[#a371f7] text-white'
+          ? 'bg-[#fbbf24] text-[#0f0f1a]'
           : isDone
-          ? 'border border-[#10b981]/40 text-[#10b981] hover:border-[#10b981]/70'
-          : 'border border-[#30363d] text-[#8b949e] hover:border-[#a371f7]/50 hover:text-[#e2e8f0]'
+          ? 'border border-[#34d399]/40 text-[#34d399] hover:border-[#34d399]/70'
+          : 'border border-[#3a3a48] text-[#9ca3af] hover:border-[#fbbf24]/50 hover:text-[#e8e9ed]'
       }`}
     >
       {ps.length}L
@@ -90,7 +93,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
         onClick={e => e.stopPropagation()}
       >
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold text-[#a371f7]">How to Play</h2>
+          <h2 className="text-xl font-bold text-[#fbbf24]">How to Play</h2>
           <button
             onClick={onClose}
             className="p-1.5 rounded-lg hover:bg-[#21262d] text-[#8b949e] text-lg"
@@ -100,27 +103,27 @@ function RulesModal({ onClose }: { onClose: () => void }) {
         </div>
         <ol className="space-y-3 text-sm text-[#c9d1d9]">
           <li className="flex gap-3">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#a371f7]/20 text-[#a371f7] text-xs font-bold flex items-center justify-center">1</span>
-            <span>You're given a <strong className="text-white">start word</strong> and a <strong className="text-white">target word</strong> of the same length.</span>
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#fbbf24]/20 text-[#fbbf24] text-xs font-bold flex items-center justify-center">1</span>
+            <span>You're given a <strong className="text-[#e8e9ed]">start word</strong> and a <strong className="text-[#e8e9ed]">target word</strong> of the same length.</span>
           </li>
           <li className="flex gap-3">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#a371f7]/20 text-[#a371f7] text-xs font-bold flex items-center justify-center">2</span>
-            <span>Each step, type a new word that differs from the previous word by <strong className="text-white">exactly one letter</strong>.</span>
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#fbbf24]/20 text-[#fbbf24] text-xs font-bold flex items-center justify-center">2</span>
+            <span>Each step, type a new word that differs from the previous word by <strong className="text-[#e8e9ed]">exactly one letter</strong>.</span>
           </li>
           <li className="flex gap-3">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#a371f7]/20 text-[#a371f7] text-xs font-bold flex items-center justify-center">3</span>
-            <span>Every word you type must be a <strong className="text-white">real English word</strong>.</span>
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#fbbf24]/20 text-[#fbbf24] text-xs font-bold flex items-center justify-center">3</span>
+            <span>Every word you type must be a <strong className="text-[#e8e9ed]">real English word</strong>.</span>
           </li>
           <li className="flex gap-3">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#a371f7]/20 text-[#a371f7] text-xs font-bold flex items-center justify-center">4</span>
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#fbbf24]/20 text-[#fbbf24] text-xs font-bold flex items-center justify-center">4</span>
             <span>Reach the target word in as few steps as possible. The puzzle resets if you exceed the move limit.</span>
           </li>
         </ol>
         <div className="mt-4 p-3 bg-[#21262d] rounded-lg">
           <p className="text-xs text-[#8b949e] mb-2">Example: CAT → DOG</p>
           <div className="flex items-center gap-2 flex-wrap text-sm font-mono font-bold">
-            <span className="text-[#a371f7]">CAT</span>
-            <span className="text-[#8b949e]">→</span>
+            <span className="text-[#fbbf24]">CAT</span>
+            <span className="text-[#9ca3af]">→</span>
             <span className="text-white">COT</span>
             <span className="text-[#8b949e]">→</span>
             <span className="text-white">DOT</span>
@@ -211,23 +214,71 @@ export default function ChangeByOnePage() {
     saveCboState(newState);
     setInput('');
     setHintText(null);
+    clearHintTargetAsync('changebyone', `${getTodayCboDateStr()}_${activeLength}`);
   }, [gameState, activeLength]);
 
-  const handleHint = useCallback(() => {
+  const handleHint = useCallback(async () => {
     if (!activePuzzle || activePuzzle.status === 'won') return;
     const used = hintsUsed[activeLength] ?? 0;
     if (used >= 2) {
       setHintText('No more hints for this puzzle.');
       return;
     }
+
+    const puzzleId = `${getTodayCboDateStr()}_${activeLength}`;
     const words = getCboWordsByLength(activeLength);
-    const suggestion = suggestNextStep(activePuzzle.currentWord, activePuzzle.end_word, words);
-    if (suggestion) {
-      setHintText(`Try a word starting with "${suggestion[0].toUpperCase()}"…`);
-      setHintsUsed(prev => ({ ...prev, [activeLength]: used + 1 }));
-    } else {
-      setHintText('No hint available — try a different path!');
+    const usedWords = activePuzzle.wordChain.slice(1);
+
+    // Pick target: use stored hint target if still valid (not yet in chain), else compute next word
+    let targetWord: string | null = null;
+    const stored = await getHintTargetAsync('changebyone', puzzleId);
+    if (stored && !usedWords.includes(stored.targetWord) && hasOneLetterDifference(activePuzzle.currentWord, stored.targetWord)) {
+      targetWord = stored.targetWord;
     }
+    if (!targetWord) {
+      targetWord = suggestNextStep(activePuzzle.currentWord, activePuzzle.end_word, words)
+        ?? getAnyValidNeighbor(activePuzzle.currentWord, words, usedWords);
+    }
+
+    let hintLevel = stored?.targetWord === targetWord ? stored.hintLevel : 1;
+    const maxLevel = 2; // 2 hints per puzzle: 1st letter, then 2nd letter (or position)
+
+    let hintTextToShow: string;
+    if (targetWord) {
+      if (hintLevel === 1) {
+        hintTextToShow = `Try a word starting with "${targetWord[0].toUpperCase()}".`;
+      } else {
+        hintTextToShow = `Try a word starting with "${targetWord.slice(0, 2).toUpperCase()}".`;
+      }
+    } else {
+      const diffIdx = getDifferingLetterIndex(activePuzzle.currentWord, activePuzzle.end_word);
+      if (diffIdx !== null) {
+        const pos = diffIdx + 1;
+        hintTextToShow = `Try changing the ${pos}${pos === 1 ? 'st' : pos === 2 ? 'nd' : pos === 3 ? 'rd' : 'th'} letter — it differs from the target.`;
+      } else {
+        hintTextToShow = 'Try going back a step and choosing a different word.';
+      }
+    }
+
+    const showAd = await shouldShowAdForHint('changebyone');
+
+    if (showAd) {
+      setHintText('Loading ad...');
+      const result = await showRewardedAd();
+
+      if (!result.rewarded) {
+        setHintText('Watch the full ad to get a hint!');
+        return;
+      }
+    }
+
+    setHintText(hintTextToShow);
+    if (targetWord) {
+      const nextLevel = Math.min(hintLevel + 1, maxLevel);
+      await setHintTargetAsync('changebyone', puzzleId, targetWord, nextLevel);
+    }
+    setHintsUsed(prev => ({ ...prev, [activeLength]: used + 1 }));
+    await recordHintEvent('changebyone', puzzleId, `hint-level-${hintLevel}`, showAd);
   }, [activePuzzle, activeLength, hintsUsed]);
 
   // ── Loading / error states ──────────────────────────────────────────────
@@ -235,8 +286,8 @@ export default function ChangeByOnePage() {
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center py-20 gap-4">
-        <div className="w-10 h-10 rounded-full border-2 border-[#30363d] border-t-[#a371f7] animate-spin" />
-        <p className="text-[#8b949e] text-sm">Loading today's challenge…</p>
+        <div className="w-10 h-10 rounded-full border-2 border-[#3a3a48] border-t-[#fbbf24] animate-spin" />
+        <p className="text-[#9ca3af] text-sm">Loading today's challenge…</p>
       </div>
     );
   }
@@ -264,8 +315,8 @@ export default function ChangeByOnePage() {
     <div className="space-y-5">
       {/* Header */}
       <div className="text-center space-y-1">
-        <h2 className="text-2xl font-black tracking-tight text-white">
-          Change<span className="text-base mx-1 text-[#a371f7]">by</span>One
+        <h2 className="text-2xl font-black tracking-tight text-[#e8e9ed]">
+          Change<span className="text-base mx-1 text-[#fbbf24]">by</span>One
         </h2>
         <p className="text-sm text-[#8b949e]">
           Transform the start word into the target — one letter at a time.
@@ -309,7 +360,7 @@ export default function ChangeByOnePage() {
             {activePuzzle.length}-Letter Puzzle
           </p>
           <div className="flex items-center justify-center gap-3">
-            <div className="px-4 py-2 rounded-xl bg-[#a371f7]/10 border border-[#a371f7]/30 font-mono font-bold text-[#a371f7] text-lg tracking-widest">
+            <div className="px-4 py-2 rounded-xl bg-[#fbbf24]/10 border border-[#fbbf24]/30 font-mono font-bold text-[#fbbf24] text-lg tracking-widest">
               {activePuzzle.start_word.toUpperCase()}
             </div>
             <span className="text-[#8b949e] text-xl">→</span>
@@ -326,7 +377,7 @@ export default function ChangeByOnePage() {
             <div className="flex justify-center">
               <button
                 onClick={() => setActiveLength(next.length)}
-                className="px-6 py-2.5 bg-[#a371f7] hover:bg-[#9158f5] text-white font-bold rounded-xl text-sm transition-all flex items-center gap-2"
+                className="px-6 py-2.5 bg-[#fbbf24] hover:bg-[#f59e0b] text-[#0f0f1a] font-bold rounded-xl text-sm transition-all flex items-center gap-2"
               >
                 Next Puzzle ({next.length}L)
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -365,12 +416,12 @@ export default function ChangeByOnePage() {
               placeholder={`${activeLength}-letter word`}
               maxLength={activeLength}
               autoFocus
-              className="flex-1 px-4 py-3 text-center text-lg font-bold font-mono bg-[#0d1117] border border-[#30363d] rounded-xl text-white placeholder-[#6e7681] focus:outline-none focus:border-[#a371f7] transition-colors"
+              className="flex-1 px-4 py-3 text-center text-lg font-bold font-mono bg-[#1a1a24] border border-[#3a3a48] rounded-xl text-[#e8e9ed] placeholder-[#6b7280] focus:outline-none focus:border-[#fbbf24] transition-colors"
             />
             <button
               onClick={handleSubmit}
               disabled={input.length !== activeLength}
-              className="px-5 py-3 bg-[#a371f7] disabled:bg-[#21262d] disabled:text-[#6e7681] text-white font-bold rounded-xl transition-all hover:bg-[#9158f5] disabled:cursor-not-allowed"
+              className="px-5 py-3 bg-[#fbbf24] disabled:bg-[#2a2a38] disabled:text-[#6b7280] text-[#0f0f1a] font-bold rounded-xl transition-all hover:bg-[#f59e0b] disabled:cursor-not-allowed"
             >
               Go
             </button>
@@ -407,7 +458,7 @@ export default function ChangeByOnePage() {
             key={hintText}
             initial={{ opacity: 0, y: -4 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-lg bg-[#388bfd]/10 border border-[#388bfd]/30 px-4 py-2.5 text-sm text-[#79c0ff] text-center"
+            className="rounded-lg bg-[#fbbf24]/10 border border-[#fbbf24]/30 px-4 py-2.5 text-sm text-[#fbbf24] text-center"
           >
             💡 {hintText}
           </motion.div>
@@ -425,9 +476,9 @@ export default function ChangeByOnePage() {
                   className={`w-2 h-2 rounded-full transition-colors ${
                     i < activePuzzle.moves
                       ? activePuzzle.status === 'won'
-                        ? 'bg-[#10b981]'
-                        : 'bg-[#a371f7]'
-                      : 'bg-[#30363d]'
+                        ? 'bg-[#34d399]'
+                        : 'bg-[#fbbf24]'
+                      : 'bg-[#3a3a48]'
                   }`}
                 />
               ))}
@@ -439,7 +490,7 @@ export default function ChangeByOnePage() {
             <button
               onClick={handleHint}
               disabled={activePuzzle.status === 'won' || (hintsUsed[activeLength] ?? 0) >= 2}
-              className="px-3 py-1.5 text-xs rounded-lg border border-[#388bfd]/30 text-[#79c0ff] hover:border-[#388bfd]/60 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="px-3 py-1.5 text-xs rounded-lg border border-[#fbbf24]/30 text-[#fbbf24] hover:border-[#fbbf24]/60 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
               title={`Hint (${2 - (hintsUsed[activeLength] ?? 0)} remaining)`}
             >
               Hint ({2 - (hintsUsed[activeLength] ?? 0)})
@@ -454,7 +505,7 @@ export default function ChangeByOnePage() {
             )}
             <button
               onClick={() => setShowRules(true)}
-              className="px-3 py-1.5 text-xs rounded-lg border border-[#30363d] text-[#8b949e] hover:border-[#a371f7]/50 hover:text-[#a371f7] transition-colors"
+              className="px-3 py-1.5 text-xs rounded-lg border border-[#3a3a48] text-[#9ca3af] hover:border-[#fbbf24]/50 hover:text-[#fbbf24] transition-colors"
             >
               ?
             </button>
