@@ -6,7 +6,7 @@ import { getWordPoolDailyEntry, isWordPoolDailyAllDone } from '../utils/storage'
 type Category = { id: string; name: string; levels: { level: number; name: string }[] };
 type WordPoolData = { categories: Category[] };
 
-const FIRST_PUZZLE_DATE = '2025-01-01';
+const FIRST_PUZZLE_DATE = '2026-03-01';
 
 export default function WordPoolPreviousGames() {
   const todayStr = getTodayDateStr();
@@ -31,7 +31,11 @@ export default function WordPoolPreviousGames() {
   const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
   const isCurrentMonth = currentMonth === todayDate.getMonth() && currentYear === todayDate.getFullYear();
 
+  // March 2026 is the earliest month with puzzles
+  const isFirstMonth = currentYear === 2026 && currentMonth === 2;
+
   const goToPrevMonth = () => {
+    if (isFirstMonth) return;
     if (currentMonth === 0) { setCurrentMonth(11); setCurrentYear(currentYear - 1); }
     else setCurrentMonth(currentMonth - 1);
   };
@@ -116,9 +120,10 @@ export default function WordPoolPreviousGames() {
           Previous Puzzles
         </h2>
         <div className="flex items-center gap-2">
-          <button onClick={goToPrevMonth} className="p-2 rounded transition-colors"
+          <button onClick={goToPrevMonth} disabled={isFirstMonth}
+            className="p-2 rounded transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             style={{ border: '1px solid var(--wp-border)', background: 'var(--wp-surface)', color: 'var(--wp-text-muted)' }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--wp-surface-2)'; }}
+            onMouseEnter={e => { if (!isFirstMonth) (e.currentTarget as HTMLElement).style.background = 'var(--wp-surface-2)'; }}
             onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--wp-surface)'; }}
             aria-label="Previous month">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

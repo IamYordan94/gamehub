@@ -4,7 +4,7 @@ import { getTodayDateStr } from '../utils/dailySeed';
 import { getLetterMixCompletedFor } from '../utils/storage';
 
 const LEVELS = ['easy', 'medium', 'hard'] as const;
-const FIRST_PUZZLE_DATE = '2025-01-01';
+const FIRST_PUZZLE_DATE = '2026-03-01';
 
 export default function LetterMixCalendar() {
   const todayStr = getTodayDateStr();
@@ -24,7 +24,11 @@ export default function LetterMixCalendar() {
   const isCurrentMonth =
     currentMonth === todayDate.getMonth() && currentYear === todayDate.getFullYear();
 
+  // March 2026 is the earliest month with puzzles
+  const isFirstMonth = currentYear === 2026 && currentMonth === 2;
+
   const goToPreviousMonth = () => {
+    if (isFirstMonth) return;
     if (currentMonth === 0) {
       setCurrentMonth(11);
       setCurrentYear(currentYear - 1);
@@ -117,13 +121,14 @@ export default function LetterMixCalendar() {
         <div className="flex items-center gap-2">
           <button
             onClick={goToPreviousMonth}
-            className="p-2 rounded transition-colors"
+            disabled={isFirstMonth}
+            className="p-2 rounded transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             style={{
               border: '1px solid var(--lm-border)',
               background: 'var(--lm-surface)',
               color: 'var(--lm-text-muted)',
             }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-key-face)'; }}
+            onMouseEnter={e => { if (!isFirstMonth) (e.currentTarget as HTMLElement).style.background = 'var(--lm-key-face)'; }}
             onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-surface)'; }}
             aria-label="Previous month"
           >
