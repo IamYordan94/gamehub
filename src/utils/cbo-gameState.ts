@@ -11,6 +11,7 @@ export interface CboPuzzleState {
   wordChain: string[];
   moves: number;
   maxMoves: number;
+  optimal_steps: number;
   status: 'not_started' | 'playing' | 'won';
   errors: string[];
 }
@@ -31,6 +32,7 @@ export function initPuzzleState(puzzle: CboPuzzle): CboPuzzleState {
     wordChain: [puzzle.start_word.toLowerCase()],
     moves: 0,
     maxMoves: puzzle.max_moves,
+    optimal_steps: puzzle.optimal_steps,
     status: 'not_started',
     errors: [],
   };
