@@ -142,3 +142,87 @@ export async function clearHintTargetAsync(game: string, puzzleId: string): Prom
     // ignore
   }
 }
+
+// ── WordPool Daily ───────────────────────────────────────────────────────────
+
+const WP_DAILY = 'wordcraft_wordpool_daily';
+const WP_DAILY_SESSION = 'wordcraft_wordpool_daily_session';
+
+export type WPDailyLevel = { words: string[]; hintsUsed: number };
+export type WPDailyEntry = {
+  levels: Record<string, WPDailyLevel>; // levelNum (string key) -> completion data
+  unlockedLevel: number;                  // 1-based; > totalLevels means all done
+};
+type WPDailyStore = Record<string, WPDailyEntry>;
+
+function getWPDailyStore(): WPDailyStore {
+  try {
+    const s = localStorage.getItem(WP_DAILY);
+    return s ? JSON.parse(s) : {};
+  } catch {
+    return {};
+  }
+}
+
+export function getWordPoolDailyEntry(date: string): WPDailyEntry {
+  return getWPDailyStore()[date] ?? { levels: {}, unlockedLevel: 1 };
+}
+
+export function getWordPoolDailyUnlockedLevel(date: string): number {
+  return getWordPoolDailyEntry(date).unlockedLevel;
+}
+
+export function completeWordPoolDailyLevel(
+  date: string,
+  levelNum: number,
+  words: string[],
+  hintsUsed: number
+): void {
+  const store = getWPDailyStore();
+  const entry = store[date] ?? { levels: {}, unlockedLevel: 1 };
+  entry.levels[String(levelNum)] = { words, hintsUsed };
+  if (levelNum >= entry.unlockedLevel) {
+    entry.unlockedLevel = levelNum + 1;
+  }
+  store[date] = entry;
+  localStorage.setItem(WP_DAILY, JSON.stringify(store));
+}
+
+export function isWordPoolDailyAllDone(date: string, totalLevels: number): boolean {
+  return getWordPoolDailyUnlockedLevel(date) > totalLevels;
+}
+
+export function getWordPoolDailyCompletedDates(): string[] {
+  const store = getWPDailyStore();
+  return Object.keys(store).filter((d) => store[d].unlockedLevel > 1);
+}
+
+type WPDailySession = Record<string, string[]>;
+
+export function getWordPoolDailySessionWords(date: string, levelNum: number): string[] {
+  try {
+    const s = localStorage.getItem(WP_DAILY_SESSION);
+    const data: WPDailySession = s ? JSON.parse(s) : {};
+    return data[`${date}_${levelNum}`] ?? [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveWordPoolDailySessionWords(date: string, levelNum: number, words: string[]): void {
+  try {
+    const s = localStorage.getItem(WP_DAILY_SESSION);
+    const data: WPDailySession = s ? JSON.parse(s) : {};
+    data[`${date}_${levelNum}`] = words;
+    localStorage.setItem(WP_DAILY_SESSION, JSON.stringify(data));
+  } catch { /* ignore */ }
+}
+
+export function clearWordPoolDailySessionWords(date: string, levelNum: number): void {
+  try {
+    const s = localStorage.getItem(WP_DAILY_SESSION);
+    const data: WPDailySession = s ? JSON.parse(s) : {};
+    delete data[`${date}_${levelNum}`];
+    localStorage.setItem(WP_DAILY_SESSION, JSON.stringify(data));
+  } catch { /* ignore */ }
+}

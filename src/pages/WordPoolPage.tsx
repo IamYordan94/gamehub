@@ -8,366 +8,469 @@ import {
   getWordPoolSessionWords,
   saveWordPoolSessionWords,
   clearWordPoolSessionWords,
+  getWordPoolDailyEntry,
+  getWordPoolDailyUnlockedLevel,
+  completeWordPoolDailyLevel,
+  isWordPoolDailyAllDone,
+  getWordPoolDailySessionWords,
+  saveWordPoolDailySessionWords,
+  clearWordPoolDailySessionWords,
+  type WPDailyEntry,
   getHintTargetAsync,
   setHintTargetAsync,
   clearHintTargetAsync,
 } from '../utils/storage';
 
-type Level = {
-  level: number;
-  name: string;
-  words: string[];
-};
-
-type Category = {
-  id: string;
-  name: string;
-  levels: Level[];
-};
-
-type WordPoolData = {
-  categories: Category[];
-};
-
+type Level = { level: number; name: string; words: string[] };
+type Category = { id: string; name: string; levels: Level[] };
+type WordPoolData = { categories: Category[] };
 type HintState = { word: string; stage: 1 | 2 | 3 | 4 } | null;
+
+function starsFor(hints: number): number {
+  if (hints === 0) return 3;
+  if (hints <= 2) return 2;
+  return 1;
+}
+
+function Stars({ n, total = 3 }: { n: number; total?: number }) {
+  return (
+    <span style={{ letterSpacing: '0.05em' }}>
+      {Array.from({ length: total }).map((_, i) => (
+        <span key={i} style={{ color: i < n ? 'var(--wp-accent-blue-side)' : 'var(--wp-border-dark)', fontSize: '15px' }}>★</span>
+      ))}
+    </span>
+  );
+}
+
+function DailyResultsPanel({
+  category, date, entry, onShare, shared,
+}: {
+  category: Category; date: string; entry: WPDailyEntry; onShare: () => void; shared: boolean;
+}) {
+  const totalHints = category.levels.reduce(
+    (sum, lvl) => sum + (entry.levels[String(lvl.level)]?.hintsUsed ?? 0), 0
+  );
+  const overallStarsN = totalHints === 0 ? 3 : totalHints <= 4 ? 2 : 1;
+
+  return (
+    <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} className="space-y-5">
+      <div className="rounded p-6 text-center space-y-2"
+        style={{ background: 'var(--wp-surface)', border: '1px solid var(--wp-border)', borderBottom: '3px solid var(--wp-border-dark)' }}>
+        <p className="text-3xl m-0">🎉</p>
+        <p className="text-base font-black uppercase tracking-widest m-0"
+          style={{ color: 'var(--wp-accent-blue-side)', fontFamily: "'JetBrains Mono', monospace" }}>
+          Daily Complete!
+        </p>
+        <p className="text-sm font-semibold m-0" style={{ color: 'var(--wp-text-muted)' }}>
+          {category.name} · {date}
+        </p>
+        <div className="pt-1"><Stars n={overallStarsN} /></div>
+        <p className="text-xs m-0" style={{ color: 'var(--wp-text-muted)' }}>
+          {totalHints === 0 ? 'No hints — flawless!' : `${totalHints} hint${totalHints !== 1 ? 's' : ''} used total`}
+        </p>
+      </div>
+
+      <div className="rounded overflow-hidden"
+        style={{ border: '1px solid var(--wp-border)', borderBottom: '3px solid var(--wp-border-dark)' }}>
+        <div className="px-4 py-2" style={{ background: 'var(--wp-dark)', borderBottom: '1px solid var(--wp-dark-2)' }}>
+          <span className="text-xs font-black uppercase tracking-widest"
+            style={{ color: 'var(--wp-accent-blue)', fontFamily: "'JetBrains Mono', monospace" }}>
+            All Levels
+          </span>
+        </div>
+        {category.levels.map((lvl) => {
+          const data = entry.levels[String(lvl.level)];
+          const hints = data?.hintsUsed ?? 0;
+          const wordsFound = data?.words.length ?? 0;
+          return (
+            <div key={lvl.level} className="px-4 py-3 flex items-center justify-between gap-3"
+              style={{ background: 'var(--wp-surface)', borderBottom: '1px solid var(--wp-border)' }}>
+              <div className="flex-1 min-w-0">
+                <p className="text-xs font-bold m-0"
+                  style={{ color: 'var(--wp-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}>L{lvl.level}</p>
+                <p className="text-sm font-semibold m-0 truncate" style={{ color: 'var(--wp-text)' }}>{lvl.name}</p>
+              </div>
+              <div className="text-right flex-shrink-0 space-y-0.5">
+                <div><Stars n={starsFor(hints)} /></div>
+                <p className="text-xs m-0" style={{ color: 'var(--wp-text-muted)' }}>
+                  {wordsFound} word{wordsFound !== 1 ? 's' : ''}{hints > 0 ? ` · ${hints} hint${hints !== 1 ? 's' : ''}` : ''}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="flex gap-3 justify-center flex-wrap">
+        <button onClick={onShare} className="wp-btn-primary">{shared ? '✓ Copied!' : 'Share'}</button>
+      </div>
+      <p className="text-xs text-center" style={{ color: 'var(--wp-text-muted)' }}>
+        Come back tomorrow for a new category!
+      </p>
+    </motion.div>
+  );
+}
 
 export default function WordPoolPage() {
   const { date, categoryId } = useParams();
   const puzzleDate = date ?? getTodayDateStr();
+  const isDaily = !categoryId;
 
   const [data, setData] = useState<WordPoolData | null>(null);
   const [category, setCategory] = useState<Category | null>(null);
   const [level, setLevel] = useState<Level | null>(null);
-  const [, setMaxUnlocked] = useState(1);
   const [input, setInput] = useState('');
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
   const [shared, setShared] = useState(false);
   const [hint, setHint] = useState<HintState>(null);
+  const [hintsUsed, setHintsUsed] = useState(0);
+  const [isDailyComplete, setIsDailyComplete] = useState(false);
+  const [dailyEntry, setDailyEntry] = useState<WPDailyEntry>({ levels: {}, unlockedLevel: 1 });
+  const [completionSaved, setCompletionSaved] = useState(false);
 
   useEffect(() => {
-    setInput('');
-    setMessage(null);
-    setShared(false);
-    setHint(null);
+    setInput(''); setMessage(null); setShared(false); setHint(null);
+    setHintsUsed(0); setCompletionSaved(false);
 
     fetch('/data/wordpool-categories.json')
-      .then((r) => {
-        if (!r.ok) throw new Error('Failed to load categories');
-        return r.json();
-      })
+      .then((r) => { if (!r.ok) throw new Error(); return r.json(); })
       .then((d: WordPoolData) => {
         setData(d);
         let cat: Category;
         if (categoryId) {
           cat = d.categories.find((c) => c.id === categoryId) ?? d.categories[0];
         } else {
-          const catIdx = getDailyPuzzleIndex(puzzleDate, d.categories.length);
-          cat = d.categories[catIdx];
+          cat = d.categories[getDailyPuzzleIndex(puzzleDate, d.categories.length)];
         }
         setCategory(cat);
 
-        const unlocked = getWordPoolUnlockedLevel(cat.id);
-        setMaxUnlocked(cat.levels.length);
-        const lvlNum = Math.min(unlocked, cat.levels.length);
-        const lvl = cat.levels[lvlNum - 1];
-        setLevel(lvl);
-
-        const saved = getWordPoolSessionWords(cat.id, lvlNum);
-        setFoundWords(saved);
+        if (isDaily) {
+          const entry = getWordPoolDailyEntry(puzzleDate);
+          setDailyEntry(entry);
+          if (isWordPoolDailyAllDone(puzzleDate, cat.levels.length)) {
+            setIsDailyComplete(true);
+            setLevel(cat.levels[cat.levels.length - 1]);
+            setFoundWords([]);
+          } else {
+            const lvlNum = Math.min(entry.unlockedLevel, cat.levels.length);
+            setLevel(cat.levels[lvlNum - 1]);
+            setFoundWords(getWordPoolDailySessionWords(puzzleDate, lvlNum));
+          }
+        } else {
+          const unlocked = getWordPoolUnlockedLevel(cat.id);
+          const lvlNum = Math.min(unlocked, cat.levels.length);
+          setLevel(cat.levels[lvlNum - 1]);
+          setFoundWords(getWordPoolSessionWords(cat.id, lvlNum));
+        }
       })
       .catch(() => {});
   }, [puzzleDate, categoryId]);
 
   const switchLevel = (lvl: Level) => {
     if (!category) return;
-    setLevel(lvl);
-    setMessage(null);
-    setShared(false);
-    setHint(null);
-    setInput('');
-    const saved = getWordPoolSessionWords(category.id, lvl.level);
-    setFoundWords(saved);
+    setLevel(lvl); setMessage(null); setShared(false);
+    setHint(null); setInput(''); setHintsUsed(0); setCompletionSaved(false);
+    if (isDaily) {
+      const entry = getWordPoolDailyEntry(puzzleDate);
+      if (entry.levels[String(lvl.level)]) {
+        setFoundWords(entry.levels[String(lvl.level)].words);
+      } else {
+        setFoundWords(getWordPoolDailySessionWords(puzzleDate, lvl.level));
+      }
+    } else {
+      setFoundWords(getWordPoolSessionWords(category.id, lvl.level));
+    }
   };
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     const word = input.trim().toLowerCase();
     if (!word || !level || !category) return;
-
-    if (foundWords.includes(word)) {
-      setMessage({ text: 'Already found', type: 'error' });
-      return;
-    }
-    if (!level.words.includes(word)) {
-      setMessage({ text: 'Not in this category', type: 'error' });
-      return;
-    }
-
+    if (foundWords.includes(word)) { setMessage({ text: 'Already found', type: 'error' }); return; }
+    if (!level.words.includes(word)) { setMessage({ text: 'Not in this category', type: 'error' }); return; }
     const next = [...foundWords, word];
     setFoundWords(next);
-    saveWordPoolSessionWords(category.id, level.level, next);
+    if (isDaily) saveWordPoolDailySessionWords(puzzleDate, level.level, next);
+    else saveWordPoolSessionWords(category.id, level.level, next);
     setInput('');
     setMessage({ text: `✓ ${word}`, type: 'success' });
-
     if (hint && hint.word === word) {
       setHint(null);
-      clearHintTargetAsync('wordpool', `${category.id}_${level.level}`);
+      clearHintTargetAsync('wordpool', `${isDaily ? puzzleDate : category.id}_${level.level}`);
     }
   };
 
   const isComplete = !!(level && foundWords.length === level.words.length);
+  const isDailyLevelAlreadySaved = isDaily && !!dailyEntry.levels[String(level?.level)];
+  const isReadOnly = isDailyLevelAlreadySaved && !isComplete;
 
   useEffect(() => {
-    if (isComplete && category && level) {
+    if (!isComplete || !category || !level || completionSaved) return;
+    setCompletionSaved(true);
+    if (isDaily) {
+      if (!dailyEntry.levels[String(level.level)]) {
+        completeWordPoolDailyLevel(puzzleDate, level.level, foundWords, hintsUsed);
+        clearWordPoolDailySessionWords(puzzleDate, level.level);
+        const updated = getWordPoolDailyEntry(puzzleDate);
+        setDailyEntry(updated);
+        if (isWordPoolDailyAllDone(puzzleDate, category.levels.length)) {
+          setTimeout(() => setIsDailyComplete(true), 900);
+        }
+      }
+    } else {
       unlockWordPoolLevel(category.id, level.level);
-      setMaxUnlocked((prev) => Math.max(prev, Math.min(level.level + 1, category.levels.length)));
       clearWordPoolSessionWords(category.id, level.level);
-      clearHintTargetAsync('wordpool', `${category.id}_${level.level}`);
     }
-  }, [isComplete, category, level]);
+  }, [isComplete]);
 
   const handleHint = async () => {
-    if (!level || !category) return;
-    const puzzleId = `${category.id}_${level.level}`;
+    if (!level || !category || isReadOnly) return;
+    const puzzleId = `${isDaily ? puzzleDate : category.id}_${level.level}`;
     const unfound = level.words.filter((w) => !foundWords.includes(w));
     if (unfound.length === 0) return;
-
     const stored = await getHintTargetAsync('wordpool', puzzleId);
     let targetWord = stored?.targetWord ?? unfound.slice().sort()[0];
     if (!unfound.includes(targetWord)) targetWord = unfound.slice().sort()[0];
-
-    let hintLevel = stored?.targetWord === targetWord ? stored.hintLevel : 1;
-    const maxLevel = 4;
-
+    const hintLevel = stored?.targetWord === targetWord ? stored!.hintLevel : 1;
     setHint({ word: targetWord, stage: hintLevel as 1 | 2 | 3 | 4 });
-    const nextLevel = Math.min(hintLevel + 1, maxLevel);
-    await setHintTargetAsync('wordpool', puzzleId, targetWord, nextLevel);
+    setHintsUsed((prev) => prev + 1);
+    await setHintTargetAsync('wordpool', puzzleId, targetWord, Math.min(hintLevel + 1, 4));
   };
 
   const hintText = hint
-    ? hint.stage === 1
-      ? `Try a ${hint.word.length}-letter word.`
-      : hint.stage === 2
-        ? `Try a ${hint.word.length}-letter word starting with "${hint.word[0].toUpperCase()}".`
-        : hint.stage === 3
-          ? `Try a ${hint.word.length}-letter word starting with "${hint.word.slice(0, 2).toUpperCase()}".`
-          : `Try a ${hint.word.length}-letter word starting with "${hint.word.slice(0, 3).toUpperCase()}".`
+    ? hint.stage === 1 ? `Try a ${hint.word.length}-letter word.`
+    : hint.stage === 2 ? `Try a ${hint.word.length}-letter word starting with "${hint.word[0].toUpperCase()}".`
+    : hint.stage === 3 ? `Try a ${hint.word.length}-letter word starting with "${hint.word.slice(0, 2).toUpperCase()}".`
+    : `Try the word "${hint.word.toUpperCase()}".`
     : null;
+
+  const handleShare = () => {
+    if (!category) return;
+    let text: string;
+    if (isDaily) {
+      const entry = getWordPoolDailyEntry(puzzleDate);
+      const totalHints = category.levels.reduce(
+        (sum, lvl) => sum + (entry.levels[String(lvl.level)]?.hintsUsed ?? 0), 0
+      );
+      text = [
+        `Word Pool — ${category.name}`,
+        puzzleDate,
+        ...category.levels.map((lvl) => {
+          const h = entry.levels[String(lvl.level)]?.hintsUsed ?? 0;
+          const s = starsFor(h);
+          return `L${lvl.level}: ${'★'.repeat(s)}${'☆'.repeat(3 - s)} ${lvl.name}`;
+        }),
+        totalHints > 0 ? `💡 ${totalHints} hint${totalHints !== 1 ? 's' : ''} total` : '🎯 No hints!',
+        'wordcrafthub.com',
+      ].join('\n');
+    } else if (level) {
+      const s = starsFor(hintsUsed);
+      text = [
+        `Word Pool — ${category.name}`,
+        `L${level.level}: ${level.name}`,
+        `${'★'.repeat(s)}${'☆'.repeat(3 - s)}  Found all ${level.words.length} words!`,
+        hintsUsed > 0 ? `💡 ${hintsUsed} hint${hintsUsed !== 1 ? 's' : ''} used` : '',
+        'wordcrafthub.com',
+      ].filter(Boolean).join('\n');
+    } else return;
+    navigator.clipboard.writeText(text);
+    setShared(true);
+    setTimeout(() => setShared(false), 2000);
+  };
 
   if (!data || !category || !level) {
     return (
       <div className="flex justify-center py-12">
-        <div
-          className="text-sm font-semibold animate-pulse"
-          style={{ color: 'var(--wp-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}
-        >
+        <div className="text-sm font-semibold animate-pulse"
+          style={{ color: 'var(--wp-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}>
           Loading puzzle…
         </div>
       </div>
     );
   }
 
+  if (isDaily && isDailyComplete) {
+    return (
+      <DailyResultsPanel
+        category={category}
+        date={puzzleDate}
+        entry={getWordPoolDailyEntry(puzzleDate)}
+        onShare={handleShare}
+        shared={shared}
+      />
+    );
+  }
+
   const remaining = level.words.length - foundWords.length;
+  const dailyUnlockedLevel = isDaily ? getWordPoolDailyUnlockedLevel(puzzleDate) : null;
 
   return (
     <div className="space-y-5">
-
-      {/* Category + date header */}
       <section>
         <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
-          <span
-            className="text-xs font-bold uppercase tracking-widest"
-            style={{ color: 'var(--wp-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}
-          >
-            {categoryId ? 'Category' : `Today · ${puzzleDate}`}
+          <span className="text-xs font-bold uppercase tracking-widest"
+            style={{ color: 'var(--wp-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}>
+            {isDaily ? `Daily · ${puzzleDate}` : 'Category'}
           </span>
-          <span
-            className="text-sm font-black uppercase tracking-wide"
-            style={{ color: 'var(--wp-accent-blue-side)', fontFamily: "'JetBrains Mono', monospace" }}
-          >
+          <span className="text-sm font-black uppercase tracking-wide"
+            style={{ color: 'var(--wp-accent-blue-side)', fontFamily: "'JetBrains Mono', monospace" }}>
             {category.name}
           </span>
         </div>
 
-        {/* Level selector tabs */}
         <div className="flex gap-2 flex-wrap">
           {category.levels.map((lvl) => {
             const isActive = lvl.level === level.level;
-            const isDone = lvl.level < (getWordPoolUnlockedLevel(category.id) ?? 1);
+            const isDone = isDaily
+              ? !!dailyEntry.levels[String(lvl.level)]
+              : lvl.level < (getWordPoolUnlockedLevel(category.id) ?? 1);
+            const isLocked = isDaily
+              ? lvl.level > (dailyUnlockedLevel ?? 1)
+              : lvl.level > (getWordPoolUnlockedLevel(category.id) ?? 1);
             return (
-              <button
-                key={lvl.level}
-                onClick={() => switchLevel(lvl)}
-                title={lvl.name}
+              <button key={lvl.level} title={lvl.name}
+                onClick={() => !isLocked && switchLevel(lvl)}
+                disabled={isLocked}
                 className={`wp-tab ${isActive ? 'wp-tab-active' : isDone ? 'wp-tab-done' : ''}`}
-              >
+                style={isLocked ? { opacity: 0.35, cursor: 'not-allowed' } : {}}>
                 L{lvl.level}
               </button>
             );
           })}
         </div>
 
-        {/* Current level name */}
         <p className="text-sm mt-2 m-0" style={{ color: 'var(--wp-text-muted)' }}>
-          <span className="font-bold" style={{ color: 'var(--wp-text)' }}>Level {level.level}:</span>{' '}
-          {level.name}
+          <span className="font-bold" style={{ color: 'var(--wp-text)' }}>Level {level.level}:</span>{' '}{level.name}
         </p>
       </section>
 
-      {/* Game area */}
       <section>
-        {/* Progress row */}
         <div className="flex items-center justify-between mb-3">
           <p className="text-lg font-bold m-0" style={{ color: 'var(--wp-text)' }}>
-            {foundWords.length}{' '}
-            <span style={{ color: 'var(--wp-text-muted)' }}>/</span>{' '}
-            {level.words.length}
+            {foundWords.length} <span style={{ color: 'var(--wp-text-muted)' }}>/</span> {level.words.length}
             <span className="text-sm font-normal ml-2" style={{ color: 'var(--wp-text-muted)' }}>words found</span>
           </p>
-          {!isComplete && (
-            <button onClick={handleHint} className="wp-btn-pink">
-              Hint
-            </button>
+          {!isComplete && !isReadOnly && (
+            <button onClick={handleHint} className="wp-btn-pink">Hint</button>
           )}
         </div>
 
-        {/* Progress bar */}
-        <div
-          className="h-2 rounded-full mb-4 overflow-hidden"
-          style={{ background: 'var(--wp-surface-2)' }}
-        >
-          <motion.div
-            className="h-full rounded-full"
-            style={{ background: 'var(--wp-accent-blue)' }}
-            initial={false}
-            animate={{ width: `${(foundWords.length / level.words.length) * 100}%` }}
-            transition={{ duration: 0.4 }}
-          />
+        <div className="h-2 rounded-full mb-4 overflow-hidden" style={{ background: 'var(--wp-surface-2)' }}>
+          <motion.div className="h-full rounded-full" style={{ background: 'var(--wp-accent-blue)' }}
+            initial={false} animate={{ width: `${(foundWords.length / level.words.length) * 100}%` }}
+            transition={{ duration: 0.4 }} />
         </div>
 
-        {/* Hint display */}
         {hintText && (
-          <motion.div
-            key={hintText}
-            initial={{ opacity: 0, y: -4 }}
-            animate={{ opacity: 1, y: 0 }}
+          <motion.div key={hintText} initial={{ opacity: 0, y: -4 }} animate={{ opacity: 1, y: 0 }}
             className="mb-3 px-4 py-2 rounded flex items-center justify-between gap-2"
-            style={{
-              background: 'rgba(232,183,181,0.15)',
-              border: '1px solid var(--wp-accent-pink)',
-              color: 'var(--wp-accent-pink-side)',
-              fontSize: '13px',
-              fontWeight: 600,
-            }}
-          >
+            style={{ background: 'rgba(232,183,181,0.15)', border: '1px solid var(--wp-accent-pink)',
+              color: 'var(--wp-accent-pink-side)', fontSize: '13px', fontWeight: 600 }}>
             <span>💡 {hintText}</span>
-            <button
-              onClick={() => setHint(null)}
+            <button onClick={() => setHint(null)}
               style={{ color: 'var(--wp-text-muted)', fontSize: '12px' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--wp-text)')}
-              onMouseLeave={e => (e.currentTarget.style.color = 'var(--wp-text-muted)')}
-            >
-              ✕
-            </button>
+              onMouseLeave={e => (e.currentTarget.style.color = 'var(--wp-text-muted)')}>✕</button>
           </motion.div>
         )}
 
         {isComplete ? (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="rounded p-6 text-center space-y-4"
-            style={{
-              background: 'rgba(159,195,218,0.15)',
-              border: '1px solid var(--wp-accent-blue)',
-              borderBottom: '3px solid var(--wp-accent-blue-dark)',
-            }}
-          >
-            <p
-              className="text-xl font-black uppercase tracking-widest m-0"
-              style={{ color: 'var(--wp-accent-blue-side)', fontFamily: "'JetBrains Mono', monospace" }}
-            >
-              Level complete!
-            </p>
-            <p className="text-sm m-0" style={{ color: 'var(--wp-text-muted)' }}>
-              You found all {level.words.length} words.
-              {level.level < category.levels.length
-                ? ` Level ${level.level + 1} unlocked!`
-                : ' All levels complete!'}
-            </p>
-            <div className="flex justify-center gap-3 flex-wrap">
-              {level.level < category.levels.length && (
-                <button
-                  onClick={() => switchLevel(category.levels[level.level])}
-                  className="wp-btn-primary"
-                >
+          <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }}
+            className="rounded p-6 space-y-4"
+            style={{ background: 'var(--wp-surface)', border: '1px solid var(--wp-border)',
+              borderBottom: '3px solid var(--wp-border-dark)', boxShadow: '0 4px 12px rgba(0,0,0,0.06)' }}>
+            <div className="text-center space-y-1">
+              <p className="text-2xl m-0">✓</p>
+              <p className="text-base font-black uppercase tracking-widest m-0"
+                style={{ color: 'var(--wp-accent-blue-side)', fontFamily: "'JetBrains Mono', monospace" }}>
+                Level {level.level} Complete!
+              </p>
+              {isDaily && (
+                <p className="text-xs font-semibold m-0" style={{ color: 'var(--wp-text-muted)' }}>
+                  {Math.min(Object.keys(dailyEntry.levels).length + 1, category.levels.length)} of {category.levels.length} levels done
+                </p>
+              )}
+            </div>
+            <div className="flex items-center justify-center gap-6 py-3 text-center"
+              style={{ borderTop: '1px solid var(--wp-border)', borderBottom: '1px solid var(--wp-border)' }}>
+              <div>
+                <p className="text-xl font-black m-0" style={{ color: 'var(--wp-text)' }}>{level.words.length}</p>
+                <p className="text-xs font-semibold m-0" style={{ color: 'var(--wp-text-muted)' }}>Words found</p>
+              </div>
+              <div>
+                <p className="text-xl font-black m-0" style={{ color: 'var(--wp-accent-blue-side)' }}>{hintsUsed}</p>
+                <p className="text-xs font-semibold m-0" style={{ color: 'var(--wp-text-muted)' }}>Hints used</p>
+              </div>
+              <div>
+                <Stars n={starsFor(hintsUsed)} />
+                <p className="text-xs font-semibold m-0" style={{ color: 'var(--wp-text-muted)' }}>Rating</p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {foundWords.map((w, i) => <span key={i} className="wp-word-chip">{w}</span>)}
+            </div>
+            <div className="flex gap-3 justify-center flex-wrap pt-1">
+              {isDaily && level.level < category.levels.length && (
+                <button onClick={() => switchLevel(category.levels[level.level])} className="wp-btn-primary">
                   Next Level →
                 </button>
               )}
-              <button
-                onClick={() => {
-                  const text = `WordPool ${category.name} – L${level.level} (${level.name}): found ${foundWords.length}/${level.words.length} — ${foundWords.join(', ')}`;
-                  navigator.clipboard.writeText(text);
-                  setShared(true);
-                }}
-                className="wp-btn-secondary"
-              >
-                {shared ? 'Copied!' : 'Share'}
+              {isDaily && level.level === category.levels.length && (
+                <button onClick={() => setIsDailyComplete(true)} className="wp-btn-primary">
+                  See Full Results
+                </button>
+              )}
+              {!isDaily && level.level < category.levels.length && (
+                <button onClick={() => { switchLevel(category.levels[level.level]); }} className="wp-btn-primary">
+                  Next Level →
+                </button>
+              )}
+              <button onClick={handleShare} className="wp-btn-secondary">
+                {shared ? '✓ Copied!' : 'Share'}
               </button>
             </div>
           </motion.div>
+        ) : isReadOnly ? (
+          <div className="space-y-3">
+            <div className="px-4 py-2 rounded text-xs font-semibold"
+              style={{ background: 'rgba(159,195,218,0.15)', border: '1px solid var(--wp-accent-blue)',
+                color: 'var(--wp-accent-blue-side)' }}>
+              ✓ Level completed · {foundWords.length} word{foundWords.length !== 1 ? 's' : ''} found
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {foundWords.map((w, i) => <span key={i} className="wp-word-chip">{w}</span>)}
+            </div>
+            <button onClick={() => {
+              const cur = Math.min(getWordPoolDailyUnlockedLevel(puzzleDate), category.levels.length);
+              switchLevel(category.levels[cur - 1]);
+            }} className="wp-btn-primary">Go to current level</button>
+          </div>
         ) : (
           <>
             <form onSubmit={handleSubmit} className="flex gap-2 mb-3">
-              <input
-                type="text"
-                value={input}
+              <input type="text" value={input}
                 onChange={(e) => { setInput(e.target.value); setMessage(null); }}
-                placeholder="Type a word…"
-                className="wp-input flex-1"
-                autoComplete="off"
-                autoCapitalize="off"
-              />
-              <button
-                type="submit"
-                className="wp-btn-primary"
-                aria-disabled={!input.trim()}
-              >
-                Submit
-              </button>
+                placeholder="Type a word…" className="wp-input flex-1"
+                autoComplete="off" autoCapitalize="off" />
+              <button type="submit" className="wp-btn-primary" aria-disabled={!input.trim()}>Submit</button>
             </form>
-
             {message && (
-              <motion.p
-                key={message.text}
-                initial={{ opacity: 0, x: message.type === 'error' ? -4 : 0 }}
-                animate={{ opacity: 1, x: 0 }}
-                className="text-sm font-semibold mb-3 m-0"
-                style={{ color: message.type === 'success' ? 'var(--wp-accent-blue-side)' : '#c0443b' }}
-              >
+              <motion.p key={message.text} initial={{ opacity: 0, x: message.type === 'error' ? -4 : 0 }}
+                animate={{ opacity: 1, x: 0 }} className="text-sm font-semibold mb-3 m-0"
+                style={{ color: message.type === 'success' ? 'var(--wp-accent-blue-side)' : '#c0443b' }}>
                 {message.text}
               </motion.p>
             )}
-
-            {/* Found words */}
             {foundWords.length > 0 && (
               <div className="mb-4">
-                <p
-                  className="text-xs font-bold uppercase tracking-widest mb-2"
-                  style={{ color: 'var(--wp-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}
-                >
-                  Found words
-                </p>
+                <p className="text-xs font-bold uppercase tracking-widest mb-2"
+                  style={{ color: 'var(--wp-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}>Found words</p>
                 <div className="flex flex-wrap gap-2">
-                  {foundWords.map((w, i) => (
-                    <span key={i} className="wp-word-chip">{w}</span>
-                  ))}
+                  {foundWords.map((w, i) => <span key={i} className="wp-word-chip">{w}</span>)}
                 </div>
               </div>
             )}
-
-            {/* Remaining count */}
             <p className="text-xs m-0" style={{ color: 'var(--wp-text-muted)' }}>
               {remaining} word{remaining !== 1 ? 's' : ''} remaining in this level
             </p>
@@ -375,27 +478,22 @@ export default function WordPoolPage() {
         )}
       </section>
 
-      {/* How to play info card */}
-      <section>
-        <div
-          className="wp-card"
-          style={{ borderLeft: '3px solid var(--wp-accent-blue)' }}
-        >
-          <h2
-            className="text-xs font-bold uppercase tracking-widest mb-2"
-            style={{ color: 'var(--wp-accent-blue-side)', fontFamily: "'JetBrains Mono', monospace" }}
-          >
-            How to play
-          </h2>
-          <p className="text-sm leading-relaxed mb-2 m-0" style={{ color: 'var(--wp-text-muted)' }}>
-            Type words that belong to the current category constraint. Each level narrows the category — from broad to very specific.
-          </p>
-          <p className="text-sm m-0" style={{ color: 'var(--wp-text-muted)' }}>
-            Find all words in a level to unlock the next. Use <strong style={{ color: 'var(--wp-text)' }}>Hint</strong> for progressive clues.
-          </p>
-        </div>
-      </section>
-
+      {!isComplete && !isReadOnly && (
+        <section>
+          <div className="wp-card" style={{ borderLeft: '3px solid var(--wp-accent-blue)' }}>
+            <h2 className="text-xs font-bold uppercase tracking-widest mb-2"
+              style={{ color: 'var(--wp-accent-blue-side)', fontFamily: "'JetBrains Mono', monospace" }}>
+              How to play
+            </h2>
+            <p className="text-sm leading-relaxed mb-2 m-0" style={{ color: 'var(--wp-text-muted)' }}>
+              Type words that belong to the current category constraint. Each level narrows the category — from broad to very specific.
+            </p>
+            <p className="text-sm m-0" style={{ color: 'var(--wp-text-muted)' }}>
+              Find all words in a level to unlock the next. Use <strong style={{ color: 'var(--wp-text)' }}>Hint</strong> for progressive clues.
+            </p>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

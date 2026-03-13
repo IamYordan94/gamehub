@@ -1,74 +1,182 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getWordPoolProgress } from '../utils/storage';
+import { getTodayDateStr, getDailyPuzzleIndex } from '../utils/dailySeed';
+import { getWordPoolDailyEntry, isWordPoolDailyAllDone } from '../utils/storage';
 
-type Level = { level: number; name: string; words: string[] };
-type Category = { id: string; name: string; levels: Level[] };
+type Category = { id: string; name: string; levels: { level: number; name: string }[] };
+type WordPoolData = { categories: Category[] };
+
+const FIRST_PUZZLE_DATE = '2025-01-01';
 
 export default function WordPoolPreviousGames() {
-  const [categories, setCategories] = useState<Category[]>([]);
-  const progress = getWordPoolProgress();
+  const todayStr = getTodayDateStr();
+  const todayDate = new Date(todayStr + 'T00:00:00');
+  const [currentMonth, setCurrentMonth] = useState(todayDate.getMonth());
+  const [currentYear, setCurrentYear] = useState(todayDate.getFullYear());
+  const [data, setData] = useState<WordPoolData | null>(null);
 
   useEffect(() => {
     fetch('/data/wordpool-categories.json')
       .then((r) => r.json())
-      .then((d: { categories: Category[] }) => setCategories(d.categories))
+      .then(setData)
       .catch(() => {});
   }, []);
 
+  const monthNames = [
+    'January','February','March','April','May','June',
+    'July','August','September','October','November','December',
+  ];
+
+  const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+  const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
+  const isCurrentMonth = currentMonth === todayDate.getMonth() && currentYear === todayDate.getFullYear();
+
+  const goToPrevMonth = () => {
+    if (currentMonth === 0) { setCurrentMonth(11); setCurrentYear(currentYear - 1); }
+    else setCurrentMonth(currentMonth - 1);
+  };
+  const goToNextMonth = () => {
+    if (isCurrentMonth) return;
+    if (currentMonth === 11) { setCurrentMonth(0); setCurrentYear(currentYear + 1); }
+    else setCurrentMonth(currentMonth + 1);
+  };
+
+  const getDateStr = (day: number): string => {
+    const m = String(currentMonth + 1).padStart(2, '0');
+    const d = String(day).padStart(2, '0');
+    return `${currentYear}-${m}-${d}`;
+  };
+
+  const isAvailable = (day: number): boolean => {
+    const ds = getDateStr(day);
+    return ds >= FIRST_PUZZLE_DATE && ds <= todayStr;
+  };
+
+  const getCategoryForDate = (dateStr: string): Category | null => {
+    if (!data) return null;
+    return data.categories[getDailyPuzzleIndex(dateStr, data.categories.length)];
+  };
+
+  const isCompleted = (dateStr: string): boolean => {
+    const cat = getCategoryForDate(dateStr);
+    if (!cat) return false;
+    return isWordPoolDailyAllDone(dateStr, cat.levels.length);
+  };
+
+  const isInProgress = (dateStr: string): boolean => {
+    if (isCompleted(dateStr)) return false;
+    const entry = getWordPoolDailyEntry(dateStr);
+    return entry.unlockedLevel > 1 || Object.keys(entry.levels).length > 0;
+  };
+
+  const days = [];
+  for (let i = 0; i < firstDayOfMonth; i++) {
+    days.push(<div key={`e-${i}`} className="aspect-square" />);
+  }
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = getDateStr(day);
+    const available = isAvailable(day);
+    const completed = available && isCompleted(dateStr);
+    const inProgress = available && isInProgress(dateStr);
+    const isToday = dateStr === todayStr;
+
+    days.push(
+      <div key={day} className="aspect-square">
+        {available ? (
+          <Link
+            to={`/wordpool/${dateStr}`}
+            title={getCategoryForDate(dateStr)?.name ?? ''}
+            className="w-full h-full flex items-center justify-center rounded text-sm font-semibold transition-colors"
+            style={
+              isToday
+                ? { border: '2px solid var(--wp-accent-blue-side)', background: 'rgba(94,139,165,0.15)', color: 'var(--wp-accent-blue-side)' }
+                : completed
+                ? { border: '1px solid #4caf87', background: 'rgba(76,175,135,0.12)', color: '#2d8f68' }
+                : inProgress
+                ? { border: '1px solid var(--wp-accent-pink)', background: 'rgba(232,183,181,0.15)', color: 'var(--wp-accent-pink-side)' }
+                : { border: '1px solid var(--wp-border)', background: 'var(--wp-surface)', color: 'var(--wp-text)' }
+            }
+          >
+            {day}
+          </Link>
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-sm"
+            style={{ color: 'var(--wp-border-dark)' }}>
+            {day}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-6">
-      <h2 className="text-xl font-semibold text-[#f59e0b]">Progress</h2>
-      <p className="text-sm text-[#a78b71]">
-        Your unlocked levels per category. Click to play a specific category.
-      </p>
-
-      {categories.length === 0 ? (
-        <div className="animate-pulse text-[#a78b71] text-sm">Loading...</div>
-      ) : (
-        <div className="space-y-3">
-          {categories.map((cat) => {
-            const unlockedLevel = progress[cat.id] ?? 1;
-            const currentLevelName = cat.levels.find((l) => l.level === Math.min(unlockedLevel, cat.levels.length))?.name ?? '';
-            const allComplete = unlockedLevel > cat.levels.length;
-
-            return (
-              <div key={cat.id} className="rounded-lg border border-[#422006] bg-[#292524] px-4 py-3">
-                <div className="flex items-center justify-between gap-3 mb-2">
-                  <span className="text-[#fef3c7] font-medium">{cat.name}</span>
-                  <Link
-                    to={`/wordpool/category/${cat.id}`}
-                    className="text-sm px-3 py-1 rounded-lg bg-[#f59e0b] text-[#1a1410] font-medium hover:bg-[#fbbf24]"
-                  >
-                    Play
-                  </Link>
-                </div>
-
-                {/* Level progress bar */}
-                <div className="flex gap-1 mb-1.5">
-                  {cat.levels.map((l) => (
-                    <div
-                      key={l.level}
-                      className={`h-1.5 flex-1 rounded-full ${
-                        l.level < unlockedLevel
-                          ? 'bg-[#10b981]'
-                          : l.level === unlockedLevel && !allComplete
-                          ? 'bg-[#f59e0b]'
-                          : 'bg-[#422006]'
-                      }`}
-                    />
-                  ))}
-                </div>
-
-                <p className="text-xs text-[#a78b71]">
-                  {allComplete
-                    ? 'All levels complete!'
-                    : `Level ${unlockedLevel}: ${currentLevelName}`}
-                </p>
-              </div>
-            );
-          })}
+      <div className="flex items-center justify-between">
+        <h2 className="text-xl font-semibold" style={{ color: 'var(--wp-accent-blue-dark)' }}>
+          Previous Puzzles
+        </h2>
+        <div className="flex items-center gap-2">
+          <button onClick={goToPrevMonth} className="p-2 rounded transition-colors"
+            style={{ border: '1px solid var(--wp-border)', background: 'var(--wp-surface)', color: 'var(--wp-text-muted)' }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--wp-surface-2)'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--wp-surface)'; }}
+            aria-label="Previous month">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <span className="font-semibold min-w-[140px] text-center" style={{ color: 'var(--wp-text)' }}>
+            {monthNames[currentMonth]} {currentYear}
+          </span>
+          <button onClick={goToNextMonth} disabled={isCurrentMonth}
+            className="p-2 rounded transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            style={{ border: '1px solid var(--wp-border)', background: 'var(--wp-surface)', color: 'var(--wp-text-muted)' }}
+            onMouseEnter={e => { if (!isCurrentMonth) (e.currentTarget as HTMLElement).style.background = 'var(--wp-surface-2)'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--wp-surface)'; }}
+            aria-label="Next month">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
+      </div>
+
+      {/* Legend */}
+      <div className="text-sm space-y-1" style={{ color: 'var(--wp-text-muted)' }}>
+        <p>Click a date to play that day's puzzle. Hover to see the category name.</p>
+        <div className="flex items-center gap-4 flex-wrap text-xs">
+          <div className="flex items-center gap-1.5">
+            <div className="w-4 h-4 rounded" style={{ border: '2px solid var(--wp-accent-blue-side)', background: 'rgba(94,139,165,0.15)' }} />
+            <span>Today</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <div className="w-4 h-4 rounded" style={{ border: '1px solid #4caf87', background: 'rgba(76,175,135,0.12)' }} />
+            <span>Completed</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <div className="w-4 h-4 rounded" style={{ border: '1px solid var(--wp-accent-pink)', background: 'rgba(232,183,181,0.15)' }} />
+            <span>In progress</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <div className="w-4 h-4 rounded" style={{ border: '1px solid var(--wp-border)', background: 'var(--wp-surface)' }} />
+            <span>Available</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Calendar grid */}
+      <div className="rounded p-4"
+        style={{ background: 'var(--wp-surface)', border: '1px solid var(--wp-border)', borderBottom: '3px solid var(--wp-border-dark)' }}>
+        <div className="grid grid-cols-7 gap-2 mb-2">
+          {['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(d => (
+            <div key={d} className="text-center text-xs font-semibold py-2" style={{ color: 'var(--wp-text-muted)' }}>{d}</div>
+          ))}
+        </div>
+        <div className="grid grid-cols-7 gap-2">{days}</div>
+      </div>
+
+      {!data && (
+        <p className="text-sm animate-pulse" style={{ color: 'var(--wp-text-muted)' }}>Loading categories…</p>
       )}
     </div>
   );

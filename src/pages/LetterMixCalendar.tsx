@@ -34,7 +34,7 @@ export default function LetterMixCalendar() {
   };
 
   const goToNextMonth = () => {
-    if (isCurrentMonth) return; // Can't go past today's month
+    if (isCurrentMonth) return;
     if (currentMonth === 11) {
       setCurrentMonth(0);
       setCurrentYear(currentYear + 1);
@@ -75,18 +75,34 @@ export default function LetterMixCalendar() {
         {available ? (
           <Link
             to={`/lettermix/play/${dateStr}/${selectedLevel}`}
-            className={`w-full h-full flex items-center justify-center rounded-lg border text-sm transition-colors ${
+            className="w-full h-full flex items-center justify-center rounded text-sm font-semibold transition-colors"
+            style={
               isToday
-                ? 'border-[#60a5fa] bg-[#60a5fa]/20 text-[#60a5fa] font-bold'
+                ? {
+                    border: '2px solid var(--lm-accent)',
+                    background: 'rgba(214,59,59,0.12)',
+                    color: 'var(--lm-accent)',
+                  }
                 : completed
-                ? 'border-[#34d399] bg-[#34d399]/10 text-[#34d399] hover:bg-[#34d399]/20'
-                : 'border-[#2a2a38] bg-[#1a1a24] text-[#e8e9ed] hover:bg-[#2a2a38]'
-            }`}
+                ? {
+                    border: '1px solid #4caf87',
+                    background: 'rgba(76,175,135,0.12)',
+                    color: '#2d8f68',
+                  }
+                : {
+                    border: '1px solid var(--lm-border)',
+                    background: 'var(--lm-key-face)',
+                    color: 'var(--lm-text)',
+                  }
+            }
           >
             {day}
           </Link>
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-[#64748b] text-sm">
+          <div
+            className="w-full h-full flex items-center justify-center text-sm"
+            style={{ color: 'var(--lm-text-faint)' }}
+          >
             {day}
           </div>
         )}
@@ -97,24 +113,38 @@ export default function LetterMixCalendar() {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-semibold text-[#22d3ee]">Calendar</h2>
+        <h2 className="text-xl font-semibold" style={{ color: 'var(--lm-accent)' }}>Calendar</h2>
         <div className="flex items-center gap-2">
           <button
             onClick={goToPreviousMonth}
-            className="p-2 rounded-lg border border-[#1e3a5f] text-[#94a3b8] hover:bg-[#1e3a5f]"
+            className="p-2 rounded transition-colors"
+            style={{
+              border: '1px solid var(--lm-border)',
+              background: 'var(--lm-surface)',
+              color: 'var(--lm-text-muted)',
+            }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-key-face)'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-surface)'; }}
             aria-label="Previous month"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          <span className="text-[#e2e8f0] font-medium min-w-[140px] text-center">
+          <span className="font-semibold min-w-[140px] text-center" style={{ color: 'var(--lm-text)' }}>
             {monthNames[currentMonth]} {currentYear}
           </span>
           <button
             onClick={goToNextMonth}
             disabled={isCurrentMonth}
-            className="p-2 rounded-lg border border-[#2a2a38] text-[#9ca3af] hover:bg-[#2a2a38] disabled:opacity-30 disabled:cursor-not-allowed"
+            className="p-2 rounded transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            style={{
+              border: '1px solid var(--lm-border)',
+              background: 'var(--lm-surface)',
+              color: 'var(--lm-text-muted)',
+            }}
+            onMouseEnter={e => { if (!isCurrentMonth) (e.currentTarget as HTMLElement).style.background = 'var(--lm-key-face)'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-surface)'; }}
             aria-label="Next month"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,17 +156,28 @@ export default function LetterMixCalendar() {
 
       {/* Difficulty selector */}
       <div className="flex items-center gap-3">
-        <span className="text-xs text-[#64748b] font-medium uppercase tracking-wider">Open as:</span>
+        <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--lm-text-muted)' }}>
+          Open as:
+        </span>
         <div className="flex gap-2">
           {LEVELS.map((lvl) => (
             <button
               key={lvl}
               onClick={() => setSelectedLevel(lvl)}
-              className={`px-3 py-1 rounded-lg text-xs font-semibold capitalize transition-colors ${
+              className="px-3 py-1 rounded text-xs font-semibold capitalize transition-colors"
+              style={
                 lvl === selectedLevel
-                  ? 'bg-[#60a5fa] text-[#0f0f1a]'
-                  : 'border border-[#3a3a48] text-[#9ca3af] hover:border-[#60a5fa]/50'
-              }`}
+                  ? {
+                      background: 'var(--lm-accent)',
+                      color: '#fff',
+                      border: '1px solid var(--lm-accent-dark)',
+                    }
+                  : {
+                      border: '1px solid var(--lm-border)',
+                      color: 'var(--lm-text-muted)',
+                      background: 'transparent',
+                    }
+              }
             >
               {lvl}
             </button>
@@ -144,29 +185,43 @@ export default function LetterMixCalendar() {
         </div>
       </div>
 
-      <div className="text-sm text-[#94a3b8] space-y-1">
-        <p>Click a date to play that day&apos;s puzzle.</p>
+      {/* Legend */}
+      <div className="text-sm space-y-1" style={{ color: 'var(--lm-text-muted)' }}>
+        <p>Click a date to play that day's puzzle.</p>
         <div className="flex items-center gap-4 flex-wrap">
           <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border border-[#60a5fa] bg-[#60a5fa]/20" />
+            <div className="w-4 h-4 rounded" style={{ border: '2px solid var(--lm-accent)', background: 'rgba(214,59,59,0.12)' }} />
             <span>Today</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border border-[#10b981] bg-[#10b981]/10" />
+            <div className="w-4 h-4 rounded" style={{ border: '1px solid #4caf87', background: 'rgba(76,175,135,0.12)' }} />
             <span>Completed</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border border-[#2a2a38] bg-[#1a1a24]" />
+            <div className="w-4 h-4 rounded" style={{ border: '1px solid var(--lm-border)', background: 'var(--lm-key-face)' }} />
             <span>Available</span>
           </div>
         </div>
       </div>
 
       {/* Calendar grid */}
-      <div className="rounded-xl border border-[#2a2a38] bg-[#1a1a24]/50 p-4">
+      <div
+        className="p-4 rounded"
+        style={{
+          background: 'var(--lm-surface)',
+          border: '1px solid var(--lm-border)',
+          borderBottom: '3px solid var(--lm-border-dark)',
+        }}
+      >
         <div className="grid grid-cols-7 gap-2 mb-2">
           {['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(d => (
-            <div key={d} className="text-center text-xs font-medium text-[#64748b] py-2">{d}</div>
+            <div
+              key={d}
+              className="text-center text-xs font-semibold py-2"
+              style={{ color: 'var(--lm-text-faint)' }}
+            >
+              {d}
+            </div>
           ))}
         </div>
         <div className="grid grid-cols-7 gap-2">

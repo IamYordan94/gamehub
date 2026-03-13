@@ -89,7 +89,7 @@ export default function Terms() {
 
         <Section title="Contact">
           Questions about these terms? Email{' '}
-          <a href="mailto:cashfortheteam@gmail.com" style={{ color: 'var(--hub-text-muted)' }}>
+          <a href="mailto:cashfortheteam@gmail.com" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>
             cashfortheteam@gmail.com
           </a>
           .
@@ -108,7 +108,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
       >
         {title}
       </h2>
-      <p className="text-sm leading-relaxed m-0" style={{ color: 'var(--hub-text-muted)' }}>
+      <p className="text-sm leading-relaxed m-0" style={{ color: 'var(--hub-text)' }}>
         {children}
       </p>
     </section>

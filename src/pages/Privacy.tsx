@@ -54,10 +54,10 @@ export default function Privacy() {
         <Section title="Third-party services">
           We do not embed any third-party analytics, advertising networks, social media trackers, or data brokers.
           The only external resource loaded by this site is the{' '}
-          <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text-muted)' }}>Google Fonts</a>{' '}
+          <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>Google Fonts</a>{' '}
           CSS stylesheet (for the Inter and JetBrains Mono typefaces). Google Fonts may log your IP address and
           browser type as part of serving the font files, subject to{' '}
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text-muted)' }}>Google's privacy policy</a>.
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>Google's privacy policy</a>.
           No other external services are contacted.
         </Section>
 
@@ -79,7 +79,7 @@ export default function Privacy() {
 
         <Section title="Contact">
           Questions? Email us at{' '}
-          <a href="mailto:cashfortheteam@gmail.com" style={{ color: 'var(--hub-text-muted)' }}>
+          <a href="mailto:cashfortheteam@gmail.com" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>
             cashfortheteam@gmail.com
           </a>
           . We are a tiny independent project and will respond when we can.
@@ -98,7 +98,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
       >
         {title}
       </h2>
-      <p className="text-sm leading-relaxed m-0" style={{ color: 'var(--hub-text-muted)' }}>
+      <p className="text-sm leading-relaxed m-0" style={{ color: 'var(--hub-text)' }}>
         {children}
       </p>
     </section>
