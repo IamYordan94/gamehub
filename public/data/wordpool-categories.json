@@ -4,72 +4,2834 @@
       "id": "animals",
       "name": "Animals",
       "levels": [
-        { "level": 1, "name": "Animals", "words": ["dog", "cat", "bird", "fish", "lion", "bear", "wolf", "deer", "fox", "horse", "cow", "pig", "sheep", "goat", "duck", "mouse", "rat", "tiger", "elephant", "monkey"] },
-        { "level": 2, "name": "Wild Animals", "words": ["lion", "bear", "wolf", "deer", "fox", "tiger", "elephant", "monkey", "zebra", "giraffe", "hippo", "rhino", "leopard", "cheetah", "hyena", "camel", "gorilla", "panda", "koala"] },
-        { "level": 3, "name": "African Animals", "words": ["lion", "elephant", "giraffe", "zebra", "hippo", "rhino", "leopard", "cheetah", "hyena", "gorilla", "camel", "antelope", "wildebeest"] },
-        { "level": 4, "name": "Large African Animals", "words": ["elephant", "giraffe", "hippo", "rhino", "lion", "leopard"] },
-        { "level": 5, "name": "Large African Carnivores", "words": ["lion", "leopard", "cheetah", "hyena"] },
-        { "level": 6, "name": "Large African Cats", "words": ["lion", "leopard", "cheetah"] }
+        {
+          "level": 1,
+          "name": "Animals",
+          "words": [
+            "dog",
+            "cat",
+            "bird",
+            "fish",
+            "lion",
+            "bear",
+            "wolf",
+            "deer",
+            "fox",
+            "horse",
+            "cow",
+            "pig",
+            "sheep",
+            "goat",
+            "duck",
+            "mouse",
+            "rat",
+            "tiger",
+            "elephant",
+            "monkey"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Wild Animals",
+          "words": [
+            "lion",
+            "bear",
+            "wolf",
+            "deer",
+            "fox",
+            "tiger",
+            "elephant",
+            "monkey",
+            "zebra",
+            "giraffe",
+            "hippo",
+            "rhino",
+            "leopard",
+            "cheetah",
+            "hyena",
+            "camel",
+            "gorilla",
+            "panda",
+            "koala"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "African Animals",
+          "words": [
+            "lion",
+            "elephant",
+            "giraffe",
+            "zebra",
+            "hippo",
+            "rhino",
+            "leopard",
+            "cheetah",
+            "hyena",
+            "gorilla",
+            "camel",
+            "antelope",
+            "wildebeest"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Large African Animals",
+          "words": [
+            "elephant",
+            "giraffe",
+            "hippo",
+            "rhino",
+            "lion",
+            "leopard"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Large African Carnivores",
+          "words": [
+            "lion",
+            "leopard",
+            "cheetah",
+            "hyena"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Large African Cats",
+          "words": [
+            "lion",
+            "leopard",
+            "cheetah"
+          ]
+        }
       ]
     },
     {
       "id": "food",
       "name": "Food & Cooking",
       "levels": [
-        { "level": 1, "name": "Food", "words": ["apple", "bread", "milk", "egg", "rice", "pasta", "cheese", "butter", "sugar", "salt", "meat", "fish", "soup", "salad", "pizza", "burger", "fruit", "vegetable", "coffee", "tea"] },
-        { "level": 2, "name": "Dairy & Eggs", "words": ["milk", "cheese", "butter", "yogurt", "cream", "egg"] },
-        { "level": 3, "name": "Baked Goods", "words": ["bread", "roll", "bun", "cake", "cookie", "pie", "muffin", "croissant", "bagel"] },
-        { "level": 4, "name": "Breakfast Foods", "words": ["egg", "bacon", "toast", "cereal", "pancake", "waffle", "oatmeal", "bagel", "muffin"] },
-        { "level": 5, "name": "French Pastries", "words": ["croissant", "eclair", "macaron", "crepe", "tart", "souffle"] },
-        { "level": 6, "name": "Types of Pasta", "words": ["spaghetti", "penne", "lasagna", "ravioli", "fettuccine", "macaroni"] }
+        {
+          "level": 1,
+          "name": "Food",
+          "words": [
+            "apple",
+            "bread",
+            "milk",
+            "egg",
+            "rice",
+            "pasta",
+            "cheese",
+            "butter",
+            "sugar",
+            "salt",
+            "meat",
+            "fish",
+            "soup",
+            "salad",
+            "pizza",
+            "burger",
+            "fruit",
+            "vegetable",
+            "coffee",
+            "tea"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Dairy & Eggs",
+          "words": [
+            "milk",
+            "cheese",
+            "butter",
+            "yogurt",
+            "cream",
+            "egg"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Baked Goods",
+          "words": [
+            "bread",
+            "roll",
+            "bun",
+            "cake",
+            "cookie",
+            "pie",
+            "muffin",
+            "croissant",
+            "bagel"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Breakfast Foods",
+          "words": [
+            "egg",
+            "bacon",
+            "toast",
+            "cereal",
+            "pancake",
+            "waffle",
+            "oatmeal",
+            "bagel",
+            "muffin"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "French Pastries",
+          "words": [
+            "croissant",
+            "eclair",
+            "macaron",
+            "crepe",
+            "tart",
+            "souffle"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Types of Pasta",
+          "words": [
+            "spaghetti",
+            "penne",
+            "lasagna",
+            "ravioli",
+            "fettuccine",
+            "macaroni"
+          ]
+        }
       ]
     },
     {
       "id": "transport",
       "name": "Transportation",
       "levels": [
-        { "level": 1, "name": "Transportation", "words": ["car", "bus", "train", "plane", "boat", "bike", "truck", "ship", "taxi", "van", "subway", "helicopter"] },
-        { "level": 2, "name": "Ground Vehicles", "words": ["car", "bus", "train", "truck", "van", "taxi", "bike", "motorcycle"] },
-        { "level": 3, "name": "Water Vehicles", "words": ["boat", "ship", "yacht", "canoe", "kayak", "ferry"] },
-        { "level": 4, "name": "Air Vehicles", "words": ["plane", "helicopter", "jet", "airship", "glider"] },
-        { "level": 5, "name": "Public Transport", "words": ["bus", "train", "subway", "taxi", "ferry", "tram"] },
-        { "level": 6, "name": "Two-Wheeled Vehicles", "words": ["bike", "motorcycle", "scooter", "moped"] }
+        {
+          "level": 1,
+          "name": "Transportation",
+          "words": [
+            "car",
+            "bus",
+            "train",
+            "plane",
+            "boat",
+            "bike",
+            "truck",
+            "ship",
+            "taxi",
+            "van",
+            "subway",
+            "helicopter"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Ground Vehicles",
+          "words": [
+            "car",
+            "bus",
+            "train",
+            "truck",
+            "van",
+            "taxi",
+            "bike",
+            "motorcycle"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Water Vehicles",
+          "words": [
+            "boat",
+            "ship",
+            "yacht",
+            "canoe",
+            "kayak",
+            "ferry"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Air Vehicles",
+          "words": [
+            "plane",
+            "helicopter",
+            "jet",
+            "airship",
+            "glider"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Public Transport",
+          "words": [
+            "bus",
+            "train",
+            "subway",
+            "taxi",
+            "ferry",
+            "tram"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Two-Wheeled Vehicles",
+          "words": [
+            "bike",
+            "motorcycle",
+            "scooter",
+            "moped"
+          ]
+        }
       ]
     },
     {
       "id": "nature",
       "name": "Nature & Plants",
       "levels": [
-        { "level": 1, "name": "Plants", "words": ["tree", "flower", "grass", "bush", "fern", "moss", "vine", "rose", "tulip", "daisy", "oak", "pine", "maple", "palm", "cactus", "lily", "orchid", "sunflower", "daffodil"] },
-        { "level": 2, "name": "Trees", "words": ["oak", "pine", "maple", "palm", "birch", "willow", "cedar", "fir", "elm", "ash", "chestnut", "walnut", "cherry"] },
-        { "level": 3, "name": "Flowers", "words": ["rose", "tulip", "daisy", "lily", "orchid", "sunflower", "daffodil", "violet", "poppy", "iris", "carnation", "dahlia", "peony", "marigold", "jasmine"] },
-        { "level": 4, "name": "Garden Plants", "words": ["rose", "tulip", "daisy", "lily", "orchid", "sunflower", "marigold", "lavender", "mint", "basil", "tomato", "carrot", "lettuce"] },
-        { "level": 5, "name": "Coniferous Trees", "words": ["pine", "cedar", "fir", "spruce", "hemlock", "larch", "redwood", "sequoia"] },
-        { "level": 6, "name": "Rose Types", "words": ["tea", "floribunda", "grandiflora", "climbing", "shrub", "miniature"] }
+        {
+          "level": 1,
+          "name": "Plants",
+          "words": [
+            "tree",
+            "flower",
+            "grass",
+            "bush",
+            "fern",
+            "moss",
+            "vine",
+            "rose",
+            "tulip",
+            "daisy",
+            "oak",
+            "pine",
+            "maple",
+            "palm",
+            "cactus",
+            "lily",
+            "orchid",
+            "sunflower",
+            "daffodil"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Trees",
+          "words": [
+            "oak",
+            "pine",
+            "maple",
+            "palm",
+            "birch",
+            "willow",
+            "cedar",
+            "fir",
+            "elm",
+            "ash",
+            "chestnut",
+            "walnut",
+            "cherry"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Flowers",
+          "words": [
+            "rose",
+            "tulip",
+            "daisy",
+            "lily",
+            "orchid",
+            "sunflower",
+            "daffodil",
+            "violet",
+            "poppy",
+            "iris",
+            "carnation",
+            "dahlia",
+            "peony",
+            "marigold",
+            "jasmine"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Garden Plants",
+          "words": [
+            "rose",
+            "tulip",
+            "daisy",
+            "lily",
+            "orchid",
+            "sunflower",
+            "marigold",
+            "lavender",
+            "mint",
+            "basil",
+            "tomato",
+            "carrot",
+            "lettuce"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Coniferous Trees",
+          "words": [
+            "pine",
+            "cedar",
+            "fir",
+            "spruce",
+            "hemlock",
+            "larch",
+            "redwood",
+            "sequoia"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Rose Types",
+          "words": [
+            "tea",
+            "floribunda",
+            "grandiflora",
+            "climbing",
+            "shrub",
+            "miniature"
+          ]
+        }
       ]
     },
     {
       "id": "occupations",
       "name": "Occupations",
       "levels": [
-        { "level": 1, "name": "Jobs", "words": ["doctor", "teacher", "nurse", "lawyer", "engineer", "artist", "chef", "driver", "writer", "singer", "actor", "pilot", "farmer", "builder", "soldier"] },
-        { "level": 2, "name": "Healthcare", "words": ["doctor", "nurse", "surgeon", "dentist", "vet", "therapist", "paramedic", "pharmacist", "radiologist"] },
-        { "level": 3, "name": "Education", "words": ["teacher", "professor", "tutor", "principal", "librarian", "counselor", "instructor"] },
-        { "level": 4, "name": "Creative", "words": ["artist", "writer", "singer", "actor", "musician", "painter", "designer", "photographer", "sculptor"] },
-        { "level": 5, "name": "Science", "words": ["scientist", "researcher", "chemist", "physicist", "biologist", "astronomer", "geologist"] },
-        { "level": 6, "name": "Medical Specialists", "words": ["cardiologist", "neurologist", "dermatologist", "oncologist", "pediatrician", "psychiatrist"] }
+        {
+          "level": 1,
+          "name": "Jobs",
+          "words": [
+            "doctor",
+            "teacher",
+            "nurse",
+            "lawyer",
+            "engineer",
+            "artist",
+            "chef",
+            "driver",
+            "writer",
+            "singer",
+            "actor",
+            "pilot",
+            "farmer",
+            "builder",
+            "soldier"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Healthcare",
+          "words": [
+            "doctor",
+            "nurse",
+            "surgeon",
+            "dentist",
+            "vet",
+            "therapist",
+            "paramedic",
+            "pharmacist",
+            "radiologist"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Education",
+          "words": [
+            "teacher",
+            "professor",
+            "tutor",
+            "principal",
+            "librarian",
+            "counselor",
+            "instructor"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Creative",
+          "words": [
+            "artist",
+            "writer",
+            "singer",
+            "actor",
+            "musician",
+            "painter",
+            "designer",
+            "photographer",
+            "sculptor"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Science",
+          "words": [
+            "scientist",
+            "researcher",
+            "chemist",
+            "physicist",
+            "biologist",
+            "astronomer",
+            "geologist"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Medical Specialists",
+          "words": [
+            "cardiologist",
+            "neurologist",
+            "dermatologist",
+            "oncologist",
+            "pediatrician",
+            "psychiatrist"
+          ]
+        }
       ]
     },
     {
       "id": "sports",
       "name": "Sports & Activities",
       "levels": [
-        { "level": 1, "name": "Sports", "words": ["soccer", "tennis", "basketball", "baseball", "swimming", "running", "golf", "hockey", "volleyball", "boxing", "skiing", "cycling", "surfing", "yoga", "dancing"] },
-        { "level": 2, "name": "Ball Sports", "words": ["soccer", "tennis", "basketball", "baseball", "volleyball", "golf", "cricket", "rugby", "bowling", "pool"] },
-        { "level": 3, "name": "Water Sports", "words": ["swimming", "surfing", "diving", "rowing", "sailing", "kayaking", "canoeing"] },
-        { "level": 4, "name": "Winter Sports", "words": ["skiing", "snowboarding", "hockey", "curling", "skating", "bobsled"] },
-        { "level": 5, "name": "Combat Sports", "words": ["boxing", "wrestling", "judo", "karate", "taekwondo", "fencing", "mma"] },
-        { "level": 6, "name": "Racket Sports", "words": ["tennis", "badminton", "squash", "table tennis", "racquetball"] }
+        {
+          "level": 1,
+          "name": "Sports",
+          "words": [
+            "soccer",
+            "tennis",
+            "basketball",
+            "baseball",
+            "swimming",
+            "running",
+            "golf",
+            "hockey",
+            "volleyball",
+            "boxing",
+            "skiing",
+            "cycling",
+            "surfing",
+            "yoga",
+            "dancing"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Ball Sports",
+          "words": [
+            "soccer",
+            "tennis",
+            "basketball",
+            "baseball",
+            "volleyball",
+            "golf",
+            "cricket",
+            "rugby",
+            "bowling",
+            "pool"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Water Sports",
+          "words": [
+            "swimming",
+            "surfing",
+            "diving",
+            "rowing",
+            "sailing",
+            "kayaking",
+            "canoeing"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Winter Sports",
+          "words": [
+            "skiing",
+            "snowboarding",
+            "hockey",
+            "curling",
+            "skating",
+            "bobsled"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Combat Sports",
+          "words": [
+            "boxing",
+            "wrestling",
+            "judo",
+            "karate",
+            "taekwondo",
+            "fencing",
+            "mma"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Racket Sports",
+          "words": [
+            "tennis",
+            "badminton",
+            "squash",
+            "table tennis",
+            "racquetball"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Music",
+          "words": [
+            "piano",
+            "guitar",
+            "violin",
+            "drums",
+            "flute",
+            "cello",
+            "harp",
+            "trumpet",
+            "banjo",
+            "organ",
+            "bass",
+            "oboe",
+            "tuba",
+            "lute",
+            "fife",
+            "gong",
+            "horn",
+            "lyre",
+            "sitar",
+            "zither"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "String Instruments",
+          "words": [
+            "guitar",
+            "violin",
+            "cello",
+            "harp",
+            "banjo",
+            "lute",
+            "lyre",
+            "sitar",
+            "zither",
+            "mandolin",
+            "ukulele",
+            "viola",
+            "fiddle"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Classical Instruments",
+          "words": [
+            "violin",
+            "cello",
+            "oboe",
+            "flute",
+            "tuba",
+            "harp",
+            "viola",
+            "bassoon",
+            "clarinet",
+            "piccolo",
+            "harpsichord"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Orchestral Woodwinds",
+          "words": [
+            "flute",
+            "oboe",
+            "clarinet",
+            "bassoon",
+            "piccolo",
+            "saxophone"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Double-Reed Woodwinds",
+          "words": [
+            "oboe",
+            "bassoon",
+            "cor anglais",
+            "shawm"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Orchestral Double Reeds",
+          "words": [
+            "oboe",
+            "bassoon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "space",
+      "name": "Space & Astronomy",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Space",
+          "words": [
+            "star",
+            "moon",
+            "planet",
+            "comet",
+            "galaxy",
+            "nebula",
+            "orbit",
+            "crater",
+            "meteor",
+            "eclipse",
+            "rocket",
+            "asteroid",
+            "cosmos",
+            "aurora",
+            "void",
+            "solar",
+            "lunar",
+            "nova",
+            "quasar",
+            "pulsar"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Solar System Bodies",
+          "words": [
+            "planet",
+            "moon",
+            "comet",
+            "asteroid",
+            "meteor",
+            "sun",
+            "saturn",
+            "mars",
+            "venus",
+            "jupiter",
+            "neptune",
+            "uranus",
+            "mercury",
+            "pluto"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Planets",
+          "words": [
+            "mercury",
+            "venus",
+            "mars",
+            "jupiter",
+            "saturn",
+            "uranus",
+            "neptune",
+            "earth",
+            "pluto"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Gas Giants",
+          "words": [
+            "jupiter",
+            "saturn",
+            "uranus",
+            "neptune"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Ringed Gas Giants",
+          "words": [
+            "saturn",
+            "uranus"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Famous Ringed Planets",
+          "words": [
+            "saturn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Places",
+          "words": [
+            "ocean",
+            "river",
+            "mountain",
+            "valley",
+            "desert",
+            "forest",
+            "island",
+            "canyon",
+            "glacier",
+            "plateau",
+            "delta",
+            "cape",
+            "bay",
+            "gulf",
+            "lake",
+            "marsh",
+            "reef",
+            "dune",
+            "cliff",
+            "fjord"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Water Features",
+          "words": [
+            "ocean",
+            "river",
+            "lake",
+            "bay",
+            "gulf",
+            "delta",
+            "marsh",
+            "reef",
+            "fjord",
+            "strait",
+            "lagoon",
+            "waterfall",
+            "estuary"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Ocean Features",
+          "words": [
+            "reef",
+            "trench",
+            "gyre",
+            "shoal",
+            "atoll",
+            "seamount",
+            "abyss"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Coral Reef Features",
+          "words": [
+            "reef",
+            "atoll",
+            "lagoon",
+            "shoal"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Atoll Components",
+          "words": [
+            "reef",
+            "lagoon",
+            "islet",
+            "atoll"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Atoll Water Bodies",
+          "words": [
+            "lagoon",
+            "atoll"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food_extended",
+      "name": "Drinks & Beverages",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Drinks",
+          "words": [
+            "water",
+            "juice",
+            "tea",
+            "coffee",
+            "milk",
+            "soda",
+            "wine",
+            "beer",
+            "cider",
+            "lemonade",
+            "cocoa",
+            "broth",
+            "punch",
+            "shake",
+            "smoothie",
+            "whiskey",
+            "vodka",
+            "rum",
+            "gin",
+            "tonic"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Hot Drinks",
+          "words": [
+            "tea",
+            "coffee",
+            "cocoa",
+            "espresso",
+            "latte",
+            "cappuccino",
+            "chai",
+            "matcha",
+            "cider",
+            "tisane"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Coffee Drinks",
+          "words": [
+            "espresso",
+            "latte",
+            "cappuccino",
+            "mocha",
+            "macchiato",
+            "americano",
+            "cortado"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Espresso-Based Drinks",
+          "words": [
+            "latte",
+            "cappuccino",
+            "macchiato",
+            "americano",
+            "cortado"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Milk-Forward Espresso",
+          "words": [
+            "latte",
+            "cappuccino",
+            "macchiato",
+            "cortado"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Frothy Espresso Drinks",
+          "words": [
+            "cappuccino",
+            "macchiato"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Human Body",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Body Parts",
+          "words": [
+            "heart",
+            "brain",
+            "lung",
+            "liver",
+            "spine",
+            "knee",
+            "elbow",
+            "wrist",
+            "ankle",
+            "skull",
+            "hip",
+            "rib",
+            "jaw",
+            "ear",
+            "eye",
+            "nose",
+            "lip",
+            "shin",
+            "palm",
+            "heel"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Internal Organs",
+          "words": [
+            "heart",
+            "brain",
+            "lung",
+            "liver",
+            "kidney",
+            "stomach",
+            "spleen",
+            "pancreas",
+            "intestine",
+            "bladder",
+            "thyroid"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Vital Organs",
+          "words": [
+            "heart",
+            "brain",
+            "lung",
+            "liver",
+            "kidney"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Thoracic Organs",
+          "words": [
+            "heart",
+            "lung",
+            "aorta",
+            "thymus"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Heart Structures",
+          "words": [
+            "aorta",
+            "ventricle",
+            "atrium",
+            "valve"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Heart Chambers",
+          "words": [
+            "ventricle",
+            "atrium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Technology",
+          "words": [
+            "phone",
+            "laptop",
+            "server",
+            "router",
+            "screen",
+            "mouse",
+            "keyboard",
+            "printer",
+            "scanner",
+            "tablet",
+            "camera",
+            "drone",
+            "sensor",
+            "chip",
+            "cable",
+            "modem",
+            "cloud",
+            "pixel",
+            "byte",
+            "code"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Computer Hardware",
+          "words": [
+            "chip",
+            "processor",
+            "ram",
+            "gpu",
+            "cpu",
+            "motherboard",
+            "hard drive",
+            "ssd",
+            "keyboard",
+            "mouse",
+            "monitor",
+            "fan",
+            "battery",
+            "port",
+            "cable"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Processing Components",
+          "words": [
+            "chip",
+            "processor",
+            "cpu",
+            "gpu",
+            "ram",
+            "cache",
+            "register"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "CPU Components",
+          "words": [
+            "core",
+            "cache",
+            "register",
+            "transistor",
+            "alu",
+            "bus"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "CPU Cache Types",
+          "words": [
+            "l1",
+            "l2",
+            "l3",
+            "cache",
+            "register"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "CPU Cache Levels",
+          "words": [
+            "l1",
+            "l2",
+            "l3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "name": "Weather",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Weather",
+          "words": [
+            "rain",
+            "snow",
+            "wind",
+            "fog",
+            "hail",
+            "sleet",
+            "frost",
+            "storm",
+            "cloud",
+            "thunder",
+            "lightning",
+            "mist",
+            "drizzle",
+            "blizzard",
+            "tornado",
+            "cyclone",
+            "rainbow",
+            "sunshine",
+            "humidity",
+            "dew"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Precipitation",
+          "words": [
+            "rain",
+            "snow",
+            "hail",
+            "sleet",
+            "drizzle",
+            "mist",
+            "frost",
+            "dew",
+            "ice",
+            "freezing rain"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Frozen Precipitation",
+          "words": [
+            "snow",
+            "hail",
+            "sleet",
+            "frost",
+            "ice",
+            "blizzard",
+            "freezing rain"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Winter Storms",
+          "words": [
+            "blizzard",
+            "snowstorm",
+            "ice storm",
+            "whiteout",
+            "northeaster"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Heavy Snowstorms",
+          "words": [
+            "blizzard",
+            "whiteout",
+            "snowsquall"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Blizzard Conditions",
+          "words": [
+            "blizzard",
+            "whiteout"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clothing",
+      "name": "Clothing & Fashion",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Clothing",
+          "words": [
+            "shirt",
+            "pants",
+            "dress",
+            "coat",
+            "jacket",
+            "skirt",
+            "shoes",
+            "boots",
+            "hat",
+            "scarf",
+            "gloves",
+            "socks",
+            "suit",
+            "jeans",
+            "vest",
+            "blazer",
+            "shorts",
+            "tie",
+            "belt",
+            "cardigan"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Outerwear",
+          "words": [
+            "coat",
+            "jacket",
+            "blazer",
+            "cardigan",
+            "vest",
+            "parka",
+            "raincoat",
+            "trench coat",
+            "poncho",
+            "cloak",
+            "cape"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Formal Outerwear",
+          "words": [
+            "coat",
+            "blazer",
+            "jacket",
+            "trench coat",
+            "cape",
+            "cloak",
+            "overcoat"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Tailored Jackets",
+          "words": [
+            "blazer",
+            "suit jacket",
+            "sports coat",
+            "dinner jacket",
+            "morning coat"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Evening Tailoring",
+          "words": [
+            "dinner jacket",
+            "tuxedo",
+            "morning coat",
+            "tailcoat"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Black Tie Garments",
+          "words": [
+            "tuxedo",
+            "dinner jacket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "Architecture & Buildings",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Buildings",
+          "words": [
+            "house",
+            "tower",
+            "bridge",
+            "castle",
+            "church",
+            "temple",
+            "mosque",
+            "stadium",
+            "museum",
+            "library",
+            "school",
+            "hospital",
+            "factory",
+            "barn",
+            "garage",
+            "palace",
+            "prison",
+            "bunker",
+            "lighthouse",
+            "windmill"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Religious Buildings",
+          "words": [
+            "church",
+            "temple",
+            "mosque",
+            "cathedral",
+            "synagogue",
+            "chapel",
+            "monastery",
+            "shrine",
+            "pagoda",
+            "basilica"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Christian Worship",
+          "words": [
+            "church",
+            "cathedral",
+            "chapel",
+            "basilica",
+            "monastery",
+            "abbey",
+            "priory"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Large Christian Buildings",
+          "words": [
+            "cathedral",
+            "basilica",
+            "abbey",
+            "priory"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Medieval Abbeys",
+          "words": [
+            "abbey",
+            "priory",
+            "monastery",
+            "convent"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Monastic Buildings",
+          "words": [
+            "abbey",
+            "priory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "literature",
+      "name": "Literature & Writing",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Writing",
+          "words": [
+            "novel",
+            "poem",
+            "essay",
+            "letter",
+            "diary",
+            "story",
+            "script",
+            "play",
+            "myth",
+            "fable",
+            "sonnet",
+            "prose",
+            "verse",
+            "epic",
+            "lyric",
+            "satire",
+            "memoir",
+            "thesis",
+            "parable",
+            "allegory"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Poetic Forms",
+          "words": [
+            "sonnet",
+            "haiku",
+            "limerick",
+            "ballad",
+            "ode",
+            "elegy",
+            "epic",
+            "lyric",
+            "verse",
+            "couplet",
+            "stanza",
+            "sestina"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Structured Poem Types",
+          "words": [
+            "sonnet",
+            "haiku",
+            "limerick",
+            "ballad",
+            "villanelle",
+            "sestina",
+            "pantoum"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Fixed-Form Poems",
+          "words": [
+            "sonnet",
+            "villanelle",
+            "sestina",
+            "pantoum",
+            "ghazal"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "French-Origin Forms",
+          "words": [
+            "villanelle",
+            "pantoum",
+            "sestina",
+            "rondel"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Refrain-Based Forms",
+          "words": [
+            "villanelle",
+            "pantoum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Science & Elements",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Science",
+          "words": [
+            "atom",
+            "cell",
+            "gene",
+            "mass",
+            "force",
+            "energy",
+            "light",
+            "heat",
+            "gravity",
+            "matter",
+            "wave",
+            "charge",
+            "field",
+            "bond",
+            "acid",
+            "base",
+            "ion",
+            "photon",
+            "neutron",
+            "proton"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Atomic Particles",
+          "words": [
+            "proton",
+            "neutron",
+            "electron",
+            "photon",
+            "quark",
+            "boson",
+            "lepton",
+            "muon",
+            "neutrino",
+            "positron"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Quarks & Leptons",
+          "words": [
+            "quark",
+            "lepton",
+            "muon",
+            "neutrino",
+            "tau",
+            "gluon"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Standard Model Fermions",
+          "words": [
+            "quark",
+            "lepton",
+            "muon",
+            "tau",
+            "neutrino"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Lepton Family",
+          "words": [
+            "electron",
+            "muon",
+            "tau",
+            "neutrino"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Charged Leptons",
+          "words": [
+            "electron",
+            "muon",
+            "tau"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mythology",
+      "name": "Mythology",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Mythology",
+          "words": [
+            "zeus",
+            "odin",
+            "thor",
+            "apollo",
+            "athena",
+            "hermes",
+            "ares",
+            "hades",
+            "poseidon",
+            "artemis",
+            "hera",
+            "aphrodite",
+            "loki",
+            "freya",
+            "osiris",
+            "isis",
+            "ra",
+            "anubis",
+            "vishnu",
+            "shiva"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Greek Gods",
+          "words": [
+            "zeus",
+            "apollo",
+            "athena",
+            "hermes",
+            "ares",
+            "hades",
+            "poseidon",
+            "artemis",
+            "hera",
+            "aphrodite",
+            "hephaestus",
+            "dionysus",
+            "demeter",
+            "persephone"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Olympian Gods",
+          "words": [
+            "zeus",
+            "hera",
+            "poseidon",
+            "demeter",
+            "athena",
+            "apollo",
+            "artemis",
+            "ares",
+            "aphrodite",
+            "hephaestus",
+            "hermes",
+            "dionysus"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Zeus's Children on Olympus",
+          "words": [
+            "athena",
+            "apollo",
+            "artemis",
+            "ares",
+            "hermes",
+            "hephaestus",
+            "dionysus"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Twin Olympians",
+          "words": [
+            "apollo",
+            "artemis"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Children of Leto",
+          "words": [
+            "apollo",
+            "artemis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marine",
+      "name": "Marine Life",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Sea Creatures",
+          "words": [
+            "shark",
+            "whale",
+            "dolphin",
+            "squid",
+            "octopus",
+            "crab",
+            "lobster",
+            "shrimp",
+            "clam",
+            "oyster",
+            "seal",
+            "otter",
+            "tuna",
+            "salmon",
+            "cod",
+            "eel",
+            "ray",
+            "jellyfish",
+            "seahorse",
+            "starfish"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Marine Mammals",
+          "words": [
+            "whale",
+            "dolphin",
+            "seal",
+            "otter",
+            "manatee",
+            "walrus",
+            "porpoise",
+            "sea lion",
+            "dugong"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Cetaceans",
+          "words": [
+            "whale",
+            "dolphin",
+            "porpoise",
+            "orca",
+            "narwhal",
+            "beluga",
+            "sperm whale",
+            "humpback",
+            "minke"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Great Whales",
+          "words": [
+            "humpback",
+            "blue whale",
+            "fin whale",
+            "sperm whale",
+            "bowhead",
+            "right whale"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Baleen Whales",
+          "words": [
+            "humpback",
+            "blue whale",
+            "fin whale",
+            "bowhead",
+            "right whale",
+            "minke"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Rorqual Whales",
+          "words": [
+            "humpback",
+            "blue whale",
+            "fin whale",
+            "minke",
+            "sei whale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "games_hobbies",
+      "name": "Games & Hobbies",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Hobbies",
+          "words": [
+            "chess",
+            "poker",
+            "tennis",
+            "golf",
+            "hiking",
+            "painting",
+            "cooking",
+            "reading",
+            "cycling",
+            "swimming",
+            "knitting",
+            "gardening",
+            "fishing",
+            "dancing",
+            "gaming",
+            "photography",
+            "yoga",
+            "sculpting",
+            "singing",
+            "drawing"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Board & Card Games",
+          "words": [
+            "chess",
+            "poker",
+            "bridge",
+            "draughts",
+            "backgammon",
+            "scrabble",
+            "cribbage",
+            "canasta",
+            "rummy",
+            "mahjong",
+            "go",
+            "checkers"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Strategy Board Games",
+          "words": [
+            "chess",
+            "go",
+            "draughts",
+            "backgammon",
+            "checkers",
+            "othello",
+            "reversi"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Ancient Strategy Games",
+          "words": [
+            "chess",
+            "go",
+            "draughts",
+            "backgammon",
+            "senet",
+            "mancala"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Two-Player Abstract",
+          "words": [
+            "chess",
+            "go",
+            "draughts",
+            "reversi"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Classic Two-Player Boards",
+          "words": [
+            "chess",
+            "go"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emotions",
+      "name": "Emotions & States",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Emotions",
+          "words": [
+            "joy",
+            "fear",
+            "anger",
+            "sadness",
+            "disgust",
+            "surprise",
+            "trust",
+            "anticipation",
+            "love",
+            "shame",
+            "guilt",
+            "envy",
+            "pride",
+            "awe",
+            "grief",
+            "hope",
+            "relief",
+            "anxiety",
+            "calm",
+            "boredom"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Negative Emotions",
+          "words": [
+            "fear",
+            "anger",
+            "sadness",
+            "disgust",
+            "shame",
+            "guilt",
+            "envy",
+            "grief",
+            "anxiety",
+            "despair",
+            "resentment",
+            "jealousy",
+            "contempt",
+            "dread"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Social Emotions",
+          "words": [
+            "shame",
+            "guilt",
+            "envy",
+            "pride",
+            "embarrassment",
+            "contempt",
+            "jealousy",
+            "humiliation"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Self-Conscious Emotions",
+          "words": [
+            "shame",
+            "guilt",
+            "pride",
+            "embarrassment",
+            "humiliation"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Morally Evaluative",
+          "words": [
+            "shame",
+            "guilt",
+            "pride",
+            "remorse"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Guilt-Adjacent Emotions",
+          "words": [
+            "shame",
+            "guilt",
+            "remorse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen & Cooking",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Kitchen Items",
+          "words": [
+            "knife",
+            "pot",
+            "pan",
+            "bowl",
+            "fork",
+            "spoon",
+            "ladle",
+            "whisk",
+            "sieve",
+            "spatula",
+            "grater",
+            "colander",
+            "tongs",
+            "peeler",
+            "timer",
+            "scale",
+            "blender",
+            "oven",
+            "toaster",
+            "kettle"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Cooking Vessels",
+          "words": [
+            "pot",
+            "pan",
+            "wok",
+            "skillet",
+            "saucepan",
+            "casserole",
+            "stockpot",
+            "dutch oven",
+            "roaster",
+            "baking dish",
+            "ramekin",
+            "tagine"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Stovetop Vessels",
+          "words": [
+            "pot",
+            "pan",
+            "wok",
+            "skillet",
+            "saucepan",
+            "stockpot",
+            "dutch oven"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Cast Iron Cookware",
+          "words": [
+            "skillet",
+            "dutch oven",
+            "griddle",
+            "grill pan",
+            "brazier"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Enameled Cast Iron",
+          "words": [
+            "dutch oven",
+            "braiser",
+            "cocotte",
+            "casserole"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "French Casserole Types",
+          "words": [
+            "cocotte",
+            "casserole"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "name": "School & Education",
+      "levels": [
+        {
+          "level": 1,
+          "name": "School",
+          "words": [
+            "pencil",
+            "ruler",
+            "chalk",
+            "notebook",
+            "eraser",
+            "pen",
+            "compass",
+            "protractor",
+            "globe",
+            "atlas",
+            "dictionary",
+            "calculator",
+            "textbook",
+            "folder",
+            "binder",
+            "desk",
+            "blackboard",
+            "marker",
+            "stapler",
+            "scissors"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Writing Tools",
+          "words": [
+            "pencil",
+            "pen",
+            "chalk",
+            "marker",
+            "crayon",
+            "charcoal",
+            "quill",
+            "stylus",
+            "brush",
+            "highlighter",
+            "grease pencil"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Graphite-Based Tools",
+          "words": [
+            "pencil",
+            "mechanical pencil",
+            "graphite",
+            "charcoal",
+            "crayon"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Types of Pencil",
+          "words": [
+            "mechanical pencil",
+            "colored pencil",
+            "grease pencil",
+            "carpenter pencil",
+            "kohl pencil"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Drawing Pencils",
+          "words": [
+            "mechanical pencil",
+            "colored pencil",
+            "charcoal pencil",
+            "kohl pencil"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Pigment Pencils",
+          "words": [
+            "colored pencil",
+            "kohl pencil"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insects",
+      "name": "Insects & Bugs",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Insects",
+          "words": [
+            "bee",
+            "ant",
+            "fly",
+            "moth",
+            "beetle",
+            "wasp",
+            "cricket",
+            "grasshopper",
+            "ladybug",
+            "dragonfly",
+            "butterfly",
+            "termite",
+            "mantis",
+            "firefly",
+            "aphid",
+            "flea",
+            "tick",
+            "louse",
+            "gnat",
+            "midge"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Flying Insects",
+          "words": [
+            "bee",
+            "fly",
+            "moth",
+            "wasp",
+            "dragonfly",
+            "butterfly",
+            "gnat",
+            "midge",
+            "horsefly",
+            "mosquito",
+            "mayfly",
+            "lacewing"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Butterflies & Moths",
+          "words": [
+            "butterfly",
+            "moth",
+            "skipper",
+            "hawkmoth",
+            "burnet",
+            "swallowtail",
+            "monarch",
+            "admiral",
+            "tortoiseshell"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "True Butterflies",
+          "words": [
+            "swallowtail",
+            "monarch",
+            "admiral",
+            "tortoiseshell",
+            "brimstone",
+            "cabbage white",
+            "painted lady"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Nymphalid Butterflies",
+          "words": [
+            "monarch",
+            "admiral",
+            "tortoiseshell",
+            "painted lady",
+            "peacock",
+            "comma"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Vanessa Genus",
+          "words": [
+            "admiral",
+            "painted lady",
+            "comma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "name": "Military & Warfare",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Military",
+          "words": [
+            "sword",
+            "cannon",
+            "shield",
+            "armor",
+            "siege",
+            "cavalry",
+            "infantry",
+            "navy",
+            "fort",
+            "trench",
+            "missile",
+            "bomb",
+            "tank",
+            "radar",
+            "bunker",
+            "grenade",
+            "rifle",
+            "pistol",
+            "bayonet",
+            "mortar"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Medieval Weapons",
+          "words": [
+            "sword",
+            "lance",
+            "mace",
+            "crossbow",
+            "longbow",
+            "pike",
+            "halberd",
+            "flail",
+            "dagger",
+            "spear",
+            "axe",
+            "catapult",
+            "trebuchet",
+            "ballista"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Pole Weapons",
+          "words": [
+            "lance",
+            "pike",
+            "halberd",
+            "spear",
+            "glaive",
+            "voulge",
+            "partizan",
+            "spontoon"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Staff Weapons",
+          "words": [
+            "pike",
+            "halberd",
+            "glaive",
+            "voulge",
+            "partizan"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Swiss Infantry Weapons",
+          "words": [
+            "pike",
+            "halberd",
+            "voulge",
+            "partizan"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Halberd Variants",
+          "words": [
+            "halberd",
+            "voulge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "name": "Environment & Ecology",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Environment",
+          "words": [
+            "forest",
+            "ocean",
+            "glacier",
+            "wetland",
+            "savanna",
+            "tundra",
+            "coral",
+            "soil",
+            "climate",
+            "carbon",
+            "ozone",
+            "biodiversity",
+            "ecosystem",
+            "habitat",
+            "erosion",
+            "drought",
+            "flood",
+            "pollution",
+            "species",
+            "biome"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Ecosystems",
+          "words": [
+            "forest",
+            "ocean",
+            "wetland",
+            "savanna",
+            "tundra",
+            "grassland",
+            "desert",
+            "taiga",
+            "mangrove",
+            "estuary",
+            "bog",
+            "fen",
+            "heath",
+            "chaparral"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Forest Types",
+          "words": [
+            "rainforest",
+            "taiga",
+            "boreal",
+            "temperate",
+            "deciduous",
+            "cloud forest",
+            "mangrove",
+            "gallery forest"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Tropical Forests",
+          "words": [
+            "rainforest",
+            "cloud forest",
+            "mangrove",
+            "gallery forest",
+            "monsoon forest"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Tropical Moist Forests",
+          "words": [
+            "rainforest",
+            "cloud forest",
+            "monsoon forest"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Highland Tropical Forests",
+          "words": [
+            "cloud forest",
+            "elfin forest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medicine",
+      "name": "Medicine & Health",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Medical",
+          "words": [
+            "fever",
+            "pulse",
+            "diagnosis",
+            "surgery",
+            "vaccine",
+            "allergy",
+            "fracture",
+            "cancer",
+            "virus",
+            "bacteria",
+            "immunity",
+            "dose",
+            "therapy",
+            "scan",
+            "biopsy",
+            "anesthesia",
+            "suture",
+            "scalpel",
+            "catheter",
+            "prognosis"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Medical Procedures",
+          "words": [
+            "surgery",
+            "biopsy",
+            "scan",
+            "suture",
+            "catheter",
+            "transplant",
+            "dialysis",
+            "chemotherapy",
+            "radiation",
+            "amputation",
+            "endoscopy",
+            "intubation"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Diagnostic Procedures",
+          "words": [
+            "biopsy",
+            "scan",
+            "endoscopy",
+            "colonoscopy",
+            "ultrasound",
+            "mri",
+            "x-ray",
+            "ct scan",
+            "ecg",
+            "eeg"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Imaging Diagnostics",
+          "words": [
+            "ultrasound",
+            "mri",
+            "x-ray",
+            "ct scan",
+            "pet scan",
+            "fluoroscopy"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Cross-Sectional Imaging",
+          "words": [
+            "mri",
+            "ct scan",
+            "pet scan",
+            "spect"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Nuclear Imaging",
+          "words": [
+            "pet scan",
+            "spect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "name": "Colors & Art",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Colors",
+          "words": [
+            "red",
+            "blue",
+            "green",
+            "yellow",
+            "orange",
+            "purple",
+            "pink",
+            "brown",
+            "black",
+            "white",
+            "grey",
+            "gold",
+            "silver",
+            "violet",
+            "indigo",
+            "teal",
+            "cyan",
+            "magenta",
+            "crimson",
+            "scarlet"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Shades of Red",
+          "words": [
+            "red",
+            "crimson",
+            "scarlet",
+            "maroon",
+            "ruby",
+            "burgundy",
+            "carmine",
+            "vermillion",
+            "rose",
+            "coral",
+            "salmon",
+            "cerise"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Deep Red Shades",
+          "words": [
+            "crimson",
+            "scarlet",
+            "maroon",
+            "ruby",
+            "burgundy",
+            "carmine",
+            "vermillion"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Wine-Toned Reds",
+          "words": [
+            "maroon",
+            "burgundy",
+            "claret",
+            "oxblood",
+            "aubergine"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Bordeaux Tones",
+          "words": [
+            "burgundy",
+            "claret",
+            "bordeaux",
+            "garnet"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Wine Region Colors",
+          "words": [
+            "burgundy",
+            "bordeaux",
+            "claret"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancient_civ",
+      "name": "Ancient Civilizations",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Ancient World",
+          "words": [
+            "egypt",
+            "rome",
+            "greece",
+            "persia",
+            "babylon",
+            "carthage",
+            "sumeria",
+            "china",
+            "india",
+            "maya",
+            "aztec",
+            "inca",
+            "viking",
+            "celtic",
+            "mongol",
+            "ottoman",
+            "byzantine",
+            "akkad",
+            "assyria",
+            "phoenicia"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Mediterranean Civilizations",
+          "words": [
+            "egypt",
+            "rome",
+            "greece",
+            "carthage",
+            "phoenicia",
+            "byzantium",
+            "ottoman",
+            "persia",
+            "babylon",
+            "assyria"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Classical Period",
+          "words": [
+            "rome",
+            "greece",
+            "persia",
+            "carthage",
+            "babylon",
+            "ptolemaic egypt"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Hellenistic States",
+          "words": [
+            "ptolemaic egypt",
+            "seleucid",
+            "pergamon",
+            "macedon",
+            "bactria"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Successor Kingdoms",
+          "words": [
+            "ptolemaic egypt",
+            "seleucid",
+            "pergamon",
+            "macedon"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Ptolemaic Successors",
+          "words": [
+            "ptolemaic egypt",
+            "seleucid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "household",
+      "name": "Household Items",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Household",
+          "words": [
+            "lamp",
+            "sofa",
+            "chair",
+            "table",
+            "mirror",
+            "carpet",
+            "curtain",
+            "shelf",
+            "pillow",
+            "blanket",
+            "clock",
+            "vase",
+            "candle",
+            "drawer",
+            "hanger",
+            "bucket",
+            "mop",
+            "broom",
+            "dustpan",
+            "detergent"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Living Room Items",
+          "words": [
+            "sofa",
+            "chair",
+            "table",
+            "lamp",
+            "mirror",
+            "carpet",
+            "shelf",
+            "cushion",
+            "curtain",
+            "vase",
+            "clock",
+            "bookcase",
+            "ottoman",
+            "fireplace"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Seating Furniture",
+          "words": [
+            "sofa",
+            "chair",
+            "armchair",
+            "stool",
+            "ottoman",
+            "bench",
+            "chaise",
+            "loveseat",
+            "sectional",
+            "rocker"
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Upholstered Seating",
+          "words": [
+            "sofa",
+            "armchair",
+            "ottoman",
+            "chaise",
+            "loveseat",
+            "sectional",
+            "settee"
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Long Upholstered Seats",
+          "words": [
+            "sofa",
+            "chaise",
+            "loveseat",
+            "sectional",
+            "settee",
+            "divan"
+          ]
+        },
+        {
+          "level": 6,
+          "name": "Reclining Lounge Seats",
+          "words": [
+            "chaise",
+            "divan",
+            "daybed"
+          ]
+        }
       ]
     }
   ]

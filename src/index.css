@@ -31,6 +31,9 @@
   
   --changebyone-accent: #fbbf24;
   --changebyone-accent-glow: rgba(251, 191, 36, 0.20);
+
+  /* Hub text - same as app text */
+  --hub-text: var(--app-text);
 }
 
 * {
@@ -54,116 +57,146 @@ body {
   min-height: 100vh;
 }
 
-/* Hub-specific styles */
+/* ============================================================
+   HUB — Retro Keyboard Plate (ties all three games together)
+   ============================================================ */
+
+:root {
+  --hub-bg:          #E8E5E1;
+  --hub-surface:     #F1EDEA;
+  --hub-dark:        #1E2028;
+  --hub-dark-2:      #32384A;
+  --hub-text:        #1E1C1A;
+  --hub-text-muted:  #706D69;
+  --hub-border:      #C9C4BE;
+  --hub-border-dark: #ADA7A0;
+}
+
+/* Full plate background */
+.hub-plate {
+  background: var(--hub-bg);
+  min-height: 100vh;
+  color: var(--hub-text);
+}
+
+/* Card = large keycap surface */
 .hub-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
-  border: 1px solid var(--app-border);
-  border-radius: 18px;
-  padding: 16px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: var(--hub-surface);
+  border: 1px solid var(--hub-border);
+  border-bottom: 4px solid var(--hub-border-dark);
+  box-shadow: 0 4px 0 var(--hub-border-dark), 0 6px 18px rgba(0,0,0,0.06);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
   text-align: left;
+}
+
+/* Colored accent strip at card top */
+.hub-card-strip {
+  height: 4px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Card body padding */
+.hub-card-body {
+  padding: 16px 18px 18px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  position: relative;
-  overflow: hidden;
+  flex: 1;
 }
 
-.hub-card::before {
-  content: "";
-  position: absolute;
-  inset: -60px;
-  background: radial-gradient(260px 140px at 24% 10%, rgba(255, 255, 255, 0.06), transparent 70%);
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-.hub-icon-box {
-  width: 54px;
-  height: 54px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: radial-gradient(120px 60px at 40% 30%, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-}
-
+/* Tag chips — mini keycap look */
 .hub-tag {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 11px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
   font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(255, 255, 255, 0.03);
-  padding: 8px 10px;
-  border-radius: 999px;
+  color: var(--hub-text-muted);
+  background: var(--hub-bg);
+  border: 1px solid var(--hub-border);
+  border-bottom: 2px solid var(--hub-border-dark);
+  box-shadow: 0 2px 0 var(--hub-border-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
-.hub-btn {
-  appearance: none;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.05));
-  color: var(--app-text);
-  font-weight: 850;
-  letter-spacing: 0.02em;
-  padding: 10px 14px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
-  white-space: nowrap;
+/* Open button — color is passed via inline style */
+.hub-open-btn {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  border-radius: 5px;
   text-decoration: none;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
+  transition: transform 0.08s, box-shadow 0.08s, filter 0.1s;
+  border-style: solid;
+  border-width: 1px 1px 3px 1px;
 }
+.hub-open-btn:hover  { filter: brightness(1.06); }
+.hub-open-btn:active { transform: translateY(2px); border-bottom-width: 1px; box-shadow: none !important; }
 
-.hub-btn:hover {
-  transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.25);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.08));
+/* About/ghost link */
+.hub-about-btn {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 9px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--hub-border);
+  color: var(--hub-text-muted);
+  transition: background 0.1s, color 0.1s, border-color 0.1s;
+  white-space: nowrap;
 }
-
-.hub-btn:active {
-  transform: translateY(0px);
-}
-
-.hub-btn-ghost {
-  appearance: none;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(255, 255, 255, 0.03);
+.hub-about-btn:hover {
+  background: var(--hub-bg);
   color: var(--hub-text);
-  font-weight: 850;
-  letter-spacing: 0.02em;
-  padding: 10px 14px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
-  white-space: nowrap;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  border-color: var(--hub-border-dark);
 }
 
-.hub-btn-ghost:hover {
-  border-color: rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.05);
-}
-
-@media (max-width: 1023px) {
-  .hub-card {
-    grid-column: span 12 !important;
+@media (max-width: 767px) {
+  .hub-card-body {
+    padding: 14px 16px 16px;
   }
 }
 
-/* LetterMix (Clear the String) styles */
+/* ─────────────────────────────────────────────────────
+   LetterMix (Clear the String) — Retro Keyboard Theme
+   ───────────────────────────────────────────────────── */
+
+:root {
+  --lm-bg:          #E8E8E8;
+  --lm-surface:     #DADADA;
+  --lm-key-face:    #D0D0D0;
+  --lm-key-side:    #9E9E9E;
+  --lm-nav:         #2E2E2E;
+  --lm-nav-border:  #1a1a1a;
+  --lm-accent:      #D63B3B;
+  --lm-accent-dark: #A82A2A;
+  --lm-accent-side: #861F1F;
+  --lm-text:        #1A1A1A;
+  --lm-text-muted:  #555555;
+  --lm-text-faint:  #888888;
+  --lm-border:      #BEBEBE;
+  --lm-border-dark: #A8A8A8;
+}
+
+/* Background grid — subtle keycap texture */
 .lettermix-bg-grid {
   position: absolute;
   inset: 0;
@@ -171,7 +204,7 @@ body {
   grid-template-columns: repeat(var(--bg-cols), var(--bg-cell));
   grid-template-rows: repeat(var(--bg-rows), var(--bg-cell));
   padding: 18px;
-  gap: 6px;
+  gap: 5px;
   align-content: start;
 }
 
@@ -181,56 +214,46 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.012);
-  border: 1px solid rgba(255, 255, 255, 0.025);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.028);
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
 
 .lettermix-bg-ch {
-  font: 800 11px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 10px/1 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   letter-spacing: 0;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.055);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.10);
   transform: translateY(0.5px);
   user-select: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lettermix-bg-ch {
-    transition: none;
-  }
+  .lettermix-bg-ch { transition: none; }
 }
 
+/* Animated title stage */
 .lettermix-string-stage {
   width: 480px;
   max-width: 100%;
   height: 108px;
-  border-radius: 18px;
-  border: 1px solid rgba(96, 165, 250, 0.15);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  border: 1px solid var(--lm-border);
+  border-bottom: 3px solid var(--lm-border-dark);
+  background: var(--lm-surface);
+  box-shadow: 0 4px 0 var(--lm-key-side), 0 5px 10px rgba(0,0,0,0.12);
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 }
 
-.lettermix-string-stage::before {
-  content: "";
-  position: absolute;
-  inset: -40px;
-  background: radial-gradient(300px 140px at 50% 50%, var(--lettermix-accent-glow), transparent 65%);
-  opacity: 0.8;
-  pointer-events: none;
-}
+.lettermix-string-stage::before { display: none; }
 
 .lettermix-glyph {
   position: absolute;
-  font: 800 12px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  color: var(--lettermix-accent);
-  text-shadow: 0 0 16px var(--lettermix-accent-glow);
+  font: 800 14px/1 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: var(--lm-accent);
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 250ms ease;
@@ -238,101 +261,145 @@ body {
   pointer-events: none;
 }
 
-.lettermix-glyph-on {
-  opacity: 1;
-}
+.lettermix-glyph-on { opacity: 1; }
 
+/* Cards */
 .lettermix-card {
   width: min(520px, 92%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 18px;
+  background: var(--lm-surface);
+  border: 1px solid var(--lm-border);
+  border-bottom: 2px solid var(--lm-border-dark);
+  border-radius: 6px;
   padding: 14px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   margin-top: 6px;
 }
 
+/* Progress dots */
 .lettermix-dot {
   width: 8px;
   height: 8px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.22);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .lettermix-dot-on {
-  background: var(--lettermix-accent);
-  box-shadow: 0 0 16px var(--lettermix-accent-glow);
+  background: var(--lm-accent);
+  border-color: var(--lm-accent-dark);
 }
 
+/* Play button */
 .lettermix-btn {
   appearance: none;
-  border: 1px solid rgba(96, 165, 250, 0.20);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.05));
-  color: var(--app-text);
+  border: 1px solid var(--lm-accent-dark);
+  border-bottom: 3px solid var(--lm-accent-side);
+  background: var(--lm-accent);
+  color: #ffffff;
   font-weight: 800;
-  letter-spacing: 0.02em;
-  padding: 10px 14px;
-  border-radius: 12px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: 0.04em;
+  padding: 10px 18px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+  transition: transform 80ms ease, box-shadow 80ms ease;
   white-space: nowrap;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  box-shadow: 0 3px 0 var(--lm-accent-side), 0 4px 6px rgba(0,0,0,0.15);
 }
 
-.lettermix-btn:hover {
-  transform: translateY(-1px);
-  border-color: var(--lettermix-accent);
-  background: linear-gradient(180deg, rgba(96, 165, 250, 0.15), rgba(255, 255, 255, 0.08));
-}
+.lettermix-btn:hover { background: #C83232; }
 
 .lettermix-btn:active {
-  transform: translateY(0px);
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--lm-accent-side), 0 2px 3px rgba(0,0,0,0.12);
+  border-bottom-width: 1px;
 }
 
+/* Section divider */
 .lettermix-divider {
   width: 140px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+  background: var(--lm-border-dark);
   margin: 12px 0 2px 0;
 }
 
+/* Menu items */
 .lettermix-menu-item {
   width: min(260px, 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid transparent;
-  color: rgba(255, 255, 255, 0.92);
+  padding: 11px 14px;
+  border-radius: 5px;
+  border: 1px solid var(--lm-border);
+  border-bottom: 3px solid var(--lm-border-dark);
+  color: var(--lm-text);
   text-decoration: none;
-  background: transparent;
-  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
-  font-weight: 750;
+  background: var(--lm-surface);
+  transition: background 80ms ease, transform 80ms ease, box-shadow 80ms ease;
+  font-weight: 700;
   letter-spacing: 0.01em;
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
+  box-shadow: 0 2px 0 var(--lm-key-side), 0 3px 4px rgba(0,0,0,0.08);
 }
 
-.lettermix-menu-item:hover {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.08);
-  transform: translateY(-1px);
+.lettermix-menu-item:hover { background: var(--lm-key-face); }
+
+.lettermix-menu-item:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0 var(--lm-key-side);
+  border-bottom-width: 1px;
 }
 
 .lettermix-menu-icon {
   width: 18px;
   height: 18px;
-  color: rgba(255, 255, 255, 0.70);
+  color: var(--lm-text-muted);
   flex: 0 0 auto;
+}
+
+/* ── Letter Tile Keycaps ── */
+.lettermix-key {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  background: var(--lm-key-face);
+  border: 1px solid var(--lm-border);
+  border-bottom: 1px solid var(--lm-border-dark);
+  box-shadow: 0 4px 0 var(--lm-key-side), 0 5px 4px rgba(0,0,0,0.12);
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--lm-text);
+  cursor: pointer;
+  transition: transform 80ms ease, box-shadow 80ms ease, background 80ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.lettermix-key:hover { background: #C8C8C8; }
+
+.lettermix-key-selected {
+  background: var(--lm-accent) !important;
+  border-color: var(--lm-accent-dark);
+  border-bottom-color: var(--lm-accent-side);
+  box-shadow: 0 2px 0 var(--lm-accent-side), 0 3px 3px rgba(0,0,0,0.18) !important;
+  color: #ffffff !important;
+  transform: translateY(2px);
+}
+
+.lettermix-key:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--lm-key-side), 0 2px 2px rgba(0,0,0,0.08);
 }
 
 /* Shared game home screen styles */
@@ -407,3 +474,506 @@ body {
 
 .game-home-btn-wordpool:hover { border-color: #34d399; background: linear-gradient(180deg, rgba(52, 211, 153, 0.15), rgba(255, 255, 255, 0.08)); }
 .game-home-btn-changebyone:hover { border-color: #fbbf24; background: linear-gradient(180deg, rgba(251, 191, 36, 0.15), rgba(255, 255, 255, 0.08)); }
+
+/* ─────────────────────────────────────────────────────
+   Change by One — Retro Industrial Teal Theme
+   ───────────────────────────────────────────────────── */
+
+:root {
+  --cbo-bg:          #F2F1EE;
+  --cbo-surface:     #E3E1DC;
+  --cbo-surface-2:   #C8CDD0;
+  --cbo-dark:        #2F333A;
+  --cbo-dark-2:      #58616B;
+  --cbo-text:        #2A2A2A;
+  --cbo-text-muted:  #66707A;
+  --cbo-border:      #B9BCBE;
+  --cbo-border-dark: #9EA5AB;
+  --cbo-accent:      #3E9FA8;
+  --cbo-accent-dark: #2C7A82;
+  --cbo-accent-side: #1E5A61;
+  --cbo-accent-2:    #6CB7BE;
+  --cbo-highlight:   #D8A93A;
+  --cbo-highlight-dark: #A87E25;
+  --cbo-highlight-side: #7D5D16;
+}
+
+/* Cards */
+.cbo-card {
+  background: var(--cbo-surface);
+  border: 1px solid var(--cbo-border);
+  border-bottom: 2px solid var(--cbo-border-dark);
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+/* Primary teal keycap button */
+.cbo-btn-primary {
+  appearance: none;
+  background: var(--cbo-accent);
+  border: 1px solid var(--cbo-accent-dark);
+  border-bottom: 3px solid var(--cbo-accent-side);
+  color: #ffffff;
+  font-weight: 800;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: 0.04em;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 var(--cbo-accent-side), 0 4px 6px rgba(0,0,0,0.12);
+  transition: transform 80ms ease, box-shadow 80ms ease, background 80ms ease;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cbo-btn-primary:hover { background: #359099; }
+
+.cbo-btn-primary:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--cbo-accent-side);
+  border-bottom-width: 1px;
+}
+
+.cbo-btn-primary:disabled {
+  background: var(--cbo-surface-2);
+  border-color: var(--cbo-border);
+  border-bottom-color: var(--cbo-border-dark);
+  box-shadow: 0 3px 0 var(--cbo-border-dark);
+  color: var(--cbo-text-muted);
+  cursor: not-allowed;
+}
+
+/* Secondary grey keycap button */
+.cbo-btn-secondary {
+  appearance: none;
+  background: var(--cbo-surface);
+  border: 1px solid var(--cbo-border);
+  border-bottom: 3px solid var(--cbo-border-dark);
+  color: var(--cbo-text-muted);
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 var(--cbo-border-dark), 0 4px 4px rgba(0,0,0,0.07);
+  transition: transform 80ms ease, box-shadow 80ms ease;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cbo-btn-secondary:hover { background: var(--cbo-surface-2); color: var(--cbo-text); }
+
+.cbo-btn-secondary:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--cbo-border-dark);
+  border-bottom-width: 1px;
+}
+
+.cbo-btn-secondary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Mustard highlight keycap button */
+.cbo-btn-highlight {
+  appearance: none;
+  background: var(--cbo-highlight);
+  border: 1px solid var(--cbo-highlight-dark);
+  border-bottom: 3px solid var(--cbo-highlight-side);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 var(--cbo-highlight-side), 0 4px 4px rgba(0,0,0,0.1);
+  transition: transform 80ms ease, box-shadow 80ms ease;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cbo-btn-highlight:hover { background: #c99a30; }
+
+.cbo-btn-highlight:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--cbo-highlight-side);
+  border-bottom-width: 1px;
+}
+
+.cbo-btn-highlight:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Puzzle length tab */
+.cbo-tab {
+  padding: 7px 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: transform 80ms ease, box-shadow 80ms ease;
+  border: 1px solid var(--cbo-border);
+  border-bottom: 3px solid var(--cbo-border-dark);
+  background: var(--cbo-surface);
+  color: var(--cbo-text-muted);
+  box-shadow: 0 2px 0 var(--cbo-border-dark);
+}
+
+.cbo-tab:hover { background: var(--cbo-surface-2); color: var(--cbo-text); }
+
+.cbo-tab-active {
+  background: var(--cbo-accent) !important;
+  border-color: var(--cbo-accent-dark);
+  border-bottom-color: var(--cbo-accent-side);
+  color: #ffffff !important;
+  box-shadow: 0 2px 0 var(--cbo-accent-side) !important;
+}
+
+.cbo-tab-done {
+  background: rgba(62, 159, 168, 0.08) !important;
+  border-color: var(--cbo-accent-2);
+  color: var(--cbo-accent) !important;
+}
+
+/* Inset input field */
+.cbo-input {
+  flex: 1;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: 1px solid var(--cbo-border);
+  background: var(--cbo-surface);
+  color: var(--cbo-text);
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.08), inset 0 1px 2px rgba(0,0,0,0.04);
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.cbo-input::placeholder {
+  color: var(--cbo-text-muted);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.cbo-input:focus {
+  border-color: var(--cbo-accent);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.08), 0 0 0 2px rgba(62, 159, 168, 0.2);
+}
+
+/* Word display keycap */
+.cbo-word-key {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: var(--cbo-surface-2);
+  border: 1px solid var(--cbo-border);
+  border-bottom: 3px solid var(--cbo-border-dark);
+  box-shadow: 0 2px 0 var(--cbo-border-dark);
+  color: var(--cbo-text);
+}
+
+/* Start word — mustard */
+.cbo-word-start {
+  background: rgba(216, 169, 58, 0.10);
+  border-color: var(--cbo-highlight-dark);
+  border-bottom-color: var(--cbo-highlight-side);
+  box-shadow: 0 2px 0 var(--cbo-highlight-side);
+  color: var(--cbo-highlight);
+}
+
+/* Target word — teal */
+.cbo-word-target {
+  background: rgba(62, 159, 168, 0.10);
+  border-color: var(--cbo-accent-dark);
+  border-bottom-color: var(--cbo-accent-side);
+  box-shadow: 0 2px 0 var(--cbo-accent-side);
+  color: var(--cbo-accent);
+}
+
+/* Menu items */
+.cbo-menu-item {
+  width: min(260px, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--cbo-border);
+  border-bottom: 3px solid var(--cbo-border-dark);
+  color: var(--cbo-text);
+  text-decoration: none;
+  background: var(--cbo-surface);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  box-shadow: 0 2px 0 var(--cbo-border-dark), 0 3px 4px rgba(0,0,0,0.06);
+  transition: background 80ms ease, transform 80ms ease, box-shadow 80ms ease;
+}
+
+.cbo-menu-item:hover { background: var(--cbo-surface-2); }
+
+.cbo-menu-item:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 var(--cbo-border-dark);
+  border-bottom-width: 1px;
+}
+
+.cbo-menu-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--cbo-text-muted);
+  flex: 0 0 auto;
+}
+
+/* Move dots */
+.cbo-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--cbo-surface-2); border: 1px solid var(--cbo-border); }
+.cbo-dot-used { background: var(--cbo-accent); border-color: var(--cbo-accent-dark); }
+.cbo-dot-won  { background: #3a9e6e; border-color: #2c7a54; }
+
+/* Chain word badge */
+.cbo-chain-word {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: var(--cbo-surface-2);
+  border: 1px solid var(--cbo-border);
+  border-bottom: 2px solid var(--cbo-border-dark);
+  box-shadow: 0 2px 0 var(--cbo-border-dark);
+  color: var(--cbo-text);
+}
+
+/* ============================================================
+   WORD POOL — Retro Navy / Powder Blue / Blush Pink Keyboard
+   ============================================================ */
+:root {
+  --wp-bg:               #F5F2F1;
+  --wp-surface:          #ECE7E4;
+  --wp-surface-2:        #D9E4EC;
+  --wp-dark:             #1F2433;
+  --wp-dark-2:           #3A4358;
+  --wp-text:             #2D2A28;
+  --wp-text-muted:       #6D7178;
+  --wp-border:           #CFC8C4;
+  --wp-border-dark:      #B4ABA5;
+  --wp-accent-blue:      #9FC3DA;
+  --wp-accent-blue-dark: #7EA9C5;
+  --wp-accent-blue-side: #5D8BA5;
+  --wp-accent-pink:      #E8B7B5;
+  --wp-accent-pink-dark: #D98F8C;
+  --wp-accent-pink-side: #BF7070;
+}
+
+/* Card panel */
+.wp-card {
+  background: var(--wp-surface);
+  border: 1px solid var(--wp-border);
+  border-bottom: 3px solid var(--wp-border-dark);
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(20,24,34,0.06);
+}
+
+/* Primary button — powder blue keycap */
+.wp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s;
+  background: var(--wp-accent-blue);
+  color: var(--wp-dark);
+  border: 1px solid var(--wp-accent-blue-dark);
+  border-bottom: 3px solid var(--wp-accent-blue-dark);
+  box-shadow: 0 3px 0 var(--wp-accent-blue-side);
+}
+.wp-btn-primary:hover  { background: var(--wp-accent-blue-dark); }
+.wp-btn-primary:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--wp-accent-blue-side); }
+.wp-btn-primary:disabled,
+.wp-btn-primary[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Secondary button — grey keycap */
+.wp-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s;
+  background: var(--wp-surface);
+  color: var(--wp-text);
+  border: 1px solid var(--wp-border);
+  border-bottom: 3px solid var(--wp-border-dark);
+  box-shadow: 0 3px 0 var(--wp-border-dark);
+}
+.wp-btn-secondary:hover  { background: #E0DAD7; }
+.wp-btn-secondary:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--wp-border-dark); }
+
+/* Pink accent button — blush pink keycap */
+.wp-btn-pink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s;
+  background: var(--wp-accent-pink);
+  color: var(--wp-dark);
+  border: 1px solid var(--wp-accent-pink-dark);
+  border-bottom: 3px solid var(--wp-accent-pink-dark);
+  box-shadow: 0 3px 0 var(--wp-accent-pink-side);
+}
+.wp-btn-pink:hover  { background: var(--wp-accent-pink-dark); }
+.wp-btn-pink:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--wp-accent-pink-side); }
+
+/* Level tabs */
+.wp-tab {
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.1s;
+  background: var(--wp-surface);
+  color: var(--wp-text-muted);
+  border: 1px solid var(--wp-border);
+  border-bottom: 2px solid var(--wp-border-dark);
+  box-shadow: 0 2px 0 var(--wp-border-dark);
+}
+.wp-tab:hover { background: #E0DAD7; color: var(--wp-text); }
+.wp-tab:active { transform: translateY(1px); box-shadow: none; }
+
+.wp-tab-active {
+  background: var(--wp-accent-blue);
+  color: var(--wp-dark);
+  border: 1px solid var(--wp-accent-blue-dark);
+  border-bottom: 2px solid var(--wp-accent-blue-dark);
+  box-shadow: 0 2px 0 var(--wp-accent-blue-side);
+}
+.wp-tab-active:hover { background: var(--wp-accent-blue-dark); }
+
+.wp-tab-done {
+  background: var(--wp-surface-2);
+  color: var(--wp-accent-blue-side);
+  border: 1px solid var(--wp-accent-blue);
+  border-bottom: 2px solid var(--wp-accent-blue-dark);
+  box-shadow: 0 2px 0 var(--wp-accent-blue-side);
+}
+
+/* Input field — inset control feel */
+.wp-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: var(--wp-bg);
+  color: var(--wp-text);
+  border: 1px solid var(--wp-border);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.07);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.wp-input::placeholder { color: var(--wp-text-muted); }
+.wp-input:focus {
+  border-color: var(--wp-accent-blue-dark);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.07), 0 0 0 2px rgba(159,195,218,0.35);
+}
+
+/* Menu items — keycap list style */
+.wp-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 260px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s, background 0.1s;
+  background: var(--wp-surface);
+  color: var(--wp-text);
+  border: 1px solid var(--wp-border);
+  border-bottom: 3px solid var(--wp-border-dark);
+  box-shadow: 0 3px 0 var(--wp-border-dark);
+}
+.wp-menu-item:hover  { background: #E0DAD7; }
+.wp-menu-item:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--wp-border-dark); }
+
+.wp-menu-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--wp-accent-blue-side);
+}
+
+/* Found word chip */
+.wp-word-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--wp-surface-2);
+  color: var(--wp-accent-blue-side);
+  border: 1px solid var(--wp-accent-blue);
+}

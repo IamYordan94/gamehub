@@ -1,7 +1,7 @@
 {
-  "name": "wordcraft-temp",
+  "name": "wordcraft-hub",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,22 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor-community/admob": "^8.0.0",
-    "@capacitor-community/sqlite": "^8.0.0",
-    "@capacitor/android": "^8.1.0",
-    "@capacitor/app": "^8.0.1",
-    "@capacitor/cli": "^8.1.0",
-    "@capacitor/core": "^8.1.0",
-    "@capacitor/haptics": "^8.0.1",
-    "@capacitor/keyboard": "^8.0.1",
-    "@capacitor/status-bar": "^8.0.1",
     "@tailwindcss/vite": "^4.1.18",
     "framer-motion": "^12.34.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.0",
-    "tailwindcss": "^4.1.18",
-    "zustand": "^5.0.11"
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

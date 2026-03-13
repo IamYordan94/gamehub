@@ -1,23 +1,25 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useParams, useNavigate, Link, useOutletContext } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
-import { Capacitor } from '@capacitor/core';
 import { useWordDatabase } from '../hooks/useWordDatabase';
 import { getTodayDateStr } from '../utils/dailySeed';
-import { setLetterMixCompleted, getLetterMixCompletedFor, getHintTargetAsync, setHintTargetAsync, clearHintTargetAsync } from '../utils/storage';
+import {
+  setLetterMixCompleted,
+  getLetterMixCompletedFor,
+  getHintTargetAsync,
+  setHintTargetAsync,
+  clearHintTargetAsync,
+} from '../utils/storage';
 import { shouldShowAdForHint, showRewardedAd } from '../utils/ads';
 import { recordHintEvent } from '../utils/database';
-// Helper to check if a word can be formed from available letters (any order)
+
 function canFormFromLetters(availableLetters: string, word: string): boolean {
   const letterCounts: Record<string, number> = {};
   for (const char of availableLetters) {
     letterCounts[char] = (letterCounts[char] || 0) + 1;
   }
   for (const char of word) {
-    if (!letterCounts[char] || letterCounts[char] === 0) {
-      return false;
-    }
+    if (!letterCounts[char] || letterCounts[char] === 0) return false;
     letterCounts[char]--;
   }
   return true;
@@ -42,8 +44,11 @@ export default function LetterMixPage() {
   const { setResetHandler } = useOutletContext<LayoutContextType>();
   const puzzleDate = dateParam ?? getTodayDateStr();
   const level: (typeof LEVELS)[number] =
-    levelParam && LEVELS.includes(levelParam as (typeof LEVELS)[number]) ? (levelParam as (typeof LEVELS)[number]) : 'easy';
-  const { isLoading: dbLoading } = useWordDatabase();
+    levelParam && LEVELS.includes(levelParam as (typeof LEVELS)[number])
+      ? (levelParam as (typeof LEVELS)[number])
+      : 'easy';
+
+  const { isLoading: dbLoading, isValidWord } = useWordDatabase();
 
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [puzzleLoaded, setPuzzleLoaded] = useState(false);
@@ -57,13 +62,12 @@ export default function LetterMixPage() {
 
   useEffect(() => {
     setPuzzleLoaded(false);
-    // Reset game state when puzzle changes
     setFoundWords([]);
     setSelectedIndices([]);
     setMessage(null);
     setHint(null);
     setShared(false);
-    
+
     fetch('/data/lettermix-puzzles.json')
       .then((r) => {
         if (!r.ok) throw new Error('Failed to load puzzles');
@@ -93,23 +97,17 @@ export default function LetterMixPage() {
     .toLowerCase();
 
   const handleLetterClick = (index: number) => {
-    if (Capacitor.isNativePlatform()) {
-      Haptics.impact({ style: ImpactStyle.Light }).catch(() => {});
-    }
     setSelectedIndices((prev) =>
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
     setMessage(null);
   };
 
-  const { isValidWord } = useWordDatabase();
-
   const handleSubmit = () => {
     if (!selectedWord || selectedWord.length < 2) {
       setMessage({ text: 'Select at least 2 letters', type: 'error' });
       return;
     }
-    // NEW: Accept ANY valid English word (not just solution words)
     if (!isValidWord(selectedWord)) {
       setMessage({ text: 'Not a valid English word', type: 'error' });
       return;
@@ -118,7 +116,6 @@ export default function LetterMixPage() {
       setMessage({ text: 'Already found', type: 'error' });
       return;
     }
-    // Accept the word and remove letters (don't reveal if it's a solution word)
     setFoundWords((prev) => [...prev, selectedWord]);
     setLetters((prev) => prev.filter((_, i) => !selectedIndices.includes(i)));
     setSelectedIndices([]);
@@ -142,11 +139,15 @@ export default function LetterMixPage() {
     }
   }, [puzzle]);
 
-  // NEW: Win = found all solution words (not just cleared all letters)
   const foundSolutionWords = puzzle ? foundWords.filter(w => puzzle.solutionWords.includes(w)) : [];
-  const isWon = puzzle && foundSolutionWords.length === puzzle.solutionWords.length;
+  const isWon = !!(puzzle && foundSolutionWords.length === puzzle.solutionWords.length);
 
-  // Clear hint target when user finds the word we were hinting for
+  useEffect(() => {
+    if (isWon && puzzle) {
+      setLetterMixCompleted(puzzle.date, puzzle.level, foundWords);
+    }
+  }, [isWon, puzzle, foundWords]);
+
   useEffect(() => {
     if (!puzzle || foundWords.length === 0) return;
     (async () => {
@@ -158,37 +159,21 @@ export default function LetterMixPage() {
     })();
   }, [puzzle, foundWords]);
 
-  // Check if stuck: can't form any more 2+ letter words from remaining letters
-  const checkIfStuck = (): boolean => {
-    if (letters.length < 2) return true;
+  const isStuck = useMemo(() => {
+    if (isWon || letters.length < 2) return false;
     const remainingStr = letters.join('');
-    // Simple heuristic: check if we can form common 2-letter words
     const common2Letter = ['an', 'at', 'be', 'by', 'do', 'go', 'he', 'if', 'in', 'is', 'it', 'me', 'my', 'no', 'of', 'on', 'or', 'so', 'to', 'up', 'us', 'we'];
     for (const word of common2Letter) {
-      if (canFormFromLetters(remainingStr, word) && isValidWord(word)) {
-        return false; // Can still form at least one word
-      }
+      if (canFormFromLetters(remainingStr, word) && isValidWord(word)) return false;
     }
-    // Check if any solution word is still formable
     if (puzzle) {
       for (const word of puzzle.solutionWords) {
-        if (!foundWords.includes(word) && canFormFromLetters(remainingStr, word)) {
-          return false;
-        }
+        if (!foundWords.includes(word) && canFormFromLetters(remainingStr, word)) return false;
       }
     }
-    return true; // Stuck
-  };
+    return true;
+  }, [letters, puzzle, foundWords, isWon, isValidWord]);
 
-  const isStuck = !isWon && letters.length > 0 && checkIfStuck();
-
-  useEffect(() => {
-    if (isWon && puzzle) {
-      setLetterMixCompleted(puzzle.date, puzzle.level, foundWords);
-    }
-  }, [isWon, puzzle, foundWords]);
-
-  // Register reset handler with layout
   useEffect(() => {
     setResetHandler(() => handleReset);
     return () => setResetHandler(null);
@@ -206,7 +191,6 @@ export default function LetterMixPage() {
       return;
     }
 
-    // Pick target: use stored hint target if still valid, else first formable or shortest unfound
     let targetWord: string;
     const stored = await getHintTargetAsync('lettermix', puzzleId);
     if (stored && unseenSolution.includes(stored.targetWord)) {
@@ -223,9 +207,8 @@ export default function LetterMixPage() {
     }
 
     let hintLevel = stored?.targetWord === targetWord ? stored.hintLevel : 1;
-    const maxLevel = 4; // 1=length, 2=1st letter, 3=2nd, 4=3rd
+    const maxLevel = 4;
 
-    // Build hint text: cumulative progressive reveal (length → +1st letter → +2nd → +3rd)
     let hintText: string;
     if (hintLevel === 1) {
       hintText = `Look for a ${targetWord.length}-letter word.`;
@@ -238,11 +221,9 @@ export default function LetterMixPage() {
     }
 
     const showAd = await shouldShowAdForHint('lettermix');
-
     if (showAd) {
       setHint('Loading ad...');
       const result = await showRewardedAd();
-
       if (!result.rewarded) {
         setHint('Watch the full ad to get a hint!');
         return;
@@ -263,29 +244,32 @@ export default function LetterMixPage() {
     }
   };
 
+  // ── Loading states ──
   if (dbLoading) {
     return (
       <div className="flex justify-center py-12">
-        <div className="animate-pulse text-[#94a3b8]">Loading puzzle...</div>
+        <div className="animate-pulse text-sm font-semibold" style={{ color: 'var(--lm-text-muted)' }}>Loading puzzle...</div>
       </div>
     );
   }
   if (!puzzleLoaded) {
     return (
       <div className="flex justify-center py-12">
-        <p className="text-[#94a3b8]">Loading puzzle...</p>
+        <p className="text-sm font-semibold" style={{ color: 'var(--lm-text-muted)' }}>Loading puzzle...</p>
       </div>
     );
   }
   if (!puzzle) {
     return (
       <div className="flex flex-col items-center justify-center py-12 space-y-4">
-        <p className="text-[#94a3b8] text-center">
-          Could not load puzzles. Check that <code className="text-[#60a5fa]">/data/lettermix-puzzles.json</code> is available.
+        <p className="text-sm text-center" style={{ color: 'var(--lm-text-muted)' }}>
+          Could not load puzzles. Check that{' '}
+          <code style={{ color: 'var(--lm-accent)' }}>/data/lettermix-puzzles.json</code> is available.
         </p>
         <Link
           to="/lettermix"
-          className="px-4 py-2 rounded-lg bg-[#60a5fa] text-[#0f0f1a] font-medium hover:bg-[#3b82f6]"
+          className="px-4 py-2 font-bold text-sm text-white rounded"
+          style={{ background: 'var(--lm-accent)', textDecoration: 'none' }}
         >
           Try again
         </Link>
@@ -294,22 +278,21 @@ export default function LetterMixPage() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       {/* Rules modal */}
       <AnimatePresence>
         {rulesOpen && (
           <>
-            {/* Backdrop */}
             <motion.div
               key="backdrop"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.18 }}
-              className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm"
+              className="fixed inset-0 z-40"
+              style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(4px)' }}
               onClick={() => setRulesOpen(false)}
             />
-            {/* Sheet — slides up from bottom on mobile, centered on larger screens */}
             <motion.div
               key="sheet"
               initial={{ opacity: 0, y: 40 }}
@@ -318,40 +301,67 @@ export default function LetterMixPage() {
               transition={{ duration: 0.22, ease: 'easeOut' }}
               className="fixed z-50 bottom-0 left-0 right-0 sm:inset-0 sm:flex sm:items-center sm:justify-center sm:p-4"
             >
-              <div className="w-full sm:max-w-md bg-[#1a1a24] border border-[#2a2a38] rounded-t-2xl sm:rounded-2xl p-6 max-h-[85dvh] overflow-y-auto">
+              <div
+                className="w-full sm:max-w-md p-6 max-h-[85dvh] overflow-y-auto"
+                style={{
+                  background: 'var(--lm-surface)',
+                  border: '1px solid var(--lm-border)',
+                  borderBottom: '3px solid var(--lm-border-dark)',
+                  borderRadius: '6px',
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
+                }}
+              >
                 <div className="flex items-center justify-between mb-5">
-                  <h2 className="text-lg font-bold text-[#60a5fa]">How to play</h2>
+                  <h2
+                    className="text-base font-black uppercase tracking-widest"
+                    style={{ color: 'var(--lm-accent)', fontFamily: "'JetBrains Mono', monospace" }}
+                  >
+                    How to play
+                  </h2>
                   <button
                     onClick={() => setRulesOpen(false)}
-                    className="w-8 h-8 flex items-center justify-center rounded-full border border-[#1e3a5f] text-[#64748b] hover:text-[#e2e8f0] hover:border-[#334155] transition-colors text-lg leading-none"
+                    className="w-8 h-8 flex items-center justify-center rounded text-lg leading-none transition-colors"
+                    style={{
+                      border: '1px solid var(--lm-border)',
+                      color: 'var(--lm-text-muted)',
+                      background: 'var(--lm-key-face)',
+                    }}
                     aria-label="Close"
                   >
                     ✕
                   </button>
                 </div>
                 <ol className="space-y-4 list-none m-0 p-0">
-                  <li className="flex gap-3 text-sm">
-                    <span className="text-[#60a5fa] font-bold w-5 flex-shrink-0 mt-0.5">1</span>
-                    <span className="text-[#9ca3af] leading-relaxed">A string of scrambled letters hides several solution words. Your goal is to <strong className="text-[#e8e9ed]">find all of them</strong> to clear the string.</span>
-                  </li>
-                  <li className="flex gap-3 text-sm">
-                    <span className="text-[#60a5fa] font-bold w-5 flex-shrink-0 mt-0.5">2</span>
-                    <span className="text-[#9ca3af] leading-relaxed">Tap letters to select them in any order, then press <strong className="text-[#e8e9ed]">Submit</strong>. Any valid English word using those letters is accepted — not just solution words.</span>
-                  </li>
-                  <li className="flex gap-3 text-sm">
-                    <span className="text-[#60a5fa] font-bold w-5 flex-shrink-0 mt-0.5">3</span>
-                    <span className="text-[#9ca3af] leading-relaxed">Matched letters disappear. The order you remove words matters — some letters are shared between solution words.</span>
-                  </li>
-                  <li className="flex gap-3 text-sm">
-                    <span className="text-[#60a5fa] font-bold w-5 flex-shrink-0 mt-0.5">4</span>
-                    <span className="text-[#9ca3af] leading-relaxed">Stuck? Press <strong className="text-[#e8e9ed]">Hint</strong> to get a clue about a remaining solution word.</span>
-                  </li>
+                  {[
+                    'A string of scrambled letters hides several solution words. Your goal is to find all of them to clear the string.',
+                    'Tap letters to select them in any order, then press Submit. Any valid English word using those letters is accepted — not just solution words.',
+                    'Matched letters disappear. The order you remove words matters — some letters are shared between solution words.',
+                    'Stuck? Press Hint to get a clue about a remaining solution word.',
+                  ].map((text, i) => (
+                    <li key={i} className="flex gap-3 text-sm">
+                      <span
+                        className="font-black w-5 flex-shrink-0 mt-0.5"
+                        style={{ color: 'var(--lm-accent)', fontFamily: "'JetBrains Mono', monospace" }}
+                      >
+                        {i + 1}
+                      </span>
+                      <span style={{ color: 'var(--lm-text-muted)', lineHeight: '1.6' }}>{text}</span>
+                    </li>
+                  ))}
                 </ol>
                 <button
                   onClick={() => setRulesOpen(false)}
-                  className="mt-6 w-full py-3 rounded-xl bg-[#60a5fa] text-[#0f0f1a] font-semibold text-sm hover:bg-[#3b82f6] transition-colors"
+                  className="mt-6 w-full py-3 text-sm font-black uppercase tracking-widest text-white rounded transition-colors"
+                  style={{
+                    background: 'var(--lm-accent)',
+                    border: '1px solid var(--lm-accent-dark)',
+                    borderBottom: '3px solid var(--lm-accent-side)',
+                    fontFamily: "'JetBrains Mono', monospace",
+                  }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#C83232'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-accent)'; }}
                 >
-                  Got it — let's play
+                  Got it — let&apos;s play
                 </button>
               </div>
             </motion.div>
@@ -359,18 +369,24 @@ export default function LetterMixPage() {
         )}
       </AnimatePresence>
 
-      {/* Daily game */}
+      {/* Game header row */}
       <section>
-        <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+        <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
           <div className="flex flex-col gap-1">
-            <span className="text-sm text-[#64748b]">{puzzle.date} · {puzzle.level}</span>
+            <span
+              className="text-xs font-bold uppercase tracking-wider"
+              style={{ color: 'var(--lm-text-faint)', fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              {puzzle.date} · {puzzle.level}
+            </span>
             <div className="flex items-center gap-2">
-              <span className="text-xs text-[#64748b]">Hidden Words:</span>
+              <span className="text-xs font-semibold" style={{ color: 'var(--lm-text-muted)' }}>Hidden Words:</span>
               <div className="flex gap-1">
                 {Array.from({ length: puzzle.solutionWords.length }).map((_, i) => (
                   <span
                     key={i}
-                    className={`text-lg ${i < foundSolutionWords.length ? 'text-[#60a5fa]' : 'text-[#52525b]'}`}
+                    className="text-base"
+                    style={{ color: i < foundSolutionWords.length ? 'var(--lm-accent)' : 'var(--lm-border-dark)' }}
                   >
                     {i < foundSolutionWords.length ? '●' : '○'}
                   </span>
@@ -378,41 +394,75 @@ export default function LetterMixPage() {
               </div>
             </div>
           </div>
-          {(puzzle.date !== puzzleDate || puzzle.level !== level) && (
-            <span className="text-xs text-[#64748b]">(requested: {puzzleDate} · {level})</span>
-          )}
+
           <div className="flex items-center gap-2">
             <button
               onClick={() => setRulesOpen(true)}
-              className="px-2 py-1 rounded text-xs bg-[#1e3a5f] text-[#94a3b8] hover:bg-[#334155] hover:text-[#e2e8f0]"
+              className="px-2.5 py-1 text-xs font-bold rounded transition-colors"
+              style={{
+                background: 'var(--lm-key-face)',
+                border: '1px solid var(--lm-border)',
+                borderBottom: '2px solid var(--lm-border-dark)',
+                color: 'var(--lm-text-muted)',
+                boxShadow: '0 2px 0 var(--lm-key-side)',
+              }}
               aria-label="How to play"
             >
               ?
             </button>
             <button
               onClick={getHint}
-              className="px-2 py-1 rounded text-xs bg-[#2a2a38] text-[#60a5fa] hover:bg-[#333342]"
+              className="px-2.5 py-1 text-xs font-bold rounded transition-colors"
+              style={{
+                background: 'var(--lm-key-face)',
+                border: '1px solid var(--lm-border)',
+                borderBottom: '2px solid var(--lm-accent-dark)',
+                color: 'var(--lm-accent)',
+                boxShadow: '0 2px 0 var(--lm-key-side)',
+                fontFamily: "'JetBrains Mono', monospace",
+              }}
             >
               Hint
             </button>
           </div>
         </div>
-        <div className="flex gap-2 mb-2">
+
+        {/* Level selector */}
+        <div className="flex gap-2 mb-3">
           {LEVELS.map((l) => (
             <button
               key={l}
               onClick={() => switchLevel(l)}
-              className={`px-3 py-1.5 rounded-lg text-sm font-medium capitalize ${
+              className="px-3 py-1.5 text-sm font-bold capitalize rounded transition-colors"
+              style={
                 l === puzzle.level
-                  ? 'bg-[#60a5fa] text-[#0f0f1a]'
-                  : 'border border-[#3a3a48] text-[#9ca3af] hover:border-[#60a5fa]/50'
-              }`}
+                  ? {
+                      background: 'var(--lm-accent)',
+                      color: '#fff',
+                      border: '1px solid var(--lm-accent-dark)',
+                      borderBottom: '2px solid var(--lm-accent-side)',
+                      boxShadow: '0 2px 0 var(--lm-accent-side)',
+                      fontFamily: "'JetBrains Mono', monospace",
+                    }
+                  : {
+                      background: 'var(--lm-key-face)',
+                      color: 'var(--lm-text-muted)',
+                      border: '1px solid var(--lm-border)',
+                      borderBottom: '2px solid var(--lm-border-dark)',
+                      boxShadow: '0 2px 0 var(--lm-key-side)',
+                    }
+              }
             >
               {l}
             </button>
           ))}
         </div>
-        {hint && <p className="text-sm text-[#60a5fa] mb-2">{hint}</p>}
+
+        {hint && (
+          <p className="text-sm font-semibold mb-2" style={{ color: 'var(--lm-accent)' }}>
+            💡 {hint}
+          </p>
+        )}
 
         <AnimatePresence mode="wait">
           {isWon ? (
@@ -420,20 +470,34 @@ export default function LetterMixPage() {
               key="win"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="rounded-xl bg-[#10b981]/20 border border-[#10b981] p-6 text-center space-y-4"
+              className="rounded p-6 text-center space-y-4"
+              style={{
+                background: 'rgba(16, 185, 129, 0.08)',
+                border: '1px solid rgba(16, 185, 129, 0.5)',
+                borderBottom: '3px solid rgba(16, 185, 129, 0.6)',
+              }}
             >
-              <p className="text-xl font-semibold text-[#10b981]">You solved it!</p>
-              <p className="text-[#94a3b8]">Solution words: {foundSolutionWords.join(', ')}</p>
-              <p className="text-sm text-[#64748b]">Total words found: {foundWords.length}</p>
+              <p className="text-xl font-black" style={{ color: '#059669' }}>You solved it! 🎉</p>
+              <p className="text-sm font-semibold" style={{ color: 'var(--lm-text-muted)' }}>
+                Solution words: {foundSolutionWords.join(', ')}
+              </p>
+              <p className="text-xs" style={{ color: 'var(--lm-text-faint)' }}>
+                Total words found: {foundWords.length}
+              </p>
               <button
                 onClick={() => {
-                  const text = `Clear the String ${puzzle.date} (${puzzle.level}): Solved! ${foundSolutionWords.length} solution words in ${foundWords.length} total words.`;
-                  navigator.clipboard.writeText(text);
+                  const text = `Clear the String ${puzzle.date} (${puzzle.level}): Solved! Found ${foundSolutionWords.length} solution words.`;
+                  navigator.clipboard.writeText(text).catch(() => {});
                   setShared(true);
                 }}
-                className="px-4 py-2 rounded-lg bg-[#60a5fa] text-[#0f0f1a] font-medium hover:bg-[#3b82f6]"
+                className="px-5 py-2 rounded text-sm font-black text-white transition-colors"
+                style={{
+                  background: '#059669',
+                  border: '1px solid #047857',
+                  borderBottom: '2px solid #065f46',
+                }}
               >
-                {shared ? 'Copied!' : 'Share'}
+                {shared ? '✓ Copied!' : 'Share result'}
               </button>
             </motion.div>
           ) : isStuck ? (
@@ -441,20 +505,35 @@ export default function LetterMixPage() {
               key="stuck"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="rounded-xl bg-[#ef4444]/20 border border-[#ef4444] p-6 text-center space-y-4"
+              className="rounded p-6 text-center space-y-4"
+              style={{
+                background: 'rgba(214, 59, 59, 0.06)',
+                border: '1px solid rgba(214, 59, 59, 0.4)',
+                borderBottom: '3px solid rgba(214, 59, 59, 0.5)',
+              }}
             >
-              <p className="text-xl font-semibold text-[#ef4444]">Stuck!</p>
-              <p className="text-[#94a3b8]">Can&apos;t form any more words. You found {foundSolutionWords.length} of {puzzle.solutionWords.length} solution words.</p>
-              <p className="text-sm text-[#64748b]">Remaining letters: {letters.join('').toUpperCase()}</p>
+              <p className="text-xl font-black" style={{ color: 'var(--lm-accent)' }}>Stuck!</p>
+              <p className="text-sm font-semibold" style={{ color: 'var(--lm-text-muted)' }}>
+                Can&apos;t form any more words. You found {foundSolutionWords.length} of {puzzle.solutionWords.length} solution words.
+              </p>
+              <p className="text-xs font-mono" style={{ color: 'var(--lm-text-faint)' }}>
+                Remaining: {letters.join('').toUpperCase()}
+              </p>
               <button
                 onClick={handleReset}
-                className="px-4 py-2 rounded-lg bg-[#ef4444] text-white font-medium hover:bg-[#dc2626]"
+                className="px-5 py-2 rounded text-sm font-black text-white"
+                style={{
+                  background: 'var(--lm-accent)',
+                  border: '1px solid var(--lm-accent-dark)',
+                  borderBottom: '2px solid var(--lm-accent-side)',
+                }}
               >
                 Reset Puzzle
               </button>
             </motion.div>
           ) : (
             <motion.div key="game" className="space-y-4">
+              {/* Letter tiles — keycap style */}
               <div className="flex flex-wrap gap-2 min-h-[3rem]">
                 <AnimatePresence>
                   {letters.map((letter, i) => (
@@ -465,11 +544,7 @@ export default function LetterMixPage() {
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.5 }}
                       onClick={() => handleLetterClick(i)}
-                      className={`w-12 h-12 rounded-lg border font-mono text-lg font-medium transition-all ${
-                        selectedIndices.includes(i)
-                          ? 'bg-[#60a5fa] border-[#60a5fa] text-[#0f0f1a]'
-                          : 'bg-[#2a2a38] border-[#3a3a48] text-[#e8e9ed] hover:border-[#60a5fa]/50'
-                      }`}
+                      className={`lettermix-key ${selectedIndices.includes(i) ? 'lettermix-key-selected' : ''}`}
                     >
                       {letter.toUpperCase()}
                     </motion.button>
@@ -477,35 +552,102 @@ export default function LetterMixPage() {
                 </AnimatePresence>
               </div>
 
-              <div className="flex items-center gap-3">
-                <div className="flex-1 rounded-lg border border-[#1e3a5f] bg-[#0f172a] px-4 py-2 font-mono text-lg text-[#e2e8f0]">
-                  {selectedWord || 'Select letters...'}
+              {/* Word input area */}
+              <div className="flex items-center gap-2">
+                <div
+                  className="flex-1 px-4 py-2.5 text-lg font-mono font-semibold rounded"
+                  style={{
+                    background: 'var(--lm-surface)',
+                    border: '1px solid var(--lm-border)',
+                    borderBottom: '2px solid var(--lm-border-dark)',
+                    color: selectedWord ? 'var(--lm-text)' : 'var(--lm-text-faint)',
+                    fontFamily: "'JetBrains Mono', monospace",
+                    letterSpacing: '0.08em',
+                  }}
+                >
+                  {selectedWord.toUpperCase() || '_ _ _'}
                 </div>
                 <button
                   onClick={handleSubmit}
-                  className="px-4 py-2 rounded-lg bg-[#60a5fa] text-[#0f0f1a] font-medium hover:bg-[#3b82f6]"
+                  className="px-4 py-2 rounded text-sm font-black text-white transition-colors"
+                  style={{
+                    background: 'var(--lm-accent)',
+                    border: '1px solid var(--lm-accent-dark)',
+                    borderBottom: '3px solid var(--lm-accent-side)',
+                    boxShadow: '0 3px 0 var(--lm-accent-side)',
+                    fontFamily: "'JetBrains Mono', monospace",
+                    letterSpacing: '0.04em',
+                  }}
+                  onMouseDown={e => {
+                    (e.currentTarget as HTMLElement).style.transform = 'translateY(2px)';
+                    (e.currentTarget as HTMLElement).style.boxShadow = '0 1px 0 var(--lm-accent-side)';
+                  }}
+                  onMouseUp={e => {
+                    (e.currentTarget as HTMLElement).style.transform = '';
+                    (e.currentTarget as HTMLElement).style.boxShadow = '0 3px 0 var(--lm-accent-side)';
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.transform = '';
+                    (e.currentTarget as HTMLElement).style.boxShadow = '0 3px 0 var(--lm-accent-side)';
+                  }}
                 >
                   Submit
                 </button>
                 <button
                   onClick={handleClear}
-                  className="px-4 py-2 rounded-lg border border-[#334155] text-[#94a3b8] hover:bg-[#1e3a5f]"
+                  className="px-4 py-2 rounded text-sm font-semibold transition-colors"
+                  style={{
+                    background: 'var(--lm-key-face)',
+                    border: '1px solid var(--lm-border)',
+                    borderBottom: '3px solid var(--lm-border-dark)',
+                    boxShadow: '0 3px 0 var(--lm-key-side)',
+                    color: 'var(--lm-text-muted)',
+                  }}
+                  onMouseDown={e => {
+                    (e.currentTarget as HTMLElement).style.transform = 'translateY(2px)';
+                    (e.currentTarget as HTMLElement).style.boxShadow = '0 1px 0 var(--lm-key-side)';
+                  }}
+                  onMouseUp={e => {
+                    (e.currentTarget as HTMLElement).style.transform = '';
+                    (e.currentTarget as HTMLElement).style.boxShadow = '0 3px 0 var(--lm-key-side)';
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.transform = '';
+                    (e.currentTarget as HTMLElement).style.boxShadow = '0 3px 0 var(--lm-key-side)';
+                  }}
                 >
                   Clear
                 </button>
               </div>
 
+              {/* Feedback message */}
               {message && (
-                <p className={`text-sm ${message.type === 'success' ? 'text-[#10b981]' : 'text-[#ef4444]'}`}>
+                <p
+                  className="text-sm font-bold"
+                  style={{ color: message.type === 'success' ? '#059669' : 'var(--lm-accent)' }}
+                >
                   {message.text}
                 </p>
               )}
 
+              {/* Found words */}
               <div>
-                <p className="text-sm text-[#64748b] mb-2">Found words</p>
+                <p className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: 'var(--lm-text-faint)', fontFamily: "'JetBrains Mono', monospace" }}>
+                  Found words
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {foundWords.map((w, i) => (
-                    <span key={i} className="px-3 py-1 rounded-lg bg-[#10b981]/20 text-[#10b981] text-sm">
+                    <span
+                      key={i}
+                      className="px-3 py-1 rounded text-sm font-bold uppercase"
+                      style={{
+                        background: 'rgba(214, 59, 59, 0.08)',
+                        border: '1px solid rgba(214, 59, 59, 0.3)',
+                        color: 'var(--lm-accent)',
+                        fontFamily: "'JetBrains Mono', monospace",
+                        letterSpacing: '0.06em',
+                      }}
+                    >
                       {w}
                     </span>
                   ))}

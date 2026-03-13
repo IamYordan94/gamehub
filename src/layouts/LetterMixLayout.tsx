@@ -18,59 +18,104 @@ export default function LetterMixLayout() {
   }, [menuOpen]);
 
   return (
-    <div className="min-h-screen bg-[#121218] text-[#e8e9ed]">
-      {/* Clear the String-specific header - grey + blue accent */}
-      <header className="border-b border-[#2a2a38] px-4 py-4 flex items-center justify-between sticky top-0 bg-[#121218]/95 backdrop-blur">
+    <div className="min-h-screen" style={{ background: 'var(--lm-bg)', color: 'var(--lm-text)' }}>
+      {/* Dark nav bar */}
+      <header
+        className="px-4 py-0 flex items-center justify-between sticky top-0 z-30"
+        style={{
+          background: 'var(--lm-nav)',
+          borderBottom: '2px solid var(--lm-nav-border)',
+          minHeight: '52px',
+        }}
+      >
         <div className="flex items-center gap-3">
-          <Link to="/" className="text-[#9ca3af] hover:text-[#e8e9ed] transition-colors text-sm">
+          <Link
+            to="/"
+            className="text-sm font-semibold transition-colors"
+            style={{ color: 'rgba(255,255,255,0.55)', letterSpacing: '0.01em' }}
+            onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.9)')}
+            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.55)')}
+          >
             ← Hub
           </Link>
-          <span className="text-[#52525b]">|</span>
-          <h1 className="text-xl font-bold text-[#60a5fa]">Clear the String</h1>
+          <span style={{ color: 'rgba(255,255,255,0.2)' }}>|</span>
+          <h1
+            className="text-base font-black tracking-wide uppercase"
+            style={{ color: 'var(--lm-accent)', fontFamily: "'JetBrains Mono', ui-monospace, monospace", letterSpacing: '0.08em' }}
+          >
+            Clear the String
+          </h1>
         </div>
+
         <div ref={menuRef} className="relative">
           <button
             onClick={(e) => { e.stopPropagation(); setMenuOpen(!menuOpen); }}
-            className="p-2 rounded-lg hover:bg-[#1e3a5f] text-[#94a3b8]"
+            className="p-2 rounded transition-colors"
+            style={{ color: 'rgba(255,255,255,0.7)' }}
             aria-label="Menu"
+            onMouseEnter={e => (e.currentTarget.style.color = '#fff')}
+            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
+
           <AnimatePresence>
             {menuOpen && (
               <motion.nav
-                initial={{ opacity: 0, y: -10 }}
+                initial={{ opacity: 0, y: -8 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                className="absolute top-full right-0 mt-2 z-50 w-56 rounded-xl border border-[#2a2a38] bg-[#1a1a24] shadow-xl overflow-hidden"
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.15 }}
+                className="absolute top-full right-0 mt-2 z-50 w-52 overflow-hidden"
+                style={{
+                  background: 'var(--lm-surface)',
+                  border: '1px solid var(--lm-border)',
+                  borderBottom: '3px solid var(--lm-border-dark)',
+                  borderRadius: '6px',
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                }}
                 aria-label="Clear the String menu"
               >
-                <div className="px-4 py-2 border-b border-[#2a2a38]">
-                  <span className="text-xs font-medium uppercase tracking-wider text-[#6b7280]">Game</span>
+                <div className="px-3 py-2" style={{ borderBottom: '1px solid var(--lm-border)' }}>
+                  <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--lm-text-faint)', fontFamily: "'JetBrains Mono', monospace" }}>Game</span>
                 </div>
-                <div className="p-2">
-                <button 
-                  onClick={() => { 
-                    if (resetHandler) resetHandler(); 
-                    setMenuOpen(false); 
-                  }} 
-                  className="w-full text-left block px-2 py-2 rounded-lg text-[#9ca3af] hover:bg-[#2a2a38] hover:text-[#60a5fa]"
-                >
-                  Reset puzzle
-                </button>
-                <Link to="/lettermix/calendar" onClick={() => setMenuOpen(false)} className="block px-2 py-2 rounded-lg text-[#9ca3af] hover:bg-[#2a2a38] hover:text-[#60a5fa]">
-                  Calendar
-                </Link>
+                <div className="p-1.5 flex flex-col gap-0.5">
+                  <button
+                    onClick={() => { if (resetHandler) resetHandler(); setMenuOpen(false); }}
+                    className="w-full text-left px-3 py-2 rounded text-sm font-semibold transition-colors"
+                    style={{ color: 'var(--lm-text)' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-key-face)'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
+                  >
+                    Reset puzzle
+                  </button>
+                  <Link
+                    to="/lettermix/calendar"
+                    onClick={() => setMenuOpen(false)}
+                    className="block px-3 py-2 rounded text-sm font-semibold transition-colors"
+                    style={{ color: 'var(--lm-text)', textDecoration: 'none' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-key-face)'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
+                  >
+                    Calendar
+                  </Link>
                 </div>
-                <div className="px-4 py-2 border-b border-t border-[#2a2a38]">
-                  <span className="text-xs font-medium uppercase tracking-wider text-[#6b7280]">App</span>
+                <div className="px-3 py-2" style={{ borderTop: '1px solid var(--lm-border)', borderBottom: '1px solid var(--lm-border)' }}>
+                  <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--lm-text-faint)', fontFamily: "'JetBrains Mono', monospace" }}>Info</span>
                 </div>
-                <div className="p-2">
-                <Link to="/lettermix/about" onClick={() => setMenuOpen(false)} className="block px-2 py-2 rounded-lg text-[#9ca3af] hover:bg-[#2a2a38] hover:text-[#60a5fa]">
-                  About
-                </Link>
+                <div className="p-1.5">
+                  <Link
+                    to="/lettermix/about"
+                    onClick={() => setMenuOpen(false)}
+                    className="block px-3 py-2 rounded text-sm font-semibold transition-colors"
+                    style={{ color: 'var(--lm-text)', textDecoration: 'none' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--lm-key-face)'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
+                  >
+                    About
+                  </Link>
                 </div>
               </motion.nav>
             )}

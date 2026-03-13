@@ -4,7 +4,7 @@ export default function ChangeByOneAbout() {
   return (
     <div className="space-y-6 max-w-lg mx-auto">
       <div>
-        <h2 className="text-2xl font-black text-[#a371f7] mb-1">Change by One</h2>
+        <h2 className="text-2xl font-black text-[#fbbf24] mb-1">Change by One</h2>
         <p className="text-sm text-[#8b949e]">A classic word ladder puzzle, reinvented daily.</p>
       </div>
 
@@ -21,7 +21,7 @@ export default function ChangeByOneAbout() {
       <div className="flex gap-3">
         <Link
           to="/changebyone"
-          className="px-5 py-2.5 bg-[#a371f7] hover:bg-[#9158f5] text-white font-bold rounded-xl text-sm transition-colors"
+          className="px-5 py-2.5 bg-[#fbbf24] hover:bg-[#f59e0b] text-white font-bold rounded-xl text-sm transition-colors"
         >
           Play now
         </Link>
