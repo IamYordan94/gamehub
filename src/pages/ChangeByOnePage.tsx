@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { loadCboWords, getCboWordsByLength, isCboWordsLoaded } from '../utils/cbo-words';
 import { loadCboDailyChallenge, getTodayCboDateStr } from '../utils/cbo-dailyChallenge';
@@ -253,6 +254,11 @@ function ResultsPanel({ state, totalHints, onViewPuzzle }: {
 // ─── Main Page ───────────────────────────────────────────────────────────────
 
 export default function ChangeByOnePage() {
+  const { date: dateParam } = useParams<{ date?: string }>();
+  const todayStr = getTodayCboDateStr();
+  const dateStr = dateParam ?? todayStr;
+  const isPastPuzzle = dateStr !== todayStr;
+
   const [, setWordsReady] = useState(isCboWordsLoaded());
   const [gameState, setGameState] = useState<CboDailyState | null>(null);
   const [activeLength, setActiveLength] = useState<number>(4);
@@ -273,7 +279,7 @@ export default function ChangeByOnePage() {
         await loadCboWords();
         if (cancelled) return;
         setWordsReady(true);
-        const date = getTodayCboDateStr();
+        const date = dateStr;
         const challenge = await loadCboDailyChallenge(date);
         if (cancelled) return;
         const saved = loadCboState(date);
@@ -327,13 +333,13 @@ export default function ChangeByOnePage() {
     setInput('');
     setHintText(null);
     setHintsUsed(prev => ({ ...prev, [activeLength]: 0 }));
-    clearHintTargetAsync('changebyone', `${getTodayCboDateStr()}_${activeLength}`);
+    clearHintTargetAsync('changebyone', `${dateStr}_${activeLength}`);
   }, [gameState, activeLength]);
 
   // ── Progressive 3-stage hints ────────────────────────────────────────────
   const handleHint = useCallback(async () => {
     if (!activePuzzle || activePuzzle.status === 'won') return;
-    const puzzleId = `${getTodayCboDateStr()}_${activeLength}`;
+    const puzzleId = `${dateStr}_${activeLength}`;
     const words = getCboWordsByLength(activeLength);
     const usedWords = activePuzzle.wordChain.slice(1);
 
@@ -388,7 +394,9 @@ export default function ChangeByOnePage() {
       <div className="flex flex-col items-center justify-center py-20 gap-4">
         <div className="w-10 h-10 rounded-full border-2 animate-spin"
           style={{ borderColor: 'var(--cbo-border)', borderTopColor: 'var(--cbo-accent)' }} />
-        <p className="text-sm font-semibold" style={{ color: 'var(--cbo-text-muted)' }}>Loading today's challenge…</p>
+        <p className="text-sm font-semibold" style={{ color: 'var(--cbo-text-muted)' }}>
+          {isPastPuzzle ? `Loading ${dateStr} challenge…` : "Loading today's challenge…"}
+        </p>
       </div>
     );
   }

@@ -87,6 +87,16 @@ export default function ChangeByOneLayout() {
                 </div>
                 <div className="p-1.5 flex flex-col gap-0.5">
                   <Link
+                    to="/changebyone/calendar"
+                    onClick={() => setMenuOpen(false)}
+                    className="block px-3 py-2 rounded text-sm font-semibold"
+                    style={{ color: 'var(--cbo-text)', textDecoration: 'none' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--cbo-surface-2)'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
+                  >
+                    Previous Puzzles
+                  </Link>
+                  <Link
                     to="/changebyone/about"
                     onClick={() => setMenuOpen(false)}
                     className="block px-3 py-2 rounded text-sm font-semibold"

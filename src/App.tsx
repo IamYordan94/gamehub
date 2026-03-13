@@ -17,6 +17,7 @@ import WordPoolSettings from './pages/WordPoolSettings';
 import WordPoolAbout from './pages/WordPoolAbout';
 import ChangeByOneHome from './pages/ChangeByOneHome';
 import ChangeByOnePage from './pages/ChangeByOnePage';
+import ChangeByOneCalendar from './pages/ChangeByOneCalendar';
 import ChangeByOneAbout from './pages/ChangeByOneAbout';
 import ComingSoon from './pages/ComingSoon';
 import NotFound from './pages/NotFound';
@@ -56,6 +57,8 @@ function App() {
           <Route index element={<ChangeByOneHome />} />
           <Route element={<ChangeByOneLayout />}>
             <Route path="play" element={<ChangeByOnePage />} />
+            <Route path="play/:date" element={<ChangeByOnePage />} />
+            <Route path="calendar" element={<ChangeByOneCalendar />} />
             <Route path="about" element={<ChangeByOneAbout />} />
           </Route>
         </Route>

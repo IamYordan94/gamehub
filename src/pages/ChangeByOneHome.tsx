@@ -98,6 +98,14 @@ export default function ChangeByOneHome() {
               <span>How to play</span>
             </button>
 
+            <Link to="/changebyone/calendar" className="cbo-menu-item">
+              <svg className="cbo-menu-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="1.8"/>
+                <path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+              </svg>
+              <span>Previous puzzles</span>
+            </Link>
+
             <Link to="/changebyone/about" className="cbo-menu-item">
               <svg className="cbo-menu-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M12 16v-5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
