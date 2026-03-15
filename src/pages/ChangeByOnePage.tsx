@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import OnScreenKeyboard from '../components/OnScreenKeyboard';
 import { useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { loadCboWords, getCboWordsByLength, isCboWordsLoaded } from '../utils/cbo-words';
@@ -11,7 +12,7 @@ import {
   loadCboState,
 } from '../utils/cbo-gameState';
 import type { CboDailyState, CboPuzzleState } from '../utils/cbo-gameState';
-import { suggestNextStep, getAnyValidNeighbor, getDifferingLetterIndex, hasOneLetterDifference } from '../utils/cbo-gameLogic';
+import { calculateOptimalPath, getDifferingLetterIndex, hasOneLetterDifference } from '../utils/cbo-gameLogic';
 import { getHintTargetAsync, setHintTargetAsync, clearHintTargetAsync } from '../utils/storage';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -269,8 +270,6 @@ export default function ChangeByOnePage() {
   const [showResults, setShowResults] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
-
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
@@ -307,7 +306,6 @@ export default function ChangeByOnePage() {
   useEffect(() => {
     setHintText(null);
     setInput('');
-    setTimeout(() => inputRef.current?.focus(), 100);
   }, [activeLength]);
 
   const handleSubmit = useCallback(() => {
@@ -322,7 +320,6 @@ export default function ChangeByOnePage() {
     // Show results if all done
     const allDone = newState.puzzles.every(p => p.status === 'won');
     if (allDone) setTimeout(() => setShowResults(true), 600);
-    setTimeout(() => inputRef.current?.focus(), 50);
   }, [gameState, activePuzzle, input, activeLength]);
 
   const handleReset = useCallback(() => {
@@ -336,30 +333,41 @@ export default function ChangeByOnePage() {
     clearHintTargetAsync('changebyone', `${dateStr}_${activeLength}`);
   }, [gameState, activeLength]);
 
-  // ── Progressive 3-stage hints ────────────────────────────────────────────
+  // ── Physical keyboard listener ────────────────────────────────────────────
+  useEffect(() => {
+    if (!activePuzzle || activePuzzle.status === 'won') return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.key === 'Backspace') {
+        setInput(prev => prev.slice(0, -1));
+      } else if (e.key === 'Enter') {
+        handleSubmit();
+      } else if (/^[a-zA-Z]$/.test(e.key)) {
+        setInput(prev => prev.length < activeLength ? prev + e.key.toLowerCase() : prev);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [activePuzzle, activeLength, handleSubmit]);
+
+  // ── Progressive 3-stage hints (BFS-based) ────────────────────────────────
   const handleHint = useCallback(async () => {
     if (!activePuzzle || activePuzzle.status === 'won') return;
     const puzzleId = `${dateStr}_${activeLength}`;
     const words = getCboWordsByLength(activeLength);
-    const usedWords = activePuzzle.wordChain.slice(1);
 
-    // Find the suggested next word
-    let targetWord: string | null = null;
+    // Use BFS from the player's current word to find the true next step.
+    // This works correctly even when the player has deviated from the optimal path.
+    const path = calculateOptimalPath(activePuzzle.currentWord, activePuzzle.end_word, words);
+    const targetWord: string | null = path.length > 1 ? path[1] : null;
+
     const stored = await getHintTargetAsync('changebyone', puzzleId);
-    if (stored && !usedWords.includes(stored.targetWord) && hasOneLetterDifference(activePuzzle.currentWord, stored.targetWord)) {
-      targetWord = stored.targetWord;
-    }
-    if (!targetWord) {
-      targetWord = suggestNextStep(activePuzzle.currentWord, activePuzzle.end_word, words)
-        ?? getAnyValidNeighbor(activePuzzle.currentWord, words, usedWords);
-    }
-
-    const hintLevel = stored?.targetWord === targetWord ? stored.hintLevel : 1;
+    // Escalate hint level if the same target word is being hinted again
+    const hintLevel = stored?.targetWord === targetWord ? Math.min(stored.hintLevel + 1, 3) : 1;
 
     let hintTextToShow: string;
     if (targetWord) {
-      // Find which position differs between currentWord and targetWord
-      const pos = activePuzzle.currentWord.split('').findIndex((ch, i) => ch !== targetWord![i]);
+      const pos = activePuzzle.currentWord.split('').findIndex((ch, i) => ch !== targetWord[i]);
       if (hintLevel === 1) {
         hintTextToShow = pos >= 0
           ? `Try changing the ${ordinal(pos + 1)} letter.`
@@ -372,18 +380,18 @@ export default function ChangeByOnePage() {
         hintTextToShow = `Try the word "${targetWord.toUpperCase()}".`;
       }
     } else {
+      // No BFS path found — rare edge case, guide toward target directly
       const diffIdx = getDifferingLetterIndex(activePuzzle.currentWord, activePuzzle.end_word);
       hintTextToShow = diffIdx !== null
         ? `Try changing the ${ordinal(diffIdx + 1)} letter — it differs from the target.`
-        : 'Try going back a step and choosing a different word.';
+        : 'No path found from here — try resetting and taking a different route.';
     }
 
     setHintText(hintTextToShow);
     setHintsUsed(prev => ({ ...prev, [activeLength]: (prev[activeLength] ?? 0) + 1 }));
 
     if (targetWord) {
-      const nextLevel = Math.min(hintLevel + 1, 3);
-      await setHintTargetAsync('changebyone', puzzleId, targetWord, nextLevel);
+      await setHintTargetAsync('changebyone', puzzleId, targetWord, hintLevel);
     }
   }, [activePuzzle, activeLength]);
 
@@ -497,18 +505,33 @@ export default function ChangeByOnePage() {
           {/* Word chain */}
           {activePuzzle.wordChain.length > 1 && <WordChain chain={activePuzzle.wordChain} />}
 
-          {/* Input */}
+          {/* Letter slot display + on-screen keyboard */}
           {activePuzzle.status !== 'won' && (
-            <div className="flex items-center gap-2 w-full">
-              <input ref={inputRef} type="text" value={input}
-                onChange={e => { const v = e.target.value.toLowerCase().replace(/[^a-z]/g, ''); if (v.length <= activeLength) setInput(v); }}
-                onKeyDown={e => { if (e.key === 'Enter') handleSubmit(); }}
-                placeholder={`${activeLength}-letter word`}
-                maxLength={activeLength} autoFocus className="cbo-input" />
-              <button onClick={handleSubmit} disabled={input.length !== activeLength}
-                className="cbo-btn-primary" style={{ padding: '12px 20px', fontSize: '15px' }}>
-                Go
-              </button>
+            <div className="w-full space-y-3">
+              {/* Letter slots — show typed letters in individual boxes */}
+              <div className="cbo-letter-slots">
+                {Array.from({ length: activeLength }).map((_, i) => (
+                  <div
+                    key={i}
+                    className={[
+                      'cbo-letter-slot',
+                      i < input.length ? 'cbo-letter-slot-filled' : '',
+                      i === input.length ? 'cbo-letter-slot-cursor' : '',
+                    ].join(' ')}
+                  >
+                    {input[i]?.toUpperCase() ?? ''}
+                  </div>
+                ))}
+              </div>
+              {/* QWERTY keyboard */}
+              <OnScreenKeyboard
+                theme="cbo"
+                onKey={(letter) => setInput(prev => prev.length < activeLength ? prev + letter : prev)}
+                onBackspace={() => setInput(prev => prev.slice(0, -1))}
+                onEnter={handleSubmit}
+                enterDisabled={input.length !== activeLength}
+                enterLabel="GO"
+              />
             </div>
           )}
 

@@ -977,3 +977,198 @@ body {
   color: var(--wp-accent-blue-side);
   border: 1px solid var(--wp-accent-blue);
 }
+
+/* ─────────────────────────────────────────────────────
+   On-Screen Keyboard (QWERTY) — shared structure
+   ───────────────────────────────────────────────────── */
+
+.osk-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 4px 4px;
+  user-select: none;
+}
+
+.osk-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.osk-key {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+  max-width: 44px;
+  height: 56px;
+  transition: transform 0.07s, box-shadow 0.07s, background 0.07s;
+  border-style: solid;
+  border-width: 1px 1px 3px 1px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.osk-key:active {
+  transform: translateY(2px);
+  border-bottom-width: 1px !important;
+  box-shadow: none !important;
+}
+
+.osk-key-wide {
+  max-width: 66px;
+  flex: 1.5;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+/* — CBO theme keys — */
+.osk-key-cbo {
+  background: var(--cbo-surface-2);
+  color: var(--cbo-text);
+  border-color: var(--cbo-border);
+  border-bottom-color: var(--cbo-border-dark);
+  box-shadow: 0 3px 0 var(--cbo-border-dark);
+}
+.osk-key-cbo:hover {
+  background: var(--cbo-surface);
+}
+.osk-key-enter-cbo {
+  background: var(--cbo-accent);
+  color: #fff;
+  border-color: var(--cbo-accent-dark);
+  border-bottom-color: var(--cbo-accent-side);
+  box-shadow: 0 3px 0 var(--cbo-accent-side);
+}
+.osk-key-enter-cbo:hover {
+  background: var(--cbo-accent-dark);
+}
+.osk-key-enter-cbo:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+.osk-key-enter-cbo:disabled:active {
+  transform: none;
+  border-bottom-width: 3px !important;
+  box-shadow: 0 3px 0 var(--cbo-accent-side) !important;
+}
+
+/* — WP theme keys — */
+.osk-key-wp {
+  background: var(--wp-surface);
+  color: var(--wp-text);
+  border-color: var(--wp-border);
+  border-bottom-color: var(--wp-border-dark);
+  box-shadow: 0 3px 0 var(--wp-border-dark);
+}
+.osk-key-wp:hover {
+  background: var(--wp-surface-2);
+}
+.osk-key-enter-wp {
+  background: var(--wp-accent-blue);
+  color: var(--wp-dark);
+  border-color: var(--wp-accent-blue-dark);
+  border-bottom-color: var(--wp-accent-blue-side);
+  box-shadow: 0 3px 0 var(--wp-accent-blue-side);
+}
+.osk-key-enter-wp:hover {
+  background: var(--wp-accent-blue-dark);
+}
+.osk-key-enter-wp:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+.osk-key-enter-wp:disabled:active {
+  transform: none;
+  border-bottom-width: 3px !important;
+  box-shadow: 0 3px 0 var(--wp-accent-blue-side) !important;
+}
+
+/* — CBO letter slots (typed word display) — */
+.cbo-letter-slots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.cbo-letter-slot {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: var(--cbo-surface);
+  border: 2px solid var(--cbo-border);
+  border-bottom: 3px solid var(--cbo-border-dark);
+  box-shadow: 0 3px 0 var(--cbo-border-dark);
+  color: var(--cbo-text);
+  transition: border-color 0.1s, box-shadow 0.1s, color 0.1s;
+}
+
+.cbo-letter-slot-filled {
+  border-color: var(--cbo-accent);
+  border-bottom-color: var(--cbo-accent-dark);
+  box-shadow: 0 3px 0 var(--cbo-accent-dark);
+  color: var(--cbo-accent);
+}
+
+.cbo-letter-slot-cursor {
+  border-color: var(--cbo-accent);
+  animation: cbo-slot-blink 1s ease-in-out infinite;
+}
+
+@keyframes cbo-slot-blink {
+  0%, 100% { border-color: var(--cbo-accent); box-shadow: 0 3px 0 var(--cbo-accent-dark); }
+  50%       { border-color: var(--cbo-border);  box-shadow: 0 3px 0 var(--cbo-border-dark); }
+}
+
+/* — WP word display (typed word) — */
+.wp-word-display {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-align: center;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--wp-surface);
+  border: 1px solid var(--wp-border);
+  border-bottom: 3px solid var(--wp-border-dark);
+  box-shadow: 0 3px 0 var(--wp-border-dark);
+  border-radius: 5px;
+  padding: 8px 16px;
+  color: var(--wp-text);
+  text-transform: uppercase;
+  transition: border-color 0.1s;
+}
+
+.wp-word-display:not(.wp-word-display-placeholder) {
+  border-color: var(--wp-accent-blue-dark);
+}
+
+.wp-word-display-placeholder {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--wp-text-muted);
+}

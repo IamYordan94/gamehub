@@ -1,4 +1,5 @@
-import { useState, useEffect, type FormEvent } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import OnScreenKeyboard from '../components/OnScreenKeyboard';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { getTodayDateStr, getDailyPuzzleIndex } from '../utils/dailySeed';
@@ -183,8 +184,7 @@ export default function WordPoolPage() {
     }
   };
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = useCallback(() => {
     const word = input.trim().toLowerCase();
     if (!word || !level || !category) return;
     if (foundWords.includes(word)) { setMessage({ text: 'Already found', type: 'error' }); return; }
@@ -199,7 +199,7 @@ export default function WordPoolPage() {
       setHint(null);
       clearHintTargetAsync('wordpool', `${isDaily ? puzzleDate : category.id}_${level.level}`);
     }
-  };
+  }, [input, level, category, foundWords, hint, isDaily, puzzleDate]);
 
   const isComplete = !!(level && foundWords.length === level.words.length);
   const isDailyLevelAlreadySaved = isDaily && !!dailyEntry.levels[String(level?.level)];
@@ -223,6 +223,25 @@ export default function WordPoolPage() {
       clearWordPoolSessionWords(category.id, level.level);
     }
   }, [isComplete]);
+
+  // ── Physical keyboard listener ────────────────────────────────────────────
+  useEffect(() => {
+    if (isComplete || isReadOnly) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.key === 'Backspace') {
+        setInput(prev => prev.slice(0, -1));
+        setMessage(null);
+      } else if (e.key === 'Enter') {
+        handleSubmit();
+      } else if (/^[a-zA-Z]$/.test(e.key)) {
+        setInput(prev => prev + e.key.toLowerCase());
+        setMessage(null);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isComplete, isReadOnly, handleSubmit]);
 
   const handleHint = async () => {
     if (!level || !category || isReadOnly) return;
@@ -448,20 +467,30 @@ export default function WordPoolPage() {
           </div>
         ) : (
           <>
-            <form onSubmit={handleSubmit} className="flex gap-2 mb-3">
-              <input type="text" value={input}
-                onChange={(e) => { setInput(e.target.value); setMessage(null); }}
-                placeholder="Type a word…" className="wp-input flex-1"
-                autoComplete="off" autoCapitalize="off" />
-              <button type="submit" className="wp-btn-primary" aria-disabled={!input.trim()}>Submit</button>
-            </form>
+            {/* Typed word display */}
+            <div className="mb-1">
+              <div className={`wp-word-display${!input ? ' wp-word-display-placeholder' : ''}`}>
+                {input ? input.toUpperCase() : 'Type a word…'}
+              </div>
+            </div>
             {message && (
               <motion.p key={message.text} initial={{ opacity: 0, x: message.type === 'error' ? -4 : 0 }}
-                animate={{ opacity: 1, x: 0 }} className="text-sm font-semibold mb-3 m-0"
+                animate={{ opacity: 1, x: 0 }} className="text-sm font-semibold mb-1 m-0"
                 style={{ color: message.type === 'success' ? 'var(--wp-accent-blue-side)' : '#c0443b' }}>
                 {message.text}
               </motion.p>
             )}
+            {/* QWERTY keyboard */}
+            <div className="mb-3">
+              <OnScreenKeyboard
+                theme="wp"
+                onKey={(letter) => { setInput(prev => prev + letter); setMessage(null); }}
+                onBackspace={() => { setInput(prev => prev.slice(0, -1)); setMessage(null); }}
+                onEnter={handleSubmit}
+                enterDisabled={!input.trim()}
+                enterLabel="SUBMIT"
+              />
+            </div>
             {foundWords.length > 0 && (
               <div className="mb-4">
                 <p className="text-xs font-bold uppercase tracking-widest mb-2"

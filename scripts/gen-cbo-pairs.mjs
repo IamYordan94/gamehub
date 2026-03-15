@@ -40,47 +40,59 @@ function bfsDistance(start, end, adj, maxDist = 10) {
   return -1;
 }
 
-function generatePairs(length, targetCount = 70, minSteps = 3, maxSteps = 8) {
+/**
+ * Generates verified word pairs for one word length using BFS.
+ * Every pair is guaranteed solvable; optimal_steps reflects the true BFS distance.
+ */
+function generatePairs(length, targetCount = 400, minSteps = 3, maxSteps = 10) {
   const dict = (wordsData[String(length)] || []).map(w => w.toLowerCase());
-  console.log(`Length ${length}: ${dict.length} words - building adjacency...`);
+  if (dict.length === 0) {
+    console.log(`  No words of length ${length}, skipping.`);
+    return [];
+  }
+  console.log(`Length ${length}: ${dict.length} words — building adjacency...`);
   const adj = buildAdjacency(dict);
-  console.log(`  Adjacency built. Generating pairs...`);
-  
-  // Sample a subset of words to try as starting points
+  const edgeCount = [...adj.values()].reduce((s, n) => s + n.length, 0) / 2 | 0;
+  console.log(`  Adjacency built (${edgeCount} edges). Generating pairs...`);
+
   const shuffled = dict.slice().sort(() => Math.random() - 0.5);
-  const startCandidates = shuffled.slice(0, Math.min(600, dict.length));
-  
+  const usedPairs = new Set();
   const pairs = [];
-  const usedStarts = new Set();
-  
-  for (const start of startCandidates) {
+
+  for (const start of shuffled) {
     if (pairs.length >= targetCount) break;
-    if (usedStarts.has(start)) continue;
-    
-    // Try random end words
-    const endCandidates = shuffled.slice().sort(() => Math.random() - 0.5).slice(0, 200);
+    // Re-shuffle end candidates each time for variety
+    const endCandidates = shuffled.slice().sort(() => Math.random() - 0.5);
     for (const end of endCandidates) {
       if (start === end) continue;
+      const key = start < end ? `${start}|${end}` : `${end}|${start}`;
+      if (usedPairs.has(key)) continue;
       const dist = bfsDistance(start, end, adj, maxSteps + 1);
       if (dist >= minSteps && dist <= maxSteps) {
         pairs.push({ start_word: start, end_word: end, optimal_steps: dist });
-        usedStarts.add(start);
+        usedPairs.add(key);
         break;
       }
     }
   }
-  
+
   return pairs;
 }
 
-console.log('Generating 4-letter pairs...');
-const pairs4 = generatePairs(4, 80, 3, 7);
-console.log(`  Generated ${pairs4.length} pairs`);
+// ── Per-length settings (target 400 pairs each, matching existing files) ──
+const configs = [
+  { length: 4, target: 400, min: 3, max:  7 },
+  { length: 5, target: 400, min: 4, max:  8 },
+  { length: 6, target: 400, min: 5, max: 10 },
+  { length: 7, target: 400, min: 5, max: 12 },
+];
 
-console.log('Generating 5-letter pairs...');
-const pairs5 = generatePairs(5, 80, 4, 8);
-console.log(`  Generated ${pairs5.length} pairs`);
+for (const { length, target, min, max } of configs) {
+  console.log(`\nGenerating ${length}-letter pairs (target: ${target})...`);
+  const pairs = generatePairs(length, target, min, max);
+  console.log(`  Generated ${pairs.length} pairs`);
+  writeFileSync(`./public/cbo-pairs-${length}.json`, JSON.stringify(pairs, null, 2));
+  console.log(`  Saved → public/cbo-pairs-${length}.json`);
+}
 
-writeFileSync('./public/cbo-pairs-4.json', JSON.stringify(pairs4, null, 2));
-writeFileSync('./public/cbo-pairs-5.json', JSON.stringify(pairs5, null, 2));
-console.log('Done!');
+console.log('\nDone! Run: npx vite build   to rebuild the app.');
