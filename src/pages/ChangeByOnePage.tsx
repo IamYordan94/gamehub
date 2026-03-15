@@ -12,7 +12,7 @@ import {
   loadCboState,
 } from '../utils/cbo-gameState';
 import type { CboDailyState, CboPuzzleState } from '../utils/cbo-gameState';
-import { calculateOptimalPath, getDifferingLetterIndex, hasOneLetterDifference } from '../utils/cbo-gameLogic';
+import { calculateOptimalPath, getDifferingLetterIndex } from '../utils/cbo-gameLogic';
 import { getHintTargetAsync, setHintTargetAsync, clearHintTargetAsync } from '../utils/storage';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
