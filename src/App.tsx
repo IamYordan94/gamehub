@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import HubLayout from './layouts/HubLayout';
 import LetterMixLayout from './layouts/LetterMixLayout';
 import WordPoolLayout from './layouts/WordPoolLayout';
@@ -25,6 +26,7 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <BrowserRouter>
+      <Analytics />
       <Routes>
         <Route path="/" element={<HubLayout />}>
           <Route index element={<Hub />} />
