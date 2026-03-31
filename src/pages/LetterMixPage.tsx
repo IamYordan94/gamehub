@@ -390,6 +390,12 @@ export default function LetterMixPage() {
                 ))}
               </div>
             </div>
+            <div className="text-xs font-semibold" style={{ color: 'var(--lm-text-faint)', fontFamily: "'JetBrains Mono', monospace" }}>
+              {puzzle.solutionWords.length} words —{' '}
+              {Object.entries(
+                puzzle.solutionWords.reduce((acc, w) => { acc[w.length] = (acc[w.length] || 0) + 1; return acc; }, {} as Record<number, number>)
+              ).sort(([a], [b]) => Number(a) - Number(b)).map(([len, count]) => `${count}×${len}L`).join(' · ')}
+            </div>
           </div>
           <div className="flex items-center gap-2">
             <button onClick={() => setRulesOpen(true)}

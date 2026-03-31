@@ -485,6 +485,9 @@ export default function ChangeByOnePage() {
               <span className="text-lg font-bold" style={{ color: 'var(--cbo-text-muted)' }}>→</span>
               <div className="cbo-word-key cbo-word-target">{activePuzzle.end_word.toUpperCase()}</div>
             </div>
+            <p className="text-xs font-semibold m-0" style={{ color: 'var(--cbo-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}>
+              Optimal: {activePuzzle.optimal_steps} step{activePuzzle.optimal_steps !== 1 ? 's' : ''} · Up to {activePuzzle.maxMoves} moves
+            </p>
           </div>
 
           {/* Next puzzle button */}

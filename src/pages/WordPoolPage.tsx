@@ -362,6 +362,12 @@ export default function WordPoolPage() {
         <p className="text-sm mt-2 m-0" style={{ color: 'var(--wp-text-muted)' }}>
           <span className="font-bold" style={{ color: 'var(--wp-text)' }}>Level {level.level}:</span>{' '}{level.name}
         </p>
+        <p className="text-xs mt-1 m-0 font-semibold" style={{ color: 'var(--wp-text-muted)', fontFamily: "'JetBrains Mono', monospace" }}>
+          {level.words.length} words —{' '}
+          {Object.entries(
+            level.words.reduce((acc, w) => { acc[w.length] = (acc[w.length] || 0) + 1; return acc; }, {} as Record<number, number>)
+          ).sort(([a], [b]) => Number(a) - Number(b)).map(([len, count]) => `${count}×${len}L`).join(' · ')}
+        </p>
       </section>
 
       <section>
