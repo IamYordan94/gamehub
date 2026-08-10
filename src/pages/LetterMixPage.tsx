@@ -60,6 +60,12 @@ function ResultsPanel({
           style={{ color: 'var(--lm-accent)', fontFamily: "'JetBrains Mono', monospace" }}>
           String Cleared!
         </h2>
+        <p className="text-xs font-bold mt-2 px-4 py-2 rounded-lg" style={{
+          background: '#d9f24b', color: '#141414', border: '2px solid #141414',
+          display: 'inline-block', transform: 'rotate(0.5deg)', fontFamily: "'JetBrains Mono', monospace",
+        }}>
+          💡 Every string has multiple solution paths — finding a different one is the replay hook.
+        </p>
         <p className="text-xs font-semibold m-0" style={{ color: 'var(--lm-text-muted)' }}>
           {puzzle.date} · {puzzle.level}
         </p>
@@ -294,7 +300,7 @@ export default function LetterMixPage() {
       `${stars}  Found all ${foundSolutionWords.length} solution words!`,
       bonusCount > 0 ? `+${bonusCount} bonus word${bonusCount !== 1 ? 's' : ''}` : '',
       hintsUsed > 0 ? `💡 ${hintsUsed} hint${hintsUsed !== 1 ? 's' : ''} used` : '',
-      'wordcrafthub.com',
+      'yodoku.app',
     ].filter(Boolean).join('\n');
     navigator.clipboard.writeText(text).catch(() => {});
     setShared(true);

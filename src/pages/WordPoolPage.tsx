@@ -65,6 +65,12 @@ function DailyResultsPanel({
         <p className="text-sm font-semibold m-0" style={{ color: 'var(--wp-text-muted)' }}>
           {category.name} · {date}
         </p>
+        <p className="text-xs font-bold mt-2 px-4 py-2 rounded-lg" style={{
+          background: '#d9f24b', color: '#141414', border: '2px solid #141414',
+          display: 'inline-block', transform: 'rotate(-0.5deg)',
+        }}>
+          💡 Did you know? Categories narrow progressively — each level teaches a deeper slice of vocabulary.
+        </p>
         <div className="pt-1"><Stars n={overallStarsN} /></div>
         <p className="text-xs m-0" style={{ color: 'var(--wp-text-muted)' }}>
           {totalHints === 0 ? 'No hints — flawless!' : `${totalHints} hint${totalHints !== 1 ? 's' : ''} used total`}
@@ -281,7 +287,7 @@ export default function WordPoolPage() {
           return `L${lvl.level}: ${'★'.repeat(s)}${'☆'.repeat(3 - s)} ${lvl.name}`;
         }),
         totalHints > 0 ? `💡 ${totalHints} hint${totalHints !== 1 ? 's' : ''} total` : '🎯 No hints!',
-        'wordcrafthub.com',
+        'yodoku.app',
       ].join('\n');
     } else if (level) {
       const s = starsFor(hintsUsed);
@@ -290,10 +296,10 @@ export default function WordPoolPage() {
         `L${level.level}: ${level.name}`,
         `${'★'.repeat(s)}${'☆'.repeat(3 - s)}  Found all ${level.words.length} words!`,
         hintsUsed > 0 ? `💡 ${hintsUsed} hint${hintsUsed !== 1 ? 's' : ''} used` : '',
-        'wordcrafthub.com',
+        'yodoku.app',
       ].filter(Boolean).join('\n');
     } else return;
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(text).catch(() => {});
     setShared(true);
     setTimeout(() => setShared(false), 2000);
   };

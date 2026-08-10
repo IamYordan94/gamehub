@@ -32,7 +32,7 @@ export default function WordPoolHome() {
       {/* Nav bar */}
       <header
         className="sticky top-0 z-20 px-4 flex items-center justify-between"
-        style={{ background: 'var(--wp-dark)', borderBottom: '2px solid var(--wp-dark-2)', minHeight: '52px' }}
+        style={{ background: 'var(--wp-dark)', borderBottom: '2.5px solid var(--wp-border)', minHeight: '52px' }}
       >
         <Link to="/" className="text-sm font-semibold"
           style={{ color: 'rgba(255,255,255,0.5)', letterSpacing: '0.01em', textDecoration: 'none' }}
@@ -40,9 +40,13 @@ export default function WordPoolHome() {
           onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}>
           ← Hub
         </Link>
-        <span className="text-sm font-black uppercase tracking-widest"
-          style={{ color: 'var(--wp-accent-blue)', fontFamily: "'JetBrains Mono', ui-monospace, monospace" }}>
-          Word Pool
+        <span className="text-sm font-black uppercase tracking-widest flex items-center gap-2"
+          style={{ fontFamily: "'JetBrains Mono', ui-monospace, monospace" }}>
+          <span style={{ color: 'var(--wp-accent-blue)' }}>Word Pool</span>
+          <span className="text-[10px] px-2 py-0.5 font-bold"
+            style={{ background: '#d9f24b', color: '#141414', border: '2px solid #141414', borderRadius: '4px', transform: 'rotate(1deg)' }}>
+            category
+          </span>
         </span>
         <div style={{ width: '48px' }} />
       </header>

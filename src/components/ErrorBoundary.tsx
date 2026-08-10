@@ -13,18 +13,29 @@ export default class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-[#0f0f1a] flex flex-col items-center justify-center text-center p-6">
-          <p className="text-5xl mb-4">⚠️</p>
-          <h1 className="text-xl font-bold text-[#e8e9ed] mb-2">Something went wrong</h1>
-          <p className="text-[#9ca3af] mb-6 max-w-xs">
-            An unexpected error occurred. Refreshing the page should fix it.
-          </p>
-          <button
-            onClick={() => window.location.reload()}
-            className="px-6 py-3 rounded-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/15 text-[#e8e9ed] font-semibold hover:border-white/25 transition-colors"
-          >
-            Refresh page
-          </button>
+        <div style={{
+          minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
+          background: '#f6f3ec', fontFamily: "'JetBrains Mono', monospace",
+        }}>
+          <div style={{
+            background: '#ffffff', border: '2.5px solid #141414', borderRadius: '12px',
+            padding: '32px', boxShadow: '6px 6px 0 #141414', textAlign: 'center', maxWidth: '400px',
+          }}>
+            <h2 style={{ fontSize: '20px', fontWeight: 900, color: '#141414', margin: '0 0 8px' }}>
+              Something went wrong
+            </h2>
+            <p style={{ fontSize: '14px', fontWeight: 600, color: '#6f6a5e', margin: '0 0 16px' }}>
+              The page crashed. Try refreshing.
+            </p>
+            <button onClick={() => window.location.reload()}
+              style={{
+                background: '#141414', color: '#f6f3ec', border: '2.5px solid #141414',
+                borderRadius: '8px', padding: '10px 24px', fontWeight: 700, fontSize: '14px',
+                cursor: 'pointer', boxShadow: '4px 4px 0 rgba(0,0,0,0.25)',
+              }}>
+              Refresh
+            </button>
+          </div>
         </div>
       );
     }

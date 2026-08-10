@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/images/wordcraft-hub-logo.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
     <title>WordCraft Hub — Daily Word Games</title>
     <meta name="description" content="WordCraft Hub is a free collection of daily word games. Play Clear the String, Change by One, Word Pool and more — new puzzles every day." />
 

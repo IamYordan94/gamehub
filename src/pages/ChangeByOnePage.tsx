@@ -157,7 +157,7 @@ function ResultsPanel({ state, totalHints, onViewPuzzle }: {
       return `${p.length}L ${stars}  ${p.moves} step${p.moves !== 1 ? 's' : ''} (optimal: ${p.optimal_steps})`;
     }),
     `Hints used: ${Object.values(totalHints).reduce((a, b) => a + b, 0)}`,
-    'wordcrafthub.com',
+    'yodoku.app',
   ].join('\n');
 
   return (
@@ -239,7 +239,7 @@ function ResultsPanel({ state, totalHints, onViewPuzzle }: {
       {/* Actions */}
       <div className="flex gap-3 justify-center">
         <button
-          onClick={() => { navigator.clipboard.writeText(shareText); setShared(true); setTimeout(() => setShared(false), 2000); }}
+          onClick={() => { navigator.clipboard.writeText(shareText).catch(() => {}); setShared(true); setTimeout(() => setShared(false), 2000); }}
           className="cbo-btn-primary"
         >
           {shared ? '✓ Copied!' : 'Share result'}
@@ -265,7 +265,18 @@ export default function ChangeByOnePage() {
   const [activeLength, setActiveLength] = useState<number>(4);
   const [input, setInput] = useState('');
   const [hintText, setHintText] = useState<string | null>(null);
-  const [hintsUsed, setHintsUsed] = useState<Record<number, number>>({});
+  const [hintsUsed, setHintsUsed] = useState<Record<number, number>>(() => {
+    try {
+      const saved = localStorage.getItem('cbo_hintsUsed');
+      return saved ? JSON.parse(saved) : {};
+    } catch { return {}; }
+  });
+
+  // Persist hintsUsed to localStorage
+  useEffect(() => {
+    localStorage.setItem('cbo_hintsUsed', JSON.stringify(hintsUsed));
+  }, [hintsUsed]);
+
   const [showRules, setShowRules] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -557,7 +568,13 @@ export default function ChangeByOnePage() {
               style={{ background: 'rgba(62,159,168,0.08)', border: '1px solid rgba(62,159,168,0.4)', borderBottom: '2px solid rgba(62,159,168,0.5)' }}>
               <p className="font-bold m-0" style={{ color: 'var(--cbo-accent)' }}>
                 🎉 Solved in {activePuzzle.moves} step{activePuzzle.moves !== 1 ? 's' : ''}!
-              </p>
+                </p>
+                <p className="text-xs font-bold mt-2 px-4 py-2 rounded-lg" style={{
+                  background: '#5bc9ff', color: '#141414', border: '2px solid #141414',
+                  display: 'inline-block', transform: 'rotate(-0.5deg)', fontFamily: "'JetBrains Mono', monospace",
+                }}>
+                  💡 Word ladders were invented by Lewis Carroll in 1877. Every puzzle has at least one optimal path.
+                </p>
               <div className="flex items-center justify-center gap-3">
                 <Stars count={starsFor(activePuzzle.moves, activePuzzle.optimal_steps)} />
                 <span className="text-xs" style={{ color: 'var(--cbo-text-muted)' }}>

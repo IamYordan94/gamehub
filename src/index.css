@@ -180,20 +180,20 @@ body {
    ───────────────────────────────────────────────────── */
 
 :root {
-  --lm-bg:          #E8E8E8;
-  --lm-surface:     #DADADA;
-  --lm-key-face:    #D0D0D0;
-  --lm-key-side:    #9E9E9E;
-  --lm-nav:         #2E2E2E;
-  --lm-nav-border:  #1a1a1a;
+  --lm-bg:          #f6f3ec;
+  --lm-surface:     #ffffff;
+  --lm-key-face:    #f0ede7;
+  --lm-key-side:    #141414;
+  --lm-nav:         #1E2028;
+  --lm-nav-border:  #141414;
   --lm-accent:      #D63B3B;
   --lm-accent-dark: #A82A2A;
   --lm-accent-side: #861F1F;
-  --lm-text:        #1A1A1A;
-  --lm-text-muted:  #555555;
-  --lm-text-faint:  #888888;
-  --lm-border:      #BEBEBE;
-  --lm-border-dark: #A8A8A8;
+  --lm-text:        #141414;
+  --lm-text-muted:  #6f6a5e;
+  --lm-text-faint:  #9a9488;
+  --lm-border:      #141414;
+  --lm-border-dark: #141414;
 }
 
 /* Background grid — subtle keycap texture */
@@ -480,15 +480,15 @@ body {
    ───────────────────────────────────────────────────── */
 
 :root {
-  --cbo-bg:          #F2F1EE;
-  --cbo-surface:     #E3E1DC;
-  --cbo-surface-2:   #C8CDD0;
-  --cbo-dark:        #2F333A;
-  --cbo-dark-2:      #58616B;
-  --cbo-text:        #2A2A2A;
-  --cbo-text-muted:  #66707A;
-  --cbo-border:      #B9BCBE;
-  --cbo-border-dark: #9EA5AB;
+  --cbo-bg:          #f6f3ec;
+  --cbo-surface:     #ffffff;
+  --cbo-surface-2:   #f0ede7;
+  --cbo-dark:        #1E2028;
+  --cbo-dark-2:      #141414;
+  --cbo-text:        #141414;
+  --cbo-text-muted:  #6f6a5e;
+  --cbo-border:      #141414;
+  --cbo-border-dark: #141414;
   --cbo-accent:      #3E9FA8;
   --cbo-accent-dark: #2C7A82;
   --cbo-accent-side: #1E5A61;
@@ -767,15 +767,15 @@ body {
    WORD POOL — Retro Navy / Powder Blue / Blush Pink Keyboard
    ============================================================ */
 :root {
-  --wp-bg:               #F5F2F1;
-  --wp-surface:          #ECE7E4;
-  --wp-surface-2:        #D9E4EC;
-  --wp-dark:             #1F2433;
-  --wp-dark-2:           #3A4358;
-  --wp-text:             #2D2A28;
-  --wp-text-muted:       #6D7178;
-  --wp-border:           #CFC8C4;
-  --wp-border-dark:      #B4ABA5;
+  --wp-bg:               #f6f3ec;
+  --wp-surface:          #ffffff;
+  --wp-surface-2:        #f0ede7;
+  --wp-dark:             #1E2028;
+  --wp-dark-2:           #141414;
+  --wp-text:             #141414;
+  --wp-text-muted:       #6f6a5e;
+  --wp-border:           #141414;
+  --wp-border-dark:      #141414;
   --wp-accent-blue:      #9FC3DA;
   --wp-accent-blue-dark: #7EA9C5;
   --wp-accent-blue-side: #5D8BA5;
@@ -1171,4 +1171,54 @@ body {
   letter-spacing: 0.04em;
   text-transform: none;
   color: var(--wp-text-muted);
+}
+
+/* ============================================================
+   STICKER PACK — Hub-level design tokens
+   ============================================================ */
+:root {
+  --hub-bg: #f6f3ec;
+  --hub-panel: #ffffff;
+  --hub-ink: #141414;
+  --hub-ink-soft: #6f6a5e;
+  --hub-line: #141414;
+  --hub-green: #39c96b;
+  --hub-yellow: #ffc93c;
+  --hub-orange: #ff6b35;
+  --hub-red: #ff4d4d;
+  --hub-gray: #b9b3a6;
+  --hub-lime: #d9f24b;
+  --hub-sky: #5bc9ff;
+  --hub-dark: #1E2028;
+}
+
+/* ============================================================
+   ORDERLE — Green/Lime sticker pack
+   ============================================================ */
+:root {
+  --ol-bg: #f6f3ec;
+  --ol-panel: #ffffff;
+  --ol-ink: #141414;
+  --ol-ink-soft: #6f6a5e;
+  --ol-nav: #1E2028;
+  --ol-accent: #ff6b35;
+  --ol-lime: #d9f24b;
+  --ol-green: #39c96b;
+  --ol-yellow: #ffc93c;
+  --ol-text: #141414;
+}
+
+/* ============================================================
+   FERMI — Orange sticker pack
+   ============================================================ */
+:root {
+  --fm-bg: #f6f3ec;
+  --fm-panel: #ffffff;
+  --fm-ink: #141414;
+  --fm-ink-soft: #6f6a5e;
+  --fm-nav: #1E2028;
+  --fm-accent: #ff6b35;
+  --fm-orange: #ff6b35;
+  --fm-red: #ff4d4d;
+  --fm-text: #141414;
 }

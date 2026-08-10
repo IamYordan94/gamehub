@@ -14,7 +14,7 @@ export default function ChangeByOneHome() {
         className="sticky top-0 z-20 px-4 flex items-center justify-between"
         style={{
           background: 'var(--cbo-dark)',
-          borderBottom: '2px solid var(--cbo-dark-2)',
+          borderBottom: '2.5px solid var(--cbo-border)',
           minHeight: '52px',
         }}
       >
@@ -27,11 +27,13 @@ export default function ChangeByOneHome() {
         >
           ← Hub
         </Link>
-        <span
-          className="text-sm font-black uppercase tracking-widest"
-          style={{ color: 'var(--cbo-accent)', fontFamily: "'JetBrains Mono', ui-monospace, monospace" }}
-        >
-          Change by One
+        <span className="text-sm font-black uppercase tracking-widest flex items-center gap-2"
+          style={{ fontFamily: "'JetBrains Mono', ui-monospace, monospace" }}>
+          <span style={{ color: 'var(--cbo-accent)' }}>Change by One</span>
+          <span className="text-[10px] px-2 py-0.5 font-bold"
+            style={{ background: '#5bc9ff', color: '#141414', border: '2px solid #141414', borderRadius: '4px', transform: 'rotate(-1deg)' }}>
+            ladder
+          </span>
         </span>
         <div style={{ width: '48px' }} />
       </header>
