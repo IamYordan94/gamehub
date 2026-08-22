@@ -6,7 +6,7 @@ export default function ComingSoon() {
       <span className="text-6xl mb-4">🎯</span>
       <h2 className="text-2xl font-semibold text-[#f5f5f5] mb-2">Coming Soon</h2>
       <p className="text-[#a1a1aa] mb-6">
-        A fourth game is in the works. Stay tuned!
+        More games are in the works. Stay tuned!
       </p>
       <Link
         to="/"

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yodoku.app/sitemap.xml
+Sitemap: https://www.yodoku.app/sitemap.xml

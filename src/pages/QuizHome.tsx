@@ -42,7 +42,7 @@ export default function QuizHome() {
           </div>
 
           <p className="font-semibold tracking-wide m-0 mb-[14px]" style={{ color: 'var(--qz-ink-soft)', fontSize: '15px' }}>
-            Ten questions a day. Seven categories. One shared score to brag about.
+            Ten questions a day. Eleven categories. One shared score to brag about.
           </p>
 
           {streak > 0 && (
@@ -123,7 +123,7 @@ export default function QuizHome() {
               <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#8b5cf6' }}>1</span>Every day there is one shared quiz: 10 questions, easy to hard.</li>
               <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#8b5cf6' }}>2</span>Tap an answer to lock it in. You'll see instantly if you were right.</li>
               <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#8b5cf6' }}>3</span>Finish all 10 to get your score, your streak, and a shareable grid.</li>
-              <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#8b5cf6' }}>4</span>Same questions for everyone, every day — compare scores with friends.</li>
+              <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#8b5cf6' }}>4</span>Same questions for everyone in your timezone, every day — compare scores with friends.</li>
             </ol>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
+import AdSlot from '../components/AdSlot';
 import {
   type FermiState,
   type FermiGuess,
@@ -408,6 +409,7 @@ export default function FermiPage() {
           </div>
         </motion.div>
       )}
+      {state.over && <AdSlot slot="fermi-results" minHeight={110} />}
     </div>
   );
 }

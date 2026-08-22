@@ -171,7 +171,9 @@ export default function WordPoolPage() {
           setFoundWords(getWordPoolSessionWords(cat.id, lvlNum));
         }
       })
-      .catch(() => {});
+      .catch(() => {
+        setMessage({ text: "Couldn't load the word lists. Check your connection and refresh.", type: 'error' });
+      });
   }, [puzzleDate, categoryId]);
 
   const switchLevel = (lvl: Level) => {

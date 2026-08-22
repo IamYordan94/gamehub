@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
+import AdSlot from '../components/AdSlot';
 import {
   type OrderleState,
   initOrderleState,
@@ -328,6 +329,7 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
           </div>
         </motion.div>
       )}
+      {state.over && <AdSlot slot="orderle-results" minHeight={110} />}
     </div>
   );
 }

@@ -35,6 +35,26 @@
       "id": "music",
       "label": "Music",
       "emoji": "🎵"
+    },
+    {
+      "id": "technology",
+      "label": "Technology",
+      "emoji": "💻"
+    },
+    {
+      "id": "food",
+      "label": "Food & Drink",
+      "emoji": "🍔"
+    },
+    {
+      "id": "art",
+      "label": "Art & Literature",
+      "emoji": "📚"
+    },
+    {
+      "id": "animals",
+      "label": "Animals",
+      "emoji": "🦁"
     }
   ],
   "questions": [
@@ -5649,6 +5669,3227 @@
       "answer": 1,
       "difficulty": 3,
       "category": "music"
+    },
+    {
+      "id": "tech-001",
+      "question": "What does CPU stand for?",
+      "options": [
+        "Central Processing Unit",
+        "Computer Personal Unit",
+        "Core Processing Unit",
+        "Central Program Utility"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "The 'brain' of the computer.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-002",
+      "question": "Which company created the iPhone?",
+      "options": [
+        "Samsung",
+        "Apple",
+        "Nokia",
+        "Microsoft"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "The company also makes the Mac.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-003",
+      "question": "What does 'www' stand for in a website address?",
+      "options": [
+        "Wide World Web",
+        "World Wide Window",
+        "World Wide Web",
+        "Web World Wide"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "Three Ws.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-004",
+      "question": "Which key deletes the character to the left of the cursor?",
+      "options": [
+        "Delete",
+        "Enter",
+        "Shift",
+        "Backspace"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "It erases behind the cursor.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-005",
+      "question": "What does 'PC' stand for?",
+      "options": [
+        "Personal Computer",
+        "Portable Computer",
+        "Public Computer",
+        "Private Computer"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "The 'P' is for 'Personal'.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-006",
+      "question": "Which of these is Google's email service?",
+      "options": [
+        "Outlook",
+        "Gmail",
+        "Hotmail",
+        "Yahoo Mail"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "Google's mail.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-007",
+      "question": "What does 'USB' stand for?",
+      "options": [
+        "Universal System Bus",
+        "United Serial Bus",
+        "Universal Serial Bus",
+        "Universal Serial Board"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "A common connector port.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-008",
+      "question": "Which company makes the Windows operating system?",
+      "options": [
+        "IBM",
+        "Apple",
+        "Google",
+        "Microsoft"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "The Redmond company.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-009",
+      "question": "What is the smallest unit of digital information?",
+      "options": [
+        "A bit",
+        "A byte",
+        "A pixel",
+        "A file"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "A binary digit, 0 or 1.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-010",
+      "question": "Which device is used to move the cursor on screen?",
+      "options": [
+        "Printer",
+        "Mouse",
+        "Keyboard",
+        "Speaker"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "You move it with your hand.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-011",
+      "question": "What does pressing Ctrl+C do?",
+      "options": [
+        "Paste the clipboard",
+        "Close the window",
+        "Copy the selected item",
+        "Cut the selected item"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "C is for Copy.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-012",
+      "question": "Which web browser is made by Google?",
+      "options": [
+        "Firefox",
+        "Safari",
+        "Edge",
+        "Chrome"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "Google's browser.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-013",
+      "question": "What does Wi-Fi let you do?",
+      "options": [
+        "Connect to the internet wirelessly",
+        "Charge your device",
+        "Cool the computer",
+        "Print documents"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "Wireless internet.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-014",
+      "question": "What is 'email' short for?",
+      "options": [
+        "Express mail",
+        "Electronic mail",
+        "Easy mail",
+        "Emergency mail"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "'E' is for 'Electronic'.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-015",
+      "question": "Which of these is a search engine?",
+      "options": [
+        "Windows",
+        "Excel",
+        "Google",
+        "Photoshop"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "You type queries into it.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-016",
+      "question": "What does 'HD' stand for in screen quality?",
+      "options": [
+        "Hard Disk",
+        "High Density",
+        "Heavy Duty",
+        "High Definition"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "Sharper picture quality.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-017",
+      "question": "Who co-founded Apple with Steve Wozniak?",
+      "options": [
+        "Steve Jobs",
+        "Bill Gates",
+        "Mark Zuckerberg",
+        "Jeff Bezos"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "Also famous for the iPhone.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-018",
+      "question": "What do you use to type letters and numbers into a computer?",
+      "options": [
+        "Mouse",
+        "Keyboard",
+        "Monitor",
+        "Printer"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It has letter keys.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-019",
+      "question": "Which company created the Macintosh (Mac) computer?",
+      "options": [
+        "Microsoft",
+        "IBM",
+        "Apple",
+        "Dell"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "The fruit company.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-020",
+      "question": "What is an 'app' short for?",
+      "options": [
+        "Appendix",
+        "Apparatus",
+        "Apple",
+        "Application"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "Short for 'application'.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-021",
+      "question": "What does HTML stand for?",
+      "options": [
+        "HyperText Markup Language",
+        "High Tech Modern Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "The markup language of the web.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-022",
+      "question": "In which year was the first iPhone released?",
+      "options": [
+        "2005",
+        "2007",
+        "2009",
+        "2010"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Late 2000s.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-023",
+      "question": "In classic computing terms, 1 kilobyte (KB) equals how many bytes?",
+      "options": [
+        "100 bytes",
+        "1000 bytes",
+        "1024 bytes",
+        "10000 bytes"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "A power of two (2 to the 10th).",
+      "category": "technology"
+    },
+    {
+      "id": "tech-024",
+      "question": "What does CSS control on a web page?",
+      "options": [
+        "The written content",
+        "The interactive behavior",
+        "The network connection",
+        "The style, colors and layout"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "It styles the page.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-025",
+      "question": "Which company did Bill Gates co-found?",
+      "options": [
+        "Microsoft",
+        "Apple",
+        "Google",
+        "Amazon"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "The Windows company.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-026",
+      "question": "What does 'PDF' stand for?",
+      "options": [
+        "Printable Data File",
+        "Portable Document Format",
+        "Personal Document File",
+        "Public Document Format"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Portable... Document...",
+      "category": "technology"
+    },
+    {
+      "id": "tech-027",
+      "question": "Which language makes web pages interactive?",
+      "options": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PDF"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The interactive language.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-028",
+      "question": "What does 'RAM' stand for?",
+      "options": [
+        "Read And Modify",
+        "Rapid Access Memory",
+        "Run All Memory",
+        "Random Access Memory"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "Volatile working memory.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-029",
+      "question": "What is 'the cloud' in computing?",
+      "options": [
+        "Data stored on remote servers accessed via the internet",
+        "A type of printer",
+        "A weather app",
+        "The computer's screen"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "Remote servers.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-030",
+      "question": "Which symbol separates the name and domain in an email address?",
+      "options": [
+        "#",
+        "@",
+        "&",
+        "%"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "The 'at' sign.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-031",
+      "question": "What kind of file is a '.jpg' or '.jpeg'?",
+      "options": [
+        "A text file",
+        "A music file",
+        "An image file",
+        "A video file"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "A photo format.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-032",
+      "question": "Which company owns the Android operating system?",
+      "options": [
+        "Apple",
+        "Microsoft",
+        "Samsung",
+        "Google"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "The search giant owns it.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-033",
+      "question": "What does 'OS' stand for?",
+      "options": [
+        "Operating System",
+        "Open Source",
+        "Online Service",
+        "Optical Storage"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "The base software of a device.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-034",
+      "question": "What does 'FAQ' stand for?",
+      "options": [
+        "Free Answers Quickly",
+        "Frequently Asked Questions",
+        "Fully Answered Questions",
+        "Fast And Quick"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Common questions.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-035",
+      "question": "Which of these is an open-source operating system?",
+      "options": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The penguin OS.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-036",
+      "question": "What does 'URL' stand for?",
+      "options": [
+        "Universal Resource Link",
+        "Uniform Reference Locator",
+        "United Resource Locator",
+        "Uniform Resource Locator"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "A web address.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-037",
+      "question": "What does pressing Ctrl+V do?",
+      "options": [
+        "Paste",
+        "Cut",
+        "Copy",
+        "Undo"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "V is for... paste.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-038",
+      "question": "Bill Gates co-founded Microsoft with whom?",
+      "options": [
+        "Steve Ballmer",
+        "Paul Allen",
+        "Steve Wozniak",
+        "Larry Page"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Gates's original partner.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-039",
+      "question": "What does 'HTTP' stand for?",
+      "options": [
+        "High Tech Transfer Process",
+        "HyperText Transmission Protocol",
+        "HyperText Transfer Protocol",
+        "Home Transfer Text Protocol"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The web's transfer protocol.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-040",
+      "question": "What is a web browser used for?",
+      "options": [
+        "Editing photos",
+        "Writing code",
+        "Managing files",
+        "Viewing websites"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "For surfing the web.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-041",
+      "question": "Who is credited with inventing the World Wide Web?",
+      "options": [
+        "Tim Berners-Lee",
+        "Bill Gates",
+        "Steve Jobs",
+        "Linus Torvalds"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A British computer scientist.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-042",
+      "question": "In which year was Microsoft founded?",
+      "options": [
+        "1980",
+        "1975",
+        "1990",
+        "1965"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "One of the oldest major tech companies.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-043",
+      "question": "In which year was Apple founded?",
+      "options": [
+        "1984",
+        "1980",
+        "1976",
+        "1972"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Started in a garage in the 1970s.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-044",
+      "question": "What does 'ROM' stand for?",
+      "options": [
+        "Random Output Memory",
+        "Rapid Open Memory",
+        "Remote Output Memory",
+        "Read-Only Memory"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "Memory you can only read.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-045",
+      "question": "Who created the Linux operating system kernel?",
+      "options": [
+        "Linus Torvalds",
+        "Dennis Ritchie",
+        "Richard Stallman",
+        "Ken Thompson"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A Finnish student in 1991.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-046",
+      "question": "What does 'SQL' stand for?",
+      "options": [
+        "Standard Question Language",
+        "Structured Query Language",
+        "Sequential Query Language",
+        "Simple Query Logic"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "For querying databases.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-047",
+      "question": "How many bits are in one byte?",
+      "options": [
+        "4",
+        "16",
+        "8",
+        "32"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "A byte is eight bits.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-048",
+      "question": "What does 'IP' stand for in 'IP address'?",
+      "options": [
+        "Internet Provider",
+        "Internal Process",
+        "Identity Program",
+        "Internet Protocol"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "Part of every internet address.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-049",
+      "question": "What does 'GUI' stand for?",
+      "options": [
+        "Graphical User Interface",
+        "General User Interface",
+        "Graphic Unified Interface",
+        "Global User Interface"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "Point-and-click interface.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-050",
+      "question": "Which engineer co-founded Apple with Steve Jobs and built the Apple I?",
+      "options": [
+        "Bill Gates",
+        "Steve Wozniak",
+        "Paul Allen",
+        "Larry Ellison"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Built the Apple I.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-051",
+      "question": "What does 'SSD' stand for?",
+      "options": [
+        "System Storage Device",
+        "Serial Storage Disk",
+        "Solid State Drive",
+        "Super Speed Drive"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "No moving parts.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-052",
+      "question": "What was Google originally called?",
+      "options": [
+        "Googol",
+        "SearchGo",
+        "FindIt",
+        "BackRub"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "Its original 1996 name.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-053",
+      "question": "In which year was the first Apple Macintosh released?",
+      "options": [
+        "1984",
+        "1980",
+        "1987",
+        "1990"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The mid-1980s.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-054",
+      "question": "What does 'BIOS' stand for?",
+      "options": [
+        "Binary Input Operating System",
+        "Basic Input/Output System",
+        "Basic Internal Operating System",
+        "Boot Input/Output System"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Runs at boot.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-055",
+      "question": "What does 'DNS' stand for?",
+      "options": [
+        "Digital Network Service",
+        "Data Name Server",
+        "Domain Name System",
+        "Domain Network System"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Translates names to addresses.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-056",
+      "question": "Which company developed the Java programming language?",
+      "options": [
+        "IBM",
+        "Microsoft",
+        "Apple",
+        "Sun Microsystems"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "A company later bought by Oracle.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-057",
+      "question": "What does 'FTP' stand for?",
+      "options": [
+        "File Transfer Protocol",
+        "Fast Transfer Process",
+        "File Transmission Program",
+        "File Text Protocol"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "For transferring files.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-058",
+      "question": "Who is credited with creating the C programming language?",
+      "options": [
+        "Bjarne Stroustrup",
+        "Dennis Ritchie",
+        "James Gosling",
+        "Linus Torvalds"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Created at Bell Labs.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-059",
+      "question": "What does 'VPN' stand for?",
+      "options": [
+        "Virtual Public Network",
+        "Very Private Network",
+        "Virtual Private Network",
+        "Visible Private Network"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "For private connections.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-060",
+      "question": "Which device is often cited as the first smartphone?",
+      "options": [
+        "Nokia 3310",
+        "Motorola Razr",
+        "BlackBerry 850",
+        "IBM Simon"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "Released in 1994.",
+      "category": "technology"
+    },
+    {
+      "id": "food-001",
+      "question": "Which country is sushi most famously associated with?",
+      "options": [
+        "Japan",
+        "China",
+        "South Korea",
+        "Thailand"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-002",
+      "question": "Which country is pizza originally from?",
+      "options": [
+        "Italy",
+        "France",
+        "Spain",
+        "Greece"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-003",
+      "question": "Which country is paella a traditional dish from?",
+      "options": [
+        "Italy",
+        "Portugal",
+        "Spain",
+        "Mexico"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-004",
+      "question": "The croissant is most commonly associated with which country?",
+      "options": [
+        "Germany",
+        "France",
+        "Switzerland",
+        "Italy"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-005",
+      "question": "What is pasta traditionally made from?",
+      "options": [
+        "Rice flour",
+        "Wheat flour",
+        "Potato",
+        "Corn"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-006",
+      "question": "What is the main ingredient of guacamole?",
+      "options": [
+        "Avocado",
+        "Tomato",
+        "Onion",
+        "Cucumber"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-007",
+      "question": "At what temperature does pure water boil at sea level?",
+      "options": [
+        "90°C",
+        "120°C",
+        "100°C",
+        "80°C"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-008",
+      "question": "What is the main ingredient in hummus?",
+      "options": [
+        "Lentils",
+        "Chickpeas",
+        "Peanuts",
+        "Kidney beans"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-009",
+      "question": "Espresso is a type of which drink?",
+      "options": [
+        "Tea",
+        "Hot chocolate",
+        "Coffee",
+        "Cider"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-010",
+      "question": "Which fruit is used to make most wine?",
+      "options": [
+        "Apples",
+        "Grapes",
+        "Plums",
+        "Cherries"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-011",
+      "question": "What is chocolate made from?",
+      "options": [
+        "Cocoa beans",
+        "Coffee beans",
+        "Vanilla pods",
+        "Soybeans"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-012",
+      "question": "Botanically, a tomato is classified as a...",
+      "options": [
+        "Vegetable",
+        "Root",
+        "Seed",
+        "Fruit"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-013",
+      "question": "What is the main ingredient in traditional sushi?",
+      "options": [
+        "Bread",
+        "Vinegared rice",
+        "Pasta",
+        "Potatoes"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-014",
+      "question": "What is the main ingredient in bread?",
+      "options": [
+        "Flour",
+        "Sugar",
+        "Eggs",
+        "Butter"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-015",
+      "question": "Which country are tacos traditionally from?",
+      "options": [
+        "Mexico",
+        "Spain",
+        "Brazil",
+        "India"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-016",
+      "question": "What is cheese made from?",
+      "options": [
+        "Eggs",
+        "Milk",
+        "Flour",
+        "Soybeans"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-017",
+      "question": "Which country is maple syrup most associated with?",
+      "options": [
+        "Canada",
+        "Norway",
+        "Russia",
+        "Finland"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-018",
+      "question": "Which grain is traditionally used to brew beer?",
+      "options": [
+        "Rice",
+        "Oats",
+        "Barley",
+        "Millet"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-019",
+      "question": "Which country is tea believed to have originated in?",
+      "options": [
+        "China",
+        "India",
+        "Japan",
+        "England"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-020",
+      "question": "Which of these is a citrus fruit?",
+      "options": [
+        "Apple",
+        "Orange",
+        "Banana",
+        "Pear"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-021",
+      "question": "Which country is sauerkraut traditionally associated with?",
+      "options": [
+        "Poland",
+        "Germany",
+        "Netherlands",
+        "France"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-022",
+      "question": "What is the main ingredient of pesto?",
+      "options": [
+        "Spinach",
+        "Parsley",
+        "Basil",
+        "Mint"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-023",
+      "question": "Which country is the dish coq au vin from?",
+      "options": [
+        "Belgium",
+        "Italy",
+        "Spain",
+        "France"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-024",
+      "question": "What makes bread dough rise?",
+      "options": [
+        "Salt",
+        "Sugar",
+        "Yeast",
+        "Baking powder"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "It's a living fungus.",
+      "category": "food"
+    },
+    {
+      "id": "food-025",
+      "question": "Which country is naan bread from?",
+      "options": [
+        "India",
+        "Greece",
+        "Morocco",
+        "Turkey"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-026",
+      "question": "What is tofu made from?",
+      "options": [
+        "Wheat",
+        "Soybeans",
+        "Rice",
+        "Peanuts"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-027",
+      "question": "Which country is gazpacho, a cold soup, from?",
+      "options": [
+        "Portugal",
+        "Italy",
+        "Spain",
+        "Greece"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-028",
+      "question": "What is the main ingredient of risotto?",
+      "options": [
+        "Pasta",
+        "Rice",
+        "Barley",
+        "Potato"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-029",
+      "question": "Which country is moussaka from?",
+      "options": [
+        "Turkey",
+        "Greece",
+        "Italy",
+        "Bulgaria"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-030",
+      "question": "How is sashimi typically served?",
+      "options": [
+        "Deep-fried fish",
+        "Grilled fish",
+        "Raw, sliced fish",
+        "Pickled fish"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-031",
+      "question": "Which country is pho, a noodle soup, from?",
+      "options": [
+        "China",
+        "Vietnam",
+        "Thailand",
+        "Japan"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-032",
+      "question": "Which spirit is the base of a mojito?",
+      "options": [
+        "Vodka",
+        "Gin",
+        "Rum",
+        "Tequila"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-033",
+      "question": "Which country is goulash from?",
+      "options": [
+        "Austria",
+        "Romania",
+        "Hungary",
+        "Czechia"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-034",
+      "question": "What is the main ingredient of gnocchi?",
+      "options": [
+        "Rice",
+        "Potato",
+        "Flour",
+        "Polenta"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "A starchy tuber.",
+      "category": "food"
+    },
+    {
+      "id": "food-035",
+      "question": "Which country is ceviche from?",
+      "options": [
+        "Brazil",
+        "Argentina",
+        "Peru",
+        "Colombia"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-036",
+      "question": "Sake, a Japanese drink, is made from fermented...",
+      "options": [
+        "Grapes",
+        "Barley",
+        "Potatoes",
+        "Rice"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "A Japanese grain.",
+      "category": "food"
+    },
+    {
+      "id": "food-037",
+      "question": "Which country is kimchi from?",
+      "options": [
+        "Japan",
+        "South Korea",
+        "China",
+        "Vietnam"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-038",
+      "question": "What is tapenade made from?",
+      "options": [
+        "Olives",
+        "Tomatoes",
+        "Eggplant",
+        "Capers"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-039",
+      "question": "Which country is fish and chips from?",
+      "options": [
+        "England",
+        "Scotland",
+        "Ireland",
+        "United States"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-040",
+      "question": "Which country is the Bordeaux wine region in?",
+      "options": [
+        "Spain",
+        "France",
+        "Italy",
+        "Germany"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-041",
+      "question": "Which country is pierogi traditionally from?",
+      "options": [
+        "Poland",
+        "Ukraine",
+        "Germany",
+        "Slovakia"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "food"
+    },
+    {
+      "id": "food-042",
+      "question": "Miso is a paste made primarily from fermented...",
+      "options": [
+        "Rice",
+        "Soybeans",
+        "Wheat",
+        "Seaweed"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "A fermented paste used in Japanese soup.",
+      "category": "food"
+    },
+    {
+      "id": "food-043",
+      "question": "Which North African country is couscous most associated with?",
+      "options": [
+        "Morocco",
+        "Egypt",
+        "Turkey",
+        "Greece"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "food"
+    },
+    {
+      "id": "food-044",
+      "question": "Tahini is a paste made from ground...",
+      "options": [
+        "Peanuts",
+        "Sunflower seeds",
+        "Sesame seeds",
+        "Poppy seeds"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "A Middle Eastern paste.",
+      "category": "food"
+    },
+    {
+      "id": "food-045",
+      "question": "Which country is borscht, a beet soup, most associated with?",
+      "options": [
+        "Russia",
+        "Ukraine",
+        "Poland",
+        "Romania"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "A beet soup of Eastern Europe.",
+      "category": "food"
+    },
+    {
+      "id": "food-046",
+      "question": "Umami is often described as which taste?",
+      "options": [
+        "Sour",
+        "Salty",
+        "Savory (fifth taste)",
+        "Spicy"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Japanese for 'pleasant savory taste'.",
+      "category": "food"
+    },
+    {
+      "id": "food-047",
+      "question": "Amaretto is a liqueur flavored with...",
+      "options": [
+        "Hazelnuts",
+        "Almonds",
+        "Cherries",
+        "Coffee"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "An Italian liqueur.",
+      "category": "food"
+    },
+    {
+      "id": "food-048",
+      "question": "Mole is a traditional sauce from which country?",
+      "options": [
+        "Mexico",
+        "Peru",
+        "Spain",
+        "Cuba"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A complex sauce with chili and chocolate.",
+      "category": "food"
+    },
+    {
+      "id": "food-049",
+      "question": "Halloumi is a cheese traditionally from which country?",
+      "options": [
+        "Greece",
+        "Cyprus",
+        "Turkey",
+        "Italy"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "A cheese that holds its shape when grilled.",
+      "category": "food"
+    },
+    {
+      "id": "food-050",
+      "question": "Which country is feijoada, a black-bean stew, from?",
+      "options": [
+        "Portugal",
+        "Brazil",
+        "Argentina",
+        "Mexico"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "A black-bean stew.",
+      "category": "food"
+    },
+    {
+      "id": "food-051",
+      "question": "Tzatziki is a yogurt dip flavored with which vegetable?",
+      "options": [
+        "Carrot",
+        "Cucumber",
+        "Radish",
+        "Celery"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "food"
+    },
+    {
+      "id": "food-052",
+      "question": "Which country is nasi goreng, a fried-rice dish, from?",
+      "options": [
+        "Malaysia",
+        "Indonesia",
+        "Thailand",
+        "Philippines"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Means 'fried rice'.",
+      "category": "food"
+    },
+    {
+      "id": "food-053",
+      "question": "Mochi is a Japanese treat made from pounded...",
+      "options": [
+        "Wheat",
+        "Corn",
+        "Glutinous rice",
+        "Potato"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "A chewy rice treat.",
+      "category": "food"
+    },
+    {
+      "id": "food-054",
+      "question": "Which country is schnitzel from?",
+      "options": [
+        "Germany",
+        "Austria",
+        "Switzerland",
+        "Netherlands"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "food"
+    },
+    {
+      "id": "food-055",
+      "question": "Baklava is a sweet pastry layered with phyllo dough and filled with...",
+      "options": [
+        "Chocolate",
+        "Fruit",
+        "Nuts",
+        "Cheese"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Layered phyllo pastry.",
+      "category": "food"
+    },
+    {
+      "id": "food-056",
+      "question": "The Maillard reaction is responsible for which change in cooked food?",
+      "options": [
+        "Softening",
+        "Browning",
+        "Burning",
+        "Curdling"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It gives seared food its crust and flavor.",
+      "category": "food"
+    },
+    {
+      "id": "food-057",
+      "question": "The Italian term 'al dente' describes pasta that is...",
+      "options": [
+        "Soft and mushy",
+        "Firm to the bite",
+        "Served cold",
+        "Overcooked"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Italian for 'to the tooth'.",
+      "category": "food"
+    },
+    {
+      "id": "food-058",
+      "question": "A roux, used to thicken sauces, is a mixture of...",
+      "options": [
+        "Flour and water",
+        "Flour and fat",
+        "Sugar and butter",
+        "Egg and milk"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Used to thicken sauces.",
+      "category": "food"
+    },
+    {
+      "id": "food-059",
+      "question": "Chianti is a wine from which country?",
+      "options": [
+        "France",
+        "Spain",
+        "Italy",
+        "Portugal"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "food"
+    },
+    {
+      "id": "food-060",
+      "question": "Broiling is a cooking method that uses...",
+      "options": [
+        "Boiling in water",
+        "Steaming",
+        "Dry heat from above",
+        "Frying in oil"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Uses a top heating element.",
+      "category": "food"
+    },
+    {
+      "id": "art-001",
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Raphael",
+        "Donatello"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-002",
+      "question": "Which artist painted \"Starry Night\"?",
+      "options": [
+        "Claude Monet",
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Rembrandt"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-003",
+      "question": "Who wrote the play \"Romeo and Juliet\"?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Jane Austen",
+        "Mark Twain"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-004",
+      "question": "Which author wrote the novel \"1984\"?",
+      "options": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "H. G. Wells"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-005",
+      "question": "The famous marble sculpture \"David\" was created by which artist?",
+      "options": [
+        "Leonardo da Vinci",
+        "Donatello",
+        "Michelangelo",
+        "Raphael"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-006",
+      "question": "In which city is the Louvre Museum located?",
+      "options": [
+        "London",
+        "Rome",
+        "Madrid",
+        "Paris"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-007",
+      "question": "Who is the Greek god of the sea?",
+      "options": [
+        "Zeus",
+        "Hades",
+        "Poseidon",
+        "Apollo"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-008",
+      "question": "\"Hamlet\" is a play written by which playwright?",
+      "options": [
+        "Christopher Marlowe",
+        "William Shakespeare",
+        "Oscar Wilde",
+        "George Bernard Shaw"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-009",
+      "question": "What kind of animal is Moby-Dick?",
+      "options": [
+        "A shark",
+        "A whale",
+        "A dolphin",
+        "A giant squid"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-010",
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "options": [
+        "Leonardo da Vinci",
+        "Raphael",
+        "Michelangelo",
+        "Titian"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-011",
+      "question": "Which fictional detective lives at 221B Baker Street?",
+      "options": [
+        "Hercule Poirot",
+        "Sherlock Holmes",
+        "Miss Marple",
+        "Philip Marlowe"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-012",
+      "question": "Who wrote \"The Hobbit\" and \"The Lord of the Rings\"?",
+      "options": [
+        "C. S. Lewis",
+        "J. R. R. Tolkien",
+        "J. K. Rowling",
+        "George R. R. Martin"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-013",
+      "question": "Who was the Roman god of war?",
+      "options": [
+        "Jupiter",
+        "Neptune",
+        "Mars",
+        "Mercury"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-014",
+      "question": "Who wrote the novel \"Oliver Twist\"?",
+      "options": [
+        "Charles Dickens",
+        "Victor Hugo",
+        "Leo Tolstoy",
+        "Fyodor Dostoevsky"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-015",
+      "question": "Which famous painter cut off part of his own ear?",
+      "options": [
+        "Pablo Picasso",
+        "Vincent van Gogh",
+        "Claude Monet",
+        "Salvador Dalí"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-016",
+      "question": "Which bird is sacred to the Greek goddess Athena?",
+      "options": [
+        "The eagle",
+        "The owl",
+        "The dove",
+        "The raven"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-017",
+      "question": "Who is the author of \"Pride and Prejudice\"?",
+      "options": [
+        "Charlotte Brontë",
+        "Jane Austen",
+        "Emily Brontë",
+        "George Eliot"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-018",
+      "question": "Who is the Norse god of thunder?",
+      "options": [
+        "Odin",
+        "Loki",
+        "Thor",
+        "Freyr"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-019",
+      "question": "\"The Raven\" is a poem by which American writer?",
+      "options": [
+        "Walt Whitman",
+        "Edgar Allan Poe",
+        "Robert Frost",
+        "Emily Dickinson"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-020",
+      "question": "Who wrote \"A Christmas Carol\"?",
+      "options": [
+        "Mark Twain",
+        "Charles Dickens",
+        "Lewis Carroll",
+        "Robert Louis Stevenson"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-021",
+      "question": "Which art movement is Claude Monet most associated with?",
+      "options": [
+        "Cubism",
+        "Impressionism",
+        "Surrealism",
+        "Baroque"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-022",
+      "question": "\"The Scream\" was painted by which Norwegian artist?",
+      "options": [
+        "Edvard Munch",
+        "Vincent van Gogh",
+        "Wassily Kandinsky",
+        "Gustav Klimt"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-023",
+      "question": "Who wrote the novel \"Moby-Dick\"?",
+      "options": [
+        "Nathaniel Hawthorne",
+        "Herman Melville",
+        "Mark Twain",
+        "James Fenimore Cooper"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-024",
+      "question": "\"The Persistence of Memory\" (the melting clocks) was painted by whom?",
+      "options": [
+        "René Magritte",
+        "Salvador Dalí",
+        "Joan Miró",
+        "Max Ernst"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-025",
+      "question": "Who is the Greek goddess of wisdom?",
+      "options": [
+        "Hera",
+        "Aphrodite",
+        "Athena",
+        "Artemis"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-026",
+      "question": "In Greek mythology, who was condemned to roll a boulder uphill forever?",
+      "options": [
+        "Tantalus",
+        "Sisyphus",
+        "Prometheus",
+        "Icarus"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-027",
+      "question": "\"The Thinker\" is a famous sculpture by which artist?",
+      "options": [
+        "Auguste Rodin",
+        "Henry Moore",
+        "Alberto Giacometti",
+        "Constantin Brâncuși"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-028",
+      "question": "Who wrote \"The Great Gatsby\"?",
+      "options": [
+        "Ernest Hemingway",
+        "F. Scott Fitzgerald",
+        "John Steinbeck",
+        "William Faulkner"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-029",
+      "question": "The \"Venus de Milo\" is a famous statue from which civilization?",
+      "options": [
+        "Ancient Rome",
+        "Ancient Egypt",
+        "Ancient Greece",
+        "Ancient Mesopotamia"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-030",
+      "question": "Which author created the character Huckleberry Finn?",
+      "options": [
+        "Mark Twain",
+        "Charles Dickens",
+        "Herman Melville",
+        "Jack London"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-031",
+      "question": "\"Girl with a Pearl Earring\" was painted by which artist?",
+      "options": [
+        "Rembrandt",
+        "Johannes Vermeer",
+        "Frans Hals",
+        "Pieter Bruegel"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-032",
+      "question": "Who is the Norse god of mischief?",
+      "options": [
+        "Odin",
+        "Thor",
+        "Loki",
+        "Baldr"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-033",
+      "question": "\"War and Peace\" was written by which author?",
+      "options": [
+        "Fyodor Dostoevsky",
+        "Leo Tolstoy",
+        "Anton Chekhov",
+        "Ivan Turgenev"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-034",
+      "question": "Which art movement did Pablo Picasso help to found?",
+      "options": [
+        "Fauvism",
+        "Cubism",
+        "Dadaism",
+        "Expressionism"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-035",
+      "question": "Who is the Roman equivalent of the Greek god Zeus?",
+      "options": [
+        "Mars",
+        "Jupiter",
+        "Neptune",
+        "Pluto"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-036",
+      "question": "Who wrote the poem \"The Road Not Taken\"?",
+      "options": [
+        "Robert Frost",
+        "Walt Whitman",
+        "Emily Dickinson",
+        "Carl Sandburg"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-037",
+      "question": "\"The Birth of Venus\" was painted by which artist?",
+      "options": [
+        "Sandro Botticelli",
+        "Michelangelo",
+        "Raphael",
+        "Caravaggio"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-038",
+      "question": "In Shakespeare's \"Hamlet\", who poisoned King Hamlet to seize the throne?",
+      "options": [
+        "Polonius",
+        "Laertes",
+        "Claudius",
+        "Horatio"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-039",
+      "question": "Which museum houses the Mona Lisa?",
+      "options": [
+        "The Prado",
+        "The Louvre",
+        "The Uffizi",
+        "The British Museum"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-040",
+      "question": "Who is credited with writing the epic poem \"The Odyssey\"?",
+      "options": [
+        "Homer",
+        "Virgil",
+        "Sophocles",
+        "Euripides"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-041",
+      "question": "Picasso's \"Guernica\" depicts the bombing of a town in which country?",
+      "options": [
+        "France",
+        "Germany",
+        "Spain",
+        "Italy"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "The town was bombed during the Spanish Civil War.",
+      "category": "art"
+    },
+    {
+      "id": "art-042",
+      "question": "Who wrote the novel \"Les Misérables\"?",
+      "options": [
+        "Alexandre Dumas",
+        "Victor Hugo",
+        "Honoré de Balzac",
+        "Émile Zola"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-043",
+      "question": "Michelangelo's \"Pietà\" is housed in which Vatican location?",
+      "options": [
+        "St. Peter's Basilica",
+        "The Sistine Chapel",
+        "The Vatican Museums",
+        "Castel Sant'Angelo"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-044",
+      "question": "Which ancient Greek playwright wrote \"Oedipus Rex\"?",
+      "options": [
+        "Aeschylus",
+        "Sophocles",
+        "Euripides",
+        "Aristophanes"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-045",
+      "question": "\"The Night Watch\" was painted by which artist?",
+      "options": [
+        "Rembrandt",
+        "Vermeer",
+        "Frans Hals",
+        "Jan Steen"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "He was a Dutch master of the Golden Age.",
+      "category": "art"
+    },
+    {
+      "id": "art-046",
+      "question": "Who wrote the novel \"Crime and Punishment\"?",
+      "options": [
+        "Leo Tolstoy",
+        "Fyodor Dostoevsky",
+        "Nikolai Gogol",
+        "Ivan Turgenev"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-047",
+      "question": "Which Greek hero completed the Twelve Labors?",
+      "options": [
+        "Theseus",
+        "Heracles",
+        "Perseus",
+        "Achilles"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-048",
+      "question": "\"The Canterbury Tales\" was written by whom?",
+      "options": [
+        "Geoffrey Chaucer",
+        "John Milton",
+        "Edmund Spenser",
+        "William Langland"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-049",
+      "question": "Which art movement is Salvador Dalí most associated with?",
+      "options": [
+        "Cubism",
+        "Surrealism",
+        "Impressionism",
+        "Pointillism"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-050",
+      "question": "The \"Book of Kells\" is a famous illuminated manuscript from which country?",
+      "options": [
+        "Scotland",
+        "Ireland",
+        "Wales",
+        "England"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is kept at Trinity College in Dublin.",
+      "category": "art"
+    },
+    {
+      "id": "art-051",
+      "question": "Which sculptor created a bronze \"David\" before Michelangelo's marble version?",
+      "options": [
+        "Donatello",
+        "Ghiberti",
+        "Brunelleschi",
+        "Verrocchio"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-052",
+      "question": "\"The Divine Comedy\" was written by which Italian poet?",
+      "options": [
+        "Petrarch",
+        "Dante Alighieri",
+        "Giovanni Boccaccio",
+        "Niccolò Machiavelli"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-053",
+      "question": "In Greek mythology, which Titan was condemned to hold up the sky?",
+      "options": [
+        "Prometheus",
+        "Atlas",
+        "Cronus",
+        "Hyperion"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-054",
+      "question": "\"Wuthering Heights\" was written by which Brontë sister?",
+      "options": [
+        "Charlotte Brontë",
+        "Anne Brontë",
+        "Emily Brontë",
+        "George Eliot"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-055",
+      "question": "Which painter is famous for the \"Water Lilies\" series?",
+      "options": [
+        "Édouard Manet",
+        "Claude Monet",
+        "Pierre-Auguste Renoir",
+        "Camille Pissarro"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-056",
+      "question": "In Norse mythology, what is the hall where slain warriors are taken?",
+      "options": [
+        "Asgard",
+        "Valhalla",
+        "Helheim",
+        "Midgard"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-057",
+      "question": "Who wrote the novel \"Don Quixote\"?",
+      "options": [
+        "Lope de Vega",
+        "Miguel de Cervantes",
+        "Federico García Lorca",
+        "Pedro Calderón"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-058",
+      "question": "Michelangelo's \"David\" is carved from which material?",
+      "options": [
+        "Bronze",
+        "Marble",
+        "Granite",
+        "Limestone"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-059",
+      "question": "Which Roman poet wrote the epic \"The Aeneid\"?",
+      "options": [
+        "Ovid",
+        "Virgil",
+        "Horace",
+        "Lucretius"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-060",
+      "question": "Who wrote the epic poem \"Paradise Lost\"?",
+      "options": [
+        "John Milton",
+        "John Donne",
+        "Andrew Marvell",
+        "Edmund Spenser"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "anim-001",
+      "question": "What is the fastest land animal in the world?",
+      "options": [
+        "Cheetah",
+        "Lion",
+        "Horse",
+        "Greyhound"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-002",
+      "question": "What is the largest animal on Earth?",
+      "options": [
+        "African Elephant",
+        "Blue Whale",
+        "Giraffe",
+        "Great White Shark"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-003",
+      "question": "What is the tallest animal in the world?",
+      "options": [
+        "Elephant",
+        "Giraffe",
+        "Camel",
+        "Ostrich"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-004",
+      "question": "How many legs does a spider have?",
+      "options": [
+        "Six",
+        "Ten",
+        "Eight",
+        "Four"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-005",
+      "question": "Which animal is often called 'man's best friend'?",
+      "options": [
+        "Cat",
+        "Dog",
+        "Rabbit",
+        "Parrot"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-006",
+      "question": "What is a baby dog called?",
+      "options": [
+        "Cub",
+        "Kitten",
+        "Puppy",
+        "Calf"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-007",
+      "question": "What is a baby cat called?",
+      "options": [
+        "Kitten",
+        "Puppy",
+        "Foal",
+        "Cub"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-008",
+      "question": "Which animal makes the sound 'moo'?",
+      "options": [
+        "Horse",
+        "Sheep",
+        "Cow",
+        "Pig"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-009",
+      "question": "Which of these birds cannot fly?",
+      "options": [
+        "Sparrow",
+        "Penguin",
+        "Eagle",
+        "Robin"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-010",
+      "question": "Where do polar bears live?",
+      "options": [
+        "Antarctica",
+        "Africa",
+        "The Arctic",
+        "Australia"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-011",
+      "question": "What do honey bees make?",
+      "options": [
+        "Milk",
+        "Honey",
+        "Butter",
+        "Jam"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-012",
+      "question": "Which animal has a hump on its back and lives in the desert?",
+      "options": [
+        "Camel",
+        "Horse",
+        "Donkey",
+        "Zebra"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-013",
+      "question": "Which animal is known as the 'king of the jungle'?",
+      "options": [
+        "Tiger",
+        "Lion",
+        "Elephant",
+        "Gorilla"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-014",
+      "question": "Which animal has a long trunk?",
+      "options": [
+        "Rhino",
+        "Hippo",
+        "Elephant",
+        "Giraffe"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-015",
+      "question": "What is a group of lions called?",
+      "options": [
+        "Pack",
+        "Pride",
+        "Herd",
+        "Flock"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-016",
+      "question": "Which of these animals lives in water and breathes through gills?",
+      "options": [
+        "Dolphin",
+        "Whale",
+        "Fish",
+        "Seal"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-017",
+      "question": "Which farm animal lays the eggs we eat for breakfast?",
+      "options": [
+        "Duck",
+        "Chicken",
+        "Turkey",
+        "Goose"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-018",
+      "question": "What color is a flamingo?",
+      "options": [
+        "Blue",
+        "Pink",
+        "Green",
+        "Yellow"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-019",
+      "question": "Which animal hops and carries its baby in a pouch?",
+      "options": [
+        "Rabbit",
+        "Kangaroo",
+        "Monkey",
+        "Squirrel"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-020",
+      "question": "Which animal sleeps through the winter in a long, deep sleep?",
+      "options": [
+        "Bear",
+        "Fox",
+        "Wolf",
+        "Deer"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-021",
+      "question": "Which of these animals eats only plants?",
+      "options": [
+        "Lion",
+        "Cow",
+        "Eagle",
+        "Shark"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-022",
+      "question": "Which of these animals is a mammal?",
+      "options": [
+        "Shark",
+        "Dolphin",
+        "Salmon",
+        "Octopus"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-023",
+      "question": "Which of these animals is an amphibian?",
+      "options": [
+        "Lizard",
+        "Snake",
+        "Frog",
+        "Turtle"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-024",
+      "question": "Which of these animals is a reptile?",
+      "options": [
+        "Frog",
+        "Salamander",
+        "Snake",
+        "Newt"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-025",
+      "question": "What is a baby horse called?",
+      "options": [
+        "Calf",
+        "Foal",
+        "Cub",
+        "Kid"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-026",
+      "question": "What is a baby cow called?",
+      "options": [
+        "Calf",
+        "Foal",
+        "Pup",
+        "Kid"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-027",
+      "question": "What is a baby lion called?",
+      "options": [
+        "Puppy",
+        "Kitten",
+        "Cub",
+        "Joey"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-028",
+      "question": "Which animal can change its color to blend in with its surroundings?",
+      "options": [
+        "Chameleon",
+        "Frog",
+        "Turtle",
+        "Iguana"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-029",
+      "question": "Which sea animal has eight arms?",
+      "options": [
+        "Starfish",
+        "Octopus",
+        "Squid",
+        "Jellyfish"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-030",
+      "question": "Which animal is nicknamed the 'ship of the desert'?",
+      "options": [
+        "Horse",
+        "Camel",
+        "Donkey",
+        "Ox"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-031",
+      "question": "Which bird is famous for its beautiful, colorful tail feathers?",
+      "options": [
+        "Peacock",
+        "Pigeon",
+        "Crow",
+        "Sparrow"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-032",
+      "question": "What is a group of fish called?",
+      "options": [
+        "Herd",
+        "School",
+        "Pack",
+        "Flock"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-033",
+      "question": "What is a group of wolves called?",
+      "options": [
+        "Pack",
+        "Pride",
+        "Pod",
+        "Herd"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-034",
+      "question": "Which of these animals eats only meat?",
+      "options": [
+        "Rabbit",
+        "Deer",
+        "Lion",
+        "Goat"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-035",
+      "question": "What do we call an animal that eats both plants and meat?",
+      "options": [
+        "Herbivore",
+        "Carnivore",
+        "Omnivore",
+        "Insectivore"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-036",
+      "question": "Which insect begins its life as a caterpillar?",
+      "options": [
+        "Bee",
+        "Butterfly",
+        "Ant",
+        "Beetle"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-037",
+      "question": "How does a dolphin breathe?",
+      "options": [
+        "Through gills",
+        "Through a blowhole",
+        "Through its skin",
+        "It never needs air"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-038",
+      "question": "What is the largest land animal in the world?",
+      "options": [
+        "White Rhino",
+        "African Elephant",
+        "Hippopotamus",
+        "Giraffe"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-039",
+      "question": "Which animal can grow back its tail if it loses it?",
+      "options": [
+        "Lizard",
+        "Cat",
+        "Dog",
+        "Rabbit"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-040",
+      "question": "Which bird is famous for copying human speech?",
+      "options": [
+        "Crow",
+        "Parrot",
+        "Dove",
+        "Seagull"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-041",
+      "question": "What is a group of crows called?",
+      "options": [
+        "Murder",
+        "Flock",
+        "Swarm",
+        "Gaggle"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "Think of a famously grim collective noun.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-042",
+      "question": "Which mammal is capable of true flight?",
+      "options": [
+        "Flying Squirrel",
+        "Bat",
+        "Ostrich",
+        "Penguin"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It flies at night using echolocation.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-043",
+      "question": "Which of these mammals lays eggs?",
+      "options": [
+        "Kangaroo",
+        "Platypus",
+        "Dolphin",
+        "Rabbit"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is an egg-laying mammal called a monotreme.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-044",
+      "question": "What is a baby kangaroo called?",
+      "options": [
+        "Joey",
+        "Cub",
+        "Kid",
+        "Foal"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It rhymes with 'hockey'.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-045",
+      "question": "What is a baby goat called?",
+      "options": [
+        "Calf",
+        "Kid",
+        "Foal",
+        "Lamb"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is also a word for a human child.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-046",
+      "question": "What is a baby swan called?",
+      "options": [
+        "Duckling",
+        "Cygnet",
+        "Gosling",
+        "Chick"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "A swan's young, not a duckling.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-047",
+      "question": "Which bird is the fastest animal in the world when diving?",
+      "options": [
+        "Bald Eagle",
+        "Peregrine Falcon",
+        "Red-tailed Hawk",
+        "Common Swift"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It holds the record for the fastest dive, or stoop.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-048",
+      "question": "Which of these animals is a marsupial?",
+      "options": [
+        "Zebra",
+        "Kangaroo",
+        "Brown Bear",
+        "Wolf"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Its babies grow in a pouch.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-049",
+      "question": "What is a group of dolphins called?",
+      "options": [
+        "Pod",
+        "Herd",
+        "School",
+        "Pack"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "Whales and dolphins travel in one of these.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-050",
+      "question": "How many hearts does an octopus have?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It is an unusual number, more than most animals.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-051",
+      "question": "A blue whale is which type of animal?",
+      "options": [
+        "Fish",
+        "Reptile",
+        "Mammal",
+        "Amphibian"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It breathes air and gives birth to live young.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-052",
+      "question": "Which bird can fly backwards?",
+      "options": [
+        "Sparrow",
+        "Hummingbird",
+        "Owl",
+        "Pigeon"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It hovers at flowers while sipping nectar.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-053",
+      "question": "What is the largest living reptile in the world?",
+      "options": [
+        "Komodo Dragon",
+        "Saltwater Crocodile",
+        "Green Anaconda",
+        "Galapagos Tortoise"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is a giant aquatic predator.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-054",
+      "question": "What is a group of owls called?",
+      "options": [
+        "Parliament",
+        "Murder",
+        "Pod",
+        "Colony"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It shares its name with a group of lawmakers.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-055",
+      "question": "Which animal usually sleeps standing up?",
+      "options": [
+        "Cat",
+        "Horse",
+        "Dog",
+        "Mouse"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It can lock its legs to doze upright.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-056",
+      "question": "What is a baby seal called?",
+      "options": [
+        "Pup",
+        "Cub",
+        "Kid",
+        "Calf"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It shares its name with a baby dog.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-057",
+      "question": "Which of these animals is an omnivore?",
+      "options": [
+        "Cow",
+        "Bear",
+        "Deer",
+        "Rabbit"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It eats berries, fish, and honey.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-058",
+      "question": "What do you call a male bee whose main job is to mate with the queen?",
+      "options": [
+        "Worker",
+        "Drone",
+        "Soldier",
+        "Nurse"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is also a word for an unmanned aircraft.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-059",
+      "question": "Which of these animals is NOT a mammal?",
+      "options": [
+        "Whale",
+        "Dolphin",
+        "Shark",
+        "Seal"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It has gills and a cartilaginous skeleton.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-060",
+      "question": "What is the fastest land bird?",
+      "options": [
+        "Ostrich",
+        "Emu",
+        "Roadrunner",
+        "Penguin"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A flightless sprinter of the savannah.",
+      "category": "animals"
     }
   ]
 }

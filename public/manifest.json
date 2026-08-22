@@ -1,7 +1,7 @@
 {
   "name": "WordCraft Hub",
   "short_name": "WordCraft",
-  "description": "Five daily word and logic puzzles — free, no ads, no tracking.",
+  "description": "Six daily word and logic puzzles — free to play.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f6f3ec",

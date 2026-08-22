@@ -26,9 +26,8 @@ export default function QuizPage() {
   const [copied, setCopied] = useState(false);
   const [loadError, setLoadError] = useState(false);
   const [streak, setStreak] = useState(getStreak());
-  const [finishedOnce, setFinishedOnce] = useState(false);
 
-  const date = getTodayDateStr();
+  const [date] = useState(() => getTodayDateStr());
   const quizNum = getQuizNumber(date);
 
   // Load bank + build today's quiz (restore saved answers if already done)
@@ -65,10 +64,10 @@ export default function QuizPage() {
   }, [date]);
 
   const finish = useCallback((finalAnswers: (number | null)[]) => {
-    saveQuizDone(date, finalAnswers);
+    // Only the FIRST completion is stored as the day's result; replays don't overwrite it
+    if (!getQuizDone(date)) saveQuizDone(date, finalAnswers);
     setStreak(bumpStreak(date));
     setOver(true);
-    setFinishedOnce(true);
   }, [date]);
 
   const handlePick = (optionIdx: number) => {
@@ -209,7 +208,7 @@ export default function QuizPage() {
                 boxShadow: '3px 3px 0 rgba(0,0,0,0.15)',
                 cursor: 'pointer',
               }}>
-              {finishedOnce ? 'Replay (no score change)' : 'Replay'}
+              Replay
             </button>
             <Link to="/" style={{
               background: 'var(--qz-panel)',

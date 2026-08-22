@@ -1,0 +1,782 @@
+[
+  {
+    "id": "tech-001",
+    "question": "What does CPU stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Core Processing Unit",
+      "Central Program Utility"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "The 'brain' of the computer."
+  },
+  {
+    "id": "tech-002",
+    "question": "Which company created the iPhone?",
+    "options": [
+      "Samsung",
+      "Apple",
+      "Nokia",
+      "Microsoft"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "The company also makes the Mac."
+  },
+  {
+    "id": "tech-003",
+    "question": "What does 'www' stand for in a website address?",
+    "options": [
+      "Wide World Web",
+      "World Wide Window",
+      "World Wide Web",
+      "Web World Wide"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Three Ws."
+  },
+  {
+    "id": "tech-004",
+    "question": "Which key deletes the character to the left of the cursor?",
+    "options": [
+      "Delete",
+      "Enter",
+      "Shift",
+      "Backspace"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "It erases behind the cursor."
+  },
+  {
+    "id": "tech-005",
+    "question": "What does 'PC' stand for?",
+    "options": [
+      "Personal Computer",
+      "Portable Computer",
+      "Public Computer",
+      "Private Computer"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "The 'P' is for 'Personal'."
+  },
+  {
+    "id": "tech-006",
+    "question": "Which of these is Google's email service?",
+    "options": [
+      "Outlook",
+      "Gmail",
+      "Hotmail",
+      "Yahoo Mail"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Google's mail."
+  },
+  {
+    "id": "tech-007",
+    "question": "What does 'USB' stand for?",
+    "options": [
+      "Universal System Bus",
+      "United Serial Bus",
+      "Universal Serial Bus",
+      "Universal Serial Board"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "A common connector port."
+  },
+  {
+    "id": "tech-008",
+    "question": "Which company makes the Windows operating system?",
+    "options": [
+      "IBM",
+      "Apple",
+      "Google",
+      "Microsoft"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "The Redmond company."
+  },
+  {
+    "id": "tech-009",
+    "question": "What is the smallest unit of digital information?",
+    "options": [
+      "A bit",
+      "A byte",
+      "A pixel",
+      "A file"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "A binary digit, 0 or 1."
+  },
+  {
+    "id": "tech-010",
+    "question": "Which device is used to move the cursor on screen?",
+    "options": [
+      "Printer",
+      "Mouse",
+      "Keyboard",
+      "Speaker"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "You move it with your hand."
+  },
+  {
+    "id": "tech-011",
+    "question": "What does pressing Ctrl+C do?",
+    "options": [
+      "Paste the clipboard",
+      "Close the window",
+      "Copy the selected item",
+      "Cut the selected item"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "C is for Copy."
+  },
+  {
+    "id": "tech-012",
+    "question": "Which web browser is made by Google?",
+    "options": [
+      "Firefox",
+      "Safari",
+      "Edge",
+      "Chrome"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "Google's browser."
+  },
+  {
+    "id": "tech-013",
+    "question": "What does Wi-Fi let you do?",
+    "options": [
+      "Connect to the internet wirelessly",
+      "Charge your device",
+      "Cool the computer",
+      "Print documents"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Wireless internet."
+  },
+  {
+    "id": "tech-014",
+    "question": "What is 'email' short for?",
+    "options": [
+      "Express mail",
+      "Electronic mail",
+      "Easy mail",
+      "Emergency mail"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "'E' is for 'Electronic'."
+  },
+  {
+    "id": "tech-015",
+    "question": "Which of these is a search engine?",
+    "options": [
+      "Windows",
+      "Excel",
+      "Google",
+      "Photoshop"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "You type queries into it."
+  },
+  {
+    "id": "tech-016",
+    "question": "What does 'HD' stand for in screen quality?",
+    "options": [
+      "Hard Disk",
+      "High Density",
+      "Heavy Duty",
+      "High Definition"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "Sharper picture quality."
+  },
+  {
+    "id": "tech-017",
+    "question": "Who co-founded Apple with Steve Wozniak?",
+    "options": [
+      "Steve Jobs",
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "Jeff Bezos"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Also famous for the iPhone."
+  },
+  {
+    "id": "tech-018",
+    "question": "What do you use to type letters and numbers into a computer?",
+    "options": [
+      "Mouse",
+      "Keyboard",
+      "Monitor",
+      "Printer"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It has letter keys."
+  },
+  {
+    "id": "tech-019",
+    "question": "Which company created the Macintosh (Mac) computer?",
+    "options": [
+      "Microsoft",
+      "IBM",
+      "Apple",
+      "Dell"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "The fruit company."
+  },
+  {
+    "id": "tech-020",
+    "question": "What is an 'app' short for?",
+    "options": [
+      "Appendix",
+      "Apparatus",
+      "Apple",
+      "Application"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "Short for 'application'."
+  },
+  {
+    "id": "tech-021",
+    "question": "What does HTML stand for?",
+    "options": [
+      "HyperText Markup Language",
+      "High Tech Modern Language",
+      "Hyper Transfer Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The markup language of the web."
+  },
+  {
+    "id": "tech-022",
+    "question": "In which year was the first iPhone released?",
+    "options": [
+      "2005",
+      "2007",
+      "2009",
+      "2010"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Late 2000s."
+  },
+  {
+    "id": "tech-023",
+    "question": "In classic computing terms, 1 kilobyte (KB) equals how many bytes?",
+    "options": [
+      "100 bytes",
+      "1000 bytes",
+      "1024 bytes",
+      "10000 bytes"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "A power of two (2 to the 10th)."
+  },
+  {
+    "id": "tech-024",
+    "question": "What does CSS control on a web page?",
+    "options": [
+      "The written content",
+      "The interactive behavior",
+      "The network connection",
+      "The style, colors and layout"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "It styles the page."
+  },
+  {
+    "id": "tech-025",
+    "question": "Which company did Bill Gates co-found?",
+    "options": [
+      "Microsoft",
+      "Apple",
+      "Google",
+      "Amazon"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The Windows company."
+  },
+  {
+    "id": "tech-026",
+    "question": "What does 'PDF' stand for?",
+    "options": [
+      "Printable Data File",
+      "Portable Document Format",
+      "Personal Document File",
+      "Public Document Format"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Portable... Document..."
+  },
+  {
+    "id": "tech-027",
+    "question": "Which language makes web pages interactive?",
+    "options": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PDF"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The interactive language."
+  },
+  {
+    "id": "tech-028",
+    "question": "What does 'RAM' stand for?",
+    "options": [
+      "Read And Modify",
+      "Rapid Access Memory",
+      "Run All Memory",
+      "Random Access Memory"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "Volatile working memory."
+  },
+  {
+    "id": "tech-029",
+    "question": "What is 'the cloud' in computing?",
+    "options": [
+      "Data stored on remote servers accessed via the internet",
+      "A type of printer",
+      "A weather app",
+      "The computer's screen"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Remote servers."
+  },
+  {
+    "id": "tech-030",
+    "question": "Which symbol separates the name and domain in an email address?",
+    "options": [
+      "#",
+      "@",
+      "&",
+      "%"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "The 'at' sign."
+  },
+  {
+    "id": "tech-031",
+    "question": "What kind of file is a '.jpg' or '.jpeg'?",
+    "options": [
+      "A text file",
+      "A music file",
+      "An image file",
+      "A video file"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "A photo format."
+  },
+  {
+    "id": "tech-032",
+    "question": "Which company owns the Android operating system?",
+    "options": [
+      "Apple",
+      "Microsoft",
+      "Samsung",
+      "Google"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "The search giant owns it."
+  },
+  {
+    "id": "tech-033",
+    "question": "What does 'OS' stand for?",
+    "options": [
+      "Operating System",
+      "Open Source",
+      "Online Service",
+      "Optical Storage"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The base software of a device."
+  },
+  {
+    "id": "tech-034",
+    "question": "What does 'FAQ' stand for?",
+    "options": [
+      "Free Answers Quickly",
+      "Frequently Asked Questions",
+      "Fully Answered Questions",
+      "Fast And Quick"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Common questions."
+  },
+  {
+    "id": "tech-035",
+    "question": "Which of these is an open-source operating system?",
+    "options": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The penguin OS."
+  },
+  {
+    "id": "tech-036",
+    "question": "What does 'URL' stand for?",
+    "options": [
+      "Universal Resource Link",
+      "Uniform Reference Locator",
+      "United Resource Locator",
+      "Uniform Resource Locator"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "A web address."
+  },
+  {
+    "id": "tech-037",
+    "question": "What does pressing Ctrl+V do?",
+    "options": [
+      "Paste",
+      "Cut",
+      "Copy",
+      "Undo"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "V is for... paste."
+  },
+  {
+    "id": "tech-038",
+    "question": "Bill Gates co-founded Microsoft with whom?",
+    "options": [
+      "Steve Ballmer",
+      "Paul Allen",
+      "Steve Wozniak",
+      "Larry Page"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Gates's original partner."
+  },
+  {
+    "id": "tech-039",
+    "question": "What does 'HTTP' stand for?",
+    "options": [
+      "High Tech Transfer Process",
+      "HyperText Transmission Protocol",
+      "HyperText Transfer Protocol",
+      "Home Transfer Text Protocol"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The web's transfer protocol."
+  },
+  {
+    "id": "tech-040",
+    "question": "What is a web browser used for?",
+    "options": [
+      "Editing photos",
+      "Writing code",
+      "Managing files",
+      "Viewing websites"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "For surfing the web."
+  },
+  {
+    "id": "tech-041",
+    "question": "Who is credited with inventing the World Wide Web?",
+    "options": [
+      "Tim Berners-Lee",
+      "Bill Gates",
+      "Steve Jobs",
+      "Linus Torvalds"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "A British computer scientist."
+  },
+  {
+    "id": "tech-042",
+    "question": "In which year was Microsoft founded?",
+    "options": [
+      "1980",
+      "1975",
+      "1990",
+      "1965"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "One of the oldest major tech companies."
+  },
+  {
+    "id": "tech-043",
+    "question": "In which year was Apple founded?",
+    "options": [
+      "1984",
+      "1980",
+      "1976",
+      "1972"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Started in a garage in the 1970s."
+  },
+  {
+    "id": "tech-044",
+    "question": "What does 'ROM' stand for?",
+    "options": [
+      "Random Output Memory",
+      "Rapid Open Memory",
+      "Remote Output Memory",
+      "Read-Only Memory"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "Memory you can only read."
+  },
+  {
+    "id": "tech-045",
+    "question": "Who created the Linux operating system kernel?",
+    "options": [
+      "Linus Torvalds",
+      "Dennis Ritchie",
+      "Richard Stallman",
+      "Ken Thompson"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "A Finnish student in 1991."
+  },
+  {
+    "id": "tech-046",
+    "question": "What does 'SQL' stand for?",
+    "options": [
+      "Standard Question Language",
+      "Structured Query Language",
+      "Sequential Query Language",
+      "Simple Query Logic"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "For querying databases."
+  },
+  {
+    "id": "tech-047",
+    "question": "How many bits are in one byte?",
+    "options": [
+      "4",
+      "16",
+      "8",
+      "32"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "A byte is eight bits."
+  },
+  {
+    "id": "tech-048",
+    "question": "What does 'IP' stand for in 'IP address'?",
+    "options": [
+      "Internet Provider",
+      "Internal Process",
+      "Identity Program",
+      "Internet Protocol"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "Part of every internet address."
+  },
+  {
+    "id": "tech-049",
+    "question": "What does 'GUI' stand for?",
+    "options": [
+      "Graphical User Interface",
+      "General User Interface",
+      "Graphic Unified Interface",
+      "Global User Interface"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Point-and-click interface."
+  },
+  {
+    "id": "tech-050",
+    "question": "Which engineer co-founded Apple with Steve Jobs and built the Apple I?",
+    "options": [
+      "Bill Gates",
+      "Steve Wozniak",
+      "Paul Allen",
+      "Larry Ellison"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Built the Apple I."
+  },
+  {
+    "id": "tech-051",
+    "question": "What does 'SSD' stand for?",
+    "options": [
+      "System Storage Device",
+      "Serial Storage Disk",
+      "Solid State Drive",
+      "Super Speed Drive"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "No moving parts."
+  },
+  {
+    "id": "tech-052",
+    "question": "What was Google originally called?",
+    "options": [
+      "Googol",
+      "SearchGo",
+      "FindIt",
+      "BackRub"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "Its original 1996 name."
+  },
+  {
+    "id": "tech-053",
+    "question": "In which year was the first Apple Macintosh released?",
+    "options": [
+      "1984",
+      "1980",
+      "1987",
+      "1990"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The mid-1980s."
+  },
+  {
+    "id": "tech-054",
+    "question": "What does 'BIOS' stand for?",
+    "options": [
+      "Binary Input Operating System",
+      "Basic Input/Output System",
+      "Basic Internal Operating System",
+      "Boot Input/Output System"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Runs at boot."
+  },
+  {
+    "id": "tech-055",
+    "question": "What does 'DNS' stand for?",
+    "options": [
+      "Digital Network Service",
+      "Data Name Server",
+      "Domain Name System",
+      "Domain Network System"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Translates names to addresses."
+  },
+  {
+    "id": "tech-056",
+    "question": "Which company developed the Java programming language?",
+    "options": [
+      "IBM",
+      "Microsoft",
+      "Apple",
+      "Sun Microsystems"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "A company later bought by Oracle."
+  },
+  {
+    "id": "tech-057",
+    "question": "What does 'FTP' stand for?",
+    "options": [
+      "File Transfer Protocol",
+      "Fast Transfer Process",
+      "File Transmission Program",
+      "File Text Protocol"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "For transferring files."
+  },
+  {
+    "id": "tech-058",
+    "question": "Who is credited with creating the C programming language?",
+    "options": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Linus Torvalds"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Created at Bell Labs."
+  },
+  {
+    "id": "tech-059",
+    "question": "What does 'VPN' stand for?",
+    "options": [
+      "Virtual Public Network",
+      "Very Private Network",
+      "Virtual Private Network",
+      "Visible Private Network"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "For private connections."
+  },
+  {
+    "id": "tech-060",
+    "question": "Which device is often cited as the first smartphone?",
+    "options": [
+      "Nokia 3310",
+      "Motorola Razr",
+      "BlackBerry 850",
+      "IBM Simon"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "Released in 1994."
+  }
+]

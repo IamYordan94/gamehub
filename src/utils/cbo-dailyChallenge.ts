@@ -62,12 +62,21 @@ export async function loadCboDailyChallenge(dateStr?: string): Promise<CboDailyC
   };
   const maxMoves: Record<number, number> = { 4: 10, 5: 12, 6: 12, 7: 14 };
 
-  // Fetch all pair files in parallel
-  const fetches = lengths.map(len => fetch(pairFiles[len]).then(r => r.json() as Promise<CboPair[]>));
+  // Fetch all pair files in parallel (with error guards)
+  const fetches = lengths.map(len =>
+    fetch(pairFiles[len])
+      .then(r => {
+        if (!r.ok) throw new Error(`Failed to load ${pairFiles[len]}`);
+        return r.json() as Promise<CboPair[]>;
+      })
+  );
   const allPairs = await Promise.all(fetches);
 
   const puzzles: CboPuzzle[] = lengths.map((len, i) => {
     const pairs = allPairs[i];
+    if (!Array.isArray(pairs) || pairs.length === 0) {
+      throw new Error(`Empty pair list for length ${len}`);
+    }
     const idx = Math.floor(rng() * pairs.length);
     const pair = pairs[idx];
     return {

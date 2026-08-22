@@ -16,6 +16,10 @@ const CATS = [
   { id: 'science', label: 'Science & Nature', emoji: '🔬' },
   { id: 'history', label: 'History', emoji: '🏛️' },
   { id: 'music', label: 'Music', emoji: '🎵' },
+  { id: 'technology', label: 'Technology', emoji: '💻' },
+  { id: 'food', label: 'Food & Drink', emoji: '🍔' },
+  { id: 'art', label: 'Art & Literature', emoji: '📚' },
+  { id: 'animals', label: 'Animals', emoji: '🦁' },
 ];
 
 const questions = [];

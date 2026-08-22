@@ -40,6 +40,10 @@ export const CATEGORY_META: Record<string, { label: string; emoji: string }> = {
   science: { label: 'Science', emoji: '🔬' },
   history: { label: 'History', emoji: '🏛️' },
   music: { label: 'Music', emoji: '🎵' },
+  technology: { label: 'Technology', emoji: '💻' },
+  food: { label: 'Food & Drink', emoji: '🍔' },
+  art: { label: 'Art & Literature', emoji: '📚' },
+  animals: { label: 'Animals', emoji: '🦁' },
 };
 
 const DAY_MS = 86400000;
@@ -84,6 +88,9 @@ export function buildDailyQuiz(bank: QuizBank, dateStr: string): DailyQuestion[]
     const q = candidate[idx];
     picked.push(q);
     usedCats.add(q.category);
+    // remove the picked question so it can never repeat within the daily set
+    const poolIdx = pool.indexOf(q);
+    if (poolIdx !== -1) pool.splice(poolIdx, 1);
   }
   return picked.map((q) => {
     // Re-shuffle options for the day so the correct position varies.

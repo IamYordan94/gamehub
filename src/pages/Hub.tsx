@@ -310,7 +310,7 @@ export default function Hub() {
             label="ORDERLE"
             sticker="sequence"
             stickerColor="#d9f24b"
-            description="Put six items in the correct order — one swap at a time. Then learn why the order matters."
+            description="Put a handful of items in the correct order — one swap at a time. Then learn why the order matters."
             tags={['daily', 'sequence', 'logic']}
             playTo="/orderle"
             aboutTo="/orderle/about"
@@ -340,7 +340,7 @@ export default function Hub() {
             label="Quiz Master"
             sticker="trivia"
             stickerColor="#ffc93c"
-            description="Ten questions a day across seven categories. One shared score — bragging rights included."
+            description="Ten questions a day across eleven categories. One shared score — bragging rights included."
             tags={['daily', 'trivia', 'quiz']}
             playTo="/quiz"
             aboutTo="/quiz/about"
