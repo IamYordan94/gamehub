@@ -28,12 +28,13 @@ export default function Privacy() {
 
       <main className="max-w-[680px] mx-auto px-5 py-10" style={{ color: 'var(--hub-text)' }}>
         <p className="text-xs font-semibold mb-8" style={{ color: 'var(--hub-text-muted)' }}>
-          Last updated: March 2026
+          Last updated: August 2026
         </p>
 
         <Section title="Overview">
-          WordCraft Hub is a free collection of word games. We have designed this site with your privacy as a priority.
-          We do not run ads, we do not sell data, and we do not track you.
+          WordCraft Hub is a free collection of daily word and trivia games. We have designed this site with your
+          privacy as a priority. We do not sell your data and we do not build profiles on you. The site is free to
+          play and may be supported by advertising — see the Advertising section below.
         </Section>
 
         <Section title="What data do we collect?">
@@ -52,13 +53,20 @@ export default function Privacy() {
         </Section>
 
         <Section title="Third-party services">
-          We do not embed any third-party analytics, advertising networks, social media trackers, or data brokers.
-          The only external resource loaded by this site is the{' '}
+          We use <a href="https://vercel.com/analytics" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>Vercel Analytics</a>{' '}
+          to count visits in aggregate. It is cookieless and does not identify individual visitors.
+          We also load the{' '}
           <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>Google Fonts</a>{' '}
           CSS stylesheet (for the Inter and JetBrains Mono typefaces). Google Fonts may log your IP address and
           browser type as part of serving the font files, subject to{' '}
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>Google's privacy policy</a>.
-          No other external services are contacted.
+        </Section>
+
+        <Section title="Advertising">
+          The site is free to play and is supported by advertising. Ads may be served by a third-party ad network
+          (for example Monetag or Google AdSense). These providers may use cookies or similar technologies to serve
+          and measure ads, subject to their own privacy policies. Your game progress and scores are stored only on
+          your device and are never shared with advertisers.
         </Section>
 
         <Section title="Children">

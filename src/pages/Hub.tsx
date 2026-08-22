@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import AdSlot from '../components/AdSlot';
 
 type GameCardProps = {
   delay?: number;
@@ -205,7 +206,7 @@ export default function Hub() {
             fontFamily: "'JetBrains Mono', monospace",
             textTransform: 'uppercase',
           }}>
-            5 games
+            6 games
           </span>
         </div>
         <p
@@ -230,8 +231,8 @@ export default function Hub() {
         fontFamily: "'JetBrains Mono', monospace",
       }}>
         <span style={{ display: 'inline-block', animation: 'marquee 22s linear infinite' }}>
-          five daily games · new puzzles every day · no ads · no tracking · just brains &nbsp;&nbsp;&nbsp;
-          five daily games · new puzzles every day · no ads · no tracking · just brains &nbsp;&nbsp;&nbsp;
+          six daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
+          six daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
         </span>
       </div>
 
@@ -330,28 +331,29 @@ export default function Hub() {
             aboutTo="/fermi/about"
           />
 
-          {/* Mystery card — game 6 teaser */}
+          {/* Game 6: Quiz Master */}
           <GameCard
             delay={0.30}
-            accentColor="#b9b3a6"
-            accentSide="#7a7568"
-            textColor="#9a9488"
-            label="???"
-            sticker="soon"
-            stickerColor="#b9b3a6"
-            description="More games incoming. When the universe allows it."
-            tags={['mystery', 'soon']}
-            playTo="/coming-soon"
-            aboutTo="/coming-soon"
-            disabled
+            accentColor="#8B5CF6"
+            accentSide="#5B3FA8"
+            textColor="#6D4BD8"
+            label="Quiz Master"
+            sticker="trivia"
+            stickerColor="#ffc93c"
+            description="Ten questions a day across seven categories. One shared score — bragging rights included."
+            tags={['daily', 'trivia', 'quiz']}
+            playTo="/quiz"
+            aboutTo="/quiz/about"
           />
 
         </div>
 
+        <AdSlot slot="hub-grid-footer" minHeight={120} />
+
         {/* Footer */}
         <footer className="mt-10 pt-6 flex flex-col items-center gap-2" style={{ borderTop: '2px solid var(--hub-ink)', opacity: 0.3 }}>
           <p className="text-[11px] font-bold m-0" style={{ color: 'var(--hub-ink-soft)', letterSpacing: '0.04em' }}>
-            All games are free — no ads, no tracking.
+            All games are free to play.
           </p>
           <div className="flex items-center gap-4">
             <Link to="/privacy"

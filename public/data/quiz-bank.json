@@ -1,0 +1,5654 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "general",
+      "label": "General",
+      "emoji": "🌍"
+    },
+    {
+      "id": "sports",
+      "label": "Sports",
+      "emoji": "⚽"
+    },
+    {
+      "id": "movies",
+      "label": "Movies & TV",
+      "emoji": "🎬"
+    },
+    {
+      "id": "geography",
+      "label": "Geography",
+      "emoji": "🗺️"
+    },
+    {
+      "id": "science",
+      "label": "Science & Nature",
+      "emoji": "🔬"
+    },
+    {
+      "id": "history",
+      "label": "History",
+      "emoji": "🏛️"
+    },
+    {
+      "id": "music",
+      "label": "Music",
+      "emoji": "🎵"
+    }
+  ],
+  "questions": [
+    {
+      "id": "gen-001",
+      "question": "What is the capital city of France?",
+      "options": [
+        "London",
+        "Rome",
+        "Paris",
+        "Madrid"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-002",
+      "difficulty": 1,
+      "question": "How many minutes are there in one hour?",
+      "options": [
+        "60",
+        "30",
+        "90",
+        "45"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-003",
+      "question": "What is the largest ocean on Earth?",
+      "options": [
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Pacific Ocean",
+        "Arctic Ocean"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-004",
+      "difficulty": 1,
+      "question": "What do honeybees make?",
+      "options": [
+        "Honey",
+        "Milk",
+        "Bread",
+        "Cheese"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-005",
+      "question": "Which animal is the fastest land animal?",
+      "options": [
+        "Cheetah",
+        "Lion",
+        "Horse",
+        "Leopard"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-006",
+      "difficulty": 1,
+      "question": "Which of these is a fruit?",
+      "options": [
+        "Strawberry",
+        "Potato",
+        "Onion",
+        "Carrot"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-007",
+      "question": "What is the capital city of Japan?",
+      "options": [
+        "Beijing",
+        "Seoul",
+        "Bangkok",
+        "Tokyo"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-008",
+      "difficulty": 1,
+      "question": "What color do you get when you mix blue and yellow paint?",
+      "options": [
+        "Green",
+        "Purple",
+        "Orange",
+        "Brown"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-009",
+      "question": "What color do you get by mixing blue and yellow paint?",
+      "options": [
+        "Purple",
+        "Green",
+        "Orange",
+        "Brown"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-010",
+      "question": "How many minutes are in one hour?",
+      "options": [
+        "90",
+        "30",
+        "100",
+        "60"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-011",
+      "question": "What shape has exactly three sides?",
+      "options": [
+        "Square",
+        "Triangle",
+        "Circle",
+        "Rectangle"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-012",
+      "question": "How many days are in a leap year?",
+      "options": [
+        "366",
+        "365",
+        "360",
+        "367"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-013",
+      "question": "How many months are in a year?",
+      "options": [
+        "11",
+        "10",
+        "13",
+        "12"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-014",
+      "question": "What is the opposite direction of north?",
+      "options": [
+        "East",
+        "South",
+        "West",
+        "Northeast"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-015",
+      "question": "Which gas do humans need to breathe to survive?",
+      "options": [
+        "Carbon dioxide",
+        "Nitrogen",
+        "Oxygen",
+        "Helium"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-016",
+      "question": "What do honey bees produce?",
+      "options": [
+        "Milk",
+        "Honey",
+        "Sugar",
+        "Nectar"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-017",
+      "question": "How many planets are in our solar system?",
+      "options": [
+        "7",
+        "9",
+        "10",
+        "8"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-018",
+      "question": "What is 5 multiplied by 7?",
+      "options": [
+        "40",
+        "35",
+        "30",
+        "42"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-019",
+      "question": "What is the capital city of Italy?",
+      "options": [
+        "Milan",
+        "Venice",
+        "Rome",
+        "Naples"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-020",
+      "question": "At what temperature does water boil in degrees Celsius?",
+      "options": [
+        "100",
+        "50",
+        "90",
+        "120"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-021",
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Jane Austen",
+        "Mark Twain"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-022",
+      "question": "What is the largest continent by area?",
+      "options": [
+        "Africa",
+        "North America",
+        "Asia",
+        "Europe"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-023",
+      "question": "Which country is home to the Great Barrier Reef?",
+      "options": [
+        "Brazil",
+        "Indonesia",
+        "Mexico",
+        "Australia"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-024",
+      "question": "What is the highest mountain in the world?",
+      "options": [
+        "K2",
+        "Mount Kilimanjaro",
+        "Mount Everest",
+        "Mount Fuji"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-025",
+      "difficulty": 2,
+      "question": "Which animal is traditionally called the 'king of the jungle'?",
+      "options": [
+        "Lion",
+        "Tiger",
+        "Elephant",
+        "Bear"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-026",
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Raphael",
+        "Vincent van Gogh"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-027",
+      "question": "What is the smallest country in the world by area?",
+      "options": [
+        "Vatican City",
+        "Monaco",
+        "San Marino",
+        "Malta"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-028",
+      "difficulty": 2,
+      "question": "Which country is considered the birthplace of pizza?",
+      "options": [
+        "Italy",
+        "France",
+        "Greece",
+        "Spain"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-029",
+      "difficulty": 2,
+      "question": "Which instrument is used to measure temperature?",
+      "options": [
+        "Thermometer",
+        "Barometer",
+        "Speedometer",
+        "Odometer"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-030",
+      "question": "In which country was paper invented?",
+      "options": [
+        "China",
+        "Egypt",
+        "Greece",
+        "India"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-031",
+      "question": "What is the largest hot desert on Earth?",
+      "options": [
+        "Gobi Desert",
+        "Arabian Desert",
+        "Sahara Desert",
+        "Kalahari Desert"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-032",
+      "question": "Who developed the theory of general relativity?",
+      "options": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Galileo Galilei",
+        "Niels Bohr"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-033",
+      "question": "What is the capital city of Canada?",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Ottawa"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-034",
+      "question": "Which musical instrument has 88 keys?",
+      "options": [
+        "Harp",
+        "Accordion",
+        "Piano",
+        "Organ"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-035",
+      "question": "What is the longest bone in the human body?",
+      "options": [
+        "Femur",
+        "Tibia",
+        "Humerus",
+        "Radius"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-036",
+      "question": "In which year did World War II end?",
+      "options": [
+        "1945",
+        "1918",
+        "1939",
+        "1950"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-037",
+      "difficulty": 2,
+      "question": "In a web address, what does 'www' stand for?",
+      "options": [
+        "World Wide Web",
+        "World Weather Watch",
+        "Wide Web World",
+        "Web World Wide"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-038",
+      "question": "Which gas makes up most of Earth's atmosphere?",
+      "options": [
+        "Argon",
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-039",
+      "question": "Who wrote the novel '1984'?",
+      "options": [
+        "George Orwell",
+        "F. Scott Fitzgerald",
+        "Aldous Huxley",
+        "Ray Bradbury"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-040",
+      "question": "What is the hardest natural substance?",
+      "options": [
+        "Quartz",
+        "Diamond",
+        "Granite",
+        "Steel"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-041",
+      "question": "What is the capital city of Australia?",
+      "options": [
+        "Sydney",
+        "Canberra",
+        "Melbourne",
+        "Perth"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is not Sydney or Melbourne.",
+      "category": "general"
+    },
+    {
+      "id": "gen-042",
+      "difficulty": 3,
+      "question": "Which fictional detective lived at 221B Baker Street?",
+      "options": [
+        "Sherlock Holmes",
+        "Hercule Poirot",
+        "Miss Marple",
+        "James Bond"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-043",
+      "difficulty": 3,
+      "question": "What is the rarest blood type?",
+      "options": [
+        "AB negative",
+        "O negative",
+        "A positive",
+        "B positive"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-044",
+      "difficulty": 3,
+      "question": "What is the fear of spiders called?",
+      "options": [
+        "Arachnophobia",
+        "Claustrophobia",
+        "Acrophobia",
+        "Agoraphobia"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-045",
+      "question": "What is the largest planet in our solar system?",
+      "options": [
+        "Saturn",
+        "Neptune",
+        "Uranus",
+        "Jupiter"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "Named after the king of the Roman gods.",
+      "category": "general"
+    },
+    {
+      "id": "gen-046",
+      "question": "What is the smallest planet in our solar system?",
+      "options": [
+        "Venus",
+        "Mercury",
+        "Mars",
+        "Pluto"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is the planet closest to the Sun.",
+      "category": "general"
+    },
+    {
+      "id": "gen-047",
+      "question": "Who composed 'The Four Seasons'?",
+      "options": [
+        "Johann Sebastian Bach",
+        "Antonio Vivaldi",
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "An Italian Baroque composer and violinist.",
+      "category": "general"
+    },
+    {
+      "id": "gen-048",
+      "difficulty": 3,
+      "question": "What color is a polar bear's skin?",
+      "options": [
+        "Black",
+        "White",
+        "Pink",
+        "Grey"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-049",
+      "question": "What is the capital city of Switzerland?",
+      "options": [
+        "Geneva",
+        "Zurich",
+        "Basel",
+        "Bern"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "It is not the largest city in the country.",
+      "category": "general"
+    },
+    {
+      "id": "gen-050",
+      "difficulty": 3,
+      "question": "Which company created the first iPhone?",
+      "options": [
+        "Apple",
+        "Samsung",
+        "Nokia",
+        "Microsoft"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-051",
+      "question": "What is the deepest known point in Earth's oceans?",
+      "options": [
+        "Java Trench",
+        "Puerto Rico Trench",
+        "Mariana Trench",
+        "Tonga Trench"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It is located in the western Pacific Ocean.",
+      "category": "general"
+    },
+    {
+      "id": "gen-052",
+      "question": "Who painted 'The Starry Night'?",
+      "options": [
+        "Vincent van Gogh",
+        "Salvador Dali",
+        "Claude Monet",
+        "Pablo Picasso"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A Dutch post-impressionist painter.",
+      "category": "general"
+    },
+    {
+      "id": "gen-053",
+      "difficulty": 3,
+      "question": "Which language has the most native speakers in the world?",
+      "options": [
+        "Mandarin Chinese",
+        "English",
+        "Spanish",
+        "Hindi"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-054",
+      "difficulty": 3,
+      "question": "Which Dutch painter famously cut off part of his ear?",
+      "options": [
+        "Vincent van Gogh",
+        "Rembrandt",
+        "Pablo Picasso",
+        "Claude Monet"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-055",
+      "question": "Who is credited with inventing the telephone?",
+      "options": [
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Guglielmo Marconi",
+        "Alexander Graham Bell"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "He patented it in 1876.",
+      "category": "general"
+    },
+    {
+      "id": "gen-056",
+      "question": "In Greek mythology, who is the king of the gods?",
+      "options": [
+        "Hades",
+        "Zeus",
+        "Poseidon",
+        "Apollo"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "His Roman equivalent is Jupiter.",
+      "category": "general"
+    },
+    {
+      "id": "gen-057",
+      "difficulty": 3,
+      "question": "What is the fear of small enclosed spaces called?",
+      "options": [
+        "Claustrophobia",
+        "Arachnophobia",
+        "Acrophobia",
+        "Agoraphobia"
+      ],
+      "answer": 0,
+      "category": "general"
+    },
+    {
+      "id": "gen-058",
+      "question": "Who wrote 'The Odyssey'?",
+      "options": [
+        "Plato",
+        "Homer",
+        "Sophocles",
+        "Virgil"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "An ancient Greek poet, traditionally said to be blind.",
+      "category": "general"
+    },
+    {
+      "id": "gen-059",
+      "question": "What is the capital city of Egypt?",
+      "options": [
+        "Luxor",
+        "Alexandria",
+        "Giza",
+        "Cairo"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "It lies on the banks of the Nile.",
+      "category": "general"
+    },
+    {
+      "id": "gen-060",
+      "question": "Which ancient structure has the head of a human and the body of a lion?",
+      "options": [
+        "The Great Sphinx of Giza",
+        "The Colossus of Rhodes",
+        "The Statue of Zeus",
+        "The Lighthouse of Alexandria"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It stands on the Giza Plateau.",
+      "category": "general"
+    },
+    {
+      "id": "spo-001",
+      "question": "Which country has won the FIFA World Cup the most times?",
+      "options": [
+        "Argentina",
+        "Italy",
+        "Brazil",
+        "Germany"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "The famous yellow-and-green team.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-002",
+      "question": "In which sport is a 'slam dunk' performed?",
+      "options": [
+        "Basketball",
+        "Soccer",
+        "Tennis",
+        "Golf"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "A high-scoring basketball move.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-003",
+      "question": "Which city hosted the first modern Olympic Games in 1896?",
+      "options": [
+        "London",
+        "Athens",
+        "Rome",
+        "Paris"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "The capital of Greece.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-004",
+      "question": "What was boxer Muhammad Ali's name at birth?",
+      "options": [
+        "George Foreman",
+        "Mike Tyson",
+        "Joe Frazier",
+        "Cassius Clay"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "He changed his name after joining the Nation of Islam.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-005",
+      "question": "How many players from one soccer (football) team are on the field at a time?",
+      "options": [
+        "12",
+        "9",
+        "11",
+        "10"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "Eleven is the classic number.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-006",
+      "question": "Which sport did Michael Jordan play professionally?",
+      "options": [
+        "American football",
+        "Basketball",
+        "Ice hockey",
+        "Baseball"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "He wore number 23 for the Chicago Bulls.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-007",
+      "question": "Which country is the birthplace of the Olympic Games?",
+      "options": [
+        "Turkey",
+        "Egypt",
+        "Italy",
+        "Greece"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "Ancient Olympia is there.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-008",
+      "question": "The Wimbledon tennis tournament is played on which surface?",
+      "options": [
+        "Hard court",
+        "Grass",
+        "Clay",
+        "Carpet"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "Wimbledon is famous for its green surface.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-009",
+      "question": "How many points is a touchdown worth in American football?",
+      "options": [
+        "3",
+        "7",
+        "4",
+        "6"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "Six points, plus the extra point kick.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-010",
+      "question": "Which country has won the most Olympic gold medals in history?",
+      "options": [
+        "Germany",
+        "United States",
+        "China",
+        "Russia"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "The Stars and Stripes lead the all-time table.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-011",
+      "question": "Which of these countries has NEVER won the FIFA World Cup?",
+      "options": [
+        "Brazil",
+        "Argentina",
+        "Netherlands",
+        "England"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "They were runners-up three times but never champions.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-012",
+      "question": "The Stanley Cup is awarded in which sport?",
+      "options": [
+        "Ice hockey",
+        "Soccer",
+        "Baseball",
+        "Basketball"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "It's played on ice.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-013",
+      "question": "Which swimmer has won the most Olympic gold medals of any Olympian?",
+      "options": [
+        "Michael Phelps",
+        "Ian Thorpe",
+        "Mark Spitz",
+        "Ryan Lochte"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "He won 23 gold medals, almost all in the pool.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-014",
+      "question": "In golf, what is a score of one under par called?",
+      "options": [
+        "Albatross",
+        "Birdie",
+        "Bogey",
+        "Eagle"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "One stroke under par.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-015",
+      "question": "The Boston Celtics and Los Angeles Lakers play which sport?",
+      "options": [
+        "Baseball",
+        "Ice hockey",
+        "Basketball",
+        "Soccer"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "The NBA.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-016",
+      "question": "The French Open tennis tournament is played on which surface?",
+      "options": [
+        "Clay",
+        "Grass",
+        "Carpet",
+        "Hard court"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "Red clay at Roland Garros.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-017",
+      "question": "The New York Yankees and Boston Red Sox play which sport?",
+      "options": [
+        "American football",
+        "Baseball",
+        "Ice hockey",
+        "Basketball"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "America's pastime.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-018",
+      "question": "Sumo wrestling is the national sport of which country?",
+      "options": [
+        "South Korea",
+        "Japan",
+        "China",
+        "Thailand"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "The land of the rising sun.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-019",
+      "question": "How many rings are on the Olympic flag?",
+      "options": [
+        "5",
+        "7",
+        "6",
+        "4"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "Five coloured interlocking rings.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-020",
+      "question": "Which of these is a seven-time Formula 1 World Champion?",
+      "options": [
+        "Tiger Woods",
+        "Cristiano Ronaldo",
+        "Usain Bolt",
+        "Lewis Hamilton"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "A British seven-time champion.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-021",
+      "question": "Which country won the FIFA World Cup in 2022?",
+      "options": [
+        "France",
+        "Germany",
+        "Argentina",
+        "Brazil"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The final was Argentina vs France.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-022",
+      "question": "Which city hosted the 2008 Summer Olympics?",
+      "options": [
+        "Sydney",
+        "Beijing",
+        "Rio de Janeiro",
+        "London"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "The Bird's Nest stadium.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-023",
+      "question": "How many tennis Grand Slam tournaments are played each year?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Australian, French, Wimbledon, US.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-024",
+      "question": "In Formula 1, which team has won the most Constructors' Championships?",
+      "options": [
+        "McLaren",
+        "Ferrari",
+        "Mercedes",
+        "Red Bull"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "The famous Italian team in red.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-025",
+      "question": "Which heavyweight boxer was known as 'Iron Mike'?",
+      "options": [
+        "Evander Holyfield",
+        "George Foreman",
+        "Joe Frazier",
+        "Mike Tyson"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "A feared knockout artist of the 1980s.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-026",
+      "question": "Which country won the first-ever FIFA World Cup in 1930?",
+      "options": [
+        "Argentina",
+        "Uruguay",
+        "Brazil",
+        "Italy"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "The first tournament was held in Montevideo.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-027",
+      "question": "The floor exercise and pommel horse are events in which Olympic sport?",
+      "options": [
+        "Gymnastics",
+        "Diving",
+        "Athletics",
+        "Swimming"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "Bars, beams, and vaults.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-028",
+      "question": "The Super Bowl is the championship game of which league?",
+      "options": [
+        "MLB",
+        "NFL",
+        "NBA",
+        "NHL"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "American football's big game.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-029",
+      "question": "Which tennis player holds the men's record for the most Grand Slam singles titles?",
+      "options": [
+        "Novak Djokovic",
+        "Rafael Nadal",
+        "Roger Federer",
+        "Pete Sampras"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "The Serbian record-holder.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-030",
+      "question": "Which city hosted the 2012 Summer Olympics?",
+      "options": [
+        "Athens",
+        "Beijing",
+        "Paris",
+        "London"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "The Queen's city hosted the Games.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-031",
+      "question": "In cricket, how many runs does a batter score for hitting a 'six'?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The ball clears the boundary.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-032",
+      "question": "Which country won the FIFA Women's World Cup in 2019?",
+      "options": [
+        "Netherlands",
+        "United States",
+        "Sweden",
+        "Germany"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "The defending champions retained the title.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-033",
+      "question": "Which basketball player is nicknamed 'The King' and plays for the Los Angeles Lakers?",
+      "options": [
+        "Kobe Bryant",
+        "Stephen Curry",
+        "Michael Jordan",
+        "LeBron James"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "He also wears number 23.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-034",
+      "question": "The 100 metres, marathon, and shot put are all events in which Olympic sport?",
+      "options": [
+        "Cycling",
+        "Athletics",
+        "Swimming",
+        "Gymnastics"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Track and field.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-035",
+      "question": "Which tennis Grand Slam is played at Flushing Meadows in New York?",
+      "options": [
+        "Australian Open",
+        "French Open",
+        "Wimbledon",
+        "US Open"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "The hard-court major in Queens.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-036",
+      "question": "Which sprinter holds the men's 100 metres world record at 9.58 seconds?",
+      "options": [
+        "Michael Johnson",
+        "Jesse Owens",
+        "Usain Bolt",
+        "Carl Lewis"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The Jamaican sprinter.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-037",
+      "question": "Which country's national rugby team are known as the 'All Blacks'?",
+      "options": [
+        "South Africa",
+        "Australia",
+        "England",
+        "New Zealand"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "The haka-performing team.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-038",
+      "question": "The Tour de France is a famous event in which sport?",
+      "options": [
+        "Running",
+        "Skiing",
+        "Swimming",
+        "Cycling"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "A three-week race through France.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-039",
+      "question": "Which boxer was famously nicknamed 'The Greatest'?",
+      "options": [
+        "Rocky Marciano",
+        "Mike Tyson",
+        "Muhammad Ali",
+        "Sugar Ray Robinson"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The self-proclaimed greatest of all time.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-040",
+      "question": "The International Olympic Committee (IOC) is headquartered in which city?",
+      "options": [
+        "Lausanne",
+        "Paris",
+        "Athens",
+        "Geneva"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "On the shores of Lake Geneva in Switzerland.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-041",
+      "question": "Which country hosted the 1998 FIFA World Cup?",
+      "options": [
+        "France",
+        "Germany",
+        "Brazil",
+        "Italy"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The tournament starred Zinedine Zidane.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-042",
+      "question": "Which tennis player won the 'Golden Slam' in 1988 (all four majors plus Olympic gold)?",
+      "options": [
+        "Chris Evert",
+        "Martina Navratilova",
+        "Serena Williams",
+        "Steffi Graf"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "A German tennis legend.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-043",
+      "question": "Which Formula 1 driver died in a crash at the Imola circuit in 1994?",
+      "options": [
+        "Ayrton Senna",
+        "Niki Lauda",
+        "Gilles Villeneuve",
+        "Alain Prost"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The Brazilian three-time world champion.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-044",
+      "question": "Which basketball team won eight consecutive NBA championships from 1959 to 1966?",
+      "options": [
+        "Boston Celtics",
+        "Los Angeles Lakers",
+        "Golden State Warriors",
+        "Chicago Bulls"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The legendary Bill Russell's team.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-045",
+      "question": "In which year was the first Rugby World Cup held?",
+      "options": [
+        "1991",
+        "1983",
+        "1987",
+        "1995"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "The tournament was co-hosted by New Zealand.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-046",
+      "question": "Which swimmer won seven gold medals at the 1972 Munich Olympics?",
+      "options": [
+        "Johnny Weissmuller",
+        "Michael Phelps",
+        "Mark Spitz",
+        "Ian Thorpe"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Seven golds, all in world-record times.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-047",
+      "question": "Which country won the FIFA World Cup in 1966?",
+      "options": [
+        "England",
+        "Portugal",
+        "France",
+        "West Germany"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The '66 final was at Wembley.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-048",
+      "question": "Which boxer was the first to defeat Muhammad Ali in a professional bout?",
+      "options": [
+        "Ken Norton",
+        "Sonny Liston",
+        "George Foreman",
+        "Joe Frazier"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "The 'Fight of the Century' winner.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-049",
+      "question": "Which tennis Grand Slam is played at Melbourne Park?",
+      "options": [
+        "Australian Open",
+        "US Open",
+        "Wimbledon",
+        "French Open"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The first Grand Slam of the calendar year.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-050",
+      "question": "With which Formula 1 team did Michael Schumacher win five consecutive titles (2000-2004)?",
+      "options": [
+        "Williams",
+        "Mercedes",
+        "Ferrari",
+        "McLaren"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "The Italian 'Prancing Horse' team.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-051",
+      "question": "In which country was the sport of basketball invented?",
+      "options": [
+        "United States",
+        "England",
+        "France",
+        "Canada"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "Invented by James Naismith.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-052",
+      "question": "Which country's capital is the only city to have hosted both a Summer and a Winter Olympics?",
+      "options": [
+        "France",
+        "China",
+        "United States",
+        "Japan"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "The 'Bird's Nest' and 'Ice Ribbon' city.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-053",
+      "question": "Which London cricket ground is known as 'The Home of Cricket'?",
+      "options": [
+        "The Oval",
+        "Lord's",
+        "Wankhede",
+        "Eden Gardens"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "In St John's Wood, London.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-054",
+      "question": "Which gymnast scored the first perfect 10 in Olympic history at Montreal 1976?",
+      "options": [
+        "Olga Korbut",
+        "Simone Biles",
+        "Nadia Comaneci",
+        "Mary Lou Retton"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "The Romanian sensation.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-055",
+      "question": "Which country won its third FIFA World Cup in 1970, keeping the Jules Rimet trophy permanently?",
+      "options": [
+        "Brazil",
+        "Italy",
+        "Argentina",
+        "West Germany"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The 'beautiful game' masters in yellow.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-056",
+      "question": "Which tennis player has won the most Wimbledon men's singles titles (eight)?",
+      "options": [
+        "Pete Sampras",
+        "Roger Federer",
+        "Novak Djokovic",
+        "Bjorn Borg"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "The Swiss maestro.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-057",
+      "question": "Michael Jordan played most of his NBA career for which city's team?",
+      "options": [
+        "New York",
+        "Los Angeles",
+        "Miami",
+        "Chicago"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "The Windy City's team.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-058",
+      "question": "Which team won the first Cricket World Cup in 1975?",
+      "options": [
+        "England",
+        "India",
+        "West Indies",
+        "Australia"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "The Caribbean cricket powerhouse.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-059",
+      "question": "Cassius Clay (later Muhammad Ali) won an Olympic gold medal in which sport at Rome 1960?",
+      "options": [
+        "Weightlifting",
+        "Boxing",
+        "Judo",
+        "Wrestling"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "He won gold as a light heavyweight.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-060",
+      "question": "Which Formula 1 circuit in Italy is known as 'The Temple of Speed'?",
+      "options": [
+        "Monza",
+        "Monaco",
+        "Spa-Francorchamps",
+        "Silverstone"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "Home of the Italian Grand Prix.",
+      "category": "sports"
+    },
+    {
+      "id": "mov-001",
+      "question": "Who played the title character Forrest Gump in the 1994 film?",
+      "options": [
+        "Robin Williams",
+        "John Travolta",
+        "Kevin Costner",
+        "Tom Hanks"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-002",
+      "question": "Which film features the famous line \"Here's looking at you, kid\"?",
+      "options": [
+        "Citizen Kane",
+        "The Maltese Falcon",
+        "Casablanca",
+        "Gone with the Wind"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-003",
+      "question": "Who directed Jaws, E.T. the Extra-Terrestrial, and Jurassic Park?",
+      "options": [
+        "George Lucas",
+        "Steven Spielberg",
+        "Ridley Scott",
+        "James Cameron"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-004",
+      "question": "Which actor played the superhero Iron Man in the Marvel films?",
+      "options": [
+        "Chris Hemsworth",
+        "Mark Ruffalo",
+        "Chris Evans",
+        "Robert Downey Jr."
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-005",
+      "question": "\"May the Force be with you\" is a famous line from which movie saga?",
+      "options": [
+        "Avatar",
+        "Star Wars",
+        "Star Trek",
+        "The Matrix"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-006",
+      "question": "Who played Jack Dawson in Titanic (1997)?",
+      "options": [
+        "Leonardo DiCaprio",
+        "Matt Damon",
+        "Johnny Depp",
+        "Brad Pitt"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-007",
+      "question": "Which 1985 film features time-traveling teenager Marty McFly?",
+      "options": [
+        "Bill & Ted's Excellent Adventure",
+        "Peggy Sue Got Married",
+        "The Terminator",
+        "Back to the Future"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-008",
+      "question": "Which actor delivered the line \"I'll be back\" in The Terminator?",
+      "options": [
+        "Bruce Willis",
+        "Sylvester Stallone",
+        "Arnold Schwarzenegger",
+        "Jean-Claude Van Damme"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-009",
+      "question": "Who directed Titanic (1997) and Avatar (2009)?",
+      "options": [
+        "Ridley Scott",
+        "Peter Jackson",
+        "Christopher Nolan",
+        "James Cameron"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-010",
+      "question": "Which animated Disney film tells the story of a lion cub named Simba?",
+      "options": [
+        "The Lion King",
+        "Aladdin",
+        "The Jungle Book",
+        "Bambi"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-011",
+      "question": "Who played Harry Potter in the film series based on J.K. Rowling's books?",
+      "options": [
+        "Tom Felton",
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Elijah Wood"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-012",
+      "question": "In The Wizard of Oz, what color are Dorothy's famous slippers?",
+      "options": [
+        "Golden yellow",
+        "Sapphire blue",
+        "Emerald green",
+        "Ruby red"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-013",
+      "question": "Who played Gollum, who calls the ring \"my precious\", in The Lord of the Rings?",
+      "options": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Andy Serkis",
+        "Viggo Mortensen"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-014",
+      "question": "Which actor was the first to play James Bond in the official film series?",
+      "options": [
+        "George Lazenby",
+        "Sean Connery",
+        "Roger Moore",
+        "Pierce Brosnan"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-015",
+      "question": "Which 1975 film is about a great white shark terrorizing a beach town?",
+      "options": [
+        "Deep Blue Sea",
+        "Piranha",
+        "The Meg",
+        "Jaws"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-016",
+      "question": "Who played the Joker in The Dark Knight (2008)?",
+      "options": [
+        "Heath Ledger",
+        "Jared Leto",
+        "Jack Nicholson",
+        "Joaquin Phoenix"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-017",
+      "question": "\"To infinity and beyond!\" is the catchphrase of which animated character?",
+      "options": [
+        "Buzz Lightyear",
+        "Mike Wazowski",
+        "Woody",
+        "Shrek"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-018",
+      "question": "Who played the boxer Rocky Balboa in the Rocky film series?",
+      "options": [
+        "Dolph Lundgren",
+        "Bruce Willis",
+        "Arnold Schwarzenegger",
+        "Sylvester Stallone"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-019",
+      "question": "Who played Chandler Bing in the sitcom Friends?",
+      "options": [
+        "David Schwimmer",
+        "Matthew Perry",
+        "Matt LeBlanc",
+        "John Stamos"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-020",
+      "question": "Which TV series features chemistry teacher turned drug lord Walter White?",
+      "options": [
+        "Dexter",
+        "Weeds",
+        "Ozark",
+        "Breaking Bad"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-021",
+      "question": "Which director made The Godfather and Apocalypse Now?",
+      "options": [
+        "Francis Ford Coppola",
+        "Brian De Palma",
+        "Stanley Kubrick",
+        "Martin Scorsese"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-022",
+      "question": "In Casablanca, who plays Rick Blaine, the owner of Rick's Café?",
+      "options": [
+        "Humphrey Bogart",
+        "Clark Gable",
+        "James Stewart",
+        "Cary Grant"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-023",
+      "question": "Which actor played the unhinged writer Jack Torrance in The Shining?",
+      "options": [
+        "Robert De Niro",
+        "Dustin Hoffman",
+        "Jack Nicholson",
+        "Al Pacino"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-024",
+      "question": "Who wrote and directed Pulp Fiction (1994)?",
+      "options": [
+        "Guy Ritchie",
+        "Quentin Tarantino",
+        "Joel Coen",
+        "David Fincher"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-025",
+      "question": "Which Best Picture winner tells the story of the Corleone crime family?",
+      "options": [
+        "Casino",
+        "Goodfellas",
+        "The Godfather",
+        "Scarface"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-026",
+      "question": "\"You can't handle the truth!\" is shouted in which film?",
+      "options": [
+        "A Few Good Men",
+        "The Firm",
+        "Wall Street",
+        "Crimson Tide"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-027",
+      "question": "Who played the cannibalistic killer Hannibal Lecter in The Silence of the Lambs?",
+      "options": [
+        "Anthony Hopkins",
+        "Ralph Fiennes",
+        "Brian Cox",
+        "Gary Oldman"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-028",
+      "question": "Which actress played Scarlett O'Hara in Gone with the Wind (1939)?",
+      "options": [
+        "Vivien Leigh",
+        "Ingrid Bergman",
+        "Katharine Hepburn",
+        "Bette Davis"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-029",
+      "question": "Which Alfred Hitchcock film features Norman Bates and the Bates Motel?",
+      "options": [
+        "The Birds",
+        "Vertigo",
+        "Rear Window",
+        "Psycho"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-030",
+      "question": "Who directed The Shawshank Redemption (1994)?",
+      "options": [
+        "Frank Darabont",
+        "Ron Howard",
+        "Steven Spielberg",
+        "Clint Eastwood"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-031",
+      "question": "Which Best Picture winner stars Russell Crowe as Roman general Maximus?",
+      "options": [
+        "Gladiator",
+        "300",
+        "Spartacus",
+        "Troy"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-032",
+      "question": "Who played the drug lord Tony Montana in Scarface (1983)?",
+      "options": [
+        "Al Pacino",
+        "Ray Liotta",
+        "Joe Pesci",
+        "Robert De Niro"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-033",
+      "question": "Which film won Best Picture for 2010, telling the story of King George VI?",
+      "options": [
+        "Atonement",
+        "The Queen",
+        "The King's Speech",
+        "Darkest Hour"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-034",
+      "question": "Who directed Goodfellas, Taxi Driver, and Raging Bull?",
+      "options": [
+        "Brian De Palma",
+        "Martin Scorsese",
+        "Sidney Lumet",
+        "Francis Ford Coppola"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-035",
+      "question": "Who played mob boss Tony Soprano in the TV series The Sopranos?",
+      "options": [
+        "Joe Pantoliano",
+        "James Gandolfini",
+        "Ray Liotta",
+        "Frank Vincent"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-036",
+      "question": "Who played advertising executive Don Draper in Mad Men?",
+      "options": [
+        "Vincent Kartheiser",
+        "Jon Hamm",
+        "John Slattery",
+        "Bryan Cranston"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-037",
+      "question": "Who played Tyrion Lannister in Game of Thrones?",
+      "options": [
+        "Conleth Hill",
+        "Aidan Gillen",
+        "Peter Dinklage",
+        "Charles Dance"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-038",
+      "question": "Which actor played Michael Scott in the U.S. version of The Office?",
+      "options": [
+        "Ricky Gervais",
+        "Will Ferrell",
+        "Paul Rudd",
+        "Steve Carell"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-039",
+      "question": "Which TV series follows police and drug dealers in Baltimore, Maryland?",
+      "options": [
+        "The Shield",
+        "NYPD Blue",
+        "The Wire",
+        "Homicide: Life on the Street"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-040",
+      "question": "Who played the brilliant but abrasive Dr. Gregory House in the medical drama House?",
+      "options": [
+        "Hugh Laurie",
+        "Robert Sean Leonard",
+        "James Spader",
+        "Bryan Cranston"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-041",
+      "question": "Who played Atticus Finch in To Kill a Mockingbird (1962)?",
+      "options": [
+        "James Stewart",
+        "Henry Fonda",
+        "Spencer Tracy",
+        "Gregory Peck"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "A tall, dignified actor who won the Oscar for this role.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-042",
+      "question": "Which actor played Moses in The Ten Commandments (1956)?",
+      "options": [
+        "Burt Lancaster",
+        "Yul Brynner",
+        "Charlton Heston",
+        "Kirk Douglas"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "He also starred in Ben-Hur and Planet of the Apes.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-043",
+      "question": "Which film won the very first Academy Award for Best Picture?",
+      "options": [
+        "All Quiet on the Western Front",
+        "The Jazz Singer",
+        "Wings",
+        "Sunrise"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "A silent film about World War I fighter pilots.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-044",
+      "question": "Who directed Lawrence of Arabia (1962) and Doctor Zhivago (1965)?",
+      "options": [
+        "John Huston",
+        "David Lynch",
+        "David Lean",
+        "Fred Zinnemann"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "He also directed The Bridge on the River Kwai.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-045",
+      "question": "Which actress has won the most acting Oscars, with four wins?",
+      "options": [
+        "Bette Davis",
+        "Meryl Streep",
+        "Ingrid Bergman",
+        "Katharine Hepburn"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "Often paired on screen with Spencer Tracy.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-046",
+      "question": "Who played the jealous composer Antonio Salieri in Amadeus (1984)?",
+      "options": [
+        "F. Murray Abraham",
+        "Jeremy Irons",
+        "Daniel Day-Lewis",
+        "Tom Hulce"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "He won Best Actor, while Tom Hulce played Mozart.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-047",
+      "question": "Who played T.E. Lawrence in Lawrence of Arabia (1962)?",
+      "options": [
+        "Peter O'Toole",
+        "Anthony Quinn",
+        "Omar Sharif",
+        "Alec Guinness"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The same actor starred in The Lion in Winter.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-048",
+      "question": "Which film won Best Picture for 1984, about the rivalry between Mozart and Salieri?",
+      "options": [
+        "Places in the Heart",
+        "A Passage to India",
+        "Amadeus",
+        "The Killing Fields"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Directed by Miloš Forman.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-049",
+      "question": "Who played the ex-boxer Terry Malloy in On the Waterfront (1954)?",
+      "options": [
+        "Montgomery Clift",
+        "Paul Newman",
+        "James Dean",
+        "Marlon Brando"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "Contains the famous line \"I coulda been a contender.\"",
+      "category": "movies"
+    },
+    {
+      "id": "mov-050",
+      "question": "Which actress played the aging stage star Margo Channing in All About Eve (1950)?",
+      "options": [
+        "Katharine Hepburn",
+        "Barbara Stanwyck",
+        "Joan Crawford",
+        "Bette Davis"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "She famously said \"Fasten your seatbelts, it's going to be a bumpy night.\"",
+      "category": "movies"
+    },
+    {
+      "id": "mov-051",
+      "question": "Who directed The Apartment (1960) and Some Like It Hot (1959)?",
+      "options": [
+        "George Cukor",
+        "Frank Capra",
+        "Billy Wilder",
+        "William Wyler"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "He also directed Double Indemnity.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-052",
+      "question": "Which film won Best Picture for 1954, a story of corruption on the New York docks?",
+      "options": [
+        "From Here to Eternity",
+        "A Streetcar Named Desire",
+        "On the Waterfront",
+        "Marty"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It also won Best Actor for Marlon Brando.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-053",
+      "question": "Who played the title role in Gandhi (1982)?",
+      "options": [
+        "Anthony Hopkins",
+        "Ian Holm",
+        "Ben Kingsley",
+        "John Gielgud"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "The film won eight Academy Awards.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-054",
+      "question": "Which Best Picture winner stars Jack Nicholson as Randle McMurphy in a mental institution?",
+      "options": [
+        "Dog Day Afternoon",
+        "One Flew Over the Cuckoo's Nest",
+        "Midnight Express",
+        "The Deer Hunter"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Based on the novel by Ken Kesey.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-055",
+      "question": "Who played Colonel Nicholson in The Bridge on the River Kwai (1957)?",
+      "options": [
+        "James Mason",
+        "William Holden",
+        "Jack Hawkins",
+        "Alec Guinness"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "The actor later played Obi-Wan Kenobi in Star Wars.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-056",
+      "question": "Which film was the first sequel to win the Academy Award for Best Picture?",
+      "options": [
+        "The Godfather Part II",
+        "Star Wars: Episode V",
+        "Toy Story 2",
+        "Rocky II"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It won Best Picture in 1974.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-057",
+      "question": "Which film won Best Picture for 1979, a drama about a divorce and custody battle?",
+      "options": [
+        "The Verdict",
+        "Ordinary People",
+        "Kramer vs. Kramer",
+        "Terms of Endearment"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It stars Dustin Hoffman and Meryl Streep.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-058",
+      "question": "In Seinfeld, what is Kramer's rarely used first name?",
+      "options": [
+        "Cosmo",
+        "Sebastian",
+        "Cornelius",
+        "Reginald"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The character's full name is only used a few times on the show.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-059",
+      "question": "Who was the first actor to play the Doctor in Doctor Who (1963)?",
+      "options": [
+        "Patrick Troughton",
+        "William Hartnell",
+        "Tom Baker",
+        "Jon Pertwee"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "He played the First Doctor from 1963 to 1966.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-060",
+      "question": "Which actress played Peggy Olson in Mad Men?",
+      "options": [
+        "Kiernan Shipka",
+        "January Jones",
+        "Elisabeth Moss",
+        "Christina Hendricks"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Her character begins as a secretary at Sterling Cooper.",
+      "category": "movies"
+    },
+    {
+      "id": "geo-001",
+      "question": "What is the capital of France?",
+      "options": [
+        "Paris",
+        "London",
+        "Berlin",
+        "Madrid"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-002",
+      "question": "What is the largest ocean in the world?",
+      "options": [
+        "Atlantic Ocean",
+        "Pacific Ocean",
+        "Indian Ocean",
+        "Arctic Ocean"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-003",
+      "question": "What is the capital of Japan?",
+      "options": [
+        "Osaka",
+        "Kyoto",
+        "Tokyo",
+        "Hiroshima"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-004",
+      "question": "On which continent is the Sahara Desert located?",
+      "options": [
+        "Asia",
+        "Africa",
+        "Australia",
+        "South America"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-005",
+      "question": "What is the capital of Australia?",
+      "options": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Perth"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-006",
+      "question": "What is the capital of Canada?",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Ottawa"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-007",
+      "question": "What is the capital of Italy?",
+      "options": [
+        "Rome",
+        "Milan",
+        "Venice",
+        "Naples"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-008",
+      "question": "Which ocean lies between Africa and the Americas?",
+      "options": [
+        "Pacific Ocean",
+        "Indian Ocean",
+        "Atlantic Ocean",
+        "Arctic Ocean"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-009",
+      "question": "What is the capital of Egypt?",
+      "options": [
+        "Alexandria",
+        "Cairo",
+        "Luxor",
+        "Giza"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-010",
+      "question": "Which is the largest continent by area?",
+      "options": [
+        "Africa",
+        "North America",
+        "Europe",
+        "Asia"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-011",
+      "question": "What is the capital of Spain?",
+      "options": [
+        "Barcelona",
+        "Seville",
+        "Madrid",
+        "Valencia"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-012",
+      "question": "Mount Everest lies on the border between Nepal and which country?",
+      "options": [
+        "India",
+        "China",
+        "Bhutan",
+        "Pakistan"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-013",
+      "question": "What is the capital of Brazil?",
+      "options": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Brasília",
+        "Salvador"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-014",
+      "question": "Which country is known as the Land of the Rising Sun?",
+      "options": [
+        "China",
+        "South Korea",
+        "Thailand",
+        "Japan"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-015",
+      "question": "What is the capital of Russia?",
+      "options": [
+        "Moscow",
+        "Saint Petersburg",
+        "Novosibirsk",
+        "Kazan"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-016",
+      "question": "The Great Barrier Reef is located off the coast of which country?",
+      "options": [
+        "New Zealand",
+        "Australia",
+        "Indonesia",
+        "Philippines"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-017",
+      "question": "What is the capital of India?",
+      "options": [
+        "Mumbai",
+        "New Delhi",
+        "Kolkata",
+        "Bengaluru"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-018",
+      "question": "Which is the smallest continent by area?",
+      "options": [
+        "Europe",
+        "Antarctica",
+        "Australia",
+        "South America"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-019",
+      "question": "What is the capital of the United States?",
+      "options": [
+        "New York City",
+        "Washington, D.C.",
+        "Los Angeles",
+        "Chicago"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-020",
+      "question": "What is the capital of Germany?",
+      "options": [
+        "Munich",
+        "Hamburg",
+        "Frankfurt",
+        "Berlin"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-021",
+      "question": "Which river flows through the city of London?",
+      "options": [
+        "Seine",
+        "Thames",
+        "Danube",
+        "Rhine"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-022",
+      "question": "What is the currency of Japan?",
+      "options": [
+        "Won",
+        "Yen",
+        "Yuan",
+        "Baht"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-023",
+      "question": "What is the largest hot desert in the world?",
+      "options": [
+        "Gobi Desert",
+        "Sahara Desert",
+        "Kalahari Desert",
+        "Arabian Desert"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-024",
+      "question": "Which mountain range is traditionally considered the boundary between Europe and Asia?",
+      "options": [
+        "Alps",
+        "Caucasus",
+        "Ural Mountains",
+        "Carpathians"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-025",
+      "question": "What is the capital of Argentina?",
+      "options": [
+        "Santiago",
+        "Buenos Aires",
+        "Lima",
+        "Bogotá"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-026",
+      "question": "Which country's national flag features a red maple leaf?",
+      "options": [
+        "United States",
+        "Canada",
+        "Mexico",
+        "Australia"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-027",
+      "question": "What is the longest river in South America?",
+      "options": [
+        "Amazon River",
+        "Paraná River",
+        "Orinoco River",
+        "São Francisco River"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-028",
+      "question": "Which two countries share the world's longest international border?",
+      "options": [
+        "Russia and China",
+        "Canada and the United States",
+        "India and China",
+        "Argentina and Chile"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-029",
+      "question": "What is the currency of the United Kingdom?",
+      "options": [
+        "Euro",
+        "Dollar",
+        "Pound sterling",
+        "Franc"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-030",
+      "question": "Which country is completely surrounded by South Africa?",
+      "options": [
+        "Eswatini",
+        "Lesotho",
+        "Botswana",
+        "Zimbabwe"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-031",
+      "question": "What is the capital of Turkey?",
+      "options": [
+        "Istanbul",
+        "Ankara",
+        "Izmir",
+        "Antalya"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-032",
+      "question": "Which sea lies between Europe and Africa?",
+      "options": [
+        "Red Sea",
+        "Black Sea",
+        "Mediterranean Sea",
+        "Caspian Sea"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-033",
+      "question": "What is the largest lake in the world by surface area?",
+      "options": [
+        "Lake Superior",
+        "Lake Victoria",
+        "Caspian Sea",
+        "Lake Baikal"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-034",
+      "question": "Which African country was formerly known as Abyssinia?",
+      "options": [
+        "Kenya",
+        "Ethiopia",
+        "Sudan",
+        "Tanzania"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-035",
+      "question": "What is the currency of Switzerland?",
+      "options": [
+        "Euro",
+        "Swiss franc",
+        "Swiss pound",
+        "Krona"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-036",
+      "question": "Which country's national flag is a red circle on a white background?",
+      "options": [
+        "China",
+        "Japan",
+        "South Korea",
+        "Vietnam"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-037",
+      "question": "What is the capital of New Zealand?",
+      "options": [
+        "Auckland",
+        "Christchurch",
+        "Wellington",
+        "Hamilton"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-038",
+      "question": "The Andes mountain range runs through which continent?",
+      "options": [
+        "North America",
+        "Africa",
+        "South America",
+        "Asia"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-039",
+      "question": "The Pyramids of Giza are located in which country?",
+      "options": [
+        "Greece",
+        "Mexico",
+        "Egypt",
+        "Peru"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-040",
+      "question": "What is the capital of Norway?",
+      "options": [
+        "Stockholm",
+        "Oslo",
+        "Copenhagen",
+        "Helsinki"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-041",
+      "question": "What is the longest river in Europe?",
+      "options": [
+        "Danube",
+        "Volga",
+        "Rhine",
+        "Dnieper"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It flows into the Caspian Sea.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-042",
+      "question": "Which of these countries is landlocked?",
+      "options": [
+        "France",
+        "Italy",
+        "Austria",
+        "Spain"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It has no coastline.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-043",
+      "question": "What is the currency of Denmark?",
+      "options": [
+        "Danish krone",
+        "Danish euro",
+        "Danish franc",
+        "Danish pound"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "Its capital is Copenhagen.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-044",
+      "question": "What is the largest island in the world?",
+      "options": [
+        "Madagascar",
+        "Borneo",
+        "New Guinea",
+        "Greenland"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "An autonomous territory of Denmark.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-045",
+      "question": "What is the highest mountain in Africa?",
+      "options": [
+        "Mount Kenya",
+        "Mount Kilimanjaro",
+        "Mount Stanley",
+        "Ras Dashen"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Located in Tanzania.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-046",
+      "question": "Which strait separates Asia from North America?",
+      "options": [
+        "Strait of Gibraltar",
+        "Strait of Malacca",
+        "Bering Strait",
+        "Bosporus"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It links the Arctic and Pacific Oceans.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-047",
+      "question": "Lake Baikal, the world's deepest lake, is located in which country?",
+      "options": [
+        "Kazakhstan",
+        "Mongolia",
+        "China",
+        "Russia"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "Located in Siberia.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-048",
+      "question": "What is the capital of Uruguay?",
+      "options": [
+        "Montevideo",
+        "Asunción",
+        "La Paz",
+        "Quito"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A port on the Río de la Plata.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-049",
+      "question": "Which country's national flag is green with a yellow diamond and a blue circle?",
+      "options": [
+        "Colombia",
+        "Brazil",
+        "Argentina",
+        "Venezuela"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "The blue circle holds stars and a motto.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-050",
+      "question": "Which river forms part of the border between the United States and Mexico?",
+      "options": [
+        "Colorado River",
+        "Rio Grande",
+        "Mississippi River",
+        "Missouri River"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is called the Río Bravo in Mexico.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-051",
+      "question": "What is the currency of Poland?",
+      "options": [
+        "Polish euro",
+        "Polish koruna",
+        "Polish złoty",
+        "Polish lev"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Its symbol is zł.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-052",
+      "question": "The ancient city of Timbuktu is located in which country?",
+      "options": [
+        "Mali",
+        "Niger",
+        "Chad",
+        "Mauritania"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A historic trade hub in West Africa.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-053",
+      "question": "The Strait of Gibraltar separates which two countries?",
+      "options": [
+        "Spain and Morocco",
+        "Italy and Greece",
+        "Portugal and Spain",
+        "France and Italy"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It links the Mediterranean Sea and the Atlantic Ocean.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-054",
+      "question": "What is the capital of Finland?",
+      "options": [
+        "Oslo",
+        "Stockholm",
+        "Helsinki",
+        "Tallinn"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "A Baltic capital on the Gulf of Finland.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-055",
+      "question": "Which country's national flag is square and features a white cross on a red background?",
+      "options": [
+        "Denmark",
+        "Switzerland",
+        "Austria",
+        "Norway"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is one of only two square national flags.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-056",
+      "question": "What is the longest river in Asia?",
+      "options": [
+        "Yellow River",
+        "Yangtze River",
+        "Mekong River",
+        "Ganges River"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Also called the Chang Jiang.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-057",
+      "question": "What is the capital of Croatia?",
+      "options": [
+        "Belgrade",
+        "Zagreb",
+        "Ljubljana",
+        "Sarajevo"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It sits on the Sava River.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-058",
+      "question": "The Atacama Desert, one of the driest places on Earth, is in which country?",
+      "options": [
+        "Peru",
+        "Bolivia",
+        "Chile",
+        "Argentina"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "On South America's Pacific coast.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-059",
+      "question": "What is the currency of Thailand?",
+      "options": [
+        "Baht",
+        "Ringgit",
+        "Dong",
+        "Rupiah"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A Southeast Asian kingdom.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-060",
+      "question": "What is the capital of Lithuania?",
+      "options": [
+        "Riga",
+        "Tallinn",
+        "Vilnius",
+        "Warsaw"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "A Baltic state capital.",
+      "category": "geography"
+    },
+    {
+      "id": "sci-001",
+      "question": "What is the chemical formula for water?",
+      "options": [
+        "NaCl",
+        "CO2",
+        "O2",
+        "H2O"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "Two hydrogen atoms and one oxygen atom.",
+      "category": "science"
+    },
+    {
+      "id": "sci-002",
+      "question": "What is the chemical symbol for gold?",
+      "options": [
+        "Ag",
+        "Gd",
+        "Au",
+        "Go"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "From the Latin word 'aurum'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-003",
+      "question": "What is the chemical symbol for silver?",
+      "options": [
+        "Si",
+        "Au",
+        "Sv",
+        "Ag"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "From the Latin word 'argentum'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-004",
+      "question": "What is the approximate speed of light?",
+      "options": [
+        "3,000 km/s",
+        "30,000 km/s",
+        "300,000 km/s",
+        "3,000,000 km/s"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "Fast enough to circle Earth about 7.5 times in one second.",
+      "category": "science"
+    },
+    {
+      "id": "sci-005",
+      "question": "What is Earth's only natural satellite?",
+      "options": [
+        "The Sun",
+        "Mars",
+        "Venus",
+        "The Moon"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-006",
+      "question": "Which planet is closest to the Sun?",
+      "options": [
+        "Venus",
+        "Mars",
+        "Earth",
+        "Mercury"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-007",
+      "question": "What is the largest organ in the human body?",
+      "options": [
+        "Brain",
+        "Liver",
+        "Skin",
+        "Heart"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-008",
+      "question": "Which planet is known as the Red Planet?",
+      "options": [
+        "Jupiter",
+        "Saturn",
+        "Mars",
+        "Venus"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-009",
+      "question": "H2O is the chemical formula for which common substance?",
+      "options": [
+        "Water",
+        "Oxygen gas",
+        "Table salt",
+        "Carbon dioxide"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-010",
+      "question": "How many planets are there in our Solar System?",
+      "options": [
+        "9",
+        "10",
+        "8",
+        "7"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "Pluto was reclassified as a dwarf planet in 2006.",
+      "category": "science"
+    },
+    {
+      "id": "sci-011",
+      "question": "What is the chemical symbol for oxygen?",
+      "options": [
+        "Om",
+        "Ox",
+        "Og",
+        "O"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "A single letter.",
+      "category": "science"
+    },
+    {
+      "id": "sci-012",
+      "question": "Which gas do humans need to breathe in to survive?",
+      "options": [
+        "Hydrogen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Oxygen"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-013",
+      "question": "In which year did humans first walk on the Moon?",
+      "options": [
+        "1989",
+        "1959",
+        "1969",
+        "1979"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "The Apollo 11 mission.",
+      "category": "science"
+    },
+    {
+      "id": "sci-014",
+      "question": "What is the chemical symbol for iron?",
+      "options": [
+        "In",
+        "I",
+        "Ir",
+        "Fe"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "hint": "From the Latin word 'ferrum'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-015",
+      "question": "Which is the largest planet in our Solar System?",
+      "options": [
+        "Jupiter",
+        "Saturn",
+        "Earth",
+        "Neptune"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-016",
+      "question": "Which scientist developed the theory of relativity?",
+      "options": [
+        "Galileo Galilei",
+        "Albert Einstein",
+        "Charles Darwin",
+        "Isaac Newton"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-017",
+      "question": "Which scientist formulated the laws of motion and universal gravitation?",
+      "options": [
+        "Albert Einstein",
+        "Marie Curie",
+        "Charles Darwin",
+        "Isaac Newton"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-018",
+      "question": "Which scientist proposed the theory of evolution by natural selection?",
+      "options": [
+        "Isaac Newton",
+        "Louis Pasteur",
+        "Charles Darwin",
+        "Albert Einstein"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-019",
+      "question": "Which scientist pioneered research on radioactivity and discovered radium?",
+      "options": [
+        "Jane Goodall",
+        "Ada Lovelace",
+        "Rosalind Franklin",
+        "Marie Curie"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-020",
+      "question": "How many legs does a spider have?",
+      "options": [
+        "8",
+        "6",
+        "10",
+        "4"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-021",
+      "question": "What is the exact speed of light in a vacuum?",
+      "options": [
+        "299,792,458 m/s",
+        "299,792,458 km/s",
+        "1,000,000 m/s",
+        "150,000,000 m/s"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-022",
+      "question": "What is the chemical symbol for sodium?",
+      "options": [
+        "Na",
+        "Sa",
+        "S",
+        "So"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "From the Latin word 'natrium'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-023",
+      "question": "What is the chemical symbol for potassium?",
+      "options": [
+        "P",
+        "Pt",
+        "Po",
+        "K"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "hint": "From the Latin word 'kalium'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-024",
+      "question": "What does DNA stand for?",
+      "options": [
+        "Dinucleic acid",
+        "Deoxyribonucleic amine",
+        "Deoxyribonucleic acid",
+        "Ribonucleic acid"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-025",
+      "question": "Which gas do plants absorb from the atmosphere for photosynthesis?",
+      "options": [
+        "Nitrogen",
+        "Carbon dioxide",
+        "Oxygen",
+        "Hydrogen"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-026",
+      "question": "Which element has the atomic number 1?",
+      "options": [
+        "Helium",
+        "Carbon",
+        "Hydrogen",
+        "Oxygen"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-027",
+      "question": "Which planet is famous for its prominent ring system?",
+      "options": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-028",
+      "question": "Which substance do red blood cells mainly transport around the body?",
+      "options": [
+        "Carbon dioxide",
+        "Hormones",
+        "Oxygen",
+        "Glucose"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-029",
+      "question": "Which force keeps the planets in orbit around the Sun?",
+      "options": [
+        "Electricity",
+        "Magnetism",
+        "Gravity",
+        "Friction"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-030",
+      "question": "Which part of the cell is often called its 'powerhouse'?",
+      "options": [
+        "Mitochondria",
+        "Nucleus",
+        "Ribosome",
+        "Cell membrane"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-031",
+      "question": "What is the hardest naturally occurring substance?",
+      "options": [
+        "Iron",
+        "Diamond",
+        "Quartz",
+        "Gold"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-032",
+      "question": "Which planet is often called Earth's 'twin' because of its similar size?",
+      "options": [
+        "Venus",
+        "Jupiter",
+        "Mercury",
+        "Mars"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-033",
+      "question": "At what temperature does water boil at sea level?",
+      "options": [
+        "100 °C",
+        "90 °C",
+        "110 °C",
+        "200 °C"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-034",
+      "question": "At what temperature does water freeze at sea level?",
+      "options": [
+        "10 °C",
+        "32 °C",
+        "0 °C",
+        "-10 °C"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-035",
+      "question": "What is the SI unit of electric current?",
+      "options": [
+        "Volt",
+        "Ohm",
+        "Ampere",
+        "Watt"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-036",
+      "question": "How many bones are in the adult human body?",
+      "options": [
+        "106",
+        "306",
+        "150",
+        "206"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-037",
+      "question": "Which of these travels the fastest?",
+      "options": [
+        "Sound",
+        "Light",
+        "A jet plane",
+        "A bullet"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-038",
+      "question": "Which scientist discovered penicillin?",
+      "options": [
+        "Alexander Fleming",
+        "Marie Curie",
+        "Louis Pasteur",
+        "Edward Jenner"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-039",
+      "question": "What is the largest animal in the world?",
+      "options": [
+        "African elephant",
+        "Blue whale",
+        "Giraffe",
+        "Great white shark"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-040",
+      "question": "What is the chemical symbol for helium?",
+      "options": [
+        "Hl",
+        "H",
+        "Ha",
+        "He"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-041",
+      "question": "What is absolute zero on the Celsius scale?",
+      "options": [
+        "0 °C",
+        "-100 °C",
+        "-273.15 °C",
+        "-200 °C"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It equals 0 Kelvin.",
+      "category": "science"
+    },
+    {
+      "id": "sci-042",
+      "question": "What is the SI unit of force?",
+      "options": [
+        "Pascal",
+        "Joule",
+        "Newton",
+        "Watt"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
+      "id": "sci-043",
+      "question": "What is the chemical symbol for lead?",
+      "options": [
+        "Pl",
+        "Ld",
+        "Le",
+        "Pb"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "From the Latin word 'plumbum'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-044",
+      "question": "What is the chemical symbol for mercury?",
+      "options": [
+        "Mg",
+        "Hg",
+        "Mc",
+        "Me"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "From the Latin word 'hydrargyrum'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-045",
+      "question": "What is the chemical symbol for tin?",
+      "options": [
+        "Ti",
+        "Sn",
+        "In",
+        "Tn"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "From the Latin word 'stannum'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-046",
+      "question": "How many protons does a gold atom have in its nucleus?",
+      "options": [
+        "29",
+        "79",
+        "80",
+        "47"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Gold's atomic number.",
+      "category": "science"
+    },
+    {
+      "id": "sci-047",
+      "question": "Which gas makes up the largest proportion of Earth's atmosphere?",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "About 78% of the air.",
+      "category": "science"
+    },
+    {
+      "id": "sci-048",
+      "question": "Which is the smallest planet in our Solar System?",
+      "options": [
+        "Mars",
+        "Venus",
+        "Mercury",
+        "Pluto"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Pluto is a dwarf planet.",
+      "category": "science"
+    },
+    {
+      "id": "sci-049",
+      "question": "Which planet is the hottest in our Solar System?",
+      "options": [
+        "Jupiter",
+        "Venus",
+        "Mercury",
+        "Mars"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "A thick atmosphere traps the heat.",
+      "category": "science"
+    },
+    {
+      "id": "sci-050",
+      "question": "Which planet hosts a giant storm known as the Great Red Spot?",
+      "options": [
+        "Saturn",
+        "Neptune",
+        "Mars",
+        "Jupiter"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
+      "id": "sci-051",
+      "question": "Which planet rotates on its side, with an axis tilted almost 98 degrees?",
+      "options": [
+        "Venus",
+        "Neptune",
+        "Saturn",
+        "Uranus"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
+      "id": "sci-052",
+      "question": "What is the shape of a DNA molecule?",
+      "options": [
+        "Single ring",
+        "Flat sheet",
+        "Triple spiral",
+        "Double helix"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
+      "id": "sci-053",
+      "question": "In DNA, which base pairs with adenine?",
+      "options": [
+        "Thymine",
+        "Uracil",
+        "Cytosine",
+        "Guanine"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "Uracil replaces it in RNA.",
+      "category": "science"
+    },
+    {
+      "id": "sci-054",
+      "question": "How many hearts does an octopus have?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
+      "id": "sci-055",
+      "question": "What is the approximate speed of sound in air at room temperature?",
+      "options": [
+        "3,000 m/s",
+        "343 m/s",
+        "34 m/s",
+        "1,500 m/s"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
+      "id": "sci-056",
+      "question": "What is the chemical symbol for copper?",
+      "options": [
+        "Cu",
+        "Cb",
+        "Co",
+        "Cp"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "From the Latin word 'cuprum'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-057",
+      "question": "What type of energy does a moving object possess?",
+      "options": [
+        "Kinetic energy",
+        "Potential energy",
+        "Chemical energy",
+        "Thermal energy"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
+      "id": "sci-058",
+      "question": "Which element, discovered by Marie Curie, was named after her homeland of Poland?",
+      "options": [
+        "Radium",
+        "Francium",
+        "Curium",
+        "Polonium"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
+      "id": "sci-059",
+      "question": "What is the chemical symbol for tungsten?",
+      "options": [
+        "Tu",
+        "Tg",
+        "T",
+        "W"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "From the element's old name 'wolfram'.",
+      "category": "science"
+    },
+    {
+      "id": "sci-060",
+      "question": "What is the pH of pure water?",
+      "options": [
+        "1",
+        "7",
+        "14",
+        "0"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Neutral on the pH scale.",
+      "category": "science"
+    },
+    {
+      "id": "his-001",
+      "question": "In which year did World War II begin?",
+      "options": [
+        "1914",
+        "1939",
+        "1945",
+        "1918"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-002",
+      "question": "In which year did World War I begin?",
+      "options": [
+        "1918",
+        "1905",
+        "1914",
+        "1939"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-003",
+      "question": "Who was the first person to walk on the Moon?",
+      "options": [
+        "Buzz Aldrin",
+        "Yuri Gagarin",
+        "John Glenn",
+        "Neil Armstrong"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-004",
+      "question": "In which year did Christopher Columbus first reach the Americas?",
+      "options": [
+        "1492",
+        "1519",
+        "1453",
+        "1607"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-005",
+      "question": "In which year did the Titanic sink?",
+      "options": [
+        "1905",
+        "1912",
+        "1918",
+        "1921"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-006",
+      "question": "The Great Pyramid of Giza is located in which modern country?",
+      "options": [
+        "Greece",
+        "Iraq",
+        "Egypt",
+        "Mexico"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-007",
+      "question": "Who was the first President of the United States?",
+      "options": [
+        "Thomas Jefferson",
+        "George Washington",
+        "Abraham Lincoln",
+        "John Adams"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-008",
+      "question": "In which year did the Berlin Wall fall?",
+      "options": [
+        "1985",
+        "1989",
+        "1991",
+        "1979"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-009",
+      "question": "Ancient Greece is often called the birthplace of which form of government?",
+      "options": [
+        "Monarchy",
+        "Democracy",
+        "Feudalism",
+        "Dictatorship"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-010",
+      "question": "The Colosseum is located in which city?",
+      "options": [
+        "Athens",
+        "Rome",
+        "Paris",
+        "Cairo"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-011",
+      "question": "Who was the last active ruler of ancient Egypt?",
+      "options": [
+        "Nefertiti",
+        "Cleopatra",
+        "Hatshepsut",
+        "Merneith"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-012",
+      "question": "The Industrial Revolution began in which country?",
+      "options": [
+        "France",
+        "Germany",
+        "Great Britain",
+        "United States"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-013",
+      "question": "Napoleon Bonaparte was the ruler of which country?",
+      "options": [
+        "Spain",
+        "Russia",
+        "France",
+        "Austria"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-014",
+      "question": "Which famous ocean liner sank on its maiden voyage in 1912?",
+      "options": [
+        "Lusitania",
+        "Titanic",
+        "Britannic",
+        "Queen Mary"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-015",
+      "question": "Who led the first expedition to circumnavigate the globe?",
+      "options": [
+        "Ferdinand Magellan",
+        "Vasco da Gama",
+        "Christopher Columbus",
+        "Marco Polo"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-016",
+      "question": "In which ocean did the Titanic sink?",
+      "options": [
+        "Pacific Ocean",
+        "Indian Ocean",
+        "North Atlantic Ocean",
+        "South Atlantic Ocean"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-017",
+      "question": "Which ancient civilization built the pyramids at Giza?",
+      "options": [
+        "Romans",
+        "Egyptians",
+        "Greeks",
+        "Persians"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-018",
+      "question": "The ancient Olympic Games originated in which country?",
+      "options": [
+        "Italy",
+        "Egypt",
+        "Greece",
+        "Turkey"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-019",
+      "question": "In which year did the Apollo 11 mission land humans on the Moon?",
+      "options": [
+        "1961",
+        "1969",
+        "1975",
+        "1959"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-020",
+      "question": "Julius Caesar was a leader of which ancient state?",
+      "options": [
+        "Persia",
+        "Egypt",
+        "Rome",
+        "Athens"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-021",
+      "question": "Who was the British Prime Minister for most of World War II?",
+      "options": [
+        "Neville Chamberlain",
+        "Winston Churchill",
+        "Clement Attlee",
+        "Tony Blair"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-022",
+      "question": "Which treaty officially ended World War I?",
+      "options": [
+        "Treaty of Versailles",
+        "Treaty of Paris",
+        "Treaty of Ghent",
+        "Treaty of Tordesillas"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-023",
+      "question": "Who was the leader of Germany during World War II?",
+      "options": [
+        "Benito Mussolini",
+        "Adolf Hitler",
+        "Joseph Stalin",
+        "Kaiser Wilhelm II"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-024",
+      "question": "In which year was the United States Declaration of Independence adopted?",
+      "options": [
+        "1776",
+        "1789",
+        "1783",
+        "1765"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-025",
+      "question": "Which empire was founded by Genghis Khan?",
+      "options": [
+        "Ottoman Empire",
+        "Mongol Empire",
+        "Mughal Empire",
+        "Persian Empire"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-026",
+      "question": "Who was the first emperor of Rome?",
+      "options": [
+        "Julius Caesar",
+        "Augustus",
+        "Nero",
+        "Constantine"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-027",
+      "question": "In which year did the French Revolution begin?",
+      "options": [
+        "1789",
+        "1776",
+        "1815",
+        "1799"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-028",
+      "question": "The American Civil War was fought between which two sides?",
+      "options": [
+        "East and West",
+        "North and South",
+        "Republicans and Monarchists",
+        "Colonies and the Crown"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-029",
+      "question": "Who discovered penicillin?",
+      "options": [
+        "Louis Pasteur",
+        "Alexander Fleming",
+        "Marie Curie",
+        "Robert Koch"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-030",
+      "question": "The Battle of Hastings in 1066 was won by which invader?",
+      "options": [
+        "Harold Godwinson",
+        "William the Conqueror",
+        "Canute",
+        "Alfred the Great"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-031",
+      "question": "Who was the last Tsar of Russia?",
+      "options": [
+        "Alexander II",
+        "Nicholas II",
+        "Peter the Great",
+        "Ivan the Terrible"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-032",
+      "question": "Which South American empire was ruled from the city of Cusco?",
+      "options": [
+        "Aztec Empire",
+        "Inca Empire",
+        "Maya Empire",
+        "Olmec Empire"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-033",
+      "question": "In which year did the Wright brothers make their first successful powered flight?",
+      "options": [
+        "1903",
+        "1899",
+        "1910",
+        "1908"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-034",
+      "question": "Who was President of the United States during the American Civil War?",
+      "options": [
+        "Andrew Johnson",
+        "Ulysses S. Grant",
+        "Abraham Lincoln",
+        "James Buchanan"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-035",
+      "question": "Who is credited with inventing the movable-type printing press in Europe?",
+      "options": [
+        "Johannes Gutenberg",
+        "Leonardo da Vinci",
+        "Galileo Galilei",
+        "Isaac Newton"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-036",
+      "question": "Which Roman city was buried by the eruption of Mount Vesuvius in 79 AD?",
+      "options": [
+        "Rome",
+        "Pompeii",
+        "Athens",
+        "Carthage"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-037",
+      "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+      "options": [
+        "Bessie Coleman",
+        "Amelia Earhart",
+        "Harriet Quimby",
+        "Valentina Tereshkova"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-038",
+      "question": "In which year was the Magna Carta signed?",
+      "options": [
+        "1066",
+        "1215",
+        "1492",
+        "1776"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-039",
+      "question": "Which ancient Greek city-state was famous for its powerful army?",
+      "options": [
+        "Athens",
+        "Sparta",
+        "Corinth",
+        "Thebes"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-040",
+      "question": "Who was the first person to travel into space?",
+      "options": [
+        "Neil Armstrong",
+        "Yuri Gagarin",
+        "John Glenn",
+        "Alan Shepard"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-041",
+      "question": "In which year was the Battle of Waterloo fought?",
+      "options": [
+        "1805",
+        "1812",
+        "1815",
+        "1821"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "Napoleon's final defeat.",
+      "category": "history"
+    },
+    {
+      "id": "his-042",
+      "question": "Who was the first explorer to reach the South Pole?",
+      "options": [
+        "Robert Falcon Scott",
+        "Roald Amundsen",
+        "Ernest Shackleton",
+        "Edmund Hillary"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "A Norwegian expedition reached it in December 1911.",
+      "category": "history"
+    },
+    {
+      "id": "his-043",
+      "question": "The Rosetta Stone was discovered in which year?",
+      "options": [
+        "1799",
+        "1805",
+        "1822",
+        "1750"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It helped decode Egyptian hieroglyphs.",
+      "category": "history"
+    },
+    {
+      "id": "his-044",
+      "question": "Which empire built the city of Tenochtitlan?",
+      "options": [
+        "Inca Empire",
+        "Aztec Empire",
+        "Maya Empire",
+        "Toltec Empire"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Tenochtitlan later became Mexico City.",
+      "category": "history"
+    },
+    {
+      "id": "his-045",
+      "question": "Who was known as the 'Iron Chancellor' of Germany?",
+      "options": [
+        "Kaiser Wilhelm I",
+        "Otto von Bismarck",
+        "Frederick the Great",
+        "Konrad Adenauer"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "He unified Germany in 1871.",
+      "category": "history"
+    },
+    {
+      "id": "his-046",
+      "question": "The Hundred Years' War was fought between which two countries?",
+      "options": [
+        "France and Spain",
+        "England and France",
+        "England and Scotland",
+        "Germany and France"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-047",
+      "question": "Which ship carried the Pilgrims to America in 1620?",
+      "options": [
+        "Santa Maria",
+        "Mayflower",
+        "HMS Beagle",
+        "Endeavour"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-048",
+      "question": "Who was crowned the first Holy Roman Emperor?",
+      "options": [
+        "Charlemagne",
+        "Otto I",
+        "Charles V",
+        "Frederick Barbarossa"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "Crowned in the year 800.",
+      "category": "history"
+    },
+    {
+      "id": "his-049",
+      "question": "In which year did the Great Fire of London occur?",
+      "options": [
+        "1666",
+        "1605",
+        "1711",
+        "1642"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-050",
+      "question": "Which empire was ruled by Suleiman the Magnificent?",
+      "options": [
+        "Byzantine Empire",
+        "Ottoman Empire",
+        "Safavid Empire",
+        "Seljuk Empire"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-051",
+      "question": "The Wright brothers' first flight took place in which U.S. state?",
+      "options": [
+        "Ohio",
+        "North Carolina",
+        "Virginia",
+        "New York"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "At Kitty Hawk.",
+      "category": "history"
+    },
+    {
+      "id": "his-052",
+      "question": "In which year was the Spanish Armada defeated?",
+      "options": [
+        "1588",
+        "1605",
+        "1492",
+        "1620"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-053",
+      "question": "Which Roman emperor legalized Christianity with the Edict of Milan?",
+      "options": [
+        "Nero",
+        "Julius Caesar",
+        "Constantine",
+        "Augustus"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-054",
+      "question": "The Taj Mahal was commissioned by which Mughal emperor?",
+      "options": [
+        "Akbar",
+        "Shah Jahan",
+        "Aurangzeb",
+        "Babur"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-055",
+      "question": "Who was the first emperor of a unified China?",
+      "options": [
+        "Han Wudi",
+        "Qin Shi Huang",
+        "Kublai Khan",
+        "Sun Yat-sen"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-056",
+      "question": "The Battle of Thermopylae was fought between the Greeks and which empire?",
+      "options": [
+        "Roman Empire",
+        "Persian Empire",
+        "Ottoman Empire",
+        "Egyptian Empire"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-057",
+      "question": "In which year did the Suez Canal open?",
+      "options": [
+        "1869",
+        "1859",
+        "1882",
+        "1875"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-058",
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "options": [
+        "Rosalind Franklin",
+        "Marie Curie",
+        "Dorothy Hodgkin",
+        "Gerty Cori"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "his-059",
+      "question": "Who made the first successful ascent of Mount Everest?",
+      "options": [
+        "Edmund Hillary and Tenzing Norgay",
+        "Robert Falcon Scott",
+        "Roald Amundsen",
+        "Reinhold Messner"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "In 1953.",
+      "category": "history"
+    },
+    {
+      "id": "his-060",
+      "question": "The Boston Tea Party took place in which year?",
+      "options": [
+        "1765",
+        "1773",
+        "1776",
+        "1783"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": "mus-001",
+      "question": "Which city did The Beatles come from?",
+      "options": [
+        "London",
+        "Liverpool",
+        "Manchester",
+        "Dublin"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "A port city in northwest England.",
+      "category": "music"
+    },
+    {
+      "id": "mus-002",
+      "question": "What was Mozart's first name?",
+      "options": [
+        "Ludwig",
+        "Johann",
+        "Wolfgang",
+        "Franz"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-003",
+      "question": "Which composer wrote the piano piece 'Für Elise'?",
+      "options": [
+        "Mozart",
+        "Bach",
+        "Chopin",
+        "Beethoven"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-004",
+      "question": "How many keys does a standard piano have?",
+      "options": [
+        "66",
+        "88",
+        "76",
+        "104"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "Two more than 86.",
+      "category": "music"
+    },
+    {
+      "id": "mus-005",
+      "question": "How many strings does a standard acoustic guitar have?",
+      "options": [
+        "Five",
+        "Four",
+        "Six",
+        "Seven"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-006",
+      "question": "What do violinists typically use to sound the strings?",
+      "options": [
+        "A bow",
+        "A pick",
+        "A drumstick",
+        "A slide"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-007",
+      "question": "Elvis Presley was famously known as the 'King of' what?",
+      "options": [
+        "Jazz",
+        "Rock 'n' Roll",
+        "Blues",
+        "Country"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-008",
+      "question": "Which artist recorded the album 'Thriller'?",
+      "options": [
+        "Michael Jackson",
+        "Prince",
+        "Stevie Wonder",
+        "James Brown"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-009",
+      "question": "Which band performed 'Bohemian Rhapsody'?",
+      "options": [
+        "The Rolling Stones",
+        "Led Zeppelin",
+        "Queen",
+        "The Who"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-010",
+      "question": "ABBA is a pop group from which country?",
+      "options": [
+        "Norway",
+        "Sweden",
+        "Denmark",
+        "Germany"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-011",
+      "question": "How many notes are in a standard major scale?",
+      "options": [
+        "Five",
+        "Seven",
+        "Eight",
+        "Twelve"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "Think of do-re-mi-fa-sol-la-ti.",
+      "category": "music"
+    },
+    {
+      "id": "mus-012",
+      "question": "Which of these instruments belongs to the string family?",
+      "options": [
+        "Trumpet",
+        "Violin",
+        "Drum",
+        "Flute"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-013",
+      "question": "Wolfgang Amadeus Mozart was born in which country?",
+      "options": [
+        "Germany",
+        "Italy",
+        "Austria",
+        "France"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "The city was Salzburg.",
+      "category": "music"
+    },
+    {
+      "id": "mus-014",
+      "question": "Ludwig van Beethoven was a composer from which country?",
+      "options": [
+        "Austria",
+        "Germany",
+        "Poland",
+        "Russia"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "He was born in Bonn.",
+      "category": "music"
+    },
+    {
+      "id": "mus-015",
+      "question": "Johann Sebastian Bach is associated with which musical era?",
+      "options": [
+        "Romantic",
+        "Baroque",
+        "Renaissance",
+        "Classical"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-016",
+      "question": "Who was the lead singer of Queen?",
+      "options": [
+        "Freddie Mercury",
+        "Mick Jagger",
+        "Robert Plant",
+        "Elton John"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-017",
+      "question": "Which of these is a famous song by The Beatles?",
+      "options": [
+        "Stairway to Heaven",
+        "Hey Jude",
+        "Like a Rolling Stone",
+        "Hotel California"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-018",
+      "question": "Elvis Presley was born in which U.S. state?",
+      "options": [
+        "Tennessee",
+        "Mississippi",
+        "Texas",
+        "Georgia"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "His birthplace was Tupelo.",
+      "category": "music"
+    },
+    {
+      "id": "mus-019",
+      "question": "Which of these is a hit song by ABBA?",
+      "options": [
+        "Dancing Queen",
+        "Bohemian Rhapsody",
+        "Imagine",
+        "Billie Jean"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-020",
+      "question": "Which clef is used for higher-pitched notes in music?",
+      "options": [
+        "Bass",
+        "Alto",
+        "Treble",
+        "Tenor"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-021",
+      "question": "Who was the drummer for The Beatles?",
+      "options": [
+        "John Lennon",
+        "Ringo Starr",
+        "George Harrison",
+        "Paul McCartney"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-022",
+      "question": "Which Beatles album cover shows the band walking across a zebra crossing?",
+      "options": [
+        "Sgt. Pepper's Lonely Hearts Club Band",
+        "Let It Be",
+        "Abbey Road",
+        "Revolver"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-023",
+      "question": "At what age did Wolfgang Amadeus Mozart die?",
+      "options": [
+        "45",
+        "35",
+        "55",
+        "27"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-024",
+      "question": "Beethoven is famous for continuing to compose while gradually losing which sense?",
+      "options": [
+        "Sight",
+        "Hearing",
+        "Smell",
+        "Touch"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-025",
+      "question": "The famous opening of Beethoven's Fifth Symphony consists of how many notes?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "'Da-da-da-dum'.",
+      "category": "music"
+    },
+    {
+      "id": "mus-026",
+      "question": "Beethoven's Ninth Symphony ends with a choral finale based on which poem?",
+      "options": [
+        "Ode to Joy",
+        "The Erlking",
+        "Do Not Go Gentle",
+        "The Song of the Bell"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-027",
+      "question": "Johann Sebastian Bach composed mainly during which century?",
+      "options": [
+        "17th",
+        "18th",
+        "19th",
+        "16th"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-028",
+      "question": "Which song from 'Thriller' features a famous guitar solo by Eddie Van Halen?",
+      "options": [
+        "Billie Jean",
+        "Beat It",
+        "Wanna Be Startin' Somethin'",
+        "Thriller"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-029",
+      "question": "The song 'Billie Jean' appears on which Michael Jackson album?",
+      "options": [
+        "Bad",
+        "Off the Wall",
+        "Thriller",
+        "Dangerous"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-030",
+      "question": "Queen released 'Bohemian Rhapsody' as a single in which year?",
+      "options": [
+        "1973",
+        "1975",
+        "1977",
+        "1980"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-031",
+      "question": "Which Queen song is famously lip-synced in the film 'Wayne's World'?",
+      "options": [
+        "We Will Rock You",
+        "Bohemian Rhapsody",
+        "Somebody to Love",
+        "Under Pressure"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-032",
+      "question": "ABBA won the Eurovision Song Contest in 1974 with which song?",
+      "options": [
+        "Waterloo",
+        "Dancing Queen",
+        "Mamma Mia",
+        "Fernando"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-033",
+      "question": "What is the main purpose of the frets on a guitar neck?",
+      "options": [
+        "To hold the strings",
+        "To change the pitch of notes",
+        "To amplify the sound",
+        "To decorate the instrument"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-034",
+      "question": "How many strings does a standard violin have?",
+      "options": [
+        "Five",
+        "Three",
+        "Four",
+        "Six"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-035",
+      "question": "The time signature 4/4 is commonly called what?",
+      "options": [
+        "Common time",
+        "Waltz time",
+        "Cut time",
+        "Compound time"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-036",
+      "question": "A chord made up of three notes is called a what?",
+      "options": [
+        "Dyad",
+        "Triad",
+        "Tetrad",
+        "Power chord"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-037",
+      "question": "Elvis Presley's first single, recorded at Sun Records in 1954, was which song?",
+      "options": [
+        "That's All Right",
+        "Blue Suede Shoes",
+        "Hound Dog",
+        "Love Me Tender"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-038",
+      "question": "The Woodstock Music Festival took place in which year?",
+      "options": [
+        "1967",
+        "1969",
+        "1971",
+        "1965"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-039",
+      "question": "The 1969 Woodstock festival was held in which U.S. state?",
+      "options": [
+        "California",
+        "New York",
+        "Vermont",
+        "Massachusetts"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-040",
+      "question": "Who famously sang 'What a Wonderful World'?",
+      "options": [
+        "Frank Sinatra",
+        "Louis Armstrong",
+        "Ray Charles",
+        "Nat King Cole"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-041",
+      "question": "Who produced most of The Beatles' studio albums?",
+      "options": [
+        "Phil Spector",
+        "George Martin",
+        "Brian Wilson",
+        "Quincy Jones"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-042",
+      "question": "The Beatles' final live performance, on a rooftop, took place in which city?",
+      "options": [
+        "New York",
+        "Liverpool",
+        "London",
+        "Hamburg"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "On the roof of the Apple Corps building.",
+      "category": "music"
+    },
+    {
+      "id": "mus-043",
+      "question": "'Eine kleine Nachtmusik' by Mozart translates to what in English?",
+      "options": [
+        "A Little Night Music",
+        "A Summer Evening",
+        "The Magic Flute",
+        "Songs of the Night"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-044",
+      "question": "Mozart's opera 'The Magic Flute' features which famously difficult soprano aria?",
+      "options": [
+        "O mio babbino caro",
+        "The Queen of the Night aria",
+        "Habanera",
+        "Un bel di vedremo"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-045",
+      "question": "How many symphonies did Beethoven complete?",
+      "options": [
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-046",
+      "question": "Beethoven's 'Moonlight Sonata' was written for which solo instrument?",
+      "options": [
+        "Violin",
+        "Piano",
+        "Cello",
+        "Organ"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-047",
+      "question": "Bach's 'Toccata and Fugue in D minor' is most commonly performed on which instrument?",
+      "options": [
+        "Piano",
+        "Harpsichord",
+        "Organ",
+        "Violin"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-048",
+      "question": "Bach's 'The Well-Tempered Clavier' is a collection of works for which instrument?",
+      "options": [
+        "Organ",
+        "Keyboard",
+        "Violin",
+        "Flute"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Written for keyboard instruments such as the harpsichord.",
+      "category": "music"
+    },
+    {
+      "id": "mus-049",
+      "question": "What is the musical interval between the first and eighth notes of a scale called?",
+      "options": [
+        "A fifth",
+        "A third",
+        "An octave",
+        "A seventh"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-050",
+      "question": "A sharp sign in music raises a note by how much?",
+      "options": [
+        "A whole step",
+        "A semitone",
+        "Two semitones",
+        "An octave"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-051",
+      "question": "What is the Italian musical term meaning 'gradually getting faster'?",
+      "options": [
+        "Ritardando",
+        "Accelerando",
+        "Crescendo",
+        "Legato"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-052",
+      "question": "Which major key has no sharps or flats in its key signature?",
+      "options": [
+        "G major",
+        "D major",
+        "C major",
+        "F major"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-053",
+      "question": "What is the lowest-pitched standard instrument in the orchestral string family?",
+      "options": [
+        "Cello",
+        "Double bass",
+        "Viola",
+        "Violin"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-054",
+      "question": "The full name 'pianoforte' reflects the instrument's ability to play what?",
+      "options": [
+        "Fast and slow",
+        "Soft and loud",
+        "High and low",
+        "Long and short notes"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Piano means soft, forte means loud.",
+      "category": "music"
+    },
+    {
+      "id": "mus-055",
+      "question": "Elvis Presley's famous home and estate in Memphis is called what?",
+      "options": [
+        "Neverland",
+        "Graceland",
+        "Heartbreak Hotel",
+        "Sun House"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-056",
+      "question": "The music video for Michael Jackson's 'Thriller' was directed by which filmmaker?",
+      "options": [
+        "Steven Spielberg",
+        "John Landis",
+        "George Lucas",
+        "Francis Ford Coppola"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-057",
+      "question": "The moonwalk became famous when Michael Jackson performed it during which song on the Motown 25 special?",
+      "options": [
+        "Thriller",
+        "Beat It",
+        "Billie Jean",
+        "Bad"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-058",
+      "question": "Freddie Mercury's birth name was what?",
+      "options": [
+        "Farrokh Bulsara",
+        "Frederick May",
+        "Farley Mercury",
+        "Frank Montserrat"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-059",
+      "question": "'We Will Rock You' and 'We Are the Champions' both appear on which Queen album?",
+      "options": [
+        "A Night at the Opera",
+        "News of the World",
+        "The Game",
+        "Jazz"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-060",
+      "question": "Which guitarist's performance of the U.S. national anthem at Woodstock became iconic?",
+      "options": [
+        "Eric Clapton",
+        "Jimi Hendrix",
+        "Carlos Santana",
+        "Pete Townshend"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "music"
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+[
+  {
+    "id": "spo-001",
+    "question": "Which country has won the FIFA World Cup the most times?",
+    "options": [
+      "Argentina",
+      "Italy",
+      "Brazil",
+      "Germany"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "The famous yellow-and-green team."
+  },
+  {
+    "id": "spo-002",
+    "question": "In which sport is a 'slam dunk' performed?",
+    "options": [
+      "Basketball",
+      "Soccer",
+      "Tennis",
+      "Golf"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "A high-scoring basketball move."
+  },
+  {
+    "id": "spo-003",
+    "question": "Which city hosted the first modern Olympic Games in 1896?",
+    "options": [
+      "London",
+      "Athens",
+      "Rome",
+      "Paris"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "The capital of Greece."
+  },
+  {
+    "id": "spo-004",
+    "question": "What was boxer Muhammad Ali's name at birth?",
+    "options": [
+      "George Foreman",
+      "Mike Tyson",
+      "Joe Frazier",
+      "Cassius Clay"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "He changed his name after joining the Nation of Islam."
+  },
+  {
+    "id": "spo-005",
+    "question": "How many players from one soccer (football) team are on the field at a time?",
+    "options": [
+      "12",
+      "9",
+      "11",
+      "10"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Eleven is the classic number."
+  },
+  {
+    "id": "spo-006",
+    "question": "Which sport did Michael Jordan play professionally?",
+    "options": [
+      "American football",
+      "Basketball",
+      "Ice hockey",
+      "Baseball"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "He wore number 23 for the Chicago Bulls."
+  },
+  {
+    "id": "spo-007",
+    "question": "Which country is the birthplace of the Olympic Games?",
+    "options": [
+      "Turkey",
+      "Egypt",
+      "Italy",
+      "Greece"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "Ancient Olympia is there."
+  },
+  {
+    "id": "spo-008",
+    "question": "The Wimbledon tennis tournament is played on which surface?",
+    "options": [
+      "Hard court",
+      "Grass",
+      "Clay",
+      "Carpet"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Wimbledon is famous for its green surface."
+  },
+  {
+    "id": "spo-009",
+    "question": "How many points is a touchdown worth in American football?",
+    "options": [
+      "3",
+      "7",
+      "4",
+      "6"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "Six points, plus the extra point kick."
+  },
+  {
+    "id": "spo-010",
+    "question": "Which country has won the most Olympic gold medals in history?",
+    "options": [
+      "Germany",
+      "United States",
+      "China",
+      "Russia"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "The Stars and Stripes lead the all-time table."
+  },
+  {
+    "id": "spo-011",
+    "question": "Which of these countries has NEVER won the FIFA World Cup?",
+    "options": [
+      "Brazil",
+      "Argentina",
+      "Netherlands",
+      "England"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "They were runners-up three times but never champions."
+  },
+  {
+    "id": "spo-012",
+    "question": "The Stanley Cup is awarded in which sport?",
+    "options": [
+      "Ice hockey",
+      "Soccer",
+      "Baseball",
+      "Basketball"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It's played on ice."
+  },
+  {
+    "id": "spo-013",
+    "question": "Which swimmer has won the most Olympic gold medals of any Olympian?",
+    "options": [
+      "Michael Phelps",
+      "Ian Thorpe",
+      "Mark Spitz",
+      "Ryan Lochte"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "He won 23 gold medals, almost all in the pool."
+  },
+  {
+    "id": "spo-014",
+    "question": "In golf, what is a score of one under par called?",
+    "options": [
+      "Albatross",
+      "Birdie",
+      "Bogey",
+      "Eagle"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "One stroke under par."
+  },
+  {
+    "id": "spo-015",
+    "question": "The Boston Celtics and Los Angeles Lakers play which sport?",
+    "options": [
+      "Baseball",
+      "Ice hockey",
+      "Basketball",
+      "Soccer"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "The NBA."
+  },
+  {
+    "id": "spo-016",
+    "question": "The French Open tennis tournament is played on which surface?",
+    "options": [
+      "Clay",
+      "Grass",
+      "Carpet",
+      "Hard court"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Red clay at Roland Garros."
+  },
+  {
+    "id": "spo-017",
+    "question": "The New York Yankees and Boston Red Sox play which sport?",
+    "options": [
+      "American football",
+      "Baseball",
+      "Ice hockey",
+      "Basketball"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "America's pastime."
+  },
+  {
+    "id": "spo-018",
+    "question": "Sumo wrestling is the national sport of which country?",
+    "options": [
+      "South Korea",
+      "Japan",
+      "China",
+      "Thailand"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "The land of the rising sun."
+  },
+  {
+    "id": "spo-019",
+    "question": "How many rings are on the Olympic flag?",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "4"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Five coloured interlocking rings."
+  },
+  {
+    "id": "spo-020",
+    "question": "Which of these is a seven-time Formula 1 World Champion?",
+    "options": [
+      "Tiger Woods",
+      "Cristiano Ronaldo",
+      "Usain Bolt",
+      "Lewis Hamilton"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "A British seven-time champion."
+  },
+  {
+    "id": "spo-021",
+    "question": "Which country won the FIFA World Cup in 2022?",
+    "options": [
+      "France",
+      "Germany",
+      "Argentina",
+      "Brazil"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The final was Argentina vs France."
+  },
+  {
+    "id": "spo-022",
+    "question": "Which city hosted the 2008 Summer Olympics?",
+    "options": [
+      "Sydney",
+      "Beijing",
+      "Rio de Janeiro",
+      "London"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "The Bird's Nest stadium."
+  },
+  {
+    "id": "spo-023",
+    "question": "How many tennis Grand Slam tournaments are played each year?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Australian, French, Wimbledon, US."
+  },
+  {
+    "id": "spo-024",
+    "question": "In Formula 1, which team has won the most Constructors' Championships?",
+    "options": [
+      "McLaren",
+      "Ferrari",
+      "Mercedes",
+      "Red Bull"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "The famous Italian team in red."
+  },
+  {
+    "id": "spo-025",
+    "question": "Which heavyweight boxer was known as 'Iron Mike'?",
+    "options": [
+      "Evander Holyfield",
+      "George Foreman",
+      "Joe Frazier",
+      "Mike Tyson"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "A feared knockout artist of the 1980s."
+  },
+  {
+    "id": "spo-026",
+    "question": "Which country won the first-ever FIFA World Cup in 1930?",
+    "options": [
+      "Argentina",
+      "Uruguay",
+      "Brazil",
+      "Italy"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "The first tournament was held in Montevideo."
+  },
+  {
+    "id": "spo-027",
+    "question": "The floor exercise and pommel horse are events in which Olympic sport?",
+    "options": [
+      "Gymnastics",
+      "Diving",
+      "Athletics",
+      "Swimming"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Bars, beams, and vaults."
+  },
+  {
+    "id": "spo-028",
+    "question": "The Super Bowl is the championship game of which league?",
+    "options": [
+      "MLB",
+      "NFL",
+      "NBA",
+      "NHL"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "American football's big game."
+  },
+  {
+    "id": "spo-029",
+    "question": "Which tennis player holds the men's record for the most Grand Slam singles titles?",
+    "options": [
+      "Novak Djokovic",
+      "Rafael Nadal",
+      "Roger Federer",
+      "Pete Sampras"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The Serbian record-holder."
+  },
+  {
+    "id": "spo-030",
+    "question": "Which city hosted the 2012 Summer Olympics?",
+    "options": [
+      "Athens",
+      "Beijing",
+      "Paris",
+      "London"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "The Queen's city hosted the Games."
+  },
+  {
+    "id": "spo-031",
+    "question": "In cricket, how many runs does a batter score for hitting a 'six'?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The ball clears the boundary."
+  },
+  {
+    "id": "spo-032",
+    "question": "Which country won the FIFA Women's World Cup in 2019?",
+    "options": [
+      "Netherlands",
+      "United States",
+      "Sweden",
+      "Germany"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "The defending champions retained the title."
+  },
+  {
+    "id": "spo-033",
+    "question": "Which basketball player is nicknamed 'The King' and plays for the Los Angeles Lakers?",
+    "options": [
+      "Kobe Bryant",
+      "Stephen Curry",
+      "Michael Jordan",
+      "LeBron James"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "He also wears number 23."
+  },
+  {
+    "id": "spo-034",
+    "question": "The 100 metres, marathon, and shot put are all events in which Olympic sport?",
+    "options": [
+      "Cycling",
+      "Athletics",
+      "Swimming",
+      "Gymnastics"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Track and field."
+  },
+  {
+    "id": "spo-035",
+    "question": "Which tennis Grand Slam is played at Flushing Meadows in New York?",
+    "options": [
+      "Australian Open",
+      "French Open",
+      "Wimbledon",
+      "US Open"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "The hard-court major in Queens."
+  },
+  {
+    "id": "spo-036",
+    "question": "Which sprinter holds the men's 100 metres world record at 9.58 seconds?",
+    "options": [
+      "Michael Johnson",
+      "Jesse Owens",
+      "Usain Bolt",
+      "Carl Lewis"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The Jamaican sprinter."
+  },
+  {
+    "id": "spo-037",
+    "question": "Which country's national rugby team are known as the 'All Blacks'?",
+    "options": [
+      "South Africa",
+      "Australia",
+      "England",
+      "New Zealand"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "The haka-performing team."
+  },
+  {
+    "id": "spo-038",
+    "question": "The Tour de France is a famous event in which sport?",
+    "options": [
+      "Running",
+      "Skiing",
+      "Swimming",
+      "Cycling"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "A three-week race through France."
+  },
+  {
+    "id": "spo-039",
+    "question": "Which boxer was famously nicknamed 'The Greatest'?",
+    "options": [
+      "Rocky Marciano",
+      "Mike Tyson",
+      "Muhammad Ali",
+      "Sugar Ray Robinson"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The self-proclaimed greatest of all time."
+  },
+  {
+    "id": "spo-040",
+    "question": "The International Olympic Committee (IOC) is headquartered in which city?",
+    "options": [
+      "Lausanne",
+      "Paris",
+      "Athens",
+      "Geneva"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "On the shores of Lake Geneva in Switzerland."
+  },
+  {
+    "id": "spo-041",
+    "question": "Which country hosted the 1998 FIFA World Cup?",
+    "options": [
+      "France",
+      "Germany",
+      "Brazil",
+      "Italy"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The tournament starred Zinedine Zidane."
+  },
+  {
+    "id": "spo-042",
+    "question": "Which tennis player won the 'Golden Slam' in 1988 (all four majors plus Olympic gold)?",
+    "options": [
+      "Chris Evert",
+      "Martina Navratilova",
+      "Serena Williams",
+      "Steffi Graf"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "A German tennis legend."
+  },
+  {
+    "id": "spo-043",
+    "question": "Which Formula 1 driver died in a crash at the Imola circuit in 1994?",
+    "options": [
+      "Ayrton Senna",
+      "Niki Lauda",
+      "Gilles Villeneuve",
+      "Alain Prost"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The Brazilian three-time world champion."
+  },
+  {
+    "id": "spo-044",
+    "question": "Which basketball team won eight consecutive NBA championships from 1959 to 1966?",
+    "options": [
+      "Boston Celtics",
+      "Los Angeles Lakers",
+      "Golden State Warriors",
+      "Chicago Bulls"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The legendary Bill Russell's team."
+  },
+  {
+    "id": "spo-045",
+    "question": "In which year was the first Rugby World Cup held?",
+    "options": [
+      "1991",
+      "1983",
+      "1987",
+      "1995"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "The tournament was co-hosted by New Zealand."
+  },
+  {
+    "id": "spo-046",
+    "question": "Which swimmer won seven gold medals at the 1972 Munich Olympics?",
+    "options": [
+      "Johnny Weissmuller",
+      "Michael Phelps",
+      "Mark Spitz",
+      "Ian Thorpe"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Seven golds, all in world-record times."
+  },
+  {
+    "id": "spo-047",
+    "question": "Which country won the FIFA World Cup in 1966?",
+    "options": [
+      "England",
+      "Portugal",
+      "France",
+      "West Germany"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The '66 final was at Wembley."
+  },
+  {
+    "id": "spo-048",
+    "question": "Which boxer was the first to defeat Muhammad Ali in a professional bout?",
+    "options": [
+      "Ken Norton",
+      "Sonny Liston",
+      "George Foreman",
+      "Joe Frazier"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "The 'Fight of the Century' winner."
+  },
+  {
+    "id": "spo-049",
+    "question": "Which tennis Grand Slam is played at Melbourne Park?",
+    "options": [
+      "Australian Open",
+      "US Open",
+      "Wimbledon",
+      "French Open"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The first Grand Slam of the calendar year."
+  },
+  {
+    "id": "spo-050",
+    "question": "With which Formula 1 team did Michael Schumacher win five consecutive titles (2000-2004)?",
+    "options": [
+      "Williams",
+      "Mercedes",
+      "Ferrari",
+      "McLaren"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "The Italian 'Prancing Horse' team."
+  },
+  {
+    "id": "spo-051",
+    "question": "In which country was the sport of basketball invented?",
+    "options": [
+      "United States",
+      "England",
+      "France",
+      "Canada"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Invented by James Naismith."
+  },
+  {
+    "id": "spo-052",
+    "question": "Which country's capital is the only city to have hosted both a Summer and a Winter Olympics?",
+    "options": [
+      "France",
+      "China",
+      "United States",
+      "Japan"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "The 'Bird's Nest' and 'Ice Ribbon' city."
+  },
+  {
+    "id": "spo-053",
+    "question": "Which London cricket ground is known as 'The Home of Cricket'?",
+    "options": [
+      "The Oval",
+      "Lord's",
+      "Wankhede",
+      "Eden Gardens"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "In St John's Wood, London."
+  },
+  {
+    "id": "spo-054",
+    "question": "Which gymnast scored the first perfect 10 in Olympic history at Montreal 1976?",
+    "options": [
+      "Olga Korbut",
+      "Simone Biles",
+      "Nadia Comaneci",
+      "Mary Lou Retton"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "The Romanian sensation."
+  },
+  {
+    "id": "spo-055",
+    "question": "Which country won its third FIFA World Cup in 1970, keeping the Jules Rimet trophy permanently?",
+    "options": [
+      "Brazil",
+      "Italy",
+      "Argentina",
+      "West Germany"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The 'beautiful game' masters in yellow."
+  },
+  {
+    "id": "spo-056",
+    "question": "Which tennis player has won the most Wimbledon men's singles titles (eight)?",
+    "options": [
+      "Pete Sampras",
+      "Roger Federer",
+      "Novak Djokovic",
+      "Bjorn Borg"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "The Swiss maestro."
+  },
+  {
+    "id": "spo-057",
+    "question": "Michael Jordan played most of his NBA career for which city's team?",
+    "options": [
+      "New York",
+      "Los Angeles",
+      "Miami",
+      "Chicago"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "The Windy City's team."
+  },
+  {
+    "id": "spo-058",
+    "question": "Which team won the first Cricket World Cup in 1975?",
+    "options": [
+      "England",
+      "India",
+      "West Indies",
+      "Australia"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "The Caribbean cricket powerhouse."
+  },
+  {
+    "id": "spo-059",
+    "question": "Cassius Clay (later Muhammad Ali) won an Olympic gold medal in which sport at Rome 1960?",
+    "options": [
+      "Weightlifting",
+      "Boxing",
+      "Judo",
+      "Wrestling"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "He won gold as a light heavyweight."
+  },
+  {
+    "id": "spo-060",
+    "question": "Which Formula 1 circuit in Italy is known as 'The Temple of Speed'?",
+    "options": [
+      "Monza",
+      "Monaco",
+      "Spa-Francorchamps",
+      "Silverstone"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Home of the Italian Grand Prix."
+  }
+]

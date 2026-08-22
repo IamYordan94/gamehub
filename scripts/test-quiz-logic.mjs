@@ -1,0 +1,105 @@
+// Quick end-to-end sanity test for the daily quiz logic (not a test suite)
+import { readFileSync } from 'node:fs';
+
+const bank = JSON.parse(readFileSync('public/data/quiz-bank.json', 'utf8'));
+
+// --- replicate quizLogic.ts (pure copy so the test stands alone) ---
+function seedRandom(seed) {
+  let h = 1779033703 ^ seed.length;
+  for (let i = 0; i < seed.length; i++) {
+    h = Math.imul(h ^ seed.charCodeAt(i), 3432918353);
+    h = (h << 13) | (h >>> 19);
+  }
+  let a = h >>> 0;
+  return () => {
+    a |= 0;
+    a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function seededShuffle(arr, rng) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+const RAMP = [1, 1, 1, 1, 2, 2, 2, 3, 3, 3];
+function buildDailyQuiz(bank, dateStr) {
+  const rng = seedRandom('quizmaster:' + dateStr);
+  const pools = { 1: [], 2: [], 3: [] };
+  for (const q of bank.questions) if (pools[q.difficulty]) pools[q.difficulty].push(q);
+  const picked = [];
+  const usedCats = new Set();
+  for (const diff of RAMP) {
+    const pool = pools[diff];
+    if (pool.length === 0) continue;
+    const fresh = pool.filter((q) => !usedCats.has(q.category));
+    const candidate = fresh.length > 0 ? fresh : pool;
+    const idx = Math.floor(rng() * candidate.length);
+    const q = candidate[idx];
+    picked.push(q);
+    usedCats.add(q.category);
+  }
+  return picked.map((q) => {
+    const optRng = seedRandom('qm-opt:' + q.id + ':' + dateStr);
+    const order = seededShuffle(q.options.map((_, i) => i), optRng);
+    return { ...q, options: order.map((i) => q.options[i]), answer: order.indexOf(q.answer) };
+  });
+}
+
+// --- checks ---
+const cats = new Set(bank.questions.map((q) => q.category));
+console.log('categories in bank:', [...cats].join(', '));
+console.log('per-category counts:', cats.size, 'expected 7');
+for (const c of cats) {
+  const n = bank.questions.filter((q) => q.category === c).length;
+  const d = [1, 2, 3].map((k) => bank.questions.filter((q) => q.category === c && q.difficulty === k).length).join('/');
+  console.log(`  ${c}: ${n} questions (easy/med/hard ${d})`);
+}
+
+// difficulty balance across the whole bank
+for (const d of [1, 2, 3]) {
+  const n = bank.questions.filter((q) => q.difficulty === d).length;
+  console.log(`difficulty ${d}: ${n}`);
+}
+
+// answer distribution sanity (should not all be the same index)
+const answerSpread = [0, 0, 0, 0];
+for (const q of bank.questions) answerSpread[q.answer]++;
+console.log('answer index spread:', answerSpread.join('/'));
+
+// build daily quizzes for 7 consecutive days — verify 10 questions, unique, correct answer index
+for (let day = 0; day < 7; day++) {
+  const d = new Date(Date.UTC(2026, 7, 23 + day));
+  const dateStr = d.toISOString().slice(0, 10);
+  const quiz = buildDailyQuiz(bank, dateStr);
+  if (quiz.length !== 10) throw new Error(`${dateStr}: expected 10 questions, got ${quiz.length}`);
+  const ids = new Set(quiz.map((q) => q.id));
+  if (ids.size !== 10) throw new Error(`${dateStr}: duplicate questions in daily set`);
+  for (const q of quiz) {
+    if (q.answer < 0 || q.answer > 3) throw new Error(`${dateStr}: bad answer index ${q.answer}`);
+    if (q.options.length !== 4) throw new Error(`${dateStr}: bad options for ${q.id}`);
+  }
+  const dayCats = new Set(quiz.map((q) => q.category));
+  console.log(`${dateStr}: 10 questions, ${dayCats.size} distinct categories, answer ok`);
+}
+
+// deterministic: same date twice -> same quiz
+const a = buildDailyQuiz(bank, '2026-08-24');
+const b = buildDailyQuiz(bank, '2026-08-24');
+if (JSON.stringify(a) !== JSON.stringify(b)) throw new Error('not deterministic');
+console.log('deterministic: same date -> identical quiz ✓');
+
+// sample print of today's quiz
+const today = new Date().toISOString().slice(0, 10);
+console.log('\nSample daily quiz for', today, ':');
+for (const q of buildDailyQuiz(bank, today)) {
+  console.log(` [${q.category}/${q.difficulty}] ${q.question}`);
+  console.log(`   correct: ${q.options[q.answer]}`);
+}
+
+console.log('\nALL CHECKS PASSED');

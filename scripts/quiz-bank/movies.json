@@ -1,0 +1,742 @@
+[
+  {
+    "id": "mov-001",
+    "question": "Who played the title character Forrest Gump in the 1994 film?",
+    "options": [
+      "Robin Williams",
+      "John Travolta",
+      "Kevin Costner",
+      "Tom Hanks"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-002",
+    "question": "Which film features the famous line \"Here's looking at you, kid\"?",
+    "options": [
+      "Citizen Kane",
+      "The Maltese Falcon",
+      "Casablanca",
+      "Gone with the Wind"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-003",
+    "question": "Who directed Jaws, E.T. the Extra-Terrestrial, and Jurassic Park?",
+    "options": [
+      "George Lucas",
+      "Steven Spielberg",
+      "Ridley Scott",
+      "James Cameron"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-004",
+    "question": "Which actor played the superhero Iron Man in the Marvel films?",
+    "options": [
+      "Chris Hemsworth",
+      "Mark Ruffalo",
+      "Chris Evans",
+      "Robert Downey Jr."
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-005",
+    "question": "\"May the Force be with you\" is a famous line from which movie saga?",
+    "options": [
+      "Avatar",
+      "Star Wars",
+      "Star Trek",
+      "The Matrix"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-006",
+    "question": "Who played Jack Dawson in Titanic (1997)?",
+    "options": [
+      "Leonardo DiCaprio",
+      "Matt Damon",
+      "Johnny Depp",
+      "Brad Pitt"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-007",
+    "question": "Which 1985 film features time-traveling teenager Marty McFly?",
+    "options": [
+      "Bill & Ted's Excellent Adventure",
+      "Peggy Sue Got Married",
+      "The Terminator",
+      "Back to the Future"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-008",
+    "question": "Which actor delivered the line \"I'll be back\" in The Terminator?",
+    "options": [
+      "Bruce Willis",
+      "Sylvester Stallone",
+      "Arnold Schwarzenegger",
+      "Jean-Claude Van Damme"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-009",
+    "question": "Who directed Titanic (1997) and Avatar (2009)?",
+    "options": [
+      "Ridley Scott",
+      "Peter Jackson",
+      "Christopher Nolan",
+      "James Cameron"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-010",
+    "question": "Which animated Disney film tells the story of a lion cub named Simba?",
+    "options": [
+      "The Lion King",
+      "Aladdin",
+      "The Jungle Book",
+      "Bambi"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-011",
+    "question": "Who played Harry Potter in the film series based on J.K. Rowling's books?",
+    "options": [
+      "Tom Felton",
+      "Daniel Radcliffe",
+      "Rupert Grint",
+      "Elijah Wood"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-012",
+    "question": "In The Wizard of Oz, what color are Dorothy's famous slippers?",
+    "options": [
+      "Golden yellow",
+      "Sapphire blue",
+      "Emerald green",
+      "Ruby red"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-013",
+    "question": "Who played Gollum, who calls the ring \"my precious\", in The Lord of the Rings?",
+    "options": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Andy Serkis",
+      "Viggo Mortensen"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-014",
+    "question": "Which actor was the first to play James Bond in the official film series?",
+    "options": [
+      "George Lazenby",
+      "Sean Connery",
+      "Roger Moore",
+      "Pierce Brosnan"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-015",
+    "question": "Which 1975 film is about a great white shark terrorizing a beach town?",
+    "options": [
+      "Deep Blue Sea",
+      "Piranha",
+      "The Meg",
+      "Jaws"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-016",
+    "question": "Who played the Joker in The Dark Knight (2008)?",
+    "options": [
+      "Heath Ledger",
+      "Jared Leto",
+      "Jack Nicholson",
+      "Joaquin Phoenix"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-017",
+    "question": "\"To infinity and beyond!\" is the catchphrase of which animated character?",
+    "options": [
+      "Buzz Lightyear",
+      "Mike Wazowski",
+      "Woody",
+      "Shrek"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-018",
+    "question": "Who played the boxer Rocky Balboa in the Rocky film series?",
+    "options": [
+      "Dolph Lundgren",
+      "Bruce Willis",
+      "Arnold Schwarzenegger",
+      "Sylvester Stallone"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-019",
+    "question": "Who played Chandler Bing in the sitcom Friends?",
+    "options": [
+      "David Schwimmer",
+      "Matthew Perry",
+      "Matt LeBlanc",
+      "John Stamos"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-020",
+    "question": "Which TV series features chemistry teacher turned drug lord Walter White?",
+    "options": [
+      "Dexter",
+      "Weeds",
+      "Ozark",
+      "Breaking Bad"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-021",
+    "question": "Which director made The Godfather and Apocalypse Now?",
+    "options": [
+      "Francis Ford Coppola",
+      "Brian De Palma",
+      "Stanley Kubrick",
+      "Martin Scorsese"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-022",
+    "question": "In Casablanca, who plays Rick Blaine, the owner of Rick's Café?",
+    "options": [
+      "Humphrey Bogart",
+      "Clark Gable",
+      "James Stewart",
+      "Cary Grant"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-023",
+    "question": "Which actor played the unhinged writer Jack Torrance in The Shining?",
+    "options": [
+      "Robert De Niro",
+      "Dustin Hoffman",
+      "Jack Nicholson",
+      "Al Pacino"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-024",
+    "question": "Who wrote and directed Pulp Fiction (1994)?",
+    "options": [
+      "Guy Ritchie",
+      "Quentin Tarantino",
+      "Joel Coen",
+      "David Fincher"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-025",
+    "question": "Which Best Picture winner tells the story of the Corleone crime family?",
+    "options": [
+      "Casino",
+      "Goodfellas",
+      "The Godfather",
+      "Scarface"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-026",
+    "question": "\"You can't handle the truth!\" is shouted in which film?",
+    "options": [
+      "A Few Good Men",
+      "The Firm",
+      "Wall Street",
+      "Crimson Tide"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-027",
+    "question": "Who played the cannibalistic killer Hannibal Lecter in The Silence of the Lambs?",
+    "options": [
+      "Anthony Hopkins",
+      "Ralph Fiennes",
+      "Brian Cox",
+      "Gary Oldman"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-028",
+    "question": "Which actress played Scarlett O'Hara in Gone with the Wind (1939)?",
+    "options": [
+      "Vivien Leigh",
+      "Ingrid Bergman",
+      "Katharine Hepburn",
+      "Bette Davis"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-029",
+    "question": "Which Alfred Hitchcock film features Norman Bates and the Bates Motel?",
+    "options": [
+      "The Birds",
+      "Vertigo",
+      "Rear Window",
+      "Psycho"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-030",
+    "question": "Who directed The Shawshank Redemption (1994)?",
+    "options": [
+      "Frank Darabont",
+      "Ron Howard",
+      "Steven Spielberg",
+      "Clint Eastwood"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-031",
+    "question": "Which Best Picture winner stars Russell Crowe as Roman general Maximus?",
+    "options": [
+      "Gladiator",
+      "300",
+      "Spartacus",
+      "Troy"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-032",
+    "question": "Who played the drug lord Tony Montana in Scarface (1983)?",
+    "options": [
+      "Al Pacino",
+      "Ray Liotta",
+      "Joe Pesci",
+      "Robert De Niro"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-033",
+    "question": "Which film won Best Picture for 2010, telling the story of King George VI?",
+    "options": [
+      "Atonement",
+      "The Queen",
+      "The King's Speech",
+      "Darkest Hour"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-034",
+    "question": "Who directed Goodfellas, Taxi Driver, and Raging Bull?",
+    "options": [
+      "Brian De Palma",
+      "Martin Scorsese",
+      "Sidney Lumet",
+      "Francis Ford Coppola"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-035",
+    "question": "Who played mob boss Tony Soprano in the TV series The Sopranos?",
+    "options": [
+      "Joe Pantoliano",
+      "James Gandolfini",
+      "Ray Liotta",
+      "Frank Vincent"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-036",
+    "question": "Who played advertising executive Don Draper in Mad Men?",
+    "options": [
+      "Vincent Kartheiser",
+      "Jon Hamm",
+      "John Slattery",
+      "Bryan Cranston"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-037",
+    "question": "Who played Tyrion Lannister in Game of Thrones?",
+    "options": [
+      "Conleth Hill",
+      "Aidan Gillen",
+      "Peter Dinklage",
+      "Charles Dance"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-038",
+    "question": "Which actor played Michael Scott in the U.S. version of The Office?",
+    "options": [
+      "Ricky Gervais",
+      "Will Ferrell",
+      "Paul Rudd",
+      "Steve Carell"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-039",
+    "question": "Which TV series follows police and drug dealers in Baltimore, Maryland?",
+    "options": [
+      "The Shield",
+      "NYPD Blue",
+      "The Wire",
+      "Homicide: Life on the Street"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-040",
+    "question": "Who played the brilliant but abrasive Dr. Gregory House in the medical drama House?",
+    "options": [
+      "Hugh Laurie",
+      "Robert Sean Leonard",
+      "James Spader",
+      "Bryan Cranston"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-041",
+    "question": "Who played Atticus Finch in To Kill a Mockingbird (1962)?",
+    "options": [
+      "James Stewart",
+      "Henry Fonda",
+      "Spencer Tracy",
+      "Gregory Peck"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "A tall, dignified actor who won the Oscar for this role."
+  },
+  {
+    "id": "mov-042",
+    "question": "Which actor played Moses in The Ten Commandments (1956)?",
+    "options": [
+      "Burt Lancaster",
+      "Yul Brynner",
+      "Charlton Heston",
+      "Kirk Douglas"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "He also starred in Ben-Hur and Planet of the Apes."
+  },
+  {
+    "id": "mov-043",
+    "question": "Which film won the very first Academy Award for Best Picture?",
+    "options": [
+      "All Quiet on the Western Front",
+      "The Jazz Singer",
+      "Wings",
+      "Sunrise"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "A silent film about World War I fighter pilots."
+  },
+  {
+    "id": "mov-044",
+    "question": "Who directed Lawrence of Arabia (1962) and Doctor Zhivago (1965)?",
+    "options": [
+      "John Huston",
+      "David Lynch",
+      "David Lean",
+      "Fred Zinnemann"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "He also directed The Bridge on the River Kwai."
+  },
+  {
+    "id": "mov-045",
+    "question": "Which actress has won the most acting Oscars, with four wins?",
+    "options": [
+      "Bette Davis",
+      "Meryl Streep",
+      "Ingrid Bergman",
+      "Katharine Hepburn"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "Often paired on screen with Spencer Tracy."
+  },
+  {
+    "id": "mov-046",
+    "question": "Who played the jealous composer Antonio Salieri in Amadeus (1984)?",
+    "options": [
+      "F. Murray Abraham",
+      "Jeremy Irons",
+      "Daniel Day-Lewis",
+      "Tom Hulce"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "He won Best Actor, while Tom Hulce played Mozart."
+  },
+  {
+    "id": "mov-047",
+    "question": "Who played T.E. Lawrence in Lawrence of Arabia (1962)?",
+    "options": [
+      "Peter O'Toole",
+      "Anthony Quinn",
+      "Omar Sharif",
+      "Alec Guinness"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The same actor starred in The Lion in Winter."
+  },
+  {
+    "id": "mov-048",
+    "question": "Which film won Best Picture for 1984, about the rivalry between Mozart and Salieri?",
+    "options": [
+      "Places in the Heart",
+      "A Passage to India",
+      "Amadeus",
+      "The Killing Fields"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Directed by Miloš Forman."
+  },
+  {
+    "id": "mov-049",
+    "question": "Who played the ex-boxer Terry Malloy in On the Waterfront (1954)?",
+    "options": [
+      "Montgomery Clift",
+      "Paul Newman",
+      "James Dean",
+      "Marlon Brando"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "Contains the famous line \"I coulda been a contender.\""
+  },
+  {
+    "id": "mov-050",
+    "question": "Which actress played the aging stage star Margo Channing in All About Eve (1950)?",
+    "options": [
+      "Katharine Hepburn",
+      "Barbara Stanwyck",
+      "Joan Crawford",
+      "Bette Davis"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "She famously said \"Fasten your seatbelts, it's going to be a bumpy night.\""
+  },
+  {
+    "id": "mov-051",
+    "question": "Who directed The Apartment (1960) and Some Like It Hot (1959)?",
+    "options": [
+      "George Cukor",
+      "Frank Capra",
+      "Billy Wilder",
+      "William Wyler"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "He also directed Double Indemnity."
+  },
+  {
+    "id": "mov-052",
+    "question": "Which film won Best Picture for 1954, a story of corruption on the New York docks?",
+    "options": [
+      "From Here to Eternity",
+      "A Streetcar Named Desire",
+      "On the Waterfront",
+      "Marty"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It also won Best Actor for Marlon Brando."
+  },
+  {
+    "id": "mov-053",
+    "question": "Who played the title role in Gandhi (1982)?",
+    "options": [
+      "Anthony Hopkins",
+      "Ian Holm",
+      "Ben Kingsley",
+      "John Gielgud"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "The film won eight Academy Awards."
+  },
+  {
+    "id": "mov-054",
+    "question": "Which Best Picture winner stars Jack Nicholson as Randle McMurphy in a mental institution?",
+    "options": [
+      "Dog Day Afternoon",
+      "One Flew Over the Cuckoo's Nest",
+      "Midnight Express",
+      "The Deer Hunter"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Based on the novel by Ken Kesey."
+  },
+  {
+    "id": "mov-055",
+    "question": "Who played Colonel Nicholson in The Bridge on the River Kwai (1957)?",
+    "options": [
+      "James Mason",
+      "William Holden",
+      "Jack Hawkins",
+      "Alec Guinness"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "The actor later played Obi-Wan Kenobi in Star Wars."
+  },
+  {
+    "id": "mov-056",
+    "question": "Which film was the first sequel to win the Academy Award for Best Picture?",
+    "options": [
+      "The Godfather Part II",
+      "Star Wars: Episode V",
+      "Toy Story 2",
+      "Rocky II"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It won Best Picture in 1974."
+  },
+  {
+    "id": "mov-057",
+    "question": "Which film won Best Picture for 1979, a drama about a divorce and custody battle?",
+    "options": [
+      "The Verdict",
+      "Ordinary People",
+      "Kramer vs. Kramer",
+      "Terms of Endearment"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It stars Dustin Hoffman and Meryl Streep."
+  },
+  {
+    "id": "mov-058",
+    "question": "In Seinfeld, what is Kramer's rarely used first name?",
+    "options": [
+      "Cosmo",
+      "Sebastian",
+      "Cornelius",
+      "Reginald"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The character's full name is only used a few times on the show."
+  },
+  {
+    "id": "mov-059",
+    "question": "Who was the first actor to play the Doctor in Doctor Who (1963)?",
+    "options": [
+      "Patrick Troughton",
+      "William Hartnell",
+      "Tom Baker",
+      "Jon Pertwee"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "He played the First Doctor from 1963 to 1966."
+  },
+  {
+    "id": "mov-060",
+    "question": "Which actress played Peggy Olson in Mad Men?",
+    "options": [
+      "Kiernan Shipka",
+      "January Jones",
+      "Elisabeth Moss",
+      "Christina Hendricks"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Her character begins as a secretary at Sterling Cooper."
+  }
+]

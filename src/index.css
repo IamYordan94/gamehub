@@ -1222,3 +1222,21 @@ body {
   --fm-red: #ff4d4d;
   --fm-text: #141414;
 }
+
+/* ============================================================
+   QUIZ MASTER — Purple sticker pack
+   ============================================================ */
+:root {
+  --qz-bg: #f6f3ec;
+  --qz-panel: #ffffff;
+  --qz-ink: #141414;
+  --qz-ink-soft: #6f6a5e;
+  --qz-nav: #1E2028;
+  --qz-accent: #8b5cf6;
+  --qz-accent-side: #5b3fa8;
+  --qz-lime: #d9f24b;
+  --qz-yellow: #ffc93c;
+  --qz-green: #39c96b;
+  --qz-red: #ff4d4d;
+  --qz-text: #141414;
+}

@@ -1,0 +1,730 @@
+[
+  {
+    "id": "his-001",
+    "question": "In which year did World War II begin?",
+    "options": [
+      "1914",
+      "1939",
+      "1945",
+      "1918"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-002",
+    "question": "In which year did World War I begin?",
+    "options": [
+      "1918",
+      "1905",
+      "1914",
+      "1939"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "his-003",
+    "question": "Who was the first person to walk on the Moon?",
+    "options": [
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "John Glenn",
+      "Neil Armstrong"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "his-004",
+    "question": "In which year did Christopher Columbus first reach the Americas?",
+    "options": [
+      "1492",
+      "1519",
+      "1453",
+      "1607"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "his-005",
+    "question": "In which year did the Titanic sink?",
+    "options": [
+      "1905",
+      "1912",
+      "1918",
+      "1921"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-006",
+    "question": "The Great Pyramid of Giza is located in which modern country?",
+    "options": [
+      "Greece",
+      "Iraq",
+      "Egypt",
+      "Mexico"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "his-007",
+    "question": "Who was the first President of the United States?",
+    "options": [
+      "Thomas Jefferson",
+      "George Washington",
+      "Abraham Lincoln",
+      "John Adams"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-008",
+    "question": "In which year did the Berlin Wall fall?",
+    "options": [
+      "1985",
+      "1989",
+      "1991",
+      "1979"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-009",
+    "question": "Ancient Greece is often called the birthplace of which form of government?",
+    "options": [
+      "Monarchy",
+      "Democracy",
+      "Feudalism",
+      "Dictatorship"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-010",
+    "question": "The Colosseum is located in which city?",
+    "options": [
+      "Athens",
+      "Rome",
+      "Paris",
+      "Cairo"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-011",
+    "question": "Who was the last active ruler of ancient Egypt?",
+    "options": [
+      "Nefertiti",
+      "Cleopatra",
+      "Hatshepsut",
+      "Merneith"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-012",
+    "question": "The Industrial Revolution began in which country?",
+    "options": [
+      "France",
+      "Germany",
+      "Great Britain",
+      "United States"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "his-013",
+    "question": "Napoleon Bonaparte was the ruler of which country?",
+    "options": [
+      "Spain",
+      "Russia",
+      "France",
+      "Austria"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "his-014",
+    "question": "Which famous ocean liner sank on its maiden voyage in 1912?",
+    "options": [
+      "Lusitania",
+      "Titanic",
+      "Britannic",
+      "Queen Mary"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-015",
+    "question": "Who led the first expedition to circumnavigate the globe?",
+    "options": [
+      "Ferdinand Magellan",
+      "Vasco da Gama",
+      "Christopher Columbus",
+      "Marco Polo"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "his-016",
+    "question": "In which ocean did the Titanic sink?",
+    "options": [
+      "Pacific Ocean",
+      "Indian Ocean",
+      "North Atlantic Ocean",
+      "South Atlantic Ocean"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "his-017",
+    "question": "Which ancient civilization built the pyramids at Giza?",
+    "options": [
+      "Romans",
+      "Egyptians",
+      "Greeks",
+      "Persians"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-018",
+    "question": "The ancient Olympic Games originated in which country?",
+    "options": [
+      "Italy",
+      "Egypt",
+      "Greece",
+      "Turkey"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "his-019",
+    "question": "In which year did the Apollo 11 mission land humans on the Moon?",
+    "options": [
+      "1961",
+      "1969",
+      "1975",
+      "1959"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-020",
+    "question": "Julius Caesar was a leader of which ancient state?",
+    "options": [
+      "Persia",
+      "Egypt",
+      "Rome",
+      "Athens"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "his-021",
+    "question": "Who was the British Prime Minister for most of World War II?",
+    "options": [
+      "Neville Chamberlain",
+      "Winston Churchill",
+      "Clement Attlee",
+      "Tony Blair"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-022",
+    "question": "Which treaty officially ended World War I?",
+    "options": [
+      "Treaty of Versailles",
+      "Treaty of Paris",
+      "Treaty of Ghent",
+      "Treaty of Tordesillas"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "his-023",
+    "question": "Who was the leader of Germany during World War II?",
+    "options": [
+      "Benito Mussolini",
+      "Adolf Hitler",
+      "Joseph Stalin",
+      "Kaiser Wilhelm II"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-024",
+    "question": "In which year was the United States Declaration of Independence adopted?",
+    "options": [
+      "1776",
+      "1789",
+      "1783",
+      "1765"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "his-025",
+    "question": "Which empire was founded by Genghis Khan?",
+    "options": [
+      "Ottoman Empire",
+      "Mongol Empire",
+      "Mughal Empire",
+      "Persian Empire"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-026",
+    "question": "Who was the first emperor of Rome?",
+    "options": [
+      "Julius Caesar",
+      "Augustus",
+      "Nero",
+      "Constantine"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-027",
+    "question": "In which year did the French Revolution begin?",
+    "options": [
+      "1789",
+      "1776",
+      "1815",
+      "1799"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "his-028",
+    "question": "The American Civil War was fought between which two sides?",
+    "options": [
+      "East and West",
+      "North and South",
+      "Republicans and Monarchists",
+      "Colonies and the Crown"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-029",
+    "question": "Who discovered penicillin?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Marie Curie",
+      "Robert Koch"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-030",
+    "question": "The Battle of Hastings in 1066 was won by which invader?",
+    "options": [
+      "Harold Godwinson",
+      "William the Conqueror",
+      "Canute",
+      "Alfred the Great"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-031",
+    "question": "Who was the last Tsar of Russia?",
+    "options": [
+      "Alexander II",
+      "Nicholas II",
+      "Peter the Great",
+      "Ivan the Terrible"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-032",
+    "question": "Which South American empire was ruled from the city of Cusco?",
+    "options": [
+      "Aztec Empire",
+      "Inca Empire",
+      "Maya Empire",
+      "Olmec Empire"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-033",
+    "question": "In which year did the Wright brothers make their first successful powered flight?",
+    "options": [
+      "1903",
+      "1899",
+      "1910",
+      "1908"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "his-034",
+    "question": "Who was President of the United States during the American Civil War?",
+    "options": [
+      "Andrew Johnson",
+      "Ulysses S. Grant",
+      "Abraham Lincoln",
+      "James Buchanan"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "his-035",
+    "question": "Who is credited with inventing the movable-type printing press in Europe?",
+    "options": [
+      "Johannes Gutenberg",
+      "Leonardo da Vinci",
+      "Galileo Galilei",
+      "Isaac Newton"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "his-036",
+    "question": "Which Roman city was buried by the eruption of Mount Vesuvius in 79 AD?",
+    "options": [
+      "Rome",
+      "Pompeii",
+      "Athens",
+      "Carthage"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-037",
+    "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+    "options": [
+      "Bessie Coleman",
+      "Amelia Earhart",
+      "Harriet Quimby",
+      "Valentina Tereshkova"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-038",
+    "question": "In which year was the Magna Carta signed?",
+    "options": [
+      "1066",
+      "1215",
+      "1492",
+      "1776"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-039",
+    "question": "Which ancient Greek city-state was famous for its powerful army?",
+    "options": [
+      "Athens",
+      "Sparta",
+      "Corinth",
+      "Thebes"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-040",
+    "question": "Who was the first person to travel into space?",
+    "options": [
+      "Neil Armstrong",
+      "Yuri Gagarin",
+      "John Glenn",
+      "Alan Shepard"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-041",
+    "question": "In which year was the Battle of Waterloo fought?",
+    "options": [
+      "1805",
+      "1812",
+      "1815",
+      "1821"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Napoleon's final defeat."
+  },
+  {
+    "id": "his-042",
+    "question": "Who was the first explorer to reach the South Pole?",
+    "options": [
+      "Robert Falcon Scott",
+      "Roald Amundsen",
+      "Ernest Shackleton",
+      "Edmund Hillary"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A Norwegian expedition reached it in December 1911."
+  },
+  {
+    "id": "his-043",
+    "question": "The Rosetta Stone was discovered in which year?",
+    "options": [
+      "1799",
+      "1805",
+      "1822",
+      "1750"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It helped decode Egyptian hieroglyphs."
+  },
+  {
+    "id": "his-044",
+    "question": "Which empire built the city of Tenochtitlan?",
+    "options": [
+      "Inca Empire",
+      "Aztec Empire",
+      "Maya Empire",
+      "Toltec Empire"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Tenochtitlan later became Mexico City."
+  },
+  {
+    "id": "his-045",
+    "question": "Who was known as the 'Iron Chancellor' of Germany?",
+    "options": [
+      "Kaiser Wilhelm I",
+      "Otto von Bismarck",
+      "Frederick the Great",
+      "Konrad Adenauer"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "He unified Germany in 1871."
+  },
+  {
+    "id": "his-046",
+    "question": "The Hundred Years' War was fought between which two countries?",
+    "options": [
+      "France and Spain",
+      "England and France",
+      "England and Scotland",
+      "Germany and France"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "his-047",
+    "question": "Which ship carried the Pilgrims to America in 1620?",
+    "options": [
+      "Santa Maria",
+      "Mayflower",
+      "HMS Beagle",
+      "Endeavour"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "his-048",
+    "question": "Who was crowned the first Holy Roman Emperor?",
+    "options": [
+      "Charlemagne",
+      "Otto I",
+      "Charles V",
+      "Frederick Barbarossa"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Crowned in the year 800."
+  },
+  {
+    "id": "his-049",
+    "question": "In which year did the Great Fire of London occur?",
+    "options": [
+      "1666",
+      "1605",
+      "1711",
+      "1642"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "his-050",
+    "question": "Which empire was ruled by Suleiman the Magnificent?",
+    "options": [
+      "Byzantine Empire",
+      "Ottoman Empire",
+      "Safavid Empire",
+      "Seljuk Empire"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "his-051",
+    "question": "The Wright brothers' first flight took place in which U.S. state?",
+    "options": [
+      "Ohio",
+      "North Carolina",
+      "Virginia",
+      "New York"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "At Kitty Hawk."
+  },
+  {
+    "id": "his-052",
+    "question": "In which year was the Spanish Armada defeated?",
+    "options": [
+      "1588",
+      "1605",
+      "1492",
+      "1620"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "his-053",
+    "question": "Which Roman emperor legalized Christianity with the Edict of Milan?",
+    "options": [
+      "Nero",
+      "Julius Caesar",
+      "Constantine",
+      "Augustus"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "his-054",
+    "question": "The Taj Mahal was commissioned by which Mughal emperor?",
+    "options": [
+      "Akbar",
+      "Shah Jahan",
+      "Aurangzeb",
+      "Babur"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "his-055",
+    "question": "Who was the first emperor of a unified China?",
+    "options": [
+      "Han Wudi",
+      "Qin Shi Huang",
+      "Kublai Khan",
+      "Sun Yat-sen"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "his-056",
+    "question": "The Battle of Thermopylae was fought between the Greeks and which empire?",
+    "options": [
+      "Roman Empire",
+      "Persian Empire",
+      "Ottoman Empire",
+      "Egyptian Empire"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "his-057",
+    "question": "In which year did the Suez Canal open?",
+    "options": [
+      "1869",
+      "1859",
+      "1882",
+      "1875"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "his-058",
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "options": [
+      "Rosalind Franklin",
+      "Marie Curie",
+      "Dorothy Hodgkin",
+      "Gerty Cori"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "his-059",
+    "question": "Who made the first successful ascent of Mount Everest?",
+    "options": [
+      "Edmund Hillary and Tenzing Norgay",
+      "Robert Falcon Scott",
+      "Roald Amundsen",
+      "Reinhold Messner"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "In 1953."
+  },
+  {
+    "id": "his-060",
+    "question": "The Boston Tea Party took place in which year?",
+    "options": [
+      "1765",
+      "1773",
+      "1776",
+      "1783"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  }
+]

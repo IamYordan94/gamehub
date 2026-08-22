@@ -42,6 +42,11 @@ const FermiPage = lazy(() => import('./pages/FermiPage'));
 const FermiCalendar = lazy(() => import('./pages/FermiCalendar'));
 const FermiAbout = lazy(() => import('./pages/FermiAbout'));
 
+const QuizHome = lazy(() => import('./pages/QuizHome'));
+const QuizLayout = lazy(() => import('./layouts/QuizLayout'));
+const QuizPage = lazy(() => import('./pages/QuizPage'));
+const QuizAbout = lazy(() => import('./pages/QuizAbout'));
+
 function App() {
   return (
     <ErrorBoundary>
@@ -99,6 +104,13 @@ function App() {
             <Route path="play" element={<FermiPage />} />
             <Route path="calendar" element={<FermiCalendar />} />
             <Route path="about" element={<FermiAbout />} />
+          </Route>
+        </Route>
+        <Route path="/quiz">
+          <Route index element={<QuizHome />} />
+          <Route element={<QuizLayout />}>
+            <Route path="play" element={<QuizPage />} />
+            <Route path="about" element={<QuizAbout />} />
           </Route>
         </Route>
         <Route path="*" element={<NotFound />} />

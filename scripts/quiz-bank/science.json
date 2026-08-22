@@ -1,0 +1,744 @@
+[
+  {
+    "id": "sci-001",
+    "question": "What is the chemical formula for water?",
+    "options": [
+      "NaCl",
+      "CO2",
+      "O2",
+      "H2O"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "Two hydrogen atoms and one oxygen atom."
+  },
+  {
+    "id": "sci-002",
+    "question": "What is the chemical symbol for gold?",
+    "options": [
+      "Ag",
+      "Gd",
+      "Au",
+      "Go"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "From the Latin word 'aurum'."
+  },
+  {
+    "id": "sci-003",
+    "question": "What is the chemical symbol for silver?",
+    "options": [
+      "Si",
+      "Au",
+      "Sv",
+      "Ag"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "From the Latin word 'argentum'."
+  },
+  {
+    "id": "sci-004",
+    "question": "What is the approximate speed of light?",
+    "options": [
+      "3,000 km/s",
+      "30,000 km/s",
+      "300,000 km/s",
+      "3,000,000 km/s"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Fast enough to circle Earth about 7.5 times in one second."
+  },
+  {
+    "id": "sci-005",
+    "question": "What is Earth's only natural satellite?",
+    "options": [
+      "The Sun",
+      "Mars",
+      "Venus",
+      "The Moon"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-006",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Earth",
+      "Mercury"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-007",
+    "question": "What is the largest organ in the human body?",
+    "options": [
+      "Brain",
+      "Liver",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-008",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Mars",
+      "Venus"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-009",
+    "question": "H2O is the chemical formula for which common substance?",
+    "options": [
+      "Water",
+      "Oxygen gas",
+      "Table salt",
+      "Carbon dioxide"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-010",
+    "question": "How many planets are there in our Solar System?",
+    "options": [
+      "9",
+      "10",
+      "8",
+      "7"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Pluto was reclassified as a dwarf planet in 2006."
+  },
+  {
+    "id": "sci-011",
+    "question": "What is the chemical symbol for oxygen?",
+    "options": [
+      "Om",
+      "Ox",
+      "Og",
+      "O"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "A single letter."
+  },
+  {
+    "id": "sci-012",
+    "question": "Which gas do humans need to breathe in to survive?",
+    "options": [
+      "Hydrogen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Oxygen"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-013",
+    "question": "In which year did humans first walk on the Moon?",
+    "options": [
+      "1989",
+      "1959",
+      "1969",
+      "1979"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "The Apollo 11 mission."
+  },
+  {
+    "id": "sci-014",
+    "question": "What is the chemical symbol for iron?",
+    "options": [
+      "In",
+      "I",
+      "Ir",
+      "Fe"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "From the Latin word 'ferrum'."
+  },
+  {
+    "id": "sci-015",
+    "question": "Which is the largest planet in our Solar System?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Earth",
+      "Neptune"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-016",
+    "question": "Which scientist developed the theory of relativity?",
+    "options": [
+      "Galileo Galilei",
+      "Albert Einstein",
+      "Charles Darwin",
+      "Isaac Newton"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-017",
+    "question": "Which scientist formulated the laws of motion and universal gravitation?",
+    "options": [
+      "Albert Einstein",
+      "Marie Curie",
+      "Charles Darwin",
+      "Isaac Newton"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-018",
+    "question": "Which scientist proposed the theory of evolution by natural selection?",
+    "options": [
+      "Isaac Newton",
+      "Louis Pasteur",
+      "Charles Darwin",
+      "Albert Einstein"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-019",
+    "question": "Which scientist pioneered research on radioactivity and discovered radium?",
+    "options": [
+      "Jane Goodall",
+      "Ada Lovelace",
+      "Rosalind Franklin",
+      "Marie Curie"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-020",
+    "question": "How many legs does a spider have?",
+    "options": [
+      "8",
+      "6",
+      "10",
+      "4"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-021",
+    "question": "What is the exact speed of light in a vacuum?",
+    "options": [
+      "299,792,458 m/s",
+      "299,792,458 km/s",
+      "1,000,000 m/s",
+      "150,000,000 m/s"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-022",
+    "question": "What is the chemical symbol for sodium?",
+    "options": [
+      "Na",
+      "Sa",
+      "S",
+      "So"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "From the Latin word 'natrium'."
+  },
+  {
+    "id": "sci-023",
+    "question": "What is the chemical symbol for potassium?",
+    "options": [
+      "P",
+      "Pt",
+      "Po",
+      "K"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "From the Latin word 'kalium'."
+  },
+  {
+    "id": "sci-024",
+    "question": "What does DNA stand for?",
+    "options": [
+      "Dinucleic acid",
+      "Deoxyribonucleic amine",
+      "Deoxyribonucleic acid",
+      "Ribonucleic acid"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-025",
+    "question": "Which gas do plants absorb from the atmosphere for photosynthesis?",
+    "options": [
+      "Nitrogen",
+      "Carbon dioxide",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-026",
+    "question": "Which element has the atomic number 1?",
+    "options": [
+      "Helium",
+      "Carbon",
+      "Hydrogen",
+      "Oxygen"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-027",
+    "question": "Which planet is famous for its prominent ring system?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-028",
+    "question": "Which substance do red blood cells mainly transport around the body?",
+    "options": [
+      "Carbon dioxide",
+      "Hormones",
+      "Oxygen",
+      "Glucose"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-029",
+    "question": "Which force keeps the planets in orbit around the Sun?",
+    "options": [
+      "Electricity",
+      "Magnetism",
+      "Gravity",
+      "Friction"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-030",
+    "question": "Which part of the cell is often called its 'powerhouse'?",
+    "options": [
+      "Mitochondria",
+      "Nucleus",
+      "Ribosome",
+      "Cell membrane"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-031",
+    "question": "What is the hardest naturally occurring substance?",
+    "options": [
+      "Iron",
+      "Diamond",
+      "Quartz",
+      "Gold"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-032",
+    "question": "Which planet is often called Earth's 'twin' because of its similar size?",
+    "options": [
+      "Venus",
+      "Jupiter",
+      "Mercury",
+      "Mars"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-033",
+    "question": "At what temperature does water boil at sea level?",
+    "options": [
+      "100 °C",
+      "90 °C",
+      "110 °C",
+      "200 °C"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-034",
+    "question": "At what temperature does water freeze at sea level?",
+    "options": [
+      "10 °C",
+      "32 °C",
+      "0 °C",
+      "-10 °C"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-035",
+    "question": "What is the SI unit of electric current?",
+    "options": [
+      "Volt",
+      "Ohm",
+      "Ampere",
+      "Watt"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-036",
+    "question": "How many bones are in the adult human body?",
+    "options": [
+      "106",
+      "306",
+      "150",
+      "206"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-037",
+    "question": "Which of these travels the fastest?",
+    "options": [
+      "Sound",
+      "Light",
+      "A jet plane",
+      "A bullet"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-038",
+    "question": "Which scientist discovered penicillin?",
+    "options": [
+      "Alexander Fleming",
+      "Marie Curie",
+      "Louis Pasteur",
+      "Edward Jenner"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-039",
+    "question": "What is the largest animal in the world?",
+    "options": [
+      "African elephant",
+      "Blue whale",
+      "Giraffe",
+      "Great white shark"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-040",
+    "question": "What is the chemical symbol for helium?",
+    "options": [
+      "Hl",
+      "H",
+      "Ha",
+      "He"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-041",
+    "question": "What is absolute zero on the Celsius scale?",
+    "options": [
+      "0 °C",
+      "-100 °C",
+      "-273.15 °C",
+      "-200 °C"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It equals 0 Kelvin."
+  },
+  {
+    "id": "sci-042",
+    "question": "What is the SI unit of force?",
+    "options": [
+      "Pascal",
+      "Joule",
+      "Newton",
+      "Watt"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "sci-043",
+    "question": "What is the chemical symbol for lead?",
+    "options": [
+      "Pl",
+      "Ld",
+      "Le",
+      "Pb"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "From the Latin word 'plumbum'."
+  },
+  {
+    "id": "sci-044",
+    "question": "What is the chemical symbol for mercury?",
+    "options": [
+      "Mg",
+      "Hg",
+      "Mc",
+      "Me"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "From the Latin word 'hydrargyrum'."
+  },
+  {
+    "id": "sci-045",
+    "question": "What is the chemical symbol for tin?",
+    "options": [
+      "Ti",
+      "Sn",
+      "In",
+      "Tn"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "From the Latin word 'stannum'."
+  },
+  {
+    "id": "sci-046",
+    "question": "How many protons does a gold atom have in its nucleus?",
+    "options": [
+      "29",
+      "79",
+      "80",
+      "47"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Gold's atomic number."
+  },
+  {
+    "id": "sci-047",
+    "question": "Which gas makes up the largest proportion of Earth's atmosphere?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "About 78% of the air."
+  },
+  {
+    "id": "sci-048",
+    "question": "Which is the smallest planet in our Solar System?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Mercury",
+      "Pluto"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Pluto is a dwarf planet."
+  },
+  {
+    "id": "sci-049",
+    "question": "Which planet is the hottest in our Solar System?",
+    "options": [
+      "Jupiter",
+      "Venus",
+      "Mercury",
+      "Mars"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A thick atmosphere traps the heat."
+  },
+  {
+    "id": "sci-050",
+    "question": "Which planet hosts a giant storm known as the Great Red Spot?",
+    "options": [
+      "Saturn",
+      "Neptune",
+      "Mars",
+      "Jupiter"
+    ],
+    "answer": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "sci-051",
+    "question": "Which planet rotates on its side, with an axis tilted almost 98 degrees?",
+    "options": [
+      "Venus",
+      "Neptune",
+      "Saturn",
+      "Uranus"
+    ],
+    "answer": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "sci-052",
+    "question": "What is the shape of a DNA molecule?",
+    "options": [
+      "Single ring",
+      "Flat sheet",
+      "Triple spiral",
+      "Double helix"
+    ],
+    "answer": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "sci-053",
+    "question": "In DNA, which base pairs with adenine?",
+    "options": [
+      "Thymine",
+      "Uracil",
+      "Cytosine",
+      "Guanine"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Uracil replaces it in RNA."
+  },
+  {
+    "id": "sci-054",
+    "question": "How many hearts does an octopus have?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "sci-055",
+    "question": "What is the approximate speed of sound in air at room temperature?",
+    "options": [
+      "3,000 m/s",
+      "343 m/s",
+      "34 m/s",
+      "1,500 m/s"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "sci-056",
+    "question": "What is the chemical symbol for copper?",
+    "options": [
+      "Cu",
+      "Cb",
+      "Co",
+      "Cp"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "From the Latin word 'cuprum'."
+  },
+  {
+    "id": "sci-057",
+    "question": "What type of energy does a moving object possess?",
+    "options": [
+      "Kinetic energy",
+      "Potential energy",
+      "Chemical energy",
+      "Thermal energy"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "sci-058",
+    "question": "Which element, discovered by Marie Curie, was named after her homeland of Poland?",
+    "options": [
+      "Radium",
+      "Francium",
+      "Curium",
+      "Polonium"
+    ],
+    "answer": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "sci-059",
+    "question": "What is the chemical symbol for tungsten?",
+    "options": [
+      "Tu",
+      "Tg",
+      "T",
+      "W"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "From the element's old name 'wolfram'."
+  },
+  {
+    "id": "sci-060",
+    "question": "What is the pH of pure water?",
+    "options": [
+      "1",
+      "7",
+      "14",
+      "0"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Neutral on the pH scale."
+  }
+]
