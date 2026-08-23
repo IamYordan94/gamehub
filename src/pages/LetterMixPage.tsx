@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useParams, useNavigate, Link, useOutletContext } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useWordDatabase } from '../hooks/useWordDatabase';
+import ShareCardModal from '../components/ShareCardModal';
 import { getTodayDateStr } from '../utils/dailySeed';
 import {
   setLetterMixCompleted,
@@ -28,10 +29,11 @@ type LayoutContextType = { setResetHandler: (handler: (() => void) | null) => vo
 // ─── Results panel ────────────────────────────────────────────────────────────
 
 function ResultsPanel({
-  puzzle, foundWords, foundSolution, hintsUsed, onShare, shared, onReset, onNextLevel,
+  puzzle, foundWords, foundSolution, hintsUsed, onShare, onShareCard, shared, onReset, onNextLevel,
 }: {
   puzzle: Puzzle;
   foundWords: string[];
+  onShareCard: () => void;
   foundSolution: string[];
   hintsUsed: number;
   onShare: () => void;
@@ -136,6 +138,11 @@ function ResultsPanel({
           style={{ background: 'var(--lm-accent)', border: '1px solid var(--lm-accent-dark)', borderBottom: '3px solid var(--lm-accent-side)', fontFamily: "'JetBrains Mono', monospace" }}>
           {shared ? '✓ Copied!' : 'Share result'}
         </button>
+        <button onClick={onShareCard}
+          className="px-5 py-2 rounded text-sm font-black text-white transition-colors"
+          style={{ background: '#D63B3B', border: '1px solid var(--lm-accent-dark)', borderBottom: '3px solid var(--lm-accent-side)', fontFamily: "'JetBrains Mono', monospace" }}>
+          Share card
+        </button>
         {onNextLevel && (
           <button onClick={() => onNextLevel('medium')}
             className="px-5 py-2 rounded text-sm font-black transition-colors"
@@ -168,6 +175,7 @@ export default function LetterMixPage() {
   const { isLoading: dbLoading, isValidWord } = useWordDatabase();
 
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
+  const [cardOpen, setCardOpen] = useState(false);
   const [puzzleLoaded, setPuzzleLoaded] = useState(false);
   const [letters, setLetters] = useState<string[]>([]);
   const [selectedIndices, setSelectedIndices] = useState<number[]>([]);
@@ -447,6 +455,7 @@ export default function LetterMixPage() {
                 foundSolution={foundSolutionWords}
                 hintsUsed={hintsUsed}
                 onShare={handleShare}
+                onShareCard={() => setCardOpen(true)}
                 shared={shared}
                 onReset={handleReset}
                 onNextLevel={level === 'easy' ? () => switchLevel('medium') : level === 'medium' ? () => switchLevel('hard') : null}
@@ -526,6 +535,36 @@ export default function LetterMixPage() {
           )}
         </AnimatePresence>
       </section>
+
+      <ShareCardModal
+        open={cardOpen}
+        onClose={() => setCardOpen(false)}
+        options={{
+          gameId: `lettermix-${puzzle?.date ?? ''}-${puzzle?.level ?? ''}`,
+          title: 'Clear the String',
+          accentColor: '#D63B3B',
+          lines: puzzle
+            ? [
+                `${puzzle.date} (${puzzle.level})`,
+                `${hintsUsed === 0 ? '★★★' : hintsUsed <= 2 ? '★★☆' : '★☆☆'} Found all ${foundSolutionWords.length} solution words!`,
+                foundWords.filter((w) => !puzzle.solutionWords.includes(w)).length > 0
+                  ? `+${foundWords.filter((w) => !puzzle.solutionWords.includes(w)).length} bonus words`
+                  : '',
+              ].filter(Boolean)
+            : [],
+        }}
+        shareText={puzzle
+          ? [
+              `Clear the String — ${puzzle.date} (${puzzle.level})`,
+              `${hintsUsed === 0 ? '★★★' : hintsUsed <= 2 ? '★★☆' : '★☆☆'}  Found all ${foundSolutionWords.length} solution words!`,
+              foundWords.filter((w) => !puzzle.solutionWords.includes(w)).length > 0
+                ? `+${foundWords.filter((w) => !puzzle.solutionWords.includes(w)).length} bonus word${foundWords.filter((w) => !puzzle.solutionWords.includes(w)).length !== 1 ? 's' : ''}`
+                : '',
+              hintsUsed > 0 ? `💡 ${hintsUsed} hint${hintsUsed !== 1 ? 's' : ''} used` : '',
+              'yodoku.app',
+            ].filter(Boolean).join('\n')
+          : ''}
+      />
     </div>
   );
 }

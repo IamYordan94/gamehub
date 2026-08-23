@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import AdSlot from '../components/AdSlot';
+import ShareCardModal from '../components/ShareCardModal';
 import {
   type OrderleState,
   initOrderleState,
@@ -29,6 +30,7 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
   const [state, setState] = useState<OrderleState | null>(null);
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
+  const [cardOpen, setCardOpen] = useState(false);
 
   useEffect(() => {
     if (state?.won) markPlayed('orderle', todayISO());
@@ -315,6 +317,20 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
               }}>
               {copied ? 'Copied!' : 'Copy share'}
             </button>
+            <button onClick={() => setCardOpen(true)}
+              style={{
+                background: 'var(--ol-accent)',
+                color: 'var(--ol-ink)',
+                border: '2.5px solid var(--ol-ink)',
+                borderRadius: '8px',
+                padding: '8px 16px',
+                fontWeight: 700,
+                fontSize: '13px',
+                boxShadow: '3px 3px 0 rgba(0,0,0,0.25)',
+                cursor: 'pointer',
+              }}>
+              Share card
+            </button>
             {!practice && (
               <button onClick={() => window.location.reload()}
                 style={{
@@ -335,6 +351,32 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
         </motion.div>
       )}
       {state.over && <AdSlot slot="orderle-results" minHeight={110} />}
+
+      <ShareCardModal
+        open={cardOpen}
+        onClose={() => setCardOpen(false)}
+        options={{
+          gameId: `orderle-${practice ? 0 : getTodayIndex()}`,
+          title: 'ORDERLE',
+          accentColor: '#39c96b',
+          lines: state && state.puzzle
+            ? [
+                state.won ? `Solved in ${state.attempts} swap${state.attempts === 1 ? '' : 's'}` : "Today's sequence",
+                state.puzzle.rule,
+                `optimal ${state.optimal}`,
+              ]
+            : [],
+        }}
+        shareText={state && state.puzzle
+          ? shareOrderleText(
+              state.history,
+              practice ? 0 : getTodayIndex(),
+              state.won ? `${state.attempts}/${state.maxAttempts}` : `X/${state.maxAttempts}`,
+              state.puzzle.rule,
+              state.optimal,
+            )
+          : ''}
+      />
     </div>
   );
 }

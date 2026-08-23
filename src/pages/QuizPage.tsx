@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import AdSlot from '../components/AdSlot';
+import ShareCardModal from '../components/ShareCardModal';
 import type { QuizBank, DailyQuestion } from '../utils/quizLogic';
 import {
   CATEGORY_META,
@@ -24,6 +25,7 @@ export default function QuizPage() {
   const [qIndex, setQIndex] = useState(0);
   const [over, setOver] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [cardOpen, setCardOpen] = useState(false);
   const [loadError, setLoadError] = useState(false);
   const [streak, setStreak] = useState(getStreak());
 
@@ -196,6 +198,20 @@ export default function QuizPage() {
               }}>
               {copied ? 'Copied!' : 'Copy share'}
             </button>
+            <button onClick={() => setCardOpen(true)}
+              style={{
+                background: 'var(--qz-accent)',
+                color: 'var(--qz-ink)',
+                border: '2.5px solid var(--qz-ink)',
+                borderRadius: '8px',
+                padding: '8px 16px',
+                fontWeight: 700,
+                fontSize: '13px',
+                boxShadow: '3px 3px 0 rgba(0,0,0,0.25)',
+                cursor: 'pointer',
+              }}>
+              Share card
+            </button>
             <button onClick={handleReplay}
               style={{
                 background: 'var(--qz-panel)',
@@ -227,6 +243,22 @@ export default function QuizPage() {
         </div>
 
         <AdSlot slot="quiz-results" minHeight={110} />
+
+        <ShareCardModal
+          open={cardOpen}
+          onClose={() => setCardOpen(false)}
+          options={{
+            gameId: `quiz-${quizNum}`,
+            title: 'Quiz Master',
+            accentColor: '#8b5cf6',
+            lines: [
+              `${score}/${quiz.length} — ${verdict(score, quiz.length)}`,
+              `🔥 ${streak} day${streak === 1 ? '' : 's'} streak`,
+              grid,
+            ],
+          }}
+          shareText={shareQuizText(results, quizNum, score, quiz.length)}
+        />
       </motion.div>
     );
   }

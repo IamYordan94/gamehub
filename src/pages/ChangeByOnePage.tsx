@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import ShareCardModal from '../components/ShareCardModal';
 import OnScreenKeyboard from '../components/OnScreenKeyboard';
 import { useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -148,6 +149,7 @@ function ResultsPanel({ state, totalHints, onViewPuzzle }: {
   onViewPuzzle: (len: number) => void;
 }) {
   const [shared, setShared] = useState(false);
+  const [cardOpen, setCardOpen] = useState(false);
 
   const shareText = [
     `Change by One — ${state.date}`,
@@ -244,10 +246,29 @@ function ResultsPanel({ state, totalHints, onViewPuzzle }: {
         >
           {shared ? '✓ Copied!' : 'Share result'}
         </button>
+        <button onClick={() => setCardOpen(true)} className="cbo-btn-primary" style={{ background: '#3E9FA8' }}>
+          Share card
+        </button>
         <p className="text-xs font-semibold self-center m-0" style={{ color: 'var(--cbo-text-muted)' }}>
           Come back tomorrow for a new set.
         </p>
       </div>
+
+      <ShareCardModal
+        open={cardOpen}
+        onClose={() => setCardOpen(false)}
+        options={{
+          gameId: `cbo-${state.date}`,
+          title: 'Change by One',
+          accentColor: '#3E9FA8',
+          lines: [
+            `All ${state.puzzles.length} word-lengths done`,
+            `Hints used: ${Object.values(totalHints).reduce((a, b) => a + b, 0)}`,
+            state.date,
+          ],
+        }}
+        shareText={shareText}
+      />
     </motion.div>
   );
 }

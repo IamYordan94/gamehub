@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import AdSlot from '../components/AdSlot';
+import ShareCardModal from '../components/ShareCardModal';
 import {
   type FermiState,
   type FermiGuess,
@@ -28,6 +29,7 @@ export default function FermiPage() {
   const [inputVal, setInputVal] = useState('');
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+  const [cardOpen, setCardOpen] = useState(false);
 
   useEffect(() => {
     if (state?.won) markPlayed('fermi', todayISO());
@@ -397,6 +399,20 @@ export default function FermiPage() {
               }}>
               {copied ? 'Copied!' : 'Copy share'}
             </button>
+            <button onClick={() => setCardOpen(true)}
+              style={{
+                background: 'var(--fm-accent)',
+                color: 'var(--fm-ink)',
+                border: '2.5px solid var(--fm-ink)',
+                borderRadius: '8px',
+                padding: '8px 16px',
+                fontWeight: 700,
+                fontSize: '13px',
+                boxShadow: '3px 3px 0 rgba(0,0,0,0.25)',
+                cursor: 'pointer',
+              }}>
+              Share card
+            </button>
             <button onClick={() => window.location.reload()}
               style={{
                 background: 'var(--fm-panel)',
@@ -415,6 +431,26 @@ export default function FermiPage() {
         </motion.div>
       )}
       {state.over && <AdSlot slot="fermi-results" minHeight={110} />}
+
+      <ShareCardModal
+        open={cardOpen}
+        onClose={() => setCardOpen(false)}
+        options={{
+          gameId: `fermi-${getTodayIndex()}`,
+          title: 'FERMI',
+          accentColor: '#ff6b35',
+          lines: state && state.puzzle
+            ? [
+                state.won ? 'WIN ✓' : 'missed it',
+                state.puzzle.prompt,
+                `answer: ${formatNumber(state.puzzle.answer)}${state.puzzle.units ? ' ' + state.puzzle.units : ''}`,
+              ]
+            : [],
+        }}
+        shareText={state && state.puzzle
+          ? shareFermiText(state.guesses, getTodayIndex(), state.won ? `${state.attempts}/6` : 'X/6', state.puzzle.prompt)
+          : ''}
+      />
     </div>
   );
 }

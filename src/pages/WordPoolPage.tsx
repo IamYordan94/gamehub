@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import ShareCardModal from '../components/ShareCardModal';
 import OnScreenKeyboard from '../components/OnScreenKeyboard';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -52,6 +53,7 @@ function DailyResultsPanel({
     (sum, lvl) => sum + (entry.levels[String(lvl.level)]?.hintsUsed ?? 0), 0
   );
   const overallStarsN = totalHints === 0 ? 3 : totalHints <= 4 ? 2 : 1;
+  const [cardOpen, setCardOpen] = useState(false);
 
   return (
     <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} className="space-y-5">
@@ -110,10 +112,27 @@ function DailyResultsPanel({
 
       <div className="flex gap-3 justify-center flex-wrap">
         <button onClick={onShare} className="wp-btn-primary">{shared ? '✓ Copied!' : 'Share'}</button>
+        <button onClick={() => setCardOpen(true)} className="wp-btn-primary" style={{ background: '#9FC3DA' }}>Share card</button>
       </div>
       <p className="text-xs text-center" style={{ color: 'var(--wp-text-muted)' }}>
         Come back tomorrow for a new category!
       </p>
+
+      <ShareCardModal
+        open={cardOpen}
+        onClose={() => setCardOpen(false)}
+        options={{
+          gameId: `wordpool-${date}`,
+          title: 'Word Pool',
+          accentColor: '#9FC3DA',
+          lines: [
+            category.name,
+            `${'★'.repeat(overallStarsN)}${'☆'.repeat(3 - overallStarsN)} cleared all ${category.levels.length} levels`,
+            `Hints used: ${totalHints}`,
+          ],
+        }}
+        shareText={`Word Pool — ${category.name}\n${'★'.repeat(overallStarsN)}${'☆'.repeat(3 - overallStarsN)} Cleared all ${category.levels.length} levels!\nHints used: ${totalHints}\nyodoku.app`}
+      />
     </motion.div>
   );
 }
