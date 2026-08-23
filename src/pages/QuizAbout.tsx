@@ -19,7 +19,7 @@ export default function QuizAbout() {
         }}>
           <p className="text-sm font-bold leading-[1.65] m-0" style={{ color: 'var(--qz-ink)' }}>
             Quiz Master is a daily general-knowledge quiz. Every day, one shared set of{' '}
-            {QUIZ_PER_DAY} questions — the same for everyone in your timezone, so you can compare
+            {QUIZ_PER_DAY} questions — the same for everyone, every day, so you can compare
             scores with friends. Questions ramp from easy to hard and span eleven
             categories. Finish the quiz, keep your streak alive, and share your
             score grid.

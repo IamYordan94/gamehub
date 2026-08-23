@@ -65,9 +65,8 @@ export default function FermiAbout() {
       }}>
         <h3 className="text-lg font-black" style={{ color: '#141414', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase' }}>Daily Rotation</h3>
         <p className="text-sm leading-relaxed font-bold" style={{ color: '#6f6a5e' }}>
-          A new puzzle every day from rotating categories: sizes & distances, counts, energy, time,
-          money & prices, biology. Each puzzle is verified against a published source with a dated
-          reference.
+          A new puzzle every day from rotating categories: biology, physics, space, geography, food, money &amp; more.
+          Each puzzle is verified against a published source you can check.
         </p>
       </section>
 

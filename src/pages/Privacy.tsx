@@ -42,14 +42,16 @@ export default function Privacy() {
           <br /><br />
           Your game progress, solved puzzles, and settings are stored exclusively in your browser's{' '}
           <code className="px-1 rounded text-xs" style={{ background: 'var(--hub-bg)', border: '1px solid var(--hub-border)' }}>localStorage</code>.
-          This data never leaves your device and we have no access to it. If you clear your browser data or use a
+          This data never leaves your device and we have no access to it. (Game progress stays local; aggregate visit
+          counts and ad delivery do involve third parties — see Third-party services and Advertising below.) If you clear your browser data or use a
           different device, your progress will not carry over — because it is stored only on your device.
         </Section>
 
         <Section title="Cookies">
-          We do not use cookies. We use browser <code className="px-1 rounded text-xs" style={{ background: 'var(--hub-bg)', border: '1px solid var(--hub-border)' }}>localStorage</code> solely
-          to remember your in-progress games and preferences. This is strictly necessary for the games to function and
-          does not require your consent under any privacy regulation (GDPR, ePrivacy, CCPA, or similar).
+          We do not use cookies for the games themselves. We use browser <code className="px-1 rounded text-xs" style={{ background: 'var(--hub-bg)', border: '1px solid var(--hub-border)' }}>localStorage</code> solely
+          to remember your in-progress games and preferences — strictly necessary for the games to function and
+          not requiring your consent under any privacy regulation (GDPR, ePrivacy, CCPA, or similar). Our advertising
+          partner (see Advertising below) may set cookies or similar technologies to deliver and measure ads.
         </Section>
 
         <Section title="Third-party services">
@@ -59,7 +61,7 @@ export default function Privacy() {
           <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>Google Fonts</a>{' '}
           CSS stylesheet (for the Inter and JetBrains Mono typefaces). Google Fonts may log your IP address and
           browser type as part of serving the font files, subject to{' '}
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>Google's privacy policy</a>.
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>Google's privacy policy</a>. Ads are served by a third-party ad network — see Advertising below.
         </Section>
 
         <Section title="Advertising">

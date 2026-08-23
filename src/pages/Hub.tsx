@@ -265,7 +265,7 @@ export default function Hub() {
             label="Clear the String"
             sticker="word"
             stickerColor="#ffc93c"
-            description="Find the hidden solution words hiding in a scrambled string — and clear every single letter."
+            description="Find the solution words tucked inside a scrambled string — and clear every single letter."
             tags={['daily', 'word', 'puzzle']}
             playTo="/lettermix"
             aboutTo="/lettermix/about"

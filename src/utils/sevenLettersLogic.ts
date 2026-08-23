@@ -130,6 +130,6 @@ export function shareSevenText(
   ];
   lines.push(grid.slice(0, 60));
   if (pangrams.length > 0) lines.push(`🌟 ${pangrams.map((p) => p.toUpperCase()).join(', ')}`);
-  lines.push('wordcrafthub — seven letters, one center');
+  lines.push('yodoku.app/seven — seven letters, one center');
   return lines.join('\n');
 }

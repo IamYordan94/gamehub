@@ -152,7 +152,7 @@ export default function OrderleHome() {
               <button onClick={() => setShowHowToPlay(false)} className="text-[20px] leading-none font-bold" style={{ color: 'var(--ol-ink-soft)' }}>×</button>
             </div>
             <ol className="flex flex-col gap-[10px] text-sm font-bold leading-[1.6] list-none m-0 p-0" style={{ color: 'var(--ol-ink)' }}>
-              <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#ff6b35' }}>1</span>You're shown 6 items in a scrambled order. Your job: arrange them in the correct sequence.</li>
+              <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#ff6b35' }}>1</span>You're shown a set of items in a scrambled order (usually six). Your job: arrange them in the correct sequence.</li>
               <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#ff6b35' }}>2</span><strong>Tap one tile, then tap another to SWAP them.</strong> Only two tiles ever move.</li>
               <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#ff6b35' }}>3</span><span style={{ padding: '1px 6px', background: '#39c96b', border: '2px solid #141414', borderRadius: '3px', fontWeight: 800 }}>GREEN</span> = correct position. <span style={{ padding: '1px 6px', background: '#ffc93c', border: '2px solid #141414', borderRadius: '3px', fontWeight: 800, marginLeft: '4px' }}>YELLOW ◀▶</span> = belongs earlier/later.</li>
               <li className="flex gap-3"><span className="font-black text-[13px] w-5" style={{ color: '#ff6b35' }}>4</span>You have as many tries as there are items. The swap rule guarantees it's always solvable.</li>

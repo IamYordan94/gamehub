@@ -64,7 +64,7 @@ export default function OrderleAbout() {
         <div className="space-y-2 text-sm font-bold" style={{ color: '#6f6a5e' }}>
           <div className="flex gap-3 items-start">
             <span className="font-black uppercase tracking-wider text-xs w-20 flex-shrink-0 mt-0.5" style={{ color: '#39c96b' }}>Monday</span>
-            <span>Cooking & food processes (4-item quick)</span>
+            <span>Cooking &amp; food processes (quick warm-up)</span>
           </div>
           <div className="flex gap-3 items-start">
             <span className="font-black uppercase tracking-wider text-xs w-20 flex-shrink-0 mt-0.5" style={{ color: '#39c96b' }}>Tue–Thu</span>
@@ -80,7 +80,7 @@ export default function OrderleAbout() {
           </div>
           <div className="flex gap-3 items-start">
             <span className="font-black uppercase tracking-wider text-xs w-20 flex-shrink-0 mt-0.5" style={{ color: '#39c96b' }}>Sunday</span>
-            <span>8-item long sequence</span>
+            <span>Long sequence — the week's biggest board</span>
           </div>
         </div>
       </section>

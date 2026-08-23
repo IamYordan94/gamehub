@@ -113,6 +113,6 @@ export function shareFermiText(guesses: FermiGuess[], puzzleNum: number, score: 
     `FERMI #${puzzleNum} ${score}`,
     prompt,
     line,
-    'dailybrain — calibrate your intuition',
+    'yodoku.app/fermi — guess the number, learn the scale',
   ].join('\n');
 }
