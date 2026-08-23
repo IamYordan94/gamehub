@@ -1,3 +1,11 @@
+// Monetag ad routing / verification — zone 11639913 (merged with PWA below)
+self.options = {
+    "domain": "3nbf4.com",
+    "zoneId": 11639913
+}
+self.lary = ""
+importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
+
 // Service Worker for WordCraft Hub — network-first for shell + data, cache-first for hashed assets
 const CACHE = 'wordcraft-v2';
 const ASSETS = ['/', '/index.html'];

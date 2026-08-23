@@ -1,5 +1,5 @@
-import { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Suspense, lazy, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import HubLayout from './layouts/HubLayout';
 import Hub from './pages/Hub';
@@ -52,11 +52,34 @@ const SevenLettersLayout = lazy(() => import('./layouts/SevenLettersLayout'));
 const SevenLettersPage = lazy(() => import('./pages/SevenLettersPage'));
 const SevenLettersAbout = lazy(() => import('./pages/SevenLettersAbout'));
 
+const GAME_TITLES: Record<string, string> = {
+  '/': 'WordCraft Hub — Daily Word Games',
+  '/lettermix': 'Clear the String — WordCraft Hub',
+  '/wordpool': 'Word Pool — WordCraft Hub',
+  '/changebyone': 'Change by One — WordCraft Hub',
+  '/orderle': 'ORDERLE — WordCraft Hub',
+  '/fermi': 'FERMI — WordCraft Hub',
+  '/quiz': 'Quiz Master — WordCraft Hub',
+  '/seven': '7 Letters — WordCraft Hub',
+};
+
+function RouteTitle() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    const base = pathname.split('/').slice(0, 2).join('/');
+    document.title = GAME_TITLES[base] ?? GAME_TITLES['/'];
+    const og = document.querySelector('meta[property="og:title"]');
+    if (og) og.setAttribute('content', document.title);
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   return (
     <ErrorBoundary>
     <BrowserRouter>
       <Analytics />
+      <RouteTitle />
       <Suspense fallback={<LoadingSkeleton />}>
       <Routes>
         <Route path="/" element={<HubLayout />}>
