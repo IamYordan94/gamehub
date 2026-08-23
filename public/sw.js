@@ -1,10 +1,10 @@
-// Monetag ad routing / verification — zone 11639913 (merged with PWA below)
+// Monetag ad routing / multitag — zone 11639945 (merged with PWA below)
 self.options = {
-    "domain": "3nbf4.com",
-    "zoneId": 11639913
+    "domain": "5gvci.com",
+    "zoneId": 11639945
 }
 self.lary = ""
-importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
+importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
 
 // Service Worker for WordCraft Hub — network-first for shell + data, cache-first for hashed assets
 const CACHE = 'wordcraft-v2';

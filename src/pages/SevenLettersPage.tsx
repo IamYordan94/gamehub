@@ -5,9 +5,11 @@ import {
   scoreWord,
   isPangram,
   tierFor,
+  tierCutoffs,
   shareSevenText,
 } from '../utils/sevenLettersLogic';
 import { getTodayIndex } from './SevenLettersHome';
+import ShareCardModal from '../components/ShareCardModal';
 
 const STORAGE_KEY = 'wordcraft_seven_letters';
 
@@ -50,6 +52,7 @@ export default function SevenLettersPage({ practice = false }: SevenLettersPageP
   const [message, setMessage] = useState<{ text: string; kind: 'ok' | 'dup' | 'short' | 'bad' | 'pangram' } | null>(null);
   const [showAnswers, setShowAnswers] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [cardOpen, setCardOpen] = useState(false);
 
   // Load board data
   useEffect(() => {
@@ -379,6 +382,15 @@ export default function SevenLettersPage({ practice = false }: SevenLettersPageP
           }}>
           {copied ? 'Copied!' : 'Copy share'}
         </button>
+        <button onClick={() => setCardOpen(true)}
+          style={{
+            background: 'var(--sv-accent)', color: 'var(--sv-ink)',
+            border: '2.5px solid var(--sv-ink)', borderRadius: '8px',
+            padding: '8px 16px', fontWeight: 700, fontSize: '13px',
+            boxShadow: '3px 3px 0 rgba(0,0,0,0.25)', cursor: 'pointer',
+          }}>
+          Share card
+        </button>
         {!practice && (
           <button onClick={() => window.location.reload()}
             style={{
@@ -391,6 +403,22 @@ export default function SevenLettersPage({ practice = false }: SevenLettersPageP
           </button>
         )}
       </div>
+
+      <ShareCardModal
+        open={cardOpen}
+        onClose={() => setCardOpen(false)}
+        options={{
+          gameId: `seven-letters-${practice ? 0 : getTodayIndex()}`,
+          title: '7 Letters',
+          accentColor: '#e7b10a',
+          lines: [
+            `Board #${practice ? 0 : getTodayIndex()} — ${foundWords.length}/${board?.words.length ?? 0} words found`,
+            `Score ${score}/${board?.maxScore ?? 0}${board ? ` — ${tierFor(score, tierCutoffs(board.maxScore))}` : ''}`,
+            ...(foundWords.length ? [`Longest: ${[...foundWords].sort((a, b) => b.length - a.length)[0].toUpperCase()}`] : []),
+          ],
+        }}
+        shareText={board ? shareSevenText(foundWords, practice ? 0 : getTodayIndex(), score, board.maxScore, board) : ''}
+      />
     </div>
   );
 }
