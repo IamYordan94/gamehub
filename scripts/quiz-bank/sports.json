@@ -778,5 +778,330 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "Home of the Italian Grand Prix."
+  },
+  {
+    "id": "spo-061",
+    "question": "How many players from one volleyball team are on court at a time?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Two rows of three"
+  },
+  {
+    "id": "spo-062",
+    "question": "In which sport would you perform a header?",
+    "options": [
+      "Basketball",
+      "Soccer",
+      "Tennis",
+      "Volleyball"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Using your head on the pitch"
+  },
+  {
+    "id": "spo-063",
+    "question": "What color jersey does the Tour de France overall leader wear?",
+    "options": [
+      "Red",
+      "Green",
+      "Yellow",
+      "White"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Like the sun"
+  },
+  {
+    "id": "spo-064",
+    "question": "Approximately how long is a marathon race?",
+    "options": [
+      "26.2 miles",
+      "20 miles",
+      "30 miles",
+      "18.2 miles"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "About 42 kilometres"
+  },
+  {
+    "id": "spo-065",
+    "question": "In which sport do players hit a shuttlecock over a net with a racket?",
+    "options": [
+      "Badminton",
+      "Cricket",
+      "Table tennis",
+      "Squash"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Fastest racket sport"
+  },
+  {
+    "id": "spo-066",
+    "question": "How many points is a free throw worth in basketball?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "The fewest possible"
+  },
+  {
+    "id": "spo-067",
+    "question": "In bowling, how many pins are used?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "A perfect frame setup"
+  },
+  {
+    "id": "spo-068",
+    "question": "Which sport uses the terms strike and spare?",
+    "options": [
+      "Baseball",
+      "Bowling",
+      "Golf",
+      "Darts"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Done at the alley"
+  },
+  {
+    "id": "spo-069",
+    "question": "How many holes are played in a standard round of golf?",
+    "options": [
+      "9",
+      "16",
+      "18",
+      "21"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Half of it is nine"
+  },
+  {
+    "id": "spo-070",
+    "question": "Which country hosted the 2016 Summer Olympics?",
+    "options": [
+      "Japan",
+      "China",
+      "Brazil",
+      "UK"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Rio de Janeiro"
+  },
+  {
+    "id": "spo-071",
+    "question": "In tennis scoring, what score comes after 30?",
+    "options": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Forty"
+  },
+  {
+    "id": "spo-072",
+    "question": "Which golfer has won the most major championships (18)?",
+    "options": [
+      "Tiger Woods",
+      "Jack Nicklaus",
+      "Arnold Palmer",
+      "Ben Hogan"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Nicknamed The Golden Bear"
+  },
+  {
+    "id": "spo-073",
+    "question": "Including the goalie, how many players from one ice hockey team are on the ice at a time?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "11"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Five skaters plus a netminder"
+  },
+  {
+    "id": "spo-074",
+    "question": "Which country won the UEFA European Championship in 2020, played in 2021?",
+    "options": [
+      "France",
+      "England",
+      "Italy",
+      "Portugal"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "They beat England at Wembley on penalties"
+  },
+  {
+    "id": "spo-075",
+    "question": "The Davis Cup is an international team competition in which sport?",
+    "options": [
+      "Golf",
+      "Tennis",
+      "Cricket",
+      "Rugby"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Men's tennis teams"
+  },
+  {
+    "id": "spo-076",
+    "question": "Which Formula 1 driver has won the most races in history?",
+    "options": [
+      "Lewis Hamilton",
+      "Michael Schumacher",
+      "Max Verstappen",
+      "Sebastian Vettel"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "British seven-time champion"
+  },
+  {
+    "id": "spo-077",
+    "question": "What is the maximum break in snooker?",
+    "options": [
+      "140",
+      "147",
+      "150",
+      "155"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "All reds with blacks, then the colours"
+  },
+  {
+    "id": "spo-078",
+    "question": "In which country was the sport of golf invented?",
+    "options": [
+      "Scotland",
+      "Ireland",
+      "England",
+      "Wales"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "St Andrews is its home"
+  },
+  {
+    "id": "spo-079",
+    "question": "Which city hosted the 2014 FIFA World Cup final between Germany and Argentina?",
+    "options": [
+      "Rio de Janeiro",
+      "Sao Paulo",
+      "Berlin",
+      "Buenos Aires"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "At the Maracana"
+  },
+  {
+    "id": "spo-080",
+    "question": "Which country won the first Rugby Union World Cup in 1987?",
+    "options": [
+      "New Zealand",
+      "Australia",
+      "England",
+      "South Africa"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The All Blacks won on home soil"
+  },
+  {
+    "id": "spo-081",
+    "question": "Which country won the FIFA Women's World Cup in 2023?",
+    "options": [
+      "USA",
+      "England",
+      "Spain",
+      "Japan"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "They beat England 1-0 in the final"
+  },
+  {
+    "id": "spo-082",
+    "question": "In which sport is the term love used for a score of zero?",
+    "options": [
+      "Tennis",
+      "Golf",
+      "Boxing",
+      "Swimming"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Also uses deuce and ace"
+  },
+  {
+    "id": "spo-083",
+    "question": "Which jockey rode Secretariat to the 1973 Triple Crown?",
+    "options": [
+      "Ron Turcotte",
+      "Willie Shoemaker",
+      "Bill Hartack",
+      "Eddie Arcaro"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Rode the horse to a record Belmont win"
+  },
+  {
+    "id": "spo-084",
+    "question": "Which club has won the most UEFA Champions League titles?",
+    "options": [
+      "Real Madrid",
+      "AC Milan",
+      "Liverpool",
+      "Barcelona"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Spanish giants with over a dozen wins"
+  },
+  {
+    "id": "spo-085",
+    "question": "In which year were the first Winter Olympic Games held?",
+    "options": [
+      "1896",
+      "1924",
+      "1932",
+      "1948"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Chamonix, France"
   }
 ]

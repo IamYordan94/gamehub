@@ -397,10 +397,10 @@
     "id": "sci-033",
     "question": "At what temperature does water boil at sea level?",
     "options": [
-      "100 °C",
-      "90 °C",
-      "110 °C",
-      "200 °C"
+      "100 \u00b0C",
+      "90 \u00b0C",
+      "110 \u00b0C",
+      "200 \u00b0C"
     ],
     "answer": 0,
     "difficulty": 2
@@ -409,10 +409,10 @@
     "id": "sci-034",
     "question": "At what temperature does water freeze at sea level?",
     "options": [
-      "10 °C",
-      "32 °C",
-      "0 °C",
-      "-10 °C"
+      "10 \u00b0C",
+      "32 \u00b0C",
+      "0 \u00b0C",
+      "-10 \u00b0C"
     ],
     "answer": 2,
     "difficulty": 2
@@ -493,10 +493,10 @@
     "id": "sci-041",
     "question": "What is absolute zero on the Celsius scale?",
     "options": [
-      "0 °C",
-      "-100 °C",
-      "-273.15 °C",
-      "-200 °C"
+      "0 \u00b0C",
+      "-100 \u00b0C",
+      "-273.15 \u00b0C",
+      "-200 \u00b0C"
     ],
     "answer": 2,
     "difficulty": 3,
@@ -740,5 +740,330 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "Neutral on the pH scale."
+  },
+  {
+    "id": "sci-061",
+    "question": "Which gas glows red and is used in bright advertising signs?",
+    "options": [
+      "Neon",
+      "Argon",
+      "Krypton",
+      "Xenon"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It shares its name with the signs"
+  },
+  {
+    "id": "sci-062",
+    "question": "How many chambers does the human heart have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Two atria and two ventricles"
+  },
+  {
+    "id": "sci-063",
+    "question": "What force pulls objects toward Earth's centre?",
+    "options": [
+      "Friction",
+      "Gravity",
+      "Magnetism",
+      "Tension"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Keeps us on the ground"
+  },
+  {
+    "id": "sci-064",
+    "question": "What is the boiling point of water in degrees Fahrenheit at sea level?",
+    "options": [
+      "100",
+      "180",
+      "212",
+      "232"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Just over two hundred"
+  },
+  {
+    "id": "sci-065",
+    "question": "Which planet is farthest from the Sun?",
+    "options": [
+      "Uranus",
+      "Saturn",
+      "Neptune",
+      "Jupiter"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "The eighth planet"
+  },
+  {
+    "id": "sci-066",
+    "question": "What does a caterpillar turn into during metamorphosis?",
+    "options": [
+      "Beetle",
+      "Butterfly or moth",
+      "Bee",
+      "Dragonfly"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It builds a chrysalis or cocoon"
+  },
+  {
+    "id": "sci-067",
+    "question": "Which part of a plant carries out photosynthesis?",
+    "options": [
+      "Roots",
+      "Stem",
+      "Leaves",
+      "Flowers"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Usually green and flat"
+  },
+  {
+    "id": "sci-068",
+    "question": "What is the chemical formula for table salt?",
+    "options": [
+      "NaCl",
+      "KCl",
+      "CaCO3",
+      "H2O2"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Sodium chloride"
+  },
+  {
+    "id": "sci-069",
+    "question": "Sound cannot travel through which of these?",
+    "options": [
+      "Water",
+      "Steel",
+      "Air",
+      "Vacuum"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "Space is silent because of this"
+  },
+  {
+    "id": "sci-070",
+    "question": "Which form of carbon has the highest melting point, above 3500 degrees C?",
+    "options": [
+      "Graphite as pencil lead",
+      "Diamond",
+      "Coal",
+      "Charcoal"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Also the hardest natural substance"
+  },
+  {
+    "id": "sci-071",
+    "question": "What type of rock forms from cooling magma?",
+    "options": [
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous",
+      "Limestone"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Granite and basalt are examples"
+  },
+  {
+    "id": "sci-072",
+    "question": "Which blood cells help fight infection?",
+    "options": [
+      "Red blood cells",
+      "Platelets",
+      "White blood cells",
+      "Plasma"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Part of the immune system"
+  },
+  {
+    "id": "sci-073",
+    "question": "What is the study of earthquakes called?",
+    "options": [
+      "Seismology",
+      "Geology",
+      "Meteorology",
+      "Volcanology"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "From the Greek word for shaking"
+  },
+  {
+    "id": "sci-074",
+    "question": "How many chromosomes are in a typical human body cell?",
+    "options": [
+      "23",
+      "32",
+      "46",
+      "48"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Twenty-three pairs"
+  },
+  {
+    "id": "sci-075",
+    "question": "Which subatomic particle carries a negative electric charge?",
+    "options": [
+      "Proton",
+      "Neutron",
+      "Electron",
+      "Positron"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Orbits the nucleus"
+  },
+  {
+    "id": "sci-076",
+    "question": "Which astronomer discovered that planets move in elliptical orbits?",
+    "options": [
+      "Galileo Galilei",
+      "Johannes Kepler",
+      "Tycho Brahe",
+      "Nicolaus Copernicus"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "German astronomer, worked with Brahe's data"
+  },
+  {
+    "id": "sci-077",
+    "question": "What is the most abundant element in the universe?",
+    "options": [
+      "Helium",
+      "Oxygen",
+      "Hydrogen",
+      "Carbon"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The lightest element"
+  },
+  {
+    "id": "sci-078",
+    "question": "What is the SI unit of power?",
+    "options": [
+      "Joule",
+      "Newton",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Named after a Scottish engineer"
+  },
+  {
+    "id": "sci-079",
+    "question": "Which planet has the most moons discovered to date?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Uranus",
+      "Mars"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Overtaken Jupiter thanks to 2023 discoveries"
+  },
+  {
+    "id": "sci-080",
+    "question": "What is the chemical symbol for potassium's neighbor in its group, rubidium?",
+    "options": [
+      "Ru",
+      "Rb",
+      "Rd",
+      "Kb"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Letters two and four of the name"
+  },
+  {
+    "id": "sci-081",
+    "question": "Which scientist proposed that light has both wave and particle properties via the photoelectric effect explanation?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Max Planck",
+      "Niels Bohr"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "He won the Nobel Prize for it in 1921"
+  },
+  {
+    "id": "sci-082",
+    "question": "How long does sunlight take to reach Earth, roughly?",
+    "options": [
+      "8 seconds",
+      "8 minutes",
+      "8 hours",
+      "80 minutes"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Just under ten minutes"
+  },
+  {
+    "id": "sci-083",
+    "question": "What is the largest moon in our Solar System?",
+    "options": [
+      "Titan",
+      "Europa",
+      "Ganymede",
+      "The Moon"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "A moon of Jupiter, larger than Mercury"
+  },
+  {
+    "id": "sci-084",
+    "question": "What is the study of fossils called?",
+    "options": [
+      "Archaeology",
+      "Paleontology",
+      "Anthropology",
+      "Geology"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "From Greek for ancient life"
+  },
+  {
+    "id": "sci-085",
+    "question": "Which vitamin deficiency causes scurvy?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Sailors ate limes to prevent it"
   }
 ]

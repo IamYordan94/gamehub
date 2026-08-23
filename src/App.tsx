@@ -47,6 +47,11 @@ const QuizLayout = lazy(() => import('./layouts/QuizLayout'));
 const QuizPage = lazy(() => import('./pages/QuizPage'));
 const QuizAbout = lazy(() => import('./pages/QuizAbout'));
 
+const SevenLettersHome = lazy(() => import('./pages/SevenLettersHome'));
+const SevenLettersLayout = lazy(() => import('./layouts/SevenLettersLayout'));
+const SevenLettersPage = lazy(() => import('./pages/SevenLettersPage'));
+const SevenLettersAbout = lazy(() => import('./pages/SevenLettersAbout'));
+
 function App() {
   return (
     <ErrorBoundary>
@@ -111,6 +116,13 @@ function App() {
           <Route element={<QuizLayout />}>
             <Route path="play" element={<QuizPage />} />
             <Route path="about" element={<QuizAbout />} />
+          </Route>
+        </Route>
+        <Route path="/seven">
+          <Route index element={<SevenLettersHome />} />
+          <Route element={<SevenLettersLayout />}>
+            <Route path="play" element={<SevenLettersPage />} />
+            <Route path="about" element={<SevenLettersAbout />} />
           </Route>
         </Route>
         <Route path="*" element={<NotFound />} />

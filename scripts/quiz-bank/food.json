@@ -1,64 +1,1065 @@
 [
-  {"id": "food-001", "question": "Which country is sushi most famously associated with?", "options": ["Japan", "China", "South Korea", "Thailand"], "answer": 0, "difficulty": 1},
-  {"id": "food-002", "question": "Which country is pizza originally from?", "options": ["Italy", "France", "Spain", "Greece"], "answer": 0, "difficulty": 1},
-  {"id": "food-003", "question": "Which country is paella a traditional dish from?", "options": ["Italy", "Portugal", "Spain", "Mexico"], "answer": 2, "difficulty": 1},
-  {"id": "food-004", "question": "The croissant is most commonly associated with which country?", "options": ["Germany", "France", "Switzerland", "Italy"], "answer": 1, "difficulty": 1},
-  {"id": "food-005", "question": "What is pasta traditionally made from?", "options": ["Rice flour", "Wheat flour", "Potato", "Corn"], "answer": 1, "difficulty": 1},
-  {"id": "food-006", "question": "What is the main ingredient of guacamole?", "options": ["Avocado", "Tomato", "Onion", "Cucumber"], "answer": 0, "difficulty": 1},
-  {"id": "food-007", "question": "At what temperature does pure water boil at sea level?", "options": ["90°C", "120°C", "100°C", "80°C"], "answer": 2, "difficulty": 1},
-  {"id": "food-008", "question": "What is the main ingredient in hummus?", "options": ["Lentils", "Chickpeas", "Peanuts", "Kidney beans"], "answer": 1, "difficulty": 1},
-  {"id": "food-009", "question": "Espresso is a type of which drink?", "options": ["Tea", "Hot chocolate", "Coffee", "Cider"], "answer": 2, "difficulty": 1},
-  {"id": "food-010", "question": "Which fruit is used to make most wine?", "options": ["Apples", "Grapes", "Plums", "Cherries"], "answer": 1, "difficulty": 1},
-  {"id": "food-011", "question": "What is chocolate made from?", "options": ["Cocoa beans", "Coffee beans", "Vanilla pods", "Soybeans"], "answer": 0, "difficulty": 1},
-  {"id": "food-012", "question": "Botanically, a tomato is classified as a...", "options": ["Vegetable", "Root", "Seed", "Fruit"], "answer": 3, "difficulty": 1},
-  {"id": "food-013", "question": "What is the main ingredient in traditional sushi?", "options": ["Bread", "Vinegared rice", "Pasta", "Potatoes"], "answer": 1, "difficulty": 1},
-  {"id": "food-014", "question": "What is the main ingredient in bread?", "options": ["Flour", "Sugar", "Eggs", "Butter"], "answer": 0, "difficulty": 1},
-  {"id": "food-015", "question": "Which country are tacos traditionally from?", "options": ["Mexico", "Spain", "Brazil", "India"], "answer": 0, "difficulty": 1},
-  {"id": "food-016", "question": "What is cheese made from?", "options": ["Eggs", "Milk", "Flour", "Soybeans"], "answer": 1, "difficulty": 1},
-  {"id": "food-017", "question": "Which country is maple syrup most associated with?", "options": ["Canada", "Norway", "Russia", "Finland"], "answer": 0, "difficulty": 1},
-  {"id": "food-018", "question": "Which grain is traditionally used to brew beer?", "options": ["Rice", "Oats", "Barley", "Millet"], "answer": 2, "difficulty": 1},
-  {"id": "food-019", "question": "Which country is tea believed to have originated in?", "options": ["China", "India", "Japan", "England"], "answer": 0, "difficulty": 1},
-  {"id": "food-020", "question": "Which of these is a citrus fruit?", "options": ["Apple", "Orange", "Banana", "Pear"], "answer": 1, "difficulty": 1},
-
-  {"id": "food-021", "question": "Which country is sauerkraut traditionally associated with?", "options": ["Poland", "Germany", "Netherlands", "France"], "answer": 1, "difficulty": 2},
-  {"id": "food-022", "question": "What is the main ingredient of pesto?", "options": ["Spinach", "Parsley", "Basil", "Mint"], "answer": 2, "difficulty": 2},
-  {"id": "food-023", "question": "Which country is the dish coq au vin from?", "options": ["Belgium", "Italy", "Spain", "France"], "answer": 3, "difficulty": 2},
-  {"id": "food-024", "question": "What makes bread dough rise?", "options": ["Salt", "Sugar", "Yeast", "Baking powder"], "answer": 2, "difficulty": 2, "hint": "It's a living fungus."},
-  {"id": "food-025", "question": "Which country is naan bread from?", "options": ["India", "Greece", "Morocco", "Turkey"], "answer": 0, "difficulty": 2},
-  {"id": "food-026", "question": "What is tofu made from?", "options": ["Wheat", "Soybeans", "Rice", "Peanuts"], "answer": 1, "difficulty": 2},
-  {"id": "food-027", "question": "Which country is gazpacho, a cold soup, from?", "options": ["Portugal", "Italy", "Spain", "Greece"], "answer": 2, "difficulty": 2},
-  {"id": "food-028", "question": "What is the main ingredient of risotto?", "options": ["Pasta", "Rice", "Barley", "Potato"], "answer": 1, "difficulty": 2},
-  {"id": "food-029", "question": "Which country is moussaka from?", "options": ["Turkey", "Greece", "Italy", "Bulgaria"], "answer": 1, "difficulty": 2},
-  {"id": "food-030", "question": "How is sashimi typically served?", "options": ["Deep-fried fish", "Grilled fish", "Raw, sliced fish", "Pickled fish"], "answer": 2, "difficulty": 2},
-  {"id": "food-031", "question": "Which country is pho, a noodle soup, from?", "options": ["China", "Vietnam", "Thailand", "Japan"], "answer": 1, "difficulty": 2},
-  {"id": "food-032", "question": "Which spirit is the base of a mojito?", "options": ["Vodka", "Gin", "Rum", "Tequila"], "answer": 2, "difficulty": 2},
-  {"id": "food-033", "question": "Which country is goulash from?", "options": ["Austria", "Romania", "Hungary", "Czechia"], "answer": 2, "difficulty": 2},
-  {"id": "food-034", "question": "What is the main ingredient of gnocchi?", "options": ["Rice", "Potato", "Flour", "Polenta"], "answer": 1, "difficulty": 2, "hint": "A starchy tuber."},
-  {"id": "food-035", "question": "Which country is ceviche from?", "options": ["Brazil", "Argentina", "Peru", "Colombia"], "answer": 2, "difficulty": 2},
-  {"id": "food-036", "question": "Sake, a Japanese drink, is made from fermented...", "options": ["Grapes", "Barley", "Potatoes", "Rice"], "answer": 3, "difficulty": 2, "hint": "A Japanese grain."},
-  {"id": "food-037", "question": "Which country is kimchi from?", "options": ["Japan", "South Korea", "China", "Vietnam"], "answer": 1, "difficulty": 2},
-  {"id": "food-038", "question": "What is tapenade made from?", "options": ["Olives", "Tomatoes", "Eggplant", "Capers"], "answer": 0, "difficulty": 2},
-  {"id": "food-039", "question": "Which country is fish and chips from?", "options": ["England", "Scotland", "Ireland", "United States"], "answer": 0, "difficulty": 2},
-  {"id": "food-040", "question": "Which country is the Bordeaux wine region in?", "options": ["Spain", "France", "Italy", "Germany"], "answer": 1, "difficulty": 2},
-
-  {"id": "food-041", "question": "Which country is pierogi traditionally from?", "options": ["Poland", "Ukraine", "Germany", "Slovakia"], "answer": 0, "difficulty": 3},
-  {"id": "food-042", "question": "Miso is a paste made primarily from fermented...", "options": ["Rice", "Soybeans", "Wheat", "Seaweed"], "answer": 1, "difficulty": 3, "hint": "A fermented paste used in Japanese soup."},
-  {"id": "food-043", "question": "Which North African country is couscous most associated with?", "options": ["Morocco", "Egypt", "Turkey", "Greece"], "answer": 0, "difficulty": 3},
-  {"id": "food-044", "question": "Tahini is a paste made from ground...", "options": ["Peanuts", "Sunflower seeds", "Sesame seeds", "Poppy seeds"], "answer": 2, "difficulty": 3, "hint": "A Middle Eastern paste."},
-  {"id": "food-045", "question": "Which country is borscht, a beet soup, most associated with?", "options": ["Russia", "Ukraine", "Poland", "Romania"], "answer": 1, "difficulty": 3, "hint": "A beet soup of Eastern Europe."},
-  {"id": "food-046", "question": "Umami is often described as which taste?", "options": ["Sour", "Salty", "Savory (fifth taste)", "Spicy"], "answer": 2, "difficulty": 3, "hint": "Japanese for 'pleasant savory taste'."},
-  {"id": "food-047", "question": "Amaretto is a liqueur flavored with...", "options": ["Hazelnuts", "Almonds", "Cherries", "Coffee"], "answer": 1, "difficulty": 3, "hint": "An Italian liqueur."},
-  {"id": "food-048", "question": "Mole is a traditional sauce from which country?", "options": ["Mexico", "Peru", "Spain", "Cuba"], "answer": 0, "difficulty": 3, "hint": "A complex sauce with chili and chocolate."},
-  {"id": "food-049", "question": "Halloumi is a cheese traditionally from which country?", "options": ["Greece", "Cyprus", "Turkey", "Italy"], "answer": 1, "difficulty": 3, "hint": "A cheese that holds its shape when grilled."},
-  {"id": "food-050", "question": "Which country is feijoada, a black-bean stew, from?", "options": ["Portugal", "Brazil", "Argentina", "Mexico"], "answer": 1, "difficulty": 3, "hint": "A black-bean stew."},
-  {"id": "food-051", "question": "Tzatziki is a yogurt dip flavored with which vegetable?", "options": ["Carrot", "Cucumber", "Radish", "Celery"], "answer": 1, "difficulty": 3},
-  {"id": "food-052", "question": "Which country is nasi goreng, a fried-rice dish, from?", "options": ["Malaysia", "Indonesia", "Thailand", "Philippines"], "answer": 1, "difficulty": 3, "hint": "Means 'fried rice'."},
-  {"id": "food-053", "question": "Mochi is a Japanese treat made from pounded...", "options": ["Wheat", "Corn", "Glutinous rice", "Potato"], "answer": 2, "difficulty": 3, "hint": "A chewy rice treat."},
-  {"id": "food-054", "question": "Which country is schnitzel from?", "options": ["Germany", "Austria", "Switzerland", "Netherlands"], "answer": 1, "difficulty": 3},
-  {"id": "food-055", "question": "Baklava is a sweet pastry layered with phyllo dough and filled with...", "options": ["Chocolate", "Fruit", "Nuts", "Cheese"], "answer": 2, "difficulty": 3, "hint": "Layered phyllo pastry."},
-  {"id": "food-056", "question": "The Maillard reaction is responsible for which change in cooked food?", "options": ["Softening", "Browning", "Burning", "Curdling"], "answer": 1, "difficulty": 3, "hint": "It gives seared food its crust and flavor."},
-  {"id": "food-057", "question": "The Italian term 'al dente' describes pasta that is...", "options": ["Soft and mushy", "Firm to the bite", "Served cold", "Overcooked"], "answer": 1, "difficulty": 3, "hint": "Italian for 'to the tooth'."},
-  {"id": "food-058", "question": "A roux, used to thicken sauces, is a mixture of...", "options": ["Flour and water", "Flour and fat", "Sugar and butter", "Egg and milk"], "answer": 1, "difficulty": 3, "hint": "Used to thicken sauces."},
-  {"id": "food-059", "question": "Chianti is a wine from which country?", "options": ["France", "Spain", "Italy", "Portugal"], "answer": 2, "difficulty": 3},
-  {"id": "food-060", "question": "Broiling is a cooking method that uses...", "options": ["Boiling in water", "Steaming", "Dry heat from above", "Frying in oil"], "answer": 2, "difficulty": 3, "hint": "Uses a top heating element."}
+  {
+    "id": "food-001",
+    "question": "Which country is sushi most famously associated with?",
+    "options": [
+      "Japan",
+      "China",
+      "South Korea",
+      "Thailand"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-002",
+    "question": "Which country is pizza originally from?",
+    "options": [
+      "Italy",
+      "France",
+      "Spain",
+      "Greece"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-003",
+    "question": "Which country is paella a traditional dish from?",
+    "options": [
+      "Italy",
+      "Portugal",
+      "Spain",
+      "Mexico"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "food-004",
+    "question": "The croissant is most commonly associated with which country?",
+    "options": [
+      "Germany",
+      "France",
+      "Switzerland",
+      "Italy"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "food-005",
+    "question": "What is pasta traditionally made from?",
+    "options": [
+      "Rice flour",
+      "Wheat flour",
+      "Potato",
+      "Corn"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "food-006",
+    "question": "What is the main ingredient of guacamole?",
+    "options": [
+      "Avocado",
+      "Tomato",
+      "Onion",
+      "Cucumber"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-007",
+    "question": "At what temperature does pure water boil at sea level?",
+    "options": [
+      "90\u00b0C",
+      "120\u00b0C",
+      "100\u00b0C",
+      "80\u00b0C"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "food-008",
+    "question": "What is the main ingredient in hummus?",
+    "options": [
+      "Lentils",
+      "Chickpeas",
+      "Peanuts",
+      "Kidney beans"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "food-009",
+    "question": "Espresso is a type of which drink?",
+    "options": [
+      "Tea",
+      "Hot chocolate",
+      "Coffee",
+      "Cider"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "food-010",
+    "question": "Which fruit is used to make most wine?",
+    "options": [
+      "Apples",
+      "Grapes",
+      "Plums",
+      "Cherries"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "food-011",
+    "question": "What is chocolate made from?",
+    "options": [
+      "Cocoa beans",
+      "Coffee beans",
+      "Vanilla pods",
+      "Soybeans"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-012",
+    "question": "Botanically, a tomato is classified as a...",
+    "options": [
+      "Vegetable",
+      "Root",
+      "Seed",
+      "Fruit"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "food-013",
+    "question": "What is the main ingredient in traditional sushi?",
+    "options": [
+      "Bread",
+      "Vinegared rice",
+      "Pasta",
+      "Potatoes"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "food-014",
+    "question": "What is the main ingredient in bread?",
+    "options": [
+      "Flour",
+      "Sugar",
+      "Eggs",
+      "Butter"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-015",
+    "question": "Which country are tacos traditionally from?",
+    "options": [
+      "Mexico",
+      "Spain",
+      "Brazil",
+      "India"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-016",
+    "question": "What is cheese made from?",
+    "options": [
+      "Eggs",
+      "Milk",
+      "Flour",
+      "Soybeans"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "food-017",
+    "question": "Which country is maple syrup most associated with?",
+    "options": [
+      "Canada",
+      "Norway",
+      "Russia",
+      "Finland"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-018",
+    "question": "Which grain is traditionally used to brew beer?",
+    "options": [
+      "Rice",
+      "Oats",
+      "Barley",
+      "Millet"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "food-019",
+    "question": "Which country is tea believed to have originated in?",
+    "options": [
+      "China",
+      "India",
+      "Japan",
+      "England"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-020",
+    "question": "Which of these is a citrus fruit?",
+    "options": [
+      "Apple",
+      "Orange",
+      "Banana",
+      "Pear"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "food-021",
+    "question": "Which country is sauerkraut traditionally associated with?",
+    "options": [
+      "Poland",
+      "Germany",
+      "Netherlands",
+      "France"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "food-022",
+    "question": "What is the main ingredient of pesto?",
+    "options": [
+      "Spinach",
+      "Parsley",
+      "Basil",
+      "Mint"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "food-023",
+    "question": "Which country is the dish coq au vin from?",
+    "options": [
+      "Belgium",
+      "Italy",
+      "Spain",
+      "France"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "food-024",
+    "question": "What makes bread dough rise?",
+    "options": [
+      "Salt",
+      "Sugar",
+      "Yeast",
+      "Baking powder"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "It's a living fungus."
+  },
+  {
+    "id": "food-025",
+    "question": "Which country is naan bread from?",
+    "options": [
+      "India",
+      "Greece",
+      "Morocco",
+      "Turkey"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "food-026",
+    "question": "What is tofu made from?",
+    "options": [
+      "Wheat",
+      "Soybeans",
+      "Rice",
+      "Peanuts"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "food-027",
+    "question": "Which country is gazpacho, a cold soup, from?",
+    "options": [
+      "Portugal",
+      "Italy",
+      "Spain",
+      "Greece"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "food-028",
+    "question": "What is the main ingredient of risotto?",
+    "options": [
+      "Pasta",
+      "Rice",
+      "Barley",
+      "Potato"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "food-029",
+    "question": "Which country is moussaka from?",
+    "options": [
+      "Turkey",
+      "Greece",
+      "Italy",
+      "Bulgaria"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "food-030",
+    "question": "How is sashimi typically served?",
+    "options": [
+      "Deep-fried fish",
+      "Grilled fish",
+      "Raw, sliced fish",
+      "Pickled fish"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "food-031",
+    "question": "Which country is pho, a noodle soup, from?",
+    "options": [
+      "China",
+      "Vietnam",
+      "Thailand",
+      "Japan"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "food-032",
+    "question": "Which spirit is the base of a mojito?",
+    "options": [
+      "Vodka",
+      "Gin",
+      "Rum",
+      "Tequila"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "food-033",
+    "question": "Which country is goulash from?",
+    "options": [
+      "Austria",
+      "Romania",
+      "Hungary",
+      "Czechia"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "food-034",
+    "question": "What is the main ingredient of gnocchi?",
+    "options": [
+      "Rice",
+      "Potato",
+      "Flour",
+      "Polenta"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "A starchy tuber."
+  },
+  {
+    "id": "food-035",
+    "question": "Which country is ceviche from?",
+    "options": [
+      "Brazil",
+      "Argentina",
+      "Peru",
+      "Colombia"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "food-036",
+    "question": "Sake, a Japanese drink, is made from fermented...",
+    "options": [
+      "Grapes",
+      "Barley",
+      "Potatoes",
+      "Rice"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "hint": "A Japanese grain."
+  },
+  {
+    "id": "food-037",
+    "question": "Which country is kimchi from?",
+    "options": [
+      "Japan",
+      "South Korea",
+      "China",
+      "Vietnam"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "food-038",
+    "question": "What is tapenade made from?",
+    "options": [
+      "Olives",
+      "Tomatoes",
+      "Eggplant",
+      "Capers"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "food-039",
+    "question": "Which country is fish and chips from?",
+    "options": [
+      "England",
+      "Scotland",
+      "Ireland",
+      "United States"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "food-040",
+    "question": "Which country is the Bordeaux wine region in?",
+    "options": [
+      "Spain",
+      "France",
+      "Italy",
+      "Germany"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "food-041",
+    "question": "Which country is pierogi traditionally from?",
+    "options": [
+      "Poland",
+      "Ukraine",
+      "Germany",
+      "Slovakia"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "food-042",
+    "question": "Miso is a paste made primarily from fermented...",
+    "options": [
+      "Rice",
+      "Soybeans",
+      "Wheat",
+      "Seaweed"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A fermented paste used in Japanese soup."
+  },
+  {
+    "id": "food-043",
+    "question": "Which North African country is couscous most associated with?",
+    "options": [
+      "Morocco",
+      "Egypt",
+      "Turkey",
+      "Greece"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "food-044",
+    "question": "Tahini is a paste made from ground...",
+    "options": [
+      "Peanuts",
+      "Sunflower seeds",
+      "Sesame seeds",
+      "Poppy seeds"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "A Middle Eastern paste."
+  },
+  {
+    "id": "food-045",
+    "question": "Which country is borscht, a beet soup, most associated with?",
+    "options": [
+      "Russia",
+      "Ukraine",
+      "Poland",
+      "Romania"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A beet soup of Eastern Europe."
+  },
+  {
+    "id": "food-046",
+    "question": "Umami is often described as which taste?",
+    "options": [
+      "Sour",
+      "Salty",
+      "Savory (fifth taste)",
+      "Spicy"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Japanese for 'pleasant savory taste'."
+  },
+  {
+    "id": "food-047",
+    "question": "Amaretto is a liqueur flavored with...",
+    "options": [
+      "Hazelnuts",
+      "Almonds",
+      "Cherries",
+      "Coffee"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "An Italian liqueur."
+  },
+  {
+    "id": "food-048",
+    "question": "Mole is a traditional sauce from which country?",
+    "options": [
+      "Mexico",
+      "Peru",
+      "Spain",
+      "Cuba"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "A complex sauce with chili and chocolate."
+  },
+  {
+    "id": "food-049",
+    "question": "Halloumi is a cheese traditionally from which country?",
+    "options": [
+      "Greece",
+      "Cyprus",
+      "Turkey",
+      "Italy"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A cheese that holds its shape when grilled."
+  },
+  {
+    "id": "food-050",
+    "question": "Which country is feijoada, a black-bean stew, from?",
+    "options": [
+      "Portugal",
+      "Brazil",
+      "Argentina",
+      "Mexico"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A black-bean stew."
+  },
+  {
+    "id": "food-051",
+    "question": "Tzatziki is a yogurt dip flavored with which vegetable?",
+    "options": [
+      "Carrot",
+      "Cucumber",
+      "Radish",
+      "Celery"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "food-052",
+    "question": "Which country is nasi goreng, a fried-rice dish, from?",
+    "options": [
+      "Malaysia",
+      "Indonesia",
+      "Thailand",
+      "Philippines"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Means 'fried rice'."
+  },
+  {
+    "id": "food-053",
+    "question": "Mochi is a Japanese treat made from pounded...",
+    "options": [
+      "Wheat",
+      "Corn",
+      "Glutinous rice",
+      "Potato"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "A chewy rice treat."
+  },
+  {
+    "id": "food-054",
+    "question": "Which country is schnitzel from?",
+    "options": [
+      "Germany",
+      "Austria",
+      "Switzerland",
+      "Netherlands"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "food-055",
+    "question": "Baklava is a sweet pastry layered with phyllo dough and filled with...",
+    "options": [
+      "Chocolate",
+      "Fruit",
+      "Nuts",
+      "Cheese"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Layered phyllo pastry."
+  },
+  {
+    "id": "food-056",
+    "question": "The Maillard reaction is responsible for which change in cooked food?",
+    "options": [
+      "Softening",
+      "Browning",
+      "Burning",
+      "Curdling"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It gives seared food its crust and flavor."
+  },
+  {
+    "id": "food-057",
+    "question": "The Italian term 'al dente' describes pasta that is...",
+    "options": [
+      "Soft and mushy",
+      "Firm to the bite",
+      "Served cold",
+      "Overcooked"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Italian for 'to the tooth'."
+  },
+  {
+    "id": "food-058",
+    "question": "A roux, used to thicken sauces, is a mixture of...",
+    "options": [
+      "Flour and water",
+      "Flour and fat",
+      "Sugar and butter",
+      "Egg and milk"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Used to thicken sauces."
+  },
+  {
+    "id": "food-059",
+    "question": "Chianti is a wine from which country?",
+    "options": [
+      "France",
+      "Spain",
+      "Italy",
+      "Portugal"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "food-060",
+    "question": "Broiling is a cooking method that uses...",
+    "options": [
+      "Boiling in water",
+      "Steaming",
+      "Dry heat from above",
+      "Frying in oil"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Uses a top heating element."
+  },
+  {
+    "id": "food-061",
+    "question": "What color is a ripe banana?",
+    "options": [
+      "Green",
+      "Yellow",
+      "Purple",
+      "Blue"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "The same color as the sun."
+  },
+  {
+    "id": "food-062",
+    "question": "Which orange root vegetable is rich in beta-carotene?",
+    "options": [
+      "Potato",
+      "Carrot",
+      "Turnip",
+      "Beetroot"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Good for eyesight, says folklore."
+  },
+  {
+    "id": "food-063",
+    "question": "Which hot beverage is brewed from roasted beans of a tropical cherry plant?",
+    "options": [
+      "Tea",
+      "Coffee",
+      "Hot chocolate",
+      "Chai latte"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "The world's favorite morning pick-me-up."
+  },
+  {
+    "id": "food-064",
+    "question": "Which sour yellow fruit is the base of lemonade?",
+    "options": [
+      "Lime",
+      "Orange",
+      "Lemon",
+      "Grapefruit"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Pairs with sugar and water."
+  },
+  {
+    "id": "food-065",
+    "question": "What is the main ingredient of an omelette?",
+    "options": [
+      "Flour",
+      "Eggs",
+      "Cheese",
+      "Milk"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "They come from chickens."
+  },
+  {
+    "id": "food-066",
+    "question": "Which dairy product is commonly poured over breakfast cereal?",
+    "options": [
+      "Butter",
+      "Cream",
+      "Milk",
+      "Yogurt"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "It comes from cows."
+  },
+  {
+    "id": "food-067",
+    "question": "Which curly green herb is a common garnish on restaurant plates?",
+    "options": [
+      "Basil",
+      "Parsley",
+      "Cilantro",
+      "Dill"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Often left uneaten on the side."
+  },
+  {
+    "id": "food-068",
+    "question": "Which spread is made from ground roasted legumes?",
+    "options": [
+      "Nutella",
+      "Peanut butter",
+      "Hummus",
+      "Marmite"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "A classic partner of jelly in sandwiches."
+  },
+  {
+    "id": "food-069",
+    "question": "What do we call the first meal of the day?",
+    "options": [
+      "Brunch",
+      "Supper",
+      "Breakfast",
+      "Dinner"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "It literally breaks your overnight fast."
+  },
+  {
+    "id": "food-070",
+    "question": "What is the primary ingredient of marzipan?",
+    "options": [
+      "Walnuts",
+      "Almonds",
+      "Cashews",
+      "Hazelnuts"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Ground nuts and sugar, often shaped like fruit."
+  },
+  {
+    "id": "food-071",
+    "question": "Which spice, harvested from crocus flowers, is the world's most expensive?",
+    "options": [
+      "Turmeric",
+      "Cardamom",
+      "Saffron",
+      "Vanilla"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Thousands of flowers are needed per gram."
+  },
+  {
+    "id": "food-072",
+    "question": "Which pasta shape's Italian name means 'little tongues'?",
+    "options": [
+      "Penne",
+      "Linguine",
+      "Farfalle",
+      "Fusilli"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Long flat strands, spaghetti's cousin."
+  },
+  {
+    "id": "food-073",
+    "question": "Feta cheese traditionally comes from which country?",
+    "options": [
+      "Italy",
+      "Turkey",
+      "Greece",
+      "Spain"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Crumbled over Greek salad."
+  },
+  {
+    "id": "food-074",
+    "question": "What is the main ingredient of falafel?",
+    "options": [
+      "Lentils",
+      "Chickpeas",
+      "Rice",
+      "Potato"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Ground legumes fried into balls."
+  },
+  {
+    "id": "food-075",
+    "question": "Which dark syrupy vinegar, made from cooked grape must, comes from Modena, Italy?",
+    "options": [
+      "Red wine vinegar",
+      "Apple cider vinegar",
+      "Balsamic vinegar",
+      "Rice vinegar"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Dark, sweet, and aged in wooden barrels."
+  },
+  {
+    "id": "food-076",
+    "question": "What does served 'a la mode' typically mean on a U.S. dessert menu?",
+    "options": [
+      "Served cold",
+      "With a scoop of ice cream",
+      "Extra sweet",
+      "Gluten-free"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Especially alongside pie."
+  },
+  {
+    "id": "food-077",
+    "question": "Which nut is the main ingredient of Nutella?",
+    "options": [
+      "Peanuts",
+      "Almonds",
+      "Hazelnuts",
+      "Macadamias"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Also the flavor of Frangelico liqueur."
+  },
+  {
+    "id": "food-078",
+    "question": "Worcestershire sauce traditionally contains which fermented fish?",
+    "options": [
+      "Anchovies",
+      "Sardines",
+      "Cod",
+      "Salmon"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Tiny salty Mediterranean fish."
+  },
+  {
+    "id": "food-079",
+    "question": "Camembert cheese originates from which region of France?",
+    "options": [
+      "Provence",
+      "Normandy",
+      "Brittany",
+      "Alsace"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Region whose capital is Rouen."
+  },
+  {
+    "id": "food-080",
+    "question": "Which compound gives chili peppers their heat?",
+    "options": [
+      "Capsaicin",
+      "Curcumin",
+      "Piperine",
+      "Capsanthin"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Its pungency is measured on the Scoville scale."
+  },
+  {
+    "id": "food-081",
+    "question": "Which expensive fungus grows underground near the roots of oak trees?",
+    "options": [
+      "Morel",
+      "Truffle",
+      "Chanterelle",
+      "Porcini"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Traditionally hunted with pigs or dogs in Italy and France."
+  },
+  {
+    "id": "food-082",
+    "question": "What is bromelain, found in pineapple?",
+    "options": [
+      "A vitamin",
+      "A protein-digesting enzyme",
+      "A natural dye",
+      "A preservative salt"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It's why fresh pineapple stops gelatin from setting."
+  },
+  {
+    "id": "food-083",
+    "question": "Which empire used cacao beans as currency and drank chocolate as a bitter beverage?",
+    "options": [
+      "Aztec Empire",
+      "Roman Empire",
+      "Ottoman Empire",
+      "Inca Empire"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Their capital stood where Mexico City is today."
+  },
+  {
+    "id": "food-084",
+    "question": "What is beurre blanc?",
+    "options": [
+      "A French emulsified butter sauce",
+      "A Swiss cheese fondue",
+      "An Italian bread dough",
+      "A Spanish cured ham"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "'White butter', reduced with wine and shallots."
+  },
+  {
+    "id": "food-085",
+    "question": "Which cooking technique seals food briefly at very high heat before slower cooking, often used for steaks?",
+    "options": [
+      "Blanching",
+      "Searing",
+      "Poaching",
+      "Steaming"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Creates the browned crust via the Maillard reaction."
+  }
 ]

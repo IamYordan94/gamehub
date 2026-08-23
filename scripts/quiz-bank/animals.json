@@ -1,62 +1,1067 @@
 [
-  {"id": "anim-001", "question": "What is the fastest land animal in the world?", "options": ["Cheetah", "Lion", "Horse", "Greyhound"], "answer": 0, "difficulty": 1},
-  {"id": "anim-002", "question": "What is the largest animal on Earth?", "options": ["African Elephant", "Blue Whale", "Giraffe", "Great White Shark"], "answer": 1, "difficulty": 1},
-  {"id": "anim-003", "question": "What is the tallest animal in the world?", "options": ["Elephant", "Giraffe", "Camel", "Ostrich"], "answer": 1, "difficulty": 1},
-  {"id": "anim-004", "question": "How many legs does a spider have?", "options": ["Six", "Ten", "Eight", "Four"], "answer": 2, "difficulty": 1},
-  {"id": "anim-005", "question": "Which animal is often called 'man's best friend'?", "options": ["Cat", "Dog", "Rabbit", "Parrot"], "answer": 1, "difficulty": 1},
-  {"id": "anim-006", "question": "What is a baby dog called?", "options": ["Cub", "Kitten", "Puppy", "Calf"], "answer": 2, "difficulty": 1},
-  {"id": "anim-007", "question": "What is a baby cat called?", "options": ["Kitten", "Puppy", "Foal", "Cub"], "answer": 0, "difficulty": 1},
-  {"id": "anim-008", "question": "Which animal makes the sound 'moo'?", "options": ["Horse", "Sheep", "Cow", "Pig"], "answer": 2, "difficulty": 1},
-  {"id": "anim-009", "question": "Which of these birds cannot fly?", "options": ["Sparrow", "Penguin", "Eagle", "Robin"], "answer": 1, "difficulty": 1},
-  {"id": "anim-010", "question": "Where do polar bears live?", "options": ["Antarctica", "Africa", "The Arctic", "Australia"], "answer": 2, "difficulty": 1},
-  {"id": "anim-011", "question": "What do honey bees make?", "options": ["Milk", "Honey", "Butter", "Jam"], "answer": 1, "difficulty": 1},
-  {"id": "anim-012", "question": "Which animal has a hump on its back and lives in the desert?", "options": ["Camel", "Horse", "Donkey", "Zebra"], "answer": 0, "difficulty": 1},
-  {"id": "anim-013", "question": "Which animal is known as the 'king of the jungle'?", "options": ["Tiger", "Lion", "Elephant", "Gorilla"], "answer": 1, "difficulty": 1},
-  {"id": "anim-014", "question": "Which animal has a long trunk?", "options": ["Rhino", "Hippo", "Elephant", "Giraffe"], "answer": 2, "difficulty": 1},
-  {"id": "anim-015", "question": "What is a group of lions called?", "options": ["Pack", "Pride", "Herd", "Flock"], "answer": 1, "difficulty": 1},
-  {"id": "anim-016", "question": "Which of these animals lives in water and breathes through gills?", "options": ["Dolphin", "Whale", "Fish", "Seal"], "answer": 2, "difficulty": 1},
-  {"id": "anim-017", "question": "Which farm animal lays the eggs we eat for breakfast?", "options": ["Duck", "Chicken", "Turkey", "Goose"], "answer": 1, "difficulty": 1},
-  {"id": "anim-018", "question": "What color is a flamingo?", "options": ["Blue", "Pink", "Green", "Yellow"], "answer": 1, "difficulty": 1},
-  {"id": "anim-019", "question": "Which animal hops and carries its baby in a pouch?", "options": ["Rabbit", "Kangaroo", "Monkey", "Squirrel"], "answer": 1, "difficulty": 1},
-  {"id": "anim-020", "question": "Which animal sleeps through the winter in a long, deep sleep?", "options": ["Bear", "Fox", "Wolf", "Deer"], "answer": 0, "difficulty": 1},
-  {"id": "anim-021", "question": "Which of these animals eats only plants?", "options": ["Lion", "Cow", "Eagle", "Shark"], "answer": 1, "difficulty": 2},
-  {"id": "anim-022", "question": "Which of these animals is a mammal?", "options": ["Shark", "Dolphin", "Salmon", "Octopus"], "answer": 1, "difficulty": 2},
-  {"id": "anim-023", "question": "Which of these animals is an amphibian?", "options": ["Lizard", "Snake", "Frog", "Turtle"], "answer": 2, "difficulty": 2},
-  {"id": "anim-024", "question": "Which of these animals is a reptile?", "options": ["Frog", "Salamander", "Snake", "Newt"], "answer": 2, "difficulty": 2},
-  {"id": "anim-025", "question": "What is a baby horse called?", "options": ["Calf", "Foal", "Cub", "Kid"], "answer": 1, "difficulty": 2},
-  {"id": "anim-026", "question": "What is a baby cow called?", "options": ["Calf", "Foal", "Pup", "Kid"], "answer": 0, "difficulty": 2},
-  {"id": "anim-027", "question": "What is a baby lion called?", "options": ["Puppy", "Kitten", "Cub", "Joey"], "answer": 2, "difficulty": 2},
-  {"id": "anim-028", "question": "Which animal can change its color to blend in with its surroundings?", "options": ["Chameleon", "Frog", "Turtle", "Iguana"], "answer": 0, "difficulty": 2},
-  {"id": "anim-029", "question": "Which sea animal has eight arms?", "options": ["Starfish", "Octopus", "Squid", "Jellyfish"], "answer": 1, "difficulty": 2},
-  {"id": "anim-030", "question": "Which animal is nicknamed the 'ship of the desert'?", "options": ["Horse", "Camel", "Donkey", "Ox"], "answer": 1, "difficulty": 2},
-  {"id": "anim-031", "question": "Which bird is famous for its beautiful, colorful tail feathers?", "options": ["Peacock", "Pigeon", "Crow", "Sparrow"], "answer": 0, "difficulty": 2},
-  {"id": "anim-032", "question": "What is a group of fish called?", "options": ["Herd", "School", "Pack", "Flock"], "answer": 1, "difficulty": 2},
-  {"id": "anim-033", "question": "What is a group of wolves called?", "options": ["Pack", "Pride", "Pod", "Herd"], "answer": 0, "difficulty": 2},
-  {"id": "anim-034", "question": "Which of these animals eats only meat?", "options": ["Rabbit", "Deer", "Lion", "Goat"], "answer": 2, "difficulty": 2},
-  {"id": "anim-035", "question": "What do we call an animal that eats both plants and meat?", "options": ["Herbivore", "Carnivore", "Omnivore", "Insectivore"], "answer": 2, "difficulty": 2},
-  {"id": "anim-036", "question": "Which insect begins its life as a caterpillar?", "options": ["Bee", "Butterfly", "Ant", "Beetle"], "answer": 1, "difficulty": 2},
-  {"id": "anim-037", "question": "How does a dolphin breathe?", "options": ["Through gills", "Through a blowhole", "Through its skin", "It never needs air"], "answer": 1, "difficulty": 2},
-  {"id": "anim-038", "question": "What is the largest land animal in the world?", "options": ["White Rhino", "African Elephant", "Hippopotamus", "Giraffe"], "answer": 1, "difficulty": 2},
-  {"id": "anim-039", "question": "Which animal can grow back its tail if it loses it?", "options": ["Lizard", "Cat", "Dog", "Rabbit"], "answer": 0, "difficulty": 2},
-  {"id": "anim-040", "question": "Which bird is famous for copying human speech?", "options": ["Crow", "Parrot", "Dove", "Seagull"], "answer": 1, "difficulty": 2},
-  {"id": "anim-041", "question": "What is a group of crows called?", "options": ["Murder", "Flock", "Swarm", "Gaggle"], "answer": 0, "difficulty": 3, "hint": "Think of a famously grim collective noun."},
-  {"id": "anim-042", "question": "Which mammal is capable of true flight?", "options": ["Flying Squirrel", "Bat", "Ostrich", "Penguin"], "answer": 1, "difficulty": 3, "hint": "It flies at night using echolocation."},
-  {"id": "anim-043", "question": "Which of these mammals lays eggs?", "options": ["Kangaroo", "Platypus", "Dolphin", "Rabbit"], "answer": 1, "difficulty": 3, "hint": "It is an egg-laying mammal called a monotreme."},
-  {"id": "anim-044", "question": "What is a baby kangaroo called?", "options": ["Joey", "Cub", "Kid", "Foal"], "answer": 0, "difficulty": 3, "hint": "It rhymes with 'hockey'."},
-  {"id": "anim-045", "question": "What is a baby goat called?", "options": ["Calf", "Kid", "Foal", "Lamb"], "answer": 1, "difficulty": 3, "hint": "It is also a word for a human child."},
-  {"id": "anim-046", "question": "What is a baby swan called?", "options": ["Duckling", "Cygnet", "Gosling", "Chick"], "answer": 1, "difficulty": 3, "hint": "A swan's young, not a duckling."},
-  {"id": "anim-047", "question": "Which bird is the fastest animal in the world when diving?", "options": ["Bald Eagle", "Peregrine Falcon", "Red-tailed Hawk", "Common Swift"], "answer": 1, "difficulty": 3, "hint": "It holds the record for the fastest dive, or stoop."},
-  {"id": "anim-048", "question": "Which of these animals is a marsupial?", "options": ["Zebra", "Kangaroo", "Brown Bear", "Wolf"], "answer": 1, "difficulty": 3, "hint": "Its babies grow in a pouch."},
-  {"id": "anim-049", "question": "What is a group of dolphins called?", "options": ["Pod", "Herd", "School", "Pack"], "answer": 0, "difficulty": 3, "hint": "Whales and dolphins travel in one of these."},
-  {"id": "anim-050", "question": "How many hearts does an octopus have?", "options": ["One", "Two", "Three", "Four"], "answer": 2, "difficulty": 3, "hint": "It is an unusual number, more than most animals."},
-  {"id": "anim-051", "question": "A blue whale is which type of animal?", "options": ["Fish", "Reptile", "Mammal", "Amphibian"], "answer": 2, "difficulty": 3, "hint": "It breathes air and gives birth to live young."},
-  {"id": "anim-052", "question": "Which bird can fly backwards?", "options": ["Sparrow", "Hummingbird", "Owl", "Pigeon"], "answer": 1, "difficulty": 3, "hint": "It hovers at flowers while sipping nectar."},
-  {"id": "anim-053", "question": "What is the largest living reptile in the world?", "options": ["Komodo Dragon", "Saltwater Crocodile", "Green Anaconda", "Galapagos Tortoise"], "answer": 1, "difficulty": 3, "hint": "It is a giant aquatic predator."},
-  {"id": "anim-054", "question": "What is a group of owls called?", "options": ["Parliament", "Murder", "Pod", "Colony"], "answer": 0, "difficulty": 3, "hint": "It shares its name with a group of lawmakers."},
-  {"id": "anim-055", "question": "Which animal usually sleeps standing up?", "options": ["Cat", "Horse", "Dog", "Mouse"], "answer": 1, "difficulty": 3, "hint": "It can lock its legs to doze upright."},
-  {"id": "anim-056", "question": "What is a baby seal called?", "options": ["Pup", "Cub", "Kid", "Calf"], "answer": 0, "difficulty": 3, "hint": "It shares its name with a baby dog."},
-  {"id": "anim-057", "question": "Which of these animals is an omnivore?", "options": ["Cow", "Bear", "Deer", "Rabbit"], "answer": 1, "difficulty": 3, "hint": "It eats berries, fish, and honey."},
-  {"id": "anim-058", "question": "What do you call a male bee whose main job is to mate with the queen?", "options": ["Worker", "Drone", "Soldier", "Nurse"], "answer": 1, "difficulty": 3, "hint": "It is also a word for an unmanned aircraft."},
-  {"id": "anim-059", "question": "Which of these animals is NOT a mammal?", "options": ["Whale", "Dolphin", "Shark", "Seal"], "answer": 2, "difficulty": 3, "hint": "It has gills and a cartilaginous skeleton."},
-  {"id": "anim-060", "question": "What is the fastest land bird?", "options": ["Ostrich", "Emu", "Roadrunner", "Penguin"], "answer": 0, "difficulty": 3, "hint": "A flightless sprinter of the savannah."}
+  {
+    "id": "anim-001",
+    "question": "What is the fastest land animal in the world?",
+    "options": [
+      "Cheetah",
+      "Lion",
+      "Horse",
+      "Greyhound"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-002",
+    "question": "What is the largest animal on Earth?",
+    "options": [
+      "African Elephant",
+      "Blue Whale",
+      "Giraffe",
+      "Great White Shark"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-003",
+    "question": "What is the tallest animal in the world?",
+    "options": [
+      "Elephant",
+      "Giraffe",
+      "Camel",
+      "Ostrich"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-004",
+    "question": "How many legs does a spider have?",
+    "options": [
+      "Six",
+      "Ten",
+      "Eight",
+      "Four"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-005",
+    "question": "Which animal is often called 'man's best friend'?",
+    "options": [
+      "Cat",
+      "Dog",
+      "Rabbit",
+      "Parrot"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-006",
+    "question": "What is a baby dog called?",
+    "options": [
+      "Cub",
+      "Kitten",
+      "Puppy",
+      "Calf"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-007",
+    "question": "What is a baby cat called?",
+    "options": [
+      "Kitten",
+      "Puppy",
+      "Foal",
+      "Cub"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-008",
+    "question": "Which animal makes the sound 'moo'?",
+    "options": [
+      "Horse",
+      "Sheep",
+      "Cow",
+      "Pig"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-009",
+    "question": "Which of these birds cannot fly?",
+    "options": [
+      "Sparrow",
+      "Penguin",
+      "Eagle",
+      "Robin"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-010",
+    "question": "Where do polar bears live?",
+    "options": [
+      "Antarctica",
+      "Africa",
+      "The Arctic",
+      "Australia"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-011",
+    "question": "What do honey bees make?",
+    "options": [
+      "Milk",
+      "Honey",
+      "Butter",
+      "Jam"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-012",
+    "question": "Which animal has a hump on its back and lives in the desert?",
+    "options": [
+      "Camel",
+      "Horse",
+      "Donkey",
+      "Zebra"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-013",
+    "question": "Which animal is known as the 'king of the jungle'?",
+    "options": [
+      "Tiger",
+      "Lion",
+      "Elephant",
+      "Gorilla"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-014",
+    "question": "Which animal has a long trunk?",
+    "options": [
+      "Rhino",
+      "Hippo",
+      "Elephant",
+      "Giraffe"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-015",
+    "question": "What is a group of lions called?",
+    "options": [
+      "Pack",
+      "Pride",
+      "Herd",
+      "Flock"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-016",
+    "question": "Which of these animals lives in water and breathes through gills?",
+    "options": [
+      "Dolphin",
+      "Whale",
+      "Fish",
+      "Seal"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-017",
+    "question": "Which farm animal lays the eggs we eat for breakfast?",
+    "options": [
+      "Duck",
+      "Chicken",
+      "Turkey",
+      "Goose"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-018",
+    "question": "What color is a flamingo?",
+    "options": [
+      "Blue",
+      "Pink",
+      "Green",
+      "Yellow"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-019",
+    "question": "Which animal hops and carries its baby in a pouch?",
+    "options": [
+      "Rabbit",
+      "Kangaroo",
+      "Monkey",
+      "Squirrel"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-020",
+    "question": "Which animal sleeps through the winter in a long, deep sleep?",
+    "options": [
+      "Bear",
+      "Fox",
+      "Wolf",
+      "Deer"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-021",
+    "question": "Which of these animals eats only plants?",
+    "options": [
+      "Lion",
+      "Cow",
+      "Eagle",
+      "Shark"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-022",
+    "question": "Which of these animals is a mammal?",
+    "options": [
+      "Shark",
+      "Dolphin",
+      "Salmon",
+      "Octopus"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-023",
+    "question": "Which of these animals is an amphibian?",
+    "options": [
+      "Lizard",
+      "Snake",
+      "Frog",
+      "Turtle"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-024",
+    "question": "Which of these animals is a reptile?",
+    "options": [
+      "Frog",
+      "Salamander",
+      "Snake",
+      "Newt"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-025",
+    "question": "What is a baby horse called?",
+    "options": [
+      "Calf",
+      "Foal",
+      "Cub",
+      "Kid"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-026",
+    "question": "What is a baby cow called?",
+    "options": [
+      "Calf",
+      "Foal",
+      "Pup",
+      "Kid"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-027",
+    "question": "What is a baby lion called?",
+    "options": [
+      "Puppy",
+      "Kitten",
+      "Cub",
+      "Joey"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-028",
+    "question": "Which animal can change its color to blend in with its surroundings?",
+    "options": [
+      "Chameleon",
+      "Frog",
+      "Turtle",
+      "Iguana"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-029",
+    "question": "Which sea animal has eight arms?",
+    "options": [
+      "Starfish",
+      "Octopus",
+      "Squid",
+      "Jellyfish"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-030",
+    "question": "Which animal is nicknamed the 'ship of the desert'?",
+    "options": [
+      "Horse",
+      "Camel",
+      "Donkey",
+      "Ox"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-031",
+    "question": "Which bird is famous for its beautiful, colorful tail feathers?",
+    "options": [
+      "Peacock",
+      "Pigeon",
+      "Crow",
+      "Sparrow"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-032",
+    "question": "What is a group of fish called?",
+    "options": [
+      "Herd",
+      "School",
+      "Pack",
+      "Flock"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-033",
+    "question": "What is a group of wolves called?",
+    "options": [
+      "Pack",
+      "Pride",
+      "Pod",
+      "Herd"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-034",
+    "question": "Which of these animals eats only meat?",
+    "options": [
+      "Rabbit",
+      "Deer",
+      "Lion",
+      "Goat"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-035",
+    "question": "What do we call an animal that eats both plants and meat?",
+    "options": [
+      "Herbivore",
+      "Carnivore",
+      "Omnivore",
+      "Insectivore"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-036",
+    "question": "Which insect begins its life as a caterpillar?",
+    "options": [
+      "Bee",
+      "Butterfly",
+      "Ant",
+      "Beetle"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-037",
+    "question": "How does a dolphin breathe?",
+    "options": [
+      "Through gills",
+      "Through a blowhole",
+      "Through its skin",
+      "It never needs air"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-038",
+    "question": "What is the largest land animal in the world?",
+    "options": [
+      "White Rhino",
+      "African Elephant",
+      "Hippopotamus",
+      "Giraffe"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-039",
+    "question": "Which animal can grow back its tail if it loses it?",
+    "options": [
+      "Lizard",
+      "Cat",
+      "Dog",
+      "Rabbit"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-040",
+    "question": "Which bird is famous for copying human speech?",
+    "options": [
+      "Crow",
+      "Parrot",
+      "Dove",
+      "Seagull"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-041",
+    "question": "What is a group of crows called?",
+    "options": [
+      "Murder",
+      "Flock",
+      "Swarm",
+      "Gaggle"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Think of a famously grim collective noun."
+  },
+  {
+    "id": "anim-042",
+    "question": "Which mammal is capable of true flight?",
+    "options": [
+      "Flying Squirrel",
+      "Bat",
+      "Ostrich",
+      "Penguin"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It flies at night using echolocation."
+  },
+  {
+    "id": "anim-043",
+    "question": "Which of these mammals lays eggs?",
+    "options": [
+      "Kangaroo",
+      "Platypus",
+      "Dolphin",
+      "Rabbit"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It is an egg-laying mammal called a monotreme."
+  },
+  {
+    "id": "anim-044",
+    "question": "What is a baby kangaroo called?",
+    "options": [
+      "Joey",
+      "Cub",
+      "Kid",
+      "Foal"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It rhymes with 'hockey'."
+  },
+  {
+    "id": "anim-045",
+    "question": "What is a baby goat called?",
+    "options": [
+      "Calf",
+      "Kid",
+      "Foal",
+      "Lamb"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It is also a word for a human child."
+  },
+  {
+    "id": "anim-046",
+    "question": "What is a baby swan called?",
+    "options": [
+      "Duckling",
+      "Cygnet",
+      "Gosling",
+      "Chick"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A swan's young, not a duckling."
+  },
+  {
+    "id": "anim-047",
+    "question": "Which bird is the fastest animal in the world when diving?",
+    "options": [
+      "Bald Eagle",
+      "Peregrine Falcon",
+      "Red-tailed Hawk",
+      "Common Swift"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It holds the record for the fastest dive, or stoop."
+  },
+  {
+    "id": "anim-048",
+    "question": "Which of these animals is a marsupial?",
+    "options": [
+      "Zebra",
+      "Kangaroo",
+      "Brown Bear",
+      "Wolf"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Its babies grow in a pouch."
+  },
+  {
+    "id": "anim-049",
+    "question": "What is a group of dolphins called?",
+    "options": [
+      "Pod",
+      "Herd",
+      "School",
+      "Pack"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Whales and dolphins travel in one of these."
+  },
+  {
+    "id": "anim-050",
+    "question": "How many hearts does an octopus have?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It is an unusual number, more than most animals."
+  },
+  {
+    "id": "anim-051",
+    "question": "A blue whale is which type of animal?",
+    "options": [
+      "Fish",
+      "Reptile",
+      "Mammal",
+      "Amphibian"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It breathes air and gives birth to live young."
+  },
+  {
+    "id": "anim-052",
+    "question": "Which bird can fly backwards?",
+    "options": [
+      "Sparrow",
+      "Hummingbird",
+      "Owl",
+      "Pigeon"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It hovers at flowers while sipping nectar."
+  },
+  {
+    "id": "anim-053",
+    "question": "What is the largest living reptile in the world?",
+    "options": [
+      "Komodo Dragon",
+      "Saltwater Crocodile",
+      "Green Anaconda",
+      "Galapagos Tortoise"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It is a giant aquatic predator."
+  },
+  {
+    "id": "anim-054",
+    "question": "What is a group of owls called?",
+    "options": [
+      "Parliament",
+      "Murder",
+      "Pod",
+      "Colony"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It shares its name with a group of lawmakers."
+  },
+  {
+    "id": "anim-055",
+    "question": "Which animal usually sleeps standing up?",
+    "options": [
+      "Cat",
+      "Horse",
+      "Dog",
+      "Mouse"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It can lock its legs to doze upright."
+  },
+  {
+    "id": "anim-056",
+    "question": "What is a baby seal called?",
+    "options": [
+      "Pup",
+      "Cub",
+      "Kid",
+      "Calf"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It shares its name with a baby dog."
+  },
+  {
+    "id": "anim-057",
+    "question": "Which of these animals is an omnivore?",
+    "options": [
+      "Cow",
+      "Bear",
+      "Deer",
+      "Rabbit"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It eats berries, fish, and honey."
+  },
+  {
+    "id": "anim-058",
+    "question": "What do you call a male bee whose main job is to mate with the queen?",
+    "options": [
+      "Worker",
+      "Drone",
+      "Soldier",
+      "Nurse"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It is also a word for an unmanned aircraft."
+  },
+  {
+    "id": "anim-059",
+    "question": "Which of these animals is NOT a mammal?",
+    "options": [
+      "Whale",
+      "Dolphin",
+      "Shark",
+      "Seal"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It has gills and a cartilaginous skeleton."
+  },
+  {
+    "id": "anim-060",
+    "question": "What is the fastest land bird?",
+    "options": [
+      "Ostrich",
+      "Emu",
+      "Roadrunner",
+      "Penguin"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "A flightless sprinter of the savannah."
+  },
+  {
+    "id": "anim-061",
+    "question": "What is the largest species of big cat?",
+    "options": [
+      "Tiger",
+      "Lion",
+      "Jaguar",
+      "Leopard"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It has stripes."
+  },
+  {
+    "id": "anim-062",
+    "question": "How many arms does a typical starfish have?",
+    "options": [
+      "Five",
+      "Six",
+      "Eight",
+      "Ten"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Most have this classic number."
+  },
+  {
+    "id": "anim-063",
+    "question": "Which African grazing animal has black and white stripes?",
+    "options": [
+      "Zebra",
+      "Skunk",
+      "Badger",
+      "Raccoon"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Looks like a horse in pajamas."
+  },
+  {
+    "id": "anim-064",
+    "question": "What do we call animals that hunt other animals for food?",
+    "options": [
+      "Predators",
+      "Prey",
+      "Scavengers",
+      "Herbivores"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Lions are these."
+  },
+  {
+    "id": "anim-065",
+    "question": "Which insect lives in a hive and produces wax as well as honey?",
+    "options": [
+      "Bee",
+      "Wasp",
+      "Ant",
+      "Butterfly"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It buzzes and makes hexagonal cells."
+  },
+  {
+    "id": "anim-066",
+    "question": "What is a baby frog called?",
+    "options": [
+      "Tadpole",
+      "Cub",
+      "Foal",
+      "Kid"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "It swims with a tail before growing legs."
+  },
+  {
+    "id": "anim-067",
+    "question": "Which animal is famous for building dams across rivers?",
+    "options": [
+      "Beaver",
+      "Otter",
+      "Muskrat",
+      "Platypus"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It has large orange teeth."
+  },
+  {
+    "id": "anim-068",
+    "question": "Which bird cannot fly but swims extremely well?",
+    "options": [
+      "Penguin",
+      "Sparrow",
+      "Eagle",
+      "Duck"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It lives mainly in cold southern regions."
+  },
+  {
+    "id": "anim-069",
+    "question": "How many legs does an insect have?",
+    "options": [
+      "Six",
+      "Four",
+      "Eight",
+      "Ten"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Spiders have eight; insects have fewer."
+  },
+  {
+    "id": "anim-070",
+    "question": "What is a group of geese flying together called?",
+    "options": [
+      "Flock",
+      "Pack",
+      "School",
+      "Swarm"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "General word for many birds together."
+  },
+  {
+    "id": "anim-071",
+    "question": "Which primate is the largest in the world?",
+    "options": [
+      "Gorilla",
+      "Orangutan",
+      "Chimpanzee",
+      "Baboon"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Silverbacks are dominant males of this species."
+  },
+  {
+    "id": "anim-072",
+    "question": "Which animal has the longest gestation period, around 22 months?",
+    "options": [
+      "Elephant",
+      "Blue whale",
+      "Giraffe",
+      "Hippopotamus"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The largest land animal."
+  },
+  {
+    "id": "anim-073",
+    "question": "Which bird lays the largest egg?",
+    "options": [
+      "Ostrich",
+      "Albatross",
+      "Emu",
+      "Condor"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The largest living bird."
+  },
+  {
+    "id": "anim-074",
+    "question": "Which shark species is the largest fish in the sea?",
+    "options": [
+      "Whale shark",
+      "Great white shark",
+      "Tiger shark",
+      "Hammerhead shark"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "It filter-feeds on plankton."
+  },
+  {
+    "id": "anim-075",
+    "question": "Which animal can sleep for up to three years between meals?",
+    "options": [
+      "Snail",
+      "Tortoise",
+      "Koala",
+      "Sloth"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "It carries its home on its back."
+  },
+  {
+    "id": "anim-076",
+    "question": "What is the collective term for a group of ferrets?",
+    "options": [
+      "Business",
+      "Band",
+      "Company",
+      "Committee"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "An amusingly commercial word."
+  },
+  {
+    "id": "anim-077",
+    "question": "Which mammal has the densest fur of any animal?",
+    "options": [
+      "Sea otter",
+      "Chinchilla",
+      "Beaver",
+      "Arctic fox"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It floats on its back and holds hands to stay together."
+  },
+  {
+    "id": "anim-078",
+    "question": "Which deep-sea creature has a bioluminescent lure dangling from its head?",
+    "options": [
+      "Anglerfish",
+      "Jellyfish",
+      "Cuttlefish",
+      "Starfish"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It fishes with a glowing 'fishing rod'."
+  },
+  {
+    "id": "anim-079",
+    "question": "Which animal's fingerprints are so similar to humans' they can confuse investigators?",
+    "options": [
+      "Koala",
+      "Chimpanzee",
+      "Gorilla",
+      "Ring-tailed lemur"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "An Australian eucalyptus-eater that sleeps up to 20 hours a day."
+  },
+  {
+    "id": "anim-080",
+    "question": "What is a group of jellyfish called?",
+    "options": [
+      "Smack",
+      "Shoal",
+      "Colony",
+      "Bloom"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Sounds like what you might get hit with."
+  },
+  {
+    "id": "anim-081",
+    "question": "Which animal has blue blood due to a copper-based pigment?",
+    "options": [
+      "Octopus",
+      "Shark",
+      "Tuna",
+      "Seal"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "An eight-armed cephalopod."
+  },
+  {
+    "id": "anim-082",
+    "question": "What is the fastest fish in the ocean?",
+    "options": [
+      "Sailfish",
+      "Tuna",
+      "Marlin",
+      "Swordfish"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It has a huge dorsal fin like a sail."
+  },
+  {
+    "id": "anim-083",
+    "question": "Which tiny aquatic insect is one of the loudest animals on Earth relative to its body size?",
+    "options": [
+      "Water boatman",
+      "Cricket",
+      "Bee",
+      "Mosquito"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It rows across ponds like a small boat."
+  },
+  {
+    "id": "anim-084",
+    "question": "Which bird has a tongue so long it wraps around its own skull?",
+    "options": [
+      "Woodpecker",
+      "Hummingbird",
+      "Pelican",
+      "Ostrich"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It drills into wood with its beak."
+  },
+  {
+    "id": "anim-085",
+    "question": "Which insect makes chirping sounds by rubbing its wings or legs together?",
+    "options": [
+      "Cricket",
+      "Beetle",
+      "Fly",
+      "Moth"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "It also gives its name to the sport played with a bat and ball."
+  }
 ]

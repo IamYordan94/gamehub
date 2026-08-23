@@ -730,5 +730,638 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "It stands on the Giza Plateau."
+  },
+  {
+    "id": "gen-361",
+    "question": "How many sides does a hexagon have?",
+    "options": [
+      "Six",
+      "Five",
+      "Seven",
+      "Eight"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Same number as a honeycomb cell."
+  },
+  {
+    "id": "gen-362",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Mercury"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Named after the Roman god of war."
+  },
+  {
+    "id": "gen-363",
+    "question": "How many continents are there on Earth?",
+    "options": [
+      "Seven",
+      "Five",
+      "Six",
+      "Eight"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Count them on a world map."
+  },
+  {
+    "id": "gen-364",
+    "question": "How many players are on the field per team in a standard soccer match?",
+    "options": [
+      "Eleven",
+      "Nine",
+      "Ten",
+      "Twelve"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Including the goalkeeper."
+  },
+  {
+    "id": "gen-365",
+    "question": "Which vitamin does sunlight help your skin produce?",
+    "options": [
+      "Vitamin D",
+      "Vitamin C",
+      "Vitamin A",
+      "Vitamin B12"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Good for bones."
+  },
+  {
+    "id": "gen-366",
+    "question": "Which scientist formulated the three laws of motion?",
+    "options": [
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Albert Einstein",
+      "Nikola Tesla"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Also credited with the apple-and-gravity story."
+  },
+  {
+    "id": "gen-367",
+    "question": "Which fruit has its seeds on the outside?",
+    "options": [
+      "Strawberry",
+      "Apple",
+      "Orange",
+      "Banana"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Red, often paired with cream."
+  },
+  {
+    "id": "gen-368",
+    "question": "Which language is the official language of Brazil?",
+    "options": [
+      "Portuguese",
+      "Spanish",
+      "French",
+      "Italian"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Not Spanish \u2014 that's its neighbor's tongue."
+  },
+  {
+    "id": "gen-369",
+    "question": "How many strings does a standard violin have?",
+    "options": [
+      "Four",
+      "Five",
+      "Six",
+      "Seven"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Tuned G, D, A, E."
+  },
+  {
+    "id": "gen-370",
+    "question": "What year did humans first walk on the Moon?",
+    "options": [
+      "1969",
+      "1965",
+      "1972",
+      "1959"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Apollo 11 mission."
+  },
+  {
+    "id": "gen-371",
+    "question": "What is the chemical symbol for gold?",
+    "options": [
+      "Au",
+      "Ag",
+      "Go",
+      "Gd"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "From the Latin 'aurum'."
+  },
+  {
+    "id": "gen-372",
+    "question": "What does CPU stand for in computing?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Power Unit",
+      "Central Program Utility",
+      "Core Processing Underlayer"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The 'brain' of a computer."
+  },
+  {
+    "id": "gen-373",
+    "question": "Which metal is liquid at room temperature?",
+    "options": [
+      "Mercury",
+      "Lead",
+      "Tin",
+      "Zinc"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Found in old thermometers."
+  },
+  {
+    "id": "gen-374",
+    "question": "What is the study of earthquakes called?",
+    "options": [
+      "Seismology",
+      "Geology",
+      "Meteorology",
+      "Volcanology"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Starts with 'seis-', Greek for shake."
+  },
+  {
+    "id": "gen-375",
+    "question": "Which chess piece can only move diagonally?",
+    "options": [
+      "Bishop",
+      "Knight",
+      "Rook",
+      "Queen"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Each stays on one color square forever."
+  },
+  {
+    "id": "gen-376",
+    "question": "Which planet has the most prominent ring system?",
+    "options": [
+      "Saturn",
+      "Uranus",
+      "Neptune",
+      "Jupiter"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Second-largest planet; famous for its rings."
+  },
+  {
+    "id": "gen-377",
+    "question": "What does DNA stand for?",
+    "options": [
+      "Deoxyribonucleic acid",
+      "Dynamic nuclear acid",
+      "Deoxyribose nucleotide array",
+      "Double nitrogen acid"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The molecule carrying genetic instructions."
+  },
+  {
+    "id": "gen-378",
+    "question": "What is the hardest tissue in the human body?",
+    "options": [
+      "Enamel",
+      "Bone",
+      "Cartilage",
+      "Dentin"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It coats your teeth."
+  },
+  {
+    "id": "gen-379",
+    "question": "What is the largest muscle in the human body by mass?",
+    "options": [
+      "Gluteus maximus",
+      "Heart",
+      "Quadriceps",
+      "Biceps"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It's the one you sit on."
+  },
+  {
+    "id": "gen-380",
+    "question": "What is the boiling point of water in Fahrenheit?",
+    "options": [
+      "212\u00b0F",
+      "180\u00b0F",
+      "200\u00b0F",
+      "232\u00b0F"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Convert from 100\u00b0C."
+  },
+  {
+    "id": "gen-381",
+    "question": "Which language uses the Cyrillic alphabet?",
+    "options": [
+      "Russian",
+      "German",
+      "Spanish",
+      "Japanese"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Spoken widely across Siberia."
+  },
+  {
+    "id": "gen-382",
+    "question": "Which ancient wonder was a lighthouse standing in an Egyptian harbor?",
+    "options": [
+      "Lighthouse (Pharos) of Alexandria",
+      "Hanging Gardens of Babylon",
+      "Temple of Artemis",
+      "Colossus of Rhodes"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It guided ships into Alexandria."
+  },
+  {
+    "id": "gen-383",
+    "question": "What is the tallest mountain on Earth measured from base to peak (mostly underwater)?",
+    "options": [
+      "Mauna Kea",
+      "Everest",
+      "Denali",
+      "Kilimanjaro"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It's in Hawaii."
+  },
+  {
+    "id": "gen-384",
+    "question": "What is the plural of 'cactus'?",
+    "options": [
+      "Cacti",
+      "Cactuses only",
+      "Cactae",
+      "Cactii"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Latin-style plural; both forms are accepted but this is the classic one."
+  },
+  {
+    "id": "gen-385",
+    "question": "In computing, what does the acronym URL stand for?",
+    "options": [
+      "Uniform Resource Locator",
+      "Universal Reference Link",
+      "United Routing Layer",
+      "User Remote Login"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It's the address of a web page."
+  },
+  {
+    "id": "gen-086",
+    "question": "How many sides does a square have?",
+    "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Six"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-087",
+    "question": "What is the capital city of Spain?",
+    "options": [
+      "Lisbon",
+      "Barcelona",
+      "Madrid",
+      "Seville"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-088",
+    "question": "Which animal is known as 'man's best friend'?",
+    "options": [
+      "Cat",
+      "Dog",
+      "Horse",
+      "Rabbit"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-089",
+    "question": "What is the freezing point of water in degrees Celsius?",
+    "options": [
+      "0",
+      "10",
+      "32",
+      "-10"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-090",
+    "question": "How many colors are in a rainbow (traditionally)?",
+    "options": [
+      "Five",
+      "Six",
+      "Seven",
+      "Eight"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-091",
+    "question": "Which body part do you see with?",
+    "options": [
+      "Ears",
+      "Nose",
+      "Eyes",
+      "Mouth"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-092",
+    "question": "What is 10 minus 4?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-093",
+    "question": "Which season comes after summer?",
+    "options": [
+      "Spring",
+      "Autumn",
+      "Winter",
+      "Monsoon"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-094",
+    "question": "What do caterpillars turn into?",
+    "options": [
+      "Beetles",
+      "Butterflies",
+      "Bees",
+      "Birds"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-095",
+    "question": "What is the chemical symbol for gold?",
+    "options": [
+      "Go",
+      "Gd",
+      "Au",
+      "Ag"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-096",
+    "question": "Which country gifted the Statue of Liberty to the USA?",
+    "options": [
+      "Britain",
+      "France",
+      "Spain",
+      "Italy"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-097",
+    "question": "How many players are on a standard soccer team on the field?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-098",
+    "question": "What is the largest island in the world?",
+    "options": [
+      "Greenland",
+      "Madagascar",
+      "Borneo",
+      "Australia"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-099",
+    "question": "Which organ pumps blood around the human body?",
+    "options": [
+      "Lungs",
+      "Liver",
+      "Brain",
+      "Heart"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-100",
+    "question": "Who wrote 'A Christmas Carol'?",
+    "options": [
+      "Charles Dickens",
+      "Mark Twain",
+      "Oscar Wilde",
+      "Leo Tolstoy"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-101",
+    "question": "What is the capital city of Brazil?",
+    "options": [
+      "Rio de Janeiro",
+      "Sao Paulo",
+      "Brasilia",
+      "Salvador"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-102",
+    "question": "How many degrees are in a full circle?",
+    "options": [
+      "180",
+      "270",
+      "360",
+      "450"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-103",
+    "question": "Which element has the atomic number 79?",
+    "options": [
+      "Silver",
+      "Gold",
+      "Platinum",
+      "Mercury"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It is a precious yellow metal."
+  },
+  {
+    "id": "gen-104",
+    "question": "What is the capital city of Morocco?",
+    "options": [
+      "Marrakesh",
+      "Casablanca",
+      "Fez",
+      "Rabat"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "It is not the largest city."
+  },
+  {
+    "id": "gen-105",
+    "question": "Who painted 'The Persistence of Memory', famous for melting clocks?",
+    "options": [
+      "Pablo Picasso",
+      "Salvador Dali",
+      "Rene Magritte",
+      "Joan Miro"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A Spanish surrealist artist."
+  },
+  {
+    "id": "gen-106",
+    "question": "In which year did the Titanic sink?",
+    "options": [
+      "1905",
+      "1912",
+      "1918",
+      "1923"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It struck an iceberg on its maiden voyage."
+  },
+  {
+    "id": "gen-107",
+    "question": "What is the longest river in the world?",
+    "options": [
+      "Amazon",
+      "Nile",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It flows through northeastern Africa."
+  },
+  {
+    "id": "gen-108",
+    "question": "Which scientist discovered penicillin?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Joseph Lister",
+      "Edward Jenner"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A Scottish bacteriologist."
+  },
+  {
+    "id": "gen-109",
+    "question": "What is the smallest prime number?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "The smallest number divisible only by 1 and itself."
+  },
+  {
+    "id": "gen-110",
+    "question": "Which country is home to the Angkor Wat temple complex?",
+    "options": [
+      "Thailand",
+      "Vietnam",
+      "Cambodia",
+      "Laos"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It was the heart of the Khmer Empire."
   }
 ]

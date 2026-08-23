@@ -1239,4 +1239,13 @@ body {
   --qz-green: #39c96b;
   --qz-red: #ff4d4d;
   --qz-text: #141414;
+
+  --sv-bg: #faf6ec;
+  --sv-panel: #ffffff;
+  --sv-ink: #141414;
+  --sv-ink-soft: #6f6a5e;
+  --sv-nav: #1e2028;
+  --sv-text: #141414;
+  --sv-accent: #e7b10a;
+  --sv-accent-soft: #fbe9b7;
 }

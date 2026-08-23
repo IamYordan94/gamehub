@@ -1,62 +1,1057 @@
 [
-  {"id": "mus-001", "question": "Which city did The Beatles come from?", "options": ["London", "Liverpool", "Manchester", "Dublin"], "answer": 1, "difficulty": 1, "hint": "A port city in northwest England."},
-  {"id": "mus-002", "question": "What was Mozart's first name?", "options": ["Ludwig", "Johann", "Wolfgang", "Franz"], "answer": 2, "difficulty": 1},
-  {"id": "mus-003", "question": "Which composer wrote the piano piece 'Für Elise'?", "options": ["Mozart", "Bach", "Chopin", "Beethoven"], "answer": 3, "difficulty": 1},
-  {"id": "mus-004", "question": "How many keys does a standard piano have?", "options": ["66", "88", "76", "104"], "answer": 1, "difficulty": 1, "hint": "Two more than 86."},
-  {"id": "mus-005", "question": "How many strings does a standard acoustic guitar have?", "options": ["Five", "Four", "Six", "Seven"], "answer": 2, "difficulty": 1},
-  {"id": "mus-006", "question": "What do violinists typically use to sound the strings?", "options": ["A bow", "A pick", "A drumstick", "A slide"], "answer": 0, "difficulty": 1},
-  {"id": "mus-007", "question": "Elvis Presley was famously known as the 'King of' what?", "options": ["Jazz", "Rock 'n' Roll", "Blues", "Country"], "answer": 1, "difficulty": 1},
-  {"id": "mus-008", "question": "Which artist recorded the album 'Thriller'?", "options": ["Michael Jackson", "Prince", "Stevie Wonder", "James Brown"], "answer": 0, "difficulty": 1},
-  {"id": "mus-009", "question": "Which band performed 'Bohemian Rhapsody'?", "options": ["The Rolling Stones", "Led Zeppelin", "Queen", "The Who"], "answer": 2, "difficulty": 1},
-  {"id": "mus-010", "question": "ABBA is a pop group from which country?", "options": ["Norway", "Sweden", "Denmark", "Germany"], "answer": 1, "difficulty": 1},
-  {"id": "mus-011", "question": "How many notes are in a standard major scale?", "options": ["Five", "Seven", "Eight", "Twelve"], "answer": 1, "difficulty": 1, "hint": "Think of do-re-mi-fa-sol-la-ti."},
-  {"id": "mus-012", "question": "Which of these instruments belongs to the string family?", "options": ["Trumpet", "Violin", "Drum", "Flute"], "answer": 1, "difficulty": 1},
-  {"id": "mus-013", "question": "Wolfgang Amadeus Mozart was born in which country?", "options": ["Germany", "Italy", "Austria", "France"], "answer": 2, "difficulty": 1, "hint": "The city was Salzburg."},
-  {"id": "mus-014", "question": "Ludwig van Beethoven was a composer from which country?", "options": ["Austria", "Germany", "Poland", "Russia"], "answer": 1, "difficulty": 1, "hint": "He was born in Bonn."},
-  {"id": "mus-015", "question": "Johann Sebastian Bach is associated with which musical era?", "options": ["Romantic", "Baroque", "Renaissance", "Classical"], "answer": 1, "difficulty": 1},
-  {"id": "mus-016", "question": "Who was the lead singer of Queen?", "options": ["Freddie Mercury", "Mick Jagger", "Robert Plant", "Elton John"], "answer": 0, "difficulty": 1},
-  {"id": "mus-017", "question": "Which of these is a famous song by The Beatles?", "options": ["Stairway to Heaven", "Hey Jude", "Like a Rolling Stone", "Hotel California"], "answer": 1, "difficulty": 1},
-  {"id": "mus-018", "question": "Elvis Presley was born in which U.S. state?", "options": ["Tennessee", "Mississippi", "Texas", "Georgia"], "answer": 1, "difficulty": 1, "hint": "His birthplace was Tupelo."},
-  {"id": "mus-019", "question": "Which of these is a hit song by ABBA?", "options": ["Dancing Queen", "Bohemian Rhapsody", "Imagine", "Billie Jean"], "answer": 0, "difficulty": 1},
-  {"id": "mus-020", "question": "Which clef is used for higher-pitched notes in music?", "options": ["Bass", "Alto", "Treble", "Tenor"], "answer": 2, "difficulty": 1},
-  {"id": "mus-021", "question": "Who was the drummer for The Beatles?", "options": ["John Lennon", "Ringo Starr", "George Harrison", "Paul McCartney"], "answer": 1, "difficulty": 2},
-  {"id": "mus-022", "question": "Which Beatles album cover shows the band walking across a zebra crossing?", "options": ["Sgt. Pepper's Lonely Hearts Club Band", "Let It Be", "Abbey Road", "Revolver"], "answer": 2, "difficulty": 2},
-  {"id": "mus-023", "question": "At what age did Wolfgang Amadeus Mozart die?", "options": ["45", "35", "55", "27"], "answer": 1, "difficulty": 2},
-  {"id": "mus-024", "question": "Beethoven is famous for continuing to compose while gradually losing which sense?", "options": ["Sight", "Hearing", "Smell", "Touch"], "answer": 1, "difficulty": 2},
-  {"id": "mus-025", "question": "The famous opening of Beethoven's Fifth Symphony consists of how many notes?", "options": ["Three", "Four", "Five", "Six"], "answer": 1, "difficulty": 2, "hint": "'Da-da-da-dum'."},
-  {"id": "mus-026", "question": "Beethoven's Ninth Symphony ends with a choral finale based on which poem?", "options": ["Ode to Joy", "The Erlking", "Do Not Go Gentle", "The Song of the Bell"], "answer": 0, "difficulty": 2},
-  {"id": "mus-027", "question": "Johann Sebastian Bach composed mainly during which century?", "options": ["17th", "18th", "19th", "16th"], "answer": 1, "difficulty": 2},
-  {"id": "mus-028", "question": "Which song from 'Thriller' features a famous guitar solo by Eddie Van Halen?", "options": ["Billie Jean", "Beat It", "Wanna Be Startin' Somethin'", "Thriller"], "answer": 1, "difficulty": 2},
-  {"id": "mus-029", "question": "The song 'Billie Jean' appears on which Michael Jackson album?", "options": ["Bad", "Off the Wall", "Thriller", "Dangerous"], "answer": 2, "difficulty": 2},
-  {"id": "mus-030", "question": "Queen released 'Bohemian Rhapsody' as a single in which year?", "options": ["1973", "1975", "1977", "1980"], "answer": 1, "difficulty": 2},
-  {"id": "mus-031", "question": "Which Queen song is famously lip-synced in the film 'Wayne's World'?", "options": ["We Will Rock You", "Bohemian Rhapsody", "Somebody to Love", "Under Pressure"], "answer": 1, "difficulty": 2},
-  {"id": "mus-032", "question": "ABBA won the Eurovision Song Contest in 1974 with which song?", "options": ["Waterloo", "Dancing Queen", "Mamma Mia", "Fernando"], "answer": 0, "difficulty": 2},
-  {"id": "mus-033", "question": "What is the main purpose of the frets on a guitar neck?", "options": ["To hold the strings", "To change the pitch of notes", "To amplify the sound", "To decorate the instrument"], "answer": 1, "difficulty": 2},
-  {"id": "mus-034", "question": "How many strings does a standard violin have?", "options": ["Five", "Three", "Four", "Six"], "answer": 2, "difficulty": 2},
-  {"id": "mus-035", "question": "The time signature 4/4 is commonly called what?", "options": ["Common time", "Waltz time", "Cut time", "Compound time"], "answer": 0, "difficulty": 2},
-  {"id": "mus-036", "question": "A chord made up of three notes is called a what?", "options": ["Dyad", "Triad", "Tetrad", "Power chord"], "answer": 1, "difficulty": 2},
-  {"id": "mus-037", "question": "Elvis Presley's first single, recorded at Sun Records in 1954, was which song?", "options": ["That's All Right", "Blue Suede Shoes", "Hound Dog", "Love Me Tender"], "answer": 0, "difficulty": 2},
-  {"id": "mus-038", "question": "The Woodstock Music Festival took place in which year?", "options": ["1967", "1969", "1971", "1965"], "answer": 1, "difficulty": 2},
-  {"id": "mus-039", "question": "The 1969 Woodstock festival was held in which U.S. state?", "options": ["California", "New York", "Vermont", "Massachusetts"], "answer": 1, "difficulty": 2},
-  {"id": "mus-040", "question": "Who famously sang 'What a Wonderful World'?", "options": ["Frank Sinatra", "Louis Armstrong", "Ray Charles", "Nat King Cole"], "answer": 1, "difficulty": 2},
-  {"id": "mus-041", "question": "Who produced most of The Beatles' studio albums?", "options": ["Phil Spector", "George Martin", "Brian Wilson", "Quincy Jones"], "answer": 1, "difficulty": 3},
-  {"id": "mus-042", "question": "The Beatles' final live performance, on a rooftop, took place in which city?", "options": ["New York", "Liverpool", "London", "Hamburg"], "answer": 2, "difficulty": 3, "hint": "On the roof of the Apple Corps building."},
-  {"id": "mus-043", "question": "'Eine kleine Nachtmusik' by Mozart translates to what in English?", "options": ["A Little Night Music", "A Summer Evening", "The Magic Flute", "Songs of the Night"], "answer": 0, "difficulty": 3},
-  {"id": "mus-044", "question": "Mozart's opera 'The Magic Flute' features which famously difficult soprano aria?", "options": ["O mio babbino caro", "The Queen of the Night aria", "Habanera", "Un bel di vedremo"], "answer": 1, "difficulty": 3},
-  {"id": "mus-045", "question": "How many symphonies did Beethoven complete?", "options": ["Seven", "Eight", "Nine", "Ten"], "answer": 2, "difficulty": 3},
-  {"id": "mus-046", "question": "Beethoven's 'Moonlight Sonata' was written for which solo instrument?", "options": ["Violin", "Piano", "Cello", "Organ"], "answer": 1, "difficulty": 3},
-  {"id": "mus-047", "question": "Bach's 'Toccata and Fugue in D minor' is most commonly performed on which instrument?", "options": ["Piano", "Harpsichord", "Organ", "Violin"], "answer": 2, "difficulty": 3},
-  {"id": "mus-048", "question": "Bach's 'The Well-Tempered Clavier' is a collection of works for which instrument?", "options": ["Organ", "Keyboard", "Violin", "Flute"], "answer": 1, "difficulty": 3, "hint": "Written for keyboard instruments such as the harpsichord."},
-  {"id": "mus-049", "question": "What is the musical interval between the first and eighth notes of a scale called?", "options": ["A fifth", "A third", "An octave", "A seventh"], "answer": 2, "difficulty": 3},
-  {"id": "mus-050", "question": "A sharp sign in music raises a note by how much?", "options": ["A whole step", "A semitone", "Two semitones", "An octave"], "answer": 1, "difficulty": 3},
-  {"id": "mus-051", "question": "What is the Italian musical term meaning 'gradually getting faster'?", "options": ["Ritardando", "Accelerando", "Crescendo", "Legato"], "answer": 1, "difficulty": 3},
-  {"id": "mus-052", "question": "Which major key has no sharps or flats in its key signature?", "options": ["G major", "D major", "C major", "F major"], "answer": 2, "difficulty": 3},
-  {"id": "mus-053", "question": "What is the lowest-pitched standard instrument in the orchestral string family?", "options": ["Cello", "Double bass", "Viola", "Violin"], "answer": 1, "difficulty": 3},
-  {"id": "mus-054", "question": "The full name 'pianoforte' reflects the instrument's ability to play what?", "options": ["Fast and slow", "Soft and loud", "High and low", "Long and short notes"], "answer": 1, "difficulty": 3, "hint": "Piano means soft, forte means loud."},
-  {"id": "mus-055", "question": "Elvis Presley's famous home and estate in Memphis is called what?", "options": ["Neverland", "Graceland", "Heartbreak Hotel", "Sun House"], "answer": 1, "difficulty": 3},
-  {"id": "mus-056", "question": "The music video for Michael Jackson's 'Thriller' was directed by which filmmaker?", "options": ["Steven Spielberg", "John Landis", "George Lucas", "Francis Ford Coppola"], "answer": 1, "difficulty": 3},
-  {"id": "mus-057", "question": "The moonwalk became famous when Michael Jackson performed it during which song on the Motown 25 special?", "options": ["Thriller", "Beat It", "Billie Jean", "Bad"], "answer": 2, "difficulty": 3},
-  {"id": "mus-058", "question": "Freddie Mercury's birth name was what?", "options": ["Farrokh Bulsara", "Frederick May", "Farley Mercury", "Frank Montserrat"], "answer": 0, "difficulty": 3},
-  {"id": "mus-059", "question": "'We Will Rock You' and 'We Are the Champions' both appear on which Queen album?", "options": ["A Night at the Opera", "News of the World", "The Game", "Jazz"], "answer": 1, "difficulty": 3},
-  {"id": "mus-060", "question": "Which guitarist's performance of the U.S. national anthem at Woodstock became iconic?", "options": ["Eric Clapton", "Jimi Hendrix", "Carlos Santana", "Pete Townshend"], "answer": 1, "difficulty": 3}
+  {
+    "id": "mus-001",
+    "question": "Which city did The Beatles come from?",
+    "options": [
+      "London",
+      "Liverpool",
+      "Manchester",
+      "Dublin"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "A port city in northwest England."
+  },
+  {
+    "id": "mus-002",
+    "question": "What was Mozart's first name?",
+    "options": [
+      "Ludwig",
+      "Johann",
+      "Wolfgang",
+      "Franz"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-003",
+    "question": "Which composer wrote the piano piece 'F\u00fcr Elise'?",
+    "options": [
+      "Mozart",
+      "Bach",
+      "Chopin",
+      "Beethoven"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-004",
+    "question": "How many keys does a standard piano have?",
+    "options": [
+      "66",
+      "88",
+      "76",
+      "104"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Two more than 86."
+  },
+  {
+    "id": "mus-005",
+    "question": "How many strings does a standard acoustic guitar have?",
+    "options": [
+      "Five",
+      "Four",
+      "Six",
+      "Seven"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-006",
+    "question": "What do violinists typically use to sound the strings?",
+    "options": [
+      "A bow",
+      "A pick",
+      "A drumstick",
+      "A slide"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-007",
+    "question": "Elvis Presley was famously known as the 'King of' what?",
+    "options": [
+      "Jazz",
+      "Rock 'n' Roll",
+      "Blues",
+      "Country"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-008",
+    "question": "Which artist recorded the album 'Thriller'?",
+    "options": [
+      "Michael Jackson",
+      "Prince",
+      "Stevie Wonder",
+      "James Brown"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-009",
+    "question": "Which band performed 'Bohemian Rhapsody'?",
+    "options": [
+      "The Rolling Stones",
+      "Led Zeppelin",
+      "Queen",
+      "The Who"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-010",
+    "question": "ABBA is a pop group from which country?",
+    "options": [
+      "Norway",
+      "Sweden",
+      "Denmark",
+      "Germany"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-011",
+    "question": "How many notes are in a standard major scale?",
+    "options": [
+      "Five",
+      "Seven",
+      "Eight",
+      "Twelve"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Think of do-re-mi-fa-sol-la-ti."
+  },
+  {
+    "id": "mus-012",
+    "question": "Which of these instruments belongs to the string family?",
+    "options": [
+      "Trumpet",
+      "Violin",
+      "Drum",
+      "Flute"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-013",
+    "question": "Wolfgang Amadeus Mozart was born in which country?",
+    "options": [
+      "Germany",
+      "Italy",
+      "Austria",
+      "France"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "The city was Salzburg."
+  },
+  {
+    "id": "mus-014",
+    "question": "Ludwig van Beethoven was a composer from which country?",
+    "options": [
+      "Austria",
+      "Germany",
+      "Poland",
+      "Russia"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "He was born in Bonn."
+  },
+  {
+    "id": "mus-015",
+    "question": "Johann Sebastian Bach is associated with which musical era?",
+    "options": [
+      "Romantic",
+      "Baroque",
+      "Renaissance",
+      "Classical"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-016",
+    "question": "Who was the lead singer of Queen?",
+    "options": [
+      "Freddie Mercury",
+      "Mick Jagger",
+      "Robert Plant",
+      "Elton John"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-017",
+    "question": "Which of these is a famous song by The Beatles?",
+    "options": [
+      "Stairway to Heaven",
+      "Hey Jude",
+      "Like a Rolling Stone",
+      "Hotel California"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-018",
+    "question": "Elvis Presley was born in which U.S. state?",
+    "options": [
+      "Tennessee",
+      "Mississippi",
+      "Texas",
+      "Georgia"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "His birthplace was Tupelo."
+  },
+  {
+    "id": "mus-019",
+    "question": "Which of these is a hit song by ABBA?",
+    "options": [
+      "Dancing Queen",
+      "Bohemian Rhapsody",
+      "Imagine",
+      "Billie Jean"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-020",
+    "question": "Which clef is used for higher-pitched notes in music?",
+    "options": [
+      "Bass",
+      "Alto",
+      "Treble",
+      "Tenor"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-021",
+    "question": "Who was the drummer for The Beatles?",
+    "options": [
+      "John Lennon",
+      "Ringo Starr",
+      "George Harrison",
+      "Paul McCartney"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-022",
+    "question": "Which Beatles album cover shows the band walking across a zebra crossing?",
+    "options": [
+      "Sgt. Pepper's Lonely Hearts Club Band",
+      "Let It Be",
+      "Abbey Road",
+      "Revolver"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-023",
+    "question": "At what age did Wolfgang Amadeus Mozart die?",
+    "options": [
+      "45",
+      "35",
+      "55",
+      "27"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-024",
+    "question": "Beethoven is famous for continuing to compose while gradually losing which sense?",
+    "options": [
+      "Sight",
+      "Hearing",
+      "Smell",
+      "Touch"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-025",
+    "question": "The famous opening of Beethoven's Fifth Symphony consists of how many notes?",
+    "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Six"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "'Da-da-da-dum'."
+  },
+  {
+    "id": "mus-026",
+    "question": "Beethoven's Ninth Symphony ends with a choral finale based on which poem?",
+    "options": [
+      "Ode to Joy",
+      "The Erlking",
+      "Do Not Go Gentle",
+      "The Song of the Bell"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-027",
+    "question": "Johann Sebastian Bach composed mainly during which century?",
+    "options": [
+      "17th",
+      "18th",
+      "19th",
+      "16th"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-028",
+    "question": "Which song from 'Thriller' features a famous guitar solo by Eddie Van Halen?",
+    "options": [
+      "Billie Jean",
+      "Beat It",
+      "Wanna Be Startin' Somethin'",
+      "Thriller"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-029",
+    "question": "The song 'Billie Jean' appears on which Michael Jackson album?",
+    "options": [
+      "Bad",
+      "Off the Wall",
+      "Thriller",
+      "Dangerous"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-030",
+    "question": "Queen released 'Bohemian Rhapsody' as a single in which year?",
+    "options": [
+      "1973",
+      "1975",
+      "1977",
+      "1980"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-031",
+    "question": "Which Queen song is famously lip-synced in the film 'Wayne's World'?",
+    "options": [
+      "We Will Rock You",
+      "Bohemian Rhapsody",
+      "Somebody to Love",
+      "Under Pressure"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-032",
+    "question": "ABBA won the Eurovision Song Contest in 1974 with which song?",
+    "options": [
+      "Waterloo",
+      "Dancing Queen",
+      "Mamma Mia",
+      "Fernando"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-033",
+    "question": "What is the main purpose of the frets on a guitar neck?",
+    "options": [
+      "To hold the strings",
+      "To change the pitch of notes",
+      "To amplify the sound",
+      "To decorate the instrument"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-034",
+    "question": "How many strings does a standard violin have?",
+    "options": [
+      "Five",
+      "Three",
+      "Four",
+      "Six"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-035",
+    "question": "The time signature 4/4 is commonly called what?",
+    "options": [
+      "Common time",
+      "Waltz time",
+      "Cut time",
+      "Compound time"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-036",
+    "question": "A chord made up of three notes is called a what?",
+    "options": [
+      "Dyad",
+      "Triad",
+      "Tetrad",
+      "Power chord"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-037",
+    "question": "Elvis Presley's first single, recorded at Sun Records in 1954, was which song?",
+    "options": [
+      "That's All Right",
+      "Blue Suede Shoes",
+      "Hound Dog",
+      "Love Me Tender"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-038",
+    "question": "The Woodstock Music Festival took place in which year?",
+    "options": [
+      "1967",
+      "1969",
+      "1971",
+      "1965"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-039",
+    "question": "The 1969 Woodstock festival was held in which U.S. state?",
+    "options": [
+      "California",
+      "New York",
+      "Vermont",
+      "Massachusetts"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-040",
+    "question": "Who famously sang 'What a Wonderful World'?",
+    "options": [
+      "Frank Sinatra",
+      "Louis Armstrong",
+      "Ray Charles",
+      "Nat King Cole"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-041",
+    "question": "Who produced most of The Beatles' studio albums?",
+    "options": [
+      "Phil Spector",
+      "George Martin",
+      "Brian Wilson",
+      "Quincy Jones"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-042",
+    "question": "The Beatles' final live performance, on a rooftop, took place in which city?",
+    "options": [
+      "New York",
+      "Liverpool",
+      "London",
+      "Hamburg"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "On the roof of the Apple Corps building."
+  },
+  {
+    "id": "mus-043",
+    "question": "'Eine kleine Nachtmusik' by Mozart translates to what in English?",
+    "options": [
+      "A Little Night Music",
+      "A Summer Evening",
+      "The Magic Flute",
+      "Songs of the Night"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-044",
+    "question": "Mozart's opera 'The Magic Flute' features which famously difficult soprano aria?",
+    "options": [
+      "O mio babbino caro",
+      "The Queen of the Night aria",
+      "Habanera",
+      "Un bel di vedremo"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-045",
+    "question": "How many symphonies did Beethoven complete?",
+    "options": [
+      "Seven",
+      "Eight",
+      "Nine",
+      "Ten"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-046",
+    "question": "Beethoven's 'Moonlight Sonata' was written for which solo instrument?",
+    "options": [
+      "Violin",
+      "Piano",
+      "Cello",
+      "Organ"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-047",
+    "question": "Bach's 'Toccata and Fugue in D minor' is most commonly performed on which instrument?",
+    "options": [
+      "Piano",
+      "Harpsichord",
+      "Organ",
+      "Violin"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-048",
+    "question": "Bach's 'The Well-Tempered Clavier' is a collection of works for which instrument?",
+    "options": [
+      "Organ",
+      "Keyboard",
+      "Violin",
+      "Flute"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Written for keyboard instruments such as the harpsichord."
+  },
+  {
+    "id": "mus-049",
+    "question": "What is the musical interval between the first and eighth notes of a scale called?",
+    "options": [
+      "A fifth",
+      "A third",
+      "An octave",
+      "A seventh"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-050",
+    "question": "A sharp sign in music raises a note by how much?",
+    "options": [
+      "A whole step",
+      "A semitone",
+      "Two semitones",
+      "An octave"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-051",
+    "question": "What is the Italian musical term meaning 'gradually getting faster'?",
+    "options": [
+      "Ritardando",
+      "Accelerando",
+      "Crescendo",
+      "Legato"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-052",
+    "question": "Which major key has no sharps or flats in its key signature?",
+    "options": [
+      "G major",
+      "D major",
+      "C major",
+      "F major"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-053",
+    "question": "What is the lowest-pitched standard instrument in the orchestral string family?",
+    "options": [
+      "Cello",
+      "Double bass",
+      "Viola",
+      "Violin"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-054",
+    "question": "The full name 'pianoforte' reflects the instrument's ability to play what?",
+    "options": [
+      "Fast and slow",
+      "Soft and loud",
+      "High and low",
+      "Long and short notes"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Piano means soft, forte means loud."
+  },
+  {
+    "id": "mus-055",
+    "question": "Elvis Presley's famous home and estate in Memphis is called what?",
+    "options": [
+      "Neverland",
+      "Graceland",
+      "Heartbreak Hotel",
+      "Sun House"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-056",
+    "question": "The music video for Michael Jackson's 'Thriller' was directed by which filmmaker?",
+    "options": [
+      "Steven Spielberg",
+      "John Landis",
+      "George Lucas",
+      "Francis Ford Coppola"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-057",
+    "question": "The moonwalk became famous when Michael Jackson performed it during which song on the Motown 25 special?",
+    "options": [
+      "Thriller",
+      "Beat It",
+      "Billie Jean",
+      "Bad"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-058",
+    "question": "Freddie Mercury's birth name was what?",
+    "options": [
+      "Farrokh Bulsara",
+      "Frederick May",
+      "Farley Mercury",
+      "Frank Montserrat"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-059",
+    "question": "'We Will Rock You' and 'We Are the Champions' both appear on which Queen album?",
+    "options": [
+      "A Night at the Opera",
+      "News of the World",
+      "The Game",
+      "Jazz"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-060",
+    "question": "Which guitarist's performance of the U.S. national anthem at Woodstock became iconic?",
+    "options": [
+      "Eric Clapton",
+      "Jimi Hendrix",
+      "Carlos Santana",
+      "Pete Townshend"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "mus-061",
+    "question": "How many strings does a standard bass guitar have?",
+    "options": [
+      "Four",
+      "Five",
+      "Six",
+      "Seven"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "One fewer than a regular guitar."
+  },
+  {
+    "id": "mus-062",
+    "question": "Which instrument typically has 88 black and white keys?",
+    "options": [
+      "Organ",
+      "Harpsichord",
+      "Piano",
+      "Accordion"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Played while seated at a keyboard."
+  },
+  {
+    "id": "mus-063",
+    "question": "Which band recorded 'Hey Jude'?",
+    "options": [
+      "The Rolling Stones",
+      "The Beatles",
+      "The Beach Boys",
+      "The Kinks"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Written by Paul McCartney."
+  },
+  {
+    "id": "mus-064",
+    "question": "What do we call a group of four musicians?",
+    "options": [
+      "Trio",
+      "Quintet",
+      "Quartet",
+      "Octet"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Think string quartet."
+  },
+  {
+    "id": "mus-065",
+    "question": "Reggae music originated in which country?",
+    "options": [
+      "Cuba",
+      "Trinidad and Tobago",
+      "Jamaica",
+      "Haiti"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Bob Marley's homeland."
+  },
+  {
+    "id": "mus-066",
+    "question": "What does 'CD' stand for in music formats?",
+    "options": [
+      "Compact Disc",
+      "Computer Disc",
+      "Circular Disk",
+      "Copy Disc"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Replaced cassette tapes in the late 1980s."
+  },
+  {
+    "id": "mus-067",
+    "question": "Trumpet, trombone, and tuba belong to which instrument family?",
+    "options": [
+      "Woodwind",
+      "Brass",
+      "Percussion",
+      "String"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Made of metal, played by buzzing lips."
+  },
+  {
+    "id": "mus-068",
+    "question": "Who composed the ballet 'The Nutcracker'?",
+    "options": [
+      "Stravinsky",
+      "Prokofiev",
+      "Tchaikovsky",
+      "Rimsky-Korsakov"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Russian composer also famous for Swan Lake."
+  },
+  {
+    "id": "mus-069",
+    "question": "Which large string instrument rests between the seated player's knees?",
+    "options": [
+      "Viola",
+      "Cello",
+      "Double bass",
+      "Harp"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Its name starts with C."
+  },
+  {
+    "id": "mus-070",
+    "question": "Which composer wrote the 'New World Symphony' (Symphony No. 9)?",
+    "options": [
+      "Antonin Dvorak",
+      "Beda Smetana",
+      "Franz Liszt",
+      "Anton Bruckner"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Czech composer who visited America in the 1890s."
+  },
+  {
+    "id": "mus-071",
+    "question": "Which Beatles album features 'Come Together' and 'Here Comes the Sun'?",
+    "options": [
+      "Revolver",
+      "Abbey Road",
+      "Let It Be",
+      "Rubber Soul"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Named after a London street and studio."
+  },
+  {
+    "id": "mus-072",
+    "question": "Which Puccini opera contains the aria 'Nessun dorma'?",
+    "options": [
+      "La Boheme",
+      "Madama Butterfly",
+      "Turandot",
+      "Tosca"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Its title character is an icy Chinese princess."
+  },
+  {
+    "id": "mus-073",
+    "question": "Who was Queen's lead guitarist?",
+    "options": [
+      "Roger Taylor",
+      "Brian May",
+      "John Deacon",
+      "David Gilmour"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "He holds a PhD in astrophysics."
+  },
+  {
+    "id": "mus-074",
+    "question": "Which jazz trumpeter was nicknamed 'Satchmo'?",
+    "options": [
+      "Dizzy Gillespie",
+      "Louis Armstrong",
+      "Miles Davis",
+      "Chet Baker"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Known for 'What a Wonderful World'."
+  },
+  {
+    "id": "mus-075",
+    "question": "Which artist released the album 'Like a Prayer' in 1989?",
+    "options": [
+      "Cyndi Lauper",
+      "Whitney Houston",
+      "Madonna",
+      "Janet Jackson"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The 'Material Girl'."
+  },
+  {
+    "id": "mus-076",
+    "question": "What is the Italian musical term for a slow, broad tempo?",
+    "options": [
+      "Largo",
+      "Presto",
+      "Vivace",
+      "Allegro"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Literally means 'wide' or 'broad'."
+  },
+  {
+    "id": "mus-077",
+    "question": "Which instrument did Miles Davis play?",
+    "options": [
+      "Trumpet",
+      "Saxophone",
+      "Piano",
+      "Drums"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "He recorded 'Kind of Blue'."
+  },
+  {
+    "id": "mus-078",
+    "question": "How many numbered symphonies did Mozart complete?",
+    "options": [
+      "27",
+      "36",
+      "41",
+      "49"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "The last one is the C major 'Jupiter' Symphony."
+  },
+  {
+    "id": "mus-079",
+    "question": "Beethoven's Piano Sonata No. 23 in F minor carries which nickname?",
+    "options": [
+      "Moonlight",
+      "Appassionata",
+      "Pathetique",
+      "Tempest"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Italian for 'passionate'."
+  },
+  {
+    "id": "mus-080",
+    "question": "Bach's great late choral masterpiece is the Mass in which key?",
+    "options": [
+      "D minor",
+      "B minor",
+      "E-flat major",
+      "G major"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Same letter pair as his famous 'Art of Fugue'-era key choice; not D minor."
+  },
+  {
+    "id": "mus-081",
+    "question": "Which Stravinsky ballet caused a riot at its 1913 Paris premiere?",
+    "options": [
+      "The Firebird",
+      "Petrushka",
+      "The Rite of Spring",
+      "Apollo"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "About pagan rituals and sacrifice."
+  },
+  {
+    "id": "mus-082",
+    "question": "What does the musical direction 'da capo' mean?",
+    "options": [
+      "Play softly",
+      "From the beginning",
+      "At the end",
+      "Gradually faster"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Italian for 'from the head'."
+  },
+  {
+    "id": "mus-083",
+    "question": "In which year did Elvis Presley die?",
+    "options": [
+      "1969",
+      "1973",
+      "1977",
+      "1981"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Mid-to-late seventies."
+  },
+  {
+    "id": "mus-084",
+    "question": "Which Wagner opera cycle includes 'Gotterdammerung' and 'Die Walkure'?",
+    "options": [
+      "Tristan und Isolde",
+      "Parsifal",
+      "The Ring Cycle",
+      "Lohengrin"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Inspired by Norse myth, centered on a cursed ring."
+  },
+  {
+    "id": "mus-085",
+    "question": "Which guitarist famously performed the U.S. national anthem at Woodstock in 1969?",
+    "options": [
+      "Carlos Santana",
+      "Eric Clapton",
+      "Jimi Hendrix",
+      "Jimmy Page"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Left-handed player who strung his guitar upside down."
+  }
 ]

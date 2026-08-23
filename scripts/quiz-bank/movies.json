@@ -253,7 +253,7 @@
   },
   {
     "id": "mov-022",
-    "question": "In Casablanca, who plays Rick Blaine, the owner of Rick's Café?",
+    "question": "In Casablanca, who plays Rick Blaine, the owner of Rick's Caf\u00e9?",
     "options": [
       "Humphrey Bogart",
       "Clark Gable",
@@ -581,7 +581,7 @@
     ],
     "answer": 2,
     "difficulty": 3,
-    "hint": "Directed by Miloš Forman."
+    "hint": "Directed by Milo\u0161 Forman."
   },
   {
     "id": "mov-049",
@@ -738,5 +738,330 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "Her character begins as a secretary at Sterling Cooper."
+  },
+  {
+    "id": "mov-061",
+    "question": "Which Hollywood studio's opening logo famously features a roaring lion?",
+    "options": [
+      "Metro-Goldwyn-Mayer (MGM)",
+      "Walt Disney Pictures",
+      "Universal Pictures",
+      "DreamWorks"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Formed in 1924 from a merger."
+  },
+  {
+    "id": "mov-062",
+    "question": "Which animated film features Elsa, a queen with ice powers?",
+    "options": [
+      "Moana",
+      "Tangled",
+      "Frozen",
+      "Brave"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Let it go."
+  },
+  {
+    "id": "mov-063",
+    "question": "Who played Neo in The Matrix (1999)?",
+    "options": [
+      "Keanu Reeves",
+      "Tom Cruise",
+      "Will Smith",
+      "Matt Damon"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "He also stars in John Wick."
+  },
+  {
+    "id": "mov-064",
+    "question": "In Finding Nemo, what kind of fish is Nemo?",
+    "options": [
+      "Angelfish",
+      "Clownfish",
+      "Pufferfish",
+      "Tang"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Orange with white stripes."
+  },
+  {
+    "id": "mov-065",
+    "question": "Princess Leia and Han Solo are characters in which film series?",
+    "options": [
+      "Star Trek",
+      "Dune",
+      "Star Wars",
+      "The Matrix"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "A long time ago, in a galaxy far away."
+  },
+  {
+    "id": "mov-066",
+    "question": "Who played Batman in Christopher Nolan's Dark Knight trilogy?",
+    "options": [
+      "Ben Affleck",
+      "Michael Keaton",
+      "Val Kilmer",
+      "Christian Bale"
+    ],
+    "answer": 3,
+    "difficulty": 1,
+    "hint": "He also starred in American Psycho."
+  },
+  {
+    "id": "mov-067",
+    "question": "What is the name of the wizarding school in the Harry Potter films?",
+    "options": [
+      "Narnia",
+      "Hogwarts",
+      "Middle-earth",
+      "Camelot"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Divided into four houses."
+  },
+  {
+    "id": "mov-068",
+    "question": "In Toy Story, what kind of toy is Woody?",
+    "options": [
+      "An astronaut action figure",
+      "A cowboy doll",
+      "A dinosaur",
+      "A toy soldier"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "There's a snake in his boot."
+  },
+  {
+    "id": "mov-069",
+    "question": "Who played Captain Jack Sparrow in Pirates of the Caribbean?",
+    "options": [
+      "Orlando Bloom",
+      "Johnny Depp",
+      "Geoffrey Rush",
+      "Javier Bardem"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Also starred in Edward Scissorhands."
+  },
+  {
+    "id": "mov-070",
+    "question": "Which film features the line \"You talkin' to me?\"",
+    "options": [
+      "Raging Bull",
+      "Taxi Driver",
+      "Goodfellas",
+      "Mean Streets"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Robert De Niro improvises it into a mirror."
+  },
+  {
+    "id": "mov-071",
+    "question": "Who directed Inception (2010) and Interstellar (2014)?",
+    "options": [
+      "Denis Villeneuve",
+      "Christopher Nolan",
+      "Ridley Scott",
+      "James Cameron"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "British director, brother of Jonathan."
+  },
+  {
+    "id": "mov-072",
+    "question": "Which actress played Katniss Everdeen in The Hunger Games?",
+    "options": [
+      "Emma Stone",
+      "Shailene Woodley",
+      "Jennifer Lawrence",
+      "Kristen Stewart"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "She won an Oscar for Silver Linings Playbook."
+  },
+  {
+    "id": "mov-073",
+    "question": "In The Godfather, who played Don Vito Corleone?",
+    "options": [
+      "Al Pacino",
+      "Marlon Brando",
+      "James Caan",
+      "Robert De Niro"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "He won the Oscar for the role but declined to accept it in person."
+  },
+  {
+    "id": "mov-074",
+    "question": "Which Studio Ghibli film follows Chihiro through a magical bathhouse?",
+    "options": [
+      "My Neighbor Totoro",
+      "Princess Mononoke",
+      "Spirited Away",
+      "Howl's Moving Castle"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Directed by Hayao Miyazaki, released 2001."
+  },
+  {
+    "id": "mov-075",
+    "question": "Who played Wolverine in the X-Men film series?",
+    "options": [
+      "Hugh Jackman",
+      "Chris Evans",
+      "Ryan Reynolds",
+      "Patrick Stewart"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Australian actor, also a stage performer."
+  },
+  {
+    "id": "mov-076",
+    "question": "Which film features the line \"I'm gonna make him an offer he can't refuse\"?",
+    "options": [
+      "Scarface",
+      "Goodfellas",
+      "The Godfather",
+      "Casino"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Spoken by the head of a crime family."
+  },
+  {
+    "id": "mov-077",
+    "question": "Who played Ferris Bueller in Ferris Bueller's Day Off (1986)?",
+    "options": [
+      "Matthew Broderick",
+      "Emilio Estevez",
+      "Molly Ringwald",
+      "Rob Lowe"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "Directed by John Hughes."
+  },
+  {
+    "id": "mov-078",
+    "question": "Which actor won consecutive Best Actor Oscars for Philadelphia and Forrest Gump?",
+    "options": [
+      "Tom Hanks",
+      "Dustin Hoffman",
+      "Daniel Day-Lewis",
+      "Denzel Washington"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "He voices Woody in Toy Story."
+  },
+  {
+    "id": "mov-079",
+    "question": "Which 1958 Alfred Hitchcock film stars James Stewart as acrophobic detective John 'Scottie' Ferguson?",
+    "options": [
+      "Vertigo",
+      "Rear Window",
+      "Notorious",
+      "Frenzy"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "Named after a fear of heights."
+  },
+  {
+    "id": "mov-080",
+    "question": "Who composed the scores for Jaws, Star Wars, and E.T.?",
+    "options": [
+      "Ennio Morricone",
+      "John Williams",
+      "Hans Zimmer",
+      "Bernard Herrmann"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Long-time Spielberg collaborator."
+  },
+  {
+    "id": "mov-081",
+    "question": "Which film won the first Academy Award for Best Animated Feature?",
+    "options": [
+      "Monsters, Inc.",
+      "Shrek",
+      "Toy Story",
+      "Spirited Away"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A green ogre took the prize."
+  },
+  {
+    "id": "mov-082",
+    "question": "Who played silent-film star Norma Desmond in Sunset Boulevard (1950)?",
+    "options": [
+      "Gloria Swanson",
+      "Greta Garbo",
+      "Bette Davis",
+      "Barbara Stanwyck"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "\"I am big. It's the pictures that got small.\""
+  },
+  {
+    "id": "mov-083",
+    "question": "Which director made Rashomon and Seven Samurai?",
+    "options": [
+      "Yasujiro Ozu",
+      "Akira Kurosawa",
+      "Kenji Mizoguchi",
+      "Hayao Miyazaki"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "His work inspired The Magnificent Seven."
+  },
+  {
+    "id": "mov-084",
+    "question": "Which actress played Holly Golightly in Breakfast at Tiffany's (1961)?",
+    "options": [
+      "Grace Kelly",
+      "Elizabeth Taylor",
+      "Audrey Hepburn",
+      "Sophia Loren"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Givenchy muse, later a UNICEF ambassador."
+  },
+  {
+    "id": "mov-085",
+    "question": "Which 1941 film marked Orson Welles' directorial debut?",
+    "options": [
+      "The Magnificent Ambersons",
+      "Touch of Evil",
+      "Citizen Kane",
+      "The Third Man"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Built around the word 'Rosebud'."
   }
 ]

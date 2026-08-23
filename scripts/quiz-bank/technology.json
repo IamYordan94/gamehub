@@ -778,5 +778,330 @@
     "answer": 3,
     "difficulty": 3,
     "hint": "Released in 1994."
+  },
+  {
+    "id": "tech-061",
+    "question": "Which device produces documents on paper from a computer?",
+    "options": [
+      "Scanner",
+      "Printer",
+      "Monitor",
+      "Router"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "The opposite of a scanner."
+  },
+  {
+    "id": "tech-062",
+    "question": "Which company makes the PlayStation console?",
+    "options": [
+      "Microsoft",
+      "Sony",
+      "Nintendo",
+      "Sega"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Japanese electronics giant."
+  },
+  {
+    "id": "tech-063",
+    "question": "What does downloading a file mean?",
+    "options": [
+      "Sending it to a printer",
+      "Copying it from the internet to your device",
+      "Deleting it permanently",
+      "Renaming it"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "The opposite of uploading."
+  },
+  {
+    "id": "tech-064",
+    "question": "What does 'IT' stand for in business contexts?",
+    "options": [
+      "Internet Technology",
+      "Information Technology",
+      "Internal Transfer",
+      "Input Terminal"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Departments that manage computers."
+  },
+  {
+    "id": "tech-065",
+    "question": "Which company created the Nintendo Switch console?",
+    "options": [
+      "Nintendo",
+      "Sony",
+      "Microsoft",
+      "Atari"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Mario's maker."
+  },
+  {
+    "id": "tech-066",
+    "question": "What does 'LOL' commonly mean in messages?",
+    "options": [
+      "Lots of love",
+      "Laugh out loud",
+      "Leave our list",
+      "Look out later"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Something funny was said."
+  },
+  {
+    "id": "tech-067",
+    "question": "What is the main display screen of a desktop computer called?",
+    "options": [
+      "Monitor",
+      "Tower",
+      "Modem",
+      "Console"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "You're looking at one right now."
+  },
+  {
+    "id": "tech-068",
+    "question": "What does 'AI' stand for in computing?",
+    "options": [
+      "Automated Internet",
+      "Artificial Intelligence",
+      "Applied Input",
+      "Advanced Interface"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Machines doing tasks that need human-like thinking."
+  },
+  {
+    "id": "tech-069",
+    "question": "In which year was Google founded?",
+    "options": [
+      "1994",
+      "1998",
+      "2001",
+      "2004"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Late nineties, by two Stanford students."
+  },
+  {
+    "id": "tech-070",
+    "question": "What does 'open source' software mean?",
+    "options": [
+      "It comes with free hardware",
+      "Its source code is publicly available",
+      "It runs only on Linux",
+      "It has no license"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Anyone can inspect and modify the code."
+  },
+  {
+    "id": "tech-071",
+    "question": "Which programming language was named after a British comedy troupe?",
+    "options": [
+      "Java",
+      "Python",
+      "Ruby",
+      "Swift"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Named after Monty Python."
+  },
+  {
+    "id": "tech-072",
+    "question": "What is a 'cache' in computing?",
+    "options": [
+      "A security certificate",
+      "Temporary storage for fast access",
+      "A type of malware",
+      "A backup drive"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Rhymes with 'cash'."
+  },
+  {
+    "id": "tech-073",
+    "question": "What does 'UI' stand for in software design?",
+    "options": [
+      "Universal Internet",
+      "User Interface",
+      "Unit Input",
+      "Utility Index"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "The part of an app the user sees and touches."
+  },
+  {
+    "id": "tech-074",
+    "question": "Which company developed the TypeScript programming language?",
+    "options": [
+      "Google",
+      "Meta",
+      "Microsoft",
+      "Apple"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "It extends JavaScript."
+  },
+  {
+    "id": "tech-075",
+    "question": "What material was the casing of the first computer mouse made of?",
+    "options": [
+      "Metal",
+      "Plastic",
+      "Wood",
+      "Glass"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Doug Engelbart built it in the 1960s from this natural material."
+  },
+  {
+    "id": "tech-076",
+    "question": "What does 'API' stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Advanced Program Integration",
+      "Applied Protocol Index",
+      "Automatic Processing Input"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "It lets programs talk to each other."
+  },
+  {
+    "id": "tech-077",
+    "question": "Who is widely regarded as the first computer programmer?",
+    "options": [
+      "Ada Lovelace",
+      "Grace Hopper",
+      "Alan Turing",
+      "Charles Babbage"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "She wrote notes on Babbage's Analytical Engine in the 1840s."
+  },
+  {
+    "id": "tech-078",
+    "question": "What does HTTP status code 404 indicate?",
+    "options": [
+      "Server overloaded",
+      "Page not found",
+      "Access forbidden",
+      "Request timed out"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "You've probably seen this number on broken links."
+  },
+  {
+    "id": "tech-079",
+    "question": "Which data structure works on a Last-In-First-Out principle?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Tree"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Like a pile of plates."
+  },
+  {
+    "id": "tech-080",
+    "question": "In what year was ENIAC, one of the first electronic general-purpose computers, completed?",
+    "options": [
+      "1929",
+      "1945",
+      "1956",
+      "1962"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Right at the end of World War II."
+  },
+  {
+    "id": "tech-081",
+    "question": "What does 'JSON' stand for?",
+    "options": [
+      "Java Standard Output Network",
+      "JavaScript Object Notation",
+      "Joined Sequential Object Name",
+      "JavaScript Open Network"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A common format for exchanging data between servers and apps."
+  },
+  {
+    "id": "tech-082",
+    "question": "From which small company did Microsoft buy the original version of MS-DOS (86-DOS)?",
+    "options": [
+      "IBM",
+      "Seattle Computer Products",
+      "Digital Research",
+      "Xerox"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Its city appears in the company name."
+  },
+  {
+    "id": "tech-083",
+    "question": "What does 'TCP' stand for in networking?",
+    "options": [
+      "Transfer Control Program",
+      "Transmission Control Protocol",
+      "Total Connection Port",
+      "Text Communication Protocol"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Paired with IP."
+  },
+  {
+    "id": "tech-084",
+    "question": "Which keyboard shortcut pastes copied content on Windows?",
+    "options": [
+      "Ctrl+X",
+      "Ctrl+Z",
+      "Ctrl+V",
+      "Ctrl+P"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "Think of V as an open container receiving content."
+  },
+  {
+    "id": "tech-085",
+    "question": "What does 'PDF' stand for in document files?",
+    "options": [
+      "Printed Document Form",
+      "Portable Document Format",
+      "Public Data File",
+      "Page Display Format"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Developed by Adobe; designed to look the same everywhere."
   }
 ]

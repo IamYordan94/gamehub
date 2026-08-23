@@ -206,7 +206,7 @@ export default function Hub() {
             fontFamily: "'JetBrains Mono', monospace",
             textTransform: 'uppercase',
           }}>
-            6 games
+            7 games
           </span>
         </div>
         <p
@@ -231,8 +231,8 @@ export default function Hub() {
         fontFamily: "'JetBrains Mono', monospace",
       }}>
         <span style={{ display: 'inline-block', animation: 'marquee 22s linear infinite' }}>
-          six daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
-          six daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
+          seven daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
+          seven daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
         </span>
       </div>
 
@@ -344,6 +344,21 @@ export default function Hub() {
             tags={['daily', 'trivia', 'quiz']}
             playTo="/quiz"
             aboutTo="/quiz/about"
+          />
+
+          {/* Game 7: 7 Letters */}
+          <GameCard
+            delay={0.36}
+            accentColor="#E7B10A"
+            accentSide="#8f6d05"
+            textColor="#c79a08"
+            label="7 Letters"
+            sticker="seven"
+            stickerColor="#d9f24b"
+            description="Seven letters, one center. Build words, chase the pangram."
+            tags={['daily', 'words', 'pangram']}
+            playTo="/seven"
+            aboutTo="/seven/about"
           />
 
         </div>

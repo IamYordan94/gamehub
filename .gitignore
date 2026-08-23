@@ -31,3 +31,6 @@ dist-ssr
 # Android signing (never commit keystores)
 *.jks
 *.keystore
+
+.claude/
+.superpowers/
