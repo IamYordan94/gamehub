@@ -125,6 +125,6 @@ export function shareOrderleText(rows: OrderleFeedback[][], puzzleNum: number, s
     `ORDERLE #${puzzleNum} ${score}`,
     `${rule} · optimal ${optimal}`,
     ...lines,
-    'dailybrain — put it in order, learn why',
+    'yodoku.app/orderle — put it in order, learn why',
   ].join('\n');
 }
