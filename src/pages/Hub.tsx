@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useEffect, useMemo, useState } from 'react';
 import AdSlot from '../components/AdSlot';
+import InstallSticker from '../components/InstallSticker';
+import { getTodayProgress } from '../utils/dailyProgress';
 
 type GameCardProps = {
   delay?: number;
@@ -173,6 +176,38 @@ function GameCard({
 }
 
 export default function Hub() {
+  const progress = useMemo(() => getTodayProgress(), []);
+  const doneCount = progress.filter((g) => g.played).length;
+
+  // First-visit "start here" sticker: shown until the visitor has played anything.
+  const [showStarter, setShowStarter] = useState(false);
+  useEffect(() => {
+    let starter = false;
+    try {
+      starter = localStorage.getItem('wordcraft_firstvisit_done') !== '1';
+    } catch {
+      starter = true;
+    }
+    if (starter && doneCount === 0) {
+      setShowStarter(true);
+    } else if (doneCount > 0) {
+      try {
+        localStorage.setItem('wordcraft_firstvisit_done', '1');
+      } catch {
+        // ignore
+      }
+    }
+  }, [doneCount]);
+
+  const dismissStarter = () => {
+    setShowStarter(false);
+    try {
+      localStorage.setItem('wordcraft_firstvisit_done', '1');
+    } catch {
+      // ignore
+    }
+  };
+
   return (
     <div style={{ background: 'var(--hub-bg)', minHeight: '100vh', color: 'var(--hub-ink)' }}>
       {/* Masthead */}
@@ -235,6 +270,83 @@ export default function Hub() {
           seven daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
         </span>
       </div>
+
+      {/* Today progress strip */}
+      <div className="px-4 md:px-6 max-w-[1040px] mx-auto mt-5">
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            flexWrap: 'wrap',
+            background: 'var(--hub-panel)',
+            border: '2.5px solid var(--hub-ink)',
+            borderRadius: '12px',
+            boxShadow: '4px 4px 0 var(--hub-ink)',
+            padding: '10px 12px',
+          }}
+        >
+          <span
+            className="text-[10px] font-black uppercase tracking-[0.14em]"
+            style={{ color: 'var(--hub-ink-soft)', fontFamily: "'JetBrains Mono', monospace", marginRight: '2px' }}
+          >
+            TODAY · {doneCount}/7 PLAYED
+          </span>
+          {progress.map((g) => (
+            <Link
+              key={g.id}
+              to={g.to}
+              title={g.label}
+              style={{
+                display: 'inline-block',
+                width: '26px',
+                height: '26px',
+                borderRadius: '8px',
+                border: '2.5px solid var(--hub-ink)',
+                background: g.played ? g.accent : 'var(--hub-bg)',
+                boxShadow: g.played ? '2px 2px 0 var(--hub-ink)' : 'none',
+                opacity: g.played ? 1 : 0.55,
+              }}
+            >
+              &nbsp;
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* First-visit starter sticker */}
+      {showStarter && (
+        <div className="px-4 md:px-6 max-w-[1040px] mx-auto mt-4">
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              background: 'var(--hub-lime)',
+              border: '2.5px solid var(--hub-ink)',
+              borderRadius: '12px',
+              boxShadow: '5px 5px 0 var(--hub-ink)',
+              padding: '10px 16px',
+              transform: 'rotate(-1.5deg)',
+              fontFamily: "'JetBrains Mono', monospace",
+            }}
+          >
+            <span style={{ fontWeight: 800, fontSize: '13px', color: 'var(--hub-dark)' }}>
+              NEW HERE? <Link to="/orderle" style={{ textDecoration: 'underline', color: 'var(--hub-dark)' }}>Start with today's ORDERLE →</Link>
+            </span>
+            <button
+              onClick={dismissStarter}
+              aria-label="Dismiss starter sticker"
+              style={{ background: 'transparent', border: 'none', cursor: 'pointer', fontWeight: 800, fontSize: '14px', color: 'var(--hub-dark)', padding: '0 2px' }}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Install prompt */}
+      <InstallSticker />
 
       {/* Game grid */}
       <main className="p-4 md:p-6 max-w-[1040px] mx-auto">

@@ -10,6 +10,7 @@ import {
   shareFermiText,
 } from '../utils/fermiLogic';
 import { FERMI_BANK } from '../utils/puzzleGenerator';
+import { markPlayed, todayISO } from '../utils/dailyProgress';
 
 const LAUNCH_DATE = '2026-08-07';
 const DAY_MS = 86400000;
@@ -27,6 +28,10 @@ export default function FermiPage() {
   const [inputVal, setInputVal] = useState('');
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (state?.won) markPlayed('fermi', todayISO());
+  }, [state?.won]);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {

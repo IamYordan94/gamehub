@@ -9,6 +9,7 @@ import {
   shareOrderleText,
 } from '../utils/orderleLogic';
 import { ORDERLE_BANK } from '../utils/puzzleGenerator';
+import { markPlayed, todayISO } from '../utils/dailyProgress';
 
 const LAUNCH_DATE = '2026-08-07';
 const DAY_MS = 86400000;
@@ -28,6 +29,10 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
   const [state, setState] = useState<OrderleState | null>(null);
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (state?.won) markPlayed('orderle', todayISO());
+  }, [state?.won]);
 
   useEffect(() => {
     const idx = practice ? Math.floor(Math.random() * ORDERLE_BANK.length) : getTodayIndex();
