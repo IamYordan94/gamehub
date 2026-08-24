@@ -1063,5 +1063,57 @@
     "answer": 0,
     "difficulty": 2,
     "hint": "It also gives its name to the sport played with a bat and ball."
+  },
+  {
+    "id": "anim-086",
+    "question": "Which animal carries its shell home on its back?",
+    "options": [
+      "Rabbit",
+      "Snail",
+      "Eagle",
+      "Dolphin"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It moves slowly and leaves a slimy trail."
+  },
+  {
+    "id": "anim-087",
+    "question": "How many stomachs does a cow have?",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "6"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It chews its food again as cud."
+  },
+  {
+    "id": "anim-088",
+    "question": "Which bird is the national bird of the United States?",
+    "options": [
+      "Golden eagle",
+      "Bald eagle",
+      "Hawk",
+      "Falcon"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It appears on the Great Seal of the United States."
+  },
+  {
+    "id": "anim-089",
+    "question": "Which is the largest species of penguin?",
+    "options": [
+      "King penguin",
+      "Adelie penguin",
+      "Emperor penguin",
+      "Rockhopper penguin"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It breeds on the Antarctic ice during winter."
   }
 ]

@@ -833,7 +833,7 @@
     ],
     "answer": 0,
     "difficulty": 1,
-    "hint": "Not Spanish \u2014 that's its neighbor's tongue."
+    "hint": "Not Spanish — that's its neighbor's tongue."
   },
   {
     "id": "gen-369",
@@ -982,14 +982,14 @@
     "id": "gen-380",
     "question": "What is the boiling point of water in Fahrenheit?",
     "options": [
-      "212\u00b0F",
-      "180\u00b0F",
-      "200\u00b0F",
-      "232\u00b0F"
+      "212°F",
+      "180°F",
+      "200°F",
+      "232°F"
     ],
     "answer": 0,
     "difficulty": 3,
-    "hint": "Convert from 100\u00b0C."
+    "hint": "Convert from 100°C."
   },
   {
     "id": "gen-381",
@@ -1363,5 +1363,57 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "It was the heart of the Khmer Empire."
+  },
+  {
+    "id": "gen-386",
+    "question": "Which month is the shortest, with only 28 or 29 days?",
+    "options": [
+      "March",
+      "February",
+      "April",
+      "June"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It gains a day every leap year."
+  },
+  {
+    "id": "gen-387",
+    "question": "What do you call a word that reads the same forwards and backwards?",
+    "options": [
+      "Anagram",
+      "Synonym",
+      "Palindrome",
+      "Acronym"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Examples include \"radar\" and \"level\"."
+  },
+  {
+    "id": "gen-388",
+    "question": "What is the name of the tiny fairy in the story of Peter Pan?",
+    "options": [
+      "Belle",
+      "Cinderella",
+      "Tinker Bell",
+      "Snow White"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "She sprinkles fairy dust to help people fly."
+  },
+  {
+    "id": "gen-389",
+    "question": "Which of the Seven Wonders of the Ancient World was a giant statue on the island of Rhodes?",
+    "options": [
+      "Statue of Zeus at Olympia",
+      "Colossus of Rhodes",
+      "Mausoleum at Halicarnassus",
+      "Hanging Gardens of Babylon"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It depicted the sun god Helios."
   }
 ]

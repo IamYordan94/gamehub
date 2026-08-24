@@ -75,10 +75,10 @@
     "id": "food-007",
     "question": "At what temperature does pure water boil at sea level?",
     "options": [
-      "90\u00b0C",
-      "120\u00b0C",
-      "100\u00b0C",
-      "80\u00b0C"
+      "90°C",
+      "120°C",
+      "100°C",
+      "80°C"
     ],
     "answer": 2,
     "difficulty": 1
@@ -1061,5 +1061,57 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "Creates the browned crust via the Maillard reaction."
+  },
+  {
+    "id": "food-086",
+    "question": "Which of these is a type of pasta?",
+    "options": [
+      "Sushi",
+      "Spaghetti",
+      "Taco",
+      "Paella"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It is long and thin and served with sauce."
+  },
+  {
+    "id": "food-087",
+    "question": "Which spice gives many curries their yellow colour?",
+    "options": [
+      "Paprika",
+      "Turmeric",
+      "Cinnamon",
+      "Cumin"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It comes from a bright orange root."
+  },
+  {
+    "id": "food-088",
+    "question": "Which ingredient gives tiramisu its signature flavour?",
+    "options": [
+      "Vanilla",
+      "Lemon",
+      "Coffee",
+      "Chocolate"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The name means \"pick me up\" in Italian."
+  },
+  {
+    "id": "food-089",
+    "question": "The Spanish dessert flan is primarily made from which ingredient?",
+    "options": [
+      "Flour",
+      "Rice",
+      "Eggs",
+      "Almonds"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It is a baked custard topped with caramel."
   }
 ]

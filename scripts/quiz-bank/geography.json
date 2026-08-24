@@ -148,8 +148,8 @@
     "question": "What is the capital of Brazil?",
     "options": [
       "Rio de Janeiro",
-      "S\u00e3o Paulo",
-      "Bras\u00edlia",
+      "São Paulo",
+      "Brasília",
       "Salvador"
     ],
     "answer": 2,
@@ -294,7 +294,7 @@
       "Santiago",
       "Buenos Aires",
       "Lima",
-      "Bogot\u00e1"
+      "Bogotá"
     ],
     "answer": 1,
     "difficulty": 2
@@ -316,9 +316,9 @@
     "question": "What is the longest river in South America?",
     "options": [
       "Amazon River",
-      "Paran\u00e1 River",
+      "Paraná River",
       "Orinoco River",
-      "S\u00e3o Francisco River"
+      "São Francisco River"
     ],
     "answer": 0,
     "difficulty": 2
@@ -575,13 +575,13 @@
     "question": "What is the capital of Uruguay?",
     "options": [
       "Montevideo",
-      "Asunci\u00f3n",
+      "Asunción",
       "La Paz",
       "Quito"
     ],
     "answer": 0,
     "difficulty": 3,
-    "hint": "A port on the R\u00edo de la Plata."
+    "hint": "A port on the Río de la Plata."
   },
   {
     "id": "geo-049",
@@ -607,7 +607,7 @@
     ],
     "answer": 1,
     "difficulty": 3,
-    "hint": "It is called the R\u00edo Bravo in Mexico."
+    "hint": "It is called the Río Bravo in Mexico."
   },
   {
     "id": "geo-051",
@@ -615,12 +615,12 @@
     "options": [
       "Polish euro",
       "Polish koruna",
-      "Polish z\u0142oty",
+      "Polish złoty",
       "Polish lev"
     ],
     "answer": 2,
     "difficulty": 3,
-    "hint": "Its symbol is z\u0142."
+    "hint": "Its symbol is zł."
   },
   {
     "id": "geo-052",
@@ -928,7 +928,7 @@
       "Reykjavik",
       "Helsinki",
       "Oslo",
-      "T\u00f3rshavn"
+      "Tórshavn"
     ],
     "answer": 0,
     "difficulty": 2,
@@ -1036,7 +1036,7 @@
     ],
     "answer": 0,
     "difficulty": 3,
-    "hint": "Not the biggest city \u2014 that's Casablanca."
+    "hint": "Not the biggest city — that's Casablanca."
   },
   {
     "id": "geo-084",
@@ -1063,5 +1063,57 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "Its summit looks like a pyramid; south of it is Italian-speaking territory."
+  },
+  {
+    "id": "geo-086",
+    "question": "On which continent is Egypt located?",
+    "options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "South America"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "The Nile River flows through it."
+  },
+  {
+    "id": "geo-087",
+    "question": "What is the capital city of Ireland?",
+    "options": [
+      "Belfast",
+      "Dublin",
+      "Cork",
+      "Galway"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It lies on the River Liffey."
+  },
+  {
+    "id": "geo-088",
+    "question": "Which U.S. state is the largest by total area?",
+    "options": [
+      "Texas",
+      "Alaska",
+      "California",
+      "Montana"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It is separated from the rest of the country by Canada."
+  },
+  {
+    "id": "geo-089",
+    "question": "What is the capital city of Myanmar?",
+    "options": [
+      "Yangon",
+      "Mandalay",
+      "Naypyidaw",
+      "Bagan"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It replaced Yangon as the capital in 2006."
   }
 ]

@@ -1103,5 +1103,57 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "Developed by Adobe; designed to look the same everywhere."
+  },
+  {
+    "id": "tech-086",
+    "question": "Which of these devices stores files and programs on a computer?",
+    "options": [
+      "Monitor",
+      "Hard drive",
+      "Keyboard",
+      "Printer"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It keeps data even when the computer is off."
+  },
+  {
+    "id": "tech-087",
+    "question": "What does \"SMS\" stand for in text messaging?",
+    "options": [
+      "Short Message Service",
+      "Simple Mail System",
+      "Standard Messaging Service",
+      "Send My Signal"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "The \"S\" and \"M\" stand for Short Message."
+  },
+  {
+    "id": "tech-088",
+    "question": "Which company developed the Xbox video game console?",
+    "options": [
+      "Sony",
+      "Nintendo",
+      "Microsoft",
+      "Sega"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "The same company makes the Windows operating system."
+  },
+  {
+    "id": "tech-089",
+    "question": "What does \"ASCII\" stand for in computing?",
+    "options": [
+      "American Standard Code for Information Interchange",
+      "Advanced Standard Code for Internet Information",
+      "American System for Computer Input and Interface",
+      "Automated System for Character Input and Integration"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It encodes letters and symbols as numbers."
   }
 ]

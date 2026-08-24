@@ -253,7 +253,7 @@
   },
   {
     "id": "mov-022",
-    "question": "In Casablanca, who plays Rick Blaine, the owner of Rick's Caf\u00e9?",
+    "question": "In Casablanca, who plays Rick Blaine, the owner of Rick's Café?",
     "options": [
       "Humphrey Bogart",
       "Clark Gable",
@@ -581,7 +581,7 @@
     ],
     "answer": 2,
     "difficulty": 3,
-    "hint": "Directed by Milo\u0161 Forman."
+    "hint": "Directed by Miloš Forman."
   },
   {
     "id": "mov-049",
@@ -1063,5 +1063,57 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "Built around the word 'Rosebud'."
+  },
+  {
+    "id": "mov-086",
+    "question": "Which animated character is a green ogre who lives in a swamp?",
+    "options": [
+      "Shrek",
+      "Nemo",
+      "Simba",
+      "Wall-E"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "He is accompanied by a talking Donkey."
+  },
+  {
+    "id": "mov-087",
+    "question": "In The Wizard of Oz, what did the Scarecrow want from the Wizard?",
+    "options": [
+      "A heart",
+      "A brain",
+      "Courage",
+      "A home"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "He felt he could not think without it."
+  },
+  {
+    "id": "mov-088",
+    "question": "Whose deep voice famously played Darth Vader in the original Star Wars trilogy?",
+    "options": [
+      "Alec Guinness",
+      "James Earl Jones",
+      "Harrison Ford",
+      "Peter Mayhew"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "He also voiced Mufasa in The Lion King."
+  },
+  {
+    "id": "mov-089",
+    "question": "Which Stanley Kubrick film features the computer HAL 9000?",
+    "options": [
+      "The Shining",
+      "Dr. Strangelove",
+      "2001: A Space Odyssey",
+      "A Clockwork Orange"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "The title includes a year and a classical epic poem reference."
   }
 ]

@@ -1051,5 +1051,57 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "His name literally means Master Sun"
+  },
+  {
+    "id": "his-086",
+    "question": "In which country is the prehistoric monument Stonehenge located?",
+    "options": [
+      "Scotland",
+      "England",
+      "Ireland",
+      "France"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It stands on Salisbury Plain."
+  },
+  {
+    "id": "his-087",
+    "question": "Who led the Soviet Union during World War II?",
+    "options": [
+      "Vladimir Lenin",
+      "Joseph Stalin",
+      "Nikita Khrushchev",
+      "Leon Trotsky"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "He met with Churchill and Roosevelt at Yalta."
+  },
+  {
+    "id": "his-088",
+    "question": "Which Egyptian pharaoh’s tomb was discovered almost intact by Howard Carter in 1922?",
+    "options": [
+      "Ramses II",
+      "Cleopatra",
+      "Tutankhamun",
+      "Akhenaten"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "His golden burial mask is world famous."
+  },
+  {
+    "id": "his-089",
+    "question": "In which year did the American Civil War end?",
+    "options": [
+      "1876",
+      "1850",
+      "1865",
+      "1901"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It ended with General Lee’s surrender at Appomattox."
   }
 ]

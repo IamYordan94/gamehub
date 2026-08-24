@@ -397,10 +397,10 @@
     "id": "sci-033",
     "question": "At what temperature does water boil at sea level?",
     "options": [
-      "100 \u00b0C",
-      "90 \u00b0C",
-      "110 \u00b0C",
-      "200 \u00b0C"
+      "100 °C",
+      "90 °C",
+      "110 °C",
+      "200 °C"
     ],
     "answer": 0,
     "difficulty": 2
@@ -409,10 +409,10 @@
     "id": "sci-034",
     "question": "At what temperature does water freeze at sea level?",
     "options": [
-      "10 \u00b0C",
-      "32 \u00b0C",
-      "0 \u00b0C",
-      "-10 \u00b0C"
+      "10 °C",
+      "32 °C",
+      "0 °C",
+      "-10 °C"
     ],
     "answer": 2,
     "difficulty": 2
@@ -493,10 +493,10 @@
     "id": "sci-041",
     "question": "What is absolute zero on the Celsius scale?",
     "options": [
-      "0 \u00b0C",
-      "-100 \u00b0C",
-      "-273.15 \u00b0C",
-      "-200 \u00b0C"
+      "0 °C",
+      "-100 °C",
+      "-273.15 °C",
+      "-200 °C"
     ],
     "answer": 2,
     "difficulty": 3,
@@ -1065,5 +1065,57 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "Sailors ate limes to prevent it"
+  },
+  {
+    "id": "sci-086",
+    "question": "What is the scientific study of stars, planets, and the universe called?",
+    "options": [
+      "Astronomy",
+      "Geology",
+      "Biology",
+      "Chemistry"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It comes from the Greek word for \"star\"."
+  },
+  {
+    "id": "sci-087",
+    "question": "What is the chemical symbol for chlorine?",
+    "options": [
+      "Cl",
+      "Ch",
+      "C",
+      "Co"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "It is a greenish gas used to treat drinking water."
+  },
+  {
+    "id": "sci-088",
+    "question": "What is the SI base unit of temperature?",
+    "options": [
+      "Celsius",
+      "Fahrenheit",
+      "Kelvin",
+      "Rankine"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "Zero on this scale is called absolute zero."
+  },
+  {
+    "id": "sci-089",
+    "question": "Approximately how old is the Earth?",
+    "options": [
+      "65 million years",
+      "1 billion years",
+      "10 billion years",
+      "4.5 billion years"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "It formed along with the rest of the Solar System."
   }
 ]

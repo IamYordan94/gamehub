@@ -174,7 +174,7 @@
       "Pablo Picasso",
       "Vincent van Gogh",
       "Claude Monet",
-      "Salvador Dal\u00ed"
+      "Salvador Dalí"
     ],
     "answer": 1,
     "difficulty": 1
@@ -195,9 +195,9 @@
     "id": "art-017",
     "question": "Who is the author of \"Pride and Prejudice\"?",
     "options": [
-      "Charlotte Bront\u00eb",
+      "Charlotte Brontë",
       "Jane Austen",
-      "Emily Bront\u00eb",
+      "Emily Brontë",
       "George Eliot"
     ],
     "answer": 1,
@@ -279,9 +279,9 @@
     "id": "art-024",
     "question": "\"The Persistence of Memory\" (the melting clocks) was painted by whom?",
     "options": [
-      "Ren\u00e9 Magritte",
-      "Salvador Dal\u00ed",
-      "Joan Mir\u00f3",
+      "René Magritte",
+      "Salvador Dalí",
+      "Joan Miró",
       "Max Ernst"
     ],
     "answer": 1,
@@ -318,7 +318,7 @@
       "Auguste Rodin",
       "Henry Moore",
       "Alberto Giacometti",
-      "Constantin Br\u00e2ncu\u0219i"
+      "Constantin Brâncuși"
     ],
     "answer": 0,
     "difficulty": 2
@@ -494,19 +494,19 @@
   },
   {
     "id": "art-042",
-    "question": "Who wrote the novel \"Les Mis\u00e9rables\"?",
+    "question": "Who wrote the novel \"Les Misérables\"?",
     "options": [
       "Alexandre Dumas",
       "Victor Hugo",
-      "Honor\u00e9 de Balzac",
-      "\u00c9mile Zola"
+      "Honoré de Balzac",
+      "Émile Zola"
     ],
     "answer": 1,
     "difficulty": 3
   },
   {
     "id": "art-043",
-    "question": "Michelangelo's \"Piet\u00e0\" is housed in which Vatican location?",
+    "question": "Michelangelo's \"Pietà\" is housed in which Vatican location?",
     "options": [
       "St. Peter's Basilica",
       "The Sistine Chapel",
@@ -579,7 +579,7 @@
   },
   {
     "id": "art-049",
-    "question": "Which art movement is Salvador Dal\u00ed most associated with?",
+    "question": "Which art movement is Salvador Dalí most associated with?",
     "options": [
       "Cubism",
       "Surrealism",
@@ -621,7 +621,7 @@
       "Petrarch",
       "Dante Alighieri",
       "Giovanni Boccaccio",
-      "Niccol\u00f2 Machiavelli"
+      "Niccolò Machiavelli"
     ],
     "answer": 1,
     "difficulty": 3
@@ -640,11 +640,11 @@
   },
   {
     "id": "art-054",
-    "question": "\"Wuthering Heights\" was written by which Bront\u00eb sister?",
+    "question": "\"Wuthering Heights\" was written by which Brontë sister?",
     "options": [
-      "Charlotte Bront\u00eb",
-      "Anne Bront\u00eb",
-      "Emily Bront\u00eb",
+      "Charlotte Brontë",
+      "Anne Brontë",
+      "Emily Brontë",
       "George Eliot"
     ],
     "answer": 2,
@@ -654,7 +654,7 @@
     "id": "art-055",
     "question": "Which painter is famous for the \"Water Lilies\" series?",
     "options": [
-      "\u00c9douard Manet",
+      "Édouard Manet",
       "Claude Monet",
       "Pierre-Auguste Renoir",
       "Camille Pissarro"
@@ -680,8 +680,8 @@
     "options": [
       "Lope de Vega",
       "Miguel de Cervantes",
-      "Federico Garc\u00eda Lorca",
-      "Pedro Calder\u00f3n"
+      "Federico García Lorca",
+      "Pedro Calderón"
     ],
     "answer": 1,
     "difficulty": 3
@@ -728,7 +728,7 @@
     "options": [
       "Mary Shelley",
       "Jane Austen",
-      "Emily Bront\u00eb",
+      "Emily Brontë",
       "Bram Stoker"
     ],
     "answer": 0,
@@ -776,7 +776,7 @@
   },
   {
     "id": "art-065",
-    "question": "Which Bront\u00eb sister wrote 'Jane Eyre'?",
+    "question": "Which Brontë sister wrote 'Jane Eyre'?",
     "options": [
       "Charlotte",
       "Emily",
@@ -832,7 +832,7 @@
     "options": [
       "Vincent van Gogh",
       "Claude Monet",
-      "Paul C\u00e9zanne",
+      "Paul Cézanne",
       "Paul Gauguin"
     ],
     "answer": 0,
@@ -858,7 +858,7 @@
     "options": [
       "Claude Monet",
       "Pierre-Auguste Renoir",
-      "\u00c9douard Manet",
+      "Édouard Manet",
       "Camille Pissarro"
     ],
     "answer": 0,
@@ -869,10 +869,10 @@
     "id": "art-072",
     "question": "Who painted 'Las Meninas', showing the Infanta Margarita and her court?",
     "options": [
-      "Diego Vel\u00e1zquez",
+      "Diego Velázquez",
       "Francisco Goya",
       "El Greco",
-      "Bartolom\u00e9 Murillo"
+      "Bartolomé Murillo"
     ],
     "answer": 0,
     "difficulty": 2,
@@ -893,9 +893,9 @@
   },
   {
     "id": "art-074",
-    "question": "Who designed the Sagrada Fam\u00edlia basilica in Barcelona?",
+    "question": "Who designed the Sagrada Família basilica in Barcelona?",
     "options": [
-      "Antoni Gaud\u00ed",
+      "Antoni Gaudí",
       "Le Corbusier",
       "Frank Gehry",
       "Santiago Calatrava"
@@ -986,7 +986,7 @@
     "id": "art-081",
     "question": "Who wrote 'One Hundred Years of Solitude'?",
     "options": [
-      "Gabriel Garc\u00eda M\u00e1rquez",
+      "Gabriel García Márquez",
       "Jorge Luis Borges",
       "Pablo Neruda",
       "Mario Vargas Llosa"
@@ -1000,7 +1000,7 @@
     "question": "Who wrote the play 'Waiting for Godot'?",
     "options": [
       "Samuel Beckett",
-      "Eug\u00e8ne Ionesco",
+      "Eugène Ionesco",
       "Jean-Paul Sartre",
       "Harold Pinter"
     ],
@@ -1013,7 +1013,7 @@
     "question": "Which opera features the aria 'Nessun dorma'?",
     "options": [
       "Turandot",
-      "La Boh\u00e8me",
+      "La Bohème",
       "Carmen",
       "Aida"
     ],
@@ -1046,5 +1046,57 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "Its full title is 'Arrangement in Grey and Black No. 1'."
+  },
+  {
+    "id": "art-086",
+    "question": "Which of these is a primary colour in painting?",
+    "options": [
+      "Green",
+      "Red",
+      "Purple",
+      "Orange"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Together with blue and yellow it mixes all other colours."
+  },
+  {
+    "id": "art-087",
+    "question": "Who wrote the novel \"The Catcher in the Rye\"?",
+    "options": [
+      "Ernest Hemingway",
+      "J.D. Salinger",
+      "F. Scott Fitzgerald",
+      "John Steinbeck"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Its narrator is Holden Caulfield."
+  },
+  {
+    "id": "art-088",
+    "question": "Which artist is famous for painting \"Campbell’s Soup Cans\"?",
+    "options": [
+      "Roy Lichtenstein",
+      "Jackson Pollock",
+      "Andy Warhol",
+      "Mark Rothko"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "A leading figure of the Pop Art movement."
+  },
+  {
+    "id": "art-089",
+    "question": "Which playwright wrote \"Death of a Salesman\" and \"The Crucible\"?",
+    "options": [
+      "Tennessee Williams",
+      "Eugene O’Neill",
+      "George Bernard Shaw",
+      "Arthur Miller"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "He was briefly married to Marilyn Monroe."
   }
 ]

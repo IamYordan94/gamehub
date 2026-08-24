@@ -26,7 +26,7 @@
   },
   {
     "id": "mus-003",
-    "question": "Which composer wrote the piano piece 'F\u00fcr Elise'?",
+    "question": "Which composer wrote the piano piece 'Für Elise'?",
     "options": [
       "Mozart",
       "Bach",
@@ -1053,5 +1053,57 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "Left-handed player who strung his guitar upside down."
+  },
+  {
+    "id": "mus-086",
+    "question": "Which of these instruments do you play by hitting it with sticks?",
+    "options": [
+      "Drums",
+      "Flute",
+      "Violin",
+      "Trumpet"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It is a percussion instrument."
+  },
+  {
+    "id": "mus-087",
+    "question": "Which singer was known as the \"Queen of Soul\"?",
+    "options": [
+      "Diana Ross",
+      "Aretha Franklin",
+      "Tina Turner",
+      "Whitney Houston"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Her hits include \"Respect\"."
+  },
+  {
+    "id": "mus-088",
+    "question": "Who wrote and originally recorded the song \"Imagine\" in 1971?",
+    "options": [
+      "Paul McCartney",
+      "Elton John",
+      "John Lennon",
+      "Bob Dylan"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "A former member of The Beatles."
+  },
+  {
+    "id": "mus-089",
+    "question": "Who composed the opera \"The Barber of Seville\"?",
+    "options": [
+      "Giuseppe Verdi",
+      "Wolfgang Amadeus Mozart",
+      "Richard Wagner",
+      "Gioachino Rossini"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "An Italian composer famous for comic operas."
   }
 ]

@@ -1534,6 +1534,62 @@
       "category": "general"
     },
     {
+      "id": "gen-386",
+      "question": "Which month is the shortest, with only 28 or 29 days?",
+      "options": [
+        "March",
+        "February",
+        "April",
+        "June"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It gains a day every leap year.",
+      "category": "general"
+    },
+    {
+      "id": "gen-387",
+      "question": "What do you call a word that reads the same forwards and backwards?",
+      "options": [
+        "Anagram",
+        "Synonym",
+        "Palindrome",
+        "Acronym"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "Examples include \"radar\" and \"level\".",
+      "category": "general"
+    },
+    {
+      "id": "gen-388",
+      "question": "What is the name of the tiny fairy in the story of Peter Pan?",
+      "options": [
+        "Belle",
+        "Cinderella",
+        "Tinker Bell",
+        "Snow White"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "She sprinkles fairy dust to help people fly.",
+      "category": "general"
+    },
+    {
+      "id": "gen-389",
+      "question": "Which of the Seven Wonders of the Ancient World was a giant statue on the island of Rhodes?",
+      "options": [
+        "Statue of Zeus at Olympia",
+        "Colossus of Rhodes",
+        "Mausoleum at Halicarnassus",
+        "Hanging Gardens of Babylon"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It depicted the sun god Helios.",
+      "category": "general"
+    },
+    {
       "id": "spo-001",
       "question": "Which country has won the FIFA World Cup the most times?",
       "options": [
@@ -2724,6 +2780,62 @@
       "category": "sports"
     },
     {
+      "id": "spo-086",
+      "question": "How many players from one team are on the court in a standard basketball game?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "Five positions: point guard, shooting guard, small forward, power forward, centre.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-087",
+      "question": "In baseball, how many strikes does a batter get before being called out?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Three strikes and you are out.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-088",
+      "question": "Judo is a martial art that originated in which country?",
+      "options": [
+        "China",
+        "Japan",
+        "Korea",
+        "Brazil"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It was founded by Jigoro Kano in 1882.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-089",
+      "question": "Which country won the inaugural FIFA Women’s World Cup in 1991?",
+      "options": [
+        "Norway",
+        "United States",
+        "Germany",
+        "China"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "They beat Norway 2–1 in the final.",
+      "category": "sports"
+    },
+    {
       "id": "mov-001",
       "question": "Who played the title character Forrest Gump in the 1994 film?",
       "options": [
@@ -3874,6 +3986,62 @@
       "category": "movies"
     },
     {
+      "id": "mov-086",
+      "question": "Which animated character is a green ogre who lives in a swamp?",
+      "options": [
+        "Shrek",
+        "Nemo",
+        "Simba",
+        "Wall-E"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "He is accompanied by a talking Donkey.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-087",
+      "question": "In The Wizard of Oz, what did the Scarecrow want from the Wizard?",
+      "options": [
+        "A heart",
+        "A brain",
+        "Courage",
+        "A home"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "He felt he could not think without it.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-088",
+      "question": "Whose deep voice famously played Darth Vader in the original Star Wars trilogy?",
+      "options": [
+        "Alec Guinness",
+        "James Earl Jones",
+        "Harrison Ford",
+        "Peter Mayhew"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "He also voiced Mufasa in The Lion King.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-089",
+      "question": "Which Stanley Kubrick film features the computer HAL 9000?",
+      "options": [
+        "The Shining",
+        "Dr. Strangelove",
+        "2001: A Space Odyssey",
+        "A Clockwork Orange"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "The title includes a year and a classical epic poem reference.",
+      "category": "movies"
+    },
+    {
       "id": "geo-001",
       "question": "What is the capital of France?",
       "options": [
@@ -5021,6 +5189,62 @@
       "answer": 0,
       "difficulty": 3,
       "hint": "Its summit looks like a pyramid; south of it is Italian-speaking territory.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-086",
+      "question": "On which continent is Egypt located?",
+      "options": [
+        "Africa",
+        "Asia",
+        "Europe",
+        "South America"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "The Nile River flows through it.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-087",
+      "question": "What is the capital city of Ireland?",
+      "options": [
+        "Belfast",
+        "Dublin",
+        "Cork",
+        "Galway"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It lies on the River Liffey.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-088",
+      "question": "Which U.S. state is the largest by total area?",
+      "options": [
+        "Texas",
+        "Alaska",
+        "California",
+        "Montana"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It is separated from the rest of the country by Canada.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-089",
+      "question": "What is the capital city of Myanmar?",
+      "options": [
+        "Yangon",
+        "Mandalay",
+        "Naypyidaw",
+        "Bagan"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It replaced Yangon as the capital in 2006.",
       "category": "geography"
     },
     {
@@ -6176,6 +6400,62 @@
       "category": "science"
     },
     {
+      "id": "sci-086",
+      "question": "What is the scientific study of stars, planets, and the universe called?",
+      "options": [
+        "Astronomy",
+        "Geology",
+        "Biology",
+        "Chemistry"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "It comes from the Greek word for \"star\".",
+      "category": "science"
+    },
+    {
+      "id": "sci-087",
+      "question": "What is the chemical symbol for chlorine?",
+      "options": [
+        "Cl",
+        "Ch",
+        "C",
+        "Co"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "It is a greenish gas used to treat drinking water.",
+      "category": "science"
+    },
+    {
+      "id": "sci-088",
+      "question": "What is the SI base unit of temperature?",
+      "options": [
+        "Celsius",
+        "Fahrenheit",
+        "Kelvin",
+        "Rankine"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "Zero on this scale is called absolute zero.",
+      "category": "science"
+    },
+    {
+      "id": "sci-089",
+      "question": "Approximately how old is the Earth?",
+      "options": [
+        "65 million years",
+        "1 billion years",
+        "10 billion years",
+        "4.5 billion years"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "It formed along with the rest of the Solar System.",
+      "category": "science"
+    },
+    {
       "id": "his-001",
       "question": "In which year did World War II begin?",
       "options": [
@@ -7311,6 +7591,62 @@
       "answer": 1,
       "difficulty": 3,
       "hint": "His name literally means Master Sun",
+      "category": "history"
+    },
+    {
+      "id": "his-086",
+      "question": "In which country is the prehistoric monument Stonehenge located?",
+      "options": [
+        "Scotland",
+        "England",
+        "Ireland",
+        "France"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It stands on Salisbury Plain.",
+      "category": "history"
+    },
+    {
+      "id": "his-087",
+      "question": "Who led the Soviet Union during World War II?",
+      "options": [
+        "Vladimir Lenin",
+        "Joseph Stalin",
+        "Nikita Khrushchev",
+        "Leon Trotsky"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "He met with Churchill and Roosevelt at Yalta.",
+      "category": "history"
+    },
+    {
+      "id": "his-088",
+      "question": "Which Egyptian pharaoh’s tomb was discovered almost intact by Howard Carter in 1922?",
+      "options": [
+        "Ramses II",
+        "Cleopatra",
+        "Tutankhamun",
+        "Akhenaten"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "His golden burial mask is world famous.",
+      "category": "history"
+    },
+    {
+      "id": "his-089",
+      "question": "In which year did the American Civil War end?",
+      "options": [
+        "1876",
+        "1850",
+        "1865",
+        "1901"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It ended with General Lee’s surrender at Appomattox.",
       "category": "history"
     },
     {
@@ -8451,6 +8787,62 @@
       "answer": 2,
       "difficulty": 3,
       "hint": "Left-handed player who strung his guitar upside down.",
+      "category": "music"
+    },
+    {
+      "id": "mus-086",
+      "question": "Which of these instruments do you play by hitting it with sticks?",
+      "options": [
+        "Drums",
+        "Flute",
+        "Violin",
+        "Trumpet"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "It is a percussion instrument.",
+      "category": "music"
+    },
+    {
+      "id": "mus-087",
+      "question": "Which singer was known as the \"Queen of Soul\"?",
+      "options": [
+        "Diana Ross",
+        "Aretha Franklin",
+        "Tina Turner",
+        "Whitney Houston"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Her hits include \"Respect\".",
+      "category": "music"
+    },
+    {
+      "id": "mus-088",
+      "question": "Who wrote and originally recorded the song \"Imagine\" in 1971?",
+      "options": [
+        "Paul McCartney",
+        "Elton John",
+        "John Lennon",
+        "Bob Dylan"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "A former member of The Beatles.",
+      "category": "music"
+    },
+    {
+      "id": "mus-089",
+      "question": "Who composed the opera \"The Barber of Seville\"?",
+      "options": [
+        "Giuseppe Verdi",
+        "Wolfgang Amadeus Mozart",
+        "Richard Wagner",
+        "Gioachino Rossini"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "An Italian composer famous for comic operas.",
       "category": "music"
     },
     {
@@ -9644,6 +10036,62 @@
       "category": "technology"
     },
     {
+      "id": "tech-086",
+      "question": "Which of these devices stores files and programs on a computer?",
+      "options": [
+        "Monitor",
+        "Hard drive",
+        "Keyboard",
+        "Printer"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It keeps data even when the computer is off.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-087",
+      "question": "What does \"SMS\" stand for in text messaging?",
+      "options": [
+        "Short Message Service",
+        "Simple Mail System",
+        "Standard Messaging Service",
+        "Send My Signal"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "The \"S\" and \"M\" stand for Short Message.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-088",
+      "question": "Which company developed the Xbox video game console?",
+      "options": [
+        "Sony",
+        "Nintendo",
+        "Microsoft",
+        "Sega"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The same company makes the Windows operating system.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-089",
+      "question": "What does \"ASCII\" stand for in computing?",
+      "options": [
+        "American Standard Code for Information Interchange",
+        "Advanced Standard Code for Internet Information",
+        "American System for Computer Input and Interface",
+        "Automated System for Character Input and Integration"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It encodes letters and symbols as numbers.",
+      "category": "technology"
+    },
+    {
       "id": "food-001",
       "question": "Which country is sushi most famously associated with?",
       "options": [
@@ -10792,6 +11240,62 @@
       "category": "food"
     },
     {
+      "id": "food-086",
+      "question": "Which of these is a type of pasta?",
+      "options": [
+        "Sushi",
+        "Spaghetti",
+        "Taco",
+        "Paella"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It is long and thin and served with sauce.",
+      "category": "food"
+    },
+    {
+      "id": "food-087",
+      "question": "Which spice gives many curries their yellow colour?",
+      "options": [
+        "Paprika",
+        "Turmeric",
+        "Cinnamon",
+        "Cumin"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It comes from a bright orange root.",
+      "category": "food"
+    },
+    {
+      "id": "food-088",
+      "question": "Which ingredient gives tiramisu its signature flavour?",
+      "options": [
+        "Vanilla",
+        "Lemon",
+        "Coffee",
+        "Chocolate"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "The name means \"pick me up\" in Italian.",
+      "category": "food"
+    },
+    {
+      "id": "food-089",
+      "question": "The Spanish dessert flan is primarily made from which ingredient?",
+      "options": [
+        "Flour",
+        "Rice",
+        "Eggs",
+        "Almonds"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It is a baked custard topped with caramel.",
+      "category": "food"
+    },
+    {
       "id": "art-001",
       "question": "Who painted the Mona Lisa?",
       "options": [
@@ -11922,6 +12426,62 @@
       "answer": 0,
       "difficulty": 3,
       "hint": "Its full title is 'Arrangement in Grey and Black No. 1'.",
+      "category": "art"
+    },
+    {
+      "id": "art-086",
+      "question": "Which of these is a primary colour in painting?",
+      "options": [
+        "Green",
+        "Red",
+        "Purple",
+        "Orange"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "Together with blue and yellow it mixes all other colours.",
+      "category": "art"
+    },
+    {
+      "id": "art-087",
+      "question": "Who wrote the novel \"The Catcher in the Rye\"?",
+      "options": [
+        "Ernest Hemingway",
+        "J.D. Salinger",
+        "F. Scott Fitzgerald",
+        "John Steinbeck"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Its narrator is Holden Caulfield.",
+      "category": "art"
+    },
+    {
+      "id": "art-088",
+      "question": "Which artist is famous for painting \"Campbell’s Soup Cans\"?",
+      "options": [
+        "Roy Lichtenstein",
+        "Jackson Pollock",
+        "Andy Warhol",
+        "Mark Rothko"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "A leading figure of the Pop Art movement.",
+      "category": "art"
+    },
+    {
+      "id": "art-089",
+      "question": "Which playwright wrote \"Death of a Salesman\" and \"The Crucible\"?",
+      "options": [
+        "Tennessee Williams",
+        "Eugene O’Neill",
+        "George Bernard Shaw",
+        "Arthur Miller"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "He was briefly married to Marilyn Monroe.",
       "category": "art"
     },
     {
@@ -13072,6 +13632,62 @@
       "answer": 0,
       "difficulty": 2,
       "hint": "It also gives its name to the sport played with a bat and ball.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-086",
+      "question": "Which animal carries its shell home on its back?",
+      "options": [
+        "Rabbit",
+        "Snail",
+        "Eagle",
+        "Dolphin"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It moves slowly and leaves a slimy trail.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-087",
+      "question": "How many stomachs does a cow have?",
+      "options": [
+        "1",
+        "4",
+        "2",
+        "6"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It chews its food again as cud.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-088",
+      "question": "Which bird is the national bird of the United States?",
+      "options": [
+        "Golden eagle",
+        "Bald eagle",
+        "Hawk",
+        "Falcon"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It appears on the Great Seal of the United States.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-089",
+      "question": "Which is the largest species of penguin?",
+      "options": [
+        "King penguin",
+        "Adelie penguin",
+        "Emperor penguin",
+        "Rockhopper penguin"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It breeds on the Antarctic ice during winter.",
       "category": "animals"
     }
   ]

@@ -1103,5 +1103,57 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "Chamonix, France"
+  },
+  {
+    "id": "spo-086",
+    "question": "How many players from one team are on the court in a standard basketball game?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "Five positions: point guard, shooting guard, small forward, power forward, centre."
+  },
+  {
+    "id": "spo-087",
+    "question": "In baseball, how many strikes does a batter get before being called out?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Three strikes and you are out."
+  },
+  {
+    "id": "spo-088",
+    "question": "Judo is a martial art that originated in which country?",
+    "options": [
+      "China",
+      "Japan",
+      "Korea",
+      "Brazil"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It was founded by Jigoro Kano in 1882."
+  },
+  {
+    "id": "spo-089",
+    "question": "Which country won the inaugural FIFA Women’s World Cup in 1991?",
+    "options": [
+      "Norway",
+      "United States",
+      "Germany",
+      "China"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "They beat Norway 2–1 in the final."
   }
 ]
