@@ -1098,5 +1098,57 @@
     "answer": 3,
     "difficulty": 3,
     "hint": "He was briefly married to Marilyn Monroe."
+  },
+  {
+    "id": "art-090",
+    "question": "What color do you get by mixing red and blue paint?",
+    "options": [
+      "Green",
+      "Purple",
+      "Orange",
+      "Brown"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It is the color of many flowers in the violet family."
+  },
+  {
+    "id": "art-091",
+    "question": "Who painted 'The Last Supper'?",
+    "options": [
+      "Raphael",
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Donatello"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "He also painted the Mona Lisa."
+  },
+  {
+    "id": "art-092",
+    "question": "In Greek mythology, which goddess was said to have sprung fully grown from the head of Zeus?",
+    "options": [
+      "Hera",
+      "Athena",
+      "Aphrodite",
+      "Artemis"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "She is the goddess of wisdom and war."
+  },
+  {
+    "id": "art-093",
+    "question": "Which English painter created the landscape 'The Hay Wain'?",
+    "options": [
+      "J.M.W. Turner",
+      "John Constable",
+      "Thomas Gainsborough",
+      "William Blake"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "He is known for romantic scenes of the English countryside."
   }
 ]

@@ -1115,5 +1115,57 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "It replaced Yangon as the capital in 2006."
+  },
+  {
+    "id": "geo-090",
+    "question": "What is the capital city of Sweden?",
+    "options": [
+      "Oslo",
+      "Stockholm",
+      "Helsinki",
+      "Copenhagen"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It is built across 14 islands."
+  },
+  {
+    "id": "geo-091",
+    "question": "What is the capital city of South Korea?",
+    "options": [
+      "Bangkok",
+      "Seoul",
+      "Tokyo",
+      "Beijing"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It lies on the Han River."
+  },
+  {
+    "id": "geo-092",
+    "question": "Which river flows through the city of Cairo?",
+    "options": [
+      "Niger River",
+      "Nile River",
+      "Congo River",
+      "Zambezi River"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It is the longest river in Africa."
+  },
+  {
+    "id": "geo-093",
+    "question": "Which country has the longest coastline in the world?",
+    "options": [
+      "Australia",
+      "Canada",
+      "Russia",
+      "Indonesia"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "Its coastline is over 200,000 kilometres long."
   }
 ]

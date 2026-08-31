@@ -1115,5 +1115,57 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "It breeds on the Antarctic ice during winter."
+  },
+  {
+    "id": "anim-090",
+    "question": "What is a baby sheep called?",
+    "options": [
+      "Calf",
+      "Lamb",
+      "Kid",
+      "Foal"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Its woolly coat is prized for clothing."
+  },
+  {
+    "id": "anim-091",
+    "question": "What is the main food of a giant panda?",
+    "options": [
+      "Bamboo",
+      "Meat",
+      "Fish",
+      "Insects"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "They spend most of the day eating this plant."
+  },
+  {
+    "id": "anim-092",
+    "question": "Which marine mammal is famous for its intelligence and for making clicking and whistling sounds?",
+    "options": [
+      "Seal",
+      "Dolphin",
+      "Walrus",
+      "Manatee"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "They travel together in groups called pods."
+  },
+  {
+    "id": "anim-093",
+    "question": "What is a group of flamingos called?",
+    "options": [
+      "A flock",
+      "A flamboyance",
+      "A herd",
+      "A gaggle"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "The name also means 'showy' or 'vivid'."
   }
 ]

@@ -1590,6 +1590,62 @@
       "category": "general"
     },
     {
+      "id": "gen-390",
+      "question": "What is the capital city of the United Kingdom?",
+      "options": [
+        "Dublin",
+        "London",
+        "Edinburgh",
+        "Cardiff"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It sits on the River Thames.",
+      "category": "general"
+    },
+    {
+      "id": "gen-391",
+      "question": "Which organ filters waste from the blood to produce urine?",
+      "options": [
+        "Liver",
+        "Kidneys",
+        "Lungs",
+        "Spleen"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Most people have two of them.",
+      "category": "general"
+    },
+    {
+      "id": "gen-392",
+      "question": "What is the largest living bird in the world?",
+      "options": [
+        "Bald eagle",
+        "Ostrich",
+        "Emperor penguin",
+        "Wandering albatross"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It cannot fly but runs very fast.",
+      "category": "general"
+    },
+    {
+      "id": "gen-393",
+      "question": "What is the largest desert in the world when cold deserts are included?",
+      "options": [
+        "Sahara Desert",
+        "Antarctica",
+        "Gobi Desert",
+        "Arabian Desert"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "A desert is defined by low precipitation, not just heat.",
+      "category": "general"
+    },
+    {
       "id": "spo-001",
       "question": "Which country has won the FIFA World Cup the most times?",
       "options": [
@@ -2836,6 +2892,62 @@
       "category": "sports"
     },
     {
+      "id": "spo-090",
+      "question": "In soccer (football), how many points is a goal worth?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "A single goal scores one point.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-091",
+      "question": "In which sport would you score a 'try'?",
+      "options": [
+        "American football",
+        "Rugby",
+        "Cricket",
+        "Field hockey"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It involves grounding the ball over the try line.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-092",
+      "question": "In golf, what is a score of two under par on a hole called?",
+      "options": [
+        "Birdie",
+        "Eagle",
+        "Bogey",
+        "Albatross"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It is one stroke better than a birdie.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-093",
+      "question": "Which city hosted the 2022 Winter Olympic Games?",
+      "options": [
+        "Pyeongchang",
+        "Beijing",
+        "Vancouver",
+        "Sochi"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It had previously hosted the Summer Games in 2008.",
+      "category": "sports"
+    },
+    {
       "id": "mov-001",
       "question": "Who played the title character Forrest Gump in the 1994 film?",
       "options": [
@@ -4042,6 +4154,62 @@
       "category": "movies"
     },
     {
+      "id": "mov-090",
+      "question": "Which Disney animated film features the song 'Let It Go'?",
+      "options": [
+        "Moana",
+        "Frozen",
+        "Tangled",
+        "Brave"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "Its main character is Queen Elsa.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-091",
+      "question": "Who directed 'The Lord of the Rings' film trilogy?",
+      "options": [
+        "Ridley Scott",
+        "Peter Jackson",
+        "Steven Spielberg",
+        "James Cameron"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "He is a New Zealand filmmaker.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-092",
+      "question": "In which film does the wizard Gandalf declare 'You shall not pass!'?",
+      "options": [
+        "Star Wars",
+        "The Lord of the Rings",
+        "The Matrix",
+        "Dune"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "He says it while facing a Balrog.",
+      "category": "movies"
+    },
+    {
+      "id": "mov-093",
+      "question": "Who directed the Spaghetti Western 'The Good, the Bad and the Ugly' (1966)?",
+      "options": [
+        "Federico Fellini",
+        "Sergio Leone",
+        "Francis Ford Coppola",
+        "Martin Scorsese"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "He is famous for 'spaghetti westerns' starring Clint Eastwood.",
+      "category": "movies"
+    },
+    {
       "id": "geo-001",
       "question": "What is the capital of France?",
       "options": [
@@ -5245,6 +5413,62 @@
       "answer": 2,
       "difficulty": 3,
       "hint": "It replaced Yangon as the capital in 2006.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-090",
+      "question": "What is the capital city of Sweden?",
+      "options": [
+        "Oslo",
+        "Stockholm",
+        "Helsinki",
+        "Copenhagen"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It is built across 14 islands.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-091",
+      "question": "What is the capital city of South Korea?",
+      "options": [
+        "Bangkok",
+        "Seoul",
+        "Tokyo",
+        "Beijing"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It lies on the Han River.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-092",
+      "question": "Which river flows through the city of Cairo?",
+      "options": [
+        "Niger River",
+        "Nile River",
+        "Congo River",
+        "Zambezi River"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It is the longest river in Africa.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-093",
+      "question": "Which country has the longest coastline in the world?",
+      "options": [
+        "Australia",
+        "Canada",
+        "Russia",
+        "Indonesia"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "Its coastline is over 200,000 kilometres long.",
       "category": "geography"
     },
     {
@@ -6456,6 +6680,62 @@
       "category": "science"
     },
     {
+      "id": "sci-090",
+      "question": "What is the chemical symbol for carbon?",
+      "options": [
+        "C",
+        "Ca",
+        "Co",
+        "Cr"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "It is a single letter.",
+      "category": "science"
+    },
+    {
+      "id": "sci-091",
+      "question": "Which planet takes longer to rotate once on its axis than to orbit the Sun?",
+      "options": [
+        "Mercury",
+        "Venus",
+        "Mars",
+        "Neptune"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "Its day lasts about 243 Earth days.",
+      "category": "science"
+    },
+    {
+      "id": "sci-092",
+      "question": "What is the chemical symbol for nitrogen?",
+      "options": [
+        "N",
+        "Ni",
+        "Na",
+        "Ne"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "It makes up most of Earth's atmosphere.",
+      "category": "science"
+    },
+    {
+      "id": "sci-093",
+      "question": "What is the SI unit of energy?",
+      "options": [
+        "Watt",
+        "Joule",
+        "Newton",
+        "Pascal"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is named after an English physicist.",
+      "category": "science"
+    },
+    {
       "id": "his-001",
       "question": "In which year did World War II begin?",
       "options": [
@@ -7647,6 +7927,62 @@
       "answer": 2,
       "difficulty": 3,
       "hint": "It ended with General Lee’s surrender at Appomattox.",
+      "category": "history"
+    },
+    {
+      "id": "his-090",
+      "question": "In which modern country is the ancient city of Rome located?",
+      "options": [
+        "Greece",
+        "Italy",
+        "Spain",
+        "France"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It is the country shaped like a boot.",
+      "category": "history"
+    },
+    {
+      "id": "his-091",
+      "question": "Who led the Soviet Union during the Cuban Missile Crisis of 1962?",
+      "options": [
+        "Joseph Stalin",
+        "Nikita Khrushchev",
+        "Leonid Brezhnev",
+        "Mikhail Gorbachev"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "He is remembered for banging a shoe at the UN.",
+      "category": "history"
+    },
+    {
+      "id": "his-092",
+      "question": "In which year was the United Nations founded?",
+      "options": [
+        "1919",
+        "1939",
+        "1945",
+        "1950"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "It was founded in the same year World War II ended.",
+      "category": "history"
+    },
+    {
+      "id": "his-093",
+      "question": "Who was the first female Prime Minister of the United Kingdom?",
+      "options": [
+        "Theresa May",
+        "Margaret Thatcher",
+        "Indira Gandhi",
+        "Golda Meir"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "She was nicknamed 'the Iron Lady'.",
       "category": "history"
     },
     {
@@ -8843,6 +9179,62 @@
       "answer": 3,
       "difficulty": 3,
       "hint": "An Italian composer famous for comic operas.",
+      "category": "music"
+    },
+    {
+      "id": "mus-090",
+      "question": "Which singer released the hit songs 'Hello' and 'Rolling in the Deep'?",
+      "options": [
+        "Adele",
+        "Beyoncé",
+        "Taylor Swift",
+        "Rihanna"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "hint": "She is a British singer-songwriter.",
+      "category": "music"
+    },
+    {
+      "id": "mus-091",
+      "question": "Which composer wrote the opera 'Carmen'?",
+      "options": [
+        "Giuseppe Verdi",
+        "Georges Bizet",
+        "Richard Wagner",
+        "Giacomo Puccini"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "The opera features the 'Habanera'.",
+      "category": "music"
+    },
+    {
+      "id": "mus-092",
+      "question": "What is the Italian musical term for a very fast tempo?",
+      "options": [
+        "Largo",
+        "Adagio",
+        "Presto",
+        "Andante"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "It is faster than 'allegro'.",
+      "category": "music"
+    },
+    {
+      "id": "mus-093",
+      "question": "Which composer wrote the orchestral suite 'The Planets'?",
+      "options": [
+        "Gustav Holst",
+        "Edward Elgar",
+        "Ralph Vaughan Williams",
+        "Benjamin Britten"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The suite includes 'Mars, the Bringer of War'.",
       "category": "music"
     },
     {
@@ -10092,6 +10484,62 @@
       "category": "technology"
     },
     {
+      "id": "tech-090",
+      "question": "Which key on a keyboard inserts a space between words?",
+      "options": [
+        "Enter",
+        "Spacebar",
+        "Shift",
+        "Caps Lock"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It is the longest key on the bottom row.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-091",
+      "question": "What is a computer virus?",
+      "options": [
+        "A hardware fault",
+        "A type of malware that can replicate itself",
+        "A power surge",
+        "A cooling fan"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It spreads by copying itself to other files or computers.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-092",
+      "question": "What does 'phishing' refer to in cybersecurity?",
+      "options": [
+        "A fishing hobby",
+        "A fraudulent attempt to steal personal information",
+        "A way to speed up a computer",
+        "A type of antivirus software"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It often uses fake emails or websites.",
+      "category": "technology"
+    },
+    {
+      "id": "tech-093",
+      "question": "What does 'RAID' stand for in data storage?",
+      "options": [
+        "Rapid Access Information Drive",
+        "Redundant Array of Independent Disks",
+        "Random Array of Internal Drives",
+        "Reliable Automated Input Device"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It combines multiple disks for reliability or speed.",
+      "category": "technology"
+    },
+    {
       "id": "food-001",
       "question": "Which country is sushi most famously associated with?",
       "options": [
@@ -11296,6 +11744,62 @@
       "category": "food"
     },
     {
+      "id": "food-090",
+      "question": "Which vegetable is the main ingredient of French onion soup?",
+      "options": [
+        "Garlic",
+        "Onions",
+        "Leeks",
+        "Potatoes"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It is often topped with melted cheese on toast.",
+      "category": "food"
+    },
+    {
+      "id": "food-091",
+      "question": "Which country is the dish 'poutine' (fries with cheese curds and gravy) from?",
+      "options": [
+        "United States",
+        "Canada",
+        "France",
+        "Belgium"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It is associated with the province of Quebec.",
+      "category": "food"
+    },
+    {
+      "id": "food-092",
+      "question": "What is the main ingredient of the Spanish omelette known as 'tortilla española'?",
+      "options": [
+        "Flour",
+        "Eggs",
+        "Rice",
+        "Corn"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "It also usually contains potatoes.",
+      "category": "food"
+    },
+    {
+      "id": "food-093",
+      "question": "Which hard cheese is traditionally produced in Parma, Italy?",
+      "options": [
+        "Gorgonzola",
+        "Parmesan (Parmigiano-Reggiano)",
+        "Mozzarella",
+        "Pecorino Romano"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "It is often grated over pasta.",
+      "category": "food"
+    },
+    {
       "id": "art-001",
       "question": "Who painted the Mona Lisa?",
       "options": [
@@ -12482,6 +12986,62 @@
       "answer": 3,
       "difficulty": 3,
       "hint": "He was briefly married to Marilyn Monroe.",
+      "category": "art"
+    },
+    {
+      "id": "art-090",
+      "question": "What color do you get by mixing red and blue paint?",
+      "options": [
+        "Green",
+        "Purple",
+        "Orange",
+        "Brown"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "It is the color of many flowers in the violet family.",
+      "category": "art"
+    },
+    {
+      "id": "art-091",
+      "question": "Who painted 'The Last Supper'?",
+      "options": [
+        "Raphael",
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Donatello"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "He also painted the Mona Lisa.",
+      "category": "art"
+    },
+    {
+      "id": "art-092",
+      "question": "In Greek mythology, which goddess was said to have sprung fully grown from the head of Zeus?",
+      "options": [
+        "Hera",
+        "Athena",
+        "Aphrodite",
+        "Artemis"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "She is the goddess of wisdom and war.",
+      "category": "art"
+    },
+    {
+      "id": "art-093",
+      "question": "Which English painter created the landscape 'The Hay Wain'?",
+      "options": [
+        "J.M.W. Turner",
+        "John Constable",
+        "Thomas Gainsborough",
+        "William Blake"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "He is known for romantic scenes of the English countryside.",
       "category": "art"
     },
     {
@@ -13688,6 +14248,62 @@
       "answer": 2,
       "difficulty": 3,
       "hint": "It breeds on the Antarctic ice during winter.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-090",
+      "question": "What is a baby sheep called?",
+      "options": [
+        "Calf",
+        "Lamb",
+        "Kid",
+        "Foal"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "hint": "Its woolly coat is prized for clothing.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-091",
+      "question": "What is the main food of a giant panda?",
+      "options": [
+        "Bamboo",
+        "Meat",
+        "Fish",
+        "Insects"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "hint": "They spend most of the day eating this plant.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-092",
+      "question": "Which marine mammal is famous for its intelligence and for making clicking and whistling sounds?",
+      "options": [
+        "Seal",
+        "Dolphin",
+        "Walrus",
+        "Manatee"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "hint": "They travel together in groups called pods.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-093",
+      "question": "What is a group of flamingos called?",
+      "options": [
+        "A flock",
+        "A flamboyance",
+        "A herd",
+        "A gaggle"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "hint": "The name also means 'showy' or 'vivid'.",
       "category": "animals"
     }
   ]

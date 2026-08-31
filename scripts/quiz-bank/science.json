@@ -1117,5 +1117,57 @@
     "answer": 3,
     "difficulty": 3,
     "hint": "It formed along with the rest of the Solar System."
+  },
+  {
+    "id": "sci-090",
+    "question": "What is the chemical symbol for carbon?",
+    "options": [
+      "C",
+      "Ca",
+      "Co",
+      "Cr"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "It is a single letter."
+  },
+  {
+    "id": "sci-091",
+    "question": "Which planet takes longer to rotate once on its axis than to orbit the Sun?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Neptune"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Its day lasts about 243 Earth days."
+  },
+  {
+    "id": "sci-092",
+    "question": "What is the chemical symbol for nitrogen?",
+    "options": [
+      "N",
+      "Ni",
+      "Na",
+      "Ne"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "hint": "It makes up most of Earth's atmosphere."
+  },
+  {
+    "id": "sci-093",
+    "question": "What is the SI unit of energy?",
+    "options": [
+      "Watt",
+      "Joule",
+      "Newton",
+      "Pascal"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It is named after an English physicist."
   }
 ]

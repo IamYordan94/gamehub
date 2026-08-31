@@ -1113,5 +1113,57 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "It is a baked custard topped with caramel."
+  },
+  {
+    "id": "food-090",
+    "question": "Which vegetable is the main ingredient of French onion soup?",
+    "options": [
+      "Garlic",
+      "Onions",
+      "Leeks",
+      "Potatoes"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It is often topped with melted cheese on toast."
+  },
+  {
+    "id": "food-091",
+    "question": "Which country is the dish 'poutine' (fries with cheese curds and gravy) from?",
+    "options": [
+      "United States",
+      "Canada",
+      "France",
+      "Belgium"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It is associated with the province of Quebec."
+  },
+  {
+    "id": "food-092",
+    "question": "What is the main ingredient of the Spanish omelette known as 'tortilla española'?",
+    "options": [
+      "Flour",
+      "Eggs",
+      "Rice",
+      "Corn"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It also usually contains potatoes."
+  },
+  {
+    "id": "food-093",
+    "question": "Which hard cheese is traditionally produced in Parma, Italy?",
+    "options": [
+      "Gorgonzola",
+      "Parmesan (Parmigiano-Reggiano)",
+      "Mozzarella",
+      "Pecorino Romano"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It is often grated over pasta."
   }
 ]

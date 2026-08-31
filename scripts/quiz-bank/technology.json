@@ -1155,5 +1155,57 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "It encodes letters and symbols as numbers."
+  },
+  {
+    "id": "tech-090",
+    "question": "Which key on a keyboard inserts a space between words?",
+    "options": [
+      "Enter",
+      "Spacebar",
+      "Shift",
+      "Caps Lock"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It is the longest key on the bottom row."
+  },
+  {
+    "id": "tech-091",
+    "question": "What is a computer virus?",
+    "options": [
+      "A hardware fault",
+      "A type of malware that can replicate itself",
+      "A power surge",
+      "A cooling fan"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It spreads by copying itself to other files or computers."
+  },
+  {
+    "id": "tech-092",
+    "question": "What does 'phishing' refer to in cybersecurity?",
+    "options": [
+      "A fishing hobby",
+      "A fraudulent attempt to steal personal information",
+      "A way to speed up a computer",
+      "A type of antivirus software"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It often uses fake emails or websites."
+  },
+  {
+    "id": "tech-093",
+    "question": "What does 'RAID' stand for in data storage?",
+    "options": [
+      "Rapid Access Information Drive",
+      "Redundant Array of Independent Disks",
+      "Random Array of Internal Drives",
+      "Reliable Automated Input Device"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It combines multiple disks for reliability or speed."
   }
 ]

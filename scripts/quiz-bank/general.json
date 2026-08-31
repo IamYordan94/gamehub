@@ -1415,5 +1415,57 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "It depicted the sun god Helios."
+  },
+  {
+    "id": "gen-390",
+    "question": "What is the capital city of the United Kingdom?",
+    "options": [
+      "Dublin",
+      "London",
+      "Edinburgh",
+      "Cardiff"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "It sits on the River Thames."
+  },
+  {
+    "id": "gen-391",
+    "question": "Which organ filters waste from the blood to produce urine?",
+    "options": [
+      "Liver",
+      "Kidneys",
+      "Lungs",
+      "Spleen"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "Most people have two of them."
+  },
+  {
+    "id": "gen-392",
+    "question": "What is the largest living bird in the world?",
+    "options": [
+      "Bald eagle",
+      "Ostrich",
+      "Emperor penguin",
+      "Wandering albatross"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It cannot fly but runs very fast."
+  },
+  {
+    "id": "gen-393",
+    "question": "What is the largest desert in the world when cold deserts are included?",
+    "options": [
+      "Sahara Desert",
+      "Antarctica",
+      "Gobi Desert",
+      "Arabian Desert"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "A desert is defined by low precipitation, not just heat."
   }
 ]

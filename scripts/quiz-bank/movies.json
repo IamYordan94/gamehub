@@ -1115,5 +1115,57 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "The title includes a year and a classical epic poem reference."
+  },
+  {
+    "id": "mov-090",
+    "question": "Which Disney animated film features the song 'Let It Go'?",
+    "options": [
+      "Moana",
+      "Frozen",
+      "Tangled",
+      "Brave"
+    ],
+    "answer": 1,
+    "difficulty": 1,
+    "hint": "Its main character is Queen Elsa."
+  },
+  {
+    "id": "mov-091",
+    "question": "Who directed 'The Lord of the Rings' film trilogy?",
+    "options": [
+      "Ridley Scott",
+      "Peter Jackson",
+      "Steven Spielberg",
+      "James Cameron"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "He is a New Zealand filmmaker."
+  },
+  {
+    "id": "mov-092",
+    "question": "In which film does the wizard Gandalf declare 'You shall not pass!'?",
+    "options": [
+      "Star Wars",
+      "The Lord of the Rings",
+      "The Matrix",
+      "Dune"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "He says it while facing a Balrog."
+  },
+  {
+    "id": "mov-093",
+    "question": "Who directed the Spaghetti Western 'The Good, the Bad and the Ugly' (1966)?",
+    "options": [
+      "Federico Fellini",
+      "Sergio Leone",
+      "Francis Ford Coppola",
+      "Martin Scorsese"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "He is famous for 'spaghetti westerns' starring Clint Eastwood."
   }
 ]

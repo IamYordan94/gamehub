@@ -1105,5 +1105,57 @@
     "answer": 3,
     "difficulty": 3,
     "hint": "An Italian composer famous for comic operas."
+  },
+  {
+    "id": "mus-090",
+    "question": "Which singer released the hit songs 'Hello' and 'Rolling in the Deep'?",
+    "options": [
+      "Adele",
+      "Beyoncé",
+      "Taylor Swift",
+      "Rihanna"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "She is a British singer-songwriter."
+  },
+  {
+    "id": "mus-091",
+    "question": "Which composer wrote the opera 'Carmen'?",
+    "options": [
+      "Giuseppe Verdi",
+      "Georges Bizet",
+      "Richard Wagner",
+      "Giacomo Puccini"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "The opera features the 'Habanera'."
+  },
+  {
+    "id": "mus-092",
+    "question": "What is the Italian musical term for a very fast tempo?",
+    "options": [
+      "Largo",
+      "Adagio",
+      "Presto",
+      "Andante"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "It is faster than 'allegro'."
+  },
+  {
+    "id": "mus-093",
+    "question": "Which composer wrote the orchestral suite 'The Planets'?",
+    "options": [
+      "Gustav Holst",
+      "Edward Elgar",
+      "Ralph Vaughan Williams",
+      "Benjamin Britten"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The suite includes 'Mars, the Bringer of War'."
   }
 ]

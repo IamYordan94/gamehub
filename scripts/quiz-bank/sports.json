@@ -1155,5 +1155,57 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "They beat Norway 2–1 in the final."
+  },
+  {
+    "id": "spo-090",
+    "question": "In soccer (football), how many points is a goal worth?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "hint": "A single goal scores one point."
+  },
+  {
+    "id": "spo-091",
+    "question": "In which sport would you score a 'try'?",
+    "options": [
+      "American football",
+      "Rugby",
+      "Cricket",
+      "Field hockey"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It involves grounding the ball over the try line."
+  },
+  {
+    "id": "spo-092",
+    "question": "In golf, what is a score of two under par on a hole called?",
+    "options": [
+      "Birdie",
+      "Eagle",
+      "Bogey",
+      "Albatross"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "hint": "It is one stroke better than a birdie."
+  },
+  {
+    "id": "spo-093",
+    "question": "Which city hosted the 2022 Winter Olympic Games?",
+    "options": [
+      "Pyeongchang",
+      "Beijing",
+      "Vancouver",
+      "Sochi"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "hint": "It had previously hosted the Summer Games in 2008."
   }
 ]
