@@ -1157,5 +1157,54 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "The suite includes 'Mars, the Bringer of War'."
+  },
+  {
+    "id": "mus-094",
+    "question": "Which of these instruments is played by blowing air into it?",
+    "options": [
+      "Flute",
+      "Piano",
+      "Violin",
+      "Guitar"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-095",
+    "question": "Who composed the opera 'The Magic Flute'?",
+    "options": [
+      "Wolfgang Amadeus Mozart",
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Franz Schubert"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-096",
+    "question": "Which instrument did jazz musician Louis Armstrong famously play?",
+    "options": [
+      "Trumpet",
+      "Saxophone",
+      "Piano",
+      "Clarinet"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-097",
+    "question": "What is the musical term for the speed at which a piece is played?",
+    "options": [
+      "Tempo",
+      "Pitch",
+      "Timbre",
+      "Dynamics"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It is measured in beats per minute."
   }
 ]

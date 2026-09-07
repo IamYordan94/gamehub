@@ -1167,5 +1167,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "Its coastline is over 200,000 kilometres long."
+  },
+  {
+    "id": "geo-094",
+    "question": "Which ocean is the smallest by area?",
+    "options": [
+      "Arctic Ocean",
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Pacific Ocean"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "geo-095",
+    "question": "What is the capital city of Vietnam?",
+    "options": [
+      "Hanoi",
+      "Ho Chi Minh City",
+      "Bangkok",
+      "Phnom Penh"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "geo-096",
+    "question": "Which country's capital city is Nairobi?",
+    "options": [
+      "Tanzania",
+      "Kenya",
+      "Ethiopia",
+      "Uganda"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "geo-097",
+    "question": "Which country is the largest in Africa by land area?",
+    "options": [
+      "Nigeria",
+      "Egypt",
+      "Algeria",
+      "Democratic Republic of the Congo"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It borders the Mediterranean Sea."
   }
 ]

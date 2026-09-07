@@ -1155,5 +1155,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "She was nicknamed 'the Iron Lady'."
+  },
+  {
+    "id": "his-094",
+    "question": "In which year did World War I end?",
+    "options": [
+      "1918",
+      "1914",
+      "1939",
+      "1945"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "his-095",
+    "question": "Who was President of the United States for most of World War II?",
+    "options": [
+      "Franklin D. Roosevelt",
+      "Harry S. Truman",
+      "Dwight D. Eisenhower",
+      "Woodrow Wilson"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "his-096",
+    "question": "In which year was the Berlin Wall built?",
+    "options": [
+      "1961",
+      "1945",
+      "1989",
+      "1975"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "his-097",
+    "question": "Which battle in 1815 marked Napoleon Bonaparte's final defeat?",
+    "options": [
+      "Battle of Waterloo",
+      "Battle of Trafalgar",
+      "Battle of Austerlitz",
+      "Battle of Leipzig"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The battle is the namesake of a London railway station."
   }
 ]

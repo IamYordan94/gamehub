@@ -1169,5 +1169,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "It is named after an English physicist."
+  },
+  {
+    "id": "sci-094",
+    "question": "Which of these is a renewable source of energy?",
+    "options": [
+      "Solar power",
+      "Coal",
+      "Natural gas",
+      "Petroleum"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-095",
+    "question": "Which part of a plant absorbs water and minerals from the soil?",
+    "options": [
+      "Roots",
+      "Leaves",
+      "Flowers",
+      "Stem"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-096",
+    "question": "Which organ produces the hormone insulin?",
+    "options": [
+      "Pancreas",
+      "Liver",
+      "Kidneys",
+      "Spleen"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-097",
+    "question": "Which type of electromagnetic radiation has the longest wavelength?",
+    "options": [
+      "Radio waves",
+      "Microwaves",
+      "X-rays",
+      "Gamma rays"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It has the lowest frequency."
   }
 ]

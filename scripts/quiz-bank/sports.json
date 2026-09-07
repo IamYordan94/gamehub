@@ -1207,5 +1207,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "It had previously hosted the Summer Games in 2008."
+  },
+  {
+    "id": "spo-094",
+    "question": "In which sport would you use a putter?",
+    "options": [
+      "Golf",
+      "Tennis",
+      "Cricket",
+      "Badminton"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "spo-095",
+    "question": "How many players from one baseball team are on the field at a time?",
+    "options": [
+      "6",
+      "9",
+      "11",
+      "12"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "spo-096",
+    "question": "In darts, what is the highest possible score with a single throw?",
+    "options": [
+      "20",
+      "50",
+      "60",
+      "100"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "hint": "It is a treble."
+  },
+  {
+    "id": "spo-097",
+    "question": "Which city hosted the 1964 Summer Olympic Games?",
+    "options": [
+      "Tokyo",
+      "Mexico City",
+      "Munich",
+      "Montreal"
+    ],
+    "answer": 0,
+    "difficulty": 3
   }
 ]

@@ -1150,5 +1150,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "He is known for romantic scenes of the English countryside."
+  },
+  {
+    "id": "art-094",
+    "question": "What color do you get by mixing red and white paint?",
+    "options": [
+      "Pink",
+      "Purple",
+      "Orange",
+      "Green"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "art-095",
+    "question": "Who wrote 'The Adventures of Huckleberry Finn'?",
+    "options": [
+      "Mark Twain",
+      "Ernest Hemingway",
+      "John Steinbeck",
+      "F. Scott Fitzgerald"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "art-096",
+    "question": "Who painted 'The Garden of Earthly Delights'?",
+    "options": [
+      "Hieronymus Bosch",
+      "Pieter Bruegel the Elder",
+      "Albrecht Dürer",
+      "Rembrandt"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "art-097",
+    "question": "Who painted the early Netherlandish masterpiece 'The Arnolfini Portrait'?",
+    "options": [
+      "Jan van Eyck",
+      "Rogier van der Weyden",
+      "Hans Memling",
+      "Pieter Bruegel"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "A 15th-century painter known for detailed oil painting."
   }
 ]

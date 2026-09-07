@@ -1167,5 +1167,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "The name also means 'showy' or 'vivid'."
+  },
+  {
+    "id": "anim-094",
+    "question": "Which animal carries its shell and moves very slowly?",
+    "options": [
+      "Snail",
+      "Rabbit",
+      "Deer",
+      "Fox"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-095",
+    "question": "What is a baby deer called?",
+    "options": [
+      "Fawn",
+      "Calf",
+      "Foal",
+      "Cub"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-096",
+    "question": "Which bear is the largest land carnivore in the world?",
+    "options": [
+      "Polar bear",
+      "Grizzly bear",
+      "Lion",
+      "Tiger"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-097",
+    "question": "What is a group of hippos called?",
+    "options": [
+      "A bloat",
+      "A herd",
+      "A pod",
+      "A pack"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The word sounds like swelling."
   }
 ]

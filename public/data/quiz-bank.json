@@ -1646,6 +1646,59 @@
       "category": "general"
     },
     {
+      "id": "gen-394",
+      "question": "How many days are in a week?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "5"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-395",
+      "question": "What is the capital city of Mexico?",
+      "options": [
+        "Mexico City",
+        "Buenos Aires",
+        "Lima",
+        "Bogotá"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-396",
+      "question": "Which country is the largest in South America by land area?",
+      "options": [
+        "Argentina",
+        "Brazil",
+        "Peru",
+        "Chile"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-397",
+      "question": "What is the medical term for the fear of heights?",
+      "options": [
+        "Acrophobia",
+        "Arachnophobia",
+        "Claustrophobia",
+        "Agoraphobia"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The Greek root 'acro-' means height or summit.",
+      "category": "general"
+    },
+    {
       "id": "spo-001",
       "question": "Which country has won the FIFA World Cup the most times?",
       "options": [
@@ -2948,6 +3001,59 @@
       "category": "sports"
     },
     {
+      "id": "spo-094",
+      "question": "In which sport would you use a putter?",
+      "options": [
+        "Golf",
+        "Tennis",
+        "Cricket",
+        "Badminton"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "sports"
+    },
+    {
+      "id": "spo-095",
+      "question": "How many players from one baseball team are on the field at a time?",
+      "options": [
+        "6",
+        "9",
+        "11",
+        "12"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "sports"
+    },
+    {
+      "id": "spo-096",
+      "question": "In darts, what is the highest possible score with a single throw?",
+      "options": [
+        "20",
+        "50",
+        "60",
+        "100"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "hint": "It is a treble.",
+      "category": "sports"
+    },
+    {
+      "id": "spo-097",
+      "question": "Which city hosted the 1964 Summer Olympic Games?",
+      "options": [
+        "Tokyo",
+        "Mexico City",
+        "Munich",
+        "Montreal"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "sports"
+    },
+    {
       "id": "mov-001",
       "question": "Who played the title character Forrest Gump in the 1994 film?",
       "options": [
@@ -4210,6 +4316,59 @@
       "category": "movies"
     },
     {
+      "id": "mov-094",
+      "question": "Which superhero is famously known as 'the Dark Knight'?",
+      "options": [
+        "Superman",
+        "Batman",
+        "Spider-Man",
+        "Iron Man"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-095",
+      "question": "Which actress played Princess Leia in the original Star Wars trilogy?",
+      "options": [
+        "Carrie Fisher",
+        "Sigourney Weaver",
+        "Jodie Foster",
+        "Meryl Streep"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-096",
+      "question": "Which actor provided the voice of Woody in the Toy Story films?",
+      "options": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Robin Williams",
+        "Billy Crystal"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-097",
+      "question": "Who directed '2001: A Space Odyssey' (1968)?",
+      "options": [
+        "Stanley Kubrick",
+        "Alfred Hitchcock",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The same director made 'A Clockwork Orange'.",
+      "category": "movies"
+    },
+    {
       "id": "geo-001",
       "question": "What is the capital of France?",
       "options": [
@@ -5469,6 +5628,59 @@
       "answer": 1,
       "difficulty": 3,
       "hint": "Its coastline is over 200,000 kilometres long.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-094",
+      "question": "Which ocean is the smallest by area?",
+      "options": [
+        "Arctic Ocean",
+        "Indian Ocean",
+        "Atlantic Ocean",
+        "Pacific Ocean"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-095",
+      "question": "What is the capital city of Vietnam?",
+      "options": [
+        "Hanoi",
+        "Ho Chi Minh City",
+        "Bangkok",
+        "Phnom Penh"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-096",
+      "question": "Which country's capital city is Nairobi?",
+      "options": [
+        "Tanzania",
+        "Kenya",
+        "Ethiopia",
+        "Uganda"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-097",
+      "question": "Which country is the largest in Africa by land area?",
+      "options": [
+        "Nigeria",
+        "Egypt",
+        "Algeria",
+        "Democratic Republic of the Congo"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It borders the Mediterranean Sea.",
       "category": "geography"
     },
     {
@@ -6736,6 +6948,59 @@
       "category": "science"
     },
     {
+      "id": "sci-094",
+      "question": "Which of these is a renewable source of energy?",
+      "options": [
+        "Solar power",
+        "Coal",
+        "Natural gas",
+        "Petroleum"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-095",
+      "question": "Which part of a plant absorbs water and minerals from the soil?",
+      "options": [
+        "Roots",
+        "Leaves",
+        "Flowers",
+        "Stem"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-096",
+      "question": "Which organ produces the hormone insulin?",
+      "options": [
+        "Pancreas",
+        "Liver",
+        "Kidneys",
+        "Spleen"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-097",
+      "question": "Which type of electromagnetic radiation has the longest wavelength?",
+      "options": [
+        "Radio waves",
+        "Microwaves",
+        "X-rays",
+        "Gamma rays"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It has the lowest frequency.",
+      "category": "science"
+    },
+    {
       "id": "his-001",
       "question": "In which year did World War II begin?",
       "options": [
@@ -7983,6 +8248,59 @@
       "answer": 1,
       "difficulty": 3,
       "hint": "She was nicknamed 'the Iron Lady'.",
+      "category": "history"
+    },
+    {
+      "id": "his-094",
+      "question": "In which year did World War I end?",
+      "options": [
+        "1918",
+        "1914",
+        "1939",
+        "1945"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-095",
+      "question": "Who was President of the United States for most of World War II?",
+      "options": [
+        "Franklin D. Roosevelt",
+        "Harry S. Truman",
+        "Dwight D. Eisenhower",
+        "Woodrow Wilson"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-096",
+      "question": "In which year was the Berlin Wall built?",
+      "options": [
+        "1961",
+        "1945",
+        "1989",
+        "1975"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-097",
+      "question": "Which battle in 1815 marked Napoleon Bonaparte's final defeat?",
+      "options": [
+        "Battle of Waterloo",
+        "Battle of Trafalgar",
+        "Battle of Austerlitz",
+        "Battle of Leipzig"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The battle is the namesake of a London railway station.",
       "category": "history"
     },
     {
@@ -9235,6 +9553,59 @@
       "answer": 0,
       "difficulty": 3,
       "hint": "The suite includes 'Mars, the Bringer of War'.",
+      "category": "music"
+    },
+    {
+      "id": "mus-094",
+      "question": "Which of these instruments is played by blowing air into it?",
+      "options": [
+        "Flute",
+        "Piano",
+        "Violin",
+        "Guitar"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-095",
+      "question": "Who composed the opera 'The Magic Flute'?",
+      "options": [
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven",
+        "Johann Sebastian Bach",
+        "Franz Schubert"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-096",
+      "question": "Which instrument did jazz musician Louis Armstrong famously play?",
+      "options": [
+        "Trumpet",
+        "Saxophone",
+        "Piano",
+        "Clarinet"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-097",
+      "question": "What is the musical term for the speed at which a piece is played?",
+      "options": [
+        "Tempo",
+        "Pitch",
+        "Timbre",
+        "Dynamics"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It is measured in beats per minute.",
       "category": "music"
     },
     {
@@ -10540,6 +10911,59 @@
       "category": "technology"
     },
     {
+      "id": "tech-094",
+      "question": "What is another common name for a computer screen?",
+      "options": [
+        "Monitor",
+        "Keyboard",
+        "Mouse",
+        "Printer"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "technology"
+    },
+    {
+      "id": "tech-095",
+      "question": "Which unit is commonly used to measure processor speed?",
+      "options": [
+        "Gigahertz",
+        "Megabytes",
+        "Pixels",
+        "Ohms"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "technology"
+    },
+    {
+      "id": "tech-096",
+      "question": "Which of these is an example of computer hardware?",
+      "options": [
+        "Hard drive",
+        "Operating system",
+        "Web browser",
+        "Word processor"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "technology"
+    },
+    {
+      "id": "tech-097",
+      "question": "Which data structure processes items on a First-In-First-Out basis?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It works like a line of people.",
+      "category": "technology"
+    },
+    {
       "id": "food-001",
       "question": "Which country is sushi most famously associated with?",
       "options": [
@@ -11800,6 +12224,59 @@
       "category": "food"
     },
     {
+      "id": "food-094",
+      "question": "What is the main ingredient of tomato ketchup?",
+      "options": [
+        "Tomatoes",
+        "Peppers",
+        "Beets",
+        "Carrots"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-095",
+      "question": "Which country is the noodle dish 'pad thai' from?",
+      "options": [
+        "Thailand",
+        "Vietnam",
+        "Malaysia",
+        "Indonesia"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-096",
+      "question": "What grain is the main ingredient of the salad tabbouleh?",
+      "options": [
+        "Bulgur wheat",
+        "Rice",
+        "Lentils",
+        "Couscous"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-097",
+      "question": "Which region of France is the vegetable stew 'ratatouille' traditionally from?",
+      "options": [
+        "Provence",
+        "Normandy",
+        "Brittany",
+        "Alsace"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "It is in southeastern France.",
+      "category": "food"
+    },
+    {
       "id": "art-001",
       "question": "Who painted the Mona Lisa?",
       "options": [
@@ -13042,6 +13519,59 @@
       "answer": 1,
       "difficulty": 3,
       "hint": "He is known for romantic scenes of the English countryside.",
+      "category": "art"
+    },
+    {
+      "id": "art-094",
+      "question": "What color do you get by mixing red and white paint?",
+      "options": [
+        "Pink",
+        "Purple",
+        "Orange",
+        "Green"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-095",
+      "question": "Who wrote 'The Adventures of Huckleberry Finn'?",
+      "options": [
+        "Mark Twain",
+        "Ernest Hemingway",
+        "John Steinbeck",
+        "F. Scott Fitzgerald"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-096",
+      "question": "Who painted 'The Garden of Earthly Delights'?",
+      "options": [
+        "Hieronymus Bosch",
+        "Pieter Bruegel the Elder",
+        "Albrecht Dürer",
+        "Rembrandt"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-097",
+      "question": "Who painted the early Netherlandish masterpiece 'The Arnolfini Portrait'?",
+      "options": [
+        "Jan van Eyck",
+        "Rogier van der Weyden",
+        "Hans Memling",
+        "Pieter Bruegel"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "A 15th-century painter known for detailed oil painting.",
       "category": "art"
     },
     {
@@ -14304,6 +14834,59 @@
       "answer": 1,
       "difficulty": 3,
       "hint": "The name also means 'showy' or 'vivid'.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-094",
+      "question": "Which animal carries its shell and moves very slowly?",
+      "options": [
+        "Snail",
+        "Rabbit",
+        "Deer",
+        "Fox"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-095",
+      "question": "What is a baby deer called?",
+      "options": [
+        "Fawn",
+        "Calf",
+        "Foal",
+        "Cub"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-096",
+      "question": "Which bear is the largest land carnivore in the world?",
+      "options": [
+        "Polar bear",
+        "Grizzly bear",
+        "Lion",
+        "Tiger"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-097",
+      "question": "What is a group of hippos called?",
+      "options": [
+        "A bloat",
+        "A herd",
+        "A pod",
+        "A pack"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "hint": "The word sounds like swelling.",
       "category": "animals"
     }
   ]

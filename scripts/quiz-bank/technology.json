@@ -1207,5 +1207,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "It combines multiple disks for reliability or speed."
+  },
+  {
+    "id": "tech-094",
+    "question": "What is another common name for a computer screen?",
+    "options": [
+      "Monitor",
+      "Keyboard",
+      "Mouse",
+      "Printer"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "tech-095",
+    "question": "Which unit is commonly used to measure processor speed?",
+    "options": [
+      "Gigahertz",
+      "Megabytes",
+      "Pixels",
+      "Ohms"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "tech-096",
+    "question": "Which of these is an example of computer hardware?",
+    "options": [
+      "Hard drive",
+      "Operating system",
+      "Web browser",
+      "Word processor"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "tech-097",
+    "question": "Which data structure processes items on a First-In-First-Out basis?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Tree",
+      "Graph"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It works like a line of people."
   }
 ]

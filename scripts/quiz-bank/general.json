@@ -1467,5 +1467,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "A desert is defined by low precipitation, not just heat."
+  },
+  {
+    "id": "gen-394",
+    "question": "How many days are in a week?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "5"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-395",
+    "question": "What is the capital city of Mexico?",
+    "options": [
+      "Mexico City",
+      "Buenos Aires",
+      "Lima",
+      "Bogotá"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-396",
+    "question": "Which country is the largest in South America by land area?",
+    "options": [
+      "Argentina",
+      "Brazil",
+      "Peru",
+      "Chile"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-397",
+    "question": "What is the medical term for the fear of heights?",
+    "options": [
+      "Acrophobia",
+      "Arachnophobia",
+      "Claustrophobia",
+      "Agoraphobia"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "The Greek root 'acro-' means height or summit."
   }
 ]

@@ -1165,5 +1165,54 @@
     "answer": 1,
     "difficulty": 3,
     "hint": "It is often grated over pasta."
+  },
+  {
+    "id": "food-094",
+    "question": "What is the main ingredient of tomato ketchup?",
+    "options": [
+      "Tomatoes",
+      "Peppers",
+      "Beets",
+      "Carrots"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-095",
+    "question": "Which country is the noodle dish 'pad thai' from?",
+    "options": [
+      "Thailand",
+      "Vietnam",
+      "Malaysia",
+      "Indonesia"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "food-096",
+    "question": "What grain is the main ingredient of the salad tabbouleh?",
+    "options": [
+      "Bulgur wheat",
+      "Rice",
+      "Lentils",
+      "Couscous"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "food-097",
+    "question": "Which region of France is the vegetable stew 'ratatouille' traditionally from?",
+    "options": [
+      "Provence",
+      "Normandy",
+      "Brittany",
+      "Alsace"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "hint": "It is in southeastern France."
   }
 ]
