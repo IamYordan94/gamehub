@@ -1216,5 +1216,53 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "The same director made 'A Clockwork Orange'."
+  },
+  {
+    "id": "mov-098",
+    "question": "What is the name of the snowman in Disney's \"Frozen\"?",
+    "options": [
+      "Sven",
+      "Kristoff",
+      "Olaf",
+      "Marshmallow"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-099",
+    "question": "Which actress played Hermione Granger in the Harry Potter films?",
+    "options": [
+      "Bonnie Wright",
+      "Emma Watson",
+      "Evanna Lynch",
+      "Emma Stone"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-100",
+    "question": "In which 1999 film does Edward Norton's character join a secret fight club run by Tyler Durden?",
+    "options": [
+      "The Matrix",
+      "American Psycho",
+      "Se7en",
+      "Fight Club"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-101",
+    "question": "Which film won the Academy Award for Best Picture for 1993?",
+    "options": [
+      "The Fugitive",
+      "The Piano",
+      "In the Name of the Father",
+      "Schindler's List"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

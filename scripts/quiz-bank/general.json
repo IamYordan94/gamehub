@@ -1516,5 +1516,54 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "The Greek root 'acro-' means height or summit."
+  },
+  {
+    "id": "gen-398",
+    "question": "How many letters are there in the standard English alphabet?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "28"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-399",
+    "question": "Which instrument is used to measure atmospheric pressure?",
+    "options": [
+      "Thermometer",
+      "Barometer",
+      "Hygrometer",
+      "Anemometer"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-400",
+    "question": "Which planet appears as the \"Morning Star\" when seen at dawn?",
+    "options": [
+      "Mars",
+      "Mercury",
+      "Jupiter",
+      "Venus"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-401",
+    "question": "How many time zones does Russia span?",
+    "options": [
+      "9",
+      "13",
+      "11",
+      "7"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It is a double-digit number, but not the highest you might guess."
   }
 ]

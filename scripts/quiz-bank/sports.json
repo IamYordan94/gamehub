@@ -1256,5 +1256,53 @@
     ],
     "answer": 0,
     "difficulty": 3
+  },
+  {
+    "id": "spo-098",
+    "question": "In which sport is a \"home run\" scored?",
+    "options": [
+      "Baseball",
+      "Basketball",
+      "Tennis",
+      "Ice hockey"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "spo-099",
+    "question": "Which city hosted the 2000 Summer Olympic Games?",
+    "options": [
+      "Atlanta",
+      "Seoul",
+      "Sydney",
+      "Athens"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "spo-100",
+    "question": "In American football, how many points is a successful field goal worth?",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "6"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "spo-101",
+    "question": "Who became the oldest boxer to win the world heavyweight championship, at age 45 in 1994?",
+    "options": [
+      "Larry Holmes",
+      "Joe Frazier",
+      "George Foreman",
+      "Muhammad Ali"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

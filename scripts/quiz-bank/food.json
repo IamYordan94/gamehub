@@ -1214,5 +1214,53 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "It is in southeastern France."
+  },
+  {
+    "id": "food-098",
+    "question": "Which fruit is a classic ingredient in a Waldorf salad?",
+    "options": [
+      "Banana",
+      "Apple",
+      "Orange",
+      "Peach"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "food-099",
+    "question": "Baba ghanoush is a Middle Eastern dip made mainly from which vegetable?",
+    "options": [
+      "Chickpeas",
+      "Potato",
+      "Aubergine (eggplant)",
+      "Spinach"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "food-100",
+    "question": "Crème brûlée is a dessert traditionally associated with which country?",
+    "options": [
+      "France",
+      "Belgium",
+      "Austria",
+      "Portugal"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "food-101",
+    "question": "Which flavouring comes from the dried pods of a climbing orchid vine?",
+    "options": [
+      "Cinnamon",
+      "Nutmeg",
+      "Cardamom",
+      "Vanilla"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

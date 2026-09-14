@@ -1256,5 +1256,53 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "It works like a line of people."
+  },
+  {
+    "id": "tech-098",
+    "question": "What does \"GPS\" stand for?",
+    "options": [
+      "Global Positioning System",
+      "General Purpose Software",
+      "Global Phone Service",
+      "Ground Positioning Sensor"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "tech-099",
+    "question": "What does \"GPU\" stand for in computing?",
+    "options": [
+      "General Processing Unit",
+      "Graphics Processing Unit",
+      "Gigabyte Processing Utility",
+      "Graphical Power Unit"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "tech-100",
+    "question": "What does \"LED\" stand for?",
+    "options": [
+      "Low Energy Display",
+      "Liquid Emitting Device",
+      "Linear Electric Diode",
+      "Light-Emitting Diode"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "tech-101",
+    "question": "In which year was the Python programming language first released?",
+    "options": [
+      "1987",
+      "1991",
+      "1995",
+      "1999"
+    ],
+    "answer": 1,
+    "difficulty": 3
   }
 ]

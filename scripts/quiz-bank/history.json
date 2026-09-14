@@ -1204,5 +1204,54 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "The battle is the namesake of a London railway station."
+  },
+  {
+    "id": "his-098",
+    "question": "Which ancient civilisation was ruled by pharaohs?",
+    "options": [
+      "Ancient Greece",
+      "Ancient Egypt",
+      "Ancient Rome",
+      "Ancient Persia"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "his-099",
+    "question": "The Battle of Gettysburg took place in which year?",
+    "options": [
+      "1861",
+      "1863",
+      "1865",
+      "1776"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-100",
+    "question": "The D-Day landings of 6 June 1944 took place on the coast of which French region?",
+    "options": [
+      "Brittany",
+      "Provence",
+      "Normandy",
+      "Alsace"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "his-101",
+    "question": "Who was the last emperor of China?",
+    "options": [
+      "Kangxi",
+      "Guangxu",
+      "Qianlong",
+      "Puyi"
+    ],
+    "answer": 3,
+    "difficulty": 3,
+    "hint": "He was still a child when he abdicated in 1912."
   }
 ]

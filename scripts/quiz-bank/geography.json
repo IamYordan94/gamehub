@@ -1216,5 +1216,54 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "It borders the Mediterranean Sea."
+  },
+  {
+    "id": "geo-098",
+    "question": "What is the capital city of Poland?",
+    "options": [
+      "Kraków",
+      "Gdańsk",
+      "Warsaw",
+      "Prague"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "geo-099",
+    "question": "Which river flows through the centre of Paris?",
+    "options": [
+      "Seine",
+      "Loire",
+      "Rhône",
+      "Garonne"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "geo-100",
+    "question": "Which northern European country is known as the \"Land of a Thousand Lakes\"?",
+    "options": [
+      "Finland",
+      "Norway",
+      "Sweden",
+      "Denmark"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "geo-101",
+    "question": "What is the world's highest uninterrupted waterfall?",
+    "options": [
+      "Niagara Falls",
+      "Victoria Falls",
+      "Angel Falls",
+      "Iguazu Falls"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "hint": "It is in South America and drops from a flat-topped mountain."
   }
 ]

@@ -1699,6 +1699,59 @@
       "category": "general"
     },
     {
+      "id": "gen-398",
+      "question": "How many letters are there in the standard English alphabet?",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "28"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-399",
+      "question": "Which instrument is used to measure atmospheric pressure?",
+      "options": [
+        "Thermometer",
+        "Barometer",
+        "Hygrometer",
+        "Anemometer"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-400",
+      "question": "Which planet appears as the \"Morning Star\" when seen at dawn?",
+      "options": [
+        "Mars",
+        "Mercury",
+        "Jupiter",
+        "Venus"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-401",
+      "question": "How many time zones does Russia span?",
+      "options": [
+        "9",
+        "13",
+        "11",
+        "7"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It is a double-digit number, but not the highest you might guess.",
+      "category": "general"
+    },
+    {
       "id": "spo-001",
       "question": "Which country has won the FIFA World Cup the most times?",
       "options": [
@@ -3054,6 +3107,58 @@
       "category": "sports"
     },
     {
+      "id": "spo-098",
+      "question": "In which sport is a \"home run\" scored?",
+      "options": [
+        "Baseball",
+        "Basketball",
+        "Tennis",
+        "Ice hockey"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "sports"
+    },
+    {
+      "id": "spo-099",
+      "question": "Which city hosted the 2000 Summer Olympic Games?",
+      "options": [
+        "Atlanta",
+        "Seoul",
+        "Sydney",
+        "Athens"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "sports"
+    },
+    {
+      "id": "spo-100",
+      "question": "In American football, how many points is a successful field goal worth?",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "6"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "sports"
+    },
+    {
+      "id": "spo-101",
+      "question": "Who became the oldest boxer to win the world heavyweight championship, at age 45 in 1994?",
+      "options": [
+        "Larry Holmes",
+        "Joe Frazier",
+        "George Foreman",
+        "Muhammad Ali"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "sports"
+    },
+    {
       "id": "mov-001",
       "question": "Who played the title character Forrest Gump in the 1994 film?",
       "options": [
@@ -4369,6 +4474,58 @@
       "category": "movies"
     },
     {
+      "id": "mov-098",
+      "question": "What is the name of the snowman in Disney's \"Frozen\"?",
+      "options": [
+        "Sven",
+        "Kristoff",
+        "Olaf",
+        "Marshmallow"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-099",
+      "question": "Which actress played Hermione Granger in the Harry Potter films?",
+      "options": [
+        "Bonnie Wright",
+        "Emma Watson",
+        "Evanna Lynch",
+        "Emma Stone"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-100",
+      "question": "In which 1999 film does Edward Norton's character join a secret fight club run by Tyler Durden?",
+      "options": [
+        "The Matrix",
+        "American Psycho",
+        "Se7en",
+        "Fight Club"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-101",
+      "question": "Which film won the Academy Award for Best Picture for 1993?",
+      "options": [
+        "The Fugitive",
+        "The Piano",
+        "In the Name of the Father",
+        "Schindler's List"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "movies"
+    },
+    {
       "id": "geo-001",
       "question": "What is the capital of France?",
       "options": [
@@ -5681,6 +5838,59 @@
       "answer": 2,
       "difficulty": 3,
       "hint": "It borders the Mediterranean Sea.",
+      "category": "geography"
+    },
+    {
+      "id": "geo-098",
+      "question": "What is the capital city of Poland?",
+      "options": [
+        "Kraków",
+        "Gdańsk",
+        "Warsaw",
+        "Prague"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-099",
+      "question": "Which river flows through the centre of Paris?",
+      "options": [
+        "Seine",
+        "Loire",
+        "Rhône",
+        "Garonne"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-100",
+      "question": "Which northern European country is known as the \"Land of a Thousand Lakes\"?",
+      "options": [
+        "Finland",
+        "Norway",
+        "Sweden",
+        "Denmark"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-101",
+      "question": "What is the world's highest uninterrupted waterfall?",
+      "options": [
+        "Niagara Falls",
+        "Victoria Falls",
+        "Angel Falls",
+        "Iguazu Falls"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "hint": "It is in South America and drops from a flat-topped mountain.",
       "category": "geography"
     },
     {
@@ -7001,6 +7211,58 @@
       "category": "science"
     },
     {
+      "id": "sci-098",
+      "question": "Which star is closest to Earth?",
+      "options": [
+        "Sirius",
+        "Proxima Centauri",
+        "The Sun",
+        "Polaris"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-099",
+      "question": "What is the name of the galaxy that contains our Solar System?",
+      "options": [
+        "Andromeda",
+        "Milky Way",
+        "Triangulum",
+        "Whirlpool"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-100",
+      "question": "Which blood type is known as the universal donor for red blood cells?",
+      "options": [
+        "AB positive",
+        "A positive",
+        "O negative",
+        "B negative"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-101",
+      "question": "Which process describes plants releasing water vapour through their leaves?",
+      "options": [
+        "Respiration",
+        "Photosynthesis",
+        "Germination",
+        "Transpiration"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
       "id": "his-001",
       "question": "In which year did World War II begin?",
       "options": [
@@ -8301,6 +8563,59 @@
       "answer": 0,
       "difficulty": 3,
       "hint": "The battle is the namesake of a London railway station.",
+      "category": "history"
+    },
+    {
+      "id": "his-098",
+      "question": "Which ancient civilisation was ruled by pharaohs?",
+      "options": [
+        "Ancient Greece",
+        "Ancient Egypt",
+        "Ancient Rome",
+        "Ancient Persia"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-099",
+      "question": "The Battle of Gettysburg took place in which year?",
+      "options": [
+        "1861",
+        "1863",
+        "1865",
+        "1776"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-100",
+      "question": "The D-Day landings of 6 June 1944 took place on the coast of which French region?",
+      "options": [
+        "Brittany",
+        "Provence",
+        "Normandy",
+        "Alsace"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-101",
+      "question": "Who was the last emperor of China?",
+      "options": [
+        "Kangxi",
+        "Guangxu",
+        "Qianlong",
+        "Puyi"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "hint": "He was still a child when he abdicated in 1912.",
       "category": "history"
     },
     {
@@ -9606,6 +9921,58 @@
       "answer": 0,
       "difficulty": 3,
       "hint": "It is measured in beats per minute.",
+      "category": "music"
+    },
+    {
+      "id": "mus-098",
+      "question": "Which member of The Beatles played bass guitar?",
+      "options": [
+        "Ringo Starr",
+        "George Harrison",
+        "Paul McCartney",
+        "John Lennon"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-099",
+      "question": "Which composer wrote the six \"Brandenburg Concertos\"?",
+      "options": [
+        "George Frideric Handel",
+        "Johann Sebastian Bach",
+        "Antonio Vivaldi",
+        "Joseph Haydn"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-100",
+      "question": "Which instrument is the cellist Yo-Yo Ma famous for playing?",
+      "options": [
+        "Cello",
+        "Violin",
+        "Harp",
+        "Double bass"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-101",
+      "question": "Which English composer wrote the \"Enigma Variations\"?",
+      "options": [
+        "Gustav Holst",
+        "Benjamin Britten",
+        "Edward Elgar",
+        "Ralph Vaughan Williams"
+      ],
+      "answer": 2,
+      "difficulty": 3,
       "category": "music"
     },
     {
@@ -10964,6 +11331,58 @@
       "category": "technology"
     },
     {
+      "id": "tech-098",
+      "question": "What does \"GPS\" stand for?",
+      "options": [
+        "Global Positioning System",
+        "General Purpose Software",
+        "Global Phone Service",
+        "Ground Positioning Sensor"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "technology"
+    },
+    {
+      "id": "tech-099",
+      "question": "What does \"GPU\" stand for in computing?",
+      "options": [
+        "General Processing Unit",
+        "Graphics Processing Unit",
+        "Gigabyte Processing Utility",
+        "Graphical Power Unit"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "technology"
+    },
+    {
+      "id": "tech-100",
+      "question": "What does \"LED\" stand for?",
+      "options": [
+        "Low Energy Display",
+        "Liquid Emitting Device",
+        "Linear Electric Diode",
+        "Light-Emitting Diode"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "technology"
+    },
+    {
+      "id": "tech-101",
+      "question": "In which year was the Python programming language first released?",
+      "options": [
+        "1987",
+        "1991",
+        "1995",
+        "1999"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "category": "technology"
+    },
+    {
       "id": "food-001",
       "question": "Which country is sushi most famously associated with?",
       "options": [
@@ -12277,6 +12696,58 @@
       "category": "food"
     },
     {
+      "id": "food-098",
+      "question": "Which fruit is a classic ingredient in a Waldorf salad?",
+      "options": [
+        "Banana",
+        "Apple",
+        "Orange",
+        "Peach"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-099",
+      "question": "Baba ghanoush is a Middle Eastern dip made mainly from which vegetable?",
+      "options": [
+        "Chickpeas",
+        "Potato",
+        "Aubergine (eggplant)",
+        "Spinach"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-100",
+      "question": "Crème brûlée is a dessert traditionally associated with which country?",
+      "options": [
+        "France",
+        "Belgium",
+        "Austria",
+        "Portugal"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-101",
+      "question": "Which flavouring comes from the dried pods of a climbing orchid vine?",
+      "options": [
+        "Cinnamon",
+        "Nutmeg",
+        "Cardamom",
+        "Vanilla"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "food"
+    },
+    {
       "id": "art-001",
       "question": "Who painted the Mona Lisa?",
       "options": [
@@ -13572,6 +14043,58 @@
       "answer": 0,
       "difficulty": 3,
       "hint": "A 15th-century painter known for detailed oil painting.",
+      "category": "art"
+    },
+    {
+      "id": "art-098",
+      "question": "Who wrote \"Alice's Adventures in Wonderland\"?",
+      "options": [
+        "Lewis Carroll",
+        "Charles Dickens",
+        "Mark Twain",
+        "J.M. Barrie"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "art"
+    },
+    {
+      "id": "art-099",
+      "question": "Who wrote the novella \"The Old Man and the Sea\"?",
+      "options": [
+        "John Steinbeck",
+        "Ernest Hemingway",
+        "William Faulkner",
+        "F. Scott Fitzgerald"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-100",
+      "question": "Which American artist painted \"Nighthawks\", set in a late-night diner?",
+      "options": [
+        "Norman Rockwell",
+        "Grant Wood",
+        "Edward Hopper",
+        "Georgia O'Keeffe"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-101",
+      "question": "Which painter created \"Olympia\" (1863), in which a reclining nude looks directly at the viewer?",
+      "options": [
+        "Claude Monet",
+        "Gustave Courbet",
+        "Edgar Degas",
+        "Édouard Manet"
+      ],
+      "answer": 3,
+      "difficulty": 3,
       "category": "art"
     },
     {
@@ -14887,6 +15410,58 @@
       "answer": 0,
       "difficulty": 3,
       "hint": "The word sounds like swelling.",
+      "category": "animals"
+    },
+    {
+      "id": "anim-098",
+      "question": "Which farm animal is kept mainly for its wool?",
+      "options": [
+        "Pig",
+        "Cow",
+        "Sheep",
+        "Chicken"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-099",
+      "question": "Which insect is often described as the fastest flying insect?",
+      "options": [
+        "Dragonfly",
+        "Honey bee",
+        "Butterfly",
+        "Housefly"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-100",
+      "question": "Which seabird is famous for its bright blue feet, used in courtship displays?",
+      "options": [
+        "Puffin",
+        "Blue-footed booby",
+        "Albatross",
+        "Pelican"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-101",
+      "question": "What is the collective noun for a group of ravens?",
+      "options": [
+        "A murder",
+        "A charm",
+        "An unkindness",
+        "A parliament"
+      ],
+      "answer": 2,
+      "difficulty": 3,
       "category": "animals"
     }
   ]

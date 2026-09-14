@@ -1206,5 +1206,53 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "It is measured in beats per minute."
+  },
+  {
+    "id": "mus-098",
+    "question": "Which member of The Beatles played bass guitar?",
+    "options": [
+      "Ringo Starr",
+      "George Harrison",
+      "Paul McCartney",
+      "John Lennon"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-099",
+    "question": "Which composer wrote the six \"Brandenburg Concertos\"?",
+    "options": [
+      "George Frideric Handel",
+      "Johann Sebastian Bach",
+      "Antonio Vivaldi",
+      "Joseph Haydn"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-100",
+    "question": "Which instrument is the cellist Yo-Yo Ma famous for playing?",
+    "options": [
+      "Cello",
+      "Violin",
+      "Harp",
+      "Double bass"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-101",
+    "question": "Which English composer wrote the \"Enigma Variations\"?",
+    "options": [
+      "Gustav Holst",
+      "Benjamin Britten",
+      "Edward Elgar",
+      "Ralph Vaughan Williams"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

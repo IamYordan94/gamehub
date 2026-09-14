@@ -1216,5 +1216,53 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "The word sounds like swelling."
+  },
+  {
+    "id": "anim-098",
+    "question": "Which farm animal is kept mainly for its wool?",
+    "options": [
+      "Pig",
+      "Cow",
+      "Sheep",
+      "Chicken"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-099",
+    "question": "Which insect is often described as the fastest flying insect?",
+    "options": [
+      "Dragonfly",
+      "Honey bee",
+      "Butterfly",
+      "Housefly"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-100",
+    "question": "Which seabird is famous for its bright blue feet, used in courtship displays?",
+    "options": [
+      "Puffin",
+      "Blue-footed booby",
+      "Albatross",
+      "Pelican"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-101",
+    "question": "What is the collective noun for a group of ravens?",
+    "options": [
+      "A murder",
+      "A charm",
+      "An unkindness",
+      "A parliament"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

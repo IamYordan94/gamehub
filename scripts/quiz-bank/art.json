@@ -1199,5 +1199,53 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "A 15th-century painter known for detailed oil painting."
+  },
+  {
+    "id": "art-098",
+    "question": "Who wrote \"Alice's Adventures in Wonderland\"?",
+    "options": [
+      "Lewis Carroll",
+      "Charles Dickens",
+      "Mark Twain",
+      "J.M. Barrie"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "art-099",
+    "question": "Who wrote the novella \"The Old Man and the Sea\"?",
+    "options": [
+      "John Steinbeck",
+      "Ernest Hemingway",
+      "William Faulkner",
+      "F. Scott Fitzgerald"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "art-100",
+    "question": "Which American artist painted \"Nighthawks\", set in a late-night diner?",
+    "options": [
+      "Norman Rockwell",
+      "Grant Wood",
+      "Edward Hopper",
+      "Georgia O'Keeffe"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "art-101",
+    "question": "Which painter created \"Olympia\" (1863), in which a reclining nude looks directly at the viewer?",
+    "options": [
+      "Claude Monet",
+      "Gustave Courbet",
+      "Edgar Degas",
+      "Édouard Manet"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

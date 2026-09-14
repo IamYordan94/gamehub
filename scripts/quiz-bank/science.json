@@ -1218,5 +1218,53 @@
     "answer": 0,
     "difficulty": 3,
     "hint": "It has the lowest frequency."
+  },
+  {
+    "id": "sci-098",
+    "question": "Which star is closest to Earth?",
+    "options": [
+      "Sirius",
+      "Proxima Centauri",
+      "The Sun",
+      "Polaris"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-099",
+    "question": "What is the name of the galaxy that contains our Solar System?",
+    "options": [
+      "Andromeda",
+      "Milky Way",
+      "Triangulum",
+      "Whirlpool"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-100",
+    "question": "Which blood type is known as the universal donor for red blood cells?",
+    "options": [
+      "AB positive",
+      "A positive",
+      "O negative",
+      "B negative"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-101",
+    "question": "Which process describes plants releasing water vapour through their leaves?",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Germination",
+      "Transpiration"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]
