@@ -1304,5 +1304,53 @@
     ],
     "answer": 2,
     "difficulty": 3
+  },
+  {
+    "id": "spo-102",
+    "question": "In football (soccer), which player may handle the ball inside the penalty area?",
+    "options": [
+      "The captain",
+      "The goalkeeper",
+      "The defender",
+      "The striker"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "spo-103",
+    "question": "How many players from one team are on the field during a rugby union match?",
+    "options": [
+      "11",
+      "13",
+      "15",
+      "18"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "spo-104",
+    "question": "How many innings are played in a standard Major League Baseball game?",
+    "options": [
+      "7",
+      "9",
+      "10",
+      "12"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "spo-105",
+    "question": "The Ryder Cup is a biennial team competition in which sport?",
+    "options": [
+      "Golf",
+      "Tennis",
+      "Sailing",
+      "Rowing"
+    ],
+    "answer": 0,
+    "difficulty": 3
   }
 ]

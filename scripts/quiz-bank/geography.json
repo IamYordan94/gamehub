@@ -1265,5 +1265,53 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "It is in South America and drops from a flat-topped mountain."
+  },
+  {
+    "id": "geo-102",
+    "question": "Which ocean lies to the east of Africa?",
+    "options": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Southern Ocean"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "geo-103",
+    "question": "The Danube River flows into which sea?",
+    "options": [
+      "Baltic Sea",
+      "Black Sea",
+      "Mediterranean Sea",
+      "North Sea"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "geo-104",
+    "question": "Which city is the capital of Austria?",
+    "options": [
+      "Salzburg",
+      "Graz",
+      "Vienna",
+      "Innsbruck"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "geo-105",
+    "question": "Which sea lies between Italy and the Balkan Peninsula?",
+    "options": [
+      "Aegean Sea",
+      "Ionian Sea",
+      "Tyrrhenian Sea",
+      "Adriatic Sea"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

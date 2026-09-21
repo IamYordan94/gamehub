@@ -1304,5 +1304,53 @@
     ],
     "answer": 1,
     "difficulty": 3
+  },
+  {
+    "id": "tech-102",
+    "question": "Which keyboard key do you hold down to type a capital letter?",
+    "options": [
+      "Ctrl",
+      "Alt",
+      "Tab",
+      "Shift"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "tech-103",
+    "question": "What does \"HDMI\" stand for?",
+    "options": [
+      "High-Definition Multimedia Interface",
+      "High-Density Media Input",
+      "Host Device Memory Interface",
+      "Hyper-Data Management Interface"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "tech-104",
+    "question": "In web browsing, what is a \"cookie\"?",
+    "options": [
+      "A type of computer virus",
+      "A program that speeds up downloads",
+      "A small file a website stores on your device",
+      "A hidden advertisement inside a video"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "tech-105",
+    "question": "What do we call the program that translates a whole program into machine code before it runs?",
+    "options": [
+      "Debugger",
+      "Editor",
+      "Firewall",
+      "Compiler"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

@@ -1253,5 +1253,53 @@
     "answer": 3,
     "difficulty": 3,
     "hint": "He was still a child when he abdicated in 1912."
+  },
+  {
+    "id": "his-102",
+    "question": "The Vikings originally came from which region of Europe?",
+    "options": [
+      "Scandinavia",
+      "Iberia",
+      "The Balkans",
+      "Central Asia"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "his-103",
+    "question": "Who became the first president of a democratic South Africa in 1994?",
+    "options": [
+      "Desmond Tutu",
+      "Nelson Mandela",
+      "Thabo Mbeki",
+      "F. W. de Klerk"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "his-104",
+    "question": "The United States bought Alaska in 1867 from which country?",
+    "options": [
+      "Canada",
+      "Britain",
+      "Russia",
+      "Denmark"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "his-105",
+    "question": "Which Carthaginian general crossed the Alps with elephants to attack Rome?",
+    "options": [
+      "Scipio",
+      "Hamilcar",
+      "Hasdrubal",
+      "Hannibal"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

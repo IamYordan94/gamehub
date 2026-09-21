@@ -1247,5 +1247,54 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "id": "art-102",
+    "question": "How many lines does a traditional sonnet have?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "hint": "Shakespeare wrote 154 of them."
+  },
+  {
+    "id": "art-103",
+    "question": "Who wrote the novel \"The Grapes of Wrath\"?",
+    "options": [
+      "Ernest Hemingway",
+      "John Steinbeck",
+      "F. Scott Fitzgerald",
+      "William Faulkner"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "art-104",
+    "question": "Which Spanish painter created \"The Third of May 1808\"?",
+    "options": [
+      "Diego Velázquez",
+      "Pablo Picasso",
+      "Francisco Goya",
+      "El Greco"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "art-105",
+    "question": "Who wrote the poem \"The Waste Land\", published in 1922?",
+    "options": [
+      "W. B. Yeats",
+      "Ezra Pound",
+      "Robert Frost",
+      "T. S. Eliot"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

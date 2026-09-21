@@ -1254,5 +1254,53 @@
     ],
     "answer": 2,
     "difficulty": 3
+  },
+  {
+    "id": "mus-102",
+    "question": "The flute belongs to which family of instruments?",
+    "options": [
+      "Brass",
+      "Woodwind",
+      "String",
+      "Percussion"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "mus-103",
+    "question": "Who was the lead guitarist of The Beatles?",
+    "options": [
+      "John Lennon",
+      "Paul McCartney",
+      "George Harrison",
+      "Ringo Starr"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-104",
+    "question": "Which composer wrote the oratorio \"Messiah\", which includes the \"Hallelujah Chorus\"?",
+    "options": [
+      "George Frideric Handel",
+      "Johann Sebastian Bach",
+      "Joseph Haydn",
+      "Felix Mendelssohn"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "mus-105",
+    "question": "Which composer wrote the \"Surprise Symphony\" (No. 94), famous for a sudden loud chord?",
+    "options": [
+      "Franz Schubert",
+      "Johann Sebastian Bach",
+      "Antonín Dvořák",
+      "Joseph Haydn"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

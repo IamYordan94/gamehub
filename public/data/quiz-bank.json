@@ -1752,6 +1752,58 @@
       "category": "general"
     },
     {
+      "id": "gen-402",
+      "question": "How many zeros are there in one million?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-403",
+      "question": "In Latin abbreviations, what does \"e.g.\" stand for?",
+      "options": [
+        "and so on",
+        "for example",
+        "note well",
+        "in other words"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-404",
+      "question": "Which colour appears at the top of a rainbow?",
+      "options": [
+        "Red",
+        "Yellow",
+        "Green",
+        "Violet"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "general"
+    },
+    {
+      "id": "gen-405",
+      "question": "Which planet has the shortest day, spinning once in under 10 hours?",
+      "options": [
+        "Mercury",
+        "Mars",
+        "Jupiter",
+        "Venus"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "category": "general"
+    },
+    {
       "id": "spo-001",
       "question": "Which country has won the FIFA World Cup the most times?",
       "options": [
@@ -3159,6 +3211,58 @@
       "category": "sports"
     },
     {
+      "id": "spo-102",
+      "question": "In football (soccer), which player may handle the ball inside the penalty area?",
+      "options": [
+        "The captain",
+        "The goalkeeper",
+        "The defender",
+        "The striker"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "sports"
+    },
+    {
+      "id": "spo-103",
+      "question": "How many players from one team are on the field during a rugby union match?",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "18"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "sports"
+    },
+    {
+      "id": "spo-104",
+      "question": "How many innings are played in a standard Major League Baseball game?",
+      "options": [
+        "7",
+        "9",
+        "10",
+        "12"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "sports"
+    },
+    {
+      "id": "spo-105",
+      "question": "The Ryder Cup is a biennial team competition in which sport?",
+      "options": [
+        "Golf",
+        "Tennis",
+        "Sailing",
+        "Rowing"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "category": "sports"
+    },
+    {
       "id": "mov-001",
       "question": "Who played the title character Forrest Gump in the 1994 film?",
       "options": [
@@ -4522,6 +4626,58 @@
         "Schindler's List"
       ],
       "answer": 3,
+      "difficulty": 3,
+      "category": "movies"
+    },
+    {
+      "id": "mov-102",
+      "question": "In Disney's \"Pinocchio\", what does the wooden puppet long to become?",
+      "options": [
+        "A knight",
+        "A sailor",
+        "A real boy",
+        "A king"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "category": "movies"
+    },
+    {
+      "id": "mov-103",
+      "question": "Which actress played FBI trainee Clarice Starling in \"The Silence of the Lambs\"?",
+      "options": [
+        "Michelle Pfeiffer",
+        "Meryl Streep",
+        "Sigourney Weaver",
+        "Jodie Foster"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-104",
+      "question": "Which animated film is set in a Paris restaurant where a rat named Remy does the cooking?",
+      "options": [
+        "Cars",
+        "Ratatouille",
+        "Up",
+        "Bolt"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "movies"
+    },
+    {
+      "id": "mov-105",
+      "question": "Who played the composer Mozart in the 1984 film \"Amadeus\"?",
+      "options": [
+        "F. Murray Abraham",
+        "Tom Hulce",
+        "Jeremy Irons",
+        "John Hurt"
+      ],
+      "answer": 1,
       "difficulty": 3,
       "category": "movies"
     },
@@ -5894,6 +6050,58 @@
       "category": "geography"
     },
     {
+      "id": "geo-102",
+      "question": "Which ocean lies to the east of Africa?",
+      "options": [
+        "Indian Ocean",
+        "Atlantic Ocean",
+        "Pacific Ocean",
+        "Southern Ocean"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": "geo-103",
+      "question": "The Danube River flows into which sea?",
+      "options": [
+        "Baltic Sea",
+        "Black Sea",
+        "Mediterranean Sea",
+        "North Sea"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-104",
+      "question": "Which city is the capital of Austria?",
+      "options": [
+        "Salzburg",
+        "Graz",
+        "Vienna",
+        "Innsbruck"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": "geo-105",
+      "question": "Which sea lies between Italy and the Balkan Peninsula?",
+      "options": [
+        "Aegean Sea",
+        "Ionian Sea",
+        "Tyrrhenian Sea",
+        "Adriatic Sea"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "geography"
+    },
+    {
       "id": "sci-001",
       "question": "What is the chemical formula for water?",
       "options": [
@@ -7263,6 +7471,58 @@
       "category": "science"
     },
     {
+      "id": "sci-102",
+      "question": "What is the process called when a liquid turns into a gas?",
+      "options": [
+        "Condensation",
+        "Evaporation",
+        "Sublimation",
+        "Freezing"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "science"
+    },
+    {
+      "id": "sci-103",
+      "question": "What is the chemical symbol for calcium?",
+      "options": [
+        "C",
+        "Ca",
+        "Cl",
+        "Cm"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-104",
+      "question": "Which type of blood vessel carries blood away from the heart?",
+      "options": [
+        "Vein",
+        "Capillary",
+        "Artery",
+        "Ventricle"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "science"
+    },
+    {
+      "id": "sci-105",
+      "question": "What is the SI unit of pressure?",
+      "options": [
+        "Joule",
+        "Newton",
+        "Watt",
+        "Pascal"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "science"
+    },
+    {
       "id": "his-001",
       "question": "In which year did World War II begin?",
       "options": [
@@ -8619,6 +8879,58 @@
       "category": "history"
     },
     {
+      "id": "his-102",
+      "question": "The Vikings originally came from which region of Europe?",
+      "options": [
+        "Scandinavia",
+        "Iberia",
+        "The Balkans",
+        "Central Asia"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": "his-103",
+      "question": "Who became the first president of a democratic South Africa in 1994?",
+      "options": [
+        "Desmond Tutu",
+        "Nelson Mandela",
+        "Thabo Mbeki",
+        "F. W. de Klerk"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-104",
+      "question": "The United States bought Alaska in 1867 from which country?",
+      "options": [
+        "Canada",
+        "Britain",
+        "Russia",
+        "Denmark"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": "his-105",
+      "question": "Which Carthaginian general crossed the Alps with elephants to attack Rome?",
+      "options": [
+        "Scipio",
+        "Hamilcar",
+        "Hasdrubal",
+        "Hannibal"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
       "id": "mus-001",
       "question": "Which city did The Beatles come from?",
       "options": [
@@ -9972,6 +10284,58 @@
         "Ralph Vaughan Williams"
       ],
       "answer": 2,
+      "difficulty": 3,
+      "category": "music"
+    },
+    {
+      "id": "mus-102",
+      "question": "The flute belongs to which family of instruments?",
+      "options": [
+        "Brass",
+        "Woodwind",
+        "String",
+        "Percussion"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "category": "music"
+    },
+    {
+      "id": "mus-103",
+      "question": "Who was the lead guitarist of The Beatles?",
+      "options": [
+        "John Lennon",
+        "Paul McCartney",
+        "George Harrison",
+        "Ringo Starr"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-104",
+      "question": "Which composer wrote the oratorio \"Messiah\", which includes the \"Hallelujah Chorus\"?",
+      "options": [
+        "George Frideric Handel",
+        "Johann Sebastian Bach",
+        "Joseph Haydn",
+        "Felix Mendelssohn"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "music"
+    },
+    {
+      "id": "mus-105",
+      "question": "Which composer wrote the \"Surprise Symphony\" (No. 94), famous for a sudden loud chord?",
+      "options": [
+        "Franz Schubert",
+        "Johann Sebastian Bach",
+        "Antonín Dvořák",
+        "Joseph Haydn"
+      ],
+      "answer": 3,
       "difficulty": 3,
       "category": "music"
     },
@@ -11383,6 +11747,58 @@
       "category": "technology"
     },
     {
+      "id": "tech-102",
+      "question": "Which keyboard key do you hold down to type a capital letter?",
+      "options": [
+        "Ctrl",
+        "Alt",
+        "Tab",
+        "Shift"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "technology"
+    },
+    {
+      "id": "tech-103",
+      "question": "What does \"HDMI\" stand for?",
+      "options": [
+        "High-Definition Multimedia Interface",
+        "High-Density Media Input",
+        "Host Device Memory Interface",
+        "Hyper-Data Management Interface"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "technology"
+    },
+    {
+      "id": "tech-104",
+      "question": "In web browsing, what is a \"cookie\"?",
+      "options": [
+        "A type of computer virus",
+        "A program that speeds up downloads",
+        "A small file a website stores on your device",
+        "A hidden advertisement inside a video"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "technology"
+    },
+    {
+      "id": "tech-105",
+      "question": "What do we call the program that translates a whole program into machine code before it runs?",
+      "options": [
+        "Debugger",
+        "Editor",
+        "Firewall",
+        "Compiler"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "technology"
+    },
+    {
       "id": "food-001",
       "question": "Which country is sushi most famously associated with?",
       "options": [
@@ -12748,6 +13164,58 @@
       "category": "food"
     },
     {
+      "id": "food-102",
+      "question": "Which fruit is dried to make raisins?",
+      "options": [
+        "Grapes",
+        "Dates",
+        "Plums",
+        "Figs"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "category": "food"
+    },
+    {
+      "id": "food-103",
+      "question": "A classic vinaigrette is a mixture of oil and what?",
+      "options": [
+        "Cream",
+        "Vinegar",
+        "Yoghurt",
+        "Honey"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-104",
+      "question": "Profiteroles and éclairs are both made with which type of pastry?",
+      "options": [
+        "Puff pastry",
+        "Shortcrust pastry",
+        "Choux pastry",
+        "Filo pastry"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "food"
+    },
+    {
+      "id": "food-105",
+      "question": "Cheddar cheese is named after a village in which English county?",
+      "options": [
+        "Devon",
+        "Kent",
+        "Yorkshire",
+        "Somerset"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "food"
+    },
+    {
       "id": "art-001",
       "question": "Who painted the Mona Lisa?",
       "options": [
@@ -14092,6 +14560,59 @@
         "Gustave Courbet",
         "Edgar Degas",
         "Édouard Manet"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "category": "art"
+    },
+    {
+      "id": "art-102",
+      "question": "How many lines does a traditional sonnet have?",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "hint": "Shakespeare wrote 154 of them.",
+      "category": "art"
+    },
+    {
+      "id": "art-103",
+      "question": "Who wrote the novel \"The Grapes of Wrath\"?",
+      "options": [
+        "Ernest Hemingway",
+        "John Steinbeck",
+        "F. Scott Fitzgerald",
+        "William Faulkner"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-104",
+      "question": "Which Spanish painter created \"The Third of May 1808\"?",
+      "options": [
+        "Diego Velázquez",
+        "Pablo Picasso",
+        "Francisco Goya",
+        "El Greco"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "category": "art"
+    },
+    {
+      "id": "art-105",
+      "question": "Who wrote the poem \"The Waste Land\", published in 1922?",
+      "options": [
+        "W. B. Yeats",
+        "Ezra Pound",
+        "Robert Frost",
+        "T. S. Eliot"
       ],
       "answer": 3,
       "difficulty": 3,
@@ -15461,6 +15982,58 @@
         "A parliament"
       ],
       "answer": 2,
+      "difficulty": 3,
+      "category": "animals"
+    },
+    {
+      "id": "anim-102",
+      "question": "What is a young owl called?",
+      "options": [
+        "Cub",
+        "Fawn",
+        "Chick",
+        "Owlet"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "category": "animals"
+    },
+    {
+      "id": "anim-103",
+      "question": "Which animal is famous for using twigs to fish termites out of a mound?",
+      "options": [
+        "Chimpanzee",
+        "Orangutan",
+        "Gorilla",
+        "Baboon"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-104",
+      "question": "Which semi-aquatic South American rodent is the biggest living rodent species?",
+      "options": [
+        "Beaver",
+        "Capybara",
+        "Porcupine",
+        "Coypu"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "category": "animals"
+    },
+    {
+      "id": "anim-105",
+      "question": "Which Australian bird decorates a shelter of twigs with colourful objects to attract a mate?",
+      "options": [
+        "Lyrebird",
+        "Weaver bird",
+        "Frigatebird",
+        "Bowerbird"
+      ],
+      "answer": 3,
       "difficulty": 3,
       "category": "animals"
     }

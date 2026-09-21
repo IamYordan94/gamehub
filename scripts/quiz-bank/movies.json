@@ -1264,5 +1264,53 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "id": "mov-102",
+    "question": "In Disney's \"Pinocchio\", what does the wooden puppet long to become?",
+    "options": [
+      "A knight",
+      "A sailor",
+      "A real boy",
+      "A king"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "mov-103",
+    "question": "Which actress played FBI trainee Clarice Starling in \"The Silence of the Lambs\"?",
+    "options": [
+      "Michelle Pfeiffer",
+      "Meryl Streep",
+      "Sigourney Weaver",
+      "Jodie Foster"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-104",
+    "question": "Which animated film is set in a Paris restaurant where a rat named Remy does the cooking?",
+    "options": [
+      "Cars",
+      "Ratatouille",
+      "Up",
+      "Bolt"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "mov-105",
+    "question": "Who played the composer Mozart in the 1984 film \"Amadeus\"?",
+    "options": [
+      "F. Murray Abraham",
+      "Tom Hulce",
+      "Jeremy Irons",
+      "John Hurt"
+    ],
+    "answer": 1,
+    "difficulty": 3
   }
 ]

@@ -1264,5 +1264,53 @@
     ],
     "answer": 2,
     "difficulty": 3
+  },
+  {
+    "id": "anim-102",
+    "question": "What is a young owl called?",
+    "options": [
+      "Cub",
+      "Fawn",
+      "Chick",
+      "Owlet"
+    ],
+    "answer": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "anim-103",
+    "question": "Which animal is famous for using twigs to fish termites out of a mound?",
+    "options": [
+      "Chimpanzee",
+      "Orangutan",
+      "Gorilla",
+      "Baboon"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-104",
+    "question": "Which semi-aquatic South American rodent is the biggest living rodent species?",
+    "options": [
+      "Beaver",
+      "Capybara",
+      "Porcupine",
+      "Coypu"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "anim-105",
+    "question": "Which Australian bird decorates a shelter of twigs with colourful objects to attract a mate?",
+    "options": [
+      "Lyrebird",
+      "Weaver bird",
+      "Frigatebird",
+      "Bowerbird"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

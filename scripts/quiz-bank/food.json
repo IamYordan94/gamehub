@@ -1262,5 +1262,53 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "id": "food-102",
+    "question": "Which fruit is dried to make raisins?",
+    "options": [
+      "Grapes",
+      "Dates",
+      "Plums",
+      "Figs"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "food-103",
+    "question": "A classic vinaigrette is a mixture of oil and what?",
+    "options": [
+      "Cream",
+      "Vinegar",
+      "Yoghurt",
+      "Honey"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "food-104",
+    "question": "Profiteroles and éclairs are both made with which type of pastry?",
+    "options": [
+      "Puff pastry",
+      "Shortcrust pastry",
+      "Choux pastry",
+      "Filo pastry"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "food-105",
+    "question": "Cheddar cheese is named after a village in which English county?",
+    "options": [
+      "Devon",
+      "Kent",
+      "Yorkshire",
+      "Somerset"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]

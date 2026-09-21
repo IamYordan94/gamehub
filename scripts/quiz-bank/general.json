@@ -1565,5 +1565,53 @@
     "answer": 2,
     "difficulty": 3,
     "hint": "It is a double-digit number, but not the highest you might guess."
+  },
+  {
+    "id": "gen-402",
+    "question": "How many zeros are there in one million?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "gen-403",
+    "question": "In Latin abbreviations, what does \"e.g.\" stand for?",
+    "options": [
+      "and so on",
+      "for example",
+      "note well",
+      "in other words"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-404",
+    "question": "Which colour appears at the top of a rainbow?",
+    "options": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Violet"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "gen-405",
+    "question": "Which planet has the shortest day, spinning once in under 10 hours?",
+    "options": [
+      "Mercury",
+      "Mars",
+      "Jupiter",
+      "Venus"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

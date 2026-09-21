@@ -1266,5 +1266,53 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "id": "sci-102",
+    "question": "What is the process called when a liquid turns into a gas?",
+    "options": [
+      "Condensation",
+      "Evaporation",
+      "Sublimation",
+      "Freezing"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "sci-103",
+    "question": "What is the chemical symbol for calcium?",
+    "options": [
+      "C",
+      "Ca",
+      "Cl",
+      "Cm"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-104",
+    "question": "Which type of blood vessel carries blood away from the heart?",
+    "options": [
+      "Vein",
+      "Capillary",
+      "Artery",
+      "Ventricle"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "sci-105",
+    "question": "What is the SI unit of pressure?",
+    "options": [
+      "Joule",
+      "Newton",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": 3,
+    "difficulty": 3
   }
 ]
