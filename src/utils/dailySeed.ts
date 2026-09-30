@@ -32,3 +32,17 @@ export function getTodayDateStr(): string {
   const dd = String(d.getDate()).padStart(2, '0');
   return `${yyyy}-${mm}-${dd}`;
 }
+
+/**
+ * Today's date as YYYY-MM-DD in UTC. Quiz Master seeds on this so the daily
+ * set is identical for every player worldwide at any moment (ORDERLE and
+ * FERMI already rotate on UTC days too). The "same questions for everyone"
+ * promise on the quiz pages is true because of this function.
+ */
+export function getTodayUTCStr(): string {
+  const d = new Date();
+  const yyyy = d.getUTCFullYear();
+  const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const dd = String(d.getUTCDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+}

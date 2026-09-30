@@ -1,10 +1,11 @@
 // ─────────────────────────────────────────────────────────────
 // Ad layer — network-agnostic config + slot support.
 //
-// To enable ads: paste your Monetag tag URL below (Monetag
-// dashboard → Websites → your site → Get tag). Leave it empty
-// and the site runs ad-free. AdSense can be added later via
-// AD_CONFIG.adsenseClient.
+// LIVE TODAY: the Monetag In-Page Push tag (zone 11640179) loads
+// from index.html — one gentle closable format, no popunders.
+// This slot system is dormant: paste a Monetag tag URL below to
+// activate <AdSlot> placements, or an AdSense client later via
+// AD_CONFIG.adsenseClient. With both empty, slots render nothing.
 // ─────────────────────────────────────────────────────────────
 
 export const AD_CONFIG = {
@@ -25,5 +26,6 @@ export async function shouldShowAdForHint(_game: string): Promise<boolean> {
 }
 
 export async function showRewardedAd(): Promise<AdResult> {
-  return { rewarded: true, dismissed: false };
+  // Fail-closed: no ad shown -> no reward. (No callers today; hints stay free.)
+  return { rewarded: false, dismissed: true };
 }

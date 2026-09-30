@@ -1,41 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  /* Unified grey-based theme */
-  --color-bg-dark: #0f0f1a;
-  --color-bg-surface: #1a1a24;
-  --color-bg-card: #252532;
-  --color-accent: #3b82f6;
-  --color-success: #10b981;
-  --color-error: #ef4444;
-  --color-text: #f5f5f5;
-  --color-text-muted: #a1a1aa;
-  --color-border: #3f3f5a;
-}
-
-:root {
-  /* Base grey theme */
-  --app-bg: #121218;
-  --app-surface: #1a1a24;
-  --app-card: #232330;
-  --app-border: rgba(255, 255, 255, 0.08);
-  --app-text: #e8e9ed;
-  --app-text-muted: #9ca3af;
-  
-  /* Game accent colors - subtle integration with grey */
-  --lettermix-accent: #60a5fa;
-  --lettermix-accent-glow: rgba(96, 165, 250, 0.20);
-  
-  --wordpool-accent: #34d399;
-  --wordpool-accent-glow: rgba(52, 211, 153, 0.20);
-  
-  --changebyone-accent: #fbbf24;
-  --changebyone-accent-glow: rgba(251, 191, 36, 0.20);
-
-  /* Hub text - same as app text */
-  --hub-text: var(--app-text);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -47,8 +11,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: var(--app-bg);
-  color: var(--app-text);
+  background-color: var(--hub-bg);
+  color: var(--hub-ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -57,122 +21,11 @@ body {
   min-height: 100vh;
 }
 
-/* ============================================================
-   HUB — Retro Keyboard Plate (ties all three games together)
-   ============================================================ */
-
-:root {
-  --hub-bg:          #E8E5E1;
-  --hub-surface:     #F1EDEA;
-  --hub-dark:        #1E2028;
-  --hub-dark-2:      #32384A;
-  --hub-text:        #1E1C1A;
-  --hub-text-muted:  #706D69;
-  --hub-border:      #C9C4BE;
-  --hub-border-dark: #ADA7A0;
-}
-
 /* Full plate background */
 .hub-plate {
   background: var(--hub-bg);
   min-height: 100vh;
-  color: var(--hub-text);
-}
-
-/* Card = large keycap surface */
-.hub-card {
-  background: var(--hub-surface);
-  border: 1px solid var(--hub-border);
-  border-bottom: 4px solid var(--hub-border-dark);
-  box-shadow: 0 4px 0 var(--hub-border-dark), 0 6px 18px rgba(0,0,0,0.06);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  text-align: left;
-}
-
-/* Colored accent strip at card top */
-.hub-card-strip {
-  height: 4px;
-  width: 100%;
-  flex-shrink: 0;
-}
-
-/* Card body padding */
-.hub-card-body {
-  padding: 16px 18px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex: 1;
-}
-
-/* Tag chips — mini keycap look */
-.hub-tag {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--hub-text-muted);
-  background: var(--hub-bg);
-  border: 1px solid var(--hub-border);
-  border-bottom: 2px solid var(--hub-border-dark);
-  box-shadow: 0 2px 0 var(--hub-border-dark);
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-/* Open button — color is passed via inline style */
-.hub-open-btn {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 9px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: transform 0.08s, box-shadow 0.08s, filter 0.1s;
-  border-style: solid;
-  border-width: 1px 1px 3px 1px;
-}
-.hub-open-btn:hover  { filter: brightness(1.06); }
-.hub-open-btn:active { transform: translateY(2px); border-bottom-width: 1px; box-shadow: none !important; }
-
-/* About/ghost link */
-.hub-about-btn {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  padding: 9px 14px;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  background: transparent;
-  border: 1px solid var(--hub-border);
-  color: var(--hub-text-muted);
-  transition: background 0.1s, color 0.1s, border-color 0.1s;
-  white-space: nowrap;
-}
-.hub-about-btn:hover {
-  background: var(--hub-bg);
-  color: var(--hub-text);
-  border-color: var(--hub-border-dark);
-}
-
-@media (max-width: 767px) {
-  .hub-card-body {
-    padding: 14px 16px 16px;
-  }
+  color: var(--hub-ink);
 }
 
 /* ─────────────────────────────────────────────────────
@@ -263,108 +116,6 @@ body {
 
 .lettermix-glyph-on { opacity: 1; }
 
-/* Cards */
-.lettermix-card {
-  width: min(520px, 92%);
-  background: var(--lm-surface);
-  border: 1px solid var(--lm-border);
-  border-bottom: 2px solid var(--lm-border-dark);
-  border-radius: 6px;
-  padding: 14px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  margin-top: 6px;
-}
-
-/* Progress dots */
-.lettermix-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.18);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.lettermix-dot-on {
-  background: var(--lm-accent);
-  border-color: var(--lm-accent-dark);
-}
-
-/* Play button */
-.lettermix-btn {
-  appearance: none;
-  border: 1px solid var(--lm-accent-dark);
-  border-bottom: 3px solid var(--lm-accent-side);
-  background: var(--lm-accent);
-  color: #ffffff;
-  font-weight: 800;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  letter-spacing: 0.04em;
-  padding: 10px 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 80ms ease, box-shadow 80ms ease;
-  white-space: nowrap;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 3px 0 var(--lm-accent-side), 0 4px 6px rgba(0,0,0,0.15);
-}
-
-.lettermix-btn:hover { background: #C83232; }
-
-.lettermix-btn:active {
-  transform: translateY(2px);
-  box-shadow: 0 1px 0 var(--lm-accent-side), 0 2px 3px rgba(0,0,0,0.12);
-  border-bottom-width: 1px;
-}
-
-/* Section divider */
-.lettermix-divider {
-  width: 140px;
-  height: 1px;
-  background: var(--lm-border-dark);
-  margin: 12px 0 2px 0;
-}
-
-/* Menu items */
-.lettermix-menu-item {
-  width: min(260px, 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 11px 14px;
-  border-radius: 5px;
-  border: 1px solid var(--lm-border);
-  border-bottom: 3px solid var(--lm-border-dark);
-  color: var(--lm-text);
-  text-decoration: none;
-  background: var(--lm-surface);
-  transition: background 80ms ease, transform 80ms ease, box-shadow 80ms ease;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  box-shadow: 0 2px 0 var(--lm-key-side), 0 3px 4px rgba(0,0,0,0.08);
-}
-
-.lettermix-menu-item:hover { background: var(--lm-key-face); }
-
-.lettermix-menu-item:active {
-  transform: translateY(2px);
-  box-shadow: 0 0px 0 var(--lm-key-side);
-  border-bottom-width: 1px;
-}
-
-.lettermix-menu-icon {
-  width: 18px;
-  height: 18px;
-  color: var(--lm-text-muted);
-  flex: 0 0 auto;
-}
-
 /* ── Letter Tile Keycaps ── */
 .lettermix-key {
   width: 48px;
@@ -401,79 +152,6 @@ body {
   transform: translateY(3px);
   box-shadow: 0 1px 0 var(--lm-key-side), 0 2px 2px rgba(0,0,0,0.08);
 }
-
-/* Shared game home screen styles */
-.game-home-card {
-  width: min(520px, 92%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 18px;
-  padding: 14px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  margin-top: 6px;
-}
-
-.game-home-menu-item {
-  width: min(260px, 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid transparent;
-  color: rgba(255, 255, 255, 0.92);
-  text-decoration: none;
-  background: transparent;
-  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
-  font-weight: 750;
-  letter-spacing: 0.01em;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-}
-
-.game-home-menu-item:hover {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.08);
-  transform: translateY(-1px);
-}
-
-.game-home-menu-icon {
-  width: 18px;
-  height: 18px;
-  color: rgba(255, 255, 255, 0.70);
-  flex: 0 0 auto;
-}
-
-.game-home-btn {
-  appearance: none;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.05));
-  color: var(--app-text);
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  padding: 10px 14px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
-  white-space: nowrap;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.game-home-btn:hover {
-  transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.25);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.08));
-}
-
-.game-home-btn-wordpool:hover { border-color: #34d399; background: linear-gradient(180deg, rgba(52, 211, 153, 0.15), rgba(255, 255, 255, 0.08)); }
-.game-home-btn-changebyone:hover { border-color: #fbbf24; background: linear-gradient(180deg, rgba(251, 191, 36, 0.15), rgba(255, 255, 255, 0.08)); }
 
 /* ─────────────────────────────────────────────────────
    Change by One — Retro Industrial Teal Theme
@@ -639,37 +317,6 @@ body {
   background: rgba(62, 159, 168, 0.08) !important;
   border-color: var(--cbo-accent-2);
   color: var(--cbo-accent) !important;
-}
-
-/* Inset input field */
-.cbo-input {
-  flex: 1;
-  padding: 12px 16px;
-  text-align: center;
-  font-size: 1.125rem;
-  font-weight: 700;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  border-radius: 6px;
-  border: 1px solid var(--cbo-border);
-  background: var(--cbo-surface);
-  color: var(--cbo-text);
-  outline: none;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.08), inset 0 1px 2px rgba(0,0,0,0.04);
-  transition: border-color 120ms ease, box-shadow 120ms ease;
-}
-
-.cbo-input::placeholder {
-  color: var(--cbo-text-muted);
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: none;
-}
-
-.cbo-input:focus {
-  border-color: var(--cbo-accent);
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.08), 0 0 0 2px rgba(62, 159, 168, 0.2);
 }
 
 /* Word display keycap */
@@ -907,28 +554,6 @@ body {
   border: 1px solid var(--wp-accent-blue);
   border-bottom: 2px solid var(--wp-accent-blue-dark);
   box-shadow: 0 2px 0 var(--wp-accent-blue-side);
-}
-
-/* Input field — inset control feel */
-.wp-input {
-  width: 100%;
-  padding: 10px 14px;
-  border-radius: 5px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  background: var(--wp-bg);
-  color: var(--wp-text);
-  border: 1px solid var(--wp-border);
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.07);
-  outline: none;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-.wp-input::placeholder { color: var(--wp-text-muted); }
-.wp-input:focus {
-  border-color: var(--wp-accent-blue-dark);
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.07), 0 0 0 2px rgba(159,195,218,0.35);
 }
 
 /* Menu items — keycap list style */

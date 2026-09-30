@@ -53,6 +53,7 @@ export default function SevenLettersPage({ practice = false }: SevenLettersPageP
   const [showAnswers, setShowAnswers] = useState(false);
   const [copied, setCopied] = useState(false);
   const [cardOpen, setCardOpen] = useState(false);
+  const [boardIdx, setBoardIdx] = useState(0);
 
   // Load board data
   useEffect(() => {
@@ -77,6 +78,7 @@ export default function SevenLettersPage({ practice = false }: SevenLettersPageP
     const idx = practice ? Math.floor(Math.random() * boards.length) : getTodayIndex() % boards.length;
     const b = boards[idx];
     setBoard(b);
+    setBoardIdx(idx);
     if (!practice) {
       setFoundWords(getSavedWords(getTodayDateStr()));
     }
@@ -129,8 +131,7 @@ export default function SevenLettersPage({ practice = false }: SevenLettersPageP
 
   const handleShare = useCallback(async () => {
     if (!board) return;
-    const idx = practice ? 0 : getTodayIndex();
-    const text = shareSevenText(foundWords, idx, score, board.maxScore, board);
+    const text = shareSevenText(foundWords, boardIdx, score, board.maxScore, board);
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -139,7 +140,7 @@ export default function SevenLettersPage({ practice = false }: SevenLettersPageP
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
-  }, [board, foundWords, score, practice]);
+  }, [board, foundWords, score, boardIdx]);
 
   if (loading) {
     return (
@@ -408,16 +409,16 @@ export default function SevenLettersPage({ practice = false }: SevenLettersPageP
         open={cardOpen}
         onClose={() => setCardOpen(false)}
         options={{
-          gameId: `seven-letters-${practice ? 0 : getTodayIndex()}`,
+          gameId: `seven-letters-${boardIdx}`,
           title: '7 Letters',
           accentColor: '#e7b10a',
           lines: [
-            `Board #${practice ? 0 : getTodayIndex()} — ${foundWords.length}/${board?.words.length ?? 0} words found`,
+            `Board #${boardIdx} — ${foundWords.length}/${board?.words.length ?? 0} words found`,
             `Score ${score}/${board?.maxScore ?? 0}${board ? ` — ${tierFor(score, tierCutoffs(board.maxScore))}` : ''}`,
             ...(foundWords.length ? [`Longest: ${[...foundWords].sort((a, b) => b.length - a.length)[0].toUpperCase()}`] : []),
           ],
         }}
-        shareText={board ? shareSevenText(foundWords, practice ? 0 : getTodayIndex(), score, board.maxScore, board) : ''}
+        shareText={board ? shareSevenText(foundWords, boardIdx, score, board.maxScore, board) : ''}
       />
     </div>
   );

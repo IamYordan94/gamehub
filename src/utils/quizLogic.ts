@@ -1,6 +1,6 @@
 // QUIZ MASTER — pure game logic (daily general-knowledge quiz)
 
-import { seedRandom, getTodayDateStr } from './dailySeed';
+import { seedRandom } from './dailySeed';
 
 export const QUIZ_LAUNCH_DATE = '2026-08-22';
 export const QUIZ_PER_DAY = 10;
@@ -129,6 +129,3 @@ export function shareQuizText(results: (boolean | null)[], num: number, score: n
   return [`QUIZ MASTER #${num} ${score}/${total}`, grid, 'yodoku.app/quiz — new quiz every day'].join('\n');
 }
 
-export function getTodayDateStrLocal(): string {
-  return getTodayDateStr();
-}

@@ -1,5 +1,5 @@
 // Service Worker for WordCraft Hub — network-first for shell + data, cache-first for hashed assets
-const CACHE = 'wordcraft-v2';
+const CACHE = 'wordcraft-v3';
 const ASSETS = ['/', '/index.html'];
 
 self.addEventListener('install', (event) => {

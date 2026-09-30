@@ -106,7 +106,7 @@ export default function InstallSticker() {
         >
           📲
         </span>
-        <span style={{ fontWeight: 800, fontSize: '13px', color: 'var(--hub-text)', flex: 1 }}>
+        <span style={{ fontWeight: 800, fontSize: '13px', color: 'var(--hub-ink)', flex: 1 }}>
           Install WordCraft Hub — your 7 dailies, one tap from your home screen.
         </span>
         <button

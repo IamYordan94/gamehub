@@ -26,7 +26,7 @@ export default function SevenLettersHome() {
   return (
     <div className="relative min-h-screen" style={{ background: 'var(--sv-bg)', color: 'var(--sv-text)' }}>
       <header className="sticky top-0 z-20 px-4 flex items-center justify-between"
-        style={{ background: 'var(--sv-nav)', borderBottom: '2.5px solid var(--sv-border)', minHeight: '52px' }}>
+        style={{ background: 'var(--sv-nav)', borderBottom: '2.5px solid var(--sv-ink)', minHeight: '52px' }}>
         <Link to="/" className="text-sm font-semibold" style={{ color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>
           ← Hub
         </Link>

@@ -5,7 +5,6 @@ import HubLayout from './layouts/HubLayout';
 import Hub from './pages/Hub';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
-import ComingSoon from './pages/ComingSoon';
 import NotFound from './pages/NotFound';
 import ErrorBoundary from './components/ErrorBoundary';
 import LoadingSkeleton from './components/LoadingSkeleton';
@@ -84,7 +83,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HubLayout />}>
           <Route index element={<Hub />} />
-          <Route path="coming-soon" element={<ComingSoon />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />
         </Route>

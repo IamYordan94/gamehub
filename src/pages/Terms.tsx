@@ -6,7 +6,7 @@ export default function Terms() {
       {/* Nav */}
       <header
         className="px-5 flex items-center gap-3 sticky top-0 z-20"
-        style={{ background: 'var(--hub-dark)', borderBottom: '3px solid var(--hub-dark-2)', minHeight: '52px' }}
+        style={{ background: 'var(--hub-dark)', borderBottom: '3px solid var(--hub-ink)', minHeight: '52px' }}
       >
         <Link
           to="/"
@@ -26,8 +26,8 @@ export default function Terms() {
         </h1>
       </header>
 
-      <main className="max-w-[680px] mx-auto px-5 py-10" style={{ color: 'var(--hub-text)' }}>
-        <p className="text-xs font-semibold mb-8" style={{ color: 'var(--hub-text-muted)' }}>
+      <main className="max-w-[680px] mx-auto px-5 py-10" style={{ color: 'var(--hub-ink)' }}>
+        <p className="text-xs font-semibold mb-8" style={{ color: 'var(--hub-ink-soft)' }}>
           Last updated: March 2026
         </p>
 
@@ -89,7 +89,7 @@ export default function Terms() {
 
         <Section title="Contact">
           Questions about these terms? Email{' '}
-          <a href="mailto:cashfortheteam@gmail.com" style={{ color: 'var(--hub-text)', textDecoration: 'underline' }}>
+          <a href="mailto:cashfortheteam@gmail.com" style={{ color: 'var(--hub-ink)', textDecoration: 'underline' }}>
             cashfortheteam@gmail.com
           </a>
           .
@@ -104,11 +104,11 @@ function Section({ title, children }: { title: string; children: React.ReactNode
     <section className="mb-8">
       <h2
         className="text-sm font-black uppercase tracking-widest mb-3"
-        style={{ color: 'var(--hub-text)', fontFamily: "'JetBrains Mono', monospace", borderBottom: '1px solid var(--hub-border)', paddingBottom: '8px' }}
+        style={{ color: 'var(--hub-ink)', fontFamily: "'JetBrains Mono', monospace", borderBottom: '1px solid var(--hub-ink)', paddingBottom: '8px' }}
       >
         {title}
       </h2>
-      <p className="text-sm leading-relaxed m-0" style={{ color: 'var(--hub-text)' }}>
+      <p className="text-sm leading-relaxed m-0" style={{ color: 'var(--hub-ink)' }}>
         {children}
       </p>
     </section>

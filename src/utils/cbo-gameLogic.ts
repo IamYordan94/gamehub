@@ -85,30 +85,7 @@ export function validateCboWord(
   return { isValid: true };
 }
 
-export function suggestNextStep(
-  currentWord: string,
-  targetWord: string,
-  allWords: string[]
-): string | null {
-  // Find a neighbor that shares more letters with the target
-  const currentSim = letterSimilarity(currentWord, targetWord);
-  let best: string | null = null;
-  let bestSim = currentSim;
-
-  for (const w of allWords) {
-    if (w === currentWord) continue;
-    if (hasOneLetterDifference(currentWord, w)) {
-      const sim = letterSimilarity(w, targetWord);
-      if (sim > bestSim) {
-        bestSim = sim;
-        best = w;
-      }
-    }
-  }
-  return best;
-}
-
-/** Returns any valid one-letter-change neighbor, excluding used words. Fallback when suggestNextStep finds nothing. */
+/** Returns any valid one-letter-change neighbor, excluding used words. */
 export function getAnyValidNeighbor(
   currentWord: string,
   allWords: string[],
@@ -132,11 +109,3 @@ export function getDifferingLetterIndex(currentWord: string, targetWord: string)
   return null;
 }
 
-function letterSimilarity(a: string, b: string): number {
-  if (a.length !== b.length) return 0;
-  let matches = 0;
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] === b[i]) matches++;
-  }
-  return matches / a.length;
-}

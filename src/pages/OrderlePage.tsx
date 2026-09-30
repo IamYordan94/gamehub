@@ -31,6 +31,7 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
   const [cardOpen, setCardOpen] = useState(false);
+  const [puzzleIdx, setPuzzleIdx] = useState(0);
 
   useEffect(() => {
     if (state?.won) markPlayed('orderle', todayISO());
@@ -40,6 +41,7 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
     const idx = practice ? Math.floor(Math.random() * ORDERLE_BANK.length) : getTodayIndex();
     const puzzle = ORDERLE_BANK[idx];
     const s = initOrderleState(puzzle, idx);
+    setPuzzleIdx(idx);
     setState(s);
     setLoading(false);
   }, [practice]);
@@ -90,8 +92,7 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
   const handleShare = useCallback(async () => {
     if (!state || !state.puzzle) return;
     const score = state.won ? `${state.attempts}/${state.maxAttempts}` : `X/${state.maxAttempts}`;
-    const idx = practice ? 0 : getTodayIndex();
-    const text = shareOrderleText(state.history, idx, score, state.puzzle.rule, state.optimal);
+    const text = shareOrderleText(state.history, puzzleIdx, score, state.puzzle.rule, state.optimal);
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -101,7 +102,7 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
-  }, [state, practice]);
+  }, [state, puzzleIdx]);
 
   if (loading) {
     return (
@@ -356,7 +357,7 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
         open={cardOpen}
         onClose={() => setCardOpen(false)}
         options={{
-          gameId: `orderle-${practice ? 0 : getTodayIndex()}`,
+          gameId: `orderle-${puzzleIdx}`,
           title: 'ORDERLE',
           accentColor: '#39c96b',
           lines: state && state.puzzle
@@ -370,7 +371,7 @@ export default function OrderlePage({ practice = false }: OrderlePageProps) {
         shareText={state && state.puzzle
           ? shareOrderleText(
               state.history,
-              practice ? 0 : getTodayIndex(),
+              puzzleIdx,
               state.won ? `${state.attempts}/${state.maxAttempts}` : `X/${state.maxAttempts}`,
               state.puzzle.rule,
               state.optimal,

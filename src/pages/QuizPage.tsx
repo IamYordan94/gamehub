@@ -13,7 +13,7 @@ import {
   getQuizNumber,
 } from '../utils/quizLogic';
 import { getQuizDone, saveQuizDone, bumpStreak, getStreak } from '../utils/quizStorage';
-import { getTodayDateStr } from '../utils/dailySeed';
+import { getTodayUTCStr } from '../utils/dailySeed';
 
 function difficultyDots(d: 1 | 2 | 3): string {
   return '●'.repeat(d) + '○'.repeat(3 - d);
@@ -29,7 +29,7 @@ export default function QuizPage() {
   const [loadError, setLoadError] = useState(false);
   const [streak, setStreak] = useState(getStreak());
 
-  const [date] = useState(() => getTodayDateStr());
+  const [date] = useState(() => getTodayUTCStr());
   const quizNum = getQuizNumber(date);
 
   // Load bank + build today's quiz (restore saved answers if already done)

@@ -43,6 +43,8 @@ function buildDailyQuiz(bank, dateStr) {
     const q = candidate[idx];
     picked.push(q);
     usedCats.add(q.category);
+    const poolIdx = pool.indexOf(q);
+    if (poolIdx !== -1) pool.splice(poolIdx, 1); // never repeat within the day (matches quizLogic.ts)
   }
   return picked.map((q) => {
     const optRng = seedRandom('qm-opt:' + q.id + ':' + dateStr);
@@ -54,7 +56,7 @@ function buildDailyQuiz(bank, dateStr) {
 // --- checks ---
 const cats = new Set(bank.questions.map((q) => q.category));
 console.log('categories in bank:', [...cats].join(', '));
-console.log('per-category counts:', cats.size, 'expected 7');
+console.log('per-category counts:', cats.size, 'expected 11');
 for (const c of cats) {
   const n = bank.questions.filter((q) => q.category === c).length;
   const d = [1, 2, 3].map((k) => bank.questions.filter((q) => q.category === c && q.difficulty === k).length).join('/');
@@ -87,6 +89,33 @@ for (let day = 0; day < 7; day++) {
   const dayCats = new Set(quiz.map((q) => q.category));
   console.log(`${dateStr}: 10 questions, ${dayCats.size} distinct categories, answer ok`);
 }
+
+// full-year scan: no duplicated question may appear in any daily set (B4 regression guard)
+let dupDays = 0;
+for (let day = 0; day < 365; day++) {
+  const d = new Date(Date.UTC(2026, 7, 23 + day));
+  const dateStr = d.toISOString().slice(0, 10);
+  const quiz = buildDailyQuiz(bank, dateStr);
+  if (new Set(quiz.map((q) => q.id)).size !== 10) {
+    dupDays++;
+    console.log('DUPLICATE day found:', dateStr);
+  }
+}
+if (dupDays > 0) throw new Error(dupDays + ' day(s) with a duplicated question in a 365-day scan');
+console.log('365-day scan: 0 duplicate days ✓');
+
+// CATEGORY_META (quiz UI) must stay in sync with the categories present in the bank
+const logicSrc = readFileSync('src/utils/quizLogic.ts', 'utf8');
+const metaMatch = logicSrc.match(/CATEGORY_META[^{]*\{([\s\S]*?)\n\};/);
+if (!metaMatch) throw new Error('could not parse CATEGORY_META from src/utils/quizLogic.ts');
+const metaKeys = [...metaMatch[1].matchAll(/([a-z]+):\s*\{/g)].map((m) => m[1]);
+const bankKeys = [...cats].sort();
+const missing = bankKeys.filter((c) => !metaKeys.includes(c));
+const extra = metaKeys.filter((c) => !bankKeys.includes(c));
+if (missing.length || extra.length) {
+  throw new Error('CATEGORY_META / bank mismatch: missing=' + missing.join(',') + ' extra=' + extra.join(','));
+}
+console.log('CATEGORY_META sync: ' + metaKeys.length + ' categories match the bank ✓');
 
 // deterministic: same date twice -> same quiz
 const a = buildDailyQuiz(bank, '2026-08-24');

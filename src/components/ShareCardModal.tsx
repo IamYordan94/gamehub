@@ -119,7 +119,7 @@ export default function ShareCardModal({ open, onClose, options, shareText }: Sh
                 onClick={onClose}
                 aria-label="Close"
                 style={{
-                  background: 'var(--hub-surface, #ffffff)',
+                  background: 'var(--hub-panel)',
                   border: '2px solid #141414',
                   borderRadius: '6px',
                   width: '30px',
@@ -166,7 +166,7 @@ export default function ShareCardModal({ open, onClose, options, shareText }: Sh
                 onClick={handleWhatsApp}
                 style={{
                   flex: 1,
-                  background: 'var(--hub-surface, #ffffff)',
+                  background: 'var(--hub-panel)',
                   color: '#141414',
                   border: '2.5px solid #141414',
                   borderRadius: '8px',
@@ -183,7 +183,7 @@ export default function ShareCardModal({ open, onClose, options, shareText }: Sh
                 onClick={handleCopy}
                 style={{
                   flex: 1,
-                  background: 'var(--hub-surface, #ffffff)',
+                  background: 'var(--hub-panel)',
                   color: '#141414',
                   border: '2.5px solid #141414',
                   borderRadius: '8px',

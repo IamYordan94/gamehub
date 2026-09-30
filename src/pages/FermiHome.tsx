@@ -32,7 +32,7 @@ export default function FermiHome() {
   return (
     <div className="relative min-h-screen" style={{ background: 'var(--fm-bg)', color: 'var(--fm-text)' }}>
       <header className="sticky top-0 z-20 px-4 flex items-center justify-between"
-        style={{ background: 'var(--fm-nav)', borderBottom: '2.5px solid var(--fm-border)', minHeight: '52px' }}>
+        style={{ background: 'var(--fm-nav)', borderBottom: '2.5px solid var(--fm-ink)', minHeight: '52px' }}>
         <Link to="/" className="text-sm font-semibold" style={{ color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>
           ← Hub
         </Link>

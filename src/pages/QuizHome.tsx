@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CATEGORY_META, QUIZ_PER_DAY, getQuizNumber } from '../utils/quizLogic';
 import { getStreak } from '../utils/quizStorage';
-import { getTodayDateStr } from '../utils/dailySeed';
+import { getTodayUTCStr } from '../utils/dailySeed';
 
 export default function QuizHome() {
-  const date = getTodayDateStr();
+  const date = getTodayUTCStr();
   const num = getQuizNumber(date);
   const streak = getStreak();
   const [showHowToPlay, setShowHowToPlay] = useState(false);
