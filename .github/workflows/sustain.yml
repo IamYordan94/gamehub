@@ -45,9 +45,13 @@ jobs:
         run: npm ci
 
       - name: Runway before
+        shell: bash -o pipefail {0}
         run: node scripts/sustain/runway.mjs | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Top up every game
+        # pipefail matters: without it `| tee` hides a failing keeper behind tee's
+        # own exit code, so a game that could not be refilled would pass silently.
+        shell: bash -o pipefail {0}
         run: node scripts/sustain/sustain-all.mjs --apply | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Validate the banks the repo owns
@@ -60,6 +64,7 @@ jobs:
         run: npm run build
 
       - name: Runway after
+        shell: bash -o pipefail {0}
         run: node scripts/sustain/runway.mjs --check | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Commit and push when content changed
