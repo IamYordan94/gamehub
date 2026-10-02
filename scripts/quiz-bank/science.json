@@ -1314,5 +1314,57 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "category": "science",
+    "id": "sci-106",
+    "question": "Carbon dioxide has which chemical formula?",
+    "options": [
+      "CO2",
+      "O2",
+      "H2O",
+      "CH4"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "category": "science",
+    "id": "sci-107",
+    "question": "How many teeth does a typical adult human have?",
+    "options": [
+      "24",
+      "28",
+      "30",
+      "32"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "category": "science",
+    "id": "sci-108",
+    "question": "How many pairs of ribs does a typical human have?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "science",
+    "id": "sci-109",
+    "question": "Which term describes a solid turning straight into a gas?",
+    "options": [
+      "Sublimation",
+      "Condensation",
+      "Evaporation",
+      "Deposition"
+    ],
+    "answer": 0,
+    "difficulty": 3
   }
 ]

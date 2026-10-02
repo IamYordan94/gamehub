@@ -1312,5 +1312,57 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "category": "animals",
+    "id": "anim-106",
+    "question": "Which white bird is traditionally used as a symbol of peace?",
+    "options": [
+      "Eagle",
+      "Owl",
+      "Dove",
+      "Crow"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "category": "animals",
+    "id": "anim-107",
+    "question": "What color are flamingo chicks when they hatch?",
+    "options": [
+      "Pink",
+      "Grey-white",
+      "Black",
+      "Yellow"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "animals",
+    "id": "anim-108",
+    "question": "Which Arctic sea mammal is famous for the long spiral tusk protruding from its head?",
+    "options": [
+      "Walrus",
+      "Narwhal",
+      "Manatee",
+      "Dugong"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "animals",
+    "id": "anim-109",
+    "question": "Which living bird has the largest wingspan of any bird?",
+    "options": [
+      "Bald eagle",
+      "Andean condor",
+      "Wandering albatross",
+      "Pelican"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

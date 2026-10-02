@@ -1,0 +1,201 @@
+[
+  {
+    "category": "cooking",
+    "rule": "Making a basic vinaigrette",
+    "items": [
+      "whisk vinegar with salt until the salt dissolves",
+      "whisk in a little mustard",
+      "slowly stream in the oil while whisking",
+      "taste and adjust the balance",
+      "dress the salad just before serving"
+    ],
+    "reveal": "Mustard is an emulsifier: it keeps the oil and vinegar suspended instead of separating. Salting the vinegar first seasons the whole dressing evenly.",
+    "citation": "https://www.seriouseats.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "cooking",
+    "rule": "Resting and carving a roast",
+    "items": [
+      "take the roast out of the oven",
+      "rest it for 10 to 20 minutes",
+      "move it to a board with a juice channel",
+      "slice across the grain",
+      "serve straight away"
+    ],
+    "reveal": "Resting lets the muscle fibres relax and reabsorb juices; carving too early loses them to the board. Cutting across the grain shortens the tough fibres.",
+    "citation": "https://www.seriouseats.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "science",
+    "rule": "Life cycle of a butterfly",
+    "items": [
+      "egg",
+      "larva (caterpillar)",
+      "pupa (chrysalis)",
+      "adult butterfly"
+    ],
+    "reveal": "Complete metamorphosis: the caterpillar's tissues are largely rebuilt inside the pupa. A monarch takes about a month from egg to adult.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "science",
+    "rule": "How a hurricane forms",
+    "items": [
+      "warm ocean water evaporates",
+      "the moist air rises and cools",
+      "thunderstorms cluster and organise",
+      "a low-pressure centre forms",
+      "spiral bands wrap around the clear eye",
+      "landfall cuts off the energy source"
+    ],
+    "reveal": "The fuel is warm surface water — that is why hurricanes weaken quickly over land, and why they cannot form within about 5° of the equator, where there is no Coriolis force to spin them up.",
+    "citation": "https://www.noaa.gov/",
+    "difficulty": 3
+  },
+  {
+    "category": "history",
+    "rule": "The first seventy years of human flight",
+    "items": [
+      "the Wright brothers' first powered flight (1903)",
+      "Lindbergh crosses the Atlantic alone (1927)",
+      "the first jet airliner enters service (1952)",
+      "the Boeing 747 enters service (1970)",
+      "Concorde enters passenger service (1976)"
+    ],
+    "reveal": "From a 12-second hop to a scheduled supersonic service in 73 years. Two of those aircraft — the 747 and Concorde — were designed in the same decade and flew for the next half century.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 2
+  },
+  {
+    "category": "history",
+    "rule": "The fall of the Berlin Wall and reunification",
+    "items": [
+      "reform begins in the Soviet Union",
+      "Hungary opens its border to the West (1989)",
+      "mass protests spread across East Germany",
+      "the Wall's crossings are opened (9 November 1989)",
+      "Germany is formally reunified (3 October 1990)"
+    ],
+    "reveal": "The Wall fell because of a press conference: a spokesman misread a note about relaxed travel rules and said they took effect immediately, and tens of thousands went to the checkpoints that evening.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 2
+  },
+  {
+    "category": "grammar",
+    "rule": "Ordering the parts of a formal letter",
+    "items": [
+      "sender's address",
+      "date",
+      "recipient's address",
+      "salutation",
+      "body of the letter",
+      "closing and signature"
+    ],
+    "reveal": "The block ordering is not arbitrary: the reader learns who is writing, when, and to whom before reading a word of the argument. Everything after the signature — enclosures, postscripts — sits outside the main body.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "grammar",
+    "rule": "Structuring a persuasive speech",
+    "items": [
+      "open by stating the purpose",
+      "establish the problem",
+      "give evidence and reasoning",
+      "present the strongest point",
+      "issue a call to action",
+      "close with a memorable line"
+    ],
+    "reveal": "Save the strongest argument for second-to-last: an audience remembers the middle of a speech least. The close has to be quotable, because that is the line they carry out of the room.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 2
+  },
+  {
+    "category": "everyday",
+    "rule": "Tying a shoelace with the loop method",
+    "items": [
+      "cross the two laces",
+      "pass one lace under the other and pull tight",
+      "form a loop with each lace",
+      "cross the loops over each other",
+      "push one loop through the hole",
+      "pull both loops to tighten"
+    ],
+    "reveal": "The 'bunny ears' method works for children, but the same knot has a faster one-loop variant. A knot that comes undone is usually an imbalance knot — the starting cross is backwards.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "everyday",
+    "rule": "Renewing a passport",
+    "items": [
+      "check the expiry date and the lead time",
+      "get a compliant photograph",
+      "complete the application form",
+      "pay the fee",
+      "submit the application",
+      "wait for processing, then collect or receive it"
+    ],
+    "reveal": "Many countries require the passport to be valid for six months beyond your travel date, so the deadline is earlier than the printed expiry. Photo rejections are the single most common cause of delay.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "mixed",
+    "rule": "Units of digital storage, smallest to largest",
+    "items": [
+      "bit",
+      "byte",
+      "kilobyte",
+      "megabyte",
+      "gigabyte",
+      "terabyte"
+    ],
+    "reveal": "Eight bits to a byte. Storage is decimal (1,000) while memory is binary (1,024), which is why a '500 GB' drive shows up as roughly 465 GB in an operating system.",
+    "citation": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+    "difficulty": 1
+  },
+  {
+    "category": "mixed",
+    "rule": "Periods of the Mesozoic Era, earliest to latest",
+    "items": [
+      "Triassic",
+      "Jurassic",
+      "Cretaceous"
+    ],
+    "reveal": "Triassic, Jurassic, Cretaceous — the three periods that together make up the Mesozoic, ending 66 million years ago with the impact that ended the non-avian dinosaurs.",
+    "citation": "https://www.britannica.com/science/geologic-time",
+    "difficulty": 2
+  },
+  {
+    "category": "biology",
+    "rule": "Development of a honey bee",
+    "items": [
+      "egg",
+      "larva",
+      "pupa",
+      "adult bee"
+    ],
+    "reveal": "Complete metamorphosis. Whether the adult emerges as a worker or a queen is decided by diet: royal jelly throughout the larval stage produces a queen.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "biology",
+    "rule": "One heartbeat through the heart's chambers",
+    "items": [
+      "deoxygenated blood enters the right atrium",
+      "it flows into the right ventricle",
+      "the right ventricle pumps it to the lungs",
+      "oxygenated blood returns to the left atrium",
+      "it flows into the left ventricle",
+      "the left ventricle pumps it out through the aorta"
+    ],
+    "reveal": "The left ventricle has a thicker wall than the right because it drives blood through the entire body rather than only to the lungs. Valves between the chambers stop any backflow.",
+    "citation": "https://www.nhlbi.nih.gov/health/heart",
+    "difficulty": 2
+  }
+]

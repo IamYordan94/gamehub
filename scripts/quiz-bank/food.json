@@ -1310,5 +1310,57 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "category": "food",
+    "id": "food-106",
+    "question": "Coleslaw is traditionally made mainly from which shredded vegetable?",
+    "options": [
+      "Lettuce",
+      "Cabbage",
+      "Spinach",
+      "Kale"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "food",
+    "id": "food-107",
+    "question": "Which fruit gives the classic flavour of a piña colada?",
+    "options": [
+      "Mango",
+      "Pineapple",
+      "Papaya",
+      "Banana"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "food",
+    "id": "food-108",
+    "question": "Which alcoholic drink is made by fermenting honey mixed with water?",
+    "options": [
+      "Mead",
+      "Cider",
+      "Sake",
+      "Kombucha"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "category": "food",
+    "id": "food-109",
+    "question": "Which variety of rice is traditionally used to make Italian risotto?",
+    "options": [
+      "Basmati",
+      "Jasmine",
+      "Arborio",
+      "Wild"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

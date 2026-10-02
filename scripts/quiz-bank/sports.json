@@ -1352,5 +1352,57 @@
     ],
     "answer": 0,
     "difficulty": 3
+  },
+  {
+    "category": "sports",
+    "id": "spo-106",
+    "question": "How many bases are there on a baseball diamond?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "sports",
+    "id": "spo-107",
+    "question": "The 'butterfly' is a competitive stroke in which sport?",
+    "options": [
+      "Swimming",
+      "Rowing",
+      "Diving",
+      "Gymnastics"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "category": "sports",
+    "id": "spo-108",
+    "question": "The Ashes is a long-running series between which two cricket nations?",
+    "options": [
+      "India and Pakistan",
+      "England and Australia",
+      "South Africa and New Zealand",
+      "West Indies and Sri Lanka"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "sports",
+    "id": "spo-109",
+    "question": "In American football, how many yards long is the field between the two goal lines?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "110"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

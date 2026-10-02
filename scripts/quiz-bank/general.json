@@ -1613,5 +1613,57 @@
     ],
     "answer": 2,
     "difficulty": 3
+  },
+  {
+    "category": "general",
+    "id": "gen-406",
+    "question": "How many hours are there in a full day?",
+    "options": [
+      "12",
+      "24",
+      "36",
+      "48"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "general",
+    "id": "gen-407",
+    "question": "In chess, which piece is the only one that can jump over other pieces?",
+    "options": [
+      "Bishop",
+      "Rook",
+      "Knight",
+      "Queen"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "general",
+    "id": "gen-408",
+    "question": "How many cards are in a standard deck, not counting jokers?",
+    "options": [
+      "52",
+      "48",
+      "54",
+      "40"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "category": "general",
+    "id": "gen-409",
+    "question": "Which planet is the only one in our Solar System not named after a Greek or Roman god?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Earth",
+      "Jupiter"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

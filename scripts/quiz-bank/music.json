@@ -1302,5 +1302,57 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "category": "music",
+    "id": "mus-106",
+    "question": "What do we call the person who directs an orchestra?",
+    "options": [
+      "Composer",
+      "Conductor",
+      "Soloist",
+      "Producer"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "music",
+    "id": "mus-107",
+    "question": "Which band released the 1973 album 'The Dark Side of the Moon'?",
+    "options": [
+      "The Rolling Stones",
+      "Led Zeppelin",
+      "Pink Floyd",
+      "The Who"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "music",
+    "id": "mus-108",
+    "question": "Who was the lead singer and guitarist of the band Nirvana?",
+    "options": [
+      "Eddie Vedder",
+      "Kurt Cobain",
+      "Chris Cornell",
+      "Dave Grohl"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "music",
+    "id": "mus-109",
+    "question": "Which composer wrote the '1812 Overture'?",
+    "options": [
+      "Rimsky-Korsakov",
+      "Mussorgsky",
+      "Tchaikovsky",
+      "Borodin"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

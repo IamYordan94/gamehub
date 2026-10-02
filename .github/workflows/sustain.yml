@@ -1,0 +1,76 @@
+name: Content sustainers
+
+# Keeps every one of the seven daily games supplied with puzzles.
+#
+# Why this exists: each game draws from a fixed list on a date-derived rotation,
+# so a list that stops growing becomes a game that repeats itself, and the one
+# calendar game (Clear the String) stops serving puzzles entirely once its last
+# dated puzzle passes. The keepers add content from in-repo fact tables, and the
+# runway step fails the job if any game ends up below the floor.
+#
+# A green run that changes nothing means every game was already deep enough.
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'   # Mondays 04:00 UTC
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Report only — do not write or push'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sustainers
+  cancel-in-progress: false
+
+jobs:
+  sustain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Runway before
+        run: node scripts/sustain/runway.mjs | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Top up every game
+        run: node scripts/sustain/sustain-all.mjs --apply | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Validate the banks the repo owns
+        run: |
+          node scripts/merge-quiz-bank.mjs
+          node scripts/test-quiz-logic.mjs
+          node scripts/sustain/keepers/cbo.mjs
+
+      - name: Build (fails on bad ORDERLE/FERMI data)
+        run: npm run build
+
+      - name: Runway after
+        run: node scripts/sustain/runway.mjs --check | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and push when content changed
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run != true || github.event_name == 'schedule' }}
+        run: |
+          if git diff --quiet; then
+            echo "No content changes — every game was already above the floor."
+            exit 0
+          fi
+          git config user.name  "content-sustainer[bot]"
+          git config user.email "content-sustainer@users.noreply.github.com"
+          git add -A
+          git commit -m "content: sustainer top-up (runway extended)"
+          git push

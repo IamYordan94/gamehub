@@ -1,0 +1,200 @@
+[
+  {
+    "category": "art",
+    "units": "keys",
+    "prompt": "How many keys are on a standard piano?",
+    "answer": 88,
+    "reveal": "88 keys: 52 white and 36 black, spanning just over seven octaves. Older pianos were built with 85 or fewer.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "art",
+    "units": "strings",
+    "prompt": "How many strings does a standard violin have?",
+    "answer": 4,
+    "reveal": "Four strings — G, D, A and E — tuned in fifths. Fewer strings than a guitar, but a far wider expressive range in trained hands.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "music",
+    "units": "strings",
+    "prompt": "How many strings does a standard acoustic guitar have?",
+    "answer": 6,
+    "reveal": "Six, tuned E–A–D–G–B–E. Twelve-string guitars double them in pairs, with the lower four pairs tuned in octaves.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 1
+  },
+  {
+    "category": "sports",
+    "units": "players",
+    "prompt": "How many players from one team are on a football (soccer) pitch at a time?",
+    "answer": 11,
+    "reveal": "Eleven per side including the goalkeeper. Law 3 of the Laws of the Game fixes the number; a match cannot start with fewer than seven.",
+    "citation": "https://www.fifa.com/en/tournaments",
+    "difficulty": 1
+  },
+  {
+    "category": "sports",
+    "units": "squares",
+    "prompt": "How many squares are on a standard chessboard?",
+    "answer": 64,
+    "reveal": "64 squares in an 8×8 grid, 32 light and 32 dark. A full set of move sequences is measured in the tens of billions of possibilities after only a few moves.",
+    "citation": "https://www.fide.com/",
+    "difficulty": 2
+  },
+  {
+    "category": "sports",
+    "units": "players",
+    "prompt": "How many players from one team are on a basketball court at a time?",
+    "answer": 5,
+    "reveal": "Five per team. The sport is built around that number: with ten players on a much smaller floor than football, spacing is everything.",
+    "citation": "https://www.olympics.com/en/olympic-games",
+    "difficulty": 1
+  },
+  {
+    "category": "sports",
+    "units": "rings",
+    "prompt": "How many rings are on the Olympic flag?",
+    "answer": 5,
+    "reveal": "Five interlocking rings on a white field, representing the five inhabited continents that took part when Pierre de Coubertin designed it in 1913.",
+    "citation": "https://www.olympics.com/en/olympic-games",
+    "difficulty": 1
+  },
+  {
+    "category": "sports",
+    "units": "gold medals",
+    "prompt": "How many Olympic gold medals did swimmer Michael Phelps win?",
+    "answer": 23,
+    "reveal": "23 golds across four Games, plus 3 silver and 2 bronze — 28 medals in total, more than any other Olympian.",
+    "citation": "https://www.olympics.com/en/olympic-games",
+    "difficulty": 2
+  },
+  {
+    "category": "time",
+    "units": "minutes",
+    "prompt": "How many minutes are in one day?",
+    "answer": 1440,
+    "reveal": "24 × 60 = 1,440 minutes. A useful anchor: 1,000 minutes is a bit under 17 hours, and a million seconds is only about 11.6 days.",
+    "citation": "https://www.nist.gov/pml/time-and-frequency-division",
+    "difficulty": 1
+  },
+  {
+    "category": "time",
+    "units": "days",
+    "prompt": "How many days are in a leap year?",
+    "answer": 366,
+    "reveal": "366 — one extra day in February. Leap years keep the calendar aligned with Earth's 365.25-day orbit; century years skip the leap day unless divisible by 400.",
+    "citation": "https://www.nist.gov/pml/time-and-frequency-division",
+    "difficulty": 1
+  },
+  {
+    "category": "demographics",
+    "units": "member states",
+    "prompt": "How many member states are in the United Nations?",
+    "answer": 193,
+    "reveal": "193 member states, plus two permanent observer states. South Sudan was the most recent addition, in 2011.",
+    "citation": "https://www.un.org/en/about-us/member-states",
+    "difficulty": 2
+  },
+  {
+    "category": "demographics",
+    "units": "people",
+    "prompt": "How many people live in the Tokyo metropolitan area?",
+    "answer": 37000000,
+    "reveal": "About 37 million people — the largest urban agglomeration on Earth, and more than the entire population of Canada.",
+    "citation": "https://www.un.org/en/global-issues/population",
+    "difficulty": 3
+  },
+  {
+    "category": "space",
+    "units": "moons",
+    "prompt": "How many moons does Mars have?",
+    "answer": 2,
+    "reveal": "Two: Phobos and Deimos. Both are tiny, irregular lumps — probably captured asteroids — and Phobos is slowly spiralling in toward the planet.",
+    "citation": "https://solarsystem.nasa.gov/planets/overview/",
+    "difficulty": 1
+  },
+  {
+    "category": "space",
+    "units": "km",
+    "prompt": "What is the average distance from Earth to the Sun?",
+    "answer": 149600000,
+    "reveal": "About 149.6 million km — one astronomical unit, now fixed by definition at exactly 149,597,870.7 km. Sunlight covers it in about 8 minutes 20 seconds.",
+    "citation": "https://solarsystem.nasa.gov/planets/overview/",
+    "difficulty": 2
+  },
+  {
+    "category": "biology",
+    "units": "teeth",
+    "prompt": "How many teeth does a typical adult human have?",
+    "answer": 32,
+    "reveal": "32 including the four wisdom teeth — 16 upper and 16 lower. Most adults lose or have the wisdom teeth removed, leaving 28.",
+    "citation": "https://www.cdc.gov/oral-health",
+    "difficulty": 1
+  },
+  {
+    "category": "biology",
+    "units": "chambers",
+    "prompt": "How many chambers does the human heart have?",
+    "answer": 4,
+    "reveal": "Four: two atria that receive blood and two ventricles that pump it. The left ventricle does the heavy lifting, driving blood through the whole body.",
+    "citation": "https://www.nhlbi.nih.gov/health/heart",
+    "difficulty": 1
+  },
+  {
+    "category": "biology",
+    "units": "chromosomes",
+    "prompt": "How many chromosomes are in a typical human cell?",
+    "answer": 46,
+    "reveal": "46 chromosomes in 23 pairs — one of each pair from each parent. Sex cells carry 23; a fertilised egg restores the full set.",
+    "citation": "https://www.genome.gov/about-genomics/fact-sheets",
+    "difficulty": 2
+  },
+  {
+    "category": "biology",
+    "units": "bones",
+    "prompt": "How many bones are in the adult human foot?",
+    "answer": 26,
+    "reveal": "26 bones per foot — over a quarter of all the bones in the body. Babies start with more; several fuse during childhood.",
+    "citation": "https://www.britannica.com/science/human-skeleton",
+    "difficulty": 3
+  },
+  {
+    "category": "biology",
+    "units": "km/h",
+    "prompt": "How fast can a cheetah run at full sprint?",
+    "answer": 100,
+    "reveal": "Around 100 km/h over short bursts — the fastest land animal. It can only hold that for a few hundred metres before overheating.",
+    "citation": "https://www.iucnredlist.org/",
+    "difficulty": 2
+  },
+  {
+    "category": "geography",
+    "units": "m",
+    "prompt": "How tall is the Burj Khalifa?",
+    "answer": 828,
+    "reveal": "828 m — more than 160 storeys, and the tallest structure ever built. Its own weight required changes mid-construction because the original design was unstable at that height.",
+    "citation": "https://www.burjkhalifa.ae/en/",
+    "difficulty": 2
+  },
+  {
+    "category": "geography",
+    "units": "km",
+    "prompt": "How long is the Great Wall of China, measured end to end?",
+    "answer": 21196,
+    "reveal": "About 21,196 km counting every branch and the trenches and natural barriers — the single-line main wall is roughly 8,850 km.",
+    "citation": "https://whc.unesco.org/en/list/438",
+    "difficulty": 3
+  },
+  {
+    "category": "art",
+    "units": "lines",
+    "prompt": "How many lines are in a Shakespearean sonnet?",
+    "answer": 14,
+    "reveal": "14 lines in three quatrains plus a couplet, rhymed abab cdcd efef gg. The turn — the argument's reversal — usually lands at line 9 or 13.",
+    "citation": "https://www.britannica.com/",
+    "difficulty": 2
+  }
+]

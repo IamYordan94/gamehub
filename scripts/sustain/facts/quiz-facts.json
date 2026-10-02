@@ -1,0 +1,574 @@
+[
+  {
+    "category": "general",
+    "id": "gen-406",
+    "question": "How many hours are there in a full day?",
+    "options": [
+      "12",
+      "24",
+      "36",
+      "48"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "general",
+    "id": "gen-407",
+    "question": "In chess, which piece is the only one that can jump over other pieces?",
+    "options": [
+      "Bishop",
+      "Rook",
+      "Knight",
+      "Queen"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "general",
+    "id": "gen-408",
+    "question": "How many cards are in a standard deck, not counting jokers?",
+    "options": [
+      "52",
+      "48",
+      "54",
+      "40"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "category": "general",
+    "id": "gen-409",
+    "question": "Which planet is the only one in our Solar System not named after a Greek or Roman god?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Earth",
+      "Jupiter"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "category": "sports",
+    "id": "spo-106",
+    "question": "How many bases are there on a baseball diamond?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "sports",
+    "id": "spo-107",
+    "question": "The 'butterfly' is a competitive stroke in which sport?",
+    "options": [
+      "Swimming",
+      "Rowing",
+      "Diving",
+      "Gymnastics"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "category": "sports",
+    "id": "spo-108",
+    "question": "The Ashes is a long-running series between which two cricket nations?",
+    "options": [
+      "India and Pakistan",
+      "England and Australia",
+      "South Africa and New Zealand",
+      "West Indies and Sri Lanka"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "sports",
+    "id": "spo-109",
+    "question": "In American football, how many yards long is the field between the two goal lines?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "110"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "category": "movies",
+    "id": "mov-106",
+    "question": "Which superhero is nicknamed 'the Man of Steel'?",
+    "options": [
+      "Batman",
+      "Superman",
+      "Spider-Man",
+      "Iron Man"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "movies",
+    "id": "mov-107",
+    "question": "Which animation studio produced the first fully computer-animated feature film, 'Toy Story'?",
+    "options": [
+      "DreamWorks Animation",
+      "Studio Ghibli",
+      "Pixar",
+      "Blue Sky Studios"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "movies",
+    "id": "mov-108",
+    "question": "Which actor plays Ethan Hunt in the 'Mission: Impossible' film series?",
+    "options": [
+      "Brad Pitt",
+      "Matt Damon",
+      "Tom Cruise",
+      "Keanu Reeves"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "movies",
+    "id": "mov-109",
+    "question": "Which director made the films 'Alien' (1979) and 'Blade Runner' (1982)?",
+    "options": [
+      "Ridley Scott",
+      "James Cameron",
+      "John Carpenter",
+      "George Lucas"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "category": "geography",
+    "id": "geo-106",
+    "question": "Havana is the capital of which country?",
+    "options": [
+      "Jamaica",
+      "Cuba",
+      "Haiti",
+      "Panama"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "geography",
+    "id": "geo-107",
+    "question": "Which European country is often described as being shaped like a boot?",
+    "options": [
+      "Italy",
+      "Spain",
+      "Greece",
+      "Portugal"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "category": "geography",
+    "id": "geo-108",
+    "question": "Abu Dhabi is the capital of which country?",
+    "options": [
+      "Saudi Arabia",
+      "Qatar",
+      "The United Arab Emirates",
+      "Bahrain"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "geography",
+    "id": "geo-109",
+    "question": "Petra, famous for buildings carved into rose-red rock, is found in which country?",
+    "options": [
+      "Lebanon",
+      "Syria",
+      "Jordan",
+      "Iraq"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "category": "science",
+    "id": "sci-106",
+    "question": "Carbon dioxide has which chemical formula?",
+    "options": [
+      "CO2",
+      "O2",
+      "H2O",
+      "CH4"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "category": "science",
+    "id": "sci-107",
+    "question": "How many teeth does a typical adult human have?",
+    "options": [
+      "24",
+      "28",
+      "30",
+      "32"
+    ],
+    "answer": 3,
+    "difficulty": 2
+  },
+  {
+    "category": "science",
+    "id": "sci-108",
+    "question": "How many pairs of ribs does a typical human have?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "science",
+    "id": "sci-109",
+    "question": "Which term describes a solid turning straight into a gas?",
+    "options": [
+      "Sublimation",
+      "Condensation",
+      "Evaporation",
+      "Deposition"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "category": "history",
+    "id": "his-106",
+    "question": "In which country did the Renaissance begin?",
+    "options": [
+      "France",
+      "Italy",
+      "Spain",
+      "Greece"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "history",
+    "id": "his-107",
+    "question": "Marco Polo was a merchant and explorer from which Italian city-state?",
+    "options": [
+      "Genoa",
+      "Florence",
+      "Venice",
+      "Milan"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "history",
+    "id": "his-108",
+    "question": "The ancient civilization of Mesopotamia was located mainly in which modern country?",
+    "options": [
+      "Iran",
+      "Egypt",
+      "Iraq",
+      "Turkey"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "history",
+    "id": "his-109",
+    "question": "Which ancient Greek mathematician is famous for a theorem about right-angled triangles?",
+    "options": [
+      "Archimedes",
+      "Pythagoras",
+      "Euclid",
+      "Aristotle"
+    ],
+    "answer": 1,
+    "difficulty": 3
+  },
+  {
+    "category": "music",
+    "id": "mus-106",
+    "question": "What do we call the person who directs an orchestra?",
+    "options": [
+      "Composer",
+      "Conductor",
+      "Soloist",
+      "Producer"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "music",
+    "id": "mus-107",
+    "question": "Which band released the 1973 album 'The Dark Side of the Moon'?",
+    "options": [
+      "The Rolling Stones",
+      "Led Zeppelin",
+      "Pink Floyd",
+      "The Who"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "music",
+    "id": "mus-108",
+    "question": "Who was the lead singer and guitarist of the band Nirvana?",
+    "options": [
+      "Eddie Vedder",
+      "Kurt Cobain",
+      "Chris Cornell",
+      "Dave Grohl"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "music",
+    "id": "mus-109",
+    "question": "Which composer wrote the '1812 Overture'?",
+    "options": [
+      "Rimsky-Korsakov",
+      "Mussorgsky",
+      "Tchaikovsky",
+      "Borodin"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "category": "technology",
+    "id": "tech-106",
+    "question": "On a computer keyboard, which key moves the cursor to a new line?",
+    "options": [
+      "Shift",
+      "Tab",
+      "Enter",
+      "Esc"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "category": "technology",
+    "id": "tech-107",
+    "question": "On Windows, a file ending in '.exe' is what kind of file?",
+    "options": [
+      "A spreadsheet",
+      "An executable program",
+      "An image",
+      "A compressed archive"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "technology",
+    "id": "tech-108",
+    "question": "Compared with HTTP, what does the extra 'S' in HTTPS indicate?",
+    "options": [
+      "Nothing",
+      "A secure (encrypted) connection",
+      "Faster speed",
+      "Larger file size"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "technology",
+    "id": "tech-109",
+    "question": "In computer networking, what does the acronym 'LAN' stand for?",
+    "options": [
+      "Local Area Network",
+      "Long Access Node",
+      "Linked Application Network",
+      "Large Array Node"
+    ],
+    "answer": 0,
+    "difficulty": 3
+  },
+  {
+    "category": "food",
+    "id": "food-106",
+    "question": "Coleslaw is traditionally made mainly from which shredded vegetable?",
+    "options": [
+      "Lettuce",
+      "Cabbage",
+      "Spinach",
+      "Kale"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "food",
+    "id": "food-107",
+    "question": "Which fruit gives the classic flavour of a piña colada?",
+    "options": [
+      "Mango",
+      "Pineapple",
+      "Papaya",
+      "Banana"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "food",
+    "id": "food-108",
+    "question": "Which alcoholic drink is made by fermenting honey mixed with water?",
+    "options": [
+      "Mead",
+      "Cider",
+      "Sake",
+      "Kombucha"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "category": "food",
+    "id": "food-109",
+    "question": "Which variety of rice is traditionally used to make Italian risotto?",
+    "options": [
+      "Basmati",
+      "Jasmine",
+      "Arborio",
+      "Wild"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "category": "art",
+    "id": "art-106",
+    "question": "Origami is the traditional Japanese art of folding what?",
+    "options": [
+      "Paper",
+      "Fabric",
+      "Clay",
+      "Wood"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "category": "art",
+    "id": "art-107",
+    "question": "Which author wrote 'Brave New World'?",
+    "options": [
+      "George Orwell",
+      "Ray Bradbury",
+      "Aldous Huxley",
+      "H.G. Wells"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "art",
+    "id": "art-108",
+    "question": "Which artist painted 'The Son of Man', a man with a green apple covering his face?",
+    "options": [
+      "Salvador Dalí",
+      "René Magritte",
+      "Pablo Picasso",
+      "Joan Miró"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "art",
+    "id": "art-109",
+    "question": "Which Russian author wrote 'Anna Karenina'?",
+    "options": [
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Leo Tolstoy",
+      "Ivan Turgenev"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  },
+  {
+    "category": "animals",
+    "id": "anim-106",
+    "question": "Which white bird is traditionally used as a symbol of peace?",
+    "options": [
+      "Eagle",
+      "Owl",
+      "Dove",
+      "Crow"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "category": "animals",
+    "id": "anim-107",
+    "question": "What color are flamingo chicks when they hatch?",
+    "options": [
+      "Pink",
+      "Grey-white",
+      "Black",
+      "Yellow"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "animals",
+    "id": "anim-108",
+    "question": "Which Arctic sea mammal is famous for the long spiral tusk protruding from its head?",
+    "options": [
+      "Walrus",
+      "Narwhal",
+      "Manatee",
+      "Dugong"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "animals",
+    "id": "anim-109",
+    "question": "Which living bird has the largest wingspan of any bird?",
+    "options": [
+      "Bald eagle",
+      "Andean condor",
+      "Wandering albatross",
+      "Pelican"
+    ],
+    "answer": 2,
+    "difficulty": 3
+  }
+]

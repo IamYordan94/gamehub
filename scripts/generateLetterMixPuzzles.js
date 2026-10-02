@@ -117,17 +117,58 @@ function main() {
   }
   console.log('Loaded words by length:', Object.keys(wordsByLen).map((k) => `${k}:${wordsByLen[k].length}`).join(', '));
 
-  const puzzles = [];
-  const startDate = new Date('2025-01-01');
-  const endDate = new Date('2026-12-31');
-  const days = Math.ceil((endDate - startDate) / (24 * 60 * 60 * 1000)) + 1;
+  // CLI:
+  //   --from=YYYY-MM-DD  --to=YYYY-MM-DD   range to cover
+  //   --append                              keep the published puzzles untouched and
+  //                                         generate only the dates that are missing
+  //
+  // Append is the ONLY safe way to extend this file. Regenerating the whole range
+  // looks deterministic but is not: word picks index into the CURRENT dictionary
+  // (public/data/words.json), and that file grows over time, so a full re-run can
+  // silently rewrite history. The generator's own puzzles are therefore treated as
+  // immutable once published.
+  const argv = process.argv.slice(2);
+  const getArg = (n, dflt) => {
+    const hit = argv.find((a) => a.startsWith(`--${n}=`));
+    return hit ? hit.slice(n.length + 3) : dflt;
+  };
+  const APPEND = argv.includes('--append');
+  const endDate = new Date(getArg('to', '2026-12-31'));
 
+  const outPath = join(__dirname, '..', 'public', 'data', 'lettermix-puzzles.json');
+  let publishedRaw = null;
+  let published = [];
+  const publishedKeys = new Set();
+  if (APPEND) {
+    try {
+      publishedRaw = readFileSync(outPath, 'utf-8');
+      published = JSON.parse(publishedRaw);
+      for (const p of published) publishedKeys.add(`${p.date}|${p.level}`);
+      console.log(`Append mode: keeping ${published.length} published puzzles as-is.`);
+    } catch (e) {
+      console.warn(`Append mode: could not read the existing file (${e.message}) — starting fresh.`);
+      publishedRaw = null;
+    }
+  }
+
+  // Where to start generating: after the last published date when appending.
+  const publishedDates = published.map((p) => p.date).filter(Boolean).sort();
+  const genFrom = APPEND && publishedDates.length
+    ? new Date(new Date(publishedDates[publishedDates.length - 1] + 'T00:00:00Z').getTime() + 86400000)
+    : new Date(getArg('from', '2025-01-01'));
+  const days = Math.ceil((endDate - genFrom) / (24 * 60 * 60 * 1000)) + 1;
+  console.log(`Generating ${days} day(s) from ${genFrom.toISOString().slice(0, 10)} to ${endDate.toISOString().slice(0, 10)}.`);
+
+  const puzzles = [];
   for (let d = 0; d < days; d++) {
-    const date = new Date(startDate);
-    date.setDate(date.getDate() + d);
+    // Walk the range with pure UTC arithmetic. Using local setDate() instead lets
+    // daylight-saving transitions repeat or skip a calendar day — the reason two
+    // dates in the published file carry 6 entries instead of 3.
+    const date = new Date(genFrom.getTime() + d * 86400000);
     const dateStr = date.toISOString().slice(0, 10);
 
     for (const level of LEVELS) {
+      if (publishedKeys.has(`${dateStr}|${level}`)) continue;
       const puzzle = generateOne(dateStr, level, wordsByLen);
       if (puzzle) {
         puzzles.push(puzzle);
@@ -137,9 +178,21 @@ function main() {
     }
   }
 
-  const outPath = join(__dirname, '..', 'public', 'data', 'lettermix-puzzles.json');
-  writeFileSync(outPath, JSON.stringify(puzzles, null, 2));
-  console.log(`Generated ${puzzles.length} puzzles → ${outPath}`);
+  if (APPEND && publishedRaw) {
+    // Splice the new entries in before the closing bracket so every published
+    // entry keeps its exact original bytes.
+    const closeIdx = publishedRaw.lastIndexOf(']');
+    if (closeIdx === -1) throw new Error('existing puzzles file has no closing bracket');
+    const head = publishedRaw.slice(0, closeIdx).replace(/\s*$/, '');
+    const body = JSON.stringify(puzzles, null, 2).replace(/^\[/, '').replace(/\]\s*$/, '').replace(/\s*$/, '');
+    const merged = puzzles.length ? `${head},\n${body}\n]\n` : publishedRaw;
+    JSON.parse(merged); // refuse to write anything that is not valid JSON
+    writeFileSync(outPath, merged);
+    console.log(`Appended ${puzzles.length} puzzles → ${outPath} (${published.length} published entries untouched)`);
+  } else {
+    writeFileSync(outPath, JSON.stringify(puzzles, null, 2));
+    console.log(`Generated ${puzzles.length} puzzles → ${outPath}`);
+  }
 }
 
 main();

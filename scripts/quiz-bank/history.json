@@ -1301,5 +1301,57 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "category": "history",
+    "id": "his-106",
+    "question": "In which country did the Renaissance begin?",
+    "options": [
+      "France",
+      "Italy",
+      "Spain",
+      "Greece"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "history",
+    "id": "his-107",
+    "question": "Marco Polo was a merchant and explorer from which Italian city-state?",
+    "options": [
+      "Genoa",
+      "Florence",
+      "Venice",
+      "Milan"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "history",
+    "id": "his-108",
+    "question": "The ancient civilization of Mesopotamia was located mainly in which modern country?",
+    "options": [
+      "Iran",
+      "Egypt",
+      "Iraq",
+      "Turkey"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "history",
+    "id": "his-109",
+    "question": "Which ancient Greek mathematician is famous for a theorem about right-angled triangles?",
+    "options": [
+      "Archimedes",
+      "Pythagoras",
+      "Euclid",
+      "Aristotle"
+    ],
+    "answer": 1,
+    "difficulty": 3
   }
 ]

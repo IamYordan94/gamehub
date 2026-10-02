@@ -1312,5 +1312,57 @@
     ],
     "answer": 1,
     "difficulty": 3
+  },
+  {
+    "category": "movies",
+    "id": "mov-106",
+    "question": "Which superhero is nicknamed 'the Man of Steel'?",
+    "options": [
+      "Batman",
+      "Superman",
+      "Spider-Man",
+      "Iron Man"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "movies",
+    "id": "mov-107",
+    "question": "Which animation studio produced the first fully computer-animated feature film, 'Toy Story'?",
+    "options": [
+      "DreamWorks Animation",
+      "Studio Ghibli",
+      "Pixar",
+      "Blue Sky Studios"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "movies",
+    "id": "mov-108",
+    "question": "Which actor plays Ethan Hunt in the 'Mission: Impossible' film series?",
+    "options": [
+      "Brad Pitt",
+      "Matt Damon",
+      "Tom Cruise",
+      "Keanu Reeves"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "movies",
+    "id": "mov-109",
+    "question": "Which director made the films 'Alien' (1979) and 'Blade Runner' (1982)?",
+    "options": [
+      "Ridley Scott",
+      "James Cameron",
+      "John Carpenter",
+      "George Lucas"
+    ],
+    "answer": 0,
+    "difficulty": 3
   }
 ]

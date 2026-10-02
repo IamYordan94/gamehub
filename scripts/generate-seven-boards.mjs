@@ -13,8 +13,19 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = join(__dirname, '..', 'public', 'data', 'seven-boards.json');
 
 const ALPHABET = 'abcdefghijklmnopqrstuvwxyz'.split('');
-const NUM_BOARDS = 60;
 const MIN_WORDS = 25;
+
+// CLI: --count=N total boards to end up with, --append to keep the existing
+// boards and add more instead of regenerating the file from scratch,
+// --seed-base=N where to start scanning candidate seeds (defaults to the number
+// of boards already present when appending, so a re-run does not rescan them).
+const argv = process.argv.slice(2);
+const getArg = (n, dflt) => {
+  const hit = argv.find((a) => a.startsWith(`--${n}=`));
+  return hit ? hit.slice(n.length + 3) : dflt;
+};
+const APPEND = argv.includes('--append');
+const NUM_BOARDS = Number(getArg('count', 60));
 
 // Same mulberry32 PRNG family as the repo's dailySeed.ts (deterministic)
 function seedRandom(seed) {
@@ -71,7 +82,19 @@ console.log('Dictionary:', Object.entries(byLen).map(([l, w]) => `${l}:${w.lengt
 
 // Pre-index dictionary by letter-set signature for fast candidate lookup
 const boards = [];
-let candidateSeed = 0;
+
+// Append mode: start from the boards already published so a top-up only ADDS.
+if (APPEND) {
+  try {
+    const existing = JSON.parse(readFileSync(OUT_PATH, 'utf-8'));
+    for (const b of existing.boards ?? []) boards.push({ ...b, id: boards.length });
+    console.log(`Append mode: keeping ${boards.length} existing boards.`);
+  } catch {
+    console.log('Append mode: no readable existing file, starting fresh.');
+  }
+}
+
+let candidateSeed = Number(getArg('seed-base', APPEND ? boards.length : 0));
 
 function tryMakeBoard(seedNum) {
   const rng = seedRandom(`seven-board-${seedNum}`);

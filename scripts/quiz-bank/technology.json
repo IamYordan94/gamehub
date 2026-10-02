@@ -1352,5 +1352,57 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "category": "technology",
+    "id": "tech-106",
+    "question": "On a computer keyboard, which key moves the cursor to a new line?",
+    "options": [
+      "Shift",
+      "Tab",
+      "Enter",
+      "Esc"
+    ],
+    "answer": 2,
+    "difficulty": 1
+  },
+  {
+    "category": "technology",
+    "id": "tech-107",
+    "question": "On Windows, a file ending in '.exe' is what kind of file?",
+    "options": [
+      "A spreadsheet",
+      "An executable program",
+      "An image",
+      "A compressed archive"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "technology",
+    "id": "tech-108",
+    "question": "Compared with HTTP, what does the extra 'S' in HTTPS indicate?",
+    "options": [
+      "Nothing",
+      "A secure (encrypted) connection",
+      "Faster speed",
+      "Larger file size"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "technology",
+    "id": "tech-109",
+    "question": "In computer networking, what does the acronym 'LAN' stand for?",
+    "options": [
+      "Local Area Network",
+      "Long Access Node",
+      "Linked Application Network",
+      "Large Array Node"
+    ],
+    "answer": 0,
+    "difficulty": 3
   }
 ]

@@ -1313,5 +1313,57 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "category": "geography",
+    "id": "geo-106",
+    "question": "Havana is the capital of which country?",
+    "options": [
+      "Jamaica",
+      "Cuba",
+      "Haiti",
+      "Panama"
+    ],
+    "answer": 1,
+    "difficulty": 1
+  },
+  {
+    "category": "geography",
+    "id": "geo-107",
+    "question": "Which European country is often described as being shaped like a boot?",
+    "options": [
+      "Italy",
+      "Spain",
+      "Greece",
+      "Portugal"
+    ],
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "category": "geography",
+    "id": "geo-108",
+    "question": "Abu Dhabi is the capital of which country?",
+    "options": [
+      "Saudi Arabia",
+      "Qatar",
+      "The United Arab Emirates",
+      "Bahrain"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "geography",
+    "id": "geo-109",
+    "question": "Petra, famous for buildings carved into rose-red rock, is found in which country?",
+    "options": [
+      "Lebanon",
+      "Syria",
+      "Jordan",
+      "Iraq"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]

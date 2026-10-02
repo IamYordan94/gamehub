@@ -1296,5 +1296,57 @@
     ],
     "answer": 3,
     "difficulty": 3
+  },
+  {
+    "category": "art",
+    "id": "art-106",
+    "question": "Origami is the traditional Japanese art of folding what?",
+    "options": [
+      "Paper",
+      "Fabric",
+      "Clay",
+      "Wood"
+    ],
+    "answer": 0,
+    "difficulty": 1
+  },
+  {
+    "category": "art",
+    "id": "art-107",
+    "question": "Which author wrote 'Brave New World'?",
+    "options": [
+      "George Orwell",
+      "Ray Bradbury",
+      "Aldous Huxley",
+      "H.G. Wells"
+    ],
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "category": "art",
+    "id": "art-108",
+    "question": "Which artist painted 'The Son of Man', a man with a green apple covering his face?",
+    "options": [
+      "Salvador Dalí",
+      "René Magritte",
+      "Pablo Picasso",
+      "Joan Miró"
+    ],
+    "answer": 1,
+    "difficulty": 2
+  },
+  {
+    "category": "art",
+    "id": "art-109",
+    "question": "Which Russian author wrote 'Anna Karenina'?",
+    "options": [
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Leo Tolstoy",
+      "Ivan Turgenev"
+    ],
+    "answer": 2,
+    "difficulty": 3
   }
 ]
