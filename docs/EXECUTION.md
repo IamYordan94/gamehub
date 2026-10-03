@@ -17,11 +17,11 @@ Updated: 2026-10-03
 | A | Telemetry: Vercel Analytics custom events — `share_open/download/whatsapp/copy` via ShareCardModal (covers all 7 games); per-game play counts come from per-route page views | ✅ done (branch) |
 | A | Hub front-door copy → "Seven daily games. One minute each. Free forever." + ticker "no signup" | ✅ done (branch) |
 | A | `hello@yodoku.app` email | ⏳ needs domain DNS access (Yordan) |
-| A | Beehiiv newsletter (free tier, English, bot-composed) | ⏳ needs account (Yordan) + bot composer (me) |
+| A | Newsletter (English, bot-composed; **MailerLite** free — Beehiiv's free plan can't send via API, verified 2026-10-03) | ⏳ needs account (Yordan) + bot composer (me) |
 | A | Baseline numbers: Vercel dashboard → Analytics (page views per game, last 30 days) | ⏳ Yordan pastes numbers |
-| B | Directory submission list (12+ targets, verified) | 🔄 subagent → `docs/marketing/DIRECTORY-SUBMISSIONS.md` |
-| B | Newsletter target list (15+) + 3 pitch templates | 🔄 subagent → `docs/marketing/NEWSLETTER-TARGETS.md` |
-| B | Account setup guide (LS/Paddle/Beehiiv/Supabase/RevenueCat/Play, Bulgaria) | 🔄 subagent → `docs/marketing/ACCOUNT-SETUP-GUIDE.md` |
+| B | Directory submission list | ✅ 35 verified targets + ready blurbs → `docs/marketing/DIRECTORY-SUBMISSIONS.md` |
+| B | Newsletter target list | ✅ 23 verified targets + 3 pitch templates → `docs/marketing/NEWSLETTER-TARGETS.md` |
+| B | Account due-diligence guide | ✅ → `docs/marketing/ACCOUNT-SETUP-GUIDE.md` — **Bulgaria supported** (Lemon Squeezy + Paddle + Play, EUR). Play gate: 12 testers × 14 continuous days for new personal accounts |
 | B | Daily WhatsApp digest cron at 08:00 (script `yodoku-daily-digest.py` sends via `hermes send`; job deliver=local; rotating featured game) | ✅ created + first send verified 2026-10-03 (WhatsApp bridge had died — relaunched manually, adapter adopted it; see hermes-gateway-ops skill, WinError-5 section) |
 | C | Monetization scaffold `src/utils/monetization.ts` (`PAID_ENABLED=false`, `?plus=1` override) | ✅ done (branch) |
 | C | Calendar gating integration (see below) | ⏳ next code task |
@@ -29,6 +29,7 @@ Updated: 2026-10-03
 | C | Lemon Squeezy checkout + webhook → entitlement store | ⏳ after accounts |
 | C | Subscription UI: pricing page, "Plus" hints on locked days | ⏳ with C |
 | D | Play Store: signed AAB, listing, screenshots, RevenueCat wiring | ⏳ after accounts |
+| D | Play closed-test gate: 12 testers opted in continuously × 14 days before production (Google policy, verified) | ⏳ recruit testers before Play launch |
 | E | Monetization ladder (premium ad network ≥500k sessions/mo; sponsor ≥50k players) | later |
 | F | Gates day 30/60/90 (see MASTER-PLAN §3F) | later |
 
