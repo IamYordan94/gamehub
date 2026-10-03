@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import type { FermiPuzzle } from '../utils/fermiLogic';
+import { showsPlusHint } from '../utils/monetization';
+import { LockBadge, PlusSheet } from '../components/PlusLocked';
 
 const LAUNCH_DATE = '2026-08-07';
 const DAY_MS = 86400000;
@@ -16,6 +18,7 @@ function puzzleIndexForDate(dateStr: string, count: number): number {
 
 export default function FermiCalendar() {
   const [puzzles, setPuzzles] = useState<FermiPuzzle[]>([]);
+  const [lockOpen, setLockOpen] = useState(false);
 
   useEffect(() => {
     fetch('/data/dailybrain-puzzles.json')
@@ -38,6 +41,7 @@ export default function FermiCalendar() {
 
   return (
     <div className="space-y-4">
+      <PlusSheet open={lockOpen} onClose={() => setLockOpen(false)} context="FERMI" />
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-black flex items-center gap-2" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'var(--fm-ink)' }}>
           FERMI
@@ -58,28 +62,38 @@ export default function FermiCalendar() {
         {dates.map((d, i) => {
           const idx = puzzleIndexForDate(d.dateStr, puzzles.length);
           const p = puzzles[idx];
-          return (
-            <Link key={d.dateStr} to={`/fermi/play?date=${d.dateStr}`}
-              className="w-full text-left" style={{ textDecoration: 'none' }}>
-              <div style={{
-                background: 'var(--fm-panel)', border: '2.5px solid var(--fm-ink)',
-                borderRadius: '12px', padding: '14px 18px',
-                boxShadow: i === 0 ? '6px 6px 0 var(--fm-ink)' : '4px 4px 0 var(--fm-ink)',
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px',
-                opacity: p ? 1 : 0.5,
-              }}>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-black text-sm" style={{ color: 'var(--fm-ink)' }}>{d.label}</span>
-                    {i === 0 && <span className="text-[10px] px-2 py-0.5 font-bold rounded" style={{ background: '#ff6b35', color: '#fff', border: '2px solid var(--fm-ink)' }}>today</span>}
-                  </div>
-                  {p && <p className="text-xs font-bold mt-1 truncate" style={{ color: 'var(--fm-ink-soft)' }}>{p.prompt}</p>}
+          const locked = showsPlusHint(d.dateStr);
+          const tile = (
+            <div style={{
+              background: 'var(--fm-panel)', border: '2.5px solid var(--fm-ink)',
+              borderRadius: '12px', padding: '14px 18px',
+              boxShadow: i === 0 ? '6px 6px 0 var(--fm-ink)' : '4px 4px 0 var(--fm-ink)',
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px',
+              opacity: locked ? 0.72 : p ? 1 : 0.5,
+            }}>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-baseline gap-2">
+                  <span className="font-black text-sm" style={{ color: 'var(--fm-ink)' }}>{d.label}</span>
+                  {i === 0 && <span className="text-[10px] px-2 py-0.5 font-bold rounded" style={{ background: '#ff6b35', color: '#fff', border: '2px solid var(--fm-ink)' }}>today</span>}
                 </div>
+                {p && <p className="text-xs font-bold mt-1 truncate" style={{ color: 'var(--fm-ink-soft)' }}>{p.prompt}</p>}
+              </div>
+              {locked ? <LockBadge /> : (
                 <span className="text-xs font-bold flex-shrink-0 px-2 py-1 rounded"
                   style={{ background: '#ff6b35', color: '#fff', border: '2px solid var(--fm-ink)' }}>
                   #{idx} · {p?.difficulty || '?'}
                 </span>
-              </div>
+              )}
+            </div>
+          );
+          return locked ? (
+            <button key={d.dateStr} type="button" onClick={() => setLockOpen(true)} className="w-full text-left"
+              style={{ background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}>
+              {tile}
+            </button>
+          ) : (
+            <Link key={d.dateStr} to={`/fermi/play?date=${d.dateStr}`} className="w-full text-left" style={{ textDecoration: 'none' }}>
+              {tile}
             </Link>
           );
         })}

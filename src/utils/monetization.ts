@@ -12,6 +12,19 @@
 export const PAID_ENABLED = false;
 export const FREE_ARCHIVE_DAYS = 7;
 
+// --- deployment config (Vercel env; empty = feature dormant) ---
+const env = (import.meta as unknown as { env?: Record<string, string> }).env ?? {};
+export const CHECKOUT_URL: string = env.VITE_CHECKOUT_URL || '';
+export const SUPABASE_URL: string = env.VITE_SUPABASE_URL || '';
+export const SUPABASE_ANON_KEY: string = env.VITE_SUPABASE_ANON_KEY || '';
+
+export function checkoutConfigured(): boolean {
+  return Boolean(CHECKOUT_URL);
+}
+export function accountConfigured(): boolean {
+  return Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+}
+
 const PLUS_KEY = 'yodoku_plus_local'; // temporary until real entitlements land
 
 function urlOverride(): boolean {
@@ -51,7 +64,18 @@ export function isArchiveUnlocked(dateStr: string): boolean {
   return daysAgoUtc(dateStr) <= FREE_ARCHIVE_DAYS || isPlusActive();
 }
 
-/** True when a day should show a "Plus" hint (future preview UI). */
+/** Local design preview: ?pluspreview=1 forces the locked tiles regardless of PAID_ENABLED. */
+function previewForce(): boolean {
+  try {
+    return new URL(window.location.href).searchParams.get('pluspreview') === '1';
+  } catch {
+    return false;
+  }
+}
+
+/** True when a day should show the lock ("Plus") treatment. */
 export function showsPlusHint(dateStr: string): boolean {
-  return PAID_ENABLED && daysAgoUtc(dateStr) > FREE_ARCHIVE_DAYS && !isPlusActive();
+  if (daysAgoUtc(dateStr) <= FREE_ARCHIVE_DAYS) return false;
+  if (previewForce()) return true;
+  return PAID_ENABLED && !isPlusActive();
 }

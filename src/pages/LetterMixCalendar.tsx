@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getTodayDateStr } from '../utils/dailySeed';
 import { getLetterMixCompletedFor } from '../utils/storage';
+import { showsPlusHint } from '../utils/monetization';
+import { PlusSheet } from '../components/PlusLocked';
 
 const LEVELS = ['easy', 'medium', 'hard'] as const;
 const FIRST_PUZZLE_DATE = '2026-03-01';
@@ -12,6 +14,7 @@ export default function LetterMixCalendar() {
   const [currentMonth, setCurrentMonth] = useState(todayDate.getMonth());
   const [currentYear, setCurrentYear] = useState(todayDate.getFullYear());
   const [selectedLevel, setSelectedLevel] = useState<(typeof LEVELS)[number]>('easy');
+  const [lockOpen, setLockOpen] = useState(false);
 
   const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
   const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
@@ -73,10 +76,28 @@ export default function LetterMixCalendar() {
     const available = isDateAvailable(day);
     const completed = hasCompletedPuzzle(day);
     const isToday = dateStr === todayStr;
+    const locked = available && showsPlusHint(dateStr);
 
     days.push(
       <div key={day} className="aspect-square">
         {available ? (
+          locked ? (
+            <button
+              type="button"
+              onClick={() => setLockOpen(true)}
+              title="Yodoku+ archive — tap to unlock"
+              className="w-full h-full flex items-center justify-center rounded text-sm font-semibold transition-colors"
+              style={{
+                border: '1px solid var(--lm-border)',
+                background: 'var(--lm-key-face)',
+                color: 'var(--lm-text-faint)',
+                opacity: 0.75,
+                cursor: 'pointer',
+              }}
+            >
+              {day}
+            </button>
+          ) : (
           <Link
             to={`/lettermix/play/${dateStr}/${selectedLevel}`}
             className="w-full h-full flex items-center justify-center rounded text-sm font-semibold transition-colors"
@@ -102,6 +123,7 @@ export default function LetterMixCalendar() {
           >
             {day}
           </Link>
+          )
         ) : (
           <div
             className="w-full h-full flex items-center justify-center text-sm"
@@ -116,6 +138,7 @@ export default function LetterMixCalendar() {
 
   return (
     <div className="space-y-6">
+      <PlusSheet open={lockOpen} onClose={() => setLockOpen(false)} context="Clear the String" />
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold" style={{ color: 'var(--lm-accent)' }}>Calendar</h2>
         <div className="flex items-center gap-2">

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yodoku+ — design preview</title>
+<style>
+  :root {
+    --paper: #f6f3ec;
+    --panel: #ffffff;
+    --ink: #141414;
+    --ink-soft: rgba(20,20,20,0.62);
+    --dark: #1E2028;
+    --lime: #d9f24b;
+    --green: #39c96b;
+    --shadow: 6px 6px 0 var(--ink);
+    --shadow-sm: 4px 4px 0 var(--ink);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px 20px 60px;
+    background: var(--paper); color: var(--ink);
+    font-family: Bahnschrift, "Segoe UI", system-ui, sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, Consolas, monospace; }
+  .preview-note {
+    border: 2.5px solid var(--ink); background: var(--lime); box-shadow: var(--shadow-sm);
+    border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: 14px; margin-bottom: 26px;
+  }
+  .preview-note small { display:block; font-weight: 600; color: rgba(20,20,20,0.75); margin-top: 4px; }
+  .section { margin: 34px 0 0; }
+  .section-label {
+    display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 800;
+    letter-spacing: 0.12em; text-transform: uppercase; background: var(--dark); color: var(--paper);
+    padding: 5px 12px; border-radius: 4px; margin-bottom: 12px;
+  }
+  .caption { color: var(--ink-soft); font-size: 13.5px; margin: 8px 2px 0; }
+
+  /* ---------- 1. HUB MASTHEAD ---------- */
+  .masthead {
+    background: var(--dark); border: 2.5px solid var(--ink); border-radius: 12px;
+    box-shadow: var(--shadow); padding: 18px 20px 14px; color: #fff;
+  }
+  .masthead .row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .logo { font-family: 'JetBrains Mono', monospace; font-weight: 900; font-size: 21px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .chip7 {
+    background: var(--lime); color: var(--dark); border: 2px solid var(--paper); border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 800; text-transform: uppercase;
+    padding: 2px 10px; transform: rotate(-1deg);
+  }
+  .plus-chip {
+    margin-left: auto; background: linear-gradient(180deg,#2a2d38,#1E2028); color: var(--lime);
+    border: 2px solid var(--lime); border-radius: 999px; padding: 6px 14px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+  }
+  .tagline { color: rgba(255,255,255,0.55); font-size: 13.5px; margin: 8px 0 12px; }
+  .ticker {
+    background: var(--ink); color: var(--paper); border-radius: 6px; padding: 4px 10px;
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; overflow: hidden; white-space: nowrap;
+  }
+
+  /* ---------- 2. PRICING ---------- */
+  .pricing { display: flex; gap: 18px; flex-wrap: wrap; }
+  .card {
+    flex: 1 1 340px; border: 2.5px solid var(--ink); border-radius: 14px; padding: 22px 22px 20px;
+    box-shadow: var(--shadow); background: var(--panel);
+  }
+  .card.plus { background: var(--dark); color: #fff; }
+  .card h3 { margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .price { font-size: 34px; font-weight: 800; margin: 10px 0 2px; }
+  .price small { font-size: 14px; font-weight: 700; color: var(--ink-soft); }
+  .card.plus .price small { color: rgba(255,255,255,0.6); }
+  .perks { list-style: none; margin: 14px 0 18px; padding: 0; font-size: 14.5px; }
+  .perks li { padding: 5px 0 5px 24px; position: relative; }
+  .perks li::before { content: "■"; position: absolute; left: 2px; font-size: 10px; top: 8px; color: var(--green); }
+  .card.plus .perks li::before { color: var(--lime); }
+  .btn {
+    display: inline-block; width: 100%; text-align: center; cursor: pointer;
+    border: 2.5px solid var(--ink); border-radius: 10px; padding: 13px 16px;
+    font-weight: 800; font-size: 15px; box-shadow: var(--shadow-sm); background: var(--lime); color: var(--ink);
+  }
+  .card.plus .btn { border-color: var(--lime); background: var(--lime); }
+  .fine { font-size: 11.5px; color: var(--ink-soft); margin-top: 10px; }
+  .card.plus .fine { color: rgba(255,255,255,0.55); }
+  .sticker-ribbon {
+    display: inline-block; background: var(--lime); color: var(--dark); border: 2px solid var(--ink);
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 800; letter-spacing: 0.1em;
+    padding: 3px 10px; border-radius: 4px; transform: rotate(-1deg); margin-bottom: 10px;
+  }
+
+  /* ---------- 3. CALENDAR ---------- */
+  .cal { display: flex; flex-direction: column; gap: 12px; }
+  .cal-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    background: var(--panel); border: 2.5px solid var(--ink); border-radius: 12px;
+    padding: 13px 17px; box-shadow: var(--shadow-sm);
+  }
+  .cal-row.today { box-shadow: var(--shadow); }
+  .cal-row.locked { opacity: 0.72; background: #efece5; }
+  .cal-left { min-width: 0; }
+  .cal-day { font-weight: 800; font-size: 14.5px; }
+  .cal-sub { font-size: 12px; color: var(--ink-soft); margin-top: 2px; }
+  .badge {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 800; letter-spacing: 0.06em;
+    border: 2px solid var(--ink); border-radius: 4px; padding: 3px 9px; white-space: nowrap;
+  }
+  .badge.green { background: var(--green); color: var(--ink); }
+  .badge.lime { background: var(--lime); color: var(--ink); }
+  .badge.locked { background: var(--dark); color: var(--lime); border-color: var(--ink); }
+
+  /* ---------- 4. MODAL ---------- */
+  .modal-mock {
+    max-width: 430px; background: var(--panel); border: 2.5px solid var(--ink);
+    border-radius: 16px; box-shadow: 8px 8px 0 var(--ink); padding: 24px 22px; text-align: center;
+  }
+  .lock-emoji { font-size: 34px; }
+  .modal-mock h4 { margin: 10px 0 6px; font-size: 19px; }
+  .modal-mock p { color: var(--ink-soft); font-size: 14px; margin: 0 0 18px; }
+  .modal-mock .btn { margin-bottom: 10px; }
+  .ghost {
+    display: inline-block; width: 100%; text-align: center; cursor: pointer;
+    border: 2.5px solid var(--ink); border-radius: 10px; padding: 11px 16px;
+    font-weight: 800; font-size: 14px; background: transparent; color: var(--ink);
+  }
+
+  /* ---------- 5. ACTIVE STATE ---------- */
+  .active-strip {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    background: var(--panel); border: 2.5px solid var(--ink); border-radius: 12px;
+    box-shadow: var(--shadow-sm); padding: 14px 18px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--green); border: 2px solid var(--ink); }
+  .active-strip .grow { flex: 1; font-size: 14px; }
+  .active-strip .muted { color: var(--ink-soft); font-size: 12.5px; }
+  .footer-note { margin-top: 40px; font-size: 12px; color: var(--ink-soft); text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="preview-note">
+    Yodoku+ — design preview (mock-up, not live yet)
+    <small>Exactly these surfaces get built once the payment + account wiring is done. Sticker-Pack styling, same palette and fonts as the live site. Feedback welcome — then I implement this as-is.</small>
+  </div>
+
+  <!-- 1 · HUB -->
+  <div class="section">
+    <div class="section-label">1 · Hub — where Yodoku+ appears</div>
+    <div class="masthead">
+      <div class="row">
+        <span class="logo">WordCraft Hub</span>
+        <span class="chip7">7 games</span>
+        <span class="plus-chip mono">YODOKU+ ✦</span>
+      </div>
+      <p class="tagline">Seven daily games. One minute each. Free forever.</p>
+      <div class="ticker mono">seven daily games · one minute each · free forever · no signup · share your score ·</div>
+    </div>
+    <p class="caption">One small chip in the masthead (and one line in the footer). No other changes to the hub — all seven games stay exactly as they are.</p>
+  </div>
+
+  <!-- 2 · PRICING -->
+  <div class="section">
+    <div class="section-label">2 · The Yodoku+ page (yodoku.app/plus)</div>
+    <div class="pricing">
+      <div class="card">
+        <h3>Free</h3>
+        <div class="price">€0 <small>forever</small></div>
+        <ul class="perks">
+          <li>All 7 daily games, every day</li>
+          <li>Today's puzzle + the last 7 days</li>
+          <li>Share cards &amp; on-device stats</li>
+          <li>No signup. No spam.</li>
+        </ul>
+        <div class="btn" style="background:#fff">Keep playing free</div>
+        <div class="fine">Everything that exists today stays free. Nothing is taken away.</div>
+      </div>
+      <div class="card plus">
+        <span class="sticker-ribbon">THE WHOLE ARCHIVE</span>
+        <h3>Yodoku+</h3>
+        <div class="price">€2.99 <small>/month</small></div>
+        <div class="fine" style="font-size:13px;margin:0 0 4px">or <b style="color:var(--lime)">€19.99/year</b> (44% off monthly)</div>
+        <ul class="perks">
+          <li>Every past puzzle since launch — all 7 games</li>
+          <li>Ad-free</li>
+          <li>Progress synced across your devices</li>
+          <li>Unlimited practice &amp; random rounds</li>
+        </ul>
+        <div class="btn">Get Yodoku+ →</div>
+        <div class="fine">VAT included · cancel anytime · payments handled by Lemon Squeezy</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 · CALENDAR -->
+  <div class="section">
+    <div class="section-label">3 · Archives — what a locked day looks like</div>
+    <div class="cal">
+      <div class="cal-row today">
+        <div class="cal-left">
+          <div class="cal-day">Today</div>
+          <div class="cal-sub">Sort: speed of these five animals</div>
+        </div>
+        <span class="badge green">FREE · PLAY</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-left">
+          <div class="cal-day">Tue, Sep 30</div>
+          <div class="cal-sub">Sort: founding years of these countries</div>
+        </div>
+        <span class="badge lime">FREE · LAST 7 DAYS</span>
+      </div>
+      <div class="cal-row locked">
+        <div class="cal-left">
+          <div class="cal-day">Mon, Sep 22</div>
+          <div class="cal-sub">Sort: wingspans of these birds</div>
+        </div>
+        <span class="badge locked">🔒 PLUS</span>
+      </div>
+      <div class="cal-row locked">
+        <div class="cal-left">
+          <div class="cal-day">Sun, Sep 14</div>
+          <div class="cal-sub">Sort: box office of these films</div>
+        </div>
+        <span class="badge locked">🔒 PLUS</span>
+      </div>
+    </div>
+    <p class="caption">Last 7 days stay free. Older days show a small 🔒 PLUS chip — tapping one opens the prompt below. Nothing else about any game changes.</p>
+  </div>
+
+  <!-- 4 · MODAL -->
+  <div class="section">
+    <div class="section-label">4 · Tapping a locked day</div>
+    <div class="modal-mock">
+      <div class="lock-emoji">🔒</div>
+      <h4>This one's in the archive</h4>
+      <p>Puzzles older than 7 days live in the full archive. Yodoku+ opens every puzzle since launch — all seven games.</p>
+      <div class="btn">Unlock the archive — €19.99/yr</div>
+      <div class="ghost">Not now</div>
+    </div>
+    <p class="caption">One small sheet, no dead ends: "Not now" closes it and today's puzzle is still right there.</p>
+  </div>
+
+  <!-- 5 · ACTIVE -->
+  <div class="section">
+    <div class="section-label">5 · When you're subscribed</div>
+    <div class="active-strip">
+      <span class="dot"></span>
+      <span class="grow"><b>Yodoku+ active</b> <span class="muted">· signed in as yordan@ · · · · · ·</span></span>
+      <span class="badge lime">MANAGE</span>
+    </div>
+    <p class="caption">A quiet status line on the hub. No confetti, no upsells after you've paid.</p>
+  </div>
+
+  <div class="footer-note mono">PREVIEW ONLY · Yodoku+ v1 · design follows the live Sticker-Pack system</div>
+</div>
+</body>
+</html>

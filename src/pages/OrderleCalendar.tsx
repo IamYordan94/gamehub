@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import type { OrderlePuzzle } from '../utils/orderleLogic';
+import { showsPlusHint } from '../utils/monetization';
+import { LockBadge, PlusSheet } from '../components/PlusLocked';
 
 const LAUNCH_DATE = '2026-08-07';
 const DAY_MS = 86400000;
@@ -16,6 +18,7 @@ function puzzleIndexForDate(dateStr: string, count: number): number {
 
 export default function OrderleCalendar() {
   const [puzzles, setPuzzles] = useState<OrderlePuzzle[]>([]);
+  const [lockOpen, setLockOpen] = useState(false);
 
   useEffect(() => {
     fetch('/data/dailybrain-puzzles.json')
@@ -40,6 +43,7 @@ export default function OrderleCalendar() {
 
   return (
     <div className="space-y-4">
+      <PlusSheet open={lockOpen} onClose={() => setLockOpen(false)} context="ORDERLE" />
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-black flex items-center gap-2" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'var(--ol-ink)' }}>
           ORDERLE
@@ -60,29 +64,38 @@ export default function OrderleCalendar() {
         {dates.map((d, i) => {
           const idx = puzzleIndexForDate(d.dateStr, puzzles.length);
           const p = puzzles[idx];
-          return (
-            <Link key={d.dateStr} to={`/orderle/play?date=${d.dateStr}`}
-              className="w-full text-left"
-              style={{ textDecoration: 'none' }}>
-              <div style={{
-                background: 'var(--ol-panel)', border: '2.5px solid var(--ol-ink)',
-                borderRadius: '12px', padding: '14px 18px',
-                boxShadow: i === 0 ? '6px 6px 0 var(--ol-ink)' : '4px 4px 0 var(--ol-ink)',
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px',
-                opacity: p ? 1 : 0.5,
-              }}>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-black text-sm" style={{ color: 'var(--ol-ink)' }}>{d.label}</span>
-                    {i === 0 && <span className="text-[10px] px-2 py-0.5 font-bold rounded" style={{ background: '#d9f24b', border: '2px solid var(--ol-ink)' }}>today</span>}
-                  </div>
-                  {p && <p className="text-xs font-bold mt-1 truncate" style={{ color: 'var(--ol-ink-soft)' }}>{p.rule}</p>}
+          const locked = showsPlusHint(d.dateStr);
+          const tile = (
+            <div style={{
+              background: 'var(--ol-panel)', border: '2.5px solid var(--ol-ink)',
+              borderRadius: '12px', padding: '14px 18px',
+              boxShadow: i === 0 ? '6px 6px 0 var(--ol-ink)' : '4px 4px 0 var(--ol-ink)',
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px',
+              opacity: locked ? 0.72 : p ? 1 : 0.5,
+            }}>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-baseline gap-2">
+                  <span className="font-black text-sm" style={{ color: 'var(--ol-ink)' }}>{d.label}</span>
+                  {i === 0 && <span className="text-[10px] px-2 py-0.5 font-bold rounded" style={{ background: '#d9f24b', border: '2px solid var(--ol-ink)' }}>today</span>}
                 </div>
+                {p && <p className="text-xs font-bold mt-1 truncate" style={{ color: 'var(--ol-ink-soft)' }}>{p.rule}</p>}
+              </div>
+              {locked ? <LockBadge /> : (
                 <span className="text-xs font-bold flex-shrink-0 px-2 py-1 rounded"
                   style={{ background: '#39c96b', color: '#141414', border: '2px solid var(--ol-ink)' }}>
                   #{idx} · {p?.difficulty || '?'}
                 </span>
-              </div>
+              )}
+            </div>
+          );
+          return locked ? (
+            <button key={d.dateStr} type="button" onClick={() => setLockOpen(true)} className="w-full text-left"
+              style={{ background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}>
+              {tile}
+            </button>
+          ) : (
+            <Link key={d.dateStr} to={`/orderle/play?date=${d.dateStr}`} className="w-full text-left" style={{ textDecoration: 'none' }}>
+              {tile}
             </Link>
           );
         })}

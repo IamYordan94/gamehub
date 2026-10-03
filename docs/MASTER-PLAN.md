@@ -62,7 +62,7 @@ So the plan is: **keep the hub, add a charge-ready core, pick ONE game as the sp
 |---|------|-----|
 | A1 | Per-game engagement telemetry (plays/day per game, share-button clicks) so the flagship push is data-backed | me |
 | A2 | Baseline traffic from the Vercel dashboard (you copy numbers or give me access) | you |
-| A3 | `hello@yodoku.app` email + newsletter skeleton ("today's puzzles", 1 email/day) — **MailerLite** (Beehiiv's free plan cannot send via API — verified 2026-10-03; MailerLite free = API + 250 subs / 2,500 emails per month) | me |
+| A3 | `hello@yodoku.app` email + newsletter skeleton ("today's puzzles", 1 email/day) — **Brevo or Resend** (Beehiiv's free plan cannot send via API — verified 2026-10-03; Yordan's pick — 2026-10-03 — already comfortable with them; both free tiers work and both also serve as Supabase SMTP; the send script supports BOTH, one-line config) | me |
 | A4 | Front-door copy refresh to the hub pitch; audit per-page titles already done | me |
 
 ### Phase B — Flagship + distribution (weeks 1–6, continuous)
@@ -122,7 +122,7 @@ So the plan is: **keep the hub, add a charge-ready core, pick ONE game as the sp
 
 ## 5. Costs & timeline
 
-- **Cash to be fully chargeable:** ≈ €25 (Play Console) + payment fees (Lemon Squeezy 5% + 50¢/txn; Play Billing 15%). Everything else is agent work — domain, Vercel, Supabase, MailerLite, RevenueCat all on free tiers at our scale.
+- **Cash to be fully chargeable:** ≈ €25 (Play Console) + payment fees (Lemon Squeezy 5% + 50¢/txn; Play Billing 15%). Everything else is agent work — domain, Vercel, Supabase, Brevo/Resend, RevenueCat all on free tiers at our scale.
 - **Charge-ready core:** ~2–3 weeks of work. **App:** ~1–2 weeks after that. **Readable distribution results:** 60–90 days.
 - **No spend on ads.** Organic only until the funnel proves itself.
 
@@ -161,7 +161,7 @@ GeoSports' ~$40k/month rides on ~95–150k daily players that came from a 3.5M-f
 
 1. **✅ DECIDED — all 7 games in the shop window; Quiz Master gets the strategic extra push** (rotate on data).
 2. **✅ APPROVED — pricing: €2.99/mo · €19.99/yr**, today's puzzles free forever.
-3. **✅ DECIDED — publisher brand: Yordan Creatives** (product brand stays Yodoku; hello@yodoku.app) + newsletter via **MailerLite** (English, runs autonomously — bots compose and send; you own the account; Beehiiv free can't automate).
+3. **✅ DECIDED — publisher brand: Yordan Creatives** (product brand stays Yodoku; hello@yodoku.app) + newsletter via **Brevo or Resend** (English, runs autonomously — bots compose and send; you own the account; Beehiiv free can't automate).
 4. **You open two accounts when I say go:** Lemon Squeezy + Google Play Console ($25). I prepare everything; you click.
 5. **Outreach:** I draft all pitches; you approve the target list and sends (newsletters + directories). Directory submissions I can do directly. ✱ recommended
 6. **✅ GREENLIT — Phase A + B building now** on branch `yodoku-plus` (nothing public without approval). Execution tracker: `docs/EXECUTION.md`.

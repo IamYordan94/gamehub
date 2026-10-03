@@ -299,3 +299,10 @@ Personal accounts **created after 13 Nov 2023** cannot publish directly to produ
 ---
 
 *Prepared as pre-signup due diligence. Prices, tester counts and free-tier limits change without notice — re-check the linked official pages on the day you actually register.*
+
+
+---
+
+## UPDATE — 2026-10-03 (evening)
+
+**Newsletter provider changed:** MailerLite is OUT. Yordan chose **Brevo or Resend** (already comfortable with them). Both verified viable on their free tiers for API-driven daily sends (Brevo: 300 emails/day; Resend: 3,000/month + Audiences/Broadcasts) and both double as the Supabase SMTP for login emails. Whichever account is opened first becomes the pick — the sender script supports both. The MailerLite section above stands as reference only.

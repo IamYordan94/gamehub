@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getTodayCboDateStr } from '../utils/cbo-dailyChallenge';
 import { loadCboState } from '../utils/cbo-gameState';
+import { showsPlusHint } from '../utils/monetization';
+import { PlusSheet } from '../components/PlusLocked';
 
 const FIRST_PUZZLE_DATE = '2026-03-01';
 
@@ -10,6 +12,7 @@ export default function ChangeByOneCalendar() {
   const todayDate = new Date(todayStr + 'T00:00:00');
   const [currentMonth, setCurrentMonth] = useState(todayDate.getMonth());
   const [currentYear, setCurrentYear] = useState(todayDate.getFullYear());
+  const [lockOpen, setLockOpen] = useState(false);
 
   const monthNames = [
     'January','February','March','April','May','June',
@@ -73,10 +76,28 @@ export default function ChangeByOneCalendar() {
     const available = isDateAvailable(day);
     const isToday = dateStr === todayStr;
     const status = available ? getStatus(dateStr) : 'available';
+    const locked = available && showsPlusHint(dateStr);
 
     days.push(
       <div key={day} className="aspect-square">
         {available ? (
+          locked ? (
+            <button
+              type="button"
+              onClick={() => setLockOpen(true)}
+              title="Yodoku+ archive — tap to unlock"
+              className="w-full h-full flex items-center justify-center rounded text-sm font-semibold transition-colors"
+              style={{
+                border: '1px solid var(--cbo-border-dark)',
+                background: 'var(--cbo-surface-2)',
+                color: 'var(--cbo-text-muted)',
+                opacity: 0.75,
+                cursor: 'pointer',
+              }}
+            >
+              {day}
+            </button>
+          ) : (
           <Link
             to={isToday ? '/changebyone/play' : `/changebyone/play/${dateStr}`}
             className="w-full h-full flex items-center justify-center rounded text-sm font-semibold transition-colors"
@@ -108,6 +129,7 @@ export default function ChangeByOneCalendar() {
           >
             {day}
           </Link>
+          )
         ) : (
           <div
             className="w-full h-full flex items-center justify-center text-sm"
@@ -122,6 +144,7 @@ export default function ChangeByOneCalendar() {
 
   return (
     <div className="space-y-6">
+      <PlusSheet open={lockOpen} onClose={() => setLockOpen(false)} context="Change by One" />
       <div className="flex items-center justify-between">
         <h2
           className="text-xl font-semibold"

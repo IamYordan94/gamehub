@@ -51,6 +51,8 @@ const SevenLettersLayout = lazy(() => import('./layouts/SevenLettersLayout'));
 const SevenLettersPage = lazy(() => import('./pages/SevenLettersPage'));
 const SevenLettersAbout = lazy(() => import('./pages/SevenLettersAbout'));
 
+const PlusPage = lazy(() => import('./pages/PlusPage'));
+
 const GAME_TITLES: Record<string, string> = {
   '/': 'WordCraft Hub — Daily Word Games',
   '/lettermix': 'Clear the String — WordCraft Hub',
@@ -60,6 +62,7 @@ const GAME_TITLES: Record<string, string> = {
   '/fermi': 'FERMI — WordCraft Hub',
   '/quiz': 'Quiz Master — WordCraft Hub',
   '/seven': '7 Letters — WordCraft Hub',
+  '/plus': 'Yodoku+ — WordCraft Hub',
 };
 
 function RouteTitle() {
@@ -85,6 +88,7 @@ function App() {
           <Route index element={<Hub />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />
+          <Route path="plus" element={<PlusPage />} />
         </Route>
         <Route path="/lettermix">
           <Route index element={<LetterMixHome />} />

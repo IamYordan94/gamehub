@@ -243,6 +243,24 @@ export default function Hub() {
           }}>
             7 games
           </span>
+          <Link
+            to="/plus"
+            className="ml-auto"
+            style={{
+              background: 'linear-gradient(180deg,#2a2d38,#1E2028)',
+              color: 'var(--hub-lime)',
+              border: '2px solid var(--hub-lime)',
+              borderRadius: '999px',
+              padding: '5px 13px',
+              fontFamily: "'JetBrains Mono', monospace",
+              fontSize: '11px',
+              fontWeight: 800,
+              letterSpacing: '0.08em',
+              textDecoration: 'none',
+            }}
+          >
+            YODOKU+ ✦
+          </Link>
         </div>
         <p
           className="text-sm font-semibold m-0"

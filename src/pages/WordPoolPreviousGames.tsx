@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getTodayDateStr, getDailyPuzzleIndex } from '../utils/dailySeed';
 import { getWordPoolDailyEntry, isWordPoolDailyAllDone } from '../utils/storage';
+import { showsPlusHint } from '../utils/monetization';
+import { PlusSheet } from '../components/PlusLocked';
 
 type Category = { id: string; name: string; levels: { level: number; name: string }[] };
 type WordPoolData = { categories: Category[] };
@@ -14,6 +16,7 @@ export default function WordPoolPreviousGames() {
   const [currentMonth, setCurrentMonth] = useState(todayDate.getMonth());
   const [currentYear, setCurrentYear] = useState(todayDate.getFullYear());
   const [data, setData] = useState<WordPoolData | null>(null);
+  const [lockOpen, setLockOpen] = useState(false);
 
   useEffect(() => {
     fetch('/data/wordpool-categories.json')
@@ -83,10 +86,22 @@ export default function WordPoolPreviousGames() {
     const completed = available && isCompleted(dateStr);
     const inProgress = available && isInProgress(dateStr);
     const isToday = dateStr === todayStr;
+    const locked = available && showsPlusHint(dateStr);
 
     days.push(
       <div key={day} className="aspect-square">
         {available ? (
+          locked ? (
+            <button
+              type="button"
+              onClick={() => setLockOpen(true)}
+              title="Yodoku+ archive — tap to unlock"
+              className="w-full h-full flex items-center justify-center rounded text-sm font-semibold transition-colors"
+              style={{ border: '1px solid var(--wp-border-dark)', background: 'var(--wp-surface-2)', color: 'var(--wp-text-muted)', opacity: 0.75, cursor: 'pointer' }}
+            >
+              {day}
+            </button>
+          ) : (
           <Link
             to={`/wordpool/${dateStr}`}
             title={getCategoryForDate(dateStr)?.name ?? ''}
@@ -103,6 +118,7 @@ export default function WordPoolPreviousGames() {
           >
             {day}
           </Link>
+          )
         ) : (
           <div className="w-full h-full flex items-center justify-center text-sm"
             style={{ color: 'var(--wp-border-dark)' }}>
@@ -115,6 +131,7 @@ export default function WordPoolPreviousGames() {
 
   return (
     <div className="space-y-6">
+      <PlusSheet open={lockOpen} onClose={() => setLockOpen(false)} context="Word Pool" />
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold" style={{ color: 'var(--wp-accent-blue-dark)' }}>
           Previous Puzzles
