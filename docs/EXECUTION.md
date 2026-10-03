@@ -30,7 +30,9 @@ Updated: 2026-10-03 (evening — Yodoku+ build in progress)
 | C | Lemon Squeezy webhook receiver (`api/`) | ⏳ next |
 | C | Lemon Squeezy checkout + entitlement store wiring | ⏳ after accounts |
 | C | Subscription UI: pricing page, "Plus" hints on locked days | ⏳ with C |
-| D | Play Store: signed AAB, listing, screenshots, RevenueCat wiring | ⏳ after accounts |
+| D | Signed release build: AAB + APK | ✅ built 2026-10-03 (BUILD SUCCESSFUL, signed) — app-release.aab 14.1MB / app-release.apk 14.3MB. Keystore `~/yodoku-release.keystore` (alias yodoku) + README alongside; helper `scripts/build-android.sh` |
+| D | Play listing assets (8 phone screenshots, feature graphic, description, data-safety draft) | ⏳ next |
+| D | RevenueCat wiring | ⏳ after accounts |
 | D | Play closed-test gate: 12 testers opted in continuously × 14 days before production (Google policy, verified) | ⏳ recruit testers before Play launch |
 | E | Monetization ladder (premium ad network ≥500k sessions/mo; sponsor ≥50k players) | later |
 | F | Gates day 30/60/90 (see MASTER-PLAN §3F) | later |
@@ -43,6 +45,7 @@ Updated: 2026-10-03 (evening — Yodoku+ build in progress)
 - Helper module: `src/utils/monetization.ts` — use `isArchiveUnlocked()` at each tile; the copy "Puzzles cycle every 45 days" needs a "last 7 days free" line when the paywall flips on
 
 ## Working notes
+- Android build: `bash scripts/build-android.sh` (auto-uses Android Studio JBR as JAVA_HOME; SDK from `android/local.properties`). Release keystore: `~/yodoku-release.keystore` (yodoku / YodokuKey2026) — NEVER commit; `android/keystore.properties` is gitignored.
 - Repo = deploy: push `main` → Vercel auto-deploys. Branch pushes are safe.
 - Strategy docs: `docs/MASTER-PLAN.md`, `docs/COMPETITIVE-ANALYSIS.md`, `docs/marketing/*`
 - After the paywall flips: bump `CACHE` in `public/sw.js` (service-worker shell change)

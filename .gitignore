@@ -37,3 +37,11 @@ dist-ssr
 
 # Hermes agent workspace (plans, scratch)
 .hermes/
+
+# Android signing + local config
+android/keystore.properties
+*.keystore
+*.jks
+android/local.properties
+android/.gradle/
+android/app/build/
