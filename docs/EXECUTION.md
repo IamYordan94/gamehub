@@ -22,7 +22,7 @@ Updated: 2026-10-03
 | B | Directory submission list (12+ targets, verified) | 🔄 subagent → `docs/marketing/DIRECTORY-SUBMISSIONS.md` |
 | B | Newsletter target list (15+) + 3 pitch templates | 🔄 subagent → `docs/marketing/NEWSLETTER-TARGETS.md` |
 | B | Account setup guide (LS/Paddle/Beehiiv/Supabase/RevenueCat/Play, Bulgaria) | 🔄 subagent → `docs/marketing/ACCOUNT-SETUP-GUIDE.md` |
-| B | Daily WhatsApp digest cron at 08:00 (script `yodoku-daily-digest.py`, rotating featured game) | ✅ created |
+| B | Daily WhatsApp digest cron at 08:00 (script `yodoku-daily-digest.py` sends via `hermes send`; job deliver=local; rotating featured game) | ✅ created + first send verified 2026-10-03 (WhatsApp bridge had died — relaunched manually, adapter adopted it; see hermes-gateway-ops skill, WinError-5 section) |
 | C | Monetization scaffold `src/utils/monetization.ts` (`PAID_ENABLED=false`, `?plus=1` override) | ✅ done (branch) |
 | C | Calendar gating integration (see below) | ⏳ next code task |
 | C | Supabase accounts (magic link) + anonymous-progress merge | ⏳ after accounts |
