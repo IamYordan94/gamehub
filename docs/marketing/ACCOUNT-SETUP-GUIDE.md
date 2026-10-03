@@ -15,15 +15,14 @@
 |---|---|---|---|---|
 | **Lemon Squeezy** (primary MoR) | Web subscriptions | ✅ Bank payouts to Bulgaria supported | 5% + 50¢ + surcharges (see §1) | Hosted checkout needs **no backend**; webhooks need an HTTPS endpoint (Vercel function is fine) |
 | **Paddle** (backup MoR) | Web subscriptions | ✅ Not on the unsupported list | 5% + 50¢ | Monthly payout only; min $100; ID verification via Sumsub |
-| **Beehiiv** | Newsletter | ✅ (global SaaS) | Free plan $0 | ❗ **Free plan CANNOT send emails via API** — Send API is Pro/Enterprise. Not viable for an automated daily bot on free |
-| **MailerLite** (free alt.) | Newsletter | ✅ | Free $0 | 250 subs / 2,500 emails-mo; **REST API available on free** ✅ |
-| **Brevo** (free alt.) | Newsletter | ✅ | Free $0 | 300 emails/day; **API on all plans** ✅ |
+| **Brevo** (newsletter — primary pick) | Newsletter + Supabase SMTP | ✅ | Free $0 | **300 emails/day** (≈9,000/mo), up to 100,000 contacts; **REST API on every plan incl. Free** ✅. Doubles as Supabase's custom SMTP. French/EU (GDPR-friendly) |
+| **Resend** (newsletter — alternative) | Newsletter + Supabase SMTP | ✅ | Free $0 | **3,000 emails/mo, 100/day**, 3 domains, DKIM/SPF/DMARC; Audiences + Broadcasts API on free (marketing sends have their own quota, separate from the 3,000 transactional) |
 | **Supabase** | User accounts (magic-link) | ✅ | Free $0 | ❗ Built-in email = **2 emails/hour** and team-only. Must add custom SMTP |
 | **RevenueCat** | Android IAP plumbing | ✅ (anything Google Play supports) | Free ≤ $2,500 MTR/mo, then 1% | Doesn't pay you — Google does |
 | **Google Play Console** | Android app + IAP | ✅ **Developer + Merchant registration supported; currency EUR** | $25 one-time | ❗ New personal accounts must run a **closed test (12 testers, 14 continuous days)** before production; ID + device verification |
 
 **Bottom line:** the stack is viable for a Bulgaria-based individual in 2026, with two hard corrections —
-1. **Beehiiv free cannot run an automated daily sender** → use MailerLite or Brevo free instead (both have send APIs).
+1. **Newsletter sending is free** — **Brevo or Resend** (decided 2026-10-03; both send via API on their free tiers, no need for a paid mailer tier).
 2. **Supabase's free email service is unusable for real users** (2/hour, team-only) → you must configure custom SMTP.
 Plus the known Google Play tax: a **12-tester / 14-day closed test** before you can go to production with a new personal account.
 
@@ -121,27 +120,50 @@ Account verification has **three** parts ([Setup checklist](https://developer.pa
 
 ---
 
-## 3. Newsletter — Beehiiv free vs. the alternatives
+## 3. Newsletter — Brevo or Resend (decided 2026-10-03)
 
-### 3a. Can Beehiiv's FREE plan send daily emails via a bot? — ❌ NO (verified)
+### 3a. The decision
+**Yordan's pick: Brevo or Resend** — the two he is already comfortable with. Both were re-verified on 3 Oct 2026 against their own pricing pages, and both can send an automated daily email from their **free** tier. Whichever account gets opened first becomes the sender; **the build supports both** — no code change either way, just which environment variables are set.
 
-Beehiiv's Free ($0, up to 2,500 subscribers, unlimited sends) includes **"API Access (excluding Send API)"**. The thing that actually **creates + sends** an email is the **Send API** (the `Create post` endpoint), and Beehiiv states it is **"Available on beehiiv Pro and Enterprise plans."** Free also lacks **Webhooks** and **Email Automations** (both Lite+). ([Beehiiv pricing](https://www.beehiiv.com/pricing) · [Send API / Create post help article](https://www.beehiiv.com/support/article/36759164012439) · [Send API launch note](https://product.beehiiv.com/p/send-api))
+Why not the earlier candidates: **Beehiiv's free plan cannot send email via API** (the Send API is Pro/Enterprise only — verified) and **MailerLite is out** because Yordan prefers providers he already knows.
 
-> So an automated "bot publishes the daily email" workflow **cannot run on Beehiiv Free.** You'd need **Pro ($95/mo at ≤1,000 subs, billed annually)** just for the Send API. Not compatible with a free-tier plan.
+### 3b. Brevo — what the free plan actually gives
+- **300 emails/day** (≈ 9,000/month), storage for up to **100,000 contacts**; unused daily sends do not roll over.
+- **REST API + SMTP on every plan, including Free** — this is the important one: the marketing Campaigns API *and* the transactional API work on $0.
+- **Doubles as Supabase's custom SMTP** (§4) — one account covers login emails *and* the newsletter.
+- EU-based (France) — friendly for GDPR and for a Bulgaria-based operator.
+- Signup: https://onboarding.brevo.com/account/register · API key: *Settings → SMTP & API → API Keys* · list ID: *Contacts → Lists* (the number in the list's URL).
+- Sources: [Email API](https://www.brevo.com/features/email-api/) · [Free-plan limits FAQ](https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan) · [Pricing](https://www.brevo.com/pricing/) · [Developer docs](https://developers.brevo.com/)
 
-### 3b. Verified free alternatives with send APIs
+### 3c. Resend — what the free plan actually gives
+- **3,000 emails/month with a 100 emails/day cap** on the Free plan, **3 custom domains**, 30-day data retention, DKIM/SPF/DMARC setup included.
+- **Audiences + Broadcasts on the free tier**: the newsletter send is a *broadcast*, and broadcasts are counted against the marketing quota — **separate from the 3,000 transactional emails** (verified on Resend's own pricing page FAQ).
+- Nice DX (modern API, good logs) but it does **not** includes a contact-list editor as rich as Brevo's; you manage contacts through the Audiences API/dashboard.
+- Signup: https://resend.com/signup · API key: *API Keys → Create* · audience ID: *Audiences* (copy the `aud_...` id).
+- Sources: [Pricing](https://resend.com/pricing) · [Docs](https://resend.com/docs/introduction)
 
-**Option A — MailerLite (recommended free fallback).** Free plan: **250 subscribers, 2,500 emails/month, 2 seats**, custom HTML editor, and the **REST API is available on the free plan** (create/draft/schedule/**send** campaigns). Generate a key at *Dashboard → Integrations → API*. Global rate limit 120 req/min. Free-plan caveat: if you exceed 250 subscribers, adding subscribers **via API** and sending are paused until you upgrade. ([Pricing](https://www.mailerlite.com/pricing) · [Free-plan update FAQ](https://www.mailerlite.com/help/free-plan-update-faq) · [API getting started](https://developers.mailerlite.com/getting-started) · [Campaigns endpoint](https://developers.mailerlite.com/api/campaigns))
-Signup: https://accounts.mailerlite.com/signup
+### 3d. What is already built (no account needed to have it ready)
+| Piece | Where it lives | State |
+|---|---|---|
+| **Signup endpoint** | `api/subscribe.js` (Vercel edge function) | ✅ built — **13/13 local tests pass** (Brevo path, Resend path, invalid email → 400, honeypot → silently ignored, provider failure → 502, unconfigured → 503) |
+| **Signup form** | `src/components/NewsletterSignup.tsx`, mounted on the hub above the footer | ✅ built — renders **only** when `VITE_NEWSLETTER_ENABLED=true`, so visitors never see a dead form; sticker-styled, one field, graceful error states |
+| **Daily sender + composer** | `yodoku-newsletter.py` (Hermes script) | ✅ built — composes the "seven fresh puzzles" email in English, sends via Brevo campaign API or Resend broadcast API, dry-runs (writes a preview) when no key is set |
+| **Daily cron** | Hermes job **`Yodoku daily newsletter`** (08:30) | ⏸ **paused** — resumes the moment a key is set |
 
-**Option B — Brevo.** Free plan: **300 emails/day** (marketing + transactional pooled; ~9,000/mo), storage for up to 100,000 contacts, **REST API + SMTP on all plans** (including Free). Unused daily sends do not roll over. ([Email API](https://www.brevo.com/features/email-api/) · [Free-plan limits FAQ](https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan) · [Pricing FAQ](https://www.brevo.com/pricing/))
-Signup: https://onboarding.brevo.com/account/register
+### 3e. What switching it on takes (5 minutes, once the account exists)
+1. Open **Brevo** (or Resend) → verify the sending domain `yodoku.app` (add the SPF/DKIM DNS records they show you).
+2. Create the list/audience (e.g. "Yodoku Daily") → copy its ID.
+3. Create an API key.
+4. Set these in **Vercel → Settings → Environment Variables** (server-side):
+   - Brevo: `BREVO_API_KEY`, `BREVO_LIST_ID`
+   - or Resend: `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`
+   and one public flag so the form appears: **`VITE_NEWSLETTER_ENABLED=true`**.
+5. Tell the agent → the cron is resumed. From then on the email composes and sends itself every morning at 08:30.
 
-**Recommendation:** Start Yodoku's newsletter on **Brevo** (300/day is more headroom than MailerLite's 2,500/mo, and the same account can also serve as Supabase's custom SMTP — see §4) or **MailerLite** if you prefer the simpler editor. Keep Beehiiv on the roadmap only if/when paying for Pro.
+### 3f. GDPR note (EU operator, EU subscribers)
+Consent must be *explicit and provable*. Recommended: enable **double opt-in** in Brevo (*Settings → Double opt-in*) so every signup gets a confirmation email before it counts — that also protects sender reputation against typo'd addresses. The form's copy states exactly what the subscriber gets ("one email a morning — seven puzzles, no spam, unsubscribe in one click"), and every send carries a one-click unsubscribe.
 
-**Yordan does:** open a MailerLite or Brevo account (email + password), verify the sending domain (`yodoku.app` — add SPF/DKIM DNS records), generate the API key.
-
-**The build needs:** `NEWSLETTER_API_KEY`, the **list/audience ID**, and the verified **from-address** (`news@yodoku.app`).
+**The build needs:** `BREVO_API_KEY` + `BREVO_LIST_ID` *(or* `RESEND_API_KEY` + `RESEND_AUDIENCE_ID`*)*, an approved sending domain (`yodoku.app` / `news@yodoku.app`), and `VITE_NEWSLETTER_ENABLED=true`.
 
 ---
 
@@ -230,7 +252,7 @@ Personal accounts **created after 13 Nov 2023** cannot publish directly to produ
 |---|---|---|
 | Lemon Squeezy | `API_KEY`, `STORE_ID`, `PRODUCT_ID`, `VARIANT_ID`, `WEBHOOK_SECRET`, hosted `CHECKOUT_URL` | API key + secret server-side only |
 | Paddle | `CLIENT_TOKEN` (front-end), `API_KEY` (server), `WEBHOOK_SECRET`, `PRICE_ID` | key/secret server-side only |
-| Newsletter (MailerLite/Brevo) | `API_KEY`, `LIST_ID`, verified from-address | server-side only |
+| Newsletter (Brevo **or** Resend) | `BREVO_API_KEY` + `BREVO_LIST_ID` *or* `RESEND_API_KEY` + `RESEND_AUDIENCE_ID`; verified sending domain | server-side only |
 | Supabase | `SUPABASE_URL`, `ANON_KEY` (front-end), `SERVICE_ROLE_KEY` (server), SMTP creds | service key + SMTP server-side only |
 | RevenueCat | Android `PUBLIC_SDK_KEY`, `ENTITLEMENT_ID`, webhook auth | public key safe front-end |
 | Google Play | package name, keystore, service-account JSON, license-tester emails | JSON + keystore secret |
@@ -275,8 +297,9 @@ Personal accounts **created after 13 Nov 2023** cannot publish directly to produ
 **Newsletter**
 - Beehiiv pricing: https://www.beehiiv.com/pricing
 - Beehiiv Send API / Create post (Pro+Enterprise): https://www.beehiiv.com/support/article/36759164012439 · https://product.beehiiv.com/p/send-api
-- MailerLite pricing: https://www.mailerlite.com/pricing · Free-plan FAQ: https://www.mailerlite.com/help/free-plan-update-faq
-- MailerLite API: https://developers.mailerlite.com/getting-started · https://developers.mailerlite.com/api/campaigns
+- Resend pricing / free tier (3,000 emails/mo, 100/day; broadcasts counted separately): https://resend.com/pricing
+- Resend docs (Audiences, Broadcasts, API keys): https://resend.com/docs/introduction
+- Brevo developer docs (contacts, campaigns, transactional): https://developers.brevo.com/
 - Brevo email API: https://www.brevo.com/features/email-api/ · Free-plan limits: https://help.brevo.com/hc/en-us/articles/208580669
 
 **Supabase**
@@ -305,4 +328,6 @@ Personal accounts **created after 13 Nov 2023** cannot publish directly to produ
 
 ## UPDATE — 2026-10-03 (evening)
 
-**Newsletter provider changed:** MailerLite is OUT. Yordan chose **Brevo or Resend** (already comfortable with them). Both verified viable on their free tiers for API-driven daily sends (Brevo: 300 emails/day; Resend: 3,000/month + Audiences/Broadcasts) and both double as the Supabase SMTP for login emails. Whichever account is opened first becomes the pick — the sender script supports both. The MailerLite section above stands as reference only.
+**Newsletter provider: DECIDED — Brevo or Resend** (Yordan's pick; already comfortable with both). MailerLite is out; Beehiiv's free plan can't send via API. §3 above is now the authoritative newsletter section (the MailerLite analysis is removed, not just superseded).
+
+**Built the same day, waiting only on the account:** `/api/subscribe` endpoint (13/13 tests), hub signup form behind `VITE_NEWSLETTER_ENABLED`, the English composer/sender script (Brevo campaign API **or** Resend broadcast API), and a **paused** daily 08:30 cron. Nothing on the live site changed: the form stays hidden until the flag is set at the same time as the provider key.

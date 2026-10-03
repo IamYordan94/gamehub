@@ -17,7 +17,7 @@ Updated: 2026-10-03 (evening — Yodoku+ build in progress)
 | A | Telemetry: Vercel Analytics custom events — `share_open/download/whatsapp/copy` via ShareCardModal (covers all 7 games); per-game play counts come from per-route page views | ✅ done (branch) |
 | A | Hub front-door copy → "Seven daily games. One minute each. Free forever." + ticker "no signup" | ✅ done (branch) |
 | A | `hello@yodoku.app` email | ⏳ needs domain DNS access (Yordan) |
-| A | Newsletter (English, bot-composed; **Brevo or Resend** — Yordan's pick, final choice when he opens the account; sender script supports both) | ⏳ needs account (Yordan) + bot composer (me) |
+| A | Newsletter (English, bot-composed; **Brevo or Resend** — decided 2026-10-03) — sender/composer script (`yodoku-newsletter.py`), **paused** cron `Yodoku daily newsletter` (08:30), site signup form (`NewsletterSignup.tsx`, behind `VITE_NEWSLETTER_ENABLED`) + `/api/subscribe` endpoint (13/13 tests) | ✅ built & tested — ⏳ needs account (Yordan): API key + list/audience ID + verified domain |
 | A | Baseline numbers: Vercel dashboard → Analytics (page views per game, last 30 days) | ⏳ Yordan pastes numbers |
 | B | Directory submission list | ✅ 35 verified targets + ready blurbs → `docs/marketing/DIRECTORY-SUBMISSIONS.md` |
 | B | Newsletter target list | ✅ 23 verified targets + 3 pitch templates → `docs/marketing/NEWSLETTER-TARGETS.md` |

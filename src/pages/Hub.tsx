@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
 import AdSlot from '../components/AdSlot';
 import InstallSticker from '../components/InstallSticker';
+import NewsletterSignup from '../components/NewsletterSignup';
 import { getTodayProgress } from '../utils/dailyProgress';
 
 type GameCardProps = {
@@ -494,6 +495,8 @@ export default function Hub() {
         </div>
 
         <AdSlot slot="hub-grid-footer" minHeight={120} />
+
+        <NewsletterSignup />
 
         {/* Footer */}
         <footer className="mt-10 pt-6 flex flex-col items-center gap-2" style={{ borderTop: '2px solid var(--hub-ink)', opacity: 0.3 }}>

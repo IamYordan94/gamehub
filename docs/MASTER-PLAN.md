@@ -62,7 +62,7 @@ So the plan is: **keep the hub, add a charge-ready core, pick ONE game as the sp
 |---|------|-----|
 | A1 | Per-game engagement telemetry (plays/day per game, share-button clicks) so the flagship push is data-backed | me |
 | A2 | Baseline traffic from the Vercel dashboard (you copy numbers or give me access) | you |
-| A3 | `hello@yodoku.app` email + newsletter skeleton ("today's puzzles", 1 email/day) — **Brevo or Resend** (Beehiiv's free plan cannot send via API — verified 2026-10-03; Yordan's pick — 2026-10-03 — already comfortable with them; both free tiers work and both also serve as Supabase SMTP; the send script supports BOTH, one-line config) | me |
+| A3 | `hello@yodoku.app` email + newsletter skeleton ("today's puzzles", 1 email/day) — **Brevo or Resend** (Beehiiv's free plan cannot send via API — verified 2026-10-03; Yordan's pick — 2026-10-03 — already comfortable with them; both free tiers work and both also serve as Supabase SMTP; the send script supports BOTH, one-line config) | me · **BUILT & TESTED 2026-10-03**: `/api/subscribe` (13/13 tests), hub signup form behind `VITE_NEWSLETTER_ENABLED`, English composer/sender for **both** providers, **paused** 08:30 cron — waiting only on the account + API key. |
 | A4 | Front-door copy refresh to the hub pitch; audit per-page titles already done | me |
 
 ### Phase B — Flagship + distribution (weeks 1–6, continuous)

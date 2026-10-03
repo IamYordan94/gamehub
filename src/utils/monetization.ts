@@ -17,6 +17,9 @@ const env = (import.meta as unknown as { env?: Record<string, string> }).env ?? 
 export const CHECKOUT_URL: string = env.VITE_CHECKOUT_URL || '';
 export const SUPABASE_URL: string = env.VITE_SUPABASE_URL || '';
 export const SUPABASE_ANON_KEY: string = env.VITE_SUPABASE_ANON_KEY || '';
+// Newsletter signup (Brevo/Resend via /api/subscribe) — the form renders only
+// once the provider is connected, so the live site never shows a dead form.
+export const NEWSLETTER_ENABLED: boolean = env.VITE_NEWSLETTER_ENABLED === 'true';
 
 export function checkoutConfigured(): boolean {
   return Boolean(CHECKOUT_URL);
