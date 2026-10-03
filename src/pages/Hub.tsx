@@ -248,7 +248,7 @@ export default function Hub() {
           className="text-sm font-semibold m-0"
           style={{ color: 'rgba(255,255,255,0.42)', letterSpacing: '0.02em' }}
         >
-          Pick one. Lose time responsibly.
+          Seven daily games. One minute each. Free forever.
         </p>
       </header>
 
@@ -266,8 +266,8 @@ export default function Hub() {
         fontFamily: "'JetBrains Mono', monospace",
       }}>
         <span style={{ display: 'inline-block', animation: 'marquee 22s linear infinite' }}>
-          seven daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
-          seven daily games · new puzzles every day · free to play · share your score &nbsp;&nbsp;&nbsp;
+          seven daily games · one minute each · free forever · no signup · share your score &nbsp;&nbsp;&nbsp;
+          seven daily games · one minute each · free forever · no signup · share your score &nbsp;&nbsp;&nbsp;
         </span>
       </div>
 

@@ -1,0 +1,45 @@
+# Yodoku — Execution Tracker
+
+**Build branch for Yodoku+: `yodoku-plus`** (merge to main = deploy; branch pushes do not deploy).
+Updated: 2026-10-03
+
+## Locked decisions
+- Pricing: **€2.99/mo · €19.99/yr** (approved by Yordan)
+- Brand: publisher = **Yordan Creatives**; product name = **Yodoku**
+- Shop window: **ALL 7 games**; Quiz Master additionally gets the strategic standalone push
+- Free forever: today's puzzles + the last 7 days. Yodoku+: full archive + ad-free + cross-device sync + unlimited practice
+- Payments: Lemon Squeezy (web, merchant of record) · Google Play Billing via RevenueCat (Android)
+- No domain changes · no popunder ads · no paid ads · no new game until two flagship rotations fail
+
+## Status board
+| Phase | Task | Status |
+|---|---|---|
+| A | Telemetry: Vercel Analytics custom events — `share_open/download/whatsapp/copy` via ShareCardModal (covers all 7 games); per-game play counts come from per-route page views | ✅ done (branch) |
+| A | Hub front-door copy → "Seven daily games. One minute each. Free forever." + ticker "no signup" | ✅ done (branch) |
+| A | `hello@yodoku.app` email | ⏳ needs domain DNS access (Yordan) |
+| A | Beehiiv newsletter (free tier, English, bot-composed) | ⏳ needs account (Yordan) + bot composer (me) |
+| A | Baseline numbers: Vercel dashboard → Analytics (page views per game, last 30 days) | ⏳ Yordan pastes numbers |
+| B | Directory submission list (12+ targets, verified) | 🔄 subagent → `docs/marketing/DIRECTORY-SUBMISSIONS.md` |
+| B | Newsletter target list (15+) + 3 pitch templates | 🔄 subagent → `docs/marketing/NEWSLETTER-TARGETS.md` |
+| B | Account setup guide (LS/Paddle/Beehiiv/Supabase/RevenueCat/Play, Bulgaria) | 🔄 subagent → `docs/marketing/ACCOUNT-SETUP-GUIDE.md` |
+| B | Daily WhatsApp digest cron at 08:00 (script `yodoku-daily-digest.py`, rotating featured game) | ✅ created |
+| C | Monetization scaffold `src/utils/monetization.ts` (`PAID_ENABLED=false`, `?plus=1` override) | ✅ done (branch) |
+| C | Calendar gating integration (see below) | ⏳ next code task |
+| C | Supabase accounts (magic link) + anonymous-progress merge | ⏳ after accounts |
+| C | Lemon Squeezy checkout + webhook → entitlement store | ⏳ after accounts |
+| C | Subscription UI: pricing page, "Plus" hints on locked days | ⏳ with C |
+| D | Play Store: signed AAB, listing, screenshots, RevenueCat wiring | ⏳ after accounts |
+| E | Monetization ladder (premium ad network ≥500k sessions/mo; sponsor ≥50k players) | later |
+| F | Gates day 30/60/90 (see MASTER-PLAN §3F) | later |
+
+## Paywall integration points (verified in code)
+- `src/pages/OrderleCalendar.tsx` — 19-day list, tiles link to `/orderle/play?date=`; gate each tile with `isArchiveUnlocked(dateStr)`
+- `src/pages/FermiCalendar.tsx` — same pattern as above
+- `src/pages/ChangeByOneCalendar.tsx`, `src/pages/LetterMixCalendar.tsx` — same pattern
+- `src/pages/WordPoolPreviousGames.tsx` — list of previous pools
+- Helper module: `src/utils/monetization.ts` — use `isArchiveUnlocked()` at each tile; the copy "Puzzles cycle every 45 days" needs a "last 7 days free" line when the paywall flips on
+
+## Working notes
+- Repo = deploy: push `main` → Vercel auto-deploys. Branch pushes are safe.
+- Strategy docs: `docs/MASTER-PLAN.md`, `docs/COMPETITIVE-ANALYSIS.md`, `docs/marketing/*`
+- After the paywall flips: bump `CACHE` in `public/sw.js` (service-worker shell change)

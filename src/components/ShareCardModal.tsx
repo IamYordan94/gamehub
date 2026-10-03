@@ -4,6 +4,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { drawShareCard, type ShareCardOptions } from '../utils/shareCard';
+import { track } from '../utils/telemetry';
 
 export interface ShareCardModalProps {
   open: boolean;
@@ -22,12 +23,14 @@ export default function ShareCardModal({ open, onClose, options, shareText }: Sh
   useEffect(() => {
     if (open && canvasRef.current) {
       drawShareCard(canvasRef.current, options);
+      track('share_open', { game: options.gameId });
     }
   }, [open, options]);
 
   const handleDownload = useCallback(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+    track('share_download', { game: options.gameId });
     canvas.toBlob((blob) => {
       if (!blob) return;
       const url = URL.createObjectURL(blob);
@@ -41,16 +44,18 @@ export default function ShareCardModal({ open, onClose, options, shareText }: Sh
 
   const handleWhatsApp = useCallback(() => {
     // wa.me deep link — no API, no SDK. Opens WhatsApp with prefilled text.
+    track('share_whatsapp', { game: options.gameId });
     window.open(
       `https://wa.me/?text=${encodeURIComponent(`${shareText}\n${SITE_URL}`)}`,
       '_blank',
       'noopener'
     );
-  }, [shareText]);
+  }, [shareText, options.gameId]);
 
   const handleCopy = useCallback(async () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+    track('share_copy', { game: options.gameId });
     try {
       const blob = await new Promise<Blob | null>((res) => canvas.toBlob(res, 'image/png'));
       if (blob && 'ClipboardItem' in window && navigator.clipboard && 'write' in navigator.clipboard) {
@@ -69,7 +74,7 @@ export default function ShareCardModal({ open, onClose, options, shareText }: Sh
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     }
-  }, [shareText]);
+  }, [shareText, options.gameId]);
 
   return (
     <AnimatePresence>

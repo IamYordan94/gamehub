@@ -34,3 +34,6 @@ dist-ssr
 
 .claude/
 .superpowers/
+
+# Hermes agent workspace (plans, scratch)
+.hermes/
